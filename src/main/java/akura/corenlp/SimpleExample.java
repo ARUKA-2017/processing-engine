@@ -7,6 +7,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
+import org.slf4j.Logger;
+
 import com.google.common.io.Files;
 
 import edu.stanford.nlp.dcoref.CorefChain;
@@ -36,6 +38,7 @@ public class SimpleExample {
     
     // read some text from the file..
     File inputFile = new File("src/main/resources/sample-content.txt");
+//    String text = inputFile.toString();
     String text = Files.toString(inputFile, Charset.forName("UTF-8"));
 
     // create an empty Annotation just with the given text

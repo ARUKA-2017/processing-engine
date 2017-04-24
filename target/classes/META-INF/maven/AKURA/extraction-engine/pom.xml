@@ -4,4 +4,42 @@
   <artifactId>extraction-engine</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>Knowledge Extraction Engine</name>
+  <dependencies>
+  	<!-- stanford coreNLP -->
+	<dependency>
+	    <groupId>edu.stanford.nlp</groupId>
+	    <artifactId>stanford-corenlp</artifactId>
+	    <version>3.7.0</version>
+	</dependency>
+    <dependency>
+	    <groupId>edu.stanford.nlp</groupId>
+	    <artifactId>stanford-corenlp</artifactId>
+	    <version>3.7.0</version>
+	    <classifier>models-english</classifier>
+	</dependency>
+	<!-- slf4j dependencies -->
+   <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>1.7.5</version>
+    </dependency>
+
+    <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-classic</artifactId>
+        <version>1.1.8</version>
+    </dependency>
+
+    <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-core</artifactId>
+        <version>1.1.8</version>
+    </dependency>
+    
+    <dependency>
+	    <groupId>com.google.guava</groupId>
+	    <artifactId>guava</artifactId>
+	    <version>r05</version>
+	</dependency>
+  </dependencies>
 </project>

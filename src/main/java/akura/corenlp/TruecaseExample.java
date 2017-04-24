@@ -1,6 +1,5 @@
 package akura.corenlp;
 
-import com.google.common.io.Files;
 import edu.stanford.nlp.ling.CoreAnnotations.*;
 import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.pipeline.Annotation;
@@ -14,6 +13,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 
+import com.google.common.io.Files;
+
 /** A simple corenlp example ripped directly from the Stanford CoreNLP website using text from wikinews. */
 public class TruecaseExample {
 
@@ -25,7 +26,9 @@ public class TruecaseExample {
 
     // read some text from the file..
     File inputFile = new File("src/main/resources/sample-content.txt");
+//    String input = inputFile.toString();
     String input = Files.toString(inputFile, Charset.forName("UTF-8"));
+    System.out.println(input);
     String lcInput = input.toLowerCase(); // downcase everything.
 
     // create an empty Annotation with just the downcased text.
