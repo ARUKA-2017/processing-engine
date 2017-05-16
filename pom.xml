@@ -3,8 +3,32 @@
   <groupId>AKURA</groupId>
   <artifactId>extraction-engine</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>Knowledge Extraction Engine</name>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <name>Knowledge Extraction Engine</name>
   <dependencies>
+	<dependency>
+	    <groupId>org.json</groupId>
+	    <artifactId>json</artifactId>
+	    <version>20090211</version>
+	</dependency>
+  <!-- https://mvnrepository.com/artifact/com.thoughtworks.xstream/xstream -->
+	<dependency>
+	    <groupId>com.thoughtworks.xstream</groupId>
+	    <artifactId>xstream</artifactId>
+	    <version>1.4.7</version>
+	</dependency>
+	  
   	<!-- stanford coreNLP -->
 	<dependency>
 	    <groupId>edu.stanford.nlp</groupId>
@@ -41,5 +65,12 @@
 	    <artifactId>guava</artifactId>
 	    <version>r05</version>
 	</dependency>
+	<!-- apache jena dependencies -->
+    <dependency>
+      <groupId>org.apache.jena</groupId>
+      <artifactId>apache-jena-libs</artifactId>
+      <type>pom</type>
+      <version>3.2.0</version>
+    </dependency>
   </dependencies>
 </project>
