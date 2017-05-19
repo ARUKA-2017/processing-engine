@@ -15,7 +15,7 @@ public class SchemaToXml {
 	JAXBContext context;
 	
 	public SchemaToXml(GeneralSchema schema) {
-		file = new File("test.xml");
+		file = new File("akura/ontology/test.xml");
 
 		try {
 			context = JAXBContext.newInstance(GeneralSchema.class);
