@@ -49,6 +49,7 @@ public class TestRun {
 
 		List<String> list = new LinkedList<>();
 		list.add("Camera");
+		list.add("Bluetooth");
 		schema.setFeatures(list);
 
 		schema.setAdditional("NEGATIVE on Feature-camera");
@@ -56,14 +57,12 @@ public class TestRun {
 
 		schema.constructStaticJsonObject();
 
-		System.out.println("\n\n\n");
 		//ontology model development
+		/*
 		String str = "{'schema':{'id':'1','resource':'https://www.amazon.com/Amazon-Echo-Bluetooth-Speaker-with-Alexa-Black/dp/B00X4WHP5E/ref=redir_mobile_desktop?_encoding=UTF8&ref_=ods_gw_ha_d_black','customer':'null','features':'Camera,Bluetooth'}}";
 		try {
 			JSONObject jsonpObject = new JSONObject(str);
 			String xml = XML.toString(jsonpObject);
-			System.out.println("XML");
-			System.out.println(xml);
 
 		} catch (JSONException e) {
 			e.printStackTrace();
@@ -76,6 +75,7 @@ public class TestRun {
 		ReadXML();
 
 		Model model = ModelFactory.createModelForGraph(new GraphCSV("test.csv"));
+		*/
 
 	}
 

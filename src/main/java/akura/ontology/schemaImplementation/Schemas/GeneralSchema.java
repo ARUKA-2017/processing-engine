@@ -23,7 +23,6 @@ public class GeneralSchema {
 		String[] featuresString = null;
 		if(this.features!=null){
 			featuresString = features.stream().toArray(String[]::new);
-			System.out.println(featuresString[0]);
 		}
 		staticJsonString = "{'schema':{"
 				+ "'id':'"+this.id+"',"

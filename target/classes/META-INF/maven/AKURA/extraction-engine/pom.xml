@@ -3,7 +3,19 @@
   <groupId>AKURA</groupId>
   <artifactId>extraction-engine</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>Knowledge Extraction Engine</name>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <name>Knowledge Extraction Engine</name>
   <dependencies>
 	<dependency>
 	    <groupId>org.json</groupId>
@@ -60,5 +72,15 @@
       <type>pom</type>
       <version>3.2.0</version>
     </dependency>
+    <dependency>
+        <groupId>org.apache.jena</groupId>
+        <artifactId>jena-csv</artifactId>
+        <version>3.2.0</version>
+    </dependency>
+    <dependency>
+	  <groupId>com.textrazor</groupId>
+	  <artifactId>textrazor</artifactId>
+	  <version>1.0.9</version>
+	</dependency>
   </dependencies>
 </project>

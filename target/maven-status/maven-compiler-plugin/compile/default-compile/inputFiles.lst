@@ -1,2 +1,13 @@
-/Users/sameerap/Documents/SLIIT/4th year/1st semester/CDAP/processing-engine/src/main/java/akura/corenlp/TruecaseExample.java
-/Users/sameerap/Documents/SLIIT/4th year/1st semester/CDAP/processing-engine/src/main/java/akura/corenlp/SimpleExample.java
+/Users/sameerap/Documents/research/processing-engine/src/main/java/akura/corenlp/SimpleExample.java
+/Users/sameerap/Documents/research/processing-engine/src/main/java/akura/corenlp/TruecaseExample.java
+/Users/sameerap/Documents/research/processing-engine/src/main/java/akura/ontology/schemaImplementation/XmlToXsd.java
+/Users/sameerap/Documents/research/processing-engine/src/main/java/akura/ontology/JenaImplementation.java
+/Users/sameerap/Documents/research/processing-engine/src/main/java/akura/ontology/XsdOwlMapper.java
+/Users/sameerap/Documents/research/processing-engine/src/main/java/akura/ontology/Constants.java
+/Users/sameerap/Documents/research/processing-engine/src/main/java/akura/ontology/OntologyFactoryImpl.java
+/Users/sameerap/Documents/research/processing-engine/src/main/java/akura/ontology/XmlOwlMapper.java
+/Users/sameerap/Documents/research/processing-engine/src/main/java/akura/ontology/schemaImplementation/Schemas/GeneralSchema.java
+/Users/sameerap/Documents/research/processing-engine/src/main/java/akura/ontology/schemaImplementation/SchemaToXml.java
+/Users/sameerap/Documents/research/processing-engine/src/main/java/akura/ontology/JenaInterface.java
+/Users/sameerap/Documents/research/processing-engine/src/main/java/akura/ontology/TestRun.java
+/Users/sameerap/Documents/research/processing-engine/src/main/java/akura/ontology/OntologyFactory.java
