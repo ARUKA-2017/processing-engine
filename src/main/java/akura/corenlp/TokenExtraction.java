@@ -336,8 +336,10 @@ public class TokenExtraction {
 			options.put("url", jsonObject.get("url").toString());
 			reviewInfoDto.setProperty(options);
 
-			double commentSentiment = SentimentAnalyzer.findSentiment("good");
-			System.out.println("Score : "+reviewInfoDto.getComment());
+
+			SentimentAnalyzer.init();
+			double commentSentiment = SentimentAnalyzer.findSentiment(reviewInfoDto.getComment());
+			System.out.println("Score : "+commentSentiment);
 
 			ontologyDto.setReviewInfoDto(reviewInfoDto);
 			System.out.println(new Gson().toJson(ontologyDto));

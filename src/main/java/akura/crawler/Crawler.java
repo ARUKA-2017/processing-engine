@@ -70,12 +70,13 @@ public class Crawler {
                         finalReviewList.add(review.getJSONObject());
                     }
                     System.out.println(finalReviewList);
-                    TokenExtraction tokenExtraction = new TokenExtraction();
-                    tokenExtraction.generateOntologyJson(finalReviewList);
+
                     break;
                 }
                 p++;
             }
+            TokenExtraction tokenExtraction = new TokenExtraction();
+            tokenExtraction.generateOntologyJson(finalReviewList);
         } catch (Exception e) {
         	e.printStackTrace();
             try {
