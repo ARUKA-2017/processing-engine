@@ -1,3 +1,6 @@
+/**
+ *
+ */
 package akura.crawler;
 
 import java.text.ParseException;
@@ -7,12 +10,15 @@ import java.util.Collections;
 import java.util.Date;
 import java.util.Locale;
 
+import org.json.JSONObject;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 public class Crawler {	
 	public static ArrayList<Review> reviewList = new ArrayList<Review>();
+    public static ArrayList<JSONObject> finalReviewList = new ArrayList<JSONObject>();
+
     ArrayList<Integer>  pagesScraped;
 	public void fetchReview(String itemID, int noOfPages) {
         String url = Configuration.ITEM_ID_PREFIX + itemID + Configuration.ITEM_ID_POSTFIX + 0; //(1 + (int) (Math.random() * 10))
@@ -58,7 +64,12 @@ public class Crawler {
                 }
 
                 if(p==noOfPages) {
-                		break;
+//                    System.out.println(reviewList);
+                    for (Review review: reviewList){
+                        finalReviewList.add(review.getJSONObject());
+                    }
+                    System.out.println(finalReviewList);
+                    break;
                 }
                 p++;
             }

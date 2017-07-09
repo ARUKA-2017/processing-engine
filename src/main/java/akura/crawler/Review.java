@@ -1,5 +1,8 @@
 package akura.crawler;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.Date;
 
 public class Review {
@@ -35,6 +38,19 @@ public class Review {
 	public String toString()
 	{
 		return classLabel + ","+ reviewContent ;
+	}
+
+	public JSONObject getJSONObject() throws JSONException {
+		JSONObject obj = new JSONObject();
+		obj.put("review_id", this.review_id);
+		obj.put("title", this.title);
+		obj.put("rating", new Integer(this.rating));
+		obj.put("url", this.url);
+		obj.put("date", String.valueOf(this.date));
+		obj.put("reviewContent", this.reviewContent);
+		obj.put("classLabel", this.classLabel);
+
+		return obj;
 	}
 
 	public void printReviews(){
