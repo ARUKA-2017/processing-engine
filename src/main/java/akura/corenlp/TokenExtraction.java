@@ -6,6 +6,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
+import akura.corenlp.models.FeatureDto;
+import akura.corenlp.models.MainDto;
+import akura.corenlp.models.RelationshipDto;
+import com.google.gson.Gson;
 import edu.stanford.nlp.ling.CoreAnnotations.NamedEntityTagAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.PartOfSpeechAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.SentencesAnnotation;
@@ -20,8 +24,9 @@ public class TokenExtraction {
 	private final static String API_KEY = "5bfb19a823dfc6ff4b7f5cbf232a1086f64e3f3d429fe429e4919b29";
 
 	private final static String DELIMETER = ".";
-	private final static String[] CONJUNCTIONS = {"greater than", "better than"};
-	private final static String[] DEVICE_LIST = {"samsung galaxy s8", "iphone 7", "samsung galaxy s8", "iphone 7s", "samsung galaxy s6", "iphone 6s",};
+	private final static String[] CONJUNCTIONS = {"greater than", "better than", "perfect than"};
+	private final static String[] DEVICE_LIST = {"samsung galaxy s8", "iphone 7", "samsung galaxy s5", "iphone 7s", "samsung galaxy s6", "iphone 6s"};
+	private final static String[] FEATURE_LIST = {"camera", "performance", "bluetooth", "display"};
 
 	private final static String NNP = "NNP";
 	private final static String NN = "NN";
@@ -45,7 +50,7 @@ public class TokenExtraction {
 	private final static String CD = "CD";
 	
 	
-	private static Map<String, Map<String, List<String>>> sentenceMap = new HashMap<>();
+	private static Map<String, Map<String, List<String>>> sentenceMap;
 	private static Map<String, List<String>> wordMap;
 	private static List<String> nnpList, nnList, vbdList, vbpList, vbList, vbnList, ccList, prpList, inList, dtList, vbzList, rbList, jjList, mdList, nnsList , toList, vbgList, prp$List, cdList;
 	
@@ -167,44 +172,131 @@ public class TokenExtraction {
 			default:System.out.println();
 		}
 	}
-	
+
 	private static double generateSingleSentenceScore(String sentence){
 		String[] sentenceArray = sentence.split("\\.");
 		String[] conjuncArray;
-		for(int i = 0; i < sentenceArray.length; i++){
+		for(int i = 0; i < sentenceArray.length; i++){//sentence
+			MainDto mainDto = new MainDto();
+			List<FeatureDto> tmpFeatureDtoList = new LinkedList<>();
+			List<RelationshipDto> tmpRelationshipDtoList = new LinkedList<>();
+			List<List<String>[]> entityModelList = new LinkedList<>();
 			for (int x = 0; x < CONJUNCTIONS.length; x++){
 
 				if(sentenceArray[i].contains(CONJUNCTIONS[x])){
-					conjuncArray = sentenceArray[i].split(CONJUNCTIONS[x]);
-					for (int y = 0; y < conjuncArray.length; y++){
+					List<String>[] leftTokenizedEntity;
+					List<String>[] rightTokenizedEntity;
+
+					conjuncArray = sentenceArray[i].split(CONJUNCTIONS[x]);//conjunctinos array
+
+					for (int y = 0; y < conjuncArray.length; y++){//conjunction
+						FeatureDto featureDto = new FeatureDto();
+						RelationshipDto relationshipDto = new RelationshipDto();
+						sentenceMap = new HashMap<>();
 						String conjunction = CONJUNCTIONS[x];
 						//have to set a score to the conjunction word----> -10 - 0 - +10
-						String entityModel = getMatchedEntity(extractTokens(conjuncArray[y]));
+
+						List<String>[] entityModel = getMatchedEntity(extractTokens(conjuncArray[y]));
+						entityModelList.add(entityModel);
+						//if y==1 it means left from the conjunction & y==2 right from the conjunction
+						if (y==0){
+							leftTokenizedEntity = entityModel;
+							mainDto.setMainEntity(leftTokenizedEntity[0].get(0));
+						} else if (y==1){
+							rightTokenizedEntity = entityModel;
+							mainDto.setSecondaryEntity(rightTokenizedEntity[0].get(0));
+						}
+						if (entityModel[1] != null && !entityModel[1].isEmpty()){
+							for (String feature : entityModel[1]){
+								featureDto.setFeatureName(feature);
+							}
+							tmpFeatureDtoList.add(featureDto);
+						}
+
+						if (mainDto.getSecondaryEntity() != null){
+							for (FeatureDto featureName : tmpFeatureDtoList){
+								featureName.setSecondaryEntitiy(mainDto.getSecondaryEntity());
+							}
+							relationshipDto.setType(conjunction);
+							relationshipDto.setSecondaryEntity(mainDto.getSecondaryEntity());
+						}
+//						else if (y==1){
+//							rightTokenizedEntity = entityModel;
+//							relationshipDto.setType(conjunction);
+//							relationshipDto.setSecondaryEntity(rightTokenizedEntity[0].get(0));
+//							featureDto.setSecondaryEntitiy(rightTokenizedEntity[0].get(0));
+//						}
+//						if (entityModel[1].get(0) != null || entityModel[1].get(0) == ""){
+//							featureDto.setFeatureName(entityModel[1].get(0));
+//							tmpFeatureDtoList.add(featureDto);
+//						}
+						if (relationshipDto != null) {
+							tmpRelationshipDtoList.add(relationshipDto);
+						}
+
 					}
+
 				}
 
 			}
-			break;
+			mainDto.setFeatures(tmpFeatureDtoList);
+			mainDto.setRelationship(tmpRelationshipDtoList);
+//			System.out.println(mainDto.getMainEntity()+" "+mainDto.getFeatures().get(1).getSecondaryEntitiy()+" "+mainDto.getFeatures().get(0).getFeatureName()+" "+mainDto.getFeatures().get(0).getType());
+			System.out.println(new Gson().toJson(mainDto));
+			//			break;
 		}
-
 		return 0;
 	}
 
-	private static String getMatchedEntity(Map<String, Map<String, List<String>>> extractedTokenMap){
+	private static List<String>[] getMatchedEntity(Map<String, Map<String, List<String>>> extractedTokenMap){
+		List<String> entityList = new LinkedList<>();
+		List<String> featureList = new LinkedList<>();
+
 		for(Map.Entry<String, Map<String, List<String>>> entry: sentenceMap.entrySet()){
 			System.out.println("Sentence : "+entry.getKey());
-
-			for(Map.Entry<String, List<String>> inner : entry.getValue().entrySet()){
-				System.out.println(inner.getKey()+" => "+inner.getValue());
+			if(findDevices(entry.getKey()) != null){
+				entityList.add(findDevices(entry.getKey()));
+				if (findFeatures(entry.getKey()) != null){
+					featureList.add(findFeatures(entry.getKey()));
+				}
 			}
+//			for(Map.Entry<String, List<String>> inner : entry.getValue().entrySet()){
+////				System.out.println(inner.getKey()+" => "+inner.getValue());
+//				for (String individualValue : inner.getValue()){
+//					for (int d = 0; d < DEVICE_LIST.length; d++){
+//						if (individualValue.toLowerCase().trim().equals(DEVICE_LIST[d].toLowerCase().trim())){
+//							String entityName = individualValue.toLowerCase();
+//							System.out.println("Entity : "+entityName);
+//						}
+//					}
+//				}
+//			}
 			System.out.println();
 		}
-		return "";
+		return new List[]{entityList, (featureList.isEmpty())?null: featureList};
+	}
+
+	private static String findDevices(String tokenizedSentence){
+		for (int d = 0; d < DEVICE_LIST.length; d++){
+			if (tokenizedSentence.toLowerCase().replaceAll("\\s+","").contains(DEVICE_LIST[d].toLowerCase().replaceAll("\\s+",""))){
+				return DEVICE_LIST[d];
+			}
+		}
+		return null;
+	}
+
+	private static String findFeatures(String tokenizedSentence){
+		for (int d = 0; d < FEATURE_LIST.length; d++){
+			if (tokenizedSentence.toLowerCase().replaceAll("\\s+","").contains(FEATURE_LIST[d].toLowerCase().replaceAll("\\s+",""))){
+				return FEATURE_LIST[d];
+			}
+		}
+		return null;
 	}
 	
 	public static void main(String[] args){
 //		extractTokens("Samsung Galaxy S8 is a good phone and it is better than IPhone7. The camera of Samsung Galaxy S8 is perfect than the IPhone7.");
-		generateSingleSentenceScore("Samsung Galaxy S8 is better than IPhone7. The camera of Samsung Galaxy S8 is perfect than the IPhone7.");
+		generateSingleSentenceScore("Samsung Galaxy S8 is better than IPhone7.The camera of Samsung Galaxy S8 is perfect than the IPhone7.");
 
 	}
 	
