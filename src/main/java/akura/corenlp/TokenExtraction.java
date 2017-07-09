@@ -6,10 +6,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
-import akura.corenlp.models.FeatureDto;
-import akura.corenlp.models.MainDto;
-import akura.corenlp.models.RelationshipDto;
+import akura.corenlp.models.*;
 import com.google.gson.Gson;
+import com.sun.org.apache.regexp.internal.RE;
 import edu.stanford.nlp.ling.CoreAnnotations.NamedEntityTagAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.PartOfSpeechAnnotation;
 import edu.stanford.nlp.ling.CoreAnnotations.SentencesAnnotation;
@@ -174,6 +173,16 @@ public class TokenExtraction {
 	}
 
 	private static double generateSingleSentenceScore(String sentence){
+		OntologyDto ontologyDto = new OntologyDto();//main ontology
+
+		ReviewInfoDto reviewInfoDto = new ReviewInfoDto();
+		reviewInfoDto.setUsername("John Ebraham");
+		reviewInfoDto.setEmail("john@gmail.com");
+		reviewInfoDto.setComment(sentence);
+		reviewInfoDto.setProperty(null);
+
+		ontologyDto.setReviewInfoDto(reviewInfoDto);
+
 		String[] sentenceArray = sentence.split("\\.");
 		String[] conjuncArray;
 		for(int i = 0; i < sentenceArray.length; i++){//sentence
@@ -187,7 +196,7 @@ public class TokenExtraction {
 					List<String>[] leftTokenizedEntity;
 					List<String>[] rightTokenizedEntity;
 
-					conjuncArray = sentenceArray[i].split(CONJUNCTIONS[x]);//conjunctinos array
+					conjuncArray = sentenceArray[i].split(CONJUNCTIONS[x]);//conjunctions array
 
 					for (int y = 0; y < conjuncArray.length; y++){//conjunction
 						FeatureDto featureDto = new FeatureDto();
@@ -196,7 +205,7 @@ public class TokenExtraction {
 						String conjunction = CONJUNCTIONS[x];
 						//have to set a score to the conjunction word----> -10 - 0 - +10
 
-						List<String>[] entityModel = getMatchedEntity(extractTokens(conjuncArray[y]));
+						List<String>[] entityModel = getMatchedEntity(extractTokens(conjuncArray[y]), x, y);
 						entityModelList.add(entityModel);
 						//if y==1 it means left from the conjunction & y==2 right from the conjunction
 						if (y==0){
@@ -218,18 +227,8 @@ public class TokenExtraction {
 								featureName.setSecondaryEntitiy(mainDto.getSecondaryEntity());
 							}
 							relationshipDto.setType(conjunction);
-							relationshipDto.setSecondaryEntity(mainDto.getSecondaryEntity());
+							relationshipDto.setEntity_1(mainDto.getSecondaryEntity());
 						}
-//						else if (y==1){
-//							rightTokenizedEntity = entityModel;
-//							relationshipDto.setType(conjunction);
-//							relationshipDto.setSecondaryEntity(rightTokenizedEntity[0].get(0));
-//							featureDto.setSecondaryEntitiy(rightTokenizedEntity[0].get(0));
-//						}
-//						if (entityModel[1].get(0) != null || entityModel[1].get(0) == ""){
-//							featureDto.setFeatureName(entityModel[1].get(0));
-//							tmpFeatureDtoList.add(featureDto);
-//						}
 						if (relationshipDto != null) {
 							tmpRelationshipDtoList.add(relationshipDto);
 						}
@@ -241,21 +240,27 @@ public class TokenExtraction {
 			}
 			mainDto.setFeatures(tmpFeatureDtoList);
 			mainDto.setRelationship(tmpRelationshipDtoList);
-//			System.out.println(mainDto.getMainEntity()+" "+mainDto.getFeatures().get(1).getSecondaryEntitiy()+" "+mainDto.getFeatures().get(0).getFeatureName()+" "+mainDto.getFeatures().get(0).getType());
 			System.out.println(new Gson().toJson(mainDto));
 			//			break;
 		}
 		return 0;
 	}
 
-	private static List<String>[] getMatchedEntity(Map<String, Map<String, List<String>>> extractedTokenMap){
+	private static List<String>[] getMatchedEntity(Map<String, Map<String, List<String>>> extractedTokenMap, int sentenceCount, int pos){
 		List<String> entityList = new LinkedList<>();
 		List<String> featureList = new LinkedList<>();
-
+		RelationshipDto relationshipDto = new RelationshipDto();
 		for(Map.Entry<String, Map<String, List<String>>> entry: sentenceMap.entrySet()){
 			System.out.println("Sentence : "+entry.getKey());
 			if(findDevices(entry.getKey()) != null){
 				entityList.add(findDevices(entry.getKey()));
+				if (sentenceCount == 0 && pos == 0){
+					relationshipDto.setType("Main Entity");
+					relationshipDto.setEntity_1(entityList.get(0));
+					relationshipDto.setEntity_2(null);
+				} else {
+
+				}
 				if (findFeatures(entry.getKey()) != null){
 					featureList.add(findFeatures(entry.getKey()));
 				}
@@ -273,7 +278,7 @@ public class TokenExtraction {
 //			}
 			System.out.println();
 		}
-		return new List[]{entityList, (featureList.isEmpty())?null: featureList};
+		return new List[]{(entityList.isEmpty())?null: entityList, (featureList.isEmpty())?null: featureList};
 	}
 
 	private static String findDevices(String tokenizedSentence){
@@ -293,11 +298,39 @@ public class TokenExtraction {
 		}
 		return null;
 	}
+	public static void generateJson(){
+		OntologyDto ontologyDto = new OntologyDto();
+		ReviewInfoDto reviewInfoDto = new ReviewInfoDto();
+		List<EntityDto> entityDtoList = new LinkedList<>();
+		EntityDto entityDto = new EntityDto();
+		List<RelationshipDto> relationshipDtoList = new LinkedList<>();
+		RelationshipDto relationshipDto = new RelationshipDto();
+
+		reviewInfoDto.setUsername("Athur C Clerk");
+		reviewInfoDto.setEmail("athurc@gmail.com");
+		reviewInfoDto.setComment("Samsung Galaxy S8 is better than IPhone7.The camera of Samsung Galaxy S8 is perfect than the IPhone7.");
+		reviewInfoDto.setProperty(null);
+		reviewInfoDto.setRating(0.4);
+
+		entityDto.setEntityName("Samsung Galaxy S8");
+		entityDto.setBaseScore(0.5);
+		entityDtoList.add(entityDto);
+
+		entityDto.setEntityName("IPhone 7");
+		entityDto.setBaseScore(0.4);
+		entityDtoList.add(entityDto);
+
+		relationshipDto.setType("Main Entity");
+		relationshipDto.setEntity_1("IPhone 7");
+		relationshipDto.setEntity_2("Camera");
+		relationshipDtoList.add(relationshipDto);
+
+	}
 	
 	public static void main(String[] args){
 //		extractTokens("Samsung Galaxy S8 is a good phone and it is better than IPhone7. The camera of Samsung Galaxy S8 is perfect than the IPhone7.");
-		generateSingleSentenceScore("Samsung Galaxy S8 is better than IPhone7.The camera of Samsung Galaxy S8 is perfect than the IPhone7.");
-
+//		generateSingleSentenceScore("Samsung Galaxy S8 is better than IPhone7.The camera of Samsung Galaxy S8 is perfect than the IPhone7.");
+		generateSingleSentenceScore("Samsung Galaxy S8 is better than IPhone7. It has a very good motherboard also.");
 	}
 	
 	

@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b15ee8a7-616c-46d1-900c-9610ab490c95" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/akura/corenlp/models/FeatureDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/akura/corenlp/models/MainDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/akura/corenlp/models/RelationshipDto.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/akura/corenlp/models/EntityDto.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/akura/corenlp/models/OntologyDto.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/akura/corenlp/models/ReviewInfoDto.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/extraction-engine.iml" afterPath="$PROJECT_DIR$/extraction-engine.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/akura/corenlp/TokenExtraction.java" afterPath="$PROJECT_DIR$/src/main/java/akura/corenlp/TokenExtraction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/akura/corenlp/models/MainDto.java" afterPath="$PROJECT_DIR$/src/main/java/akura/corenlp/models/MainDto.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/akura/corenlp/models/RelationshipDto.java" afterPath="$PROJECT_DIR$/src/main/java/akura/corenlp/models/RelationshipDto.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,7 +21,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="amazon-sample-review.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/amazon-sample-review.txt">
           <provider selected="true" editor-type-id="text-editor">
@@ -35,13 +35,65 @@
       <file leaf-file-name="TokenExtraction.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/akura/corenlp/TokenExtraction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="195" column="42" lean-forward="false" selection-start-line="195" selection-start-column="31" selection-end-line="195" selection-end-column="42" />
+            <state relative-caret-position="458">
+              <caret line="325" column="49" lean-forward="false" selection-start-line="325" selection-start-column="49" selection-end-line="325" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#storeExtractedData#0;class#TokenExtraction#0" expanded="false" />
-                <element signature="e#8149#8172#0" expanded="false" />
-                <element signature="e#9654#9732#0" expanded="false" />
+                <element signature="e#9558#9636#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReviewInfoDto.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/akura/corenlp/models/ReviewInfoDto.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="458">
+              <caret line="46" column="31" lean-forward="false" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
+              <folding>
+                <element signature="e#309#310#0" expanded="true" />
+                <element signature="e#340#341#0" expanded="true" />
+                <element signature="e#388#389#0" expanded="true" />
+                <element signature="e#428#429#0" expanded="true" />
+                <element signature="e#460#461#0" expanded="true" />
+                <element signature="e#488#489#0" expanded="true" />
+                <element signature="e#530#531#0" expanded="true" />
+                <element signature="e#564#565#0" expanded="true" />
+                <element signature="e#598#599#0" expanded="true" />
+                <element signature="e#628#629#0" expanded="true" />
+                <element signature="e#674#675#0" expanded="true" />
+                <element signature="e#712#713#0" expanded="true" />
+                <element signature="e#760#761#0" expanded="true" />
+                <element signature="e#791#792#0" expanded="true" />
+                <element signature="e#852#853#0" expanded="true" />
+                <element signature="e#892#893#0" expanded="true" />
+                <element signature="e#954#955#0" expanded="true" />
+                <element signature="e#998#999#0" expanded="true" />
+                <element signature="e#1034#1035#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EntityDto.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/akura/corenlp/models/EntityDto.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="55">
+              <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="31" />
+              <folding>
+                <element signature="e#258#259#0" expanded="true" />
+                <element signature="e#291#292#0" expanded="true" />
+                <element signature="e#343#344#0" expanded="true" />
+                <element signature="e#387#388#0" expanded="true" />
+                <element signature="e#423#424#0" expanded="true" />
+                <element signature="e#455#456#0" expanded="true" />
+                <element signature="e#505#506#0" expanded="true" />
+                <element signature="e#547#548#0" expanded="true" />
+                <element signature="e#595#596#0" expanded="true" />
+                <element signature="e#626#627#0" expanded="true" />
+                <element signature="e#687#688#0" expanded="true" />
+                <element signature="e#727#728#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -60,25 +112,29 @@
       <file leaf-file-name="MainDto.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/akura/corenlp/models/MainDto.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="10" column="35" lean-forward="false" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+            <state relative-caret-position="120">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OntologyDto.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/akura/corenlp/models/OntologyDto.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
-                <element signature="e#307#308#0" expanded="true" />
-                <element signature="e#340#341#0" expanded="true" />
-                <element signature="e#392#393#0" expanded="true" />
-                <element signature="e#436#437#0" expanded="true" />
-                <element signature="e#481#482#0" expanded="true" />
-                <element signature="e#512#513#0" expanded="true" />
-                <element signature="e#570#571#0" expanded="true" />
-                <element signature="e#610#611#0" expanded="true" />
-                <element signature="e#664#665#0" expanded="true" />
-                <element signature="e#699#700#0" expanded="true" />
-                <element signature="e#770#771#0" expanded="true" />
-                <element signature="e#818#819#0" expanded="true" />
-                <element signature="e#860#861#0" expanded="true" />
-                <element signature="e#898#899#0" expanded="true" />
-                <element signature="e#960#961#0" expanded="true" />
-                <element signature="e#1014#1015#0" expanded="true" />
+                <element signature="e#299#300#0" expanded="true" />
+                <element signature="e#335#336#0" expanded="true" />
+                <element signature="e#400#401#0" expanded="true" />
+                <element signature="e#450#451#0" expanded="true" />
+                <element signature="e#494#495#0" expanded="true" />
+                <element signature="e#525#526#0" expanded="true" />
+                <element signature="e#582#583#0" expanded="true" />
+                <element signature="e#622#623#0" expanded="true" />
+                <element signature="e#680#681#0" expanded="true" />
+                <element signature="e#719#720#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -87,18 +143,9 @@
       <file leaf-file-name="FeatureDto.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/akura/corenlp/models/FeatureDto.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding>
-                <element signature="e#202#203#0" expanded="true" />
-                <element signature="e#236#237#0" expanded="true" />
-                <element signature="e#290#291#0" expanded="true" />
-                <element signature="e#336#337#0" expanded="true" />
-                <element signature="e#379#380#0" expanded="true" />
-                <element signature="e#418#419#0" expanded="true" />
-                <element signature="e#482#483#0" expanded="true" />
-                <element signature="e#538#539#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="240">
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -106,17 +153,12 @@
       <file leaf-file-name="RelationshipDto.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/akura/corenlp/models/RelationshipDto.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+            <state relative-caret-position="270">
+              <caret line="26" column="33" lean-forward="false" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
               <folding>
-                <element signature="e#193#194#0" expanded="true" />
-                <element signature="e#220#221#0" expanded="true" />
-                <element signature="e#260#261#0" expanded="true" />
-                <element signature="e#292#293#0" expanded="true" />
-                <element signature="e#334#335#0" expanded="true" />
-                <element signature="e#372#373#0" expanded="true" />
-                <element signature="e#434#435#0" expanded="true" />
-                <element signature="e#488#489#0" expanded="true" />
+                <element signature="e#534#535#0" expanded="true" />
+                <element signature="e#582#583#0" expanded="true" />
+                <element signature="e#622#623#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -127,49 +169,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SimpleExample.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/akura/corenlp/SimpleExample.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="72" column="64" lean-forward="false" selection-start-line="72" selection-start-column="64" selection-end-line="72" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SemanticGraphCoreAnnotations.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/edu/stanford/nlp/stanford-corenlp/3.7.0/stanford-corenlp-3.7.0-sources.jar!/edu/stanford/nlp/semgraph/SemanticGraphCoreAnnotations.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="61" column="17" lean-forward="false" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
-              <folding>
-                <element signature="e#956#957#0" expanded="false" />
-                <element signature="e#996#997#0" expanded="false" />
-                <element signature="e#1369#1370#0" expanded="false" />
-                <element signature="e#1409#1410#0" expanded="false" />
-                <element signature="e#1928#1929#0" expanded="false" />
-                <element signature="e#1968#1969#0" expanded="false" />
-                <element signature="e#2317#2318#0" expanded="false" />
-                <element signature="e#2357#2358#0" expanded="false" />
-                <element signature="e#2716#2717#0" expanded="false" />
-                <element signature="e#2756#2757#0" expanded="false" />
-                <element signature="e#3196#3197#0" expanded="false" />
-                <element signature="e#3236#3237#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SemanticGraph.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/edu/stanford/nlp/stanford-corenlp/3.7.0/stanford-corenlp-3.7.0-sources.jar!/edu/stanford/nlp/semgraph/SemanticGraph.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="56" column="13" lean-forward="false" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -186,6 +185,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -199,7 +203,11 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/akura/corenlp/models/FeatureDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/akura/corenlp/models/MainDto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/akura/corenlp/models/Entities.java" />
+        <option value="$PROJECT_DIR$/src/main/java/akura/corenlp/models/OntologyDto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/akura/corenlp/models/EntityDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/akura/corenlp/models/RelationshipDto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/akura/corenlp/models/ReviewInfoDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/akura/corenlp/TokenExtraction.java" />
       </list>
     </option>
@@ -237,7 +245,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -265,10 +272,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -364,13 +367,15 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="FullScreen" value="true" />
   </component>
   <component name="RunDashboard">
@@ -683,6 +688,7 @@
       <setting name="passParentEnv" value="true" />
       <setting name="launchBrowser" value="true" />
       <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -852,6 +858,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -928,11 +940,12 @@
       <option name="presentableId" value="Default" />
       <updated>1499494372375</updated>
       <workItem from="1499494377027" duration="39441000" />
+      <workItem from="1499604909418" duration="13977000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39441000" />
+    <option name="totallyTimeSpent" value="53418000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -947,25 +960,25 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48356164" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26438355" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33835617" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24798061" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23828755" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871288" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41917807" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4188119" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -984,18 +997,18 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41917807" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4188119" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.48356164" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.280198" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33835617" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24798061" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16347177" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32871288" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
@@ -1008,21 +1021,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/akura/corenlp/TokenExtraction.java</url>
-          <line>232</line>
-          <properties />
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/akura/corenlp/TokenExtraction.java</url>
-          <line>215</line>
-          <properties />
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="19" />
+      <option name="time" value="22" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1031,11 +1030,192 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/amazon-sample-review.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="19" lean-forward="false" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/akura/corenlp/models/MainDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="35" lean-forward="false" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/akura/corenlp/models/FeatureDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/akura/corenlp/models/RelationshipDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+          <folding>
+            <element signature="e#534#535#0" expanded="true" />
+            <element signature="e#582#583#0" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/akura/corenlp/SimpleExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="72" column="64" lean-forward="false" selection-start-line="72" selection-start-column="64" selection-end-line="72" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/edu/stanford/nlp/stanford-corenlp/3.7.0/stanford-corenlp-3.7.0-sources.jar!/edu/stanford/nlp/semgraph/SemanticGraphCoreAnnotations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="61" column="17" lean-forward="false" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
+          <folding>
+            <element signature="e#956#957#0" expanded="false" />
+            <element signature="e#996#997#0" expanded="false" />
+            <element signature="e#1369#1370#0" expanded="false" />
+            <element signature="e#1409#1410#0" expanded="false" />
+            <element signature="e#1928#1929#0" expanded="false" />
+            <element signature="e#1968#1969#0" expanded="false" />
+            <element signature="e#2317#2318#0" expanded="false" />
+            <element signature="e#2357#2358#0" expanded="false" />
+            <element signature="e#2716#2717#0" expanded="false" />
+            <element signature="e#2756#2757#0" expanded="false" />
+            <element signature="e#3196#3197#0" expanded="false" />
+            <element signature="e#3236#3237#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/edu/stanford/nlp/stanford-corenlp/3.7.0/stanford-corenlp-3.7.0-sources.jar!/edu/stanford/nlp/semgraph/SemanticGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="56" column="13" lean-forward="false" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#3175#3176#0" expanded="false" />
+            <element signature="e#3211#3212#0" expanded="false" />
+            <element signature="e#3257#3258#0" expanded="false" />
+            <element signature="e#3300#3301#0" expanded="false" />
+            <element signature="e#3345#3346#0" expanded="false" />
+            <element signature="e#3387#3388#0" expanded="false" />
+            <element signature="e#4047#4048#0" expanded="false" />
+            <element signature="e#4080#4081#0" expanded="false" />
+            <element signature="e#4135#4136#0" expanded="false" />
+            <element signature="e#4180#4181#0" expanded="false" />
+            <element signature="e#4253#4254#0" expanded="false" />
+            <element signature="e#4298#4299#0" expanded="false" />
+            <element signature="e#4355#4356#0" expanded="false" />
+            <element signature="e#4420#4421#0" expanded="false" />
+            <element signature="e#4461#4462#0" expanded="false" />
+            <element signature="e#4500#4501#0" expanded="false" />
+            <element signature="e#4552#4553#0" expanded="false" />
+            <element signature="e#4618#4619#0" expanded="false" />
+            <element signature="e#4671#4672#0" expanded="false" />
+            <element signature="e#4714#4715#0" expanded="false" />
+            <element signature="e#5689#5690#0" expanded="false" />
+            <element signature="e#5726#5727#0" expanded="false" />
+            <element signature="e#5802#5803#0" expanded="false" />
+            <element signature="e#5848#5849#0" expanded="false" />
+            <element signature="e#5924#5925#0" expanded="false" />
+            <element signature="e#5970#5971#0" expanded="false" />
+            <element signature="e#6046#6047#0" expanded="false" />
+            <element signature="e#6092#6093#0" expanded="false" />
+            <element signature="e#6168#6169#0" expanded="false" />
+            <element signature="e#6214#6215#0" expanded="false" />
+            <element signature="e#6508#6509#0" expanded="false" />
+            <element signature="e#6540#6541#0" expanded="false" />
+            <element signature="e#15576#15577#0" expanded="false" />
+            <element signature="e#15631#15632#0" expanded="false" />
+            <element signature="e#18612#18625#0" expanded="false" />
+            <element signature="e#24799#24800#0" expanded="false" />
+            <element signature="e#24821#24822#0" expanded="false" />
+            <element signature="e#28895#28896#0" expanded="false" />
+            <element signature="e#28935#28936#0" expanded="false" />
+            <element signature="e#35922#35923#0" expanded="false" />
+            <element signature="e#35962#35963#0" expanded="false" />
+            <element signature="e#38773#38774#0" expanded="false" />
+            <element signature="e#38832#38833#0" expanded="false" />
+            <element signature="e#48949#48950#0" expanded="false" />
+            <element signature="e#48988#48989#0" expanded="false" />
+            <element signature="e#50782#50783#0" expanded="false" />
+            <element signature="e#50834#50835#0" expanded="false" />
+            <element signature="e#51048#51049#0" expanded="false" />
+            <element signature="e#51100#51101#0" expanded="false" />
+            <element signature="e#51299#51300#0" expanded="false" />
+            <element signature="e#51364#51365#0" expanded="false" />
+            <element signature="e#51530#51531#0" expanded="false" />
+            <element signature="e#51595#51596#0" expanded="false" />
+            <element signature="e#51777#51778#0" expanded="false" />
+            <element signature="e#51809#51810#0" expanded="false" />
+            <element signature="e#52018#52019#0" expanded="false" />
+            <element signature="e#52097#52098#0" expanded="false" />
+            <element signature="e#53795#53796#0" expanded="false" />
+            <element signature="e#53853#53854#0" expanded="false" />
+            <element signature="e#58759#58760#0" expanded="false" />
+            <element signature="e#58781#58782#0" expanded="false" />
+            <element signature="e#62482#62483#0" expanded="false" />
+            <element signature="e#62512#62513#0" expanded="false" />
+            <element signature="e#62566#62567#0" expanded="false" />
+            <element signature="e#62596#62597#0" expanded="false" />
+            <element signature="e#62651#62652#0" expanded="false" />
+            <element signature="e#62681#62682#0" expanded="false" />
+            <element signature="e#62737#62738#0" expanded="false" />
+            <element signature="e#62820#62821#0" expanded="false" />
+            <element signature="e#63240#63241#0" expanded="false" />
+            <element signature="e#63273#63274#0" expanded="false" />
+            <element signature="e#63877#63878#0" expanded="false" />
+            <element signature="e#63915#63916#0" expanded="false" />
+            <element signature="e#66025#66026#0" expanded="false" />
+            <element signature="e#66061#66062#0" expanded="false" />
+            <element signature="e#66207#66208#0" expanded="false" />
+            <element signature="e#66237#66238#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/akura/corenlp/TokenExtraction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2295">
+          <caret line="195" column="42" lean-forward="false" selection-start-line="195" selection-start-column="31" selection-end-line="195" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#storeExtractedData#0;class#TokenExtraction#0" expanded="false" />
+            <element signature="e#9558#9636#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/akura/MobileWordBank.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="48" lean-forward="false" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1043,7 +1223,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1057,23 +1236,104 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/akura/corenlp/SimpleExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
+        <state relative-caret-position="705">
           <caret line="72" column="64" lean-forward="false" selection-start-line="72" selection-start-column="64" selection-end-line="72" selection-end-column="64" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/edu/stanford/nlp/stanford-corenlp/3.7.0/stanford-corenlp-3.7.0-sources.jar!/edu/stanford/nlp/semgraph/SemanticGraph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
+        <state relative-caret-position="510">
           <caret line="56" column="13" lean-forward="false" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#3175#3176#0" expanded="false" />
+            <element signature="e#3211#3212#0" expanded="false" />
+            <element signature="e#3257#3258#0" expanded="false" />
+            <element signature="e#3300#3301#0" expanded="false" />
+            <element signature="e#3345#3346#0" expanded="false" />
+            <element signature="e#3387#3388#0" expanded="false" />
+            <element signature="e#4047#4048#0" expanded="false" />
+            <element signature="e#4080#4081#0" expanded="false" />
+            <element signature="e#4135#4136#0" expanded="false" />
+            <element signature="e#4180#4181#0" expanded="false" />
+            <element signature="e#4253#4254#0" expanded="false" />
+            <element signature="e#4298#4299#0" expanded="false" />
+            <element signature="e#4355#4356#0" expanded="false" />
+            <element signature="e#4420#4421#0" expanded="false" />
+            <element signature="e#4461#4462#0" expanded="false" />
+            <element signature="e#4500#4501#0" expanded="false" />
+            <element signature="e#4552#4553#0" expanded="false" />
+            <element signature="e#4618#4619#0" expanded="false" />
+            <element signature="e#4671#4672#0" expanded="false" />
+            <element signature="e#4714#4715#0" expanded="false" />
+            <element signature="e#5689#5690#0" expanded="false" />
+            <element signature="e#5726#5727#0" expanded="false" />
+            <element signature="e#5802#5803#0" expanded="false" />
+            <element signature="e#5848#5849#0" expanded="false" />
+            <element signature="e#5924#5925#0" expanded="false" />
+            <element signature="e#5970#5971#0" expanded="false" />
+            <element signature="e#6046#6047#0" expanded="false" />
+            <element signature="e#6092#6093#0" expanded="false" />
+            <element signature="e#6168#6169#0" expanded="false" />
+            <element signature="e#6214#6215#0" expanded="false" />
+            <element signature="e#6508#6509#0" expanded="false" />
+            <element signature="e#6540#6541#0" expanded="false" />
+            <element signature="e#15576#15577#0" expanded="false" />
+            <element signature="e#15631#15632#0" expanded="false" />
+            <element signature="e#18612#18625#0" expanded="false" />
+            <element signature="e#24799#24800#0" expanded="false" />
+            <element signature="e#24821#24822#0" expanded="false" />
+            <element signature="e#28895#28896#0" expanded="false" />
+            <element signature="e#28935#28936#0" expanded="false" />
+            <element signature="e#35922#35923#0" expanded="false" />
+            <element signature="e#35962#35963#0" expanded="false" />
+            <element signature="e#38773#38774#0" expanded="false" />
+            <element signature="e#38832#38833#0" expanded="false" />
+            <element signature="e#48949#48950#0" expanded="false" />
+            <element signature="e#48988#48989#0" expanded="false" />
+            <element signature="e#50782#50783#0" expanded="false" />
+            <element signature="e#50834#50835#0" expanded="false" />
+            <element signature="e#51048#51049#0" expanded="false" />
+            <element signature="e#51100#51101#0" expanded="false" />
+            <element signature="e#51299#51300#0" expanded="false" />
+            <element signature="e#51364#51365#0" expanded="false" />
+            <element signature="e#51530#51531#0" expanded="false" />
+            <element signature="e#51595#51596#0" expanded="false" />
+            <element signature="e#51777#51778#0" expanded="false" />
+            <element signature="e#51809#51810#0" expanded="false" />
+            <element signature="e#52018#52019#0" expanded="false" />
+            <element signature="e#52097#52098#0" expanded="false" />
+            <element signature="e#53795#53796#0" expanded="false" />
+            <element signature="e#53853#53854#0" expanded="false" />
+            <element signature="e#58759#58760#0" expanded="false" />
+            <element signature="e#58781#58782#0" expanded="false" />
+            <element signature="e#62482#62483#0" expanded="false" />
+            <element signature="e#62512#62513#0" expanded="false" />
+            <element signature="e#62566#62567#0" expanded="false" />
+            <element signature="e#62596#62597#0" expanded="false" />
+            <element signature="e#62651#62652#0" expanded="false" />
+            <element signature="e#62681#62682#0" expanded="false" />
+            <element signature="e#62737#62738#0" expanded="false" />
+            <element signature="e#62820#62821#0" expanded="false" />
+            <element signature="e#63240#63241#0" expanded="false" />
+            <element signature="e#63273#63274#0" expanded="false" />
+            <element signature="e#63877#63878#0" expanded="false" />
+            <element signature="e#63915#63916#0" expanded="false" />
+            <element signature="e#66025#66026#0" expanded="false" />
+            <element signature="e#66061#66062#0" expanded="false" />
+            <element signature="e#66207#66208#0" expanded="false" />
+            <element signature="e#66237#66238#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/edu/stanford/nlp/stanford-corenlp/3.7.0/stanford-corenlp-3.7.0-sources.jar!/edu/stanford/nlp/semgraph/SemanticGraphCoreAnnotations.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
+        <state relative-caret-position="840">
           <caret line="61" column="17" lean-forward="false" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
           <folding>
             <element signature="e#956#957#0" expanded="false" />
@@ -1116,74 +1376,110 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/akura/corenlp/models/FeatureDto.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/akura/corenlp/models/RelationshipDto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="270">
+          <caret line="26" column="33" lean-forward="false" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
           <folding>
-            <element signature="e#202#203#0" expanded="true" />
-            <element signature="e#236#237#0" expanded="true" />
-            <element signature="e#290#291#0" expanded="true" />
-            <element signature="e#336#337#0" expanded="true" />
-            <element signature="e#379#380#0" expanded="true" />
-            <element signature="e#418#419#0" expanded="true" />
-            <element signature="e#482#483#0" expanded="true" />
-            <element signature="e#538#539#0" expanded="true" />
+            <element signature="e#534#535#0" expanded="true" />
+            <element signature="e#582#583#0" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/akura/corenlp/models/OntologyDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="e#299#300#0" expanded="true" />
+            <element signature="e#335#336#0" expanded="true" />
+            <element signature="e#400#401#0" expanded="true" />
+            <element signature="e#450#451#0" expanded="true" />
+            <element signature="e#494#495#0" expanded="true" />
+            <element signature="e#525#526#0" expanded="true" />
+            <element signature="e#582#583#0" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
+            <element signature="e#680#681#0" expanded="true" />
+            <element signature="e#719#720#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/akura/corenlp/models/MainDto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="10" column="35" lean-forward="false" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/akura/corenlp/models/FeatureDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/akura/corenlp/models/EntityDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="31" />
           <folding>
-            <element signature="e#307#308#0" expanded="true" />
-            <element signature="e#340#341#0" expanded="true" />
-            <element signature="e#392#393#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-            <element signature="e#481#482#0" expanded="true" />
-            <element signature="e#512#513#0" expanded="true" />
-            <element signature="e#570#571#0" expanded="true" />
-            <element signature="e#610#611#0" expanded="true" />
-            <element signature="e#664#665#0" expanded="true" />
-            <element signature="e#699#700#0" expanded="true" />
-            <element signature="e#770#771#0" expanded="true" />
-            <element signature="e#818#819#0" expanded="true" />
-            <element signature="e#860#861#0" expanded="true" />
-            <element signature="e#898#899#0" expanded="true" />
-            <element signature="e#960#961#0" expanded="true" />
-            <element signature="e#1014#1015#0" expanded="true" />
+            <element signature="e#258#259#0" expanded="true" />
+            <element signature="e#291#292#0" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
+            <element signature="e#387#388#0" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#455#456#0" expanded="true" />
+            <element signature="e#505#506#0" expanded="true" />
+            <element signature="e#547#548#0" expanded="true" />
+            <element signature="e#595#596#0" expanded="true" />
+            <element signature="e#626#627#0" expanded="true" />
+            <element signature="e#687#688#0" expanded="true" />
+            <element signature="e#727#728#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/akura/corenlp/models/RelationshipDto.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/akura/corenlp/models/ReviewInfoDto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        <state relative-caret-position="458">
+          <caret line="46" column="31" lean-forward="false" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
           <folding>
-            <element signature="e#193#194#0" expanded="true" />
-            <element signature="e#220#221#0" expanded="true" />
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#292#293#0" expanded="true" />
-            <element signature="e#334#335#0" expanded="true" />
-            <element signature="e#372#373#0" expanded="true" />
-            <element signature="e#434#435#0" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#340#341#0" expanded="true" />
+            <element signature="e#388#389#0" expanded="true" />
+            <element signature="e#428#429#0" expanded="true" />
+            <element signature="e#460#461#0" expanded="true" />
             <element signature="e#488#489#0" expanded="true" />
+            <element signature="e#530#531#0" expanded="true" />
+            <element signature="e#564#565#0" expanded="true" />
+            <element signature="e#598#599#0" expanded="true" />
+            <element signature="e#628#629#0" expanded="true" />
+            <element signature="e#674#675#0" expanded="true" />
+            <element signature="e#712#713#0" expanded="true" />
+            <element signature="e#760#761#0" expanded="true" />
+            <element signature="e#791#792#0" expanded="true" />
+            <element signature="e#852#853#0" expanded="true" />
+            <element signature="e#892#893#0" expanded="true" />
+            <element signature="e#954#955#0" expanded="true" />
+            <element signature="e#998#999#0" expanded="true" />
+            <element signature="e#1034#1035#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/akura/corenlp/TokenExtraction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="195" column="42" lean-forward="false" selection-start-line="195" selection-start-column="31" selection-end-line="195" selection-end-column="42" />
+        <state relative-caret-position="458">
+          <caret line="325" column="49" lean-forward="false" selection-start-line="325" selection-start-column="49" selection-end-line="325" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#storeExtractedData#0;class#TokenExtraction#0" expanded="false" />
-            <element signature="e#8149#8172#0" expanded="false" />
-            <element signature="e#9654#9732#0" expanded="false" />
+            <element signature="e#9558#9636#0" expanded="false" />
           </folding>
         </state>
       </provider>

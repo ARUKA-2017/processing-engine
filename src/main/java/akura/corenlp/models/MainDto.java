@@ -6,6 +6,9 @@ import java.util.List;
  * Created by sameera on 7/9/17.
  */
 public class MainDto{
+
+
+
     private String mainEntity;
     private List<RelationshipDto> relationship;
     private String secondaryEntity;

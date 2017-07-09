@@ -5,7 +5,8 @@ package akura.corenlp.models;
  */
 public class RelationshipDto {
     private String type;
-    private String secondaryEntity;
+    private String entity_1;
+    private String entity_2;
 
     public String getType() {
         return type;
@@ -15,11 +16,19 @@ public class RelationshipDto {
         this.type = type;
     }
 
-    public String getSecondaryEntity() {
-        return secondaryEntity;
+    public String getEntity_1() {
+        return entity_1;
     }
 
-    public void setSecondaryEntity(String secondaryEntity) {
-        this.secondaryEntity = secondaryEntity;
+    public void setEntity_1(String entity_1) {
+        this.entity_1 = entity_1;
+    }
+
+    public String getEntity_2() {
+        return entity_2;
+    }
+
+    public void setEntity_2(String entity_2) {
+        this.entity_2 = entity_2;
     }
 }
