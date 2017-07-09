@@ -1,10 +1,6 @@
 package akura.corenlp;
 
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Properties;
+import java.util.*;
 
 import akura.corenlp.models.*;
 import com.google.gson.Gson;
@@ -18,6 +14,8 @@ import edu.stanford.nlp.ling.CoreLabel;
 import edu.stanford.nlp.pipeline.Annotation;
 import edu.stanford.nlp.pipeline.StanfordCoreNLP;
 import edu.stanford.nlp.util.CoreMap;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 public class TokenExtraction {
 	private final static String API_KEY = "5bfb19a823dfc6ff4b7f5cbf232a1086f64e3f3d429fe429e4919b29";
@@ -116,15 +114,6 @@ public class TokenExtraction {
 	    	
 	    	sentenceMap.put(sentence.toString(), wordMap);
 	    }
-//	    System.out.println(sentenceMap.toString());
-//	    for(Map.Entry<String, Map<String, List<String>>> entry: sentenceMap.entrySet()){
-//	    	System.out.println("Sentence : "+entry.getKey());
-//
-//	    	for(Map.Entry<String, List<String>> inner : entry.getValue().entrySet()){
-//	    		System.out.println(inner.getKey()+" => "+inner.getValue());
-//	    	}
-//	    	System.out.println();
-//	    }
 	    return sentenceMap;
 	}
 	
@@ -298,53 +287,82 @@ public class TokenExtraction {
 		}
 		return null;
 	}
+
 	public static void generateJson(){
+//		OntologyDto ontologyDto = new OntologyDto();
+//		ReviewInfoDto reviewInfoDto = new ReviewInfoDto();
+//		List<EntityDto> entityDtoList = new LinkedList<>();
+//		EntityDto entityDto = new EntityDto();
+//		List<RelationshipDto> relationshipDtoList = new LinkedList<>();
+//		RelationshipDto relationshipDto = new RelationshipDto();
+//
+//		reviewInfoDto.setUsername("Athur C Clerk");
+//		reviewInfoDto.setEmail("athurc@gmail.com");
+//		reviewInfoDto.setComment("Samsung Galaxy S8 is better than IPhone7.The camera of Samsung Galaxy S8 is perfect than the IPhone7.");
+//		reviewInfoDto.setProperty(null);
+//		reviewInfoDto.setRating(0.4);
+//
+//		entityDto.setEntityName("Samsung Galaxy S8");
+//		entityDto.setBaseScore(0.5);
+//		entityDtoList.add(entityDto);
+//
+//		entityDto.setEntityName("");
+
+	}
+
+	public String generateOntologyJson(ArrayList<JSONObject> jsonObjects) throws JSONException {
 		OntologyDto ontologyDto = new OntologyDto();
+
 		ReviewInfoDto reviewInfoDto = new ReviewInfoDto();
+
 		List<EntityDto> entityDtoList = new LinkedList<>();
 		EntityDto entityDto = new EntityDto();
+
 		List<RelationshipDto> relationshipDtoList = new LinkedList<>();
 		RelationshipDto relationshipDto = new RelationshipDto();
 
-		reviewInfoDto.setUsername("Athur C Clerk");
-		reviewInfoDto.setEmail("athurc@gmail.com");
-		reviewInfoDto.setComment("Samsung Galaxy S8 is better than IPhone7.The camera of Samsung Galaxy S8 is perfect than the IPhone7.");
-		reviewInfoDto.setProperty(null);
-		reviewInfoDto.setRating(0.4);
+		Map<String, String> options;
+		for (JSONObject jsonObject: jsonObjects){
+			options = new HashMap<>();
+			System.out.println("SAMEERA");
 
-		entityDto.setEntityName("Samsung Galaxy S8");
-		entityDto.setBaseScore(0.5);
-		entityDtoList.add(entityDto);
+			reviewInfoDto.setUsername("Athur C Clerk");
+			reviewInfoDto.setEmail("athurc@gmail.com");
+			reviewInfoDto.setComment(jsonObject.get("reviewContent").toString());
+			reviewInfoDto.setRating(Double.parseDouble(jsonObject.get("rating").toString()));
 
-		entityDto.setEntityName("");
+			options.put("date", jsonObject.get("date").toString());
+			options.put("reviewId", jsonObject.get("review_id").toString());
+			options.put("url", jsonObject.get("url").toString());
+			reviewInfoDto.setProperty(options);
 
+			double commentSentiment = SentimentAnalyzer.findSentiment("good");
+			System.out.println("Score : "+reviewInfoDto.getComment());
+
+			ontologyDto.setReviewInfoDto(reviewInfoDto);
+			System.out.println(new Gson().toJson(ontologyDto));
+		}
+//
+//
+//
+//		reviewInfoDto.setUsername("Athur C Clerk");
+//		reviewInfoDto.setEmail("athurc@gmail.com");
+//		reviewInfoDto.setComment("Samsung Galaxy S8 is better than IPhone7.The camera of Samsung Galaxy S8 is perfect than the IPhone7.");
+//		reviewInfoDto.setProperty(null);
+//		reviewInfoDto.setRating(0.4);
+//
+//		entityDto.setEntityName("Samsung Galaxy S8");
+//		entityDto.setBaseScore(0.5);
+//		entityDtoList.add(entityDto);
+//
+//		entityDto.setEntityName("");
+		return "";
 	}
-	
+
 	public static void main(String[] args){
 //		extractTokens("Samsung Galaxy S8 is a good phone and it is better than IPhone7. The camera of Samsung Galaxy S8 is perfect than the IPhone7.");
 //		generateSingleSentenceScore("Samsung Galaxy S8 is better than IPhone7.The camera of Samsung Galaxy S8 is perfect than the IPhone7.");
 		generateSingleSentenceScore("Samsung Galaxy S8 is better than IPhone7. It has a very good motherboard also.");
 	}
-	
-	
-//	public static void textRazorOperation(String text){
-//	TextRazor textRazor = new TextRazor(API_KEY);
-//	textRazor.addExtractor("words");
-//	textRazor.addExtractor("entities");
-////	String temp = "The new iPhone 7 is unlocked and will work with all major telecom networks worldwide. Buy from Acebeach. The phones are in stock right now for immediate delivery.";
-//	String temp = text;
-//	try {
-//		AnalyzedText response = textRazor.analyze(temp);
-//		System.out.println(response.getResponse().getNounPhrases());
-//		for(Entity entity : response.getResponse().getEntities()){
-//			System.out.println(entity.getEntityId());
-//		}
-//	} catch (NetworkException e) {
-//		// TODO Auto-generated catch block
-//		System.out.println(e.getLocalizedMessage());
-//	} catch (AnalysisException e) {
-//		// TODO Auto-generated catch block
-//		System.out.println(e.getLocalizedMessage());
-//	}
-//}
+
 }
