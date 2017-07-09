@@ -316,14 +316,7 @@ public class TokenExtraction {
 		entityDto.setBaseScore(0.5);
 		entityDtoList.add(entityDto);
 
-		entityDto.setEntityName("IPhone 7");
-		entityDto.setBaseScore(0.4);
-		entityDtoList.add(entityDto);
-
-		relationshipDto.setType("Main Entity");
-		relationshipDto.setEntity_1("IPhone 7");
-		relationshipDto.setEntity_2("Camera");
-		relationshipDtoList.add(relationshipDto);
+		entityDto.setEntityName("");
 
 	}
 	
