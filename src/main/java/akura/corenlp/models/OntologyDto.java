@@ -6,16 +6,16 @@ import java.util.List;
  * Created by sameera on 7/9/17.
  */
 public class OntologyDto {
-    private ReviewInfoDto reviewInfoDto;
+    private ReviewInfoDto reviewInfo;
     private List<EntityDto> entities;
-    private List<RelationshipDto> relationshipDtos;
+    private List<RelationshipDto> relationship;
 
-    public ReviewInfoDto getReviewInfoDto() {
-        return reviewInfoDto;
+    public ReviewInfoDto getReviewInfo() {
+        return reviewInfo;
     }
 
-    public void setReviewInfoDto(ReviewInfoDto reviewInfoDto) {
-        this.reviewInfoDto = reviewInfoDto;
+    public void setReviewInfo(ReviewInfoDto reviewInfo) {
+        this.reviewInfo = reviewInfo;
     }
 
     public List<EntityDto> getEntities() {
@@ -26,11 +26,11 @@ public class OntologyDto {
         this.entities = entities;
     }
 
-    public List<RelationshipDto> getRelationshipDtos() {
-        return relationshipDtos;
+    public List<RelationshipDto> getRelationship() {
+        return relationship;
     }
 
-    public void setRelationshipDtos(List<RelationshipDto> relationshipDtos) {
-        this.relationshipDtos = relationshipDtos;
+    public void setRelationship(List<RelationshipDto> relationship) {
+        this.relationship = relationship;
     }
 }

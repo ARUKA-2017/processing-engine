@@ -24,16 +24,15 @@ public class SentimentAnalyzer {
     }
 
     public static double findSentiment(String tweet) {
-
-        int mainSentiment = 0;
+        double mainSentiment = 0;
         if (tweet != null && tweet.length() > 0) {
-            int longest = 0;
+            double longest = 0;
             Annotation annotation = pipeline.process(tweet);
             for (CoreMap sentence : annotation
                     .get(CoreAnnotations.SentencesAnnotation.class)) {
                 Tree tree = sentence
                         .get(SentimentAnnotatedTree.class);
-                int sentiment = RNNCoreAnnotations.getPredictedClass(tree);
+                double sentiment = RNNCoreAnnotations.getPredictedClass(tree);
                 SimpleMatrix sentiment_new = RNNCoreAnnotations.getPredictions(tree);
                 String partText = sentence.toString();
                 if (partText.length() > longest) {
