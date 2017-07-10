@@ -16,6 +16,7 @@ public class Execute {
         // Galaxy S7 Edge - https://www.amazon.com/Samsung-Factory-Unlocked-International-Version/dp/B01CJU9BBM
         // iPhone 6S - https://www.amazon.com/Apple-Unlocked-Smartphone-Certified-Refurbished/dp/B00YD545CC/
         // iPhone 5 - https://www.amazon.com/product-reviews/B00WZR5URO
+        // LG G6 - https://www.amazon.com/LG-Electronics-G6-Unlocked-Platinum/dp/B06XYQGPKT/
     }
 
 }

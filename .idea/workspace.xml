@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b15ee8a7-616c-46d1-900c-9610ab490c95" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/akura/crawler/RandomUserAgent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/extraction-engine.iml" afterPath="$PROJECT_DIR$/extraction-engine.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/akura/crawler/Crawler.java" afterPath="$PROJECT_DIR$/src/main/java/akura/crawler/Crawler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/akura/crawler/Execute.java" afterPath="$PROJECT_DIR$/src/main/java/akura/crawler/Execute.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -92,7 +87,7 @@
       <file leaf-file-name="Crawler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/akura/crawler/Crawler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
+            <state relative-caret-position="-259">
               <caret line="68" column="20" lean-forward="true" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -105,7 +100,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RandomUserAgent.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RandomUserAgent.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/akura/crawler/RandomUserAgent.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="267">
@@ -151,11 +146,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Execute.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Execute.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/akura/crawler/Execute.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+            <state relative-caret-position="210">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="18" selection-end-column="92" />
               <folding />
             </state>
           </provider>
@@ -881,7 +876,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65786000" />
+    <option name="totallyTimeSpent" value="66579000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1536,28 +1531,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/akura/crawler/Crawler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="68" column="20" lean-forward="true" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#541#549#0" expanded="true" />
-            <element signature="e#624#636#0" expanded="true" />
-            <element signature="e#1778#1787#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/akura/crawler/Execute.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="235">
@@ -1575,6 +1548,28 @@
             <element signature="e#254#272#0" expanded="true" />
             <element signature="e#336#352#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/akura/crawler/Crawler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-259">
+          <caret line="68" column="20" lean-forward="true" selection-start-line="68" selection-start-column="20" selection-end-line="68" selection-end-column="20" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#541#549#0" expanded="true" />
+            <element signature="e#624#636#0" expanded="true" />
+            <element signature="e#1778#1787#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/akura/crawler/Execute.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="18" selection-end-column="92" />
+          <folding />
         </state>
       </provider>
     </entry>
