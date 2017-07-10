@@ -6,11 +6,20 @@ import java.util.Map;
  * Created by sameera on 7/9/17.
  */
 public class ReviewInfoDto {
+    private String reviewId;
     private String username;
     private String email;
     private String comment;
     private Map<String, String> property;
     private double rating;
+
+    public String getReviewId() {
+        return reviewId;
+    }
+
+    public void setReviewId(String reviewId) {
+        this.reviewId = reviewId;
+    }
 
     public String getUsername() {
         return username;

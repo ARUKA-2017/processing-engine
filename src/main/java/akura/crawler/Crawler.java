@@ -10,6 +10,7 @@ import java.util.Collections;
 import java.util.Date;
 import java.util.Locale;
 
+import akura.corenlp.SentimentAnalyzer;
 import akura.corenlp.TokenExtraction;
 import org.json.JSONObject;
 import org.jsoup.Jsoup;
@@ -69,15 +70,13 @@ public class Crawler {
                     for (Review review: reviewList){
                         finalReviewList.add(review.getJSONObject());
                     }
-                    System.out.println(finalReviewList);
-                    TokenExtraction tokenExtraction = new TokenExtraction();
-                    tokenExtraction.generateOntologyJson(finalReviewList);
                     break;
                 }
                 p++;
             }
+            SentimentAnalyzer.init();
+            TokenExtraction.generateSingleSentenceScore(finalReviewList);
         } catch (Exception e) {
-        	e.printStackTrace();
             try {
                 Thread.sleep((int)(1000.0 + Math.random() * 10000));
                 fetchReview(itemID,noOfPages);
