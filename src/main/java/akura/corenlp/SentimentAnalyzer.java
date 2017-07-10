@@ -24,7 +24,7 @@ public class SentimentAnalyzer {
     }
 
     public static double findSentiment(String tweet) {
-
+        init();
         int mainSentiment = 0;
         if (tweet != null && tweet.length() > 0) {
             int longest = 0;
