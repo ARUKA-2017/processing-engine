@@ -74,12 +74,6 @@
         <artifactId>logback-core</artifactId>
         <version>1.1.8</version>
     </dependency>
-    
-    <dependency>
-	    <groupId>com.google.guava</groupId>
-	    <artifactId>guava</artifactId>
-	    <version>r05</version>
-	</dependency>
 	<!-- apache jena dependencies -->
     <dependency>
       <groupId>org.apache.jena</groupId>
@@ -97,23 +91,15 @@
 	  <artifactId>textrazor</artifactId>
 	  <version>1.0.9</version>
 	</dependency>
-      <!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
       <dependency>
-          <groupId>com.googlecode.json-simple</groupId>
-          <artifactId>json-simple</artifactId>
-          <version>1.1</version>
+          <groupId>com.google.cloud</groupId>
+          <artifactId>google-cloud-language</artifactId>
+          <version>0.22.0-beta</version>
       </dependency>
-      <!-- https://mvnrepository.com/artifact/com.google.protobuf/protobuf-java -->
       <dependency>
-          <groupId>com.google.protobuf</groupId>
-          <artifactId>protobuf-java</artifactId>
-          <version>3.4.0</version>
-      </dependency>
-      <!-- https://mvnrepository.com/artifact/com.google.auth/google-auth-library-oauth2-http -->
-      <dependency>
-          <groupId>com.google.auth</groupId>
-          <artifactId>google-auth-library-oauth2-http</artifactId>
-          <version>0.1.0</version>
+          <groupId>com.google.guava</groupId>
+          <artifactId>guava</artifactId>
+          <version>20.0</version>
       </dependency>
       <dependency>
           <groupId>com.google.apis</groupId>
@@ -121,11 +107,23 @@
           <version>v1-rev134-1.22.0</version>
       </dependency>
 
+      <!-- FIXME: remove after client fixes dependency issue -->
       <dependency>
-          <groupId>com.google.cloud</groupId>
-          <artifactId>google-cloud</artifactId>
-          <version>0.22.0-alpha</version>
+          <groupId>com.google.auth</groupId>
+          <artifactId>google-auth-library-oauth2-http</artifactId>
+          <version>0.7.1</version>
       </dependency>
 
+      <dependency>
+          <groupId>com.googlecode.json-simple</groupId>
+          <artifactId>json-simple</artifactId>
+          <version>1.1</version>
+      </dependency>
+
+      <dependency>
+          <groupId>com.google.protobuf</groupId>
+          <artifactId>protobuf-java</artifactId>
+          <version>3.4.0</version>
+      </dependency>
   </dependencies>
 </project>
