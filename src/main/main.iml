@@ -1,0 +1,17 @@
+gi<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/java" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: com.google.api-client:google-api-client:1.22.0" level="project" />
+    <orderEntry type="library" name="Maven: com.google.cloud:google-cloud-language:0.22.0-beta" level="project" />
+    <orderEntry type="library" name="Maven: com.google.api.grpc:proto-google-cloud-language-v1:0.1.15" level="project" />
+    <orderEntry type="library" name="Maven: com.google.api.grpc:proto-google-cloud-language-v1beta2:0.1.15" level="project" />
+    <orderEntry type="library" name="Maven: com.google.protobuf:protobuf-java:3.4.0" level="project" />
+    <orderEntry type="library" name="Maven: com.google.api:gax:1.5.0" level="project" />
+  </component>
+</module>
