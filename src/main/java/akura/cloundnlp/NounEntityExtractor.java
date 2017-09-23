@@ -28,11 +28,11 @@ public class NounEntityExtractor {
         String requestString = "";
         int continousNounCount = 0;
 
+        List<Float> salience = new ArrayList<Float>();
+        List<Float> sentimentScore = new ArrayList<Float>();
+
         for(Map.Entry<Integer, List<String>> entityRow: data.entrySet()) {
             String posTag = entityRow.getValue().get(1);
-            List<Float> salience = new ArrayList<Float>();
-            List<Float> sentimentScore = new ArrayList<Float>();
-
 
             if(posTag.equalsIgnoreCase("NOUN")) {
 
