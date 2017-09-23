@@ -4,20 +4,22 @@ package akura.cloundnlp;
 import com.google.api.client.googleapis.auth.oauth2.GoogleCredential;
 import com.google.cloud.language.v1beta2.*;
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
-import org.apache.jena.riot.Lang;
-import org.apache.log4j.Level;
-import org.apache.log4j.Logger;
+import org.apache.jena.atlas.json.io.parser.JSONP;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
+import java.io.*;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -34,12 +36,18 @@ public class Extractor {
     private final static String SEPARATOR = "";
     private static LanguageServiceClient languageServiceClient;
 
+    private static List<String> DOMAIN_TECHNOLOGY = new LinkedList<>();
+    private static List<String> DOMAIN_COMPUTER = new LinkedList<>();
+    private static List<String> DOMAIN_MOBILE = new LinkedList<>();
+    private static List<String> DOMAIN_MEASUREMENT = new LinkedList<>();
+
+
     public static void main(String... args) throws Exception {
         languageServiceClient = provideLanguageServiceClient();
         JSONParser jsonParser = new JSONParser();
         JSONArray array = (JSONArray) jsonParser.parse(new FileReader("/Users/sameera/Documents/SLIIT/4th Year/2nd semester/cdap/processing-engine/src/main/java/akura/cloundnlp/SampleReviews.json"));
         List<OntologyMapDto> ontologyMapDtos = new LinkedList<>();
-        for (Object object: array){
+        for (Object object : array) {
             JSONObject jsonObject = (JSONObject) object;
             String sampleText = jsonObject.get("reviewContent").toString();
 //            domainTagMap = identifyDomains(sampleText, languageServiceClient);//not using
@@ -55,8 +63,21 @@ public class Extractor {
         }
 
         Gson gson = new Gson();
-        System.out.println(gson.toJson(ontologyMapDtos));
+//        System.out.println(gson.toJson(ontologyMapDtos));
+
+        try (Writer writer = new FileWriter("Output.json")) {
+            gson = new GsonBuilder().setPrettyPrinting().create();
+            gson.toJson(ontologyMapDtos, writer);
+        }
+
+        Map<String, String> entityTags = NounEntityExtractor.getEntityTagsAccordingToNounCombinationsFromMSApi(ontologyMapDtos.get(0).getData());
+
+        for (Map.Entry<String, String> entry : entityTags.entrySet()) {
+            System.out.println(entry.getKey() + " : " + entry.getValue());
+        }
     }
+
+
 
     //identify entity priority list
     public static void prioritizeEntities(Map<Integer, List<String>> syntaxTagMap){
