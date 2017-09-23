@@ -47,20 +47,28 @@ public class Extractor {
             JSONObject jsonObject = (JSONObject) object;
             String sampleText = jsonObject.get("reviewContent").toString();
             domainTagMap = identifyDomains(sampleText);
-            System.out.println();
-            System.out.println(sampleText);
-            System.out.println(domainTagMap);
-            System.out.println();
+//            System.out.println();
+//            System.out.println(sampleText);
+//            System.out.println(domainTagMap);
+//            System.out.println();
             ontologyMapDtos.add(constructJson(jsonObject, identifyReviewCategory(sampleText), identifySubDomains(analyseSyntax(sampleText))));
         }
 
         Gson gson = new Gson();
-        System.out.println(gson.toJson(ontologyMapDtos));
+//        System.out.println(gson.toJson(ontologyMapDtos));
 
         try (Writer writer = new FileWriter("Output.json")) {
             gson = new GsonBuilder().setPrettyPrinting().create();
             gson.toJson(ontologyMapDtos, writer);
         }
+
+        Map<String, String> entityTags = NounEntityExtractor.getEntityTagsAccordingToNounCombinationsFromMSApi(ontologyMapDtos.get(0).getData());
+
+        for(Map.Entry<String, String> entry: entityTags.entrySet()) {
+            System.out.println(entry.getKey() +" : "+ entry.getValue());
+        }
+
+
 
 //        identifySubDomainsByMicrosoftApi("battery life");
 //        System.out.println(identifySubDomainsByMicrosoftApi("US997","organization"));
