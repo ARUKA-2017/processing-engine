@@ -17,8 +17,7 @@
 .idea/**/uiDesigner.xml
 
 # Gradle:
-.idea/**/gradle.xml
-.idea/**/libraries
+.idea
 
 # CMake
 cmake-build-debug/
@@ -49,4 +48,4 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
-.idea/
+extraction-engine.iml
