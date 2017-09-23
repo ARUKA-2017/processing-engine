@@ -56,6 +56,8 @@ public class NounEntityExtractor {
                 }
                 continousNounCount = 0;
                 requestString = "";
+                salience = new ArrayList<Float>();
+                sentimentScore = new ArrayList<Float>();
             }
         }
 
