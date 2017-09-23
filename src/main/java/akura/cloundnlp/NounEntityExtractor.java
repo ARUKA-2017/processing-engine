@@ -17,15 +17,12 @@ public class NounEntityExtractor {
 
         try {
             array = (JSONArray) jsonParser.parse(new FileReader("./src/main/java/akura/cloundnlp/SampleReviews.json"));
-
-
         } catch (Exception e) {
-
 
         }
     }
 
-    public static Map<String, String>  getEntityTagsAccordingToNounCombinationsFromMSApi(Map<Integer, List<String>> data) {
+    public static Map<String, String> getEntityTagsAccordingToNounCombinationsFromMSApi(Map<Integer, List<String>> data) {
         Map<String, String> entityTags = new LinkedHashMap<>();
         String requestString = "";
         int continousNounCount = 0;
@@ -34,18 +31,17 @@ public class NounEntityExtractor {
             String posTag = entityRow.getValue().get(1);
 
             if(posTag.equalsIgnoreCase("NOUN")) {
-                continousNounCount += 1;
 
-                requestString += (continousNounCount == 0) ? entityRow.getValue().get(0) : " " + entityRow.getValue().get(0);
+                requestString += (continousNounCount++ == 0) ? entityRow.getValue().get(0) : " " + entityRow.getValue().get(0);
 
                 if(data.get(data.size()-1) == entityRow && continousNounCount > 1) {
-                    String tag = Extractor.identifySubDomainsByMicrosoftApi(requestString, "Not Found");
+                    String tag = Extractor.understandShortWordConcept(requestString, "Not Found");
                     entityTags.put(requestString, tag);
                 }
 
             } else {
                 if(continousNounCount > 1) {
-                    String tag = Extractor.identifySubDomainsByMicrosoftApi(requestString, "Not Found");
+                    String tag = Extractor.understandShortWordConcept(requestString, "Not Found");
                     entityTags.put(requestString, tag);
                 }
                 continousNounCount = 0;

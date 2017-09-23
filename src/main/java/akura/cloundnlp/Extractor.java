@@ -207,13 +207,13 @@ public class Extractor {
         Document doc = Document.newBuilder().setContent(text).setType(Document.Type.PLAIN_TEXT).build();
         Map<String, List<String>> entitiesFound = analyseEntity(languageServiceClient, doc);//entities
 
-        for(Map.Entry<String, List<String>> entityRow: entitiesFound.entrySet()){
-            String entity = entityRow.getValue().get(0);
-
-            if (text.contains(entity)){
-                text = text.replaceAll(entity, entity.replace(" ", SEPARATOR));
-            }
-        }
+//        for(Map.Entry<String, List<String>> entityRow: entitiesFound.entrySet()){
+//            String entity = entityRow.getValue().get(0);
+//
+//            if (text.contains(entity)){
+//                text = text.replaceAll(entity, entity.replace(" ", SEPARATOR));
+//            }
+//        }
         //creating doc from the newly created text string
         doc = Document.newBuilder().setContent(text).setType(Document.Type.PLAIN_TEXT).build();
         AnalyzeSyntaxRequest request = AnalyzeSyntaxRequest.newBuilder().setDocument(doc).setEncodingType(EncodingType.UTF16).build();
@@ -222,6 +222,7 @@ public class Extractor {
 
         //text, postag, lemma
         Map<Integer, List<String>> syntaxTagMap = new LinkedHashMap<>();
+        System.out.println(syntaxTagMap);
         int counter = 0;
 
         for(Token token : response.getTokensList())
@@ -254,6 +255,7 @@ public class Extractor {
             }
             syntaxTagMap.put(++counter, tokenTags);
         }
+        System.out.println(NounEntityExtractor.getEntityTagsAccordingToNounCombinationsFromMSApi(syntaxTagMap));
         return syntaxTagMap;
 
     }
