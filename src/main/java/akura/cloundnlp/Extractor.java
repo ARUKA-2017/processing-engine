@@ -5,6 +5,7 @@ import com.google.api.client.googleapis.auth.oauth2.GoogleCredential;
 import com.google.api.client.util.ObjectParser;
 import com.google.cloud.language.v1beta2.*;
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
@@ -17,9 +18,7 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.security.GeneralSecurityException;
@@ -57,6 +56,11 @@ public class Extractor {
 
         Gson gson = new Gson();
         System.out.println(gson.toJson(ontologyMapDtos));
+
+        try (Writer writer = new FileWriter("Output.json")) {
+            gson = new GsonBuilder().setPrettyPrinting().create();
+            gson.toJson(ontologyMapDtos, writer);
+        }
 
 //        identifySubDomainsByMicrosoftApi("battery life");
 //        System.out.println(identifySubDomainsByMicrosoftApi("US997","organization"));
