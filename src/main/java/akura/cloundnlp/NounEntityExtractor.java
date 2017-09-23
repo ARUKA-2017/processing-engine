@@ -43,7 +43,7 @@ public class NounEntityExtractor {
                 }
 
                 if(entityRow.getValue().size() > 4) {
-                    salience.add(Float.parseFloat(entityRow.getValue().get(5)));
+                    salience.add(Float.parseFloat(entityRow.getValue().get(4)));
                 }
 
                 if(data.get(data.size()-1) == entityRow && continousNounCount > 1) {
