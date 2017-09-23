@@ -2,7 +2,6 @@ package akura.cloundnlp;
 
 
 import com.google.api.client.googleapis.auth.oauth2.GoogleCredential;
-import com.google.api.client.util.ObjectParser;
 import com.google.cloud.language.v1beta2.*;
 import com.google.gson.Gson;
 import org.apache.http.HttpEntity;
@@ -11,7 +10,9 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.util.EntityUtils;
-import org.apache.jena.atlas.json.io.parser.JSONP;
+import org.apache.jena.riot.Lang;
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -20,8 +21,6 @@ import org.json.simple.parser.ParseException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.URI;
-import java.net.URISyntaxException;
 import java.security.GeneralSecurityException;
 import java.util.*;
 
@@ -33,34 +32,63 @@ public class Extractor {
     private static Map<String, List<String>> domainTagMap = new LinkedHashMap<>();
     private static Map<Integer, List<String>> syntaxTagMap = new LinkedHashMap<>();
     private final static String SEPARATOR = "";
-
-    private static List<String> DOMAIN_TECHNOLOGY = new LinkedList<>();
-    private static List<String> DOMAIN_COMPUTER = new LinkedList<>();
-    private static List<String> DOMAIN_MOBILE = new LinkedList<>();
-    private static List<String> DOMAIN_MEASUREMENT = new LinkedList<>();
-
+    private static LanguageServiceClient languageServiceClient;
 
     public static void main(String... args) throws Exception {
+        languageServiceClient = provideLanguageServiceClient();
         JSONParser jsonParser = new JSONParser();
         JSONArray array = (JSONArray) jsonParser.parse(new FileReader("/Users/sameera/Documents/SLIIT/4th Year/2nd semester/cdap/processing-engine/src/main/java/akura/cloundnlp/SampleReviews.json"));
         List<OntologyMapDto> ontologyMapDtos = new LinkedList<>();
         for (Object object: array){
             JSONObject jsonObject = (JSONObject) object;
             String sampleText = jsonObject.get("reviewContent").toString();
-            domainTagMap = identifyDomains(sampleText);
-            System.out.println();
-            System.out.println(sampleText);
-            System.out.println(domainTagMap);
-            System.out.println();
-            ontologyMapDtos.add(constructJson(jsonObject, identifyReviewCategory(sampleText), identifySubDomains(analyseSyntax(sampleText))));
+//            domainTagMap = identifyDomains(sampleText, languageServiceClient);//not using
+////            System.out.println();
+//            System.out.println(sampleText);
+//            System.out.println(domainTagMap);
+////            System.out.println();
+
+//            prioritizeEntities(identifySubDomains(analyseSyntax(sampleText, languageServiceClient)));
+            filterActualEntities(identifySubDomains(analyseSyntax(sampleText, languageServiceClient)));
+            //final json
+//            ontologyMapDtos.add(constructJson(jsonObject, identifyReviewCategory(sampleText, languageServiceClient), identifySubDomains(analyseSyntax(sampleText, languageServiceClient))));
         }
 
         Gson gson = new Gson();
         System.out.println(gson.toJson(ontologyMapDtos));
-
-//        identifySubDomainsByMicrosoftApi("battery life");
-//        System.out.println(identifySubDomainsByMicrosoftApi("US997","organization"));
     }
+
+    //identify entity priority list
+    public static void prioritizeEntities(Map<Integer, List<String>> syntaxTagMap){
+
+        TreeMap<String, Float> entityMap = new TreeMap<String, Float>();
+        float salienceScore = 0;
+        for (Map.Entry<Integer, List<String>> entityEntrySet: syntaxTagMap.entrySet()){
+            if (entityEntrySet.getValue().size()>4)
+                entityMap.put(entityEntrySet.getValue().toString(), Float.parseFloat(entityEntrySet.getValue().get(4)));
+        }
+        System.out.println(entriesSortedByValues(entityMap));
+    }
+    //filter and get the most needed entities by its domain
+    public static void filterActualEntities(Map<Integer, List<String>> syntaxTagMap){
+        Set<String> entitySet = new HashSet<>();
+        for (Map.Entry<Integer, List<String>> entityEntrySet: syntaxTagMap.entrySet()){
+            if (entityEntrySet.getValue().size()>5 && entityEntrySet.getValue().get(5).matches(".*CONSUMER.*")){
+                System.out.println(entityEntrySet.getValue().get(5).toString());
+                entitySet.add(entityEntrySet.getValue().get(0).toString());
+            }
+        }
+        System.out.println(entitySet);
+    }
+
+    public static void identifyFeatures(){
+
+    }
+
+    public static void identifyRelationships(){
+
+    }
+
     //construct json through dto
     public static OntologyMapDto constructJson(JSONObject review, Map<String, Float> categoryMap, Map<Integer, List<String>> syntaxMap){
         ontologyMapDto = new OntologyMapDto();
@@ -73,10 +101,9 @@ public class Extractor {
 
         return ontologyMapDto;
     }
+
     //to identify the review category of a given review
-    public static Map<String, Float> identifyReviewCategory(String text) throws IOException, GeneralSecurityException {
-        GoogleCredential credential = authorize();
-        LanguageServiceClient languageServiceClient = LanguageServiceClient.create();
+    public static Map<String, Float> identifyReviewCategory(String text, LanguageServiceClient languageServiceClient) throws IOException, GeneralSecurityException {
         Document doc = Document.newBuilder().setContent(text).setType(Document.Type.PLAIN_TEXT).build();
         ClassifyTextRequest request = ClassifyTextRequest.newBuilder()
                 .setDocument(doc)
@@ -85,12 +112,14 @@ public class Extractor {
         ClassifyTextResponse response = languageServiceClient.classifyText(request);
         Map<String, Float> categoryMap = new LinkedHashMap<>();//category, confidence
         for (ClassificationCategory category : response.getCategoriesList()) {
-            categoryMap.put(category.getName(), category.getConfidence());
+            categoryMap.put(category.getName().split("/")[1], category.getConfidence());
+            break;
         }
         return categoryMap;
     }
 
-    public static String identifySubDomainsByMicrosoftApi(String text, String organization) {
+    //ms concept graph connection
+    public static String understandShortWordConcept(String text, String organization) {
         String url = "http://concept.research.microsoft.com/api/Concept/ScoreByProb?instance=".concat(text).concat("&topK=1").replaceAll(" ","%20");
         HttpClient client = HttpClientBuilder.create().build();
         HttpGet getRequest = new HttpGet(url);
@@ -114,7 +143,6 @@ public class Extractor {
     }
 
     public static Map<Integer, List<String>> identifySubDomains(Map<Integer, List<String>> syntaxTagMap){
-        fillDomains();
         Map<Integer, List<String>> newTagMap = new LinkedHashMap<>();
         for (Map.Entry<Integer, List<String>> entrySet: syntaxTagMap.entrySet()){
             int key = entrySet.getKey();
@@ -122,60 +150,15 @@ public class Extractor {
             if (syntaxDetails.size() > 5 && (syntaxDetails.get(5).equals("OTHER") || syntaxDetails.get(5).contains("UNKNOWN"))){
                 //getting all unknown and other domain entities
                 //find sub domains from manually added domains like - technology, computer, mobile, education, currency
-                String unknownEntity = syntaxDetails.get(0);
-                String domain = syntaxDetails.get(5);
-                syntaxDetails.remove(5);
-                syntaxDetails.add(identifySubDomainsByMicrosoftApi(unknownEntity, domain));
+//                String unknownEntity = syntaxDetails.get(0);
+//                String domain = syntaxDetails.get(5);
+//                syntaxDetails.remove(5);
+//                syntaxDetails.add(understandShortWordConcept(unknownEntity, domain));
             }
             //map new tagmap with new sub domains
             newTagMap.put(key, syntaxDetails);
         }
         return newTagMap;
-    }
-
-    public static void identifyFeatures(){
-
-    }
-
-    public static void identifyRelationships(){
-
-    }
-
-    public static void fillDomains(){
-        //technology
-        DOMAIN_TECHNOLOGY.add("camera");
-        DOMAIN_TECHNOLOGY.add("lenses");
-        DOMAIN_TECHNOLOGY.add("bluetooth");
-        DOMAIN_TECHNOLOGY.add("headset");
-        DOMAIN_TECHNOLOGY.add("touchpad");
-        DOMAIN_TECHNOLOGY.add("front camera");
-        DOMAIN_TECHNOLOGY.add("rear camera");
-        DOMAIN_TECHNOLOGY.add("main camera");
-        DOMAIN_TECHNOLOGY.add("cam");
-
-        //computer
-        DOMAIN_COMPUTER.add("laptop");
-        DOMAIN_COMPUTER.add("pc");
-        DOMAIN_COMPUTER.add("desktop");
-        DOMAIN_COMPUTER.add("computer");
-        DOMAIN_COMPUTER.add("optical mouse");
-        DOMAIN_COMPUTER.add("mouse");
-        DOMAIN_COMPUTER.add("keyboard");
-        DOMAIN_COMPUTER.add("ram");
-        DOMAIN_COMPUTER.add("ssd");
-
-        //measurements
-        DOMAIN_MEASUREMENT.add("weight");
-        DOMAIN_MEASUREMENT.add("height");
-        DOMAIN_MEASUREMENT.add("width");
-        DOMAIN_MEASUREMENT.add("depth");
-        DOMAIN_MEASUREMENT.add("price");
-        DOMAIN_MEASUREMENT.add("pixel");
-        DOMAIN_MEASUREMENT.add("performance");
-        DOMAIN_MEASUREMENT.add("batterylife");
-
-        //mobile
-        DOMAIN_MOBILE.add("smartphone");
     }
 
     public static Map<String, List<String>> analyseEntity(LanguageServiceClient languageApi, Document doc) {
@@ -199,9 +182,7 @@ public class Extractor {
         return entityList;
     }
 
-    public static Map<Integer, List<String>> analyseSyntax(String text) throws IOException, GeneralSecurityException {
-        GoogleCredential credential = authorize();
-        LanguageServiceClient languageServiceClient = LanguageServiceClient.create();
+    public static Map<Integer, List<String>> analyseSyntax(String text, LanguageServiceClient languageServiceClient) throws IOException, GeneralSecurityException {
         Document doc = Document.newBuilder().setContent(text).setType(Document.Type.PLAIN_TEXT).build();
         Map<String, List<String>> entitiesFound = analyseEntity(languageServiceClient, doc);//entities
 
@@ -212,7 +193,7 @@ public class Extractor {
                 text = text.replaceAll(entity, entity.replace(" ", SEPARATOR));
             }
         }
-        System.out.println(text);
+        //creating doc from the newly created text string
         doc = Document.newBuilder().setContent(text).setType(Document.Type.PLAIN_TEXT).build();
         AnalyzeSyntaxRequest request = AnalyzeSyntaxRequest.newBuilder().setDocument(doc).setEncodingType(EncodingType.UTF16).build();
 
@@ -262,13 +243,16 @@ public class Extractor {
         return credential;
     }
 
-    public static Map<String, List<String>> identifyDomains(String text) throws IOException, GeneralSecurityException {
-        GoogleCredential credential = authorize();
-        LanguageServiceClient languageServiceClient = LanguageServiceClient.create();
+    //provide authentication with client
+    private static LanguageServiceClient provideLanguageServiceClient() throws IOException, GeneralSecurityException {
+        authorize();
+        return LanguageServiceClient.create();
+    }
 
+    //not using only for testing purposes
+    public static Map<String, List<String>> identifyDomains(String text, LanguageServiceClient languageServiceClient) throws IOException, GeneralSecurityException {
         Document doc = Document.newBuilder()
                 .setContent(text).setType(Document.Type.PLAIN_TEXT).build();
-
         Map<String, List<String>> entitiesFound = analyseEntity(languageServiceClient, doc);
 
         //main domain extraction map
@@ -321,21 +305,23 @@ public class Extractor {
         return mainDomainExtraction;
     }
 
-    public static void analyseSentiment(String text) throws IOException, GeneralSecurityException {
-        GoogleCredential credential = authorize();
-        LanguageServiceClient languageServiceClient = LanguageServiceClient.create();
-
+    public static void analyseSentiment(String text, LanguageServiceClient languageServiceClient) throws IOException, GeneralSecurityException {
         Document doc = Document.newBuilder()
                 .setContent(text).setType(Document.Type.PLAIN_TEXT).build();
         // Detects the sentiment of the text
         Sentiment sentiment = languageServiceClient.analyzeSentiment(doc).getDocumentSentiment();
-
-        System.out.println(" <------ GCP NLP Sentiment Analysis -----> ");
-
-        System.out.println();
-        System.out.println("Overall Score   : " + sentiment.getScore());
-        System.out.println();
-
     }
-
+    //sort tree map by value
+    static <K,V extends Comparable<? super V>> SortedSet<Map.Entry<K,V>> entriesSortedByValues(Map<K,V> map) {
+        SortedSet<Map.Entry<K,V>> sortedEntries = new TreeSet<Map.Entry<K,V>>(
+                new Comparator<Map.Entry<K,V>>() {
+                    @Override public int compare(Map.Entry<K,V> e1, Map.Entry<K,V> e2) {
+                        int res = e1.getValue().compareTo(e2.getValue());
+                        return res != 0 ? res : 1; // Special fix to preserve items with equal values
+                    }
+                }
+        );
+        sortedEntries.addAll(map.entrySet());
+        return sortedEntries;
+    }
 }
