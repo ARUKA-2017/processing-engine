@@ -98,8 +98,6 @@ public class Extractor {
             HttpResponse httpResponse = client.execute(getRequest);
             HttpEntity httpEntity = httpResponse.getEntity();
             InputStream inputStream = httpEntity.getContent();
-//            System.out.println(EntityUtils.toString(httpEntity, "UTF-8"));
-
             JSONParser jsonParser = new JSONParser();
             JSONObject jsonObject = (JSONObject) jsonParser.parse(EntityUtils.toString(httpEntity, "UTF-8"));
             return jsonObject.keySet().iterator().next().toString();
@@ -125,39 +123,9 @@ public class Extractor {
                 //getting all unknown and other domain entities
                 //find sub domains from manually added domains like - technology, computer, mobile, education, currency
                 String unknownEntity = syntaxDetails.get(0);
-
                 String domain = syntaxDetails.get(5);
                 syntaxDetails.remove(5);
                 syntaxDetails.add(identifySubDomainsByMicrosoftApi(unknownEntity, domain));
-
-//                for (String technologyDomain: DOMAIN_TECHNOLOGY){
-//                    if (unknownEntity.contains(technologyDomain)){
-//                        syntaxDetails.remove(5);
-//                        syntaxDetails.add("TECHNOLOGY");
-//                        break;
-//                    }
-//                }
-//                for (String measurementDomain: DOMAIN_MEASUREMENT){
-//                    if (unknownEntity.contains(measurementDomain)){
-//                        syntaxDetails.remove(5);
-//                        syntaxDetails.add("MEASUREMENT");
-//                        break;
-//                    }
-//                }
-//                for (String computerDomain: DOMAIN_COMPUTER){
-//                    if (unknownEntity.contains(computerDomain)){
-//                        syntaxDetails.remove(5);
-//                        syntaxDetails.add("COMPUTER");
-//                        break;
-//                    }
-//                }
-//                for (String mobileDomain: DOMAIN_MOBILE){
-//                    if (unknownEntity.contains(mobileDomain)){
-//                        syntaxDetails.remove(5);
-//                        syntaxDetails.add("MOBILE");
-//                        break;
-//                    }
-//                }
             }
             //map new tagmap with new sub domains
             newTagMap.put(key, syntaxDetails);
