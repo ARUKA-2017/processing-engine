@@ -45,7 +45,7 @@ public class Extractor {
     public static void main(String... args) throws Exception {
         languageServiceClient = provideLanguageServiceClient();
         JSONParser jsonParser = new JSONParser();
-        JSONArray array = (JSONArray) jsonParser.parse(new FileReader("/Users/sameera/Documents/SLIIT/4th Year/2nd semester/cdap/processing-engine/src/main/java/akura/cloundnlp/SampleReviews.json"));
+        JSONArray array = (JSONArray) jsonParser.parse(new FileReader("./src/main/java/akura/cloundnlp/SampleReviews.json"));
         List<OntologyMapDto> ontologyMapDtos = new LinkedList<>();
         for (Object object : array) {
             JSONObject jsonObject = (JSONObject) object;
@@ -68,12 +68,6 @@ public class Extractor {
         try (Writer writer = new FileWriter("Output.json")) {
             gson = new GsonBuilder().setPrettyPrinting().create();
             gson.toJson(ontologyMapDtos, writer);
-        }
-
-        Map<String, String> entityTags = NounEntityExtractor.getEntityTagsAccordingToNounCombinationsFromMSApi(ontologyMapDtos.get(0).getData());
-
-        for (Map.Entry<String, String> entry : entityTags.entrySet()) {
-            System.out.println(entry.getKey() + " : " + entry.getValue());
         }
     }
 
