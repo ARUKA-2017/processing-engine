@@ -112,14 +112,33 @@ public class Extractor {
         ontologyMapDto.setReviewRating(Float.parseFloat(review.get("rating").toString()));
         ontologyMapDto.setCategoryMap(categoryMap);
 
+        List<SyntaxDto> syntaxDtos = new LinkedList<>();
+        List<FinalEntityTagDto> finalEntityTagDtos = new LinkedList<>();
         for (Map.Entry<String, Map<Integer, List<String>>> entry : outputMap.entrySet()){
             if (entry.getKey().equals("syntaxTagMap")){
-                ontologyMapDto.setSyntaxTagMap(entry.getValue());
+                for (Map.Entry<Integer, List<String>> subEntry: entry.getValue().entrySet()){
+                    SyntaxDto syntaxDto = new SyntaxDto();
+                    syntaxDto.setText(subEntry.getValue().get(0));
+                    syntaxDto.setPos(subEntry.getValue().get(1));
+                    syntaxDto.setLemma(subEntry.getValue().get(2));
+                    syntaxDtos.add(syntaxDto);
+                }
             } else if (entry.getKey().equals("finalEntityTaggedMap")){
-                ontologyMapDto.setFinalEntityTaggedMap(entry.getValue());
+                for (Map.Entry<Integer, List<String>> subEntry: entry.getValue().entrySet()){
+                    FinalEntityTagDto finalEntityTagDto = new FinalEntityTagDto();
+                    finalEntityTagDto.setText(subEntry.getValue().get(0));
+                    finalEntityTagDto.setSentiment(Float.parseFloat(subEntry.getValue().get(1)));
+                    finalEntityTagDto.setSalience(Float.parseFloat(subEntry.getValue().get(2)));
+                    finalEntityTagDto.setCategory((subEntry.getValue().size()>3)?subEntry.getValue().get(3):"");
+                    finalEntityTagDto.setNounCombination((subEntry.getValue().size()>4)?subEntry.getValue().get(4):"");
+                    finalEntityTagDto.setNounCombinationCategory((subEntry.getValue().size()>5)?subEntry.getValue().get(5):"");
+                    finalEntityTagDtos.add(finalEntityTagDto);
+                }
             }
         }
 
+        ontologyMapDto.setSyntaxTagList(syntaxDtos);
+        ontologyMapDto.setFinalEntityTaggedList(finalEntityTagDtos);
         return ontologyMapDto;
     }
 
@@ -223,7 +242,9 @@ public class Extractor {
 
             syntaxTagMap.put(++counter, tokenTags);
         }
+
         Map<String, String> mergedNouns = NounEntityExtractor.mergeNouns(syntaxTagMap);
+
         Map<Integer, List<String>> finalEntityTaggedMap = new LinkedHashMap<>();
         counter = 0;
         for(Map.Entry<String, List<String>> entityRow: entitiesFound.entrySet()){

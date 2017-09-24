@@ -12,24 +12,10 @@ public class OntologyMapDto {
     private float reviewRating;
     private List<EntityDto> entityDtos;
     private Map<String, Float> categoryMap;
-    private Map<Integer, List<String>> syntaxTagMap;
-    private Map<Integer, List<String>> finalEntityTaggedMap;
-
-    public String getReview() {
-        return review;
-    }
-
-    public void setReview(String review) {
-        this.review = review;
-    }
-
-    public Map<String, Float> getCategoryMap() {
-        return categoryMap;
-    }
-
-    public void setCategoryMap(Map<String, Float> categoryMap) {
-        this.categoryMap = categoryMap;
-    }
+//    private Map<Integer, List<String>> syntaxTagMap;
+//    private Map<Integer, List<String>> finalEntityTaggedMap;
+    private List<SyntaxDto> syntaxTagList;
+    private List<FinalEntityTagDto> finalEntityTaggedList;
 
     public String getReviewId() {
         return reviewId;
@@ -37,6 +23,14 @@ public class OntologyMapDto {
 
     public void setReviewId(String reviewId) {
         this.reviewId = reviewId;
+    }
+
+    public String getReview() {
+        return review;
+    }
+
+    public void setReview(String review) {
+        this.review = review;
     }
 
     public float getReviewRating() {
@@ -55,19 +49,27 @@ public class OntologyMapDto {
         this.entityDtos = entityDtos;
     }
 
-    public Map<Integer, List<String>> getSyntaxTagMap() {
-        return syntaxTagMap;
+    public Map<String, Float> getCategoryMap() {
+        return categoryMap;
     }
 
-    public void setSyntaxTagMap(Map<Integer, List<String>> syntaxTagMap) {
-        this.syntaxTagMap = syntaxTagMap;
+    public void setCategoryMap(Map<String, Float> categoryMap) {
+        this.categoryMap = categoryMap;
     }
 
-    public Map<Integer, List<String>> getFinalEntityTaggedMap() {
-        return finalEntityTaggedMap;
+    public List<SyntaxDto> getSyntaxTagList() {
+        return syntaxTagList;
     }
 
-    public void setFinalEntityTaggedMap(Map<Integer, List<String>> finalEntityTaggedMap) {
-        this.finalEntityTaggedMap = finalEntityTaggedMap;
+    public void setSyntaxTagList(List<SyntaxDto> syntaxTagList) {
+        this.syntaxTagList = syntaxTagList;
+    }
+
+    public List<FinalEntityTagDto> getFinalEntityTaggedList() {
+        return finalEntityTaggedList;
+    }
+
+    public void setFinalEntityTaggedList(List<FinalEntityTagDto> finalEntityTaggedList) {
+        this.finalEntityTaggedList = finalEntityTaggedList;
     }
 }

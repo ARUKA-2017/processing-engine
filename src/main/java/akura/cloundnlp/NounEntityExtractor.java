@@ -101,13 +101,13 @@ public class NounEntityExtractor {
 
                 requestString += (continousNounCount++ == 0) ? entityRow.getValue().get(0) : " " + entityRow.getValue().get(0);
 
-                if(data.get(data.size()-1) == entityRow && continousNounCount > 1) {
+                if(data.get(data.size()-1) == entityRow && continousNounCount > 0) {
                     String tag = Extractor.understandShortWordConcept(requestString, "Not Found");
                     entityTags.put(requestString, tag);
                 }
 
             } else {
-                if(continousNounCount > 1) {
+                if(continousNounCount > 0) {
                         String tag = Extractor.understandShortWordConcept(requestString, "Not Found");
                         entityTags.put(requestString, tag);
                     }
