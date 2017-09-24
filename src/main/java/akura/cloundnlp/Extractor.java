@@ -26,6 +26,8 @@ import java.io.InputStream;
 import java.security.GeneralSecurityException;
 import java.util.*;
 
+import static akura.cloundnlp.NounEntityExtractor.mergeNouns;
+
 /**
  * A snippet for Google Cloud Speech API showing how to analyze text message sentiment.
  */
@@ -57,22 +59,19 @@ public class Extractor {
 ////            System.out.println();
 
 //            prioritizeEntities(identifySubDomains(analyseSyntax(sampleText, languageServiceClient)));
-            filterActualEntities(identifySubDomains(analyseSyntax(sampleText, languageServiceClient)));
+           // filterActualEntities(identifySubDomains(analyseSyntax(sampleText, languageServiceClient)));
             //final json
-//            ontologyMapDtos.add(constructJson(jsonObject, identifyReviewCategory(sampleText, languageServiceClient), identifySubDomains(analyseSyntax(sampleText, languageServiceClient))));
+            ontologyMapDtos.add(constructJson(jsonObject, identifyReviewCategory(sampleText, languageServiceClient), analyseSyntax(sampleText, languageServiceClient)));
         }
 
         Gson gson = new Gson();
-//        System.out.println(gson.toJson(ontologyMapDtos));
+        System.out.println(gson.toJson(ontologyMapDtos));
 
         try (Writer writer = new FileWriter("Output.json")) {
             gson = new GsonBuilder().setPrettyPrinting().create();
             gson.toJson(ontologyMapDtos, writer);
         }
     }
-
-
-
     //identify entity priority list
     public static void prioritizeEntities(Map<Integer, List<String>> syntaxTagMap){
 
@@ -105,14 +104,21 @@ public class Extractor {
     }
 
     //construct json through dto
-    public static OntologyMapDto constructJson(JSONObject review, Map<String, Float> categoryMap, Map<Integer, List<String>> syntaxMap){
+    public static OntologyMapDto constructJson(JSONObject review, Map<String, Float> categoryMap, Map<String, Map<Integer, List<String>>> outputMap){
         ontologyMapDto = new OntologyMapDto();
 
         ontologyMapDto.setReviewId(review.get("review_id").toString());
         ontologyMapDto.setReview(review.get("reviewContent").toString());
         ontologyMapDto.setReviewRating(Float.parseFloat(review.get("rating").toString()));
         ontologyMapDto.setCategoryMap(categoryMap);
-        ontologyMapDto.setData(syntaxMap);
+
+        for (Map.Entry<String, Map<Integer, List<String>>> entry : outputMap.entrySet()){
+            if (entry.getKey().equals("syntaxTagMap")){
+                ontologyMapDto.setSyntaxTagMap(entry.getValue());
+            } else if (entry.getKey().equals("finalEntityTaggedMap")){
+                ontologyMapDto.setFinalEntityTaggedMap(entry.getValue());
+            }
+        }
 
         return ontologyMapDto;
     }
@@ -197,26 +203,15 @@ public class Extractor {
         return entityList;
     }
 
-    public static Map<Integer, List<String>> analyseSyntax(String text, LanguageServiceClient languageServiceClient) throws IOException, GeneralSecurityException {
+    public static Map<String, Map<Integer, List<String>>> analyseSyntax(String text, LanguageServiceClient languageServiceClient) throws IOException, GeneralSecurityException {
+        Map<String, Map<Integer, List<String>>> outputMap = new LinkedHashMap<>();
         Document doc = Document.newBuilder().setContent(text).setType(Document.Type.PLAIN_TEXT).build();
         Map<String, List<String>> entitiesFound = analyseEntity(languageServiceClient, doc);//entities
 
-//        for(Map.Entry<String, List<String>> entityRow: entitiesFound.entrySet()){
-//            String entity = entityRow.getValue().get(0);
-//
-//            if (text.contains(entity)){
-//                text = text.replaceAll(entity, entity.replace(" ", SEPARATOR));
-//            }
-//        }
-        //creating doc from the newly created text string
-        doc = Document.newBuilder().setContent(text).setType(Document.Type.PLAIN_TEXT).build();
         AnalyzeSyntaxRequest request = AnalyzeSyntaxRequest.newBuilder().setDocument(doc).setEncodingType(EncodingType.UTF16).build();
-
         AnalyzeSyntaxResponse response = languageServiceClient.analyzeSyntax(request);
-
         //text, postag, lemma
         Map<Integer, List<String>> syntaxTagMap = new LinkedHashMap<>();
-        System.out.println(syntaxTagMap);
         int counter = 0;
 
         for(Token token : response.getTokensList())
@@ -226,31 +221,35 @@ public class Extractor {
             tokenTags.add(token.getPartOfSpeech().getTag().toString());//pos tag
             tokenTags.add(token.getLemma());//lemma
 
-            for(Map.Entry<String, List<String>> entityRow: entitiesFound.entrySet()){
-                String entity = entityRow.getValue().get(0).replace(" ", SEPARATOR);
-                String organization = entityRow.getValue().get(1);
-
-                if (entity.equals(token.getText().getContent())){
-                    if (tokenTags.size() > 5 && tokenTags.get(5) != null) {
-                        tokenTags.set(3, String.valueOf(
-                                Float.parseFloat(tokenTags.get(3))+
-                                Float.parseFloat(entityRow.getValue().get(2))
-                        ));
-                        tokenTags.set(4, String.valueOf(
-                                Float.parseFloat(tokenTags.get(4))+
-                                        Float.parseFloat(entityRow.getValue().get(3))
-                        ));
-                        continue;
-                    }
-                    tokenTags.add(entityRow.getValue().get(2));//sentiment
-                    tokenTags.add(entityRow.getValue().get(3));//salience
-                    tokenTags.add(organization);//domain
-                }
-            }
             syntaxTagMap.put(++counter, tokenTags);
         }
-        System.out.println(NounEntityExtractor.getEntityTagsAccordingToNounCombinationsFromMSApi(syntaxTagMap));
-        return syntaxTagMap;
+        Map<String, String> mergedNouns = NounEntityExtractor.mergeNouns(syntaxTagMap);
+        Map<Integer, List<String>> finalEntityTaggedMap = new LinkedHashMap<>();
+        counter = 0;
+        for(Map.Entry<String, List<String>> entityRow: entitiesFound.entrySet()){
+            List<String> temporaryEntityDetailList = new LinkedList<>();
+            String entity = entityRow.getValue().get(0);//.replace(" ", SEPARATOR);
+            String organization = entityRow.getValue().get(1);
+            String sentiment = ((entityRow.getValue().size() > 2)? (entityRow.getValue().get(2)): "");
+            String sailience = ((entityRow.getValue().size() > 3)? (entityRow.getValue().get(3)): "");
+            temporaryEntityDetailList.add(entity);
+            temporaryEntityDetailList.add(sentiment);
+            temporaryEntityDetailList.add(sailience);
+            temporaryEntityDetailList.add(organization);
+            for (Map.Entry<String, String> nounEntry: mergedNouns.entrySet()){
+                if (nounEntry.getKey().toString().contains(entity)){
+                    temporaryEntityDetailList.add(nounEntry.getKey());
+                    temporaryEntityDetailList.add(nounEntry.getValue());
+                    break;
+                }
+            }
+            finalEntityTaggedMap.put(++counter, temporaryEntityDetailList);
+        }
+        outputMap.put("syntaxTagMap", syntaxTagMap);
+        outputMap.put("finalEntityTaggedMap", finalEntityTaggedMap);
+
+        System.out.println(outputMap);
+        return outputMap;
 
     }
 

@@ -1,1 +1,1741 @@
-[]
+[
+  {
+    "reviewId": "R23WVOVFL0VD8X",
+    "review": "A9 chip with M9 motion coprocessor Delivers outstanding overall performance for opening and running applications, flipping through menus, running home screens and more. Apple iOS 10 Everything you love is now even better. Express yourself in bold new ways in Messages. Find your route with beautifully redesigned Maps. Relive memories like never before in Photos. And use the power of Siri in more apps. 4GLTE speed Provides fast Web connection for downloading apps, streaming content and staying connected with social media. 4\" touch-screen Retina display with 1136 x 640 resolution and 326 ppi LED-backlit widescreen Multi-Touch display. 1136-by-640-pixel resolution at 326 ppi. Fingerprint-resistant oleophobic coating on front. 12MP iSight camera with Focus Pixels and True Tone flash Capture images while youre out and about. Also includes a front-facing 1.2MP FaceTime HD camera with Retina Flash. 32GB internal memory Provides plenty of storage space for your contacts, music, photos, apps and more. Cloud support lets you access your files anywhere Store your photos, videos, documents and other files on iCloud for secure access across multiple devices. Fees may apply. Touch ID fingerprint identity sensor Put your finger on the Home button, and just like that your iPhone unlocks. Your fingerprint can also approve purchases from iTunes or the App Store.",
+    "reviewRating": 1.0,
+    "categoryMap": {
+      "Computers \u0026 Electronics": 0.61
+    },
+    "syntaxTagMap": {
+      "1": [
+        "A9",
+        "NOUN",
+        "A9"
+      ],
+      "2": [
+        "chip",
+        "NOUN",
+        "chip"
+      ],
+      "3": [
+        "with",
+        "ADP",
+        "with"
+      ],
+      "4": [
+        "M9",
+        "NOUN",
+        "M9"
+      ],
+      "5": [
+        "motion",
+        "NOUN",
+        "motion"
+      ],
+      "6": [
+        "coprocessor",
+        "NOUN",
+        "coprocessor"
+      ],
+      "7": [
+        "Delivers",
+        "VERB",
+        "deliver"
+      ],
+      "8": [
+        "outstanding",
+        "ADJ",
+        "outstanding"
+      ],
+      "9": [
+        "overall",
+        "ADJ",
+        "overall"
+      ],
+      "10": [
+        "performance",
+        "NOUN",
+        "performance"
+      ],
+      "11": [
+        "for",
+        "ADP",
+        "for"
+      ],
+      "12": [
+        "opening",
+        "NOUN",
+        "opening"
+      ],
+      "13": [
+        "and",
+        "CONJ",
+        "and"
+      ],
+      "14": [
+        "running",
+        "VERB",
+        "run"
+      ],
+      "15": [
+        "applications",
+        "NOUN",
+        "application"
+      ],
+      "16": [
+        ",",
+        "PUNCT",
+        ","
+      ],
+      "17": [
+        "flipping",
+        "VERB",
+        "flip"
+      ],
+      "18": [
+        "through",
+        "ADP",
+        "through"
+      ],
+      "19": [
+        "menus",
+        "NOUN",
+        "menus"
+      ],
+      "20": [
+        ",",
+        "PUNCT",
+        ","
+      ],
+      "21": [
+        "running",
+        "VERB",
+        "run"
+      ],
+      "22": [
+        "home",
+        "NOUN",
+        "home"
+      ],
+      "23": [
+        "screens",
+        "NOUN",
+        "screen"
+      ],
+      "24": [
+        "and",
+        "CONJ",
+        "and"
+      ],
+      "25": [
+        "more",
+        "ADJ",
+        "more"
+      ],
+      "26": [
+        ".",
+        "PUNCT",
+        "."
+      ],
+      "27": [
+        "Apple",
+        "NOUN",
+        "Apple"
+      ],
+      "28": [
+        "iOS",
+        "NOUN",
+        "io"
+      ],
+      "29": [
+        "10",
+        "NUM",
+        "10"
+      ],
+      "30": [
+        "Everything",
+        "NOUN",
+        "Everything"
+      ],
+      "31": [
+        "you",
+        "PRON",
+        "you"
+      ],
+      "32": [
+        "love",
+        "VERB",
+        "love"
+      ],
+      "33": [
+        "is",
+        "VERB",
+        "be"
+      ],
+      "34": [
+        "now",
+        "ADV",
+        "now"
+      ],
+      "35": [
+        "even",
+        "ADV",
+        "even"
+      ],
+      "36": [
+        "better",
+        "ADV",
+        "well"
+      ],
+      "37": [
+        ".",
+        "PUNCT",
+        "."
+      ],
+      "38": [
+        "Express",
+        "VERB",
+        "Express"
+      ],
+      "39": [
+        "yourself",
+        "PRON",
+        "yourself"
+      ],
+      "40": [
+        "in",
+        "ADP",
+        "in"
+      ],
+      "41": [
+        "bold",
+        "ADJ",
+        "bold"
+      ],
+      "42": [
+        "new",
+        "ADJ",
+        "new"
+      ],
+      "43": [
+        "ways",
+        "NOUN",
+        "way"
+      ],
+      "44": [
+        "in",
+        "ADP",
+        "in"
+      ],
+      "45": [
+        "Messages",
+        "NOUN",
+        "message"
+      ],
+      "46": [
+        ".",
+        "PUNCT",
+        "."
+      ],
+      "47": [
+        "Find",
+        "VERB",
+        "Find"
+      ],
+      "48": [
+        "your",
+        "PRON",
+        "your"
+      ],
+      "49": [
+        "route",
+        "NOUN",
+        "route"
+      ],
+      "50": [
+        "with",
+        "ADP",
+        "with"
+      ],
+      "51": [
+        "beautifully",
+        "ADV",
+        "beautifully"
+      ],
+      "52": [
+        "redesigned",
+        "VERB",
+        "redesign"
+      ],
+      "53": [
+        "Maps",
+        "NOUN",
+        "Maps"
+      ],
+      "54": [
+        ".",
+        "PUNCT",
+        "."
+      ],
+      "55": [
+        "Relive",
+        "VERB",
+        "Relive"
+      ],
+      "56": [
+        "memories",
+        "NOUN",
+        "memory"
+      ],
+      "57": [
+        "like",
+        "ADP",
+        "like"
+      ],
+      "58": [
+        "never",
+        "ADV",
+        "never"
+      ],
+      "59": [
+        "before",
+        "ADV",
+        "before"
+      ],
+      "60": [
+        "in",
+        "ADP",
+        "in"
+      ],
+      "61": [
+        "Photos",
+        "NOUN",
+        "Photos"
+      ],
+      "62": [
+        ".",
+        "PUNCT",
+        "."
+      ],
+      "63": [
+        "And",
+        "CONJ",
+        "And"
+      ],
+      "64": [
+        "use",
+        "VERB",
+        "use"
+      ],
+      "65": [
+        "the",
+        "DET",
+        "the"
+      ],
+      "66": [
+        "power",
+        "NOUN",
+        "power"
+      ],
+      "67": [
+        "of",
+        "ADP",
+        "of"
+      ],
+      "68": [
+        "Siri",
+        "NOUN",
+        "Siri"
+      ],
+      "69": [
+        "in",
+        "ADP",
+        "in"
+      ],
+      "70": [
+        "more",
+        "ADJ",
+        "more"
+      ],
+      "71": [
+        "apps",
+        "NOUN",
+        "app"
+      ],
+      "72": [
+        ".",
+        "PUNCT",
+        "."
+      ],
+      "73": [
+        "4GLTE",
+        "NOUN",
+        "4GLTE"
+      ],
+      "74": [
+        "speed",
+        "NOUN",
+        "speed"
+      ],
+      "75": [
+        "Provides",
+        "VERB",
+        "provide"
+      ],
+      "76": [
+        "fast",
+        "ADJ",
+        "fast"
+      ],
+      "77": [
+        "Web",
+        "NOUN",
+        "Web"
+      ],
+      "78": [
+        "connection",
+        "NOUN",
+        "connection"
+      ],
+      "79": [
+        "for",
+        "ADP",
+        "for"
+      ],
+      "80": [
+        "downloading",
+        "VERB",
+        "download"
+      ],
+      "81": [
+        "apps",
+        "NOUN",
+        "app"
+      ],
+      "82": [
+        ",",
+        "PUNCT",
+        ","
+      ],
+      "83": [
+        "streaming",
+        "VERB",
+        "stream"
+      ],
+      "84": [
+        "content",
+        "NOUN",
+        "content"
+      ],
+      "85": [
+        "and",
+        "CONJ",
+        "and"
+      ],
+      "86": [
+        "staying",
+        "VERB",
+        "stay"
+      ],
+      "87": [
+        "connected",
+        "VERB",
+        "connect"
+      ],
+      "88": [
+        "with",
+        "ADP",
+        "with"
+      ],
+      "89": [
+        "social",
+        "ADJ",
+        "social"
+      ],
+      "90": [
+        "media",
+        "NOUN",
+        "media"
+      ],
+      "91": [
+        ".",
+        "PUNCT",
+        "."
+      ],
+      "92": [
+        "4",
+        "X",
+        "4"
+      ],
+      "93": [
+        "\"",
+        "PUNCT",
+        "\""
+      ],
+      "94": [
+        "touch",
+        "NOUN",
+        "touch"
+      ],
+      "95": [
+        "-",
+        "PUNCT",
+        "-"
+      ],
+      "96": [
+        "screen",
+        "NOUN",
+        "screen"
+      ],
+      "97": [
+        "Retina",
+        "NOUN",
+        "Retina"
+      ],
+      "98": [
+        "display",
+        "NOUN",
+        "display"
+      ],
+      "99": [
+        "with",
+        "ADP",
+        "with"
+      ],
+      "100": [
+        "1136",
+        "NUM",
+        "1136"
+      ],
+      "101": [
+        "x",
+        "X",
+        "x"
+      ],
+      "102": [
+        "640",
+        "NUM",
+        "640"
+      ],
+      "103": [
+        "resolution",
+        "NOUN",
+        "resolution"
+      ],
+      "104": [
+        "and",
+        "CONJ",
+        "and"
+      ],
+      "105": [
+        "326",
+        "NUM",
+        "326"
+      ],
+      "106": [
+        "ppi",
+        "NOUN",
+        "ppi"
+      ],
+      "107": [
+        "LED",
+        "NOUN",
+        "LED"
+      ],
+      "108": [
+        "-",
+        "PUNCT",
+        "-"
+      ],
+      "109": [
+        "backlit",
+        "NOUN",
+        "backlit"
+      ],
+      "110": [
+        "widescreen",
+        "NOUN",
+        "widescreen"
+      ],
+      "111": [
+        "Multi-Touch",
+        "ADJ",
+        "Multi-Touch"
+      ],
+      "112": [
+        "display",
+        "NOUN",
+        "display"
+      ],
+      "113": [
+        ".",
+        "PUNCT",
+        "."
+      ],
+      "114": [
+        "1136",
+        "NUM",
+        "1136"
+      ],
+      "115": [
+        "-",
+        "PUNCT",
+        "-"
+      ],
+      "116": [
+        "by",
+        "ADP",
+        "by"
+      ],
+      "117": [
+        "-",
+        "PUNCT",
+        "-"
+      ],
+      "118": [
+        "640",
+        "NUM",
+        "640"
+      ],
+      "119": [
+        "-",
+        "PUNCT",
+        "-"
+      ],
+      "120": [
+        "pixel",
+        "NOUN",
+        "pixel"
+      ],
+      "121": [
+        "resolution",
+        "NOUN",
+        "resolution"
+      ],
+      "122": [
+        "at",
+        "ADP",
+        "at"
+      ],
+      "123": [
+        "326",
+        "NUM",
+        "326"
+      ],
+      "124": [
+        "ppi",
+        "NOUN",
+        "ppi"
+      ],
+      "125": [
+        ".",
+        "PUNCT",
+        "."
+      ],
+      "126": [
+        "Fingerprint",
+        "NOUN",
+        "Fingerprint"
+      ],
+      "127": [
+        "-",
+        "PUNCT",
+        "-"
+      ],
+      "128": [
+        "resistant",
+        "ADJ",
+        "resistant"
+      ],
+      "129": [
+        "oleophobic",
+        "ADJ",
+        "oleophobic"
+      ],
+      "130": [
+        "coating",
+        "NOUN",
+        "coating"
+      ],
+      "131": [
+        "on",
+        "ADP",
+        "on"
+      ],
+      "132": [
+        "front",
+        "NOUN",
+        "front"
+      ],
+      "133": [
+        ".",
+        "PUNCT",
+        "."
+      ],
+      "134": [
+        "12MP",
+        "NOUN",
+        "12MP"
+      ],
+      "135": [
+        "iSight",
+        "NOUN",
+        "iSight"
+      ],
+      "136": [
+        "camera",
+        "NOUN",
+        "camera"
+      ],
+      "137": [
+        "with",
+        "ADP",
+        "with"
+      ],
+      "138": [
+        "Focus",
+        "NOUN",
+        "Focus"
+      ],
+      "139": [
+        "Pixels",
+        "NOUN",
+        "pixel"
+      ],
+      "140": [
+        "and",
+        "CONJ",
+        "and"
+      ],
+      "141": [
+        "True",
+        "ADJ",
+        "True"
+      ],
+      "142": [
+        "Tone",
+        "NOUN",
+        "Tone"
+      ],
+      "143": [
+        "flash",
+        "NOUN",
+        "flash"
+      ],
+      "144": [
+        "Capture",
+        "NOUN",
+        "Capture"
+      ],
+      "145": [
+        "images",
+        "NOUN",
+        "image"
+      ],
+      "146": [
+        "while",
+        "ADP",
+        "while"
+      ],
+      "147": [
+        "youre",
+        "PRON",
+        "youre"
+      ],
+      "148": [
+        "out",
+        "PRT",
+        "out"
+      ],
+      "149": [
+        "and",
+        "CONJ",
+        "and"
+      ],
+      "150": [
+        "about",
+        "ADP",
+        "about"
+      ],
+      "151": [
+        ".",
+        "PUNCT",
+        "."
+      ],
+      "152": [
+        "Also",
+        "ADV",
+        "Also"
+      ],
+      "153": [
+        "includes",
+        "VERB",
+        "include"
+      ],
+      "154": [
+        "a",
+        "DET",
+        "a"
+      ],
+      "155": [
+        "front",
+        "NOUN",
+        "front"
+      ],
+      "156": [
+        "-",
+        "PUNCT",
+        "-"
+      ],
+      "157": [
+        "facing",
+        "VERB",
+        "face"
+      ],
+      "158": [
+        "1.2",
+        "NUM",
+        "1.2"
+      ],
+      "159": [
+        "MP",
+        "NOUN",
+        "MP"
+      ],
+      "160": [
+        "FaceTime",
+        "NOUN",
+        "FaceTime"
+      ],
+      "161": [
+        "HD",
+        "NOUN",
+        "HD"
+      ],
+      "162": [
+        "camera",
+        "NOUN",
+        "camera"
+      ],
+      "163": [
+        "with",
+        "ADP",
+        "with"
+      ],
+      "164": [
+        "Retina",
+        "NOUN",
+        "Retina"
+      ],
+      "165": [
+        "Flash",
+        "NOUN",
+        "Flash"
+      ],
+      "166": [
+        ".",
+        "PUNCT",
+        "."
+      ],
+      "167": [
+        "32GB",
+        "NOUN",
+        "32GB"
+      ],
+      "168": [
+        "internal",
+        "ADJ",
+        "internal"
+      ],
+      "169": [
+        "memory",
+        "NOUN",
+        "memory"
+      ],
+      "170": [
+        "Provides",
+        "VERB",
+        "provide"
+      ],
+      "171": [
+        "plenty",
+        "NOUN",
+        "plenty"
+      ],
+      "172": [
+        "of",
+        "ADP",
+        "of"
+      ],
+      "173": [
+        "storage",
+        "NOUN",
+        "storage"
+      ],
+      "174": [
+        "space",
+        "NOUN",
+        "space"
+      ],
+      "175": [
+        "for",
+        "ADP",
+        "for"
+      ],
+      "176": [
+        "your",
+        "PRON",
+        "your"
+      ],
+      "177": [
+        "contacts",
+        "NOUN",
+        "contact"
+      ],
+      "178": [
+        ",",
+        "PUNCT",
+        ","
+      ],
+      "179": [
+        "music",
+        "NOUN",
+        "music"
+      ],
+      "180": [
+        ",",
+        "PUNCT",
+        ","
+      ],
+      "181": [
+        "photos",
+        "NOUN",
+        "photo"
+      ],
+      "182": [
+        ",",
+        "PUNCT",
+        ","
+      ],
+      "183": [
+        "apps",
+        "NOUN",
+        "app"
+      ],
+      "184": [
+        "and",
+        "CONJ",
+        "and"
+      ],
+      "185": [
+        "more",
+        "ADJ",
+        "more"
+      ],
+      "186": [
+        ".",
+        "PUNCT",
+        "."
+      ],
+      "187": [
+        "Cloud",
+        "NOUN",
+        "Cloud"
+      ],
+      "188": [
+        "support",
+        "NOUN",
+        "support"
+      ],
+      "189": [
+        "lets",
+        "VERB",
+        "let"
+      ],
+      "190": [
+        "you",
+        "PRON",
+        "you"
+      ],
+      "191": [
+        "access",
+        "VERB",
+        "access"
+      ],
+      "192": [
+        "your",
+        "PRON",
+        "your"
+      ],
+      "193": [
+        "files",
+        "NOUN",
+        "file"
+      ],
+      "194": [
+        "anywhere",
+        "ADV",
+        "anywhere"
+      ],
+      "195": [
+        "Store",
+        "VERB",
+        "Store"
+      ],
+      "196": [
+        "your",
+        "PRON",
+        "your"
+      ],
+      "197": [
+        "photos",
+        "NOUN",
+        "photo"
+      ],
+      "198": [
+        ",",
+        "PUNCT",
+        ","
+      ],
+      "199": [
+        "videos",
+        "NOUN",
+        "video"
+      ],
+      "200": [
+        ",",
+        "PUNCT",
+        ","
+      ],
+      "201": [
+        "documents",
+        "NOUN",
+        "document"
+      ],
+      "202": [
+        "and",
+        "CONJ",
+        "and"
+      ],
+      "203": [
+        "other",
+        "ADJ",
+        "other"
+      ],
+      "204": [
+        "files",
+        "NOUN",
+        "file"
+      ],
+      "205": [
+        "on",
+        "ADP",
+        "on"
+      ],
+      "206": [
+        "iCloud",
+        "NOUN",
+        "iCloud"
+      ],
+      "207": [
+        "for",
+        "ADP",
+        "for"
+      ],
+      "208": [
+        "secure",
+        "ADJ",
+        "secure"
+      ],
+      "209": [
+        "access",
+        "NOUN",
+        "access"
+      ],
+      "210": [
+        "across",
+        "ADP",
+        "across"
+      ],
+      "211": [
+        "multiple",
+        "ADJ",
+        "multiple"
+      ],
+      "212": [
+        "devices",
+        "NOUN",
+        "device"
+      ],
+      "213": [
+        ".",
+        "PUNCT",
+        "."
+      ],
+      "214": [
+        "Fees",
+        "NOUN",
+        "fee"
+      ],
+      "215": [
+        "may",
+        "VERB",
+        "may"
+      ],
+      "216": [
+        "apply",
+        "VERB",
+        "apply"
+      ],
+      "217": [
+        ".",
+        "PUNCT",
+        "."
+      ],
+      "218": [
+        "Touch",
+        "NOUN",
+        "Touch"
+      ],
+      "219": [
+        "ID",
+        "NOUN",
+        "ID"
+      ],
+      "220": [
+        "fingerprint",
+        "NOUN",
+        "fingerprint"
+      ],
+      "221": [
+        "identity",
+        "NOUN",
+        "identity"
+      ],
+      "222": [
+        "sensor",
+        "NOUN",
+        "sensor"
+      ],
+      "223": [
+        "Put",
+        "VERB",
+        "Put"
+      ],
+      "224": [
+        "your",
+        "PRON",
+        "your"
+      ],
+      "225": [
+        "finger",
+        "NOUN",
+        "finger"
+      ],
+      "226": [
+        "on",
+        "ADP",
+        "on"
+      ],
+      "227": [
+        "the",
+        "DET",
+        "the"
+      ],
+      "228": [
+        "Home",
+        "NOUN",
+        "Home"
+      ],
+      "229": [
+        "button",
+        "NOUN",
+        "button"
+      ],
+      "230": [
+        ",",
+        "PUNCT",
+        ","
+      ],
+      "231": [
+        "and",
+        "CONJ",
+        "and"
+      ],
+      "232": [
+        "just",
+        "ADV",
+        "just"
+      ],
+      "233": [
+        "like",
+        "VERB",
+        "like"
+      ],
+      "234": [
+        "that",
+        "ADP",
+        "that"
+      ],
+      "235": [
+        "your",
+        "PRON",
+        "your"
+      ],
+      "236": [
+        "iPhone",
+        "NOUN",
+        "iPhone"
+      ],
+      "237": [
+        "unlocks",
+        "VERB",
+        "unlock"
+      ],
+      "238": [
+        ".",
+        "PUNCT",
+        "."
+      ],
+      "239": [
+        "Your",
+        "PRON",
+        "Your"
+      ],
+      "240": [
+        "fingerprint",
+        "NOUN",
+        "fingerprint"
+      ],
+      "241": [
+        "can",
+        "VERB",
+        "can"
+      ],
+      "242": [
+        "also",
+        "ADV",
+        "also"
+      ],
+      "243": [
+        "approve",
+        "VERB",
+        "approve"
+      ],
+      "244": [
+        "purchases",
+        "NOUN",
+        "purchase"
+      ],
+      "245": [
+        "from",
+        "ADP",
+        "from"
+      ],
+      "246": [
+        "iTunes",
+        "NOUN",
+        "iTunes"
+      ],
+      "247": [
+        "or",
+        "CONJ",
+        "or"
+      ],
+      "248": [
+        "the",
+        "DET",
+        "the"
+      ],
+      "249": [
+        "App",
+        "NOUN",
+        "App"
+      ],
+      "250": [
+        "Store",
+        "NOUN",
+        "Store"
+      ],
+      "251": [
+        ".",
+        "PUNCT",
+        "."
+      ]
+    },
+    "finalEntityTaggedMap": {
+      "1": [
+        "Focus Pixels",
+        "0.0",
+        "0.008272809",
+        "OTHER",
+        "Focus Pixels",
+        "automatic setting"
+      ],
+      "2": [
+        "home screens",
+        "0.0",
+        "0.072882384",
+        "OTHER",
+        "home screens",
+        "personalization option"
+      ],
+      "3": [
+        "Maps",
+        "0.8",
+        "0.011662126",
+        "WORK_OF_ART"
+      ],
+      "4": [
+        "4GLTE",
+        "0.0",
+        "0.0047286423",
+        "OTHER",
+        "4GLTE speed",
+        "Not Found"
+      ],
+      "5": [
+        "speed",
+        "0.5",
+        "0.008096552",
+        "OTHER",
+        "4GLTE speed",
+        "Not Found"
+      ],
+      "6": [
+        "Retina display",
+        "0.0",
+        "0.005443583",
+        "OTHER",
+        "screen Retina display",
+        "Not Found"
+      ],
+      "7": [
+        "Photos",
+        "0.0",
+        "0.0145076495",
+        "WORK_OF_ART"
+      ],
+      "8": [
+        "purchases",
+        "0.0",
+        "0.00416889",
+        "OTHER"
+      ],
+      "9": [
+        "videos",
+        "0.0",
+        "0.005398319",
+        "WORK_OF_ART"
+      ],
+      "10": [
+        "performance",
+        "0.9",
+        "0.06418514",
+        "OTHER"
+      ],
+      "11": [
+        "access",
+        "0.0",
+        "0.005398319",
+        "OTHER"
+      ],
+      "12": [
+        "MP",
+        "0.0",
+        "0.0023838829",
+        "PERSON",
+        "12MP iSight camera",
+        "Not Found"
+      ],
+      "13": [
+        "Apple iOS",
+        "0.0",
+        "0.024359249",
+        "CONSUMER_GOOD",
+        "Apple iOS",
+        "mobile platform"
+      ],
+      "14": [
+        "photos",
+        "0.0",
+        "0.0067379954",
+        "WORK_OF_ART"
+      ],
+      "15": [
+        "iSight",
+        "0.0",
+        "0.0042984853",
+        "OTHER",
+        "12MP iSight camera",
+        "Not Found"
+      ],
+      "16": [
+        "files",
+        "0.0",
+        "0.006145811",
+        "OTHER"
+      ],
+      "17": [
+        "Tone",
+        "0.0",
+        "0.007267221",
+        "OTHER",
+        "Tone flash Capture images",
+        "Not Found"
+      ],
+      "18": [
+        "opening",
+        "0.1",
+        "0.06418514",
+        "EVENT"
+      ],
+      "19": [
+        "M9 motion coprocessor",
+        "0.0",
+        "0.06418514",
+        "CONSUMER_GOOD",
+        "M9 motion coprocessor",
+        "Not Found"
+      ],
+      "20": [
+        "Messages",
+        "0.0",
+        "0.011705046",
+        "WORK_OF_ART"
+      ],
+      "21": [
+        "apps",
+        "0.0",
+        "0.009995069",
+        "CONSUMER_GOOD"
+      ],
+      "22": [
+        "route",
+        "0.2",
+        "0.01799498",
+        "OTHER"
+      ],
+      "23": [
+        "apps",
+        "0.0",
+        "0.0029731458",
+        "CONSUMER_GOOD"
+      ],
+      "24": [
+        "memories",
+        "0.0",
+        "0.013235511",
+        "OTHER"
+      ],
+      "25": [
+        "front",
+        "0.0",
+        "0.008282894",
+        "OTHER"
+      ],
+      "26": [
+        "coating",
+        "0.0",
+        "0.0072760833",
+        "OTHER"
+      ],
+      "27": [
+        "power",
+        "0.9",
+        "0.008009472",
+        "OTHER"
+      ],
+      "28": [
+        "widescreen",
+        "0.0",
+        "0.008082743",
+        "OTHER",
+        "backlit widescreen",
+        "Not Found"
+      ],
+      "29": [
+        "memory",
+        "0.1",
+        "0.0027465033",
+        "OTHER"
+      ],
+      "30": [
+        "menus",
+        "0.0",
+        "0.06418514",
+        "OTHER"
+      ],
+      "31": [
+        "apps",
+        "0.0",
+        "0.006797993",
+        "CONSUMER_GOOD"
+      ],
+      "32": [
+        "camera",
+        "0.0",
+        "0.008272809",
+        "CONSUMER_GOOD",
+        "12MP iSight camera",
+        "Not Found"
+      ],
+      "33": [
+        "Home button",
+        "0.0",
+        "0.003718115",
+        "OTHER",
+        "Home button",
+        "function"
+      ],
+      "34": [
+        "Cloud support",
+        "0.0",
+        "0.0025365166",
+        "OTHER",
+        "Cloud support",
+        "feature"
+      ],
+      "35": [
+        "HD camera",
+        "0.0",
+        "0.0027143368",
+        "OTHER",
+        "MP FaceTime HD camera",
+        "Not Found"
+      ],
+      "36": [
+        "iCloud",
+        "0.0",
+        "0.003192267",
+        "OTHER"
+      ],
+      "37": [
+        "Retina Flash",
+        "0.0",
+        "0.0016045438",
+        "OTHER",
+        "Retina Flash",
+        "awesome new feature"
+      ],
+      "38": [
+        "content",
+        "0.0",
+        "0.009099524",
+        "OTHER"
+      ],
+      "39": [
+        "documents",
+        "0.0",
+        "0.005398319",
+        "WORK_OF_ART"
+      ],
+      "40": [
+        "resolution",
+        "0.0",
+        "0.0091870045",
+        "OTHER",
+        "pixel resolution",
+        "factor"
+      ],
+      "41": [
+        "storage space",
+        "0.0",
+        "0.0023814403",
+        "OTHER",
+        "storage space",
+        "feature"
+      ],
+      "42": [
+        "fingerprint",
+        "0.0",
+        "0.004981053",
+        "OTHER",
+        "Touch ID fingerprint identity sensor",
+        "phone s advanced technology"
+      ],
+      "43": [
+        "finger",
+        "0.0",
+        "0.0049849185",
+        "OTHER",
+        "Touch ID fingerprint identity sensor",
+        "phone s advanced technology"
+      ],
+      "44": [
+        "Touch ID",
+        "-0.2",
+        "0.0031868136",
+        "OTHER",
+        "Touch ID fingerprint identity sensor",
+        "phone s advanced technology"
+      ],
+      "45": [
+        "App Store",
+        "0.1",
+        "0.0025009962",
+        "OTHER",
+        "App Store",
+        "apps"
+      ],
+      "46": [
+        "files",
+        "0.0",
+        "0.006145811",
+        "OTHER"
+      ],
+      "47": [
+        "iPhone",
+        "0.0",
+        "0.002198203",
+        "CONSUMER_GOOD"
+      ],
+      "48": [
+        "FaceTime",
+        "0.0",
+        "0.0014091394",
+        "CONSUMER_GOOD",
+        "MP FaceTime HD camera",
+        "Not Found"
+      ],
+      "49": [
+        "applications",
+        "0.0",
+        "0.072882384",
+        "OTHER"
+      ],
+      "50": [
+        "contacts",
+        "0.0",
+        "0.002711556",
+        "OTHER"
+      ],
+      "51": [
+        "ways",
+        "0.6",
+        "0.011705046",
+        "OTHER"
+      ],
+      "52": [
+        "more",
+        "0.0",
+        "0.0029731458",
+        "OTHER"
+      ],
+      "53": [
+        "resolution",
+        "0.0",
+        "0.009200843",
+        "OTHER",
+        "pixel resolution",
+        "factor"
+      ],
+      "54": [
+        "fingerprint identity sensor",
+        "0.0",
+        "0.003913464",
+        "OTHER",
+        "Touch ID fingerprint identity sensor",
+        "phone s advanced technology"
+      ],
+      "55": [
+        "music",
+        "0.0",
+        "0.0023814403",
+        "WORK_OF_ART"
+      ],
+      "56": [
+        "Fees",
+        "0.0",
+        "0.0053935554",
+        "OTHER"
+      ],
+      "57": [
+        "images",
+        "0.0",
+        "0.007267221",
+        "WORK_OF_ART",
+        "Tone flash Capture images",
+        "Not Found"
+      ],
+      "58": [
+        "display",
+        "0.0",
+        "0.009200843",
+        "OTHER",
+        "screen Retina display",
+        "Not Found"
+      ],
+      "59": [
+        "social media",
+        "0.0",
+        "0.007993704",
+        "OTHER"
+      ],
+      "60": [
+        "anywhere",
+        "0.0",
+        "0.005398319",
+        "LOCATION"
+      ],
+      "61": [
+        "Web connection",
+        "0.9",
+        "0.0062694037",
+        "OTHER",
+        "Web connection",
+        "software tool"
+      ],
+      "62": [
+        "more",
+        "0.0",
+        "0.07974049",
+        "OTHER"
+      ],
+      "63": [
+        "devices",
+        "0.0",
+        "0.005398319",
+        "CONSUMER_GOOD"
+      ],
+      "64": [
+        "iTunes",
+        "0.0",
+        "0.0021964968",
+        "OTHER"
+      ],
+      "65": [
+        "Siri",
+        "0.5",
+        "0.00473798",
+        "ORGANIZATION"
+      ],
+      "66": [
+        "chip",
+        "0.2",
+        "0.10571908",
+        "OTHER",
+        "A9 chip",
+        "upgrade"
+      ],
+      "67": [
+        "photos",
+        "0.0",
+        "0.0029731458",
+        "WORK_OF_ART"
+      ],
+      "68": [
+        "Everything",
+        "0.1",
+        "0.030972801",
+        "OTHER"
+      ],
+      "69": [
+        "plenty",
+        "0.0",
+        "0.0018670206",
+        "OTHER"
+      ]
+    }
+  }
+]

@@ -88,4 +88,36 @@ public class NounEntityExtractor {
         return entityDetails;
 
     }
+
+    public static Map<String, String>  mergeNouns(Map<Integer, List<String>> data) {
+        Map<String, String> entityTags = new LinkedHashMap<>();
+        String requestString = "";
+        int continousNounCount = 0;
+
+        for(Map.Entry<Integer, List<String>> entityRow: data.entrySet()) {
+            String posTag = entityRow.getValue().get(1);
+
+            if(posTag.equalsIgnoreCase("NOUN")) {
+
+                requestString += (continousNounCount++ == 0) ? entityRow.getValue().get(0) : " " + entityRow.getValue().get(0);
+
+                if(data.get(data.size()-1) == entityRow && continousNounCount > 1) {
+                    String tag = Extractor.understandShortWordConcept(requestString, "Not Found");
+                    entityTags.put(requestString, tag);
+                }
+
+            } else {
+                if(continousNounCount > 1) {
+                        String tag = Extractor.understandShortWordConcept(requestString, "Not Found");
+                        entityTags.put(requestString, tag);
+                    }
+                continousNounCount = 0;
+                requestString = "";
+            }
+        }
+
+        System.out.println(entityTags);
+        return entityTags;
+
+    }
 }

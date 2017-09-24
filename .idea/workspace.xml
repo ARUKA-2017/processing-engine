@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17eaaa8d-b2aa-429f-96a9-5d4f1e59cd7e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Output.json" afterPath="$PROJECT_DIR$/Output.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/akura/cloundnlp/Extractor.java" afterPath="$PROJECT_DIR$/src/main/java/akura/cloundnlp/Extractor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/akura/cloundnlp/NounEntityExtractor.java" afterPath="$PROJECT_DIR$/src/main/java/akura/cloundnlp/NounEntityExtractor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/akura/cloundnlp/OntologyMapDto.java" afterPath="$PROJECT_DIR$/src/main/java/akura/cloundnlp/OntologyMapDto.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +27,8 @@
       <file leaf-file-name="NounEntityExtractor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/NounEntityExtractor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="642">
-              <caret line="70" column="25" lean-forward="true" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
+            <state relative-caret-position="206">
+              <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -33,7 +36,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
@@ -46,20 +49,49 @@
       <file leaf-file-name="Output.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Output.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="135">
+              <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Extractor.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Extractor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/Extractor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="63" column="0" lean-forward="true" selection-start-line="62" selection-start-column="9" selection-end-line="63" selection-end-column="0" />
+            <state relative-caret-position="545">
+              <caret line="120" column="9" lean-forward="true" selection-start-line="120" selection-start-column="9" selection-end-line="120" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#prioritizeEntities#0;class#Extractor#0" expanded="false" />
+                <element signature="method#filterActualEntities#0;class#Extractor#0" expanded="false" />
+                <element signature="method#identifyReviewCategory#0;class#Extractor#0" expanded="false" />
+                <element signature="method#understandShortWordConcept#0;class#Extractor#0" expanded="false" />
+                <element signature="method#analyseEntity#0;class#Extractor#0" expanded="false" />
+                <element signature="method#authorize#0;class#Extractor#0" expanded="false" />
+                <element signature="method#provideLanguageServiceClient#0;class#Extractor#0" expanded="false" />
+                <element signature="method#identifyDomains#0;class#Extractor#0" expanded="false" />
+                <element signature="method#analyseSentiment#0;class#Extractor#0" expanded="false" />
+                <element signature="method#entriesSortedByValues#0;class#Extractor#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OntologyMapDto.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/OntologyMapDto.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="15" column="60" lean-forward="true" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
+              <folding>
+                <element signature="e#801#802#0" expanded="true" />
+                <element signature="e#832#833#0" expanded="true" />
+                <element signature="e#1339#1340#0" expanded="true" />
+                <element signature="e#1374#1375#0" expanded="true" />
+                <element signature="e#1450#1451#0" expanded="true" />
+                <element signature="e#1498#1499#0" expanded="true" />
+                <element signature="e#1565#1566#0" expanded="true" />
+                <element signature="e#1608#1609#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,7 +101,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/SampleReviews.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="5" column="1387" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="1387" />
+              <caret line="5" column="1388" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="1388" />
               <folding />
             </state>
           </provider>
@@ -88,6 +120,7 @@
     <findStrings>
       <find>getEntityTagsAccordingToNounCombinationsFromMSApi</find>
       <find>sal</find>
+      <find>power</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -107,13 +140,13 @@
         <option value="$PROJECT_DIR$/src/main/java/akura/cloundnlp/SampleReviews.txt" />
         <option value="$PROJECT_DIR$/src/main/java/akura/crawler/Execute.java" />
         <option value="$PROJECT_DIR$/src/main/java/akura/cloundnlp/EntityDto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/akura/cloundnlp/OntologyMapDto.java" />
-        <option value="$PROJECT_DIR$/src/main/java/akura/cloundnlp/SampleReviews.json" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/akura/cloundnlp/TestScenario.java" />
-        <option value="$PROJECT_DIR$/src/main/java/akura/cloundnlp/Extractor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/akura/cloundnlp/NounEntityExtractor.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/akura/cloundnlp/NounEntityExtractor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/akura/cloundnlp/SampleReviews.json" />
+        <option value="$PROJECT_DIR$/src/main/java/akura/cloundnlp/OntologyMapDto.java" />
+        <option value="$PROJECT_DIR$/src/main/java/akura/cloundnlp/Extractor.java" />
       </list>
     </option>
   </component>
@@ -240,9 +273,9 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -344,7 +377,7 @@
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="extraction-engine" />
       <envs>
-        <env name="GOOGLE_APPLICATION_CREDENTIALS" value="/Users/rishanthakumarrasarathinam/Documents/projects/research/processing-engine/src/main/java/akura/cloundnlp/credentials.json" />
+        <env name="GOOGLE_APPLICATION_CREDENTIALS" value="/Users/sameera/Documents/SLIIT/4th Year/2nd semester/cdap/mideva/processing-engine/src/main/java/akura/cloundnlp/credentials.json" />
       </envs>
       <method />
     </configuration>
@@ -856,6 +889,7 @@
       <workItem from="1505793431108" duration="69751000" />
       <workItem from="1506177524503" duration="4800000" />
       <workItem from="1506184209009" duration="326000" />
+      <workItem from="1506184648882" duration="14235000" />
     </task>
     <task id="LOCAL-00001" summary="Add score and salience to noun entity extractor.">
       <created>1506183472949</created>
@@ -875,7 +909,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97700000" />
+    <option name="totallyTimeSpent" value="111935000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-322" y="-1080" width="1920" height="1080" extended-state="0" />
@@ -884,31 +918,31 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3739726" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3810179" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4782178" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2920792" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2920792" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10969116" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16773163" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5034388" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31287128" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3739726" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -963,32 +997,36 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/Extractor.java</url>
-          <line>252</line>
+          <line>251</line>
           <properties />
-          <option name="timeStamp" value="37" />
+          <option name="timeStamp" value="86" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/NounEntityExtractor.java</url>
-          <line>70</line>
+          <url>file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/Extractor.java</url>
+          <line>122</line>
           <properties />
-          <option name="timeStamp" value="44" />
+          <option name="timeStamp" value="89" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/NounEntityExtractor.java</url>
-          <line>45</line>
+          <url>file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/Extractor.java</url>
+          <line>118</line>
           <properties />
-          <option name="timeStamp" value="45" />
+          <option name="timeStamp" value="90" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/NounEntityExtractor.java</url>
-          <line>41</line>
+          <url>file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/Extractor.java</url>
+          <line>116</line>
           <properties />
-          <option name="timeStamp" value="46" />
+          <option name="timeStamp" value="91" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="47" />
+      <option name="time" value="92" />
     </breakpoint-manager>
     <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/Extractor.java">
@@ -997,6 +1035,16 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#prioritizeEntities#0;class#Extractor#0" expanded="false" />
+            <element signature="method#filterActualEntities#0;class#Extractor#0" expanded="false" />
+            <element signature="method#identifyReviewCategory#0;class#Extractor#0" expanded="false" />
+            <element signature="method#understandShortWordConcept#0;class#Extractor#0" expanded="false" />
+            <element signature="method#analyseEntity#0;class#Extractor#0" expanded="false" />
+            <element signature="method#authorize#0;class#Extractor#0" expanded="false" />
+            <element signature="method#provideLanguageServiceClient#0;class#Extractor#0" expanded="false" />
+            <element signature="method#identifyDomains#0;class#Extractor#0" expanded="false" />
+            <element signature="method#analyseSentiment#0;class#Extractor#0" expanded="false" />
+            <element signature="method#entriesSortedByValues#0;class#Extractor#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1052,6 +1100,16 @@
           <caret line="12" column="45" lean-forward="false" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#prioritizeEntities#0;class#Extractor#0" expanded="false" />
+            <element signature="method#filterActualEntities#0;class#Extractor#0" expanded="false" />
+            <element signature="method#identifyReviewCategory#0;class#Extractor#0" expanded="false" />
+            <element signature="method#understandShortWordConcept#0;class#Extractor#0" expanded="false" />
+            <element signature="method#analyseEntity#0;class#Extractor#0" expanded="false" />
+            <element signature="method#authorize#0;class#Extractor#0" expanded="false" />
+            <element signature="method#provideLanguageServiceClient#0;class#Extractor#0" expanded="false" />
+            <element signature="method#identifyDomains#0;class#Extractor#0" expanded="false" />
+            <element signature="method#analyseSentiment#0;class#Extractor#0" expanded="false" />
+            <element signature="method#entriesSortedByValues#0;class#Extractor#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1107,6 +1165,16 @@
           <caret line="12" column="45" lean-forward="false" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#prioritizeEntities#0;class#Extractor#0" expanded="false" />
+            <element signature="method#filterActualEntities#0;class#Extractor#0" expanded="false" />
+            <element signature="method#identifyReviewCategory#0;class#Extractor#0" expanded="false" />
+            <element signature="method#understandShortWordConcept#0;class#Extractor#0" expanded="false" />
+            <element signature="method#analyseEntity#0;class#Extractor#0" expanded="false" />
+            <element signature="method#authorize#0;class#Extractor#0" expanded="false" />
+            <element signature="method#provideLanguageServiceClient#0;class#Extractor#0" expanded="false" />
+            <element signature="method#identifyDomains#0;class#Extractor#0" expanded="false" />
+            <element signature="method#analyseSentiment#0;class#Extractor#0" expanded="false" />
+            <element signature="method#entriesSortedByValues#0;class#Extractor#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1247,13 +1315,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/OntologyMapDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="32" column="33" lean-forward="false" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/akura/corenlp/sample.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1307,10 +1368,10 @@
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/src.zip!/java/lang/String.java" />
-    <entry file="file://$PROJECT_DIR$/Output.json">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="240">
+          <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -1318,36 +1379,63 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/SampleReviews.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="1387" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="1387" />
+          <caret line="5" column="1388" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="1388" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/Extractor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/OntologyMapDto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="63" column="0" lean-forward="true" selection-start-line="62" selection-start-column="9" selection-end-line="63" selection-end-column="0" />
+        <state relative-caret-position="210">
+          <caret line="15" column="60" lean-forward="true" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#801#802#0" expanded="true" />
+            <element signature="e#832#833#0" expanded="true" />
+            <element signature="e#1339#1340#0" expanded="true" />
+            <element signature="e#1374#1375#0" expanded="true" />
+            <element signature="e#1450#1451#0" expanded="true" />
+            <element signature="e#1498#1499#0" expanded="true" />
+            <element signature="e#1565#1566#0" expanded="true" />
+            <element signature="e#1608#1609#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Output.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/NounEntityExtractor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="642">
-          <caret line="70" column="25" lean-forward="true" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
+        <state relative-caret-position="206">
+          <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/Extractor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-          <folding />
+        <state relative-caret-position="545">
+          <caret line="120" column="9" lean-forward="true" selection-start-line="120" selection-start-column="9" selection-end-line="120" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#prioritizeEntities#0;class#Extractor#0" expanded="false" />
+            <element signature="method#filterActualEntities#0;class#Extractor#0" expanded="false" />
+            <element signature="method#identifyReviewCategory#0;class#Extractor#0" expanded="false" />
+            <element signature="method#understandShortWordConcept#0;class#Extractor#0" expanded="false" />
+            <element signature="method#analyseEntity#0;class#Extractor#0" expanded="false" />
+            <element signature="method#authorize#0;class#Extractor#0" expanded="false" />
+            <element signature="method#provideLanguageServiceClient#0;class#Extractor#0" expanded="false" />
+            <element signature="method#identifyDomains#0;class#Extractor#0" expanded="false" />
+            <element signature="method#analyseSentiment#0;class#Extractor#0" expanded="false" />
+            <element signature="method#entriesSortedByValues#0;class#Extractor#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

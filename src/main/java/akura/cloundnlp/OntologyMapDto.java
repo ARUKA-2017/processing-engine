@@ -12,7 +12,8 @@ public class OntologyMapDto {
     private float reviewRating;
     private List<EntityDto> entityDtos;
     private Map<String, Float> categoryMap;
-    private Map<Integer, List<String>> data;
+    private Map<Integer, List<String>> syntaxTagMap;
+    private Map<Integer, List<String>> finalEntityTaggedMap;
 
     public String getReview() {
         return review;
@@ -54,11 +55,19 @@ public class OntologyMapDto {
         this.entityDtos = entityDtos;
     }
 
-    public Map<Integer, List<String>> getData() {
-        return data;
+    public Map<Integer, List<String>> getSyntaxTagMap() {
+        return syntaxTagMap;
     }
 
-    public void setData(Map<Integer, List<String>> data) {
-        this.data = data;
+    public void setSyntaxTagMap(Map<Integer, List<String>> syntaxTagMap) {
+        this.syntaxTagMap = syntaxTagMap;
+    }
+
+    public Map<Integer, List<String>> getFinalEntityTaggedMap() {
+        return finalEntityTaggedMap;
+    }
+
+    public void setFinalEntityTaggedMap(Map<Integer, List<String>> finalEntityTaggedMap) {
+        this.finalEntityTaggedMap = finalEntityTaggedMap;
     }
 }
