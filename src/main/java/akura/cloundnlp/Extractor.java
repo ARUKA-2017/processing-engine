@@ -131,7 +131,17 @@ public class Extractor {
                     finalEntityTagDto.setSalience(Float.parseFloat(subEntry.getValue().get(2)));
                     finalEntityTagDto.setCategory((subEntry.getValue().size()>3)?subEntry.getValue().get(3):"");
                     finalEntityTagDto.setNounCombination((subEntry.getValue().size()>4)?subEntry.getValue().get(4):"");
-                    finalEntityTagDto.setNounCombinationCategory((subEntry.getValue().size()>5)?subEntry.getValue().get(5):"");
+
+                    String text = subEntry.getValue().get(0);
+                    String nounCombination = (subEntry.getValue().size()>4)?subEntry.getValue().get(4):"";
+                    String nounCombinationCategory = (subEntry.getValue().size()>5)?subEntry.getValue().get(5):"";
+
+                    if (nounCombinationCategory.equalsIgnoreCase("not found") && !text.equalsIgnoreCase(nounCombination)){
+                        finalEntityTagDto.setNounCombination(text);
+                        finalEntityTagDto.setNounCombinationCategory(understandShortWordConcept(text, "Not Found"));
+                    } else {
+                        finalEntityTagDto.setNounCombinationCategory((subEntry.getValue().size()>5)?subEntry.getValue().get(5):"");
+                    }
                     finalEntityTagDtos.add(finalEntityTagDto);
                 }
             }
