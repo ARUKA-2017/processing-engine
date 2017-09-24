@@ -1,37 +1,27 @@
 package akura.cloundnlp;
 
+import akura.Utility.APIConnection;
 
-import com.google.api.client.googleapis.auth.oauth2.GoogleCredential;
 import com.google.cloud.language.v1beta2.*;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import org.apache.http.HttpEntity;
-import org.apache.http.HttpResponse;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.HttpClientBuilder;
-import org.apache.http.util.EntityUtils;
-import org.apache.jena.atlas.json.io.parser.JSONP;
+
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
 
 import java.io.*;
-import java.net.URI;
-import java.net.URISyntaxException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.InputStream;
+
 import java.security.GeneralSecurityException;
 import java.util.*;
-
-import static akura.cloundnlp.NounEntityExtractor.mergeNouns;
 
 /**
  * A snippet for Google Cloud Speech API showing how to analyze text message sentiment.
  */
 public class Extractor {
+
     private static OntologyMapDto ontologyMapDto;
     private static Map<String, List<String>> domainTagMap = new LinkedHashMap<>();
     private static Map<Integer, List<String>> syntaxTagMap = new LinkedHashMap<>();
@@ -45,7 +35,7 @@ public class Extractor {
 
 
     public static void main(String... args) throws Exception {
-        languageServiceClient = provideLanguageServiceClient();
+        languageServiceClient = APIConnection.provideLanguageServiceClient();
         JSONParser jsonParser = new JSONParser();
         JSONArray array = (JSONArray) jsonParser.parse(new FileReader("./src/main/java/akura/cloundnlp/SampleReviews.json"));
         List<OntologyMapDto> ontologyMapDtos = new LinkedList<>();
@@ -72,6 +62,7 @@ public class Extractor {
             gson.toJson(ontologyMapDtos, writer);
         }
     }
+
     //identify entity priority list
     public static void prioritizeEntities(Map<Integer, List<String>> syntaxTagMap){
 
@@ -138,7 +129,7 @@ public class Extractor {
 
                     if (nounCombinationCategory.equalsIgnoreCase("not found") && !text.equalsIgnoreCase(nounCombination)){
                         finalEntityTagDto.setNounCombination(text);
-                        finalEntityTagDto.setNounCombinationCategory(understandShortWordConcept(text, "Not Found"));
+                        finalEntityTagDto.setNounCombinationCategory(APIConnection.understandShortWordConcept(text, "Not Found"));
                     } else {
                         finalEntityTagDto.setNounCombinationCategory((subEntry.getValue().size()>5)?subEntry.getValue().get(5):"");
                     }
@@ -168,29 +159,6 @@ public class Extractor {
         return categoryMap;
     }
 
-    //ms concept graph connection
-    public static String understandShortWordConcept(String text, String organization) {
-        String url = "http://concept.research.microsoft.com/api/Concept/ScoreByProb?instance=".concat(text).concat("&topK=1").replaceAll(" ","%20");
-        HttpClient client = HttpClientBuilder.create().build();
-        HttpGet getRequest = new HttpGet(url);
-        try {
-            HttpResponse httpResponse = client.execute(getRequest);
-            HttpEntity httpEntity = httpResponse.getEntity();
-            InputStream inputStream = httpEntity.getContent();
-            JSONParser jsonParser = new JSONParser();
-            JSONObject jsonObject = (JSONObject) jsonParser.parse(EntityUtils.toString(httpEntity, "UTF-8"));
-            return jsonObject.keySet().iterator().next().toString();
-        } catch (IOException e) {
-            System.out.println(e);
-            return organization;
-        } catch (ParseException e) {
-            System.out.println(e);
-            return organization;
-        } catch (NoSuchElementException e){
-            System.out.println("Element not found!");
-            return organization;
-        }
-    }
 
     public static Map<Integer, List<String>> identifySubDomains(Map<Integer, List<String>> syntaxTagMap){
         Map<Integer, List<String>> newTagMap = new LinkedHashMap<>();
@@ -284,17 +252,6 @@ public class Extractor {
 
     }
 
-    //authenticate google API
-    private static GoogleCredential authorize() throws IOException, GeneralSecurityException {
-        GoogleCredential credential = GoogleCredential.getApplicationDefault();
-        return credential;
-    }
-
-    //provide authentication with client
-    private static LanguageServiceClient provideLanguageServiceClient() throws IOException, GeneralSecurityException {
-        authorize();
-        return LanguageServiceClient.create();
-    }
 
     //not using only for testing purposes
     public static Map<String, List<String>> identifyDomains(String text, LanguageServiceClient languageServiceClient) throws IOException, GeneralSecurityException {

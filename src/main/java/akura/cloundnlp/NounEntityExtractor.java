@@ -1,28 +1,22 @@
 package akura.cloundnlp;
 
-import org.json.simple.JSONArray;
-import org.json.simple.parser.JSONParser;
+import akura.Utility.APIConnection;
 
-import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Class representing an entity extractor from nouns.
+ */
 public class NounEntityExtractor {
 
-    public static  void main(String args[]) {
-
-        JSONParser jsonParser = new JSONParser();
-        JSONArray array = null;
-
-        try {
-            array = (JSONArray) jsonParser.parse(new FileReader("./src/main/java/akura/cloundnlp/SampleReviews.json"));
-        } catch (Exception e) {
-
-        }
-    }
-
+    /**
+     * Get entity tags with salience and sentiment.
+     * @param data - data to be processed.
+     * @return
+     */
     public static Map<String, List<String>> getEntityTagsAccordingToNounCombinationsFromMSApi(Map<Integer, List<String>> data) {
         Map<String, List<String>> entityTags = new LinkedHashMap<>();
         String requestString = "";
@@ -65,9 +59,13 @@ public class NounEntityExtractor {
 
     }
 
+    /**
+     * Method used to get average salience or sentiment score.
+     * @param listData - listed data.
+     * @return
+     */
     private static float avgSalienceOrSentimentScore(List<Float> listData) {
         float sum = 0.0f;
-
 
         for(float value : listData) {
             sum += value;
@@ -76,9 +74,16 @@ public class NounEntityExtractor {
         return (listData.size() > 0) ? sum/listData.size() : 0.0f;
     }
 
+    /**
+     * Method used to add entity details.
+     * @param requestString
+     * @param salience
+     * @param sentimentScore
+     * @return
+     */
     private static List<String>  addEntityDetails(String requestString,  List<Float> salience, List<Float> sentimentScore) {
 
-        String tag = Extractor.understandShortWordConcept(requestString, "Not Found");
+        String tag = APIConnection.understandShortWordConcept(requestString, "Not Found");
 
         List<String> entityDetails = new ArrayList<String>();
         entityDetails.add(tag);
@@ -89,6 +94,11 @@ public class NounEntityExtractor {
 
     }
 
+    /**
+     * Method used to merge nouns and add tag.
+     * @param data
+     * @return
+     */
     public static Map<String, String>  mergeNouns(Map<Integer, List<String>> data) {
         Map<String, String> entityTags = new LinkedHashMap<>();
         String requestString = "";
@@ -102,13 +112,13 @@ public class NounEntityExtractor {
                 requestString += (continousNounCount++ == 0) ? entityRow.getValue().get(0) : " " + entityRow.getValue().get(0);
 
                 if(data.get(data.size()-1) == entityRow && continousNounCount > 0) {
-                    String tag = Extractor.understandShortWordConcept(requestString, "Not Found");
+                    String tag = APIConnection.understandShortWordConcept(requestString, "Not Found");
                     entityTags.put(requestString, tag);
                 }
 
             } else {
                 if(continousNounCount > 0) {
-                        String tag = Extractor.understandShortWordConcept(requestString, "Not Found");
+                        String tag = APIConnection.understandShortWordConcept(requestString, "Not Found");
                         entityTags.put(requestString, tag);
                     }
                 continousNounCount = 0;
@@ -118,6 +128,5 @@ public class NounEntityExtractor {
 
         System.out.println(entityTags);
         return entityTags;
-
     }
 }
