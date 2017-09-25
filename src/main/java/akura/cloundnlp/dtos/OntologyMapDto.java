@@ -12,8 +12,6 @@ public class OntologyMapDto {
     private float reviewRating;
     private List<EntityDto> entityDtos;
     private Map<String, Float> categoryMap;
-//    private Map<Integer, List<String>> syntaxTagMap;
-//    private Map<Integer, List<String>> finalEntityTaggedMap;
     private List<SyntaxDto> syntaxTagList;
     private List<FinalEntityTagDto> finalEntityTaggedList;
 

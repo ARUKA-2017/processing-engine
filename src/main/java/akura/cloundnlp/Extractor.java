@@ -61,6 +61,8 @@ public class Extractor {
             Gson gson = new GsonBuilder().setPrettyPrinting().create();
             gson.toJson(ontologyMapDtos, writer);
         }
+
+        constructAvgScores(ontologyMapDtos.get(0).getFinalEntityTaggedList());
     }
 
     //identify entity priority list
@@ -351,6 +353,55 @@ public class Extractor {
         return ontologyMapDto;
     }
 
+    public static void constructAvgScores(List<FinalEntityTagDto> finalEntityTagDtos){
+        List<FinalEntityTagDto> outputDtoList = new LinkedList<>();
+        List<FinalEntityTagDto> removeList = new LinkedList<>();
+
+
+        Iterator<FinalEntityTagDto> iterator = finalEntityTagDtos.iterator();
+        while(iterator.hasNext()){
+            FinalEntityTagDto finalEntityTagDto = iterator.next();
+
+            FinalEntityTagDto temporaryDto = new FinalEntityTagDto();
+
+            String entityName = finalEntityTagDto.getText();
+            String entityCategory = finalEntityTagDto.getCategory();
+            String nounCombination = finalEntityTagDto.getNounCombination();
+            String nounCombinationCategory = finalEntityTagDto.getNounCombinationCategory();
+            float sentiment = finalEntityTagDto.getSentiment();
+            float salience = finalEntityTagDto.getSalience();
+
+            iterator.remove();
+            int counter = 0;
+
+            String sum = String.valueOf(salience);
+            while (iterator.hasNext()){
+                FinalEntityTagDto finalEntityTagDto1 = iterator.next();
+                if (entityName.equalsIgnoreCase(finalEntityTagDto1.getText()) || nounCombination.equalsIgnoreCase(finalEntityTagDto1.getNounCombination())){
+                    counter++;
+                    sum = sum + " " +String.valueOf(salience);
+                    sentiment = (sentiment+finalEntityTagDto1.getSentiment())/counter;
+                    salience = (salience+finalEntityTagDto1.getSalience())/counter;
+
+
+                    iterator.remove();
+                }
+            }
+            System.out.println(sum);
+
+            temporaryDto.setText(entityName);
+            temporaryDto.setCategory(entityCategory);
+            temporaryDto.setSentiment(sentiment);
+            temporaryDto.setSalience(salience);
+            temporaryDto.setNounCombination(nounCombination);
+            temporaryDto.setNounCombinationCategory(nounCombinationCategory);
+
+            outputDtoList.add(temporaryDto);
+            iterator = finalEntityTagDtos.iterator();
+        }
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        System.out.println(gson.toJson(outputDtoList));
+    }
     /**
      * write output to a json document - output.json
      * @param ontologyMapDtos
