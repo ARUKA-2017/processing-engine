@@ -1265,374 +1265,6 @@
     ],
     "finalEntityTaggedList": [
       {
-        "text": "Focus Pixels",
-        "sentiment": 0.0,
-        "salience": 0.008272809,
-        "category": "OTHER",
-        "nounCombination": "Focus Pixels",
-        "nounCombinationCategory": "automatic setting"
-      },
-      {
-        "text": "photos",
-        "sentiment": 0.0,
-        "salience": 0.0029731458,
-        "category": "WORK_OF_ART",
-        "nounCombination": "photos",
-        "nounCombinationCategory": "file"
-      },
-      {
-        "text": "speed",
-        "sentiment": 0.5,
-        "salience": 0.008096552,
-        "category": "OTHER",
-        "nounCombination": "speed",
-        "nounCombinationCategory": "factor"
-      },
-      {
-        "text": "Retina display",
-        "sentiment": 0.0,
-        "salience": 0.005443583,
-        "category": "OTHER",
-        "nounCombination": "Retina display",
-        "nounCombinationCategory": "feature"
-      },
-      {
-        "text": "M9 motion coprocessor",
-        "sentiment": 0.0,
-        "salience": 0.06418514,
-        "category": "CONSUMER_GOOD",
-        "nounCombination": "M9 motion coprocessor",
-        "nounCombinationCategory": "Not Found"
-      },
-      {
-        "text": "photos",
-        "sentiment": 0.0,
-        "salience": 0.0067379954,
-        "category": "WORK_OF_ART",
-        "nounCombination": "photos",
-        "nounCombinationCategory": "file"
-      },
-      {
-        "text": "purchases",
-        "sentiment": 0.0,
-        "salience": 0.00416889,
-        "category": "OTHER",
-        "nounCombination": "purchases",
-        "nounCombinationCategory": "transaction"
-      },
-      {
-        "text": "menus",
-        "sentiment": 0.0,
-        "salience": 0.06418514,
-        "category": "OTHER",
-        "nounCombination": "menus",
-        "nounCombinationCategory": "item"
-      },
-      {
-        "text": "Everything",
-        "sentiment": 0.1,
-        "salience": 0.030972801,
-        "category": "OTHER",
-        "nounCombination": "Everything",
-        "nounCombinationCategory": "word"
-      },
-      {
-        "text": "apps",
-        "sentiment": 0.0,
-        "salience": 0.0029731458,
-        "category": "CONSUMER_GOOD",
-        "nounCombination": "apps",
-        "nounCombinationCategory": "technology"
-      },
-      {
-        "text": "contacts",
-        "sentiment": 0.0,
-        "salience": 0.002711556,
-        "category": "OTHER",
-        "nounCombination": "contacts",
-        "nounCombinationCategory": "datum"
-      },
-      {
-        "text": "videos",
-        "sentiment": 0.0,
-        "salience": 0.005398319,
-        "category": "WORK_OF_ART",
-        "nounCombination": "videos",
-        "nounCombinationCategory": "medium"
-      },
-      {
-        "text": "memories",
-        "sentiment": 0.0,
-        "salience": 0.013235511,
-        "category": "OTHER",
-        "nounCombination": "memories",
-        "nounCombinationCategory": "resource"
-      },
-      {
-        "text": "memory",
-        "sentiment": 0.1,
-        "salience": 0.0027465033,
-        "category": "OTHER",
-        "nounCombination": "memory",
-        "nounCombinationCategory": "resource"
-      },
-      {
-        "text": "more",
-        "sentiment": 0.0,
-        "salience": 0.07974049,
-        "category": "OTHER",
-        "nounCombination": "",
-        "nounCombinationCategory": ""
-      },
-      {
-        "text": "route",
-        "sentiment": 0.2,
-        "salience": 0.01799498,
-        "category": "OTHER",
-        "nounCombination": "route",
-        "nounCombinationCategory": "information"
-      },
-      {
-        "text": "social media",
-        "sentiment": 0.0,
-        "salience": 0.007993704,
-        "category": "OTHER",
-        "nounCombination": "",
-        "nounCombinationCategory": ""
-      },
-      {
-        "text": "Tone",
-        "sentiment": 0.0,
-        "salience": 0.007267221,
-        "category": "OTHER",
-        "nounCombination": "Tone",
-        "nounCombinationCategory": "element"
-      },
-      {
-        "text": "more",
-        "sentiment": 0.0,
-        "salience": 0.0029731458,
-        "category": "OTHER",
-        "nounCombination": "",
-        "nounCombinationCategory": ""
-      },
-      {
-        "text": "front",
-        "sentiment": 0.0,
-        "salience": 0.008282894,
-        "category": "OTHER",
-        "nounCombination": "front",
-        "nounCombinationCategory": "term"
-      },
-      {
-        "text": "documents",
-        "sentiment": 0.0,
-        "salience": 0.005398319,
-        "category": "WORK_OF_ART",
-        "nounCombination": "documents",
-        "nounCombinationCategory": "file"
-      },
-      {
-        "text": "performance",
-        "sentiment": 0.9,
-        "salience": 0.06418514,
-        "category": "OTHER",
-        "nounCombination": "performance",
-        "nounCombinationCategory": "factor"
-      },
-      {
-        "text": "chip",
-        "sentiment": 0.2,
-        "salience": 0.10571908,
-        "category": "OTHER",
-        "nounCombination": "A9 chip",
-        "nounCombinationCategory": "upgrade"
-      },
-      {
-        "text": "Maps",
-        "sentiment": 0.8,
-        "salience": 0.011662126,
-        "category": "WORK_OF_ART",
-        "nounCombination": "Maps",
-        "nounCombinationCategory": "information"
-      },
-      {
-        "text": "resolution",
-        "sentiment": 0.0,
-        "salience": 0.009200843,
-        "category": "OTHER",
-        "nounCombination": "resolution",
-        "nounCombinationCategory": "parameter"
-      },
-      {
-        "text": "home screens",
-        "sentiment": 0.0,
-        "salience": 0.072882384,
-        "category": "OTHER",
-        "nounCombination": "home screens",
-        "nounCombinationCategory": "personalization option"
-      },
-      {
-        "text": "Photos",
-        "sentiment": 0.0,
-        "salience": 0.0145076495,
-        "category": "WORK_OF_ART",
-        "nounCombination": "Photos",
-        "nounCombinationCategory": "file"
-      },
-      {
-        "text": "iPhone",
-        "sentiment": 0.0,
-        "salience": 0.002198203,
-        "category": "CONSUMER_GOOD",
-        "nounCombination": "iPhone",
-        "nounCombinationCategory": "device"
-      },
-      {
-        "text": "FaceTime",
-        "sentiment": 0.0,
-        "salience": 0.0014091394,
-        "category": "CONSUMER_GOOD",
-        "nounCombination": "FaceTime",
-        "nounCombinationCategory": "apps"
-      },
-      {
-        "text": "MP",
-        "sentiment": 0.0,
-        "salience": 0.0023838829,
-        "category": "PERSON",
-        "nounCombination": "MP",
-        "nounCombinationCategory": "state"
-      },
-      {
-        "text": "apps",
-        "sentiment": 0.0,
-        "salience": 0.006797993,
-        "category": "CONSUMER_GOOD",
-        "nounCombination": "apps",
-        "nounCombinationCategory": "technology"
-      },
-      {
-        "text": "iTunes",
-        "sentiment": 0.0,
-        "salience": 0.0021964968,
-        "category": "OTHER",
-        "nounCombination": "iTunes",
-        "nounCombinationCategory": "program"
-      },
-      {
-        "text": "Siri",
-        "sentiment": 0.5,
-        "salience": 0.00473798,
-        "category": "ORGANIZATION",
-        "nounCombination": "Siri",
-        "nounCombinationCategory": "popular apps"
-      },
-      {
-        "text": "anywhere",
-        "sentiment": 0.0,
-        "salience": 0.005398319,
-        "category": "LOCATION",
-        "nounCombination": "",
-        "nounCombinationCategory": ""
-      },
-      {
-        "text": "Cloud support",
-        "sentiment": 0.0,
-        "salience": 0.0025365166,
-        "category": "OTHER",
-        "nounCombination": "Cloud support",
-        "nounCombinationCategory": "feature"
-      },
-      {
-        "text": "files",
-        "sentiment": 0.0,
-        "salience": 0.006145811,
-        "category": "OTHER",
-        "nounCombination": "files",
-        "nounCombinationCategory": "resource"
-      },
-      {
-        "text": "access",
-        "sentiment": 0.0,
-        "salience": 0.005398319,
-        "category": "OTHER",
-        "nounCombination": "access",
-        "nounCombinationCategory": "issue"
-      },
-      {
-        "text": "Apple iOS",
-        "sentiment": 0.0,
-        "salience": 0.024359249,
-        "category": "CONSUMER_GOOD",
-        "nounCombination": "Apple iOS",
-        "nounCombinationCategory": "mobile platform"
-      },
-      {
-        "text": "iSight",
-        "sentiment": 0.0,
-        "salience": 0.0042984853,
-        "category": "OTHER",
-        "nounCombination": "iSight",
-        "nounCombinationCategory": "hi speed web camera"
-      },
-      {
-        "text": "resolution",
-        "sentiment": 0.0,
-        "salience": 0.0091870045,
-        "category": "OTHER",
-        "nounCombination": "resolution",
-        "nounCombinationCategory": "parameter"
-      },
-      {
-        "text": "fingerprint identity sensor",
-        "sentiment": 0.0,
-        "salience": 0.003913464,
-        "category": "OTHER",
-        "nounCombination": "Touch ID fingerprint identity sensor",
-        "nounCombinationCategory": "phone s advanced technology"
-      },
-      {
-        "text": "storage space",
-        "sentiment": 0.0,
-        "salience": 0.0023814403,
-        "category": "OTHER",
-        "nounCombination": "storage space",
-        "nounCombinationCategory": "feature"
-      },
-      {
-        "text": "Retina Flash",
-        "sentiment": 0.0,
-        "salience": 0.0016045438,
-        "category": "OTHER",
-        "nounCombination": "Retina Flash",
-        "nounCombinationCategory": "awesome new feature"
-      },
-      {
-        "text": "App Store",
-        "sentiment": 0.1,
-        "salience": 0.0025009962,
-        "category": "OTHER",
-        "nounCombination": "App Store",
-        "nounCombinationCategory": "apps"
-      },
-      {
-        "text": "plenty",
-        "sentiment": 0.0,
-        "salience": 0.0018670206,
-        "category": "OTHER",
-        "nounCombination": "plenty",
-        "nounCombinationCategory": "reputable studio"
-      },
-      {
-        "text": "applications",
-        "sentiment": 0.0,
-        "salience": 0.072882384,
-        "category": "OTHER",
-        "nounCombination": "applications",
-        "nounCombinationCategory": "factor"
-      },
-      {
         "text": "Home button",
         "sentiment": 0.0,
         "salience": 0.003718115,
@@ -1641,44 +1273,20 @@
         "nounCombinationCategory": "function"
       },
       {
-        "text": "music",
+        "text": "apps",
         "sentiment": 0.0,
-        "salience": 0.0023814403,
-        "category": "WORK_OF_ART",
-        "nounCombination": "music",
-        "nounCombinationCategory": "activity"
+        "salience": 0.0029731458,
+        "category": "CONSUMER_GOOD",
+        "nounCombination": "apps",
+        "nounCombinationCategory": "technology"
       },
       {
-        "text": "display",
+        "text": "iPhone",
         "sentiment": 0.0,
-        "salience": 0.009200843,
-        "category": "OTHER",
-        "nounCombination": "display",
-        "nounCombinationCategory": "output device"
-      },
-      {
-        "text": "Web connection",
-        "sentiment": 0.9,
-        "salience": 0.0062694037,
-        "category": "OTHER",
-        "nounCombination": "Web connection",
-        "nounCombinationCategory": "software tool"
-      },
-      {
-        "text": "files",
-        "sentiment": 0.0,
-        "salience": 0.006145811,
-        "category": "OTHER",
-        "nounCombination": "files",
-        "nounCombinationCategory": "resource"
-      },
-      {
-        "text": "coating",
-        "sentiment": 0.0,
-        "salience": 0.0072760833,
-        "category": "OTHER",
-        "nounCombination": "coating",
-        "nounCombinationCategory": "application"
+        "salience": 0.002198203,
+        "category": "CONSUMER_GOOD",
+        "nounCombination": "iPhone",
+        "nounCombinationCategory": "device"
       },
       {
         "text": "HD camera",
@@ -1697,20 +1305,52 @@
         "nounCombinationCategory": "item"
       },
       {
+        "text": "photos",
+        "sentiment": 0.0,
+        "salience": 0.0067379954,
+        "category": "WORK_OF_ART",
+        "nounCombination": "photos",
+        "nounCombinationCategory": "file"
+      },
+      {
+        "text": "Web connection",
+        "sentiment": 0.9,
+        "salience": 0.0062694037,
+        "category": "OTHER",
+        "nounCombination": "Web connection",
+        "nounCombinationCategory": "software tool"
+      },
+      {
+        "text": "Retina Flash",
+        "sentiment": 0.0,
+        "salience": 0.0016045438,
+        "category": "OTHER",
+        "nounCombination": "Retina Flash",
+        "nounCombinationCategory": "awesome new feature"
+      },
+      {
+        "text": "4GLTE",
+        "sentiment": 0.0,
+        "salience": 0.0047286423,
+        "category": "OTHER",
+        "nounCombination": "4GLTE",
+        "nounCombinationCategory": "Not Found"
+      },
+      {
+        "text": "memories",
+        "sentiment": 0.0,
+        "salience": 0.013235511,
+        "category": "OTHER",
+        "nounCombination": "memories",
+        "nounCombinationCategory": "resource"
+      },
+      {
         "text": "finger",
         "sentiment": 0.0,
         "salience": 0.0049849185,
         "category": "OTHER",
         "nounCombination": "Touch ID fingerprint identity sensor",
         "nounCombinationCategory": "phone s advanced technology"
-      },
-      {
-        "text": "images",
-        "sentiment": 0.0,
-        "salience": 0.007267221,
-        "category": "WORK_OF_ART",
-        "nounCombination": "images",
-        "nounCombinationCategory": "information"
       },
       {
         "text": "devices",
@@ -1729,28 +1369,12 @@
         "nounCombinationCategory": "issue"
       },
       {
-        "text": "ways",
-        "sentiment": 0.6,
-        "salience": 0.011705046,
-        "category": "OTHER",
-        "nounCombination": "ways",
-        "nounCombinationCategory": "structure"
-      },
-      {
-        "text": "fingerprint",
+        "text": "photos",
         "sentiment": 0.0,
-        "salience": 0.004981053,
-        "category": "OTHER",
-        "nounCombination": "Touch ID fingerprint identity sensor",
-        "nounCombinationCategory": "phone s advanced technology"
-      },
-      {
-        "text": "4GLTE",
-        "sentiment": 0.0,
-        "salience": 0.0047286423,
-        "category": "OTHER",
-        "nounCombination": "4GLTE",
-        "nounCombinationCategory": "Not Found"
+        "salience": 0.0029731458,
+        "category": "WORK_OF_ART",
+        "nounCombination": "photos",
+        "nounCombinationCategory": "file"
       },
       {
         "text": "Touch ID",
@@ -1761,28 +1385,108 @@
         "nounCombinationCategory": "phone s advanced technology"
       },
       {
-        "text": "Messages",
+        "text": "front",
         "sentiment": 0.0,
-        "salience": 0.011705046,
-        "category": "WORK_OF_ART",
-        "nounCombination": "Messages",
-        "nounCombinationCategory": "datum"
+        "salience": 0.008282894,
+        "category": "OTHER",
+        "nounCombination": "front",
+        "nounCombinationCategory": "term"
       },
       {
-        "text": "content",
+        "text": "M9 motion coprocessor",
         "sentiment": 0.0,
-        "salience": 0.009099524,
+        "salience": 0.06418514,
+        "category": "CONSUMER_GOOD",
+        "nounCombination": "M9 motion coprocessor",
+        "nounCombinationCategory": "Not Found"
+      },
+      {
+        "text": "ways",
+        "sentiment": 0.6,
+        "salience": 0.011705046,
         "category": "OTHER",
-        "nounCombination": "content",
+        "nounCombination": "ways",
+        "nounCombinationCategory": "structure"
+      },
+      {
+        "text": "anywhere",
+        "sentiment": 0.0,
+        "salience": 0.005398319,
+        "category": "LOCATION",
+        "nounCombination": "",
+        "nounCombinationCategory": ""
+      },
+      {
+        "text": "music",
+        "sentiment": 0.0,
+        "salience": 0.0023814403,
+        "category": "WORK_OF_ART",
+        "nounCombination": "music",
+        "nounCombinationCategory": "activity"
+      },
+      {
+        "text": "Photos",
+        "sentiment": 0.0,
+        "salience": 0.0145076495,
+        "category": "WORK_OF_ART",
+        "nounCombination": "Photos",
+        "nounCombinationCategory": "file"
+      },
+      {
+        "text": "MP",
+        "sentiment": 0.0,
+        "salience": 0.0023838829,
+        "category": "PERSON",
+        "nounCombination": "MP",
+        "nounCombinationCategory": "state"
+      },
+      {
+        "text": "storage space",
+        "sentiment": 0.0,
+        "salience": 0.0023814403,
+        "category": "OTHER",
+        "nounCombination": "storage space",
+        "nounCombinationCategory": "feature"
+      },
+      {
+        "text": "display",
+        "sentiment": 0.0,
+        "salience": 0.009200843,
+        "category": "OTHER",
+        "nounCombination": "display",
+        "nounCombinationCategory": "output device"
+      },
+      {
+        "text": "images",
+        "sentiment": 0.0,
+        "salience": 0.007267221,
+        "category": "WORK_OF_ART",
+        "nounCombination": "images",
+        "nounCombinationCategory": "information"
+      },
+      {
+        "text": "applications",
+        "sentiment": 0.0,
+        "salience": 0.072882384,
+        "category": "OTHER",
+        "nounCombination": "applications",
         "nounCombinationCategory": "factor"
       },
       {
-        "text": "iCloud",
+        "text": "social media",
         "sentiment": 0.0,
-        "salience": 0.003192267,
+        "salience": 0.007993704,
         "category": "OTHER",
-        "nounCombination": "iCloud",
-        "nounCombinationCategory": "effort"
+        "nounCombination": "",
+        "nounCombinationCategory": ""
+      },
+      {
+        "text": "fingerprint",
+        "sentiment": 0.0,
+        "salience": 0.004981053,
+        "category": "OTHER",
+        "nounCombination": "Touch ID fingerprint identity sensor",
+        "nounCombinationCategory": "phone s advanced technology"
       },
       {
         "text": "opening",
@@ -1793,12 +1497,260 @@
         "nounCombinationCategory": "event"
       },
       {
+        "text": "content",
+        "sentiment": 0.0,
+        "salience": 0.009099524,
+        "category": "OTHER",
+        "nounCombination": "content",
+        "nounCombinationCategory": "factor"
+      },
+      {
+        "text": "Retina display",
+        "sentiment": 0.0,
+        "salience": 0.005443583,
+        "category": "OTHER",
+        "nounCombination": "Retina display",
+        "nounCombinationCategory": "feature"
+      },
+      {
+        "text": "access",
+        "sentiment": 0.0,
+        "salience": 0.005398319,
+        "category": "OTHER",
+        "nounCombination": "access",
+        "nounCombinationCategory": "issue"
+      },
+      {
+        "text": "iTunes",
+        "sentiment": 0.0,
+        "salience": 0.0021964968,
+        "category": "OTHER",
+        "nounCombination": "iTunes",
+        "nounCombinationCategory": "program"
+      },
+      {
         "text": "apps",
         "sentiment": 0.0,
         "salience": 0.009995069,
         "category": "CONSUMER_GOOD",
         "nounCombination": "apps",
         "nounCombinationCategory": "technology"
+      },
+      {
+        "text": "route",
+        "sentiment": 0.2,
+        "salience": 0.01799498,
+        "category": "OTHER",
+        "nounCombination": "route",
+        "nounCombinationCategory": "information"
+      },
+      {
+        "text": "iSight",
+        "sentiment": 0.0,
+        "salience": 0.0042984853,
+        "category": "OTHER",
+        "nounCombination": "iSight",
+        "nounCombinationCategory": "hi speed web camera"
+      },
+      {
+        "text": "purchases",
+        "sentiment": 0.0,
+        "salience": 0.00416889,
+        "category": "OTHER",
+        "nounCombination": "purchases",
+        "nounCombinationCategory": "transaction"
+      },
+      {
+        "text": "documents",
+        "sentiment": 0.0,
+        "salience": 0.005398319,
+        "category": "WORK_OF_ART",
+        "nounCombination": "documents",
+        "nounCombinationCategory": "file"
+      },
+      {
+        "text": "memory",
+        "sentiment": 0.1,
+        "salience": 0.0027465033,
+        "category": "OTHER",
+        "nounCombination": "memory",
+        "nounCombinationCategory": "resource"
+      },
+      {
+        "text": "widescreen",
+        "sentiment": 0.0,
+        "salience": 0.008082743,
+        "category": "OTHER",
+        "nounCombination": "widescreen",
+        "nounCombinationCategory": "common dvd feature"
+      },
+      {
+        "text": "files",
+        "sentiment": 0.0,
+        "salience": 0.006145811,
+        "category": "OTHER",
+        "nounCombination": "files",
+        "nounCombinationCategory": "resource"
+      },
+      {
+        "text": "contacts",
+        "sentiment": 0.0,
+        "salience": 0.002711556,
+        "category": "OTHER",
+        "nounCombination": "contacts",
+        "nounCombinationCategory": "datum"
+      },
+      {
+        "text": "performance",
+        "sentiment": 0.9,
+        "salience": 0.06418514,
+        "category": "OTHER",
+        "nounCombination": "performance",
+        "nounCombinationCategory": "factor"
+      },
+      {
+        "text": "App Store",
+        "sentiment": 0.1,
+        "salience": 0.0025009962,
+        "category": "OTHER",
+        "nounCombination": "App Store",
+        "nounCombinationCategory": "apps"
+      },
+      {
+        "text": "resolution",
+        "sentiment": 0.0,
+        "salience": 0.009200843,
+        "category": "OTHER",
+        "nounCombination": "resolution",
+        "nounCombinationCategory": "parameter"
+      },
+      {
+        "text": "home screens",
+        "sentiment": 0.0,
+        "salience": 0.072882384,
+        "category": "OTHER",
+        "nounCombination": "home screens",
+        "nounCombinationCategory": "personalization option"
+      },
+      {
+        "text": "resolution",
+        "sentiment": 0.0,
+        "salience": 0.0091870045,
+        "category": "OTHER",
+        "nounCombination": "resolution",
+        "nounCombinationCategory": "parameter"
+      },
+      {
+        "text": "Tone",
+        "sentiment": 0.0,
+        "salience": 0.007267221,
+        "category": "OTHER",
+        "nounCombination": "Tone",
+        "nounCombinationCategory": "element"
+      },
+      {
+        "text": "Messages",
+        "sentiment": 0.0,
+        "salience": 0.011705046,
+        "category": "WORK_OF_ART",
+        "nounCombination": "Messages",
+        "nounCombinationCategory": "datum"
+      },
+      {
+        "text": "menus",
+        "sentiment": 0.0,
+        "salience": 0.06418514,
+        "category": "OTHER",
+        "nounCombination": "menus",
+        "nounCombinationCategory": "item"
+      },
+      {
+        "text": "videos",
+        "sentiment": 0.0,
+        "salience": 0.005398319,
+        "category": "WORK_OF_ART",
+        "nounCombination": "videos",
+        "nounCombinationCategory": "medium"
+      },
+      {
+        "text": "files",
+        "sentiment": 0.0,
+        "salience": 0.006145811,
+        "category": "OTHER",
+        "nounCombination": "files",
+        "nounCombinationCategory": "resource"
+      },
+      {
+        "text": "speed",
+        "sentiment": 0.5,
+        "salience": 0.008096552,
+        "category": "OTHER",
+        "nounCombination": "speed",
+        "nounCombinationCategory": "factor"
+      },
+      {
+        "text": "Siri",
+        "sentiment": 0.5,
+        "salience": 0.00473798,
+        "category": "ORGANIZATION",
+        "nounCombination": "Siri",
+        "nounCombinationCategory": "popular apps"
+      },
+      {
+        "text": "FaceTime",
+        "sentiment": 0.0,
+        "salience": 0.0014091394,
+        "category": "CONSUMER_GOOD",
+        "nounCombination": "FaceTime",
+        "nounCombinationCategory": "apps"
+      },
+      {
+        "text": "Apple iOS",
+        "sentiment": 0.0,
+        "salience": 0.024359249,
+        "category": "CONSUMER_GOOD",
+        "nounCombination": "Apple iOS",
+        "nounCombinationCategory": "mobile platform"
+      },
+      {
+        "text": "Focus Pixels",
+        "sentiment": 0.0,
+        "salience": 0.008272809,
+        "category": "OTHER",
+        "nounCombination": "Focus Pixels",
+        "nounCombinationCategory": "automatic setting"
+      },
+      {
+        "text": "Cloud support",
+        "sentiment": 0.0,
+        "salience": 0.0025365166,
+        "category": "OTHER",
+        "nounCombination": "Cloud support",
+        "nounCombinationCategory": "feature"
+      },
+      {
+        "text": "plenty",
+        "sentiment": 0.0,
+        "salience": 0.0018670206,
+        "category": "OTHER",
+        "nounCombination": "plenty",
+        "nounCombinationCategory": "reputable studio"
+      },
+      {
+        "text": "Maps",
+        "sentiment": 0.8,
+        "salience": 0.011662126,
+        "category": "WORK_OF_ART",
+        "nounCombination": "Maps",
+        "nounCombinationCategory": "information"
+      },
+      {
+        "text": "chip",
+        "sentiment": 0.2,
+        "salience": 0.10571908,
+        "category": "OTHER",
+        "nounCombination": "A9 chip",
+        "nounCombinationCategory": "upgrade"
       },
       {
         "text": "Fees",
@@ -1809,12 +1761,60 @@
         "nounCombinationCategory": "cost"
       },
       {
-        "text": "widescreen",
+        "text": "coating",
         "sentiment": 0.0,
-        "salience": 0.008082743,
+        "salience": 0.0072760833,
         "category": "OTHER",
-        "nounCombination": "widescreen",
-        "nounCombinationCategory": "common dvd feature"
+        "nounCombination": "coating",
+        "nounCombinationCategory": "application"
+      },
+      {
+        "text": "fingerprint identity sensor",
+        "sentiment": 0.0,
+        "salience": 0.003913464,
+        "category": "OTHER",
+        "nounCombination": "Touch ID fingerprint identity sensor",
+        "nounCombinationCategory": "phone s advanced technology"
+      },
+      {
+        "text": "Everything",
+        "sentiment": 0.1,
+        "salience": 0.030972801,
+        "category": "OTHER",
+        "nounCombination": "Everything",
+        "nounCombinationCategory": "word"
+      },
+      {
+        "text": "more",
+        "sentiment": 0.0,
+        "salience": 0.0029731458,
+        "category": "OTHER",
+        "nounCombination": "",
+        "nounCombinationCategory": ""
+      },
+      {
+        "text": "more",
+        "sentiment": 0.0,
+        "salience": 0.07974049,
+        "category": "OTHER",
+        "nounCombination": "",
+        "nounCombinationCategory": ""
+      },
+      {
+        "text": "apps",
+        "sentiment": 0.0,
+        "salience": 0.006797993,
+        "category": "CONSUMER_GOOD",
+        "nounCombination": "apps",
+        "nounCombinationCategory": "technology"
+      },
+      {
+        "text": "iCloud",
+        "sentiment": 0.0,
+        "salience": 0.003192267,
+        "category": "OTHER",
+        "nounCombination": "iCloud",
+        "nounCombinationCategory": "effort"
       }
     ]
   }
