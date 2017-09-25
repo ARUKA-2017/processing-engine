@@ -1,4 +1,4 @@
-package akura.cloundnlp;
+package akura.cloundnlp.dtos;
 
 /**
  * Created by sameera on 9/24/17.

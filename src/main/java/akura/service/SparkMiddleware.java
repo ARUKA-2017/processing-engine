@@ -1,4 +1,4 @@
-package akura.Service;
+package akura.service;
 
 import static spark.Spark.before;
 import static spark.Spark.options;

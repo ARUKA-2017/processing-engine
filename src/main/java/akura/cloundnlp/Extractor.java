@@ -1,7 +1,10 @@
 package akura.cloundnlp;
 
-import akura.Utility.APIConnection;
+import akura.utility.APIConnection;
 
+import akura.cloundnlp.dtos.FinalEntityTagDto;
+import akura.cloundnlp.dtos.OntologyMapDto;
+import akura.cloundnlp.dtos.SyntaxDto;
 import com.google.cloud.language.v1beta2.*;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -36,30 +39,29 @@ public class Extractor {
 
 
     public static void main(String... args) throws Exception {
-        languageServiceClient = APIConnection.provideLanguageServiceClient();
-        JSONParser jsonParser = new JSONParser();
-        JSONArray array = (JSONArray) jsonParser.parse(new FileReader("./src/main/java/akura/cloundnlp/SampleReviews.json"));
-        List<OntologyMapDto> ontologyMapDtos = new LinkedList<>();
-        for (Object object : array) {
-            JSONObject jsonObject = (JSONObject) object;
-            String sampleText = jsonObject.get("reviewContent").toString();
-//            domainTagMap = identifyDomains(sampleText, languageServiceClient);//not using
-////            System.out.println();
-//            System.out.println(sampleText);
-//            System.out.println(domainTagMap);
-////            System.out.println();
+//        languageServiceClient = APIConnection.provideLanguageServiceClient();
+//        JSONParser jsonParser = new JSONParser();
+//        JSONArray array = (JSONArray) jsonParser.parse(new FileReader("./src/main/java/akura/cloundnlp/SampleReviews.json"));
+//        List<OntologyMapDto> ontologyMapDtos = new LinkedList<>();
+//        for (Object object : array) {
+//            JSONObject jsonObject = (JSONObject) object;
+//            String sampleText = jsonObject.get("reviewContent").toString();
+////            domainTagMap = identifyDomains(sampleText, languageServiceClient);//not using
+//////            System.out.println();
+////            System.out.println(sampleText);
+////            System.out.println(domainTagMap);
+//////            System.out.println();
+//
+////            prioritizeEntities(identifySubDomains(analyseSyntax(sampleText, languageServiceClient)));
+//           // filterActualEntities(identifySubDomains(analyseSyntax(sampleText, languageServiceClient)));
+//            //final json
+//            ontologyMapDtos.add(constructJson(jsonObject, identifyReviewCategory(sampleText, languageServiceClient), analyseSyntax(sampleText, languageServiceClient)));
+//        }
+    }
 
-//            prioritizeEntities(identifySubDomains(analyseSyntax(sampleText, languageServiceClient)));
-           // filterActualEntities(identifySubDomains(analyseSyntax(sampleText, languageServiceClient)));
-            //final json
-            ontologyMapDtos.add(constructJson(jsonObject, identifyReviewCategory(sampleText, languageServiceClient), analyseSyntax(sampleText, languageServiceClient)));
-        }
-
-        Gson gson = new Gson();
-        System.out.println(gson.toJson(ontologyMapDtos));
-
+    public void writeDocumentOutput(List<OntologyMapDto> ontologyMapDtos) throws IOException {
         try (Writer writer = new FileWriter("Output.json")) {
-            gson = new GsonBuilder().setPrettyPrinting().create();
+            Gson gson = new GsonBuilder().setPrettyPrinting().create();
             gson.toJson(ontologyMapDtos, writer);
         }
     }
@@ -87,15 +89,8 @@ public class Extractor {
         System.out.println(entitySet);
     }
 
-    public static void identifyFeatures(){
-
-    }
-
-    public static void identifyRelationships(){
-
-    }
-
-    public List<OntologyMapDto> testEndpoint(String text){
+    //api endpoint method - test
+    public List<OntologyMapDto> extractEntityData(String text){
         try {
             languageServiceClient = APIConnection.provideLanguageServiceClient();
         } catch (IOException e) {
@@ -106,7 +101,7 @@ public class Extractor {
         JSONParser jsonParser = new JSONParser();
         JSONArray array = null;
         try {
-            array = (JSONArray) jsonParser.parse(new FileReader("./src/main/java/akura/cloundnlp/SampleReviews.json"));
+            array = (JSONArray) jsonParser.parse(new FileReader("./src/main/java/akura/cloundnlp/sample_resources/SampleReviews.json"));
         } catch (IOException e) {
             e.printStackTrace();
         } catch (ParseException e) {
@@ -118,18 +113,6 @@ public class Extractor {
             jsonObject.put("reviewContent", text);
             String sampleText = jsonObject.get("reviewContent").toString();
 
-            System.out.println();
-            System.out.println("text: "+sampleText);
-            System.out.println();
-//            domainTagMap = identifyDomains(sampleText, languageServiceClient);//not using
-////            System.out.println();
-//            System.out.println(sampleText);
-//            System.out.println(domainTagMap);
-////            System.out.println();
-
-//            prioritizeEntities(identifySubDomains(analyseSyntax(sampleText, languageServiceClient)));
-            // filterActualEntities(identifySubDomains(analyseSyntax(sampleText, languageServiceClient)));
-            //final json
             try {
                 ontologyMapDtos.add(constructJson(jsonObject, identifyReviewCategory(sampleText, languageServiceClient), analyseSyntax(sampleText, languageServiceClient)));
             } catch (IOException e) {

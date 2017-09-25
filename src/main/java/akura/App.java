@@ -1,21 +1,17 @@
 package akura;
 
-import akura.Service.EntityExtractorService;
-import akura.Service.SparkMiddleware;
-import akura.cloundnlp.OntologyMapDto;
-import akura.corenlp.models.OntologyDto;
+import akura.service.EntityExtractorService;
+import akura.service.SparkMiddleware;
+import akura.cloundnlp.dtos.OntologyMapDto;
 import com.google.gson.Gson;
 
-import java.util.HashMap;
 import java.util.List;
 
 import static spark.Spark.get;
 import static spark.Spark.post;
 
 import com.google.gson.GsonBuilder;
-import spark.ModelAndView;
 import spark.Spark;
-import spark.template.jade.JadeTemplateEngine;
 
 public class App {
 

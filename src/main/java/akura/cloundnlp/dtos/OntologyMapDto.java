@@ -1,4 +1,4 @@
-package akura.cloundnlp;
+package akura.cloundnlp.dtos;
 
 import java.util.List;
 import java.util.Map;

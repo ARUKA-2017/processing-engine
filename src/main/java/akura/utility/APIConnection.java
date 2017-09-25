@@ -1,4 +1,4 @@
-package akura.Utility;
+package akura.utility;
 
 import com.google.api.client.googleapis.auth.oauth2.GoogleCredential;
 import com.google.cloud.language.v1beta2.LanguageServiceClient;

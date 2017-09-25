@@ -1,6 +1,6 @@
 package akura.cloundnlp;
 
-import akura.Utility.APIConnection;
+import akura.utility.APIConnection;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
