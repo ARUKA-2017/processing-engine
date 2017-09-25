@@ -10,6 +10,7 @@ public class EntityExtractorService {
     private Extractor extractor = new Extractor();
 
     public List<OntologyMapDto> extractEntity(String text) throws Exception {
+
         return extractor.extractEntityData(text);
     }
 }
