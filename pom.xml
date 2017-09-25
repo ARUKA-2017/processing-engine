@@ -4,6 +4,12 @@
     <groupId>AKURA</groupId>
     <artifactId>extraction-engine</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <repositories>
+        <repository>
+            <id>JBoss repository</id>
+            <url>https://repository.jboss.org/nexus/content/groups/public-jboss/</url>
+        </repository>
+    </repositories>
     <build>
         <plugins>
             <plugin>
