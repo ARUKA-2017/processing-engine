@@ -372,7 +372,7 @@ public class Extractor {
             float salience = finalEntityTagDto.getSalience();
 
             iterator.remove();
-            int counter = 0;
+            int counter = 1;
 
             String sum = String.valueOf(salience);
             while (iterator.hasNext()){
@@ -380,10 +380,8 @@ public class Extractor {
                 if (entityName.equalsIgnoreCase(finalEntityTagDto1.getText()) || nounCombination.equalsIgnoreCase(finalEntityTagDto1.getNounCombination())){
                     counter++;
                     sum = sum + " " +String.valueOf(salience);
-                    sentiment = (sentiment+finalEntityTagDto1.getSentiment())/counter;
-                    salience = (salience+finalEntityTagDto1.getSalience())/counter;
-
-
+                    sentiment = (sentiment+finalEntityTagDto1.getSentiment());
+                    salience = (salience+finalEntityTagDto1.getSalience());
                     iterator.remove();
                 }
             }
@@ -391,8 +389,8 @@ public class Extractor {
 
             temporaryDto.setText(entityName);
             temporaryDto.setCategory(entityCategory);
-            temporaryDto.setSentiment(sentiment);
-            temporaryDto.setSalience(salience);
+            temporaryDto.setSentiment(sentiment/counter);
+            temporaryDto.setSalience(salience/counter);
             temporaryDto.setNounCombination(nounCombination);
             temporaryDto.setNounCombinationCategory(nounCombinationCategory);
 

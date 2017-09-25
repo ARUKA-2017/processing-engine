@@ -335,36 +335,12 @@
     ],
     "finalEntityTaggedList": [
       {
-        "text": "photos",
-        "sentiment": 0.0,
-        "salience": 0.06318996,
-        "category": "WORK_OF_ART",
-        "nounCombination": "photos",
-        "nounCombinationCategory": "file"
-      },
-      {
         "text": "files",
         "sentiment": 0.0,
         "salience": 0.04989644,
         "category": "OTHER",
         "nounCombination": "files",
         "nounCombinationCategory": "resource"
-      },
-      {
-        "text": "files",
-        "sentiment": 0.0,
-        "salience": 0.18113752,
-        "category": "OTHER",
-        "nounCombination": "files",
-        "nounCombinationCategory": "resource"
-      },
-      {
-        "text": "iPhone",
-        "sentiment": 0.0,
-        "salience": 0.008516102,
-        "category": "CONSUMER_GOOD",
-        "nounCombination": "iPhone",
-        "nounCombinationCategory": "device"
       },
       {
         "text": "Cloud support",
@@ -375,60 +351,20 @@
         "nounCombinationCategory": "feature"
       },
       {
-        "text": "Home button",
-        "sentiment": 0.0,
-        "salience": 0.006351008,
+        "text": "App Store",
+        "sentiment": 0.1,
+        "salience": 0.0058571706,
         "category": "OTHER",
-        "nounCombination": "Home button",
-        "nounCombinationCategory": "function"
+        "nounCombination": "App Store",
+        "nounCombinationCategory": "apps"
       },
       {
-        "text": "access",
+        "text": "anywhere",
         "sentiment": 0.0,
-        "salience": 0.043926697,
-        "category": "OTHER",
-        "nounCombination": "access",
-        "nounCombinationCategory": "issue"
-      },
-      {
-        "text": "purchases",
-        "sentiment": 0.0,
-        "salience": 0.011099812,
-        "category": "OTHER",
-        "nounCombination": "purchases",
-        "nounCombinationCategory": "transaction"
-      },
-      {
-        "text": "iCloud",
-        "sentiment": 0.0,
-        "salience": 0.026150096,
-        "category": "OTHER",
-        "nounCombination": "iCloud",
-        "nounCombinationCategory": "effort"
-      },
-      {
-        "text": "documents",
-        "sentiment": 0.0,
-        "salience": 0.06318996,
-        "category": "WORK_OF_ART",
-        "nounCombination": "documents",
-        "nounCombinationCategory": "file"
-      },
-      {
-        "text": "fingerprint identity sensor",
-        "sentiment": 0.0,
-        "salience": 0.020271946,
-        "category": "OTHER",
-        "nounCombination": "Touch ID fingerprint identity sensor",
-        "nounCombinationCategory": "phone s advanced technology"
-      },
-      {
-        "text": "fingerprint",
-        "sentiment": 0.0,
-        "salience": 0.017860439,
-        "category": "OTHER",
-        "nounCombination": "Touch ID fingerprint identity sensor",
-        "nounCombinationCategory": "phone s advanced technology"
+        "salience": 0.16052067,
+        "category": "LOCATION",
+        "nounCombination": "",
+        "nounCombinationCategory": ""
       },
       {
         "text": "Touch ID",
@@ -447,6 +383,38 @@
         "nounCombinationCategory": "resource"
       },
       {
+        "text": "photos",
+        "sentiment": 0.0,
+        "salience": 0.06318996,
+        "category": "WORK_OF_ART",
+        "nounCombination": "photos",
+        "nounCombinationCategory": "file"
+      },
+      {
+        "text": "access",
+        "sentiment": 0.0,
+        "salience": 0.043926697,
+        "category": "OTHER",
+        "nounCombination": "access",
+        "nounCombinationCategory": "issue"
+      },
+      {
+        "text": "iCloud",
+        "sentiment": 0.0,
+        "salience": 0.026150096,
+        "category": "OTHER",
+        "nounCombination": "iCloud",
+        "nounCombinationCategory": "effort"
+      },
+      {
+        "text": "iTunes",
+        "sentiment": 0.0,
+        "salience": 0.0058571706,
+        "category": "OTHER",
+        "nounCombination": "iTunes",
+        "nounCombinationCategory": "program"
+      },
+      {
         "text": "videos",
         "sentiment": 0.0,
         "salience": 0.06318996,
@@ -455,12 +423,36 @@
         "nounCombinationCategory": "medium"
       },
       {
-        "text": "anywhere",
+        "text": "files",
         "sentiment": 0.0,
-        "salience": 0.16052067,
-        "category": "LOCATION",
-        "nounCombination": "",
-        "nounCombinationCategory": ""
+        "salience": 0.18113752,
+        "category": "OTHER",
+        "nounCombination": "files",
+        "nounCombinationCategory": "resource"
+      },
+      {
+        "text": "documents",
+        "sentiment": 0.0,
+        "salience": 0.06318996,
+        "category": "WORK_OF_ART",
+        "nounCombination": "documents",
+        "nounCombinationCategory": "file"
+      },
+      {
+        "text": "fingerprint identity sensor",
+        "sentiment": 0.0,
+        "salience": 0.020271946,
+        "category": "OTHER",
+        "nounCombination": "Touch ID fingerprint identity sensor",
+        "nounCombinationCategory": "phone s advanced technology"
+      },
+      {
+        "text": "purchases",
+        "sentiment": 0.0,
+        "salience": 0.011099812,
+        "category": "OTHER",
+        "nounCombination": "purchases",
+        "nounCombinationCategory": "transaction"
       },
       {
         "text": "Fees",
@@ -471,6 +463,22 @@
         "nounCombinationCategory": "cost"
       },
       {
+        "text": "Home button",
+        "sentiment": 0.0,
+        "salience": 0.006351008,
+        "category": "OTHER",
+        "nounCombination": "Home button",
+        "nounCombinationCategory": "function"
+      },
+      {
+        "text": "iPhone",
+        "sentiment": 0.0,
+        "salience": 0.008516102,
+        "category": "CONSUMER_GOOD",
+        "nounCombination": "iPhone",
+        "nounCombinationCategory": "device"
+      },
+      {
         "text": "finger",
         "sentiment": 0.0,
         "salience": 0.024011357,
@@ -479,20 +487,12 @@
         "nounCombinationCategory": "phone s advanced technology"
       },
       {
-        "text": "App Store",
-        "sentiment": 0.1,
-        "salience": 0.0058571706,
-        "category": "OTHER",
-        "nounCombination": "App Store",
-        "nounCombinationCategory": "apps"
-      },
-      {
-        "text": "iTunes",
+        "text": "fingerprint",
         "sentiment": 0.0,
-        "salience": 0.0058571706,
+        "salience": 0.017860439,
         "category": "OTHER",
-        "nounCombination": "iTunes",
-        "nounCombinationCategory": "program"
+        "nounCombination": "Touch ID fingerprint identity sensor",
+        "nounCombinationCategory": "phone s advanced technology"
       }
     ]
   }
