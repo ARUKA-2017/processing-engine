@@ -20,6 +20,7 @@ import java.io.IOException;
 
 import java.security.GeneralSecurityException;
 import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * A snippet for Google Cloud Speech API showing how to analyze text message sentiment.
@@ -65,17 +66,7 @@ public class Extractor {
         constructAvgScores(ontologyMapDtos.get(0).getFinalEntityTaggedList());
     }
 
-    //identify entity priority list
-    public static void prioritizeEntities(Map<Integer, List<String>> syntaxTagMap){
 
-        TreeMap<String, Float> entityMap = new TreeMap<String, Float>();
-        float salienceScore = 0;
-        for (Map.Entry<Integer, List<String>> entityEntrySet: syntaxTagMap.entrySet()){
-            if (entityEntrySet.getValue().size()>4)
-                entityMap.put(entityEntrySet.getValue().toString(), Float.parseFloat(entityEntrySet.getValue().get(4)));
-        }
-        System.out.println(entriesSortedByValues(entityMap));
-    }
 
     //filter and get the most needed entities by its domain
     public static void filterActualEntities(Map<Integer, List<String>> syntaxTagMap){
@@ -169,19 +160,6 @@ public class Extractor {
                 .setContent(text).setType(Document.Type.PLAIN_TEXT).build();
         // Detects the sentiment of the text
         Sentiment sentiment = languageServiceClient.analyzeSentiment(doc).getDocumentSentiment();
-    }
-    //sort tree map by value
-    static <K,V extends Comparable<? super V>> SortedSet<Map.Entry<K,V>> entriesSortedByValues(Map<K,V> map) {
-        SortedSet<Map.Entry<K,V>> sortedEntries = new TreeSet<Map.Entry<K,V>>(
-                new Comparator<Map.Entry<K,V>>() {
-                    @Override public int compare(Map.Entry<K,V> e1, Map.Entry<K,V> e2) {
-                        int res = e1.getValue().compareTo(e2.getValue());
-                        return res != 0 ? res : 1; // Special fix to preserve items with equal values
-                    }
-                }
-        );
-        sortedEntries.addAll(map.entrySet());
-        return sortedEntries;
     }
 
     /**
@@ -349,15 +327,33 @@ public class Extractor {
         }
 
         ontologyMapDto.setSyntaxTagList(syntaxDtos);
-        ontologyMapDto.setFinalEntityTaggedList(finalEntityTagDtos);
+        ontologyMapDto.setFinalEntityTaggedList(constructAvgScores(prioritizeEntities(finalEntityTagDtos)));
+
         return ontologyMapDto;
     }
 
-    public static void constructAvgScores(List<FinalEntityTagDto> finalEntityTagDtos){
+    /**
+     * prioritize the entity map according to the salience of entities
+     * @param finalEntityTagDtos
+     */
+    public static List<FinalEntityTagDto> prioritizeEntities(List<FinalEntityTagDto> finalEntityTagDtos){
+        return finalEntityTagDtos
+                .stream()
+                .sorted(
+                        Comparator
+                                .comparing(
+                                        FinalEntityTagDto::getSalience
+                                ).reversed()
+                )
+                .collect(Collectors.toList());
+    }
+    /**
+     * calculate avg scores from the redundant data entities
+     * @param finalEntityTagDtos
+     * @return
+     */
+    public static List<FinalEntityTagDto> constructAvgScores(List<FinalEntityTagDto> finalEntityTagDtos){
         List<FinalEntityTagDto> outputDtoList = new LinkedList<>();
-        List<FinalEntityTagDto> removeList = new LinkedList<>();
-
-
         Iterator<FinalEntityTagDto> iterator = finalEntityTagDtos.iterator();
         while(iterator.hasNext()){
             FinalEntityTagDto finalEntityTagDto = iterator.next();
@@ -379,14 +375,11 @@ public class Extractor {
                 FinalEntityTagDto finalEntityTagDto1 = iterator.next();
                 if (entityName.equalsIgnoreCase(finalEntityTagDto1.getText()) || nounCombination.equalsIgnoreCase(finalEntityTagDto1.getNounCombination())){
                     counter++;
-                    sum = sum + " " +String.valueOf(salience);
                     sentiment = (sentiment+finalEntityTagDto1.getSentiment());
                     salience = (salience+finalEntityTagDto1.getSalience());
                     iterator.remove();
                 }
             }
-            System.out.println(sum);
-
             temporaryDto.setText(entityName);
             temporaryDto.setCategory(entityCategory);
             temporaryDto.setSentiment(sentiment/counter);
@@ -399,6 +392,7 @@ public class Extractor {
         }
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         System.out.println(gson.toJson(outputDtoList));
+        return outputDtoList;
     }
     /**
      * write output to a json document - output.json

@@ -1,12 +1,942 @@
 [
   {
     "reviewId": "R23WVOVFL0VD8X",
-    "review": "Cloud support lets you access your files anywhere Store your photos, videos, documents and other files on iCloud for secure access across multiple devices. Fees may apply. Touch ID fingerprint identity sensor Put your finger on the Home button, and just like that your iPhone unlocks. Your fingerprint can also approve purchases from iTunes or the App Store.",
+    "review": "A9 chip with M9 motion coprocessor Delivers outstanding overall performance for opening and running applications, flipping through menus, running home screens and more. Apple iOS 10 Everything you love is now even better. Express yourself in bold new ways in Messages. Find your route with beautifully redesigned Maps. Relive memories like never before in Photos. And use the power of Siri in more apps. 4GLTE speed Provides fast Web connection for downloading apps, streaming content and staying connected with social media. 4\" touch-screen Retina display with 1136 x 640 resolution and 326 ppi LED-backlit widescreen Multi-Touch display. 1136-by-640-pixel resolution at 326 ppi. Fingerprint-resistant oleophobic coating on front. 12MP iSight camera with Focus Pixels and True Tone flash Capture images while youre out and about. Also includes a front-facing 1.2MP FaceTime HD camera with Retina Flash. 32GB internal memory Provides plenty of storage space for your contacts, music, photos, apps and more. Cloud support lets you access your files anywhere Store your photos, videos, documents and other files on iCloud for secure access across multiple devices. Fees may apply. Touch ID fingerprint identity sensor Put your finger on the Home button, and just like that your iPhone unlocks. Your fingerprint can also approve purchases from iTunes or the App Store.",
     "reviewRating": 1.0,
     "categoryMap": {
-      "Internet \u0026 Telecom": 0.96
+      "Computers \u0026 Electronics": 0.61
     },
     "syntaxTagList": [
+      {
+        "text": "A9",
+        "pos": "NOUN",
+        "lemma": "A9"
+      },
+      {
+        "text": "chip",
+        "pos": "NOUN",
+        "lemma": "chip"
+      },
+      {
+        "text": "with",
+        "pos": "ADP",
+        "lemma": "with"
+      },
+      {
+        "text": "M9",
+        "pos": "NOUN",
+        "lemma": "M9"
+      },
+      {
+        "text": "motion",
+        "pos": "NOUN",
+        "lemma": "motion"
+      },
+      {
+        "text": "coprocessor",
+        "pos": "NOUN",
+        "lemma": "coprocessor"
+      },
+      {
+        "text": "Delivers",
+        "pos": "VERB",
+        "lemma": "deliver"
+      },
+      {
+        "text": "outstanding",
+        "pos": "ADJ",
+        "lemma": "outstanding"
+      },
+      {
+        "text": "overall",
+        "pos": "ADJ",
+        "lemma": "overall"
+      },
+      {
+        "text": "performance",
+        "pos": "NOUN",
+        "lemma": "performance"
+      },
+      {
+        "text": "for",
+        "pos": "ADP",
+        "lemma": "for"
+      },
+      {
+        "text": "opening",
+        "pos": "NOUN",
+        "lemma": "opening"
+      },
+      {
+        "text": "and",
+        "pos": "CONJ",
+        "lemma": "and"
+      },
+      {
+        "text": "running",
+        "pos": "VERB",
+        "lemma": "run"
+      },
+      {
+        "text": "applications",
+        "pos": "NOUN",
+        "lemma": "application"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "flipping",
+        "pos": "VERB",
+        "lemma": "flip"
+      },
+      {
+        "text": "through",
+        "pos": "ADP",
+        "lemma": "through"
+      },
+      {
+        "text": "menus",
+        "pos": "NOUN",
+        "lemma": "menus"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "running",
+        "pos": "VERB",
+        "lemma": "run"
+      },
+      {
+        "text": "home",
+        "pos": "NOUN",
+        "lemma": "home"
+      },
+      {
+        "text": "screens",
+        "pos": "NOUN",
+        "lemma": "screen"
+      },
+      {
+        "text": "and",
+        "pos": "CONJ",
+        "lemma": "and"
+      },
+      {
+        "text": "more",
+        "pos": "ADJ",
+        "lemma": "more"
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": "."
+      },
+      {
+        "text": "Apple",
+        "pos": "NOUN",
+        "lemma": "Apple"
+      },
+      {
+        "text": "iOS",
+        "pos": "NOUN",
+        "lemma": "io"
+      },
+      {
+        "text": "10",
+        "pos": "NUM",
+        "lemma": "10"
+      },
+      {
+        "text": "Everything",
+        "pos": "NOUN",
+        "lemma": "Everything"
+      },
+      {
+        "text": "you",
+        "pos": "PRON",
+        "lemma": "you"
+      },
+      {
+        "text": "love",
+        "pos": "VERB",
+        "lemma": "love"
+      },
+      {
+        "text": "is",
+        "pos": "VERB",
+        "lemma": "be"
+      },
+      {
+        "text": "now",
+        "pos": "ADV",
+        "lemma": "now"
+      },
+      {
+        "text": "even",
+        "pos": "ADV",
+        "lemma": "even"
+      },
+      {
+        "text": "better",
+        "pos": "ADV",
+        "lemma": "well"
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": "."
+      },
+      {
+        "text": "Express",
+        "pos": "VERB",
+        "lemma": "Express"
+      },
+      {
+        "text": "yourself",
+        "pos": "PRON",
+        "lemma": "yourself"
+      },
+      {
+        "text": "in",
+        "pos": "ADP",
+        "lemma": "in"
+      },
+      {
+        "text": "bold",
+        "pos": "ADJ",
+        "lemma": "bold"
+      },
+      {
+        "text": "new",
+        "pos": "ADJ",
+        "lemma": "new"
+      },
+      {
+        "text": "ways",
+        "pos": "NOUN",
+        "lemma": "way"
+      },
+      {
+        "text": "in",
+        "pos": "ADP",
+        "lemma": "in"
+      },
+      {
+        "text": "Messages",
+        "pos": "NOUN",
+        "lemma": "message"
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": "."
+      },
+      {
+        "text": "Find",
+        "pos": "VERB",
+        "lemma": "Find"
+      },
+      {
+        "text": "your",
+        "pos": "PRON",
+        "lemma": "your"
+      },
+      {
+        "text": "route",
+        "pos": "NOUN",
+        "lemma": "route"
+      },
+      {
+        "text": "with",
+        "pos": "ADP",
+        "lemma": "with"
+      },
+      {
+        "text": "beautifully",
+        "pos": "ADV",
+        "lemma": "beautifully"
+      },
+      {
+        "text": "redesigned",
+        "pos": "VERB",
+        "lemma": "redesign"
+      },
+      {
+        "text": "Maps",
+        "pos": "NOUN",
+        "lemma": "Maps"
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": "."
+      },
+      {
+        "text": "Relive",
+        "pos": "VERB",
+        "lemma": "Relive"
+      },
+      {
+        "text": "memories",
+        "pos": "NOUN",
+        "lemma": "memory"
+      },
+      {
+        "text": "like",
+        "pos": "ADP",
+        "lemma": "like"
+      },
+      {
+        "text": "never",
+        "pos": "ADV",
+        "lemma": "never"
+      },
+      {
+        "text": "before",
+        "pos": "ADV",
+        "lemma": "before"
+      },
+      {
+        "text": "in",
+        "pos": "ADP",
+        "lemma": "in"
+      },
+      {
+        "text": "Photos",
+        "pos": "NOUN",
+        "lemma": "Photos"
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": "."
+      },
+      {
+        "text": "And",
+        "pos": "CONJ",
+        "lemma": "And"
+      },
+      {
+        "text": "use",
+        "pos": "VERB",
+        "lemma": "use"
+      },
+      {
+        "text": "the",
+        "pos": "DET",
+        "lemma": "the"
+      },
+      {
+        "text": "power",
+        "pos": "NOUN",
+        "lemma": "power"
+      },
+      {
+        "text": "of",
+        "pos": "ADP",
+        "lemma": "of"
+      },
+      {
+        "text": "Siri",
+        "pos": "NOUN",
+        "lemma": "Siri"
+      },
+      {
+        "text": "in",
+        "pos": "ADP",
+        "lemma": "in"
+      },
+      {
+        "text": "more",
+        "pos": "ADJ",
+        "lemma": "more"
+      },
+      {
+        "text": "apps",
+        "pos": "NOUN",
+        "lemma": "app"
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": "."
+      },
+      {
+        "text": "4GLTE",
+        "pos": "NOUN",
+        "lemma": "4GLTE"
+      },
+      {
+        "text": "speed",
+        "pos": "NOUN",
+        "lemma": "speed"
+      },
+      {
+        "text": "Provides",
+        "pos": "VERB",
+        "lemma": "provide"
+      },
+      {
+        "text": "fast",
+        "pos": "ADJ",
+        "lemma": "fast"
+      },
+      {
+        "text": "Web",
+        "pos": "NOUN",
+        "lemma": "Web"
+      },
+      {
+        "text": "connection",
+        "pos": "NOUN",
+        "lemma": "connection"
+      },
+      {
+        "text": "for",
+        "pos": "ADP",
+        "lemma": "for"
+      },
+      {
+        "text": "downloading",
+        "pos": "VERB",
+        "lemma": "download"
+      },
+      {
+        "text": "apps",
+        "pos": "NOUN",
+        "lemma": "app"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "streaming",
+        "pos": "VERB",
+        "lemma": "stream"
+      },
+      {
+        "text": "content",
+        "pos": "NOUN",
+        "lemma": "content"
+      },
+      {
+        "text": "and",
+        "pos": "CONJ",
+        "lemma": "and"
+      },
+      {
+        "text": "staying",
+        "pos": "VERB",
+        "lemma": "stay"
+      },
+      {
+        "text": "connected",
+        "pos": "VERB",
+        "lemma": "connect"
+      },
+      {
+        "text": "with",
+        "pos": "ADP",
+        "lemma": "with"
+      },
+      {
+        "text": "social",
+        "pos": "ADJ",
+        "lemma": "social"
+      },
+      {
+        "text": "media",
+        "pos": "NOUN",
+        "lemma": "media"
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": "."
+      },
+      {
+        "text": "4",
+        "pos": "X",
+        "lemma": "4"
+      },
+      {
+        "text": "\"",
+        "pos": "PUNCT",
+        "lemma": "\""
+      },
+      {
+        "text": "touch",
+        "pos": "NOUN",
+        "lemma": "touch"
+      },
+      {
+        "text": "-",
+        "pos": "PUNCT",
+        "lemma": "-"
+      },
+      {
+        "text": "screen",
+        "pos": "NOUN",
+        "lemma": "screen"
+      },
+      {
+        "text": "Retina",
+        "pos": "NOUN",
+        "lemma": "Retina"
+      },
+      {
+        "text": "display",
+        "pos": "NOUN",
+        "lemma": "display"
+      },
+      {
+        "text": "with",
+        "pos": "ADP",
+        "lemma": "with"
+      },
+      {
+        "text": "1136",
+        "pos": "NUM",
+        "lemma": "1136"
+      },
+      {
+        "text": "x",
+        "pos": "X",
+        "lemma": "x"
+      },
+      {
+        "text": "640",
+        "pos": "NUM",
+        "lemma": "640"
+      },
+      {
+        "text": "resolution",
+        "pos": "NOUN",
+        "lemma": "resolution"
+      },
+      {
+        "text": "and",
+        "pos": "CONJ",
+        "lemma": "and"
+      },
+      {
+        "text": "326",
+        "pos": "NUM",
+        "lemma": "326"
+      },
+      {
+        "text": "ppi",
+        "pos": "NOUN",
+        "lemma": "ppi"
+      },
+      {
+        "text": "LED",
+        "pos": "NOUN",
+        "lemma": "LED"
+      },
+      {
+        "text": "-",
+        "pos": "PUNCT",
+        "lemma": "-"
+      },
+      {
+        "text": "backlit",
+        "pos": "NOUN",
+        "lemma": "backlit"
+      },
+      {
+        "text": "widescreen",
+        "pos": "NOUN",
+        "lemma": "widescreen"
+      },
+      {
+        "text": "Multi-Touch",
+        "pos": "ADJ",
+        "lemma": "Multi-Touch"
+      },
+      {
+        "text": "display",
+        "pos": "NOUN",
+        "lemma": "display"
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": "."
+      },
+      {
+        "text": "1136",
+        "pos": "NUM",
+        "lemma": "1136"
+      },
+      {
+        "text": "-",
+        "pos": "PUNCT",
+        "lemma": "-"
+      },
+      {
+        "text": "by",
+        "pos": "ADP",
+        "lemma": "by"
+      },
+      {
+        "text": "-",
+        "pos": "PUNCT",
+        "lemma": "-"
+      },
+      {
+        "text": "640",
+        "pos": "NUM",
+        "lemma": "640"
+      },
+      {
+        "text": "-",
+        "pos": "PUNCT",
+        "lemma": "-"
+      },
+      {
+        "text": "pixel",
+        "pos": "NOUN",
+        "lemma": "pixel"
+      },
+      {
+        "text": "resolution",
+        "pos": "NOUN",
+        "lemma": "resolution"
+      },
+      {
+        "text": "at",
+        "pos": "ADP",
+        "lemma": "at"
+      },
+      {
+        "text": "326",
+        "pos": "NUM",
+        "lemma": "326"
+      },
+      {
+        "text": "ppi",
+        "pos": "NOUN",
+        "lemma": "ppi"
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": "."
+      },
+      {
+        "text": "Fingerprint",
+        "pos": "NOUN",
+        "lemma": "Fingerprint"
+      },
+      {
+        "text": "-",
+        "pos": "PUNCT",
+        "lemma": "-"
+      },
+      {
+        "text": "resistant",
+        "pos": "ADJ",
+        "lemma": "resistant"
+      },
+      {
+        "text": "oleophobic",
+        "pos": "ADJ",
+        "lemma": "oleophobic"
+      },
+      {
+        "text": "coating",
+        "pos": "NOUN",
+        "lemma": "coating"
+      },
+      {
+        "text": "on",
+        "pos": "ADP",
+        "lemma": "on"
+      },
+      {
+        "text": "front",
+        "pos": "NOUN",
+        "lemma": "front"
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": "."
+      },
+      {
+        "text": "12MP",
+        "pos": "NOUN",
+        "lemma": "12MP"
+      },
+      {
+        "text": "iSight",
+        "pos": "NOUN",
+        "lemma": "iSight"
+      },
+      {
+        "text": "camera",
+        "pos": "NOUN",
+        "lemma": "camera"
+      },
+      {
+        "text": "with",
+        "pos": "ADP",
+        "lemma": "with"
+      },
+      {
+        "text": "Focus",
+        "pos": "NOUN",
+        "lemma": "Focus"
+      },
+      {
+        "text": "Pixels",
+        "pos": "NOUN",
+        "lemma": "pixel"
+      },
+      {
+        "text": "and",
+        "pos": "CONJ",
+        "lemma": "and"
+      },
+      {
+        "text": "True",
+        "pos": "ADJ",
+        "lemma": "True"
+      },
+      {
+        "text": "Tone",
+        "pos": "NOUN",
+        "lemma": "Tone"
+      },
+      {
+        "text": "flash",
+        "pos": "NOUN",
+        "lemma": "flash"
+      },
+      {
+        "text": "Capture",
+        "pos": "NOUN",
+        "lemma": "Capture"
+      },
+      {
+        "text": "images",
+        "pos": "NOUN",
+        "lemma": "image"
+      },
+      {
+        "text": "while",
+        "pos": "ADP",
+        "lemma": "while"
+      },
+      {
+        "text": "youre",
+        "pos": "PRON",
+        "lemma": "youre"
+      },
+      {
+        "text": "out",
+        "pos": "PRT",
+        "lemma": "out"
+      },
+      {
+        "text": "and",
+        "pos": "CONJ",
+        "lemma": "and"
+      },
+      {
+        "text": "about",
+        "pos": "ADP",
+        "lemma": "about"
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": "."
+      },
+      {
+        "text": "Also",
+        "pos": "ADV",
+        "lemma": "Also"
+      },
+      {
+        "text": "includes",
+        "pos": "VERB",
+        "lemma": "include"
+      },
+      {
+        "text": "a",
+        "pos": "DET",
+        "lemma": "a"
+      },
+      {
+        "text": "front",
+        "pos": "NOUN",
+        "lemma": "front"
+      },
+      {
+        "text": "-",
+        "pos": "PUNCT",
+        "lemma": "-"
+      },
+      {
+        "text": "facing",
+        "pos": "VERB",
+        "lemma": "face"
+      },
+      {
+        "text": "1.2",
+        "pos": "NUM",
+        "lemma": "1.2"
+      },
+      {
+        "text": "MP",
+        "pos": "NOUN",
+        "lemma": "MP"
+      },
+      {
+        "text": "FaceTime",
+        "pos": "NOUN",
+        "lemma": "FaceTime"
+      },
+      {
+        "text": "HD",
+        "pos": "NOUN",
+        "lemma": "HD"
+      },
+      {
+        "text": "camera",
+        "pos": "NOUN",
+        "lemma": "camera"
+      },
+      {
+        "text": "with",
+        "pos": "ADP",
+        "lemma": "with"
+      },
+      {
+        "text": "Retina",
+        "pos": "NOUN",
+        "lemma": "Retina"
+      },
+      {
+        "text": "Flash",
+        "pos": "NOUN",
+        "lemma": "Flash"
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": "."
+      },
+      {
+        "text": "32GB",
+        "pos": "NOUN",
+        "lemma": "32GB"
+      },
+      {
+        "text": "internal",
+        "pos": "ADJ",
+        "lemma": "internal"
+      },
+      {
+        "text": "memory",
+        "pos": "NOUN",
+        "lemma": "memory"
+      },
+      {
+        "text": "Provides",
+        "pos": "VERB",
+        "lemma": "provide"
+      },
+      {
+        "text": "plenty",
+        "pos": "NOUN",
+        "lemma": "plenty"
+      },
+      {
+        "text": "of",
+        "pos": "ADP",
+        "lemma": "of"
+      },
+      {
+        "text": "storage",
+        "pos": "NOUN",
+        "lemma": "storage"
+      },
+      {
+        "text": "space",
+        "pos": "NOUN",
+        "lemma": "space"
+      },
+      {
+        "text": "for",
+        "pos": "ADP",
+        "lemma": "for"
+      },
+      {
+        "text": "your",
+        "pos": "PRON",
+        "lemma": "your"
+      },
+      {
+        "text": "contacts",
+        "pos": "NOUN",
+        "lemma": "contact"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "music",
+        "pos": "NOUN",
+        "lemma": "music"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "photos",
+        "pos": "NOUN",
+        "lemma": "photo"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "apps",
+        "pos": "NOUN",
+        "lemma": "app"
+      },
+      {
+        "text": "and",
+        "pos": "CONJ",
+        "lemma": "and"
+      },
+      {
+        "text": "more",
+        "pos": "ADJ",
+        "lemma": "more"
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": "."
+      },
       {
         "text": "Cloud",
         "pos": "NOUN",
@@ -335,17 +1265,385 @@
     ],
     "finalEntityTaggedList": [
       {
+        "text": "chip",
+        "sentiment": 0.2,
+        "salience": 0.10571908,
+        "category": "OTHER",
+        "nounCombination": "A9 chip",
+        "nounCombinationCategory": "upgrade"
+      },
+      {
+        "text": "more",
+        "sentiment": 0.0,
+        "salience": 0.024026414,
+        "category": "OTHER",
+        "nounCombination": "",
+        "nounCombinationCategory": ""
+      },
+      {
+        "text": "applications",
+        "sentiment": 0.0,
+        "salience": 0.072882384,
+        "category": "OTHER",
+        "nounCombination": "applications",
+        "nounCombinationCategory": "factor"
+      },
+      {
+        "text": "home screens",
+        "sentiment": 0.0,
+        "salience": 0.072882384,
+        "category": "OTHER",
+        "nounCombination": "home screens",
+        "nounCombinationCategory": "personalization option"
+      },
+      {
+        "text": "M9 motion coprocessor",
+        "sentiment": 0.0,
+        "salience": 0.06418514,
+        "category": "CONSUMER_GOOD",
+        "nounCombination": "M9 motion coprocessor",
+        "nounCombinationCategory": "Not Found"
+      },
+      {
+        "text": "opening",
+        "sentiment": 0.1,
+        "salience": 0.06418514,
+        "category": "EVENT",
+        "nounCombination": "opening",
+        "nounCombinationCategory": "event"
+      },
+      {
+        "text": "menus",
+        "sentiment": 0.0,
+        "salience": 0.06418514,
+        "category": "OTHER",
+        "nounCombination": "menus",
+        "nounCombinationCategory": "item"
+      },
+      {
+        "text": "performance",
+        "sentiment": 0.9,
+        "salience": 0.06418514,
+        "category": "OTHER",
+        "nounCombination": "performance",
+        "nounCombinationCategory": "factor"
+      },
+      {
+        "text": "Everything",
+        "sentiment": 0.1,
+        "salience": 0.030972801,
+        "category": "OTHER",
+        "nounCombination": "Everything",
+        "nounCombinationCategory": "word"
+      },
+      {
+        "text": "Apple iOS",
+        "sentiment": 0.0,
+        "salience": 0.024359249,
+        "category": "CONSUMER_GOOD",
+        "nounCombination": "Apple iOS",
+        "nounCombinationCategory": "mobile platform"
+      },
+      {
+        "text": "route",
+        "sentiment": 0.2,
+        "salience": 0.01799498,
+        "category": "OTHER",
+        "nounCombination": "route",
+        "nounCombinationCategory": "information"
+      },
+      {
+        "text": "Photos",
+        "sentiment": 0.0,
+        "salience": 0.00807293,
+        "category": "WORK_OF_ART",
+        "nounCombination": "Photos",
+        "nounCombinationCategory": "file"
+      },
+      {
+        "text": "memories",
+        "sentiment": 0.0,
+        "salience": 0.013235511,
+        "category": "OTHER",
+        "nounCombination": "memories",
+        "nounCombinationCategory": "resource"
+      },
+      {
+        "text": "Messages",
+        "sentiment": 0.0,
+        "salience": 0.011705046,
+        "category": "WORK_OF_ART",
+        "nounCombination": "Messages",
+        "nounCombinationCategory": "datum"
+      },
+      {
+        "text": "ways",
+        "sentiment": 0.6,
+        "salience": 0.011705046,
+        "category": "OTHER",
+        "nounCombination": "ways",
+        "nounCombinationCategory": "structure"
+      },
+      {
+        "text": "Maps",
+        "sentiment": 0.8,
+        "salience": 0.011662126,
+        "category": "WORK_OF_ART",
+        "nounCombination": "Maps",
+        "nounCombinationCategory": "information"
+      },
+      {
+        "text": "apps",
+        "sentiment": 0.0,
+        "salience": 0.006588736,
+        "category": "CONSUMER_GOOD",
+        "nounCombination": "apps",
+        "nounCombinationCategory": "technology"
+      },
+      {
+        "text": "resolution",
+        "sentiment": 0.0,
+        "salience": 0.009193923,
+        "category": "OTHER",
+        "nounCombination": "resolution",
+        "nounCombinationCategory": "parameter"
+      },
+      {
+        "text": "display",
+        "sentiment": 0.0,
+        "salience": 0.009200843,
+        "category": "OTHER",
+        "nounCombination": "display",
+        "nounCombinationCategory": "output device"
+      },
+      {
+        "text": "content",
+        "sentiment": 0.0,
+        "salience": 0.009099524,
+        "category": "OTHER",
+        "nounCombination": "content",
+        "nounCombinationCategory": "factor"
+      },
+      {
+        "text": "front",
+        "sentiment": 0.0,
+        "salience": 0.008282894,
+        "category": "OTHER",
+        "nounCombination": "front",
+        "nounCombinationCategory": "term"
+      },
+      {
+        "text": "Focus Pixels",
+        "sentiment": 0.0,
+        "salience": 0.008272809,
+        "category": "OTHER",
+        "nounCombination": "Focus Pixels",
+        "nounCombinationCategory": "automatic setting"
+      },
+      {
+        "text": "camera",
+        "sentiment": 0.0,
+        "salience": 0.008272809,
+        "category": "CONSUMER_GOOD",
+        "nounCombination": "camera",
+        "nounCombinationCategory": "item"
+      },
+      {
+        "text": "speed",
+        "sentiment": 0.5,
+        "salience": 0.008096552,
+        "category": "OTHER",
+        "nounCombination": "speed",
+        "nounCombinationCategory": "factor"
+      },
+      {
+        "text": "widescreen",
+        "sentiment": 0.0,
+        "salience": 0.008082743,
+        "category": "OTHER",
+        "nounCombination": "widescreen",
+        "nounCombinationCategory": "common dvd feature"
+      },
+      {
+        "text": "power",
+        "sentiment": 0.9,
+        "salience": 0.008009472,
+        "category": "OTHER",
+        "nounCombination": "power",
+        "nounCombinationCategory": "issue"
+      },
+      {
+        "text": "coating",
+        "sentiment": 0.0,
+        "salience": 0.0072760833,
+        "category": "OTHER",
+        "nounCombination": "coating",
+        "nounCombinationCategory": "application"
+      },
+      {
+        "text": "images",
+        "sentiment": 0.0,
+        "salience": 0.007267221,
+        "category": "WORK_OF_ART",
+        "nounCombination": "images",
+        "nounCombinationCategory": "information"
+      },
+      {
+        "text": "Tone",
+        "sentiment": 0.0,
+        "salience": 0.007267221,
+        "category": "OTHER",
+        "nounCombination": "Tone",
+        "nounCombinationCategory": "element"
+      },
+      {
+        "text": "Web connection",
+        "sentiment": 0.9,
+        "salience": 0.0062694037,
+        "category": "OTHER",
+        "nounCombination": "Web connection",
+        "nounCombinationCategory": "software tool"
+      },
+      {
         "text": "files",
         "sentiment": 0.0,
-        "salience": 0.04989644,
+        "salience": 0.006145811,
         "category": "OTHER",
         "nounCombination": "files",
         "nounCombinationCategory": "resource"
       },
       {
+        "text": "Retina display",
+        "sentiment": 0.0,
+        "salience": 0.005443583,
+        "category": "OTHER",
+        "nounCombination": "Retina display",
+        "nounCombinationCategory": "feature"
+      },
+      {
+        "text": "access",
+        "sentiment": 0.0,
+        "salience": 0.005398319,
+        "category": "OTHER",
+        "nounCombination": "access",
+        "nounCombinationCategory": "issue"
+      },
+      {
+        "text": "videos",
+        "sentiment": 0.0,
+        "salience": 0.005398319,
+        "category": "WORK_OF_ART",
+        "nounCombination": "videos",
+        "nounCombinationCategory": "medium"
+      },
+      {
+        "text": "devices",
+        "sentiment": 0.0,
+        "salience": 0.005398319,
+        "category": "CONSUMER_GOOD",
+        "nounCombination": "devices",
+        "nounCombinationCategory": "resource"
+      },
+      {
+        "text": "documents",
+        "sentiment": 0.0,
+        "salience": 0.005398319,
+        "category": "WORK_OF_ART",
+        "nounCombination": "documents",
+        "nounCombinationCategory": "file"
+      },
+      {
+        "text": "Fees",
+        "sentiment": 0.0,
+        "salience": 0.0053935554,
+        "category": "OTHER",
+        "nounCombination": "Fees",
+        "nounCombinationCategory": "cost"
+      },
+      {
+        "text": "finger",
+        "sentiment": -0.05,
+        "salience": 0.004266562,
+        "category": "OTHER",
+        "nounCombination": "Touch ID fingerprint identity sensor",
+        "nounCombinationCategory": "phone s advanced technology"
+      },
+      {
+        "text": "Siri",
+        "sentiment": 0.5,
+        "salience": 0.00473798,
+        "category": "ORGANIZATION",
+        "nounCombination": "Siri",
+        "nounCombinationCategory": "popular apps"
+      },
+      {
+        "text": "4GLTE",
+        "sentiment": 0.0,
+        "salience": 0.0047286423,
+        "category": "OTHER",
+        "nounCombination": "4GLTE",
+        "nounCombinationCategory": "Not Found"
+      },
+      {
+        "text": "iSight",
+        "sentiment": 0.0,
+        "salience": 0.0042984853,
+        "category": "OTHER",
+        "nounCombination": "iSight",
+        "nounCombinationCategory": "hi speed web camera"
+      },
+      {
+        "text": "purchases",
+        "sentiment": 0.0,
+        "salience": 0.00416889,
+        "category": "OTHER",
+        "nounCombination": "purchases",
+        "nounCombinationCategory": "transaction"
+      },
+      {
+        "text": "Home button",
+        "sentiment": 0.0,
+        "salience": 0.003718115,
+        "category": "OTHER",
+        "nounCombination": "Home button",
+        "nounCombinationCategory": "function"
+      },
+      {
+        "text": "iCloud",
+        "sentiment": 0.0,
+        "salience": 0.003192267,
+        "category": "OTHER",
+        "nounCombination": "iCloud",
+        "nounCombinationCategory": "effort"
+      },
+      {
+        "text": "memory",
+        "sentiment": 0.1,
+        "salience": 0.0027465033,
+        "category": "OTHER",
+        "nounCombination": "memory",
+        "nounCombinationCategory": "resource"
+      },
+      {
+        "text": "HD camera",
+        "sentiment": 0.0,
+        "salience": 0.0027143368,
+        "category": "OTHER",
+        "nounCombination": "HD camera",
+        "nounCombinationCategory": "av rental service"
+      },
+      {
+        "text": "contacts",
+        "sentiment": 0.0,
+        "salience": 0.002711556,
+        "category": "OTHER",
+        "nounCombination": "contacts",
+        "nounCombinationCategory": "datum"
+      },
+      {
         "text": "Cloud support",
         "sentiment": 0.0,
-        "salience": 0.17040236,
+        "salience": 0.0025365166,
         "category": "OTHER",
         "nounCombination": "Cloud support",
         "nounCombinationCategory": "feature"
@@ -353,146 +1651,74 @@
       {
         "text": "App Store",
         "sentiment": 0.1,
-        "salience": 0.0058571706,
+        "salience": 0.0025009962,
         "category": "OTHER",
         "nounCombination": "App Store",
         "nounCombinationCategory": "apps"
       },
       {
-        "text": "anywhere",
+        "text": "MP",
         "sentiment": 0.0,
-        "salience": 0.16052067,
-        "category": "LOCATION",
-        "nounCombination": "",
-        "nounCombinationCategory": ""
+        "salience": 0.0023838829,
+        "category": "PERSON",
+        "nounCombination": "MP",
+        "nounCombinationCategory": "state"
       },
       {
-        "text": "Touch ID",
-        "sentiment": -0.2,
-        "salience": 0.012649141,
-        "category": "OTHER",
-        "nounCombination": "Touch ID fingerprint identity sensor",
-        "nounCombinationCategory": "phone s advanced technology"
-      },
-      {
-        "text": "devices",
+        "text": "music",
         "sentiment": 0.0,
-        "salience": 0.044483002,
-        "category": "CONSUMER_GOOD",
-        "nounCombination": "devices",
-        "nounCombinationCategory": "resource"
-      },
-      {
-        "text": "photos",
-        "sentiment": 0.0,
-        "salience": 0.06318996,
+        "salience": 0.0023814403,
         "category": "WORK_OF_ART",
-        "nounCombination": "photos",
-        "nounCombinationCategory": "file"
+        "nounCombination": "music",
+        "nounCombinationCategory": "activity"
       },
       {
-        "text": "access",
+        "text": "storage space",
         "sentiment": 0.0,
-        "salience": 0.043926697,
+        "salience": 0.0023814403,
         "category": "OTHER",
-        "nounCombination": "access",
-        "nounCombinationCategory": "issue"
-      },
-      {
-        "text": "iCloud",
-        "sentiment": 0.0,
-        "salience": 0.026150096,
-        "category": "OTHER",
-        "nounCombination": "iCloud",
-        "nounCombinationCategory": "effort"
-      },
-      {
-        "text": "iTunes",
-        "sentiment": 0.0,
-        "salience": 0.0058571706,
-        "category": "OTHER",
-        "nounCombination": "iTunes",
-        "nounCombinationCategory": "program"
-      },
-      {
-        "text": "videos",
-        "sentiment": 0.0,
-        "salience": 0.06318996,
-        "category": "WORK_OF_ART",
-        "nounCombination": "videos",
-        "nounCombinationCategory": "medium"
-      },
-      {
-        "text": "files",
-        "sentiment": 0.0,
-        "salience": 0.18113752,
-        "category": "OTHER",
-        "nounCombination": "files",
-        "nounCombinationCategory": "resource"
-      },
-      {
-        "text": "documents",
-        "sentiment": 0.0,
-        "salience": 0.06318996,
-        "category": "WORK_OF_ART",
-        "nounCombination": "documents",
-        "nounCombinationCategory": "file"
-      },
-      {
-        "text": "fingerprint identity sensor",
-        "sentiment": 0.0,
-        "salience": 0.020271946,
-        "category": "OTHER",
-        "nounCombination": "Touch ID fingerprint identity sensor",
-        "nounCombinationCategory": "phone s advanced technology"
-      },
-      {
-        "text": "purchases",
-        "sentiment": 0.0,
-        "salience": 0.011099812,
-        "category": "OTHER",
-        "nounCombination": "purchases",
-        "nounCombinationCategory": "transaction"
-      },
-      {
-        "text": "Fees",
-        "sentiment": 0.0,
-        "salience": 0.021439198,
-        "category": "OTHER",
-        "nounCombination": "Fees",
-        "nounCombinationCategory": "cost"
-      },
-      {
-        "text": "Home button",
-        "sentiment": 0.0,
-        "salience": 0.006351008,
-        "category": "OTHER",
-        "nounCombination": "Home button",
-        "nounCombinationCategory": "function"
+        "nounCombination": "storage space",
+        "nounCombinationCategory": "feature"
       },
       {
         "text": "iPhone",
         "sentiment": 0.0,
-        "salience": 0.008516102,
+        "salience": 0.002198203,
         "category": "CONSUMER_GOOD",
         "nounCombination": "iPhone",
         "nounCombinationCategory": "device"
       },
       {
-        "text": "finger",
+        "text": "iTunes",
         "sentiment": 0.0,
-        "salience": 0.024011357,
+        "salience": 0.0021964968,
         "category": "OTHER",
-        "nounCombination": "Touch ID fingerprint identity sensor",
-        "nounCombinationCategory": "phone s advanced technology"
+        "nounCombination": "iTunes",
+        "nounCombinationCategory": "program"
       },
       {
-        "text": "fingerprint",
+        "text": "plenty",
         "sentiment": 0.0,
-        "salience": 0.017860439,
+        "salience": 0.0018670206,
         "category": "OTHER",
-        "nounCombination": "Touch ID fingerprint identity sensor",
-        "nounCombinationCategory": "phone s advanced technology"
+        "nounCombination": "plenty",
+        "nounCombinationCategory": "reputable studio"
+      },
+      {
+        "text": "Retina Flash",
+        "sentiment": 0.0,
+        "salience": 0.0016045438,
+        "category": "OTHER",
+        "nounCombination": "Retina Flash",
+        "nounCombinationCategory": "awesome new feature"
+      },
+      {
+        "text": "FaceTime",
+        "sentiment": 0.0,
+        "salience": 0.0014091394,
+        "category": "CONSUMER_GOOD",
+        "nounCombination": "FaceTime",
+        "nounCombinationCategory": "apps"
       }
     ]
   }
