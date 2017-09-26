@@ -29,9 +29,21 @@ public class TestScenario {
 //            Gson gson = new GsonBuilder().setPrettyPrinting().create();
 //            gson.toJson(ontologyMapDtos, writer);
 //        }
+
         RelationshipExtractor relationshipExtractor = new RelationshipExtractor();
 
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        System.out.println(gson.toJson(relationshipExtractor.sentenceSyntaxAnalysis(relationshipExtractor.sentenceTokenize("The phone arrived a day early in perfect condition. I was expecting scratches or dents but the phone looked brand new. Easy to configure and there are no problems with the battery life. I was sceptical about buying from this seller at first but I'm glad I did. I've had the phone for about 10 days now and still no problems"))));
+        System.out.println(
+                gson.toJson(
+                        relationshipExtractor.sentenceSyntaxAnalysis(
+                                relationshipExtractor.replaceEntityInSentences(
+                                        "IPhone 6",
+                                        relationshipExtractor.sentenceTokenize("Be careful, I ordered this phone and it wasn't an unlocked phone. It is setup on the US Reseller Flex Policy. It looked like it was purchased at Best Buy, \"sim free\". I could not activate it with an international SIM Card. Luckily I found someone with a US Verizon SIM card to install durning the activation process. Once it was activated with the Verizon card I was able to install my international Sim Card and everything worked"))
+                                )
+                        )
+                );
+
+//        System.out.println("This phone is dsab dsakldnsa dsalkd the phone dskadas".replaceAll("(?i)this phone","ccc").replaceAll("the phone", "xxx"));
+
     }
 }

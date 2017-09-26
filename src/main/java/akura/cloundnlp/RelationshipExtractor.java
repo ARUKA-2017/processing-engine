@@ -83,4 +83,16 @@ public class RelationshipExtractor {
         return analyzedSentenceDtoList;
     }
 
+    public List<String> replaceEntityInSentences(String entity, List<String> entityList){
+        List<String> replacedSentenceList = new LinkedList<>();
+        entityList.forEach(sentence -> {
+            replacedSentenceList.add(
+                    sentence
+                            .replaceAll("(?i)the phone", entity)
+                            .replaceAll("(?i)this phone", entity)
+            );
+        });
+        return replacedSentenceList;
+    }
+
 }
