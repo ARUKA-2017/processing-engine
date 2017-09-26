@@ -47,14 +47,6 @@ public class Extractor {
         for (Object object : array) {
             JSONObject jsonObject = (JSONObject) object;
             String sampleText = jsonObject.get("reviewContent").toString();
-//            domainTagMap = identifyDomains(sampleText, languageServiceClient);//not using
-////            System.out.println();
-//            System.out.println(sampleText);
-//            System.out.println(domainTagMap);
-////            System.out.println();
-
-//            prioritizeEntities(identifySubDomains(analyseSyntax(sampleText, languageServiceClient)));
-           // filterActualEntities(identifySubDomains(analyseSyntax(sampleText, languageServiceClient)));
             //final json
             ontologyMapDtos.add(constructJson(jsonObject, identifyReviewCategory(sampleText, languageServiceClient), analyseSyntax(sampleText, languageServiceClient)));
         }
@@ -62,104 +54,6 @@ public class Extractor {
             Gson gson = new GsonBuilder().setPrettyPrinting().create();
             gson.toJson(ontologyMapDtos, writer);
         }
-
-        constructAvgScores(ontologyMapDtos.get(0).getFinalEntityTaggedList());
-    }
-
-
-
-    //filter and get the most needed entities by its domain
-    public static void filterActualEntities(Map<Integer, List<String>> syntaxTagMap){
-        Set<String> entitySet = new HashSet<>();
-        for (Map.Entry<Integer, List<String>> entityEntrySet: syntaxTagMap.entrySet()){
-            if (entityEntrySet.getValue().size()>5 && entityEntrySet.getValue().get(5).matches(".*CONSUMER.*")){
-                System.out.println(entityEntrySet.getValue().get(5).toString());
-                entitySet.add(entityEntrySet.getValue().get(0).toString());
-            }
-        }
-        System.out.println(entitySet);
-    }
-
-    public static Map<Integer, List<String>> identifySubDomains(Map<Integer, List<String>> syntaxTagMap){
-        Map<Integer, List<String>> newTagMap = new LinkedHashMap<>();
-        for (Map.Entry<Integer, List<String>> entrySet: syntaxTagMap.entrySet()){
-            int key = entrySet.getKey();
-            List<String> syntaxDetails = entrySet.getValue();
-            if (syntaxDetails.size() > 5 && (syntaxDetails.get(5).equals("OTHER") || syntaxDetails.get(5).contains("UNKNOWN"))){
-                //getting all unknown and other domain entities
-                //find sub domains from manually added domains like - technology, computer, mobile, education, currency
-//                String unknownEntity = syntaxDetails.get(0);
-//                String domain = syntaxDetails.get(5);
-//                syntaxDetails.remove(5);
-//                syntaxDetails.add(understandShortWordConcept(unknownEntity, domain));
-            }
-            //map new tagmap with new sub domains
-            newTagMap.put(key, syntaxDetails);
-        }
-        return newTagMap;
-    }
-
-    //not using only for testing purposes
-    public static Map<String, List<String>> identifyDomains(String text, LanguageServiceClient languageServiceClient) throws IOException, GeneralSecurityException {
-        Document doc = Document.newBuilder()
-                .setContent(text).setType(Document.Type.PLAIN_TEXT).build();
-        Map<String, List<String>> entitiesFound = analyseEntity(languageServiceClient, doc);
-
-        //main domain extraction map
-        Map<String, List<String>> mainDomainExtraction = new LinkedHashMap<>();
-        List<String> consumerGoodDomain = new LinkedList<>();
-        List<String> workOfArtDomain = new LinkedList<>();
-        List<String> organizationDomain = new LinkedList<>();
-        List<String> locationDomain = new LinkedList<>();
-        List<String> personDomain = new LinkedList<>();
-        List<String> eventDomain = new LinkedList<>();
-        List<String> unknownDomain = new LinkedList<>();
-        List<String> otherDomain = new LinkedList<>();
-
-        for(Map.Entry<String, List<String>> entityRow: entitiesFound.entrySet()){
-            String entity = entityRow.getValue().get(0);
-            String organization = entityRow.getValue().get(1);
-            String sentiment = entityRow.getValue().get(2);
-            String sailience = entityRow.getValue().get(3);
-            System.out.println(entity+" "+organization);
-
-            switch (organization){
-                case "CONSUMER_GOOD": consumerGoodDomain.add(entity);
-                    break;
-                case "WORK_OF_ART": workOfArtDomain.add(entity);
-                    break;
-                case "ORGANIZATION": organizationDomain.add(entity);
-                    break;
-                case "LOCATION": locationDomain.add(entity);
-                    break;
-                case "PERSON": personDomain.add(entity);
-                    break;
-                case "EVENT": eventDomain.add(entity);
-                    break;
-                case "UNKNOWN": unknownDomain.add(entity);
-                    break;
-                case "OTHER": otherDomain.add(entity);
-                    break;
-            }
-        }
-        //updating domain map
-        mainDomainExtraction.put("CONSUMER_GOOD", consumerGoodDomain);
-        mainDomainExtraction.put("WORK_OF_ART", workOfArtDomain);
-        mainDomainExtraction.put("ORGANIZATION", organizationDomain);
-        mainDomainExtraction.put("LOCATION", locationDomain);
-        mainDomainExtraction.put("PERSON", personDomain);
-        mainDomainExtraction.put("EVENT", eventDomain);
-        mainDomainExtraction.put("UNKNOWN", unknownDomain);
-        mainDomainExtraction.put("OTHER", otherDomain);
-
-        return mainDomainExtraction;
-    }
-
-    public static void analyseSentiment(String text, LanguageServiceClient languageServiceClient) throws IOException, GeneralSecurityException {
-        Document doc = Document.newBuilder()
-                .setContent(text).setType(Document.Type.PLAIN_TEXT).build();
-        // Detects the sentiment of the text
-        Sentiment sentiment = languageServiceClient.analyzeSentiment(doc).getDocumentSentiment();
     }
 
     /**
@@ -347,6 +241,7 @@ public class Extractor {
                 )
                 .collect(Collectors.toList());
     }
+
     /**
      * calculate avg scores from the redundant data entities
      * @param finalEntityTagDtos
@@ -394,6 +289,7 @@ public class Extractor {
         System.out.println(gson.toJson(outputDtoList));
         return outputDtoList;
     }
+
     /**
      * write output to a json document - output.json
      * @param ontologyMapDtos
