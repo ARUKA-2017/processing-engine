@@ -45,12 +45,12 @@ public class RelationshipExtractor {
      * @return
      */
     public List<SentenceDto> sentenceSyntaxAnalysis(List<String> sentenceList) throws IOException {
-        List<SentenceWordDto> analyzedSentenceWordDtoList = new LinkedList<>();
         List<SentenceDto> analyzedSentenceDtoList = new LinkedList<>();
 
         languageServiceClient = APIConnection.provideLanguageServiceClient();
 
         sentenceList.forEach(sentence -> {
+            List<SentenceWordDto> analyzedSentenceWordDtoList = new LinkedList<>();
             Map<String, List<String>> sentenceEntityAnalysisMap = null;
             Document doc = Document.newBuilder().setContent(sentence).setType(Document.Type.PLAIN_TEXT).build();
 
