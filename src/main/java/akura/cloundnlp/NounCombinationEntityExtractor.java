@@ -10,7 +10,7 @@ import java.util.Map;
 /**
  * Class representing an entity extractor from nouns.
  */
-public class NounEntityExtractor {
+public class NounCombinationEntityExtractor {
 
     /**
      * Get entity tags with salience and sentiment.

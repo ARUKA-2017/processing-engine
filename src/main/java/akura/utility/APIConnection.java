@@ -68,8 +68,14 @@ public class APIConnection {
      * @throws IOException
      * @throws GeneralSecurityException
      */
-    public static LanguageServiceClient provideLanguageServiceClient() throws IOException, GeneralSecurityException {
-        authorize();
+    public static LanguageServiceClient provideLanguageServiceClient() throws IOException {
+        try {
+            authorize();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (GeneralSecurityException e) {
+            e.printStackTrace();
+        }
         return LanguageServiceClient.create();
     }
 }

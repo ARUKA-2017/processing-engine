@@ -1,16 +1,16 @@
 package akura.service;
 
-import akura.cloundnlp.Extractor;
+import akura.cloundnlp.EntityExtractor;
 import akura.cloundnlp.dtos.OntologyMapDto;
 
 import java.util.List;
 
 public class EntityExtractorService {
 
-    private Extractor extractor = new Extractor();
+    private EntityExtractor entityExtractor = new EntityExtractor();
 
     public List<OntologyMapDto> extractEntity(String text) throws Exception {
 
-        return extractor.extractEntityData(text);
+        return entityExtractor.extractEntityData(text);
     }
 }

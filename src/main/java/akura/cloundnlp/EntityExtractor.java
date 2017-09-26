@@ -25,37 +25,11 @@ import java.util.stream.Collectors;
 /**
  * A snippet for Google Cloud Speech API showing how to analyze text message sentiment.
  */
-public class Extractor {
-
+public class EntityExtractor {
     private static OntologyMapDto ontologyMapDto;
     private static Map<String, List<String>> domainTagMap = new LinkedHashMap<>();
     private static Map<Integer, List<String>> syntaxTagMap = new LinkedHashMap<>();
-    private final static String SEPARATOR = "";
     private static LanguageServiceClient languageServiceClient;
-
-    private static List<String> DOMAIN_TECHNOLOGY = new LinkedList<>();
-    private static List<String> DOMAIN_COMPUTER = new LinkedList<>();
-    private static List<String> DOMAIN_MOBILE = new LinkedList<>();
-    private static List<String> DOMAIN_MEASUREMENT = new LinkedList<>();
-
-
-    public static void main(String... args) throws Exception {
-        languageServiceClient = APIConnection.provideLanguageServiceClient();
-        JSONParser jsonParser = new JSONParser();
-        JSONArray array = (JSONArray) jsonParser.parse(new FileReader("./src/main/java/akura/cloundnlp/sample_resources/SampleReviews.json"));
-        List<OntologyMapDto> ontologyMapDtos = new LinkedList<>();
-        for (Object object : array) {
-            JSONObject jsonObject = (JSONObject) object;
-            String sampleText = jsonObject.get("reviewContent").toString();
-            //final json
-            ontologyMapDtos.add(constructJson(jsonObject, identifyReviewCategory(sampleText, languageServiceClient), analyseSyntax(sampleText, languageServiceClient)));
-        }
-        try (Writer writer = new FileWriter("Output.json")) {
-            Gson gson = new GsonBuilder().setPrettyPrinting().create();
-            gson.toJson(ontologyMapDtos, writer);
-        }
-    }
-
     /**
      *
      * Entity extraction methods sequence
@@ -70,7 +44,7 @@ public class Extractor {
      * @throws IOException
      * @throws GeneralSecurityException
      */
-    public static Map<String, Float> identifyReviewCategory(String text, LanguageServiceClient languageServiceClient) throws IOException, GeneralSecurityException {
+    public Map<String, Float> identifyReviewCategory(String text, LanguageServiceClient languageServiceClient) throws IOException, GeneralSecurityException {
         Document doc = Document.newBuilder().setContent(text).setType(Document.Type.PLAIN_TEXT).build();
         ClassifyTextRequest request = ClassifyTextRequest.newBuilder()
                 .setDocument(doc)
@@ -90,7 +64,7 @@ public class Extractor {
      * @param doc
      * @return
      */
-    public static Map<String, List<String>> analyseEntity(LanguageServiceClient languageApi, Document doc) {
+    public Map<String, List<String>> analyseEntity(LanguageServiceClient languageApi, Document doc) {
         Map<String, List<String>> entityList = new HashMap<>();
 
         AnalyzeEntitySentimentRequest request = AnalyzeEntitySentimentRequest.newBuilder().setDocument(doc).setEncodingType(EncodingType.UTF16).build();
@@ -119,7 +93,7 @@ public class Extractor {
      * @throws IOException
      * @throws GeneralSecurityException
      */
-    public static Map<String, Map<Integer, List<String>>> analyseSyntax(String text, LanguageServiceClient languageServiceClient) throws IOException, GeneralSecurityException {
+    public Map<String, Map<Integer, List<String>>> analyseSyntax(String text, LanguageServiceClient languageServiceClient) throws IOException, GeneralSecurityException {
         Map<String, Map<Integer, List<String>>> outputMap = new LinkedHashMap<>();
         Document doc = Document.newBuilder().setContent(text).setType(Document.Type.PLAIN_TEXT).build();
         Map<String, List<String>> entitiesFound = analyseEntity(languageServiceClient, doc);//entities
@@ -140,7 +114,7 @@ public class Extractor {
             syntaxTagMap.put(++counter, tokenTags);
         }
 
-        Map<String, String> mergedNouns = NounEntityExtractor.mergeNouns(syntaxTagMap);
+        Map<String, String> mergedNouns = NounCombinationEntityExtractor.mergeNouns(syntaxTagMap);
 
         Map<Integer, List<String>> finalEntityTaggedMap = new LinkedHashMap<>();
         counter = 0;
@@ -177,7 +151,7 @@ public class Extractor {
      * @param outputMap
      * @return
      */
-    public static OntologyMapDto constructJson(JSONObject review, Map<String, Float> categoryMap, Map<String, Map<Integer, List<String>>> outputMap){
+    public OntologyMapDto constructJson(JSONObject review, Map<String, Float> categoryMap, Map<String, Map<Integer, List<String>>> outputMap){
         ontologyMapDto = new OntologyMapDto();
 
         ontologyMapDto.setReviewId(review.get("review_id").toString());
@@ -230,7 +204,7 @@ public class Extractor {
      * prioritize the entity map according to the salience of entities
      * @param finalEntityTagDtos
      */
-    public static List<FinalEntityTagDto> prioritizeEntities(List<FinalEntityTagDto> finalEntityTagDtos){
+    public List<FinalEntityTagDto> prioritizeEntities(List<FinalEntityTagDto> finalEntityTagDtos){
         return finalEntityTagDtos
                 .stream()
                 .sorted(
@@ -247,7 +221,7 @@ public class Extractor {
      * @param finalEntityTagDtos
      * @return
      */
-    public static List<FinalEntityTagDto> constructAvgScores(List<FinalEntityTagDto> finalEntityTagDtos){
+    public List<FinalEntityTagDto> constructAvgScores(List<FinalEntityTagDto> finalEntityTagDtos){
         List<FinalEntityTagDto> outputDtoList = new LinkedList<>();
         Iterator<FinalEntityTagDto> iterator = finalEntityTagDtos.iterator();
         while(iterator.hasNext()){
@@ -317,8 +291,6 @@ public class Extractor {
         try {
             languageServiceClient = APIConnection.provideLanguageServiceClient();
         } catch (IOException e) {
-            e.printStackTrace();
-        } catch (GeneralSecurityException e) {
             e.printStackTrace();
         }
         JSONParser jsonParser = new JSONParser();
