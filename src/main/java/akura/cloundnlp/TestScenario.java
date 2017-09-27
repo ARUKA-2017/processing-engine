@@ -7,6 +7,10 @@ import org.json.simple.parser.ParseException;
 
 import java.io.IOException;
 import java.security.GeneralSecurityException;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Created by sameera on 9/23/17.
@@ -35,15 +39,27 @@ public class TestScenario {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         System.out.println(
                 gson.toJson(
-                        relationshipExtractor.sentenceSyntaxAnalysis(
-                                relationshipExtractor.replaceEntityInSentences(
-                                        "IPhone 6",
-                                        relationshipExtractor.sentenceTokenize("Be careful, I ordered this phone and it wasn't an unlocked phone. It is setup on the US Reseller Flex Policy. It looked like it was purchased at Best Buy, \"sim free\". I could not activate it with an international SIM Card. Luckily I found someone with a US Verizon SIM card to install durning the activation process. Once it was activated with the Verizon card I was able to install my international Sim Card and everything worked"))
+                        relationshipExtractor.replaceEntityInSentenceByITContext(
+                                "IPhone 99999999",
+                                relationshipExtractor.sentenceSyntaxAnalysis(
+                                        relationshipExtractor.replaceEntityInSentences(
+                                                "IPhone 6",
+                                                relationshipExtractor.sentenceTokenize("IPhone 7 camera is awesome and it has superb sound system. It has a good front camera and it has bluetooth and it has great picture quality"))
                                 )
+                        )
                         )
                 );
 
-//        System.out.println("This phone is dsab dsakldnsa dsalkd the phone dskadas".replaceAll("(?i)this phone","ccc").replaceAll("the phone", "xxx"));
+//        System.out.println("i have an iphone 4 and it has a superb camera and it is better than iphone 6 It and it".toLowerCase().replaceAll("and it|it", "00000"));
 
+//        String[] splittedArray = "i have an iphone 4 and it has a superb camera and it is better than iphone 6".split("and it", 2);
+//        Arrays.stream(splittedArray).forEach(item -> System.out.println(item));
+//
+//        List<Float> f = new LinkedList<>();
+//        f.add(33.432f);
+//        f.add(33.332f);
+//        f.add(32.432f);
+//        Collections.sort(f,Collections.reverseOrder());
+//        f.stream().forEach(i -> System.out.println(i));
     }
 }

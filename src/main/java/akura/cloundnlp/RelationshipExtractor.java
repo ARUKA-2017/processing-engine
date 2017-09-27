@@ -5,12 +5,14 @@ import akura.cloundnlp.dtos.SentenceWordDto;
 import akura.utility.APIConnection;
 import com.google.cloud.language.v1beta2.Document;
 import com.google.cloud.language.v1beta2.LanguageServiceClient;
+import com.google.gson.Gson;
+import org.apache.commons.collections.map.HashedMap;
 
 import java.io.IOException;
-import java.security.GeneralSecurityException;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 
 /**
  * Created by sameera on 9/26/17.
@@ -19,6 +21,14 @@ public class RelationshipExtractor {
     private final static String REGEX = "[^.!?\\s][^.!?]*(?:[.!?](?!['\"]?\\s|$)[^.!?]*)*[.!?]?['\"]?(?=\\s|$)";
     private EntityExtractor entityExtractor = new EntityExtractor();
     private LanguageServiceClient languageServiceClient;
+
+    public RelationshipExtractor() {
+        try {
+            languageServiceClient = APIConnection.provideLanguageServiceClient();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
     /**
      *
      * Relationship extractor methods
@@ -46,8 +56,6 @@ public class RelationshipExtractor {
      */
     public List<SentenceDto> sentenceSyntaxAnalysis(List<String> sentenceList) throws IOException {
         List<SentenceDto> analyzedSentenceDtoList = new LinkedList<>();
-
-        languageServiceClient = APIConnection.provideLanguageServiceClient();
 
         sentenceList.forEach(sentence -> {
             List<SentenceWordDto> analyzedSentenceWordDtoList = new LinkedList<>();
@@ -92,6 +100,65 @@ public class RelationshipExtractor {
                             .replaceAll("(?i)this phone", entity)
             );
         });
+        return replacedSentenceList;
+    }
+
+    public List<String> replaceEntityInSentenceByITContext(String entity, List<SentenceDto> sentenceList){
+        List<String> replacedSentenceList = new LinkedList<>();
+        sentenceList.forEach(sentence -> {//sentence list
+            String newSentence = "";
+            if (sentence.getSentence().contains("and it")){
+                String[] splittedArray = sentence.getSentence().split("and it");
+                int counter = 0;
+                for (String subSentence: splittedArray){//sub sentences analysis
+                    //send the sentence again to gnlp and get the scores again
+                    Map<String, List<String>> sentenceEntityAnalysisMap = null;
+                    Document doc = Document.newBuilder().setContent(subSentence).setType(Document.Type.PLAIN_TEXT).build();
+                    sentenceEntityAnalysisMap = entityExtractor.analyseEntity(languageServiceClient, doc);
+
+                    List<SentenceWordDto> sentenceWordDtos = new LinkedList<>();
+                    SentenceDto subSentenceDto = new SentenceDto();
+                    subSentenceDto.setSentence(subSentence);
+                    subSentenceDto.setTotalSalience(0f);
+                    sentenceEntityAnalysisMap.forEach((key, value) -> {
+                        SentenceWordDto sentenceWordDto = new SentenceWordDto();
+                        sentenceWordDto.setText(value.get(0));
+                        sentenceWordDto.setSentiment(Float.parseFloat(value.get(2)));
+                        sentenceWordDto.setSalience(Float.parseFloat(value.get(3)));
+                        sentenceWordDtos.add(sentenceWordDto);
+                    });
+                    subSentenceDto.setSentenceWordDtos(sentenceWordDtos);
+
+                    List<Float> salience = new LinkedList<>();
+
+                    subSentenceDto.getSentenceWordDtos().forEach(words -> {
+                        if (subSentence.contains(words.getText())){
+                            salience.add(words.getSalience());
+                        }
+                    });
+                    Collections.sort(salience, Collections.reverseOrder());
+                    SentenceWordDto eligibleEntity = subSentenceDto.getSentenceWordDtos()
+                            .stream()
+                            .filter(words -> (salience.size()>0 && words.getSalience() == salience.get(0)))
+                            .findFirst().orElse(null);
+
+                    String subSentenceString = "";
+                    if ((splittedArray.length-1) != counter){
+                        subSentenceString = subSentence.concat("and ");
+                        newSentence = newSentence.concat(subSentenceString);
+                        splittedArray[++counter] = eligibleEntity.getText().concat(splittedArray[counter]);
+                    } else {
+                        subSentenceString = subSentence;
+                        newSentence = newSentence.concat(subSentenceString);
+                    }
+                }
+                System.out.println(newSentence);
+                replacedSentenceList.add(newSentence);
+            } else {
+                replacedSentenceList.add(sentence.getSentence());
+            }
+        });
+
         return replacedSentenceList;
     }
 
