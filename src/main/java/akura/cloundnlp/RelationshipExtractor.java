@@ -105,7 +105,46 @@ public class RelationshipExtractor {
 
     public List<String> replaceEntityInSentenceByITContext(String entity, List<SentenceDto> sentenceList){
         List<String> replacedSentenceList = new LinkedList<>();
-        sentenceList.forEach(sentence -> {//sentence list
+        int sentenceCount = 0;
+
+        for(SentenceDto sentence: sentenceList) {//sentence list
+            if (sentenceCount > 0 && (sentence.getSentence().startsWith("It") || (sentence.getSentence().startsWith("it")))){
+                String prevSentence = sentenceList.get(sentenceCount-1).getSentence();
+                Document doc = Document.newBuilder().setContent(prevSentence).setType(Document.Type.PLAIN_TEXT).build();
+                Map<String, List<String>> prevSentenceEntityAnalysisMap = entityExtractor.analyseEntity(languageServiceClient, doc);
+                List<SentenceWordDto> prevSentenceWordDtos = new LinkedList<>();
+                SentenceDto prevSentenceDto = new SentenceDto();
+                prevSentenceDto.setSentence(prevSentence);
+                prevSentenceDto.setTotalSalience(0f);
+                prevSentenceEntityAnalysisMap.forEach((key, value) -> {
+                    SentenceWordDto prevSentenceWordDto = new SentenceWordDto();
+                    prevSentenceWordDto.setText(value.get(0));
+                    prevSentenceWordDto.setSentiment(Float.parseFloat(value.get(2)));
+                    prevSentenceWordDto.setSalience(Float.parseFloat(value.get(3)));
+                    prevSentenceWordDtos.add(prevSentenceWordDto);
+                });
+                prevSentenceDto.setSentenceWordDtos(prevSentenceWordDtos);
+
+                List<Float> salience = new LinkedList<>();
+
+                prevSentenceDto.getSentenceWordDtos().forEach(words -> {
+                    if (prevSentence.contains(words.getText())){
+                        salience.add(words.getSalience());
+                    }
+                });
+                Collections.sort(salience, Collections.reverseOrder());
+                SentenceWordDto eligibleEntity = prevSentenceDto.getSentenceWordDtos()
+                        .stream()
+                        .filter(words -> (salience.size()>0 && words.getSalience() == salience.get(0)))
+                        .findFirst().orElse(null);
+
+
+                String x = sentence.getSentence().replaceAll("It", eligibleEntity.getText());
+                sentence.setSentence(x);
+            }
+            System.out.println(sentence.getSentence());
+
+
             String newSentence = "";
             if (sentence.getSentence().contains("and it")){
                 String[] splittedArray = sentence.getSentence().split("and it");
@@ -154,10 +193,12 @@ public class RelationshipExtractor {
                 }
                 System.out.println(newSentence);
                 replacedSentenceList.add(newSentence);
+                sentence.setSentence(newSentence);
             } else {
                 replacedSentenceList.add(sentence.getSentence());
             }
-        });
+            sentenceCount++;
+        }
 
         return replacedSentenceList;
     }
