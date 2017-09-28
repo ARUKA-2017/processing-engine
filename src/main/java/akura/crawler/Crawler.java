@@ -11,6 +11,7 @@ import java.util.Date;
 import java.util.Locale;
 
 import org.json.JSONObject;
+import org.jsoup.HttpStatusException;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
@@ -51,8 +52,13 @@ public class Crawler {
 
                 url = 	Configuration.URL_PREFIX + itemID + Configuration.URL_POSTFIX + p;
                 org.jsoup.nodes.Document reviewpage = null;
-                reviewpage = Jsoup.connect(url).timeout(10 * 1000).get();
-                if (reviewpage.select(Configuration.REVIEW_SECTION_HTML_QUERY).isEmpty()) {
+                try {
+                    reviewpage = Jsoup.connect(url).timeout(10 * 1000).get();
+                } catch (HttpStatusException e){
+                    System.out.println("======>" + e.getLocalizedMessage());
+                }
+
+                if (reviewpage != null && reviewpage.select(Configuration.REVIEW_SECTION_HTML_QUERY).isEmpty()) {
                 	System.out.println("Review section is empty");
                 } else {
                     Elements reviewsHTMLs = reviewpage.select(Configuration.REVIEW_SECTION_HTML_QUERY);
@@ -74,11 +80,9 @@ public class Crawler {
                 p++;
             }
         } catch (Exception e) {
-        	e.printStackTrace();
             try {
                 Thread.sleep((int)(1000.0 + Math.random() * 10000));
                 fetchReview(itemID,noOfPages);
-                e.printStackTrace();
             } catch(InterruptedException ex) {
                 Thread.currentThread().interrupt();
             }
