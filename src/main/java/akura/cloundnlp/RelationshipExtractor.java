@@ -5,15 +5,10 @@ import akura.cloundnlp.dtos.SentenceWordDto;
 import akura.utility.APIConnection;
 import com.google.cloud.language.v1beta2.Document;
 import com.google.cloud.language.v1beta2.LanguageServiceClient;
-import com.google.gson.Gson;
-import org.apache.commons.collections.map.HashedMap;
-import org.apache.poi.hssf.record.formula.functions.T;
-
 import java.io.IOException;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import java.util.stream.Collectors;
 
 /**
  * Relationship extractor class
@@ -178,6 +173,11 @@ public class RelationshipExtractor {
         return replacedSentenceList;
     }
 
+    /**
+     * Generate dtos' by given map
+     * @param map
+     * @return
+     */
     private List<SentenceWordDto> createDto(Map<String, List<String>> map) {
         List<SentenceWordDto> sentenceWordDtos = new LinkedList<>();
         map.forEach((key, value) -> {

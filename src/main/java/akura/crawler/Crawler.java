@@ -3,6 +3,8 @@
  */
 package akura.crawler;
 
+import java.io.FileWriter;
+import java.io.Writer;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -10,6 +12,8 @@ import java.util.Collections;
 import java.util.Date;
 import java.util.Locale;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import org.json.JSONObject;
 import org.jsoup.HttpStatusException;
 import org.jsoup.Jsoup;
@@ -74,7 +78,10 @@ public class Crawler {
                     for (Review review: reviewList){
                         finalReviewList.add(review.getJSONObject());
                     }
-                    System.out.println(finalReviewList);
+                    try (Writer writer = new FileWriter("ReviewOutput.json")) {
+                        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+                        gson.toJson(finalReviewList, writer);
+                    }
                     break;
                 }
                 p++;
