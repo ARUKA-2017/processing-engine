@@ -3,8 +3,6 @@
  */
 package akura.crawler;
 
-import java.net.InetSocketAddress;
-import java.net.Proxy;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -12,10 +10,9 @@ import java.util.Collections;
 import java.util.Date;
 import java.util.Locale;
 
-import akura.corenlp.TokenExtraction;
 import org.json.JSONObject;
+import org.jsoup.HttpStatusException;
 import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
@@ -31,16 +28,7 @@ public class Crawler {
         try {
             // Get the max number of review pages;
             org.jsoup.nodes.Document reviewpage1 = null;
-
-
-
-            reviewpage1 = Jsoup //
-                    .connect(url) //
-                    .userAgent(RandomUserAgent.getRandomUserAgent())
-                    .timeout(10*10000).ignoreHttpErrors(true).followRedirects(true).ignoreContentType(true)
-                    .get();
-
-
+            reviewpage1 = Jsoup.connect(url).timeout(10 * 1000).get();
             int maxpage = 1;
             Elements pagelinks = reviewpage1.select(Configuration.PAGE_LINKS_HTML_QUERY);
             
@@ -62,26 +50,15 @@ public class Crawler {
             while (p <= maxpage) {
                 System.out.println("Now in Page: " + p);
 
-//                // Setup proxy
-//                java.net.Proxy proxy = new Proxy(                                      //
-//                        Proxy.Type.HTTP,                                      //
-//                        InetSocketAddress.createUnresolved("203.152.169.114", 80) //
-//                );
-
                 url = 	Configuration.URL_PREFIX + itemID + Configuration.URL_POSTFIX + p;
                 org.jsoup.nodes.Document reviewpage = null;
+                try {
+                    reviewpage = Jsoup.connect(url).timeout(10 * 1000).get();
+                } catch (HttpStatusException e){
+                    System.out.println("======>" + e.getLocalizedMessage());
+                }
 
-//                reviewpage = Jsoup.connect(url).timeout(10000000).get();
-
-                // Fetch url with proxy
-                reviewpage = Jsoup //
-                        .connect(url) //
-                        .userAgent(RandomUserAgent.getRandomUserAgent())
-                        .timeout(10*10000).ignoreHttpErrors(true).followRedirects(true).ignoreContentType(true)
-                        .get();
-
-
-                if (reviewpage.select(Configuration.REVIEW_SECTION_HTML_QUERY).isEmpty()) {
+                if (reviewpage != null && reviewpage.select(Configuration.REVIEW_SECTION_HTML_QUERY).isEmpty()) {
                 	System.out.println("Review section is empty");
                 } else {
                     Elements reviewsHTMLs = reviewpage.select(Configuration.REVIEW_SECTION_HTML_QUERY);
@@ -98,19 +75,14 @@ public class Crawler {
                         finalReviewList.add(review.getJSONObject());
                     }
                     System.out.println(finalReviewList);
-                    TokenExtraction tokenExtraction = new TokenExtraction();
-                    tokenExtraction.generateSingleSentenceScore(finalReviewList);
-                    return;
+                    break;
                 }
                 p++;
             }
-
         } catch (Exception e) {
-        	e.printStackTrace();
             try {
                 Thread.sleep((int)(1000.0 + Math.random() * 10000));
                 fetchReview(itemID,noOfPages);
-                e.printStackTrace();
             } catch(InterruptedException ex) {
                 Thread.currentThread().interrupt();
             }
