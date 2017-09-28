@@ -1,7 +1,7 @@
 package akura.cloundnlp.dtos;
 
 /**
- * Created by sameera on 9/26/17.
+ * Dto class for sentence words
  */
 public class SentenceWordDto {
     private String text;

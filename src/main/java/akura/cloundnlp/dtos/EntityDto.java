@@ -3,7 +3,7 @@ package akura.cloundnlp.dtos;
 import java.util.Map;
 
 /**
- * Created by sameera on 7/9/17.
+ * Dto class for entity
  */
 public class EntityDto {
     private String entityName;

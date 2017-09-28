@@ -3,6 +3,9 @@ package akura.service;
 import static spark.Spark.before;
 import static spark.Spark.options;
 
+/**
+ * Spark middleware class
+ */
 public class SparkMiddleware {
 
     public static void enableCORS(final String origin, final String methods, final String headers) {
@@ -26,8 +29,12 @@ public class SparkMiddleware {
             response.header("Access-Control-Allow-Origin", origin);
             response.header("Access-Control-Request-Method", methods);
             response.header("Access-Control-Allow-Headers", headers);
-            // Note: this may or may not be necessary in your particular application
-//            response.type("application/json");
+            /**
+             * Note: this may or may not be necessary in your particular application
+             *
+             * response.type("application/json");
+             */
+
         });
     }
 }

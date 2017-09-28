@@ -1,7 +1,7 @@
 package akura.cloundnlp.dtos;
 
 /**
- * Created by sameera on 9/24/17.
+ * Dto class for syntax extraction
  */
 public class SyntaxDto {
     private String text;

@@ -3,7 +3,7 @@ package akura.cloundnlp.dtos;
 import java.util.List;
 
 /**
- * Created by sameera on 9/27/17.
+ * Dto class for sentences
  */
 public class SentenceDto {
     private String sentence;

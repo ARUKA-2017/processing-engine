@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by sameera on 9/22/17.
+ * Dto class for ontology json map
  */
 public class OntologyMapDto {
     private String reviewId;
