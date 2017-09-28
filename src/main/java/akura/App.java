@@ -32,19 +32,15 @@ public class App {
                 "Content-Type, x-xsrf-token, content-Type, X-Auth-Token, Origin, Authorization"
         );
 
-        get("/test", (req, res) -> gson.toJson("name"));
-
         post("/extract-entity", (req, res) -> {
             EntityServiceResponse entityServiceResponse = gson.fromJson(req.body(), EntityServiceResponse.class);
             List<OntologyMapDto> response = entityExtractorService.extractEntity(entityServiceResponse.text);
-
             return new GsonBuilder().setPrettyPrinting().create().toJson(response);
         });
 
         post("modify-sentence", (req, res) -> {
             SentenceServiceResponse sentenceServiceResponse = gson.fromJson(req.body(), SentenceServiceResponse.class);
             List<String> response = entityExtractorService.modifiedSentenceList(sentenceServiceResponse.text, sentenceServiceResponse.entity);
-
             return new GsonBuilder().setPrettyPrinting().create().toJson(response);
         });
 

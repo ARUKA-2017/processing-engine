@@ -97,6 +97,7 @@ public class RelationshipExtractor {
                     sentence
                             .replaceAll("(?i)the phone", entity)
                             .replaceAll("(?i)this phone", entity)
+                            .replaceAll("(?i)this device", entity)
             );
         });
         return replacedSentenceList;
