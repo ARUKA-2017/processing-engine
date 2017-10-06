@@ -21,17 +21,12 @@ public class EntityExtractorService {
     }
 
     public List<String> modifiedSentenceList(String text, String entity) {
-        try {
-            return relationshipExtractor.replaceEntityInSentenceByITContext(
-                    relationshipExtractor.sentenceSyntaxAnalysis(
-                            relationshipExtractor.replaceEntityInSentences(
-                                    entity,
-                                    relationshipExtractor.sentenceTokenize(text))
-                    )
-            );
+        List<String> resultList = null;
+        try{
+            resultList = relationshipExtractor.executeModifier(text, entity);
         } catch (IOException e) {
-            System.out.println(e.getMessage());
+            System.out.println("IO EXCEPTION: "+e.getLocalizedMessage());
         }
-        return null;
+        return resultList;
     }
 }

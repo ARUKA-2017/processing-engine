@@ -31,7 +31,7 @@ public class APIConnection {
      * @return
      */
     public static String understandShortWordConcept(String text, String defaultValue) {
-        String url = DATA_GRAPH_URL.concat(text).concat("&topK=1").replaceAll(" ", "%20");
+        String url = DATA_GRAPH_URL.concat(text.trim()).concat("&topK=1").replaceAll(" ", "%20");
         HttpClient client = HttpClientBuilder.create().build();
         HttpGet getRequest = new HttpGet(url);
         try {

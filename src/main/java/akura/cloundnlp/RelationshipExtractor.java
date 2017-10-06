@@ -85,7 +85,7 @@ public class RelationshipExtractor {
      * @param entityList
      * @return
      */
-    public List<String> replaceEntityInSentences(String entity, List<String> entityList) {
+    public List<String>     replaceEntityInSentences(String entity, List<String> entityList) {
         List<String> replacedSentenceList = new LinkedList<>();
         entityList.forEach(sentence -> {
             replacedSentenceList.add(
@@ -188,6 +188,26 @@ public class RelationshipExtractor {
             sentenceWordDtos.add(prevSentenceWordDto);
         });
         return sentenceWordDtos;
+    }
+
+    /**
+     * modify given paragraph with the defined rules
+     * @param text
+     * @param entity
+     * @return
+     */
+    public List<String> executeModifier(String text, String entity) throws IOException {
+        try {
+            return replaceEntityInSentenceByITContext(
+                    sentenceSyntaxAnalysis(
+                            replaceEntityInSentences(
+                                    entity,
+                                    sentenceTokenize(text))
+                    )
+            );
+        } catch (IOException e) {
+            throw new IOException(e.getMessage());
+        }
     }
 
 }

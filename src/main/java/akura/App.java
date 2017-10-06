@@ -38,7 +38,7 @@ public class App {
             return new GsonBuilder().setPrettyPrinting().create().toJson(response);
         });
 
-        post("modify-sentence", (req, res) -> {
+        post("/modify-sentence", (req, res) -> {
             SentenceServiceResponse sentenceServiceResponse = gson.fromJson(req.body(), SentenceServiceResponse.class);
             List<String> response = entityExtractorService.modifiedSentenceList(sentenceServiceResponse.text, sentenceServiceResponse.entity);
             return new GsonBuilder().setPrettyPrinting().create().toJson(response);
