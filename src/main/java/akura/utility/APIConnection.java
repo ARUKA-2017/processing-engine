@@ -12,8 +12,13 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
+import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.ProtocolException;
+import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.security.GeneralSecurityException;
 import java.util.NoSuchElementException;
 
@@ -22,6 +27,33 @@ import java.util.NoSuchElementException;
  */
 public class APIConnection {
     private final static String DATA_GRAPH_URL = "http://concept.research.microsoft.com/api/Concept/ScoreByProb?instance=";
+
+
+    public static void sendSocketRequest(String event, String msg) throws IOException {
+
+        String urlParameters  = "event="+event+"&msg="+msg;
+        byte[] postData       = urlParameters.getBytes( StandardCharsets.UTF_8 );
+        int    postDataLength = postData.length;
+        String request        = "http://localhost:3000/broadcast";
+        URL url            = new URL( request );
+        HttpURLConnection conn= (HttpURLConnection) url.openConnection();
+        conn.setDoOutput( true );
+        conn.setInstanceFollowRedirects( false );
+        conn.setRequestMethod( "POST" );
+        conn.setRequestProperty( "Content-Type", "application/x-www-form-urlencoded");
+        conn.setRequestProperty( "charset", "utf-8");
+        conn.setRequestProperty( "Content-Length", Integer.toString( postDataLength ));
+        conn.setUseCaches( false );
+        System.out.println("--------------- POST STARTED----------------");
+        try( DataOutputStream wr = new DataOutputStream( conn.getOutputStream())) {
+            wr.write( postData );
+            System.out.println("--------------- POST ----------------");
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
 
     /**
      * MS graph connection

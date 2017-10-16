@@ -2,6 +2,7 @@ package akura.cloundnlp;
 
 import akura.cloundnlp.dtos.FinalEntityTagDto;
 import akura.cloundnlp.dtos.SpecificationDto;
+import akura.utility.Logger;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -47,8 +48,10 @@ public class SpecificationExtractor {
             }
         });
         specificationDto.setFeatureMap(featureMap);
-        System.out.println("----------------Feature understanding----------------");
-        System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(specificationDto));
+
+
+        Logger.Log("----------------Feature understanding----------------");
+        Logger.Log(new GsonBuilder().setPrettyPrinting().create().toJson(specificationDto));
         return specificationDto;
     }
 }

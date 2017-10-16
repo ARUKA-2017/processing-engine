@@ -1,6 +1,7 @@
 package akura.cloundnlp;
 
 import akura.utility.APIConnection;
+import akura.utility.Logger;
 import com.google.gson.GsonBuilder;
 
 import java.util.ArrayList;
@@ -40,8 +41,10 @@ public class NounCombinationEntityExtractor {
                 requestString = "";
             }
         }
-        System.out.println("----------------Noun combination sequences----------------");
-        System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(entityTags));
+
+
+        Logger.Log("----------------Noun combination sequences----------------");
+        Logger.Log(new GsonBuilder().setPrettyPrinting().create().toJson(entityTags));
         return entityTags;
     }
 }

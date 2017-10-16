@@ -6,6 +6,7 @@ import akura.utility.APIConnection;
 import akura.cloundnlp.dtos.FinalEntityTagDto;
 import akura.cloundnlp.dtos.OntologyMapDto;
 import akura.cloundnlp.dtos.SyntaxDto;
+import akura.utility.Logger;
 import com.google.cloud.language.v1beta2.*;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -56,8 +57,10 @@ public class EntityExtractor {
             categoryMap.put(category.getName().split("/")[1], category.getConfidence());
             break;
         }
-        System.out.println("----------------Category Map----------------");
-        System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(categoryMap));
+
+        Logger.Log("----------------Category Map----------------");
+        Logger.Log(new GsonBuilder().setPrettyPrinting().create().toJson(categoryMap));
+
         return categoryMap;
     }
 
@@ -80,8 +83,8 @@ public class EntityExtractor {
             detailList.add(String.valueOf(entity.getSalience()));
             entityList.put(UUID.randomUUID().toString(), detailList);
         }
-        System.out.println("----------------Google NLP Entity List----------------");
-        System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(entityList));
+        Logger.Log("----------------Google NLP Entity List----------------");
+        Logger.Log(new GsonBuilder().setPrettyPrinting().create().toJson(entityList));
         return entityList;
     }
 
@@ -131,8 +134,14 @@ public class EntityExtractor {
             }
             finalEntityTaggedMap.put(++counter, temporaryEntityDetailList);
         }
-        outputMap.put("syntaxTagMap", syntaxTagMap);
-        outputMap.put("finalEntityTaggedMap", finalEntityTaggedMap);
+        Logger.Log("--------- Synatx Map ------------");
+        Logger.Log(syntaxTagMap.toString());
+
+        Logger.Log("--------- finalEntityTaggedMap ------------");
+        Logger.Log(finalEntityTaggedMap.toString());
+
+//        outputMap.put("syntaxTagMap", syntaxTagMap);
+//        outputMap.put("finalEntityTaggedMap", finalEntityTaggedMap);
         return outputMap;
     }
 

@@ -16,3 +16,5 @@ Add the following line to the command line
 (windows) - Replace (current directory) with the absolute folder path of where the application was cloned
 
 `setx -m GOOGLE_APPLICATION_CREDENTIALS  (current directory)\src\main\java\akura\cloundnlp\google_api_credentials`
+
+$MODULE_DIR$/src/main/java/akura/cloundnlp/google_api_credentials/credentials.json

@@ -1,0 +1,1620 @@
+INFO	2017-10-16 19:00:53,599	0	root	[qtp1470565383-22]	----------------Category Map----------------
+INFO	2017-10-16 19:00:53,604	5	root	[qtp1470565383-22]	{
+  "Computers \u0026 Electronics": 0.69
+}
+INFO	2017-10-16 19:00:54,070	471	root	[qtp1470565383-22]	----------------Google NLP Entity List----------------
+INFO	2017-10-16 19:00:54,078	479	root	[qtp1470565383-22]	{
+  "dfd709e6-9354-4901-bbf2-94223239c931": [
+    "platform",
+    "OTHER",
+    "-0.2",
+    "0.13104518"
+  ],
+  "355922ea-5dd9-467a-854d-ad640491c070": [
+    "Ontologies",
+    "OTHER",
+    "-0.1",
+    "0.07127161"
+  ],
+  "af95c515-e06b-42ce-baaf-b079600fa844": [
+    "NLU",
+    "ORGANIZATION",
+    "-0.2",
+    "0.04268272"
+  ],
+  "09e61e89-17db-4616-a5bf-600822e2dae3": [
+    "AKURA",
+    "ORGANIZATION",
+    "0.0",
+    "0.090706356"
+  ],
+  "c302656d-c6c1-45f9-aab9-ff6e6158256d": [
+    "APIs",
+    "OTHER",
+    "0.0",
+    "0.04977633"
+  ],
+  "adb316be-1f21-44d3-a53a-2a23fb034ade": [
+    "Recognition Assistant",
+    "PERSON",
+    "0.0",
+    "0.17438973"
+  ],
+  "b3b8a0d0-3a81-4d2c-882b-d4d58690a7c0": [
+    "build process applications",
+    "OTHER",
+    "0.0",
+    "0.18386859"
+  ],
+  "b5c0072a-e2ad-4c7b-8b03-a1259795c65f": [
+    "Automated Knowledge Understanding",
+    "OTHER",
+    "-0.1",
+    "0.22449724"
+  ],
+  "b91728bb-1a08-45e4-94a5-6e69c1e78907": [
+    "Content Scraping",
+    "OTHER",
+    "0.0",
+    "0.03176224"
+  ]
+}
+INFO	2017-10-16 19:01:08,980	15381	root	[qtp1470565383-22]	----------------Noun combination sequences----------------
+INFO	2017-10-16 19:01:08,981	15382	root	[qtp1470565383-22]	{
+  "Automated Knowledge Understanding": "Not Found",
+  "Recognition Assistant": "Not Found",
+  "AKURA": "Not Found",
+  "platform": "structure",
+  "build process applications": "Not Found",
+  "Content Scraping": "practice",
+  "NLU": "academic institution",
+  "Ontologies": "semantic web technology",
+  "APIs": "product"
+}
+INFO	2017-10-16 19:01:08,987	15388	root	[qtp1470565383-22]	--------- Synatx Map ------------
+INFO	2017-10-16 19:01:08,988	15389	root	[qtp1470565383-22]	{1=[An, DET, An], 2=[Automated, NOUN, Automated], 3=[Knowledge, NOUN, Knowledge], 4=[Understanding, NOUN, Understanding], 5=[and, CONJ, and], 6=[Recognition, NOUN, Recognition], 7=[Assistant, NOUN, Assistant], 8=[(, PUNCT, (], 9=[AKURA, NOUN, AKURA], 10=[), PUNCT, )], 11=[is, VERB, be], 12=[a, DET, a], 13=[generic, ADJ, generic], 14=[platform, NOUN, platform], 15=[developed, VERB, develop], 16=[to, PRT, to], 17=[facilitate, VERB, facilitate], 18=[and, CONJ, and], 19=[streamline, VERB, streamline], 20=[the, DET, the], 21=[build, NOUN, build], 22=[process, NOUN, process], 23=[applications, NOUN, application], 24=[which, DET, which], 25=[focuses, VERB, focuse], 26=[on, ADP, on], 27=[Content, NOUN, Content], 28=[Scraping, NOUN, Scraping], 29=[,, PUNCT, ,], 30=[NLU, NOUN, NLU], 31=[and, CONJ, and], 32=[Ontologies, NOUN, Ontologies], 33=[with, ADP, with], 34=[our, PRON, our], 35=[APIs, NOUN, api], 36=[., PUNCT, .]}
+INFO	2017-10-16 19:01:08,988	15389	root	[qtp1470565383-22]	--------- finalEntityTaggedMap ------------
+INFO	2017-10-16 19:01:08,989	15390	root	[qtp1470565383-22]	{1=[platform, -0.2, 0.13104518, OTHER, platform, structure], 2=[Ontologies, -0.1, 0.07127161, OTHER, Ontologies, semantic web technology], 3=[NLU, -0.2, 0.04268272, ORGANIZATION, NLU, academic institution], 4=[AKURA, 0.0, 0.090706356, ORGANIZATION, AKURA, Not Found], 5=[APIs, 0.0, 0.04977633, OTHER, APIs, product], 6=[Recognition Assistant, 0.0, 0.17438973, PERSON, Recognition Assistant, Not Found], 7=[build process applications, 0.0, 0.18386859, OTHER, build process applications, Not Found], 8=[Automated Knowledge Understanding, -0.1, 0.22449724, OTHER, Automated Knowledge Understanding, Not Found], 9=[Content Scraping, 0.0, 0.03176224, OTHER, Content Scraping, practice]}
+INFO	2017-10-16 19:01:09,001	15402	root	[qtp1470565383-22]	----------------Feature understanding----------------
+INFO	2017-10-16 19:01:09,005	15406	root	[qtp1470565383-22]	{
+  "mainEntity": "IPhone 6S",
+  "featureMap": {}
+}
+INFO	2017-10-16 19:01:44,193	50594	root	[qtp1470565383-17]	----------------Category Map----------------
+INFO	2017-10-16 19:01:44,194	50595	root	[qtp1470565383-17]	{
+  "Computers \u0026 Electronics": 0.69
+}
+INFO	2017-10-16 19:01:45,296	51697	root	[qtp1470565383-17]	----------------Google NLP Entity List----------------
+INFO	2017-10-16 19:01:45,303	51704	root	[qtp1470565383-17]	{
+  "993b933c-4a36-452a-9cdd-6bca8b10ae50": [
+    "Automated Knowledge Understanding",
+    "OTHER",
+    "-0.1",
+    "0.22449724"
+  ],
+  "89894e1f-76f9-4b35-ac53-7a2cb66726ad": [
+    "Ontologies",
+    "OTHER",
+    "-0.1",
+    "0.07127161"
+  ],
+  "552ea015-b73e-47c5-964d-2c7c8269ab5d": [
+    "NLU",
+    "ORGANIZATION",
+    "-0.2",
+    "0.04268272"
+  ],
+  "1630f110-d96e-4208-8a81-cada150e80f9": [
+    "AKURA",
+    "ORGANIZATION",
+    "0.0",
+    "0.090706356"
+  ],
+  "fb9243a7-b034-4175-b300-33500253d897": [
+    "Recognition Assistant",
+    "PERSON",
+    "0.0",
+    "0.17438973"
+  ],
+  "6fdb4ef7-30c6-48b0-9b63-c5176877a878": [
+    "platform",
+    "OTHER",
+    "-0.2",
+    "0.13104518"
+  ],
+  "d2e79f48-f671-4312-9b47-ac178cf2d171": [
+    "APIs",
+    "OTHER",
+    "0.0",
+    "0.04977633"
+  ],
+  "9e2742b3-4a57-49e0-ae0d-734ac406a95b": [
+    "build process applications",
+    "OTHER",
+    "0.0",
+    "0.18386859"
+  ],
+  "dcec83ca-2dee-4d7f-814b-122daa09d874": [
+    "Content Scraping",
+    "OTHER",
+    "0.0",
+    "0.03176224"
+  ]
+}
+INFO	2017-10-16 19:01:58,734	65135	root	[qtp1470565383-17]	----------------Noun combination sequences----------------
+INFO	2017-10-16 19:01:58,741	65142	root	[qtp1470565383-17]	{
+  "Automated Knowledge Understanding": "Not Found",
+  "Recognition Assistant": "Not Found",
+  "AKURA": "Not Found",
+  "platform": "structure",
+  "build process applications": "Not Found",
+  "Content Scraping": "practice",
+  "NLU": "academic institution",
+  "Ontologies": "semantic web technology",
+  "APIs": "product"
+}
+INFO	2017-10-16 19:01:58,742	65143	root	[qtp1470565383-17]	--------- Synatx Map ------------
+INFO	2017-10-16 19:01:58,742	65143	root	[qtp1470565383-17]	{1=[An, DET, An], 2=[Automated, NOUN, Automated], 3=[Knowledge, NOUN, Knowledge], 4=[Understanding, NOUN, Understanding], 5=[and, CONJ, and], 6=[Recognition, NOUN, Recognition], 7=[Assistant, NOUN, Assistant], 8=[(, PUNCT, (], 9=[AKURA, NOUN, AKURA], 10=[), PUNCT, )], 11=[is, VERB, be], 12=[a, DET, a], 13=[generic, ADJ, generic], 14=[platform, NOUN, platform], 15=[developed, VERB, develop], 16=[to, PRT, to], 17=[facilitate, VERB, facilitate], 18=[and, CONJ, and], 19=[streamline, VERB, streamline], 20=[the, DET, the], 21=[build, NOUN, build], 22=[process, NOUN, process], 23=[applications, NOUN, application], 24=[which, DET, which], 25=[focuses, VERB, focuse], 26=[on, ADP, on], 27=[Content, NOUN, Content], 28=[Scraping, NOUN, Scraping], 29=[,, PUNCT, ,], 30=[NLU, NOUN, NLU], 31=[and, CONJ, and], 32=[Ontologies, NOUN, Ontologies], 33=[with, ADP, with], 34=[our, PRON, our], 35=[APIs, NOUN, api], 36=[., PUNCT, .]}
+INFO	2017-10-16 19:01:58,743	65144	root	[qtp1470565383-17]	--------- finalEntityTaggedMap ------------
+INFO	2017-10-16 19:01:58,744	65145	root	[qtp1470565383-17]	{1=[Automated Knowledge Understanding, -0.1, 0.22449724, OTHER, Automated Knowledge Understanding, Not Found], 2=[Ontologies, -0.1, 0.07127161, OTHER, Ontologies, semantic web technology], 3=[NLU, -0.2, 0.04268272, ORGANIZATION, NLU, academic institution], 4=[AKURA, 0.0, 0.090706356, ORGANIZATION, AKURA, Not Found], 5=[Recognition Assistant, 0.0, 0.17438973, PERSON, Recognition Assistant, Not Found], 6=[platform, -0.2, 0.13104518, OTHER, platform, structure], 7=[APIs, 0.0, 0.04977633, OTHER, APIs, product], 8=[build process applications, 0.0, 0.18386859, OTHER, build process applications, Not Found], 9=[Content Scraping, 0.0, 0.03176224, OTHER, Content Scraping, practice]}
+INFO	2017-10-16 19:01:58,746	65147	root	[qtp1470565383-17]	----------------Feature understanding----------------
+INFO	2017-10-16 19:01:58,748	65149	root	[qtp1470565383-17]	{
+  "mainEntity": "IPhone 6S",
+  "featureMap": {}
+}
+INFO	2017-10-16 19:04:05,047	191448	root	[qtp1470565383-24]	----------------Category Map----------------
+INFO	2017-10-16 19:04:05,048	191449	root	[qtp1470565383-24]	{
+  "Computers \u0026 Electronics": 0.99
+}
+INFO	2017-10-16 19:04:05,351	191752	root	[qtp1470565383-24]	----------------Google NLP Entity List----------------
+INFO	2017-10-16 19:04:05,357	191758	root	[qtp1470565383-24]	{
+  "e580aed6-7056-4b30-a57c-753bb53e0fe6": [
+    "log file",
+    "OTHER",
+    "0.0",
+    "0.049204707"
+  ],
+  "261dff78-b41a-4634-9dcb-d9b7a52dbbc4": [
+    "rootLogger",
+    "OTHER",
+    "0.0",
+    "0.39211187"
+  ],
+  "58fd224a-e86b-47ed-980a-d40f67cae04f": [
+    "file",
+    "OTHER",
+    "0.0",
+    "0.049204707"
+  ],
+  "bc91f07e-3063-4e08-b157-aa3db836f5f9": [
+    "ISO8601",
+    "OTHER",
+    "0.0",
+    "0.061310582"
+  ],
+  "fb7c83eb-cdfa-43b8-a610-2d4eef9ff106": [
+    "file",
+    "OTHER",
+    "0.0",
+    "0.07223773"
+  ],
+  "724de424-65a8-48e8-9bbb-94d17510d5d1": [
+    "PatternLayout",
+    "OTHER",
+    "0.0",
+    "0.016362686"
+  ],
+  "331d28f4-644f-4a58-93ef-133da61f53c5": [
+    "message pattern",
+    "OTHER",
+    "0.9",
+    "0.027369592"
+  ],
+  "5ce28dd7-4027-466c-ad7b-d9d432bf23c8": [
+    "log",
+    "OTHER",
+    "0.0",
+    "0.037250776"
+  ],
+  "92d60a41-b988-4004-b6d7-6084ee778983": [
+    "root logger",
+    "OTHER",
+    "0.0",
+    "0.10761214"
+  ],
+  "0e659304-a882-43d3-8b37-2c97f5a72a95": [
+    "log fout",
+    "PERSON",
+    "0.0",
+    "0.043654937"
+  ],
+  "0e881f35-ad68-4f9c-956f-507c1afc437e": [
+    "layout",
+    "OTHER",
+    "0.0",
+    "0.029842773"
+  ],
+  "ff4b9b6d-3bd1-4276-88d3-62e68403779a": [
+    "File",
+    "OTHER",
+    "0.0",
+    "0.04980467"
+  ],
+  "b6d69137-b73e-4ee9-8cdf-913582e8603a": [
+    "FileAppender",
+    "OTHER",
+    "0.0",
+    "0.043918975"
+  ],
+  "8b11127a-b1a1-4d5f-98d4-bfd9b719ed4f": [
+    "FileAppender #",
+    "OTHER",
+    "0.0",
+    "0.02011387"
+  ]
+}
+INFO	2017-10-16 19:04:44,944	0	root	[qtp1918101193-22]	----------------Category Map----------------
+INFO	2017-10-16 19:04:44,949	5	root	[qtp1918101193-22]	{
+  "Computers \u0026 Electronics": 0.99
+}
+INFO	2017-10-16 19:04:45,406	462	root	[qtp1918101193-22]	----------------Google NLP Entity List----------------
+INFO	2017-10-16 19:04:45,409	465	root	[qtp1918101193-22]	{
+  "b776c5e3-c5d9-48fe-92e6-d46016ae055e": [
+    "layout",
+    "OTHER",
+    "0.0",
+    "0.029842773"
+  ],
+  "15e89247-93cc-46a3-994f-921fc6647bef": [
+    "rootLogger",
+    "OTHER",
+    "0.0",
+    "0.39211187"
+  ],
+  "016b8fc0-d50d-41a0-abb2-d3d379f8f3de": [
+    "message pattern",
+    "OTHER",
+    "0.9",
+    "0.027369592"
+  ],
+  "9da9b58c-8619-44b8-a039-ea657aae0010": [
+    "FileAppender",
+    "OTHER",
+    "0.0",
+    "0.043918975"
+  ],
+  "36fb4118-f025-4999-8bd9-b1403f6b3b2e": [
+    "log",
+    "OTHER",
+    "0.0",
+    "0.037250776"
+  ],
+  "2771d6f8-cbbd-41ae-8ac3-08206358214d": [
+    "PatternLayout",
+    "OTHER",
+    "0.0",
+    "0.016362686"
+  ],
+  "a817ad8f-dc7b-4f75-bafa-f6f5c9650f86": [
+    "root logger",
+    "OTHER",
+    "0.0",
+    "0.10761214"
+  ],
+  "7200b7eb-9e5d-426d-b4fc-e3e98c230ced": [
+    "ISO8601",
+    "OTHER",
+    "0.0",
+    "0.061310582"
+  ],
+  "9058ad39-e368-4642-ac69-97abd3288809": [
+    "log fout",
+    "PERSON",
+    "0.0",
+    "0.043654937"
+  ],
+  "182608c3-5131-44d9-994f-73028f5f9d0b": [
+    "file",
+    "OTHER",
+    "0.0",
+    "0.049204707"
+  ],
+  "1fd92f81-a0db-4f7e-90d5-13c9fd790372": [
+    "File",
+    "OTHER",
+    "0.0",
+    "0.04980467"
+  ],
+  "bfee77eb-bb78-47b2-99cf-5eef05c1bb2f": [
+    "file",
+    "OTHER",
+    "0.0",
+    "0.07223773"
+  ],
+  "945d7ee8-eafa-4105-a372-6a3c8998467e": [
+    "log file",
+    "OTHER",
+    "0.0",
+    "0.049204707"
+  ],
+  "63de4313-16dc-46f8-8a98-a729e7949b5f": [
+    "FileAppender #",
+    "OTHER",
+    "0.0",
+    "0.02011387"
+  ]
+}
+INFO	2017-10-16 19:05:28,782	0	root	[qtp1470565383-22]	----------------Category Map----------------
+INFO	2017-10-16 19:05:28,787	5	root	[qtp1470565383-22]	{
+  "Computers \u0026 Electronics": 0.99
+}
+INFO	2017-10-16 19:05:29,986	1204	root	[qtp1470565383-22]	----------------Google NLP Entity List----------------
+INFO	2017-10-16 19:05:29,998	1216	root	[qtp1470565383-22]	{
+  "4879abb5-7adc-4d5f-9818-b183650cb0ce": [
+    "PatternLayout",
+    "OTHER",
+    "0.0",
+    "0.016362686"
+  ],
+  "33dba624-d6e1-4a31-9f38-32aa06327b52": [
+    "FileAppender #",
+    "OTHER",
+    "0.0",
+    "0.02011387"
+  ],
+  "b7112c7b-9682-4d30-b197-a1101604de0d": [
+    "file",
+    "OTHER",
+    "0.0",
+    "0.07223773"
+  ],
+  "b5a8d6b4-a2d9-4c48-96ea-77ac13a040e1": [
+    "file",
+    "OTHER",
+    "0.0",
+    "0.049204707"
+  ],
+  "5ee5e54a-334b-40dc-8870-239e339ae555": [
+    "log fout",
+    "PERSON",
+    "0.0",
+    "0.043654937"
+  ],
+  "97d22fff-0fba-48ec-8335-4413b9d9148b": [
+    "log file",
+    "OTHER",
+    "0.0",
+    "0.049204707"
+  ],
+  "720daf9f-9b0b-48fd-8605-76a6e4e95040": [
+    "message pattern",
+    "OTHER",
+    "0.9",
+    "0.027369592"
+  ],
+  "2423f165-f167-4666-9655-bda2717c4584": [
+    "layout",
+    "OTHER",
+    "0.0",
+    "0.029842773"
+  ],
+  "1c305948-e342-4718-ac13-55d48a4773e3": [
+    "root logger",
+    "OTHER",
+    "0.0",
+    "0.10761214"
+  ],
+  "c4b0292a-a141-4107-856e-9ef0a62d01f3": [
+    "File",
+    "OTHER",
+    "0.0",
+    "0.04980467"
+  ],
+  "6037bba2-d0a7-4f28-837e-64ff3e3e92ff": [
+    "ISO8601",
+    "OTHER",
+    "0.0",
+    "0.061310582"
+  ],
+  "cdcf3d81-863f-497e-8275-ff43c99898d9": [
+    "FileAppender",
+    "OTHER",
+    "0.0",
+    "0.043918975"
+  ],
+  "56eb402b-eb5a-4eae-877b-5da7d4deefad": [
+    "log",
+    "OTHER",
+    "0.0",
+    "0.037250776"
+  ],
+  "7fc72bae-ac54-4c44-801e-7666195ef3f6": [
+    "rootLogger",
+    "OTHER",
+    "0.0",
+    "0.39211187"
+  ]
+}
+INFO	2017-10-16 19:30:20,209	0	root	[qtp777752244-22]	----------------Category Map----------------
+INFO	2017-10-16 19:30:20,213	4	root	[qtp777752244-22]	{
+  "Computers \u0026 Electronics": 0.99
+}
+INFO	2017-10-16 19:30:21,537	1328	root	[qtp777752244-22]	----------------Google NLP Entity List----------------
+INFO	2017-10-16 19:30:21,546	1337	root	[qtp777752244-22]	{
+  "bc6f293b-7cf8-4a42-b2f1-53b76b12702e": [
+    "PatternLayout",
+    "OTHER",
+    "0.0",
+    "0.016362686"
+  ],
+  "a0c22c81-5730-4bea-b005-2533f658bd4a": [
+    "ISO8601",
+    "OTHER",
+    "0.0",
+    "0.061310582"
+  ],
+  "d73dfb7e-348b-4ab6-b828-b64c1eb5ff4e": [
+    "rootLogger",
+    "OTHER",
+    "0.0",
+    "0.39211187"
+  ],
+  "b570efc3-a41b-4c30-8155-09b483a4f971": [
+    "root logger",
+    "OTHER",
+    "0.0",
+    "0.10761214"
+  ],
+  "cefb1139-c443-48dd-9543-360df7a413c7": [
+    "log",
+    "OTHER",
+    "0.0",
+    "0.037250776"
+  ],
+  "5e04af36-c564-4d30-8e12-2d704ee3ac34": [
+    "FileAppender",
+    "OTHER",
+    "0.0",
+    "0.043918975"
+  ],
+  "83ac00aa-0354-4759-9f45-f956f03b4c7f": [
+    "log fout",
+    "PERSON",
+    "0.0",
+    "0.043654937"
+  ],
+  "bdfce405-465e-4e75-bbbf-b514128f279f": [
+    "File",
+    "OTHER",
+    "0.0",
+    "0.04980467"
+  ],
+  "70ef4205-259a-4e44-9b7c-ca0322b0fa86": [
+    "file",
+    "OTHER",
+    "0.0",
+    "0.049204707"
+  ],
+  "dda2ff2a-eaf1-4088-9a61-9f23f59532e4": [
+    "FileAppender #",
+    "OTHER",
+    "0.0",
+    "0.02011387"
+  ],
+  "57fa6b0a-7dc4-41a6-90e0-367aec72b1bd": [
+    "log file",
+    "OTHER",
+    "0.0",
+    "0.049204707"
+  ],
+  "c6f2f508-27f5-4228-bf42-7ec0d5bbdf8f": [
+    "message pattern",
+    "OTHER",
+    "0.9",
+    "0.027369592"
+  ],
+  "829b86c3-5efc-480b-ac9b-7b9d7ef8bcfc": [
+    "layout",
+    "OTHER",
+    "0.0",
+    "0.029842773"
+  ],
+  "d56d3a01-9b5c-4506-82f7-cbf1742a281d": [
+    "file",
+    "OTHER",
+    "0.0",
+    "0.07223773"
+  ]
+}
+INFO	2017-10-16 19:32:57,570	0	root	[qtp1038667788-22]	----------------Category Map----------------
+INFO	2017-10-16 19:32:57,577	7	root	[qtp1038667788-22]	{
+  "Computers \u0026 Electronics": 0.99
+}
+INFO	2017-10-16 19:32:58,095	525	root	[qtp1038667788-22]	----------------Google NLP Entity List----------------
+INFO	2017-10-16 19:32:58,102	532	root	[qtp1038667788-22]	{
+  "c82f6436-38b7-4db1-948d-0af91daa536c": [
+    "file",
+    "OTHER",
+    "0.0",
+    "0.049204707"
+  ],
+  "cd2c2e64-d66c-48ec-ae07-f97cbf0bd601": [
+    "FileAppender",
+    "OTHER",
+    "0.0",
+    "0.043918975"
+  ],
+  "62da42e9-7cf9-4044-8ecb-9d8b05a32254": [
+    "file",
+    "OTHER",
+    "0.0",
+    "0.07223773"
+  ],
+  "781b16bc-8d11-43ce-b12e-b3a9c25dc87d": [
+    "rootLogger",
+    "OTHER",
+    "0.0",
+    "0.39211187"
+  ],
+  "e8066959-b54d-4983-9ffa-9cd7ac08074b": [
+    "log",
+    "OTHER",
+    "0.0",
+    "0.037250776"
+  ],
+  "e17cb591-f111-43c2-aef7-50d40461618a": [
+    "PatternLayout",
+    "OTHER",
+    "0.0",
+    "0.016362686"
+  ],
+  "bf312d26-8543-4957-80e9-0f1e997253b2": [
+    "FileAppender #",
+    "OTHER",
+    "0.0",
+    "0.02011387"
+  ],
+  "09a9af91-3aa0-478c-9006-8e9034b1881b": [
+    "File",
+    "OTHER",
+    "0.0",
+    "0.04980467"
+  ],
+  "7d85762f-613b-4130-92a6-bfe14d28145f": [
+    "log file",
+    "OTHER",
+    "0.0",
+    "0.049204707"
+  ],
+  "de82aa4b-f159-476a-b963-96636ce6c439": [
+    "layout",
+    "OTHER",
+    "0.0",
+    "0.029842773"
+  ],
+  "be1a8cf8-3f76-4102-a44d-5b51012fa4c1": [
+    "ISO8601",
+    "OTHER",
+    "0.0",
+    "0.061310582"
+  ],
+  "a2e05ec2-6530-46f0-895d-04582e194a1c": [
+    "log fout",
+    "PERSON",
+    "0.0",
+    "0.043654937"
+  ],
+  "f3c3b64a-fd91-486d-8d11-4c57756cea53": [
+    "message pattern",
+    "OTHER",
+    "0.9",
+    "0.027369592"
+  ],
+  "5c0dc651-fc11-4101-8ec0-43708d702b2a": [
+    "root logger",
+    "OTHER",
+    "0.0",
+    "0.10761214"
+  ]
+}
+INFO	2017-10-16 19:34:37,729	100159	root	[qtp1038667788-24]	----------------Category Map----------------
+INFO	2017-10-16 19:34:37,731	100161	root	[qtp1038667788-24]	{
+  "Internet \u0026 Telecom": 0.93
+}
+INFO	2017-10-16 19:34:38,132	100562	root	[qtp1038667788-24]	----------------Google NLP Entity List----------------
+INFO	2017-10-16 19:34:38,139	100569	root	[qtp1038667788-24]	{
+  "cf6efedc-1dbc-4f44-8281-cf80e8ddb784": [
+    "brother",
+    "PERSON",
+    "0.0",
+    "0.027721956"
+  ],
+  "58424df6-540d-4eac-b4aa-9ff6c7f5689c": [
+    "smartphones",
+    "CONSUMER_GOOD",
+    "0.4",
+    "0.014395665"
+  ],
+  "7d105574-85bf-455c-8235-a203fa4ae490": [
+    "iPhone 6",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.5660947"
+  ],
+  "9cccd1ee-1e2b-42e0-b55d-4ed816f4aede": [
+    "something",
+    "OTHER",
+    "0.0",
+    "0.030380566"
+  ],
+  "41bb9ed5-7cc2-46e8-a320-6d1315fe381f": [
+    "Apple",
+    "ORGANIZATION",
+    "0.0",
+    "0.08739394"
+  ],
+  "5762db6c-bb4d-402f-94fc-065182706e17": [
+    "Cupertino",
+    "LOCATION",
+    "0.0",
+    "0.02681101"
+  ],
+  "817b1657-b04f-4acb-8e21-d23c4cfc931a": [
+    "market",
+    "OTHER",
+    "0.1",
+    "0.07209876"
+  ],
+  "e8bd51f4-fbdc-4ecb-a052-909e22ed87c6": [
+    "brand",
+    "ORGANIZATION",
+    "0.0",
+    "0.03875377"
+  ],
+  "323610e2-3f7f-4dc6-810b-de67771b2704": [
+    "design",
+    "OTHER",
+    "0.4",
+    "0.014395665"
+  ],
+  "f7eff01b-4d39-42f2-9eaa-f009fee2f953": [
+    "lust",
+    "OTHER",
+    "0.0",
+    "0.020753894"
+  ],
+  "597f7d15-98ab-4439-9401-c74c60646958": [
+    "record sales",
+    "OTHER",
+    "0.0",
+    "0.04503285"
+  ],
+  "30a3e711-0ec8-434b-a786-892f31b0450b": [
+    "iPhone 6 Plus",
+    "ORGANIZATION",
+    "0.0",
+    "0.005412017"
+  ],
+  "148c0056-5ad8-4665-a965-ad9c2e43c84d": [
+    "phone",
+    "OTHER",
+    "0.0",
+    "0.03000133"
+  ],
+  "af1154e6-cf13-4e81-b01f-2d316168919a": [
+    "end",
+    "OTHER",
+    "0.1",
+    "0.020753894"
+  ]
+}
+INFO	2017-10-16 19:35:02,248	124678	root	[qtp1038667788-24]	----------------Noun combination sequences----------------
+INFO	2017-10-16 19:35:02,249	124679	root	[qtp1038667788-24]	{
+  "Apple iPhone": "smartphone",
+  "record sales": "information",
+  "Cupertino brand": "Not Found",
+  "fall": "trauma",
+  "phone": "device",
+  "years": "sort option",
+  "something": "harrison composition",
+  "iPhone": "device",
+  "brother": "brand",
+  "Apple": "fruit",
+  "end": "key",
+  "market": "factor",
+  "lust": "Not Found",
+  "screen smartphones": "Not Found",
+  "design": "factor"
+}
+INFO	2017-10-16 19:35:02,256	124686	root	[qtp1038667788-24]	--------- Synatx Map ------------
+INFO	2017-10-16 19:35:02,258	124688	root	[qtp1038667788-24]	{1=[Why, ADV, Why], 2=[do, VERB, do], 3=[we, PRON, we], 4=[have, VERB, have], 5=[the, DET, the], 6=[Apple, NOUN, Apple], 7=[iPhone, NOUN, iPhone], 8=[6, NUM, 6], 9=[?, PUNCT, ?], 10=[Well, X, Well], 11=[,, PUNCT, ,], 12=[back, ADV, back], 13=[in, ADP, in], 14=[2013, NUM, 2013], 15=[,, PUNCT, ,], 16=[despite, ADP, despite], 17=[record, NOUN, record], 18=[sales, NOUN, sale], 19=[,, PUNCT, ,], 20=[the, DET, the], 21=[Cupertino, NOUN, Cupertino], 22=[brand, NOUN, brand], 23=[was, VERB, be], 24=[heading, VERB, head], 25=[for, ADP, for], 26=[a, DET, a], 27=[fall, NOUN, fall], 28=[., PUNCT, .], 29=[It, PRON, It], 30=[had, VERB, have], 31=[been, VERB, be], 32=[trading, VERB, trade], 33=[on, ADP, on], 34=[the, DET, the], 35=[same, ADJ, same], 36=[phone, NOUN, phone], 37=[for, ADP, for], 38=[four, NUM, four], 39=[years, NOUN, year], 40=[,, PUNCT, ,], 41=[and, CONJ, and], 42=[something, NOUN, something], 43=[big, ADJ, big], 44=[was, VERB, be], 45=[needed, VERB, need], 46=[to, PRT, to], 47=[keep, VERB, keep], 48=[it, PRON, it], 49=[current, ADJ, current], 50=[., PUNCT, .], 51=[So, CONJ, So], 52=[with, ADP, with], 53=[that, DET, that], 54=[,, PUNCT, ,], 55=[the, DET, the], 56=[iPhone, NOUN, iPhone], 57=[6, NUM, 6], 58=[,, PUNCT, ,], 59=[and, CONJ, and], 60=[its, PRON, its], 61=[bigger, ADJ, big], 62=[brother, NOUN, brother], 63=[,, PUNCT, ,], 64=[the, DET, the], 65=[iPhone, NOUN, iPhone], 66=[6, NUM, 6], 67=[Plus, CONJ, Plus], 68=[,, PUNCT, ,], 69=[were, VERB, be], 70=[born, VERB, bear], 71=[to, PRT, to], 72=[keep, VERB, keep], 73=[Apple, NOUN, Apple], 74=[at, ADP, at], 75=[the, DET, the], 76=[sharp, ADJ, sharp], 77=[end, NOUN, end], 78=[of, ADP, of], 79=[a, DET, a], 80=[market, NOUN, market], 81=[that, DET, that], 82=[was, VERB, be], 83=[starting, VERB, start], 84=[to, ADP, to], 85=[lust, NOUN, lust], 86=[after, ADP, after], 87=[powerful, ADJ, powerful], 88=[,, PUNCT, ,], 89=[big, ADJ, big], 90=[-, PUNCT, -], 91=[screen, NOUN, screen], 92=[smartphones, NOUN, smartphone], 93=[with, ADP, with], 94=[clever, ADJ, clever], 95=[and, CONJ, and], 96=[premium, ADJ, premium], 97=[design, NOUN, design], 98=[., PUNCT, .]}
+INFO	2017-10-16 19:35:02,261	124691	root	[qtp1038667788-24]	--------- finalEntityTaggedMap ------------
+INFO	2017-10-16 19:35:02,263	124693	root	[qtp1038667788-24]	{1=[brother, 0.0, 0.027721956, PERSON, brother, brand], 2=[smartphones, 0.4, 0.014395665, CONSUMER_GOOD, screen smartphones, Not Found], 3=[iPhone 6, 0.0, 0.5660947, CONSUMER_GOOD], 4=[something, 0.0, 0.030380566, OTHER, something, harrison composition], 5=[Apple, 0.0, 0.08739394, ORGANIZATION, Apple iPhone, smartphone], 6=[Cupertino, 0.0, 0.02681101, LOCATION, Cupertino brand, Not Found], 7=[market, 0.1, 0.07209876, OTHER, market, factor], 8=[brand, 0.0, 0.03875377, ORGANIZATION, Cupertino brand, Not Found], 9=[design, 0.4, 0.014395665, OTHER, design, factor], 10=[lust, 0.0, 0.020753894, OTHER, lust, Not Found], 11=[record sales, 0.0, 0.04503285, OTHER, record sales, information], 12=[iPhone 6 Plus, 0.0, 0.005412017, ORGANIZATION], 13=[phone, 0.0, 0.03000133, OTHER, phone, device], 14=[end, 0.1, 0.020753894, OTHER, end, key]}
+INFO	2017-10-16 19:35:02,283	124713	root	[qtp1038667788-24]	----------------Feature understanding----------------
+INFO	2017-10-16 19:35:02,292	124722	root	[qtp1038667788-24]	{
+  "mainEntity": "IPhone 6S",
+  "featureMap": {}
+}
+INFO	2017-10-16 19:38:01,974	0	root	[qtp803667854-22]	----------------Category Map----------------
+INFO	2017-10-16 19:38:01,981	7	root	[qtp803667854-22]	{
+  "Internet \u0026 Telecom": 0.93
+}
+INFO	2017-10-16 19:38:03,243	1269	root	[qtp803667854-22]	----------------Google NLP Entity List----------------
+INFO	2017-10-16 19:38:03,245	1271	root	[qtp803667854-22]	{
+  "febeade0-c8e4-427e-aac8-5341a1fe57cc": [
+    "brand",
+    "ORGANIZATION",
+    "0.0",
+    "0.03875377"
+  ],
+  "e7db843b-6cf3-48e2-a4f2-32b107628f9f": [
+    "lust",
+    "OTHER",
+    "0.0",
+    "0.020753894"
+  ],
+  "5b6e2413-c200-4bb0-9fbe-7cc23ac723c5": [
+    "iPhone 6 Plus",
+    "ORGANIZATION",
+    "0.0",
+    "0.005412017"
+  ],
+  "f68a6660-22be-44b3-b899-de39a2d0ac69": [
+    "Cupertino",
+    "LOCATION",
+    "0.0",
+    "0.02681101"
+  ],
+  "3c1dee97-812a-45a0-bbf8-89e0b8fb4ac8": [
+    "market",
+    "OTHER",
+    "0.1",
+    "0.07209876"
+  ],
+  "72150b61-c2b7-4797-9aa9-ebe1e8b7b5d0": [
+    "something",
+    "OTHER",
+    "0.0",
+    "0.030380566"
+  ],
+  "a1d397c8-cfd8-4a72-91c8-b3ca2a6f449b": [
+    "phone",
+    "OTHER",
+    "0.0",
+    "0.03000133"
+  ],
+  "f04eabe6-70bc-485c-9df9-d2b68b11660d": [
+    "brother",
+    "PERSON",
+    "0.0",
+    "0.027721956"
+  ],
+  "858d559a-46b8-499c-9bb8-c875c5287ebc": [
+    "smartphones",
+    "CONSUMER_GOOD",
+    "0.4",
+    "0.014395665"
+  ],
+  "45b03557-c9d5-40d4-8788-988c44e9fa3c": [
+    "design",
+    "OTHER",
+    "0.4",
+    "0.014395665"
+  ],
+  "cb4e058b-20cb-4937-ad60-5e165457d477": [
+    "record sales",
+    "OTHER",
+    "0.0",
+    "0.04503285"
+  ],
+  "0e9786f5-96f4-47ab-94d5-387a159b21e9": [
+    "end",
+    "OTHER",
+    "0.1",
+    "0.020753894"
+  ],
+  "d72625fc-bdb8-490b-9360-6505b82271a9": [
+    "Apple",
+    "ORGANIZATION",
+    "0.0",
+    "0.08739394"
+  ],
+  "49f31a58-b9c6-46f1-95d3-2955dc18b860": [
+    "iPhone 6",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.5660947"
+  ]
+}
+INFO	2017-10-16 19:38:27,641	25667	root	[qtp803667854-22]	----------------Noun combination sequences----------------
+INFO	2017-10-16 19:38:27,648	25674	root	[qtp803667854-22]	{
+  "Apple iPhone": "smartphone",
+  "record sales": "information",
+  "Cupertino brand": "Not Found",
+  "fall": "trauma",
+  "phone": "device",
+  "years": "sort option",
+  "something": "harrison composition",
+  "iPhone": "device",
+  "brother": "brand",
+  "Apple": "fruit",
+  "end": "key",
+  "market": "factor",
+  "lust": "Not Found",
+  "screen smartphones": "Not Found",
+  "design": "factor"
+}
+INFO	2017-10-16 19:38:27,650	25676	root	[qtp803667854-22]	--------- Synatx Map ------------
+INFO	2017-10-16 19:38:27,651	25677	root	[qtp803667854-22]	{1=[Why, ADV, Why], 2=[do, VERB, do], 3=[we, PRON, we], 4=[have, VERB, have], 5=[the, DET, the], 6=[Apple, NOUN, Apple], 7=[iPhone, NOUN, iPhone], 8=[6, NUM, 6], 9=[?, PUNCT, ?], 10=[Well, X, Well], 11=[,, PUNCT, ,], 12=[back, ADV, back], 13=[in, ADP, in], 14=[2013, NUM, 2013], 15=[,, PUNCT, ,], 16=[despite, ADP, despite], 17=[record, NOUN, record], 18=[sales, NOUN, sale], 19=[,, PUNCT, ,], 20=[the, DET, the], 21=[Cupertino, NOUN, Cupertino], 22=[brand, NOUN, brand], 23=[was, VERB, be], 24=[heading, VERB, head], 25=[for, ADP, for], 26=[a, DET, a], 27=[fall, NOUN, fall], 28=[., PUNCT, .], 29=[It, PRON, It], 30=[had, VERB, have], 31=[been, VERB, be], 32=[trading, VERB, trade], 33=[on, ADP, on], 34=[the, DET, the], 35=[same, ADJ, same], 36=[phone, NOUN, phone], 37=[for, ADP, for], 38=[four, NUM, four], 39=[years, NOUN, year], 40=[,, PUNCT, ,], 41=[and, CONJ, and], 42=[something, NOUN, something], 43=[big, ADJ, big], 44=[was, VERB, be], 45=[needed, VERB, need], 46=[to, PRT, to], 47=[keep, VERB, keep], 48=[it, PRON, it], 49=[current, ADJ, current], 50=[., PUNCT, .], 51=[So, CONJ, So], 52=[with, ADP, with], 53=[that, DET, that], 54=[,, PUNCT, ,], 55=[the, DET, the], 56=[iPhone, NOUN, iPhone], 57=[6, NUM, 6], 58=[,, PUNCT, ,], 59=[and, CONJ, and], 60=[its, PRON, its], 61=[bigger, ADJ, big], 62=[brother, NOUN, brother], 63=[,, PUNCT, ,], 64=[the, DET, the], 65=[iPhone, NOUN, iPhone], 66=[6, NUM, 6], 67=[Plus, CONJ, Plus], 68=[,, PUNCT, ,], 69=[were, VERB, be], 70=[born, VERB, bear], 71=[to, PRT, to], 72=[keep, VERB, keep], 73=[Apple, NOUN, Apple], 74=[at, ADP, at], 75=[the, DET, the], 76=[sharp, ADJ, sharp], 77=[end, NOUN, end], 78=[of, ADP, of], 79=[a, DET, a], 80=[market, NOUN, market], 81=[that, DET, that], 82=[was, VERB, be], 83=[starting, VERB, start], 84=[to, ADP, to], 85=[lust, NOUN, lust], 86=[after, ADP, after], 87=[powerful, ADJ, powerful], 88=[,, PUNCT, ,], 89=[big, ADJ, big], 90=[-, PUNCT, -], 91=[screen, NOUN, screen], 92=[smartphones, NOUN, smartphone], 93=[with, ADP, with], 94=[clever, ADJ, clever], 95=[and, CONJ, and], 96=[premium, ADJ, premium], 97=[design, NOUN, design], 98=[., PUNCT, .]}
+INFO	2017-10-16 19:38:27,652	25678	root	[qtp803667854-22]	--------- finalEntityTaggedMap ------------
+INFO	2017-10-16 19:38:27,653	25679	root	[qtp803667854-22]	{1=[brand, 0.0, 0.03875377, ORGANIZATION, Cupertino brand, Not Found], 2=[lust, 0.0, 0.020753894, OTHER, lust, Not Found], 3=[iPhone 6 Plus, 0.0, 0.005412017, ORGANIZATION], 4=[Cupertino, 0.0, 0.02681101, LOCATION, Cupertino brand, Not Found], 5=[market, 0.1, 0.07209876, OTHER, market, factor], 6=[something, 0.0, 0.030380566, OTHER, something, harrison composition], 7=[phone, 0.0, 0.03000133, OTHER, phone, device], 8=[brother, 0.0, 0.027721956, PERSON, brother, brand], 9=[smartphones, 0.4, 0.014395665, CONSUMER_GOOD, screen smartphones, Not Found], 10=[design, 0.4, 0.014395665, OTHER, design, factor], 11=[record sales, 0.0, 0.04503285, OTHER, record sales, information], 12=[end, 0.1, 0.020753894, OTHER, end, key], 13=[Apple, 0.0, 0.08739394, ORGANIZATION, Apple iPhone, smartphone], 14=[iPhone 6, 0.0, 0.5660947, CONSUMER_GOOD]}
+INFO	2017-10-16 19:38:27,664	25690	root	[qtp803667854-22]	----------------Feature understanding----------------
+INFO	2017-10-16 19:38:27,667	25693	root	[qtp803667854-22]	{
+  "mainEntity": "IPhone 6S",
+  "featureMap": {}
+}
+INFO	2017-10-16 19:38:47,719	0	root	[qtp1421913278-22]	----------------Category Map----------------
+INFO	2017-10-16 19:38:47,725	6	root	[qtp1421913278-22]	{
+  "Internet \u0026 Telecom": 0.93
+}
+INFO	2017-10-16 19:38:48,207	488	root	[qtp1421913278-22]	----------------Google NLP Entity List----------------
+INFO	2017-10-16 19:38:48,215	496	root	[qtp1421913278-22]	{
+  "186147d5-f543-4fb6-8f7b-3928972c7dc1": [
+    "Cupertino",
+    "LOCATION",
+    "0.0",
+    "0.02681101"
+  ],
+  "dbcf0e90-0857-4831-b45c-449712dee3b9": [
+    "iPhone 6",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.5660947"
+  ],
+  "6227d556-ecc8-4d9c-8cd5-65424d301aec": [
+    "market",
+    "OTHER",
+    "0.1",
+    "0.07209876"
+  ],
+  "5aae94d0-6f9c-4751-83b6-3cb4933d081a": [
+    "iPhone 6 Plus",
+    "ORGANIZATION",
+    "0.0",
+    "0.005412017"
+  ],
+  "c8aaabbd-3e8d-43bf-8959-09c3d4af8cf3": [
+    "brand",
+    "ORGANIZATION",
+    "0.0",
+    "0.03875377"
+  ],
+  "88780b5d-ecd2-4b85-b61a-c1996acccf26": [
+    "brother",
+    "PERSON",
+    "0.0",
+    "0.027721956"
+  ],
+  "82b06d4c-7c62-4641-a165-76ab5e625b05": [
+    "end",
+    "OTHER",
+    "0.1",
+    "0.020753894"
+  ],
+  "7e83340e-6028-4f45-84d3-eeb8cbc7cc23": [
+    "record sales",
+    "OTHER",
+    "0.0",
+    "0.04503285"
+  ],
+  "eaa3ff36-6215-4d1a-aa76-1dac1cee0239": [
+    "lust",
+    "OTHER",
+    "0.0",
+    "0.020753894"
+  ],
+  "8e7d6e40-fe69-4a07-b154-2b48f3b561fe": [
+    "smartphones",
+    "CONSUMER_GOOD",
+    "0.4",
+    "0.014395665"
+  ],
+  "46b1942b-e89e-4330-99ad-959b1312a9b2": [
+    "Apple",
+    "ORGANIZATION",
+    "0.0",
+    "0.08739394"
+  ],
+  "daeaa48f-9e16-4756-a348-f09137ea468a": [
+    "phone",
+    "OTHER",
+    "0.0",
+    "0.03000133"
+  ],
+  "9ddc132c-4d9c-4afb-9127-789769cf1fe5": [
+    "something",
+    "OTHER",
+    "0.0",
+    "0.030380566"
+  ],
+  "1ddb0fb8-7d27-44e1-b197-7856d9d5be65": [
+    "design",
+    "OTHER",
+    "0.4",
+    "0.014395665"
+  ]
+}
+INFO	2017-10-16 19:39:12,532	24813	root	[qtp1421913278-22]	----------------Noun combination sequences----------------
+INFO	2017-10-16 19:39:12,535	24816	root	[qtp1421913278-22]	{
+  "Apple iPhone": "smartphone",
+  "record sales": "information",
+  "Cupertino brand": "Not Found",
+  "fall": "trauma",
+  "phone": "device",
+  "years": "sort option",
+  "something": "harrison composition",
+  "iPhone": "device",
+  "brother": "brand",
+  "Apple": "fruit",
+  "end": "key",
+  "market": "factor",
+  "lust": "Not Found",
+  "screen smartphones": "Not Found",
+  "design": "factor"
+}
+INFO	2017-10-16 19:39:12,543	24824	root	[qtp1421913278-22]	--------- Synatx Map ------------
+INFO	2017-10-16 19:39:12,545	24826	root	[qtp1421913278-22]	{1=[Why, ADV, Why], 2=[do, VERB, do], 3=[we, PRON, we], 4=[have, VERB, have], 5=[the, DET, the], 6=[Apple, NOUN, Apple], 7=[iPhone, NOUN, iPhone], 8=[6, NUM, 6], 9=[?, PUNCT, ?], 10=[Well, X, Well], 11=[,, PUNCT, ,], 12=[back, ADV, back], 13=[in, ADP, in], 14=[2013, NUM, 2013], 15=[,, PUNCT, ,], 16=[despite, ADP, despite], 17=[record, NOUN, record], 18=[sales, NOUN, sale], 19=[,, PUNCT, ,], 20=[the, DET, the], 21=[Cupertino, NOUN, Cupertino], 22=[brand, NOUN, brand], 23=[was, VERB, be], 24=[heading, VERB, head], 25=[for, ADP, for], 26=[a, DET, a], 27=[fall, NOUN, fall], 28=[., PUNCT, .], 29=[It, PRON, It], 30=[had, VERB, have], 31=[been, VERB, be], 32=[trading, VERB, trade], 33=[on, ADP, on], 34=[the, DET, the], 35=[same, ADJ, same], 36=[phone, NOUN, phone], 37=[for, ADP, for], 38=[four, NUM, four], 39=[years, NOUN, year], 40=[,, PUNCT, ,], 41=[and, CONJ, and], 42=[something, NOUN, something], 43=[big, ADJ, big], 44=[was, VERB, be], 45=[needed, VERB, need], 46=[to, PRT, to], 47=[keep, VERB, keep], 48=[it, PRON, it], 49=[current, ADJ, current], 50=[., PUNCT, .], 51=[So, CONJ, So], 52=[with, ADP, with], 53=[that, DET, that], 54=[,, PUNCT, ,], 55=[the, DET, the], 56=[iPhone, NOUN, iPhone], 57=[6, NUM, 6], 58=[,, PUNCT, ,], 59=[and, CONJ, and], 60=[its, PRON, its], 61=[bigger, ADJ, big], 62=[brother, NOUN, brother], 63=[,, PUNCT, ,], 64=[the, DET, the], 65=[iPhone, NOUN, iPhone], 66=[6, NUM, 6], 67=[Plus, CONJ, Plus], 68=[,, PUNCT, ,], 69=[were, VERB, be], 70=[born, VERB, bear], 71=[to, PRT, to], 72=[keep, VERB, keep], 73=[Apple, NOUN, Apple], 74=[at, ADP, at], 75=[the, DET, the], 76=[sharp, ADJ, sharp], 77=[end, NOUN, end], 78=[of, ADP, of], 79=[a, DET, a], 80=[market, NOUN, market], 81=[that, DET, that], 82=[was, VERB, be], 83=[starting, VERB, start], 84=[to, ADP, to], 85=[lust, NOUN, lust], 86=[after, ADP, after], 87=[powerful, ADJ, powerful], 88=[,, PUNCT, ,], 89=[big, ADJ, big], 90=[-, PUNCT, -], 91=[screen, NOUN, screen], 92=[smartphones, NOUN, smartphone], 93=[with, ADP, with], 94=[clever, ADJ, clever], 95=[and, CONJ, and], 96=[premium, ADJ, premium], 97=[design, NOUN, design], 98=[., PUNCT, .]}
+INFO	2017-10-16 19:39:12,546	24827	root	[qtp1421913278-22]	--------- finalEntityTaggedMap ------------
+INFO	2017-10-16 19:39:12,547	24828	root	[qtp1421913278-22]	{1=[Cupertino, 0.0, 0.02681101, LOCATION, Cupertino brand, Not Found], 2=[iPhone 6, 0.0, 0.5660947, CONSUMER_GOOD], 3=[market, 0.1, 0.07209876, OTHER, market, factor], 4=[iPhone 6 Plus, 0.0, 0.005412017, ORGANIZATION], 5=[brand, 0.0, 0.03875377, ORGANIZATION, Cupertino brand, Not Found], 6=[brother, 0.0, 0.027721956, PERSON, brother, brand], 7=[end, 0.1, 0.020753894, OTHER, end, key], 8=[record sales, 0.0, 0.04503285, OTHER, record sales, information], 9=[lust, 0.0, 0.020753894, OTHER, lust, Not Found], 10=[smartphones, 0.4, 0.014395665, CONSUMER_GOOD, screen smartphones, Not Found], 11=[Apple, 0.0, 0.08739394, ORGANIZATION, Apple iPhone, smartphone], 12=[phone, 0.0, 0.03000133, OTHER, phone, device], 13=[something, 0.0, 0.030380566, OTHER, something, harrison composition], 14=[design, 0.4, 0.014395665, OTHER, design, factor]}
+INFO	2017-10-16 19:39:12,558	24839	root	[qtp1421913278-22]	----------------Feature understanding----------------
+INFO	2017-10-16 19:39:12,561	24842	root	[qtp1421913278-22]	{
+  "mainEntity": "IPhone 6S",
+  "featureMap": {}
+}
+INFO	2017-10-16 19:39:50,137	0	root	[qtp1038667788-23]	----------------Category Map----------------
+INFO	2017-10-16 19:39:50,152	15	root	[qtp1038667788-23]	{
+  "Internet \u0026 Telecom": 0.93
+}
+INFO	2017-10-16 19:39:51,549	1412	root	[qtp1038667788-23]	----------------Google NLP Entity List----------------
+INFO	2017-10-16 19:39:51,557	1420	root	[qtp1038667788-23]	{
+  "cc813270-3088-49df-91db-13e085951a43": [
+    "smartphones",
+    "CONSUMER_GOOD",
+    "0.4",
+    "0.014395665"
+  ],
+  "4030e8d5-073e-4c18-9395-4ff0914ea48e": [
+    "iPhone 6 Plus",
+    "ORGANIZATION",
+    "0.0",
+    "0.005412017"
+  ],
+  "86d689cc-1fcb-42da-bf9c-5b9ed8cb0c99": [
+    "end",
+    "OTHER",
+    "0.1",
+    "0.020753894"
+  ],
+  "f33d0c82-810c-4202-8ac2-9c2518805ee7": [
+    "iPhone 6",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.5660947"
+  ],
+  "a7a13fda-fee4-46f7-9a74-db50d91df347": [
+    "Cupertino",
+    "LOCATION",
+    "0.0",
+    "0.02681101"
+  ],
+  "92496d63-8f06-4acd-8f50-fa84e94cb624": [
+    "design",
+    "OTHER",
+    "0.4",
+    "0.014395665"
+  ],
+  "330d8833-43f9-4622-b28b-2a30670abb79": [
+    "lust",
+    "OTHER",
+    "0.0",
+    "0.020753894"
+  ],
+  "90a5178a-5fbe-4507-be72-146fa0e30753": [
+    "brother",
+    "PERSON",
+    "0.0",
+    "0.027721956"
+  ],
+  "86762064-7553-4587-93c0-4abcbc0d0bd2": [
+    "record sales",
+    "OTHER",
+    "0.0",
+    "0.04503285"
+  ],
+  "0c2bcbab-23f8-474c-975a-b140f9dc9123": [
+    "something",
+    "OTHER",
+    "0.0",
+    "0.030380566"
+  ],
+  "cab5f78a-ad62-4f63-951a-a495d0ed914d": [
+    "brand",
+    "ORGANIZATION",
+    "0.0",
+    "0.03875377"
+  ],
+  "203e9d5b-13b9-4a94-993f-838949b9b3e1": [
+    "Apple",
+    "ORGANIZATION",
+    "0.0",
+    "0.08739394"
+  ],
+  "93529b5e-7844-4cd0-888b-af31ee86d7cc": [
+    "phone",
+    "OTHER",
+    "0.0",
+    "0.03000133"
+  ],
+  "219cfc6f-0562-4795-844c-e350ff865c00": [
+    "market",
+    "OTHER",
+    "0.1",
+    "0.07209876"
+  ]
+}
+INFO	2017-10-16 19:40:15,208	25071	root	[qtp1038667788-23]	----------------Noun combination sequences----------------
+INFO	2017-10-16 19:40:15,210	25073	root	[qtp1038667788-23]	{
+  "Apple iPhone": "smartphone",
+  "record sales": "information",
+  "Cupertino brand": "Not Found",
+  "fall": "trauma",
+  "phone": "device",
+  "years": "sort option",
+  "something": "harrison composition",
+  "iPhone": "device",
+  "brother": "brand",
+  "Apple": "fruit",
+  "end": "key",
+  "market": "factor",
+  "lust": "Not Found",
+  "screen smartphones": "Not Found",
+  "design": "factor"
+}
+INFO	2017-10-16 19:40:15,217	25080	root	[qtp1038667788-23]	--------- Synatx Map ------------
+INFO	2017-10-16 19:40:15,219	25082	root	[qtp1038667788-23]	{1=[Why, ADV, Why], 2=[do, VERB, do], 3=[we, PRON, we], 4=[have, VERB, have], 5=[the, DET, the], 6=[Apple, NOUN, Apple], 7=[iPhone, NOUN, iPhone], 8=[6, NUM, 6], 9=[?, PUNCT, ?], 10=[Well, X, Well], 11=[,, PUNCT, ,], 12=[back, ADV, back], 13=[in, ADP, in], 14=[2013, NUM, 2013], 15=[,, PUNCT, ,], 16=[despite, ADP, despite], 17=[record, NOUN, record], 18=[sales, NOUN, sale], 19=[,, PUNCT, ,], 20=[the, DET, the], 21=[Cupertino, NOUN, Cupertino], 22=[brand, NOUN, brand], 23=[was, VERB, be], 24=[heading, VERB, head], 25=[for, ADP, for], 26=[a, DET, a], 27=[fall, NOUN, fall], 28=[., PUNCT, .], 29=[It, PRON, It], 30=[had, VERB, have], 31=[been, VERB, be], 32=[trading, VERB, trade], 33=[on, ADP, on], 34=[the, DET, the], 35=[same, ADJ, same], 36=[phone, NOUN, phone], 37=[for, ADP, for], 38=[four, NUM, four], 39=[years, NOUN, year], 40=[,, PUNCT, ,], 41=[and, CONJ, and], 42=[something, NOUN, something], 43=[big, ADJ, big], 44=[was, VERB, be], 45=[needed, VERB, need], 46=[to, PRT, to], 47=[keep, VERB, keep], 48=[it, PRON, it], 49=[current, ADJ, current], 50=[., PUNCT, .], 51=[So, CONJ, So], 52=[with, ADP, with], 53=[that, DET, that], 54=[,, PUNCT, ,], 55=[the, DET, the], 56=[iPhone, NOUN, iPhone], 57=[6, NUM, 6], 58=[,, PUNCT, ,], 59=[and, CONJ, and], 60=[its, PRON, its], 61=[bigger, ADJ, big], 62=[brother, NOUN, brother], 63=[,, PUNCT, ,], 64=[the, DET, the], 65=[iPhone, NOUN, iPhone], 66=[6, NUM, 6], 67=[Plus, CONJ, Plus], 68=[,, PUNCT, ,], 69=[were, VERB, be], 70=[born, VERB, bear], 71=[to, PRT, to], 72=[keep, VERB, keep], 73=[Apple, NOUN, Apple], 74=[at, ADP, at], 75=[the, DET, the], 76=[sharp, ADJ, sharp], 77=[end, NOUN, end], 78=[of, ADP, of], 79=[a, DET, a], 80=[market, NOUN, market], 81=[that, DET, that], 82=[was, VERB, be], 83=[starting, VERB, start], 84=[to, ADP, to], 85=[lust, NOUN, lust], 86=[after, ADP, after], 87=[powerful, ADJ, powerful], 88=[,, PUNCT, ,], 89=[big, ADJ, big], 90=[-, PUNCT, -], 91=[screen, NOUN, screen], 92=[smartphones, NOUN, smartphone], 93=[with, ADP, with], 94=[clever, ADJ, clever], 95=[and, CONJ, and], 96=[premium, ADJ, premium], 97=[design, NOUN, design], 98=[., PUNCT, .]}
+INFO	2017-10-16 19:40:15,221	25084	root	[qtp1038667788-23]	--------- finalEntityTaggedMap ------------
+INFO	2017-10-16 19:40:15,223	25086	root	[qtp1038667788-23]	{1=[smartphones, 0.4, 0.014395665, CONSUMER_GOOD, screen smartphones, Not Found], 2=[iPhone 6 Plus, 0.0, 0.005412017, ORGANIZATION], 3=[end, 0.1, 0.020753894, OTHER, end, key], 4=[iPhone 6, 0.0, 0.5660947, CONSUMER_GOOD], 5=[Cupertino, 0.0, 0.02681101, LOCATION, Cupertino brand, Not Found], 6=[design, 0.4, 0.014395665, OTHER, design, factor], 7=[lust, 0.0, 0.020753894, OTHER, lust, Not Found], 8=[brother, 0.0, 0.027721956, PERSON, brother, brand], 9=[record sales, 0.0, 0.04503285, OTHER, record sales, information], 10=[something, 0.0, 0.030380566, OTHER, something, harrison composition], 11=[brand, 0.0, 0.03875377, ORGANIZATION, Cupertino brand, Not Found], 12=[Apple, 0.0, 0.08739394, ORGANIZATION, Apple iPhone, smartphone], 13=[phone, 0.0, 0.03000133, OTHER, phone, device], 14=[market, 0.1, 0.07209876, OTHER, market, factor]}
+INFO	2017-10-16 19:40:15,235	25098	root	[qtp1038667788-23]	----------------Feature understanding----------------
+INFO	2017-10-16 19:40:15,237	25100	root	[qtp1038667788-23]	{
+  "mainEntity": "IPhone 6S",
+  "featureMap": {}
+}
+INFO	2017-10-16 19:40:50,610	0	root	[qtp1038667788-22]	----------------Category Map----------------
+INFO	2017-10-16 19:40:50,616	6	root	[qtp1038667788-22]	{
+  "Internet \u0026 Telecom": 0.93
+}
+INFO	2017-10-16 19:40:51,064	454	root	[qtp1038667788-22]	----------------Google NLP Entity List----------------
+INFO	2017-10-16 19:40:51,068	458	root	[qtp1038667788-22]	{
+  "429daf98-5c88-4b31-a536-7b33aeb49a5e": [
+    "iPhone 6 Plus",
+    "ORGANIZATION",
+    "0.0",
+    "0.005412017"
+  ],
+  "bc11bd78-b64e-46aa-aabb-7eecfeaa84f9": [
+    "smartphones",
+    "CONSUMER_GOOD",
+    "0.4",
+    "0.014395665"
+  ],
+  "20fd5420-395d-4fd3-aef6-c4e288df6012": [
+    "record sales",
+    "OTHER",
+    "0.0",
+    "0.04503285"
+  ],
+  "bae77093-7217-4461-a332-f8849d6c1c49": [
+    "brother",
+    "PERSON",
+    "0.0",
+    "0.027721956"
+  ],
+  "7ab1d422-086e-4abf-8cdc-6ed5d65896aa": [
+    "design",
+    "OTHER",
+    "0.4",
+    "0.014395665"
+  ],
+  "a192051e-8680-49b5-9791-76116521bdbb": [
+    "brand",
+    "ORGANIZATION",
+    "0.0",
+    "0.03875377"
+  ],
+  "4f520a6b-7631-4dd2-886a-e459b22af65b": [
+    "phone",
+    "OTHER",
+    "0.0",
+    "0.03000133"
+  ],
+  "4fd0df84-d7e1-4782-ad52-7a69a3eb6f5e": [
+    "Cupertino",
+    "LOCATION",
+    "0.0",
+    "0.02681101"
+  ],
+  "6369ff76-3262-43ba-8d6a-953322314206": [
+    "end",
+    "OTHER",
+    "0.1",
+    "0.020753894"
+  ],
+  "ca4702b4-714b-4acf-ae6a-e13b7745fa85": [
+    "something",
+    "OTHER",
+    "0.0",
+    "0.030380566"
+  ],
+  "0124d264-d8be-4b9b-8eef-1beff1a24f68": [
+    "lust",
+    "OTHER",
+    "0.0",
+    "0.020753894"
+  ],
+  "b67a5428-1dc4-4c7e-ae1a-b40fc1e05a4a": [
+    "Apple",
+    "ORGANIZATION",
+    "0.0",
+    "0.08739394"
+  ],
+  "13e4c1af-daed-4816-8954-0091c167b201": [
+    "iPhone 6",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.5660947"
+  ],
+  "cbf9e2d5-d7ab-4fba-978d-4d892afc43c0": [
+    "market",
+    "OTHER",
+    "0.1",
+    "0.07209876"
+  ]
+}
+INFO	2017-10-16 19:41:14,421	23811	root	[qtp1038667788-22]	----------------Noun combination sequences----------------
+INFO	2017-10-16 19:41:14,423	23813	root	[qtp1038667788-22]	{
+  "Apple iPhone": "smartphone",
+  "record sales": "information",
+  "Cupertino brand": "Not Found",
+  "fall": "trauma",
+  "phone": "device",
+  "years": "sort option",
+  "something": "harrison composition",
+  "iPhone": "device",
+  "brother": "brand",
+  "Apple": "fruit",
+  "end": "key",
+  "market": "factor",
+  "lust": "Not Found",
+  "screen smartphones": "Not Found",
+  "design": "factor"
+}
+INFO	2017-10-16 19:41:14,430	23820	root	[qtp1038667788-22]	--------- Synatx Map ------------
+INFO	2017-10-16 19:41:14,432	23822	root	[qtp1038667788-22]	{1=[Why, ADV, Why], 2=[do, VERB, do], 3=[we, PRON, we], 4=[have, VERB, have], 5=[the, DET, the], 6=[Apple, NOUN, Apple], 7=[iPhone, NOUN, iPhone], 8=[6, NUM, 6], 9=[?, PUNCT, ?], 10=[Well, X, Well], 11=[,, PUNCT, ,], 12=[back, ADV, back], 13=[in, ADP, in], 14=[2013, NUM, 2013], 15=[,, PUNCT, ,], 16=[despite, ADP, despite], 17=[record, NOUN, record], 18=[sales, NOUN, sale], 19=[,, PUNCT, ,], 20=[the, DET, the], 21=[Cupertino, NOUN, Cupertino], 22=[brand, NOUN, brand], 23=[was, VERB, be], 24=[heading, VERB, head], 25=[for, ADP, for], 26=[a, DET, a], 27=[fall, NOUN, fall], 28=[., PUNCT, .], 29=[It, PRON, It], 30=[had, VERB, have], 31=[been, VERB, be], 32=[trading, VERB, trade], 33=[on, ADP, on], 34=[the, DET, the], 35=[same, ADJ, same], 36=[phone, NOUN, phone], 37=[for, ADP, for], 38=[four, NUM, four], 39=[years, NOUN, year], 40=[,, PUNCT, ,], 41=[and, CONJ, and], 42=[something, NOUN, something], 43=[big, ADJ, big], 44=[was, VERB, be], 45=[needed, VERB, need], 46=[to, PRT, to], 47=[keep, VERB, keep], 48=[it, PRON, it], 49=[current, ADJ, current], 50=[., PUNCT, .], 51=[So, CONJ, So], 52=[with, ADP, with], 53=[that, DET, that], 54=[,, PUNCT, ,], 55=[the, DET, the], 56=[iPhone, NOUN, iPhone], 57=[6, NUM, 6], 58=[,, PUNCT, ,], 59=[and, CONJ, and], 60=[its, PRON, its], 61=[bigger, ADJ, big], 62=[brother, NOUN, brother], 63=[,, PUNCT, ,], 64=[the, DET, the], 65=[iPhone, NOUN, iPhone], 66=[6, NUM, 6], 67=[Plus, CONJ, Plus], 68=[,, PUNCT, ,], 69=[were, VERB, be], 70=[born, VERB, bear], 71=[to, PRT, to], 72=[keep, VERB, keep], 73=[Apple, NOUN, Apple], 74=[at, ADP, at], 75=[the, DET, the], 76=[sharp, ADJ, sharp], 77=[end, NOUN, end], 78=[of, ADP, of], 79=[a, DET, a], 80=[market, NOUN, market], 81=[that, DET, that], 82=[was, VERB, be], 83=[starting, VERB, start], 84=[to, ADP, to], 85=[lust, NOUN, lust], 86=[after, ADP, after], 87=[powerful, ADJ, powerful], 88=[,, PUNCT, ,], 89=[big, ADJ, big], 90=[-, PUNCT, -], 91=[screen, NOUN, screen], 92=[smartphones, NOUN, smartphone], 93=[with, ADP, with], 94=[clever, ADJ, clever], 95=[and, CONJ, and], 96=[premium, ADJ, premium], 97=[design, NOUN, design], 98=[., PUNCT, .]}
+INFO	2017-10-16 19:41:14,433	23823	root	[qtp1038667788-22]	--------- finalEntityTaggedMap ------------
+INFO	2017-10-16 19:41:14,434	23824	root	[qtp1038667788-22]	{1=[iPhone 6 Plus, 0.0, 0.005412017, ORGANIZATION], 2=[smartphones, 0.4, 0.014395665, CONSUMER_GOOD, screen smartphones, Not Found], 3=[record sales, 0.0, 0.04503285, OTHER, record sales, information], 4=[brother, 0.0, 0.027721956, PERSON, brother, brand], 5=[design, 0.4, 0.014395665, OTHER, design, factor], 6=[brand, 0.0, 0.03875377, ORGANIZATION, Cupertino brand, Not Found], 7=[phone, 0.0, 0.03000133, OTHER, phone, device], 8=[Cupertino, 0.0, 0.02681101, LOCATION, Cupertino brand, Not Found], 9=[end, 0.1, 0.020753894, OTHER, end, key], 10=[something, 0.0, 0.030380566, OTHER, something, harrison composition], 11=[lust, 0.0, 0.020753894, OTHER, lust, Not Found], 12=[Apple, 0.0, 0.08739394, ORGANIZATION, Apple iPhone, smartphone], 13=[iPhone 6, 0.0, 0.5660947, CONSUMER_GOOD], 14=[market, 0.1, 0.07209876, OTHER, market, factor]}
+INFO	2017-10-16 19:41:14,445	23835	root	[qtp1038667788-22]	----------------Feature understanding----------------
+INFO	2017-10-16 19:41:14,447	23837	root	[qtp1038667788-22]	{
+  "mainEntity": "IPhone 6S",
+  "featureMap": {}
+}
+INFO	2017-10-16 19:47:00,493	0	root	[main]	----------------Entity replaced sentence list(the phone, this phone, this device)----------------
+INFO	2017-10-16 19:47:00,506	13	root	[main]	[
+  "Earlier today, Apple unveiled two iPhone 6 models at its Special Event in Flint Center, Cupertino.",
+  "The first device, the iPhone 6 comes with a 4.7-inch display and the second, the iPhone 6 Plus, comes with a 5.5-inch display.",
+  "The iPhone 6 Plus has a 5.5-inch Retina HD display, with a pixel density of 401ppi and a resolution of 1920 x 1080 pixels.",
+  "But there’s a lot more to the iPhone 6 Plus than just its screen.",
+  "Here’s the full spec sheet of the iPhone 6 Plus."
+]
+INFO	2017-10-16 19:47:08,141	7648	root	[main]	----------------Google NLP Entity List----------------
+INFO	2017-10-16 19:47:08,143	7650	root	[main]	{
+  "7d6264bd-efdf-499f-896f-c8b02aec3ce0": [
+    "Apple",
+    "ORGANIZATION",
+    "0.0",
+    "0.64070106"
+  ],
+  "a41ee12a-fe3d-4920-bd96-e4699c7a7986": [
+    "models",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.14363086"
+  ],
+  "0f5dae1e-f15e-46b5-b3fd-8c76f74ca9b2": [
+    "iPhone 6",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.0862249"
+  ],
+  "3b8ae2c5-9849-4638-868a-a4efca332ba0": [
+    "Flint Center",
+    "LOCATION",
+    "0.0",
+    "0.060398947"
+  ],
+  "726396a0-f971-446c-8bf7-3f5cf80cffc9": [
+    "Cupertino",
+    "LOCATION",
+    "0.0",
+    "0.042157322"
+  ],
+  "26de6547-66c4-467e-9927-9c39d980da6f": [
+    "Special Event",
+    "EVENT",
+    "0.0",
+    "0.026886933"
+  ]
+}
+INFO	2017-10-16 19:47:08,152	7659	root	[main]	----------------Sentence list with word by word details----------------
+INFO	2017-10-16 19:47:08,155	7662	root	[main]	[
+  {
+    "text": "Apple",
+    "sentiment": 0.0,
+    "salience": 0.64070106
+  },
+  {
+    "text": "models",
+    "sentiment": 0.0,
+    "salience": 0.14363086
+  },
+  {
+    "text": "iPhone 6",
+    "sentiment": 0.0,
+    "salience": 0.0862249
+  },
+  {
+    "text": "Flint Center",
+    "sentiment": 0.0,
+    "salience": 0.060398947
+  },
+  {
+    "text": "Cupertino",
+    "sentiment": 0.0,
+    "salience": 0.042157322
+  },
+  {
+    "text": "Special Event",
+    "sentiment": 0.0,
+    "salience": 0.026886933
+  }
+]
+INFO	2017-10-16 19:47:08,788	8295	root	[main]	----------------Google NLP Entity List----------------
+INFO	2017-10-16 19:47:08,790	8297	root	[main]	{
+  "e4acc4cb-fb44-4452-ab63-460faafa6b80": [
+    "iPhone 6 Plus",
+    "ORGANIZATION",
+    "0.0",
+    "0.022912947"
+  ],
+  "102cfad0-9f98-42cc-ae8c-b4c28c574024": [
+    "display",
+    "OTHER",
+    "0.0",
+    "0.13731422"
+  ],
+  "3e348651-5fb4-416a-9e8e-8be64baf29a5": [
+    "second",
+    "OTHER",
+    "0.0",
+    "0.11177276"
+  ],
+  "a4213359-a2f5-414c-8b74-b964bd5b1ad8": [
+    "device",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.49559465"
+  ],
+  "8f80ca6c-4161-4029-adb3-ed836ed4c71d": [
+    "display",
+    "OTHER",
+    "0.0",
+    "0.06793987"
+  ],
+  "698288f5-02df-4ab4-a9b2-551f3dd664f3": [
+    "iPhone 6",
+    "CONSUMER_GOOD",
+    "-0.1",
+    "0.16446556"
+  ]
+}
+INFO	2017-10-16 19:47:08,791	8298	root	[main]	----------------Sentence list with word by word details----------------
+INFO	2017-10-16 19:47:08,792	8299	root	[main]	[
+  {
+    "text": "iPhone 6 Plus",
+    "sentiment": 0.0,
+    "salience": 0.022912947
+  },
+  {
+    "text": "display",
+    "sentiment": 0.0,
+    "salience": 0.13731422
+  },
+  {
+    "text": "second",
+    "sentiment": 0.0,
+    "salience": 0.11177276
+  },
+  {
+    "text": "device",
+    "sentiment": 0.0,
+    "salience": 0.49559465
+  },
+  {
+    "text": "display",
+    "sentiment": 0.0,
+    "salience": 0.06793987
+  },
+  {
+    "text": "iPhone 6",
+    "sentiment": -0.1,
+    "salience": 0.16446556
+  }
+]
+INFO	2017-10-16 19:47:09,302	8809	root	[main]	----------------Google NLP Entity List----------------
+INFO	2017-10-16 19:47:09,304	8811	root	[main]	{
+  "2bdd52f1-f611-404c-94b8-e9dacc83ba52": [
+    "pixel density",
+    "OTHER",
+    "0.0",
+    "0.203886"
+  ],
+  "4aefe697-7681-4719-aa28-581e5fb39678": [
+    "resolution",
+    "OTHER",
+    "0.0",
+    "0.07135559"
+  ],
+  "cae29248-8291-4bba-823c-bfeb6bab2f3b": [
+    "Retina HD display",
+    "OTHER",
+    "0.0",
+    "0.22085877"
+  ],
+  "6d8fabad-bb53-44e4-96cd-14956c106d78": [
+    "iPhone 6 Plus",
+    "ORGANIZATION",
+    "0.0",
+    "0.50389963"
+  ]
+}
+INFO	2017-10-16 19:47:09,305	8812	root	[main]	----------------Sentence list with word by word details----------------
+INFO	2017-10-16 19:47:09,306	8813	root	[main]	[
+  {
+    "text": "pixel density",
+    "sentiment": 0.0,
+    "salience": 0.203886
+  },
+  {
+    "text": "resolution",
+    "sentiment": 0.0,
+    "salience": 0.07135559
+  },
+  {
+    "text": "Retina HD display",
+    "sentiment": 0.0,
+    "salience": 0.22085877
+  },
+  {
+    "text": "iPhone 6 Plus",
+    "sentiment": 0.0,
+    "salience": 0.50389963
+  }
+]
+INFO	2017-10-16 19:47:10,539	10046	root	[main]	----------------Google NLP Entity List----------------
+INFO	2017-10-16 19:47:10,542	10049	root	[main]	{
+  "5614e007-edc9-41f4-a429-c383e39b4b26": [
+    "lot",
+    "OTHER",
+    "0.0",
+    "0.5194903"
+  ],
+  "b4923bff-0e59-43fe-9656-bc0785b64799": [
+    "screen",
+    "OTHER",
+    "0.0",
+    "0.25654793"
+  ],
+  "9d68d091-b5b2-4597-9dd8-084c976dd339": [
+    "iPhone",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.2239618"
+  ]
+}
+INFO	2017-10-16 19:47:10,543	10050	root	[main]	----------------Sentence list with word by word details----------------
+INFO	2017-10-16 19:47:10,544	10051	root	[main]	[
+  {
+    "text": "lot",
+    "sentiment": 0.0,
+    "salience": 0.5194903
+  },
+  {
+    "text": "screen",
+    "sentiment": 0.0,
+    "salience": 0.25654793
+  },
+  {
+    "text": "iPhone",
+    "sentiment": 0.0,
+    "salience": 0.2239618
+  }
+]
+INFO	2017-10-16 19:47:10,997	10504	root	[main]	----------------Google NLP Entity List----------------
+INFO	2017-10-16 19:47:10,999	10506	root	[main]	{
+  "0f3fc50d-1283-4a6f-810f-2240224e332d": [
+    "spec sheet",
+    "OTHER",
+    "0.0",
+    "0.7202217"
+  ],
+  "cc9b7fc4-f747-422d-9787-980036524ee3": [
+    "iPhone 6 Plus",
+    "ORGANIZATION",
+    "0.0",
+    "0.27977833"
+  ]
+}
+INFO	2017-10-16 19:47:11,000	10507	root	[main]	----------------Sentence list with word by word details----------------
+INFO	2017-10-16 19:47:11,001	10508	root	[main]	[
+  {
+    "text": "spec sheet",
+    "sentiment": 0.0,
+    "salience": 0.7202217
+  },
+  {
+    "text": "iPhone 6 Plus",
+    "sentiment": 0.0,
+    "salience": 0.27977833
+  }
+]
+INFO	2017-10-16 19:47:11,004	10511	root	[main]	----------------Entity replacement by IT context----------------
+INFO	2017-10-16 19:47:11,005	10512	root	[main]	[
+  "Earlier today, Apple unveiled two iPhone 6 models at its Special Event in Flint Center, Cupertino.",
+  "The first device, the iPhone 6 comes with a 4.7-inch display and the second, the iPhone 6 Plus, comes with a 5.5-inch display.",
+  "The iPhone 6 Plus has a 5.5-inch Retina HD display, with a pixel density of 401ppi and a resolution of 1920 x 1080 pixels.",
+  "But there’s a lot more to the iPhone 6 Plus than just its screen.",
+  "Here’s the full spec sheet of the iPhone 6 Plus."
+]
+INFO	2017-10-16 19:47:13,316	12823	root	[main]	----------------Category Map----------------
+INFO	2017-10-16 19:47:13,317	12824	root	[main]	{
+  "Internet \u0026 Telecom": 0.97
+}
+INFO	2017-10-16 19:47:13,891	13398	root	[main]	----------------Google NLP Entity List----------------
+INFO	2017-10-16 19:47:13,893	13400	root	[main]	{
+  "42206a31-f9dc-4e7b-b38c-f531bdeb9736": [
+    "display",
+    "OTHER",
+    "0.0",
+    "0.032831088"
+  ],
+  "92c41b05-8436-4505-a4c8-268a01fb1b74": [
+    "iPhone 6",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.13198514"
+  ],
+  "b2aa668f-7c5d-4aad-ad42-ab422d24b9c1": [
+    "second",
+    "OTHER",
+    "0.0",
+    "0.026240867"
+  ],
+  "bc0c8682-11dc-4fb1-91b9-80a06a39407b": [
+    "models",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.0981471"
+  ],
+  "733637ba-8d7e-4f31-9058-b391529d3232": [
+    "pixel density",
+    "OTHER",
+    "0.0",
+    "0.008063523"
+  ],
+  "04c239dd-1c5c-45d6-86b5-7137df6b5d70": [
+    "Retina HD display",
+    "OTHER",
+    "0.0",
+    "0.030474644"
+  ],
+  "85f6db3b-9dd4-43d0-bd00-74700d7848d8": [
+    "resolution",
+    "OTHER",
+    "0.0",
+    "0.008063523"
+  ],
+  "bf40924b-d554-421e-b95d-d4891e668f8c": [
+    "Cupertino.",
+    "PERSON",
+    "0.0",
+    "0.023352256"
+  ],
+  "f8a160a9-d7fe-4a59-9788-0a6d8170fbc1": [
+    "Apple",
+    "ORGANIZATION",
+    "0.0",
+    "0.31677318"
+  ],
+  "8e83f58b-0f69-45be-881a-ace7ccedced6": [
+    "iPhone 6 Plus",
+    "ORGANIZATION",
+    "0.0",
+    "0.05304917"
+  ],
+  "bc60e918-3aae-4fff-bed8-5600d33dfdfc": [
+    "spec sheet",
+    "OTHER",
+    "0.0",
+    "0.057927463"
+  ],
+  "9868ba5e-9298-47cd-880f-478427a6ae6b": [
+    "device",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.0537277"
+  ],
+  "45961810-def8-4677-9350-941e97130472": [
+    "display.",
+    "OTHER",
+    "0.0",
+    "0.033240777"
+  ],
+  "cd2291cf-6e64-474e-adb8-02b9e03e5fda": [
+    "Flint Center",
+    "LOCATION",
+    "0.0",
+    "0.023352256"
+  ],
+  "9113f04e-0aff-4fd0-a3ef-c3735facb0b1": [
+    "Special Event",
+    "EVENT",
+    "0.0",
+    "0.05970635"
+  ],
+  "e16ee24b-1733-40d6-9777-0df7cf30fdc6": [
+    "lot",
+    "OTHER",
+    "0.0",
+    "0.01826394"
+  ]
+}
+INFO	2017-10-16 19:47:55,415	54922	root	[main]	----------------Noun combination sequences----------------
+INFO	2017-10-16 19:47:55,419	54926	root	[main]	{
+  "today": "time",
+  "Apple": "fruit",
+  "iPhone": "device",
+  "models": "information",
+  "Event": "information",
+  "Flint Center": "Not Found",
+  "Cupertino.": "Not Found",
+  "device": "resource",
+  "inch display": "Not Found",
+  "Plus": "setting",
+  "inch display.": "Not Found",
+  "inch Retina HD display": "Not Found",
+  "pixel density": "feature",
+  "401ppi": "Not Found",
+  "resolution": "parameter",
+  "pixels.": "Not Found",
+  "lot": "information",
+  "screen.": "Not Found",
+  "spec sheet": "product documentation"
+}
+INFO	2017-10-16 19:47:55,420	54927	root	[main]	--------- Synatx Map ------------
+INFO	2017-10-16 19:47:55,422	54929	root	[main]	{1=[Earlier, ADV, Earlier], 2=[today, NOUN, today], 3=[,, PUNCT, ,], 4=[Apple, NOUN, Apple], 5=[unveiled, VERB, unveil], 6=[two, NUM, two], 7=[iPhone, NOUN, iPhone], 8=[6, NUM, 6], 9=[models, NOUN, model], 10=[at, ADP, at], 11=[its, PRON, its], 12=[Special, ADJ, Special], 13=[Event, NOUN, Event], 14=[in, ADP, in], 15=[Flint, NOUN, Flint], 16=[Center, NOUN, Center], 17=[,, PUNCT, ,], 18=[Cupertino., NOUN, Cupertino.], 19=[The, DET, The], 20=[first, ADJ, first], 21=[device, NOUN, device], 22=[,, PUNCT, ,], 23=[the, DET, the], 24=[iPhone, NOUN, iPhone], 25=[6, NUM, 6], 26=[comes, VERB, come], 27=[with, ADP, with], 28=[a, DET, a], 29=[4.7, NUM, 4.7], 30=[-, PUNCT, -], 31=[inch, NOUN, inch], 32=[display, NOUN, display], 33=[and, CONJ, and], 34=[the, DET, the], 35=[second, ADJ, second], 36=[,, PUNCT, ,], 37=[the, DET, the], 38=[iPhone, NOUN, iPhone], 39=[6, NUM, 6], 40=[Plus, NOUN, Plus], 41=[,, PUNCT, ,], 42=[comes, VERB, come], 43=[with, ADP, with], 44=[a, DET, a], 45=[5.5, NUM, 5.5], 46=[-, PUNCT, -], 47=[inch, NOUN, inch], 48=[display., NOUN, display.], 49=[The, DET, The], 50=[iPhone, NOUN, iPhone], 51=[6, NUM, 6], 52=[Plus, NOUN, Plus], 53=[has, VERB, have], 54=[a, DET, a], 55=[5.5, NUM, 5.5], 56=[-, PUNCT, -], 57=[inch, NOUN, inch], 58=[Retina, NOUN, Retina], 59=[HD, NOUN, HD], 60=[display, NOUN, display], 61=[,, PUNCT, ,], 62=[with, ADP, with], 63=[a, DET, a], 64=[pixel, NOUN, pixel], 65=[density, NOUN, density], 66=[of, ADP, of], 67=[401ppi, NOUN, 401ppi], 68=[and, CONJ, and], 69=[a, DET, a], 70=[resolution, NOUN, resolution], 71=[of, ADP, of], 72=[1920, NUM, 1920], 73=[x, X, x], 74=[1080, NUM, 1080], 75=[pixels., NOUN, pixels.], 76=[But, CONJ, But], 77=[there, DET, there], 78=[’s, VERB, be], 79=[a, DET, a], 80=[lot, NOUN, lot], 81=[more, ADJ, more], 82=[to, ADP, to], 83=[the, DET, the], 84=[iPhone, NOUN, iPhone], 85=[6, NUM, 6], 86=[Plus, NOUN, Plus], 87=[than, ADP, than], 88=[just, ADV, just], 89=[its, PRON, its], 90=[screen., NOUN, screen.], 91=[Here, ADV, Here], 92=[’s, VERB, be], 93=[the, DET, the], 94=[full, ADJ, full], 95=[spec, NOUN, spec], 96=[sheet, NOUN, sheet], 97=[of, ADP, of], 98=[the, DET, the], 99=[iPhone, NOUN, iPhone], 100=[6, NUM, 6], 101=[Plus, NOUN, Plus], 102=[., PUNCT, .]}
+INFO	2017-10-16 19:47:55,423	54930	root	[main]	--------- finalEntityTaggedMap ------------
+INFO	2017-10-16 19:47:55,424	54931	root	[main]	{1=[display, 0.0, 0.032831088, OTHER, inch display, Not Found], 2=[iPhone 6, 0.0, 0.13198514, CONSUMER_GOOD], 3=[second, 0.0, 0.026240867, OTHER], 4=[models, 0.0, 0.0981471, CONSUMER_GOOD, models, information], 5=[pixel density, 0.0, 0.008063523, OTHER, pixel density, feature], 6=[Retina HD display, 0.0, 0.030474644, OTHER, inch Retina HD display, Not Found], 7=[resolution, 0.0, 0.008063523, OTHER, resolution, parameter], 8=[Cupertino., 0.0, 0.023352256, PERSON, Cupertino., Not Found], 9=[Apple, 0.0, 0.31677318, ORGANIZATION, Apple, fruit], 10=[iPhone 6 Plus, 0.0, 0.05304917, ORGANIZATION], 11=[spec sheet, 0.0, 0.057927463, OTHER, spec sheet, product documentation], 12=[device, 0.0, 0.0537277, CONSUMER_GOOD, device, resource], 13=[display., 0.0, 0.033240777, OTHER, inch display., Not Found], 14=[Flint Center, 0.0, 0.023352256, LOCATION, Flint Center, Not Found], 15=[Special Event, 0.0, 0.05970635, EVENT], 16=[lot, 0.0, 0.01826394, OTHER, lot, information]}
+INFO	2017-10-16 19:47:55,438	54945	root	[main]	----------------Feature understanding----------------
+INFO	2017-10-16 19:47:55,440	54947	root	[main]	{
+  "mainEntity": "IPhone 6S",
+  "featureMap": {}
+}

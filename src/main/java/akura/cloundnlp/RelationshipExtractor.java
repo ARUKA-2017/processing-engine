@@ -3,6 +3,7 @@ package akura.cloundnlp;
 import akura.cloundnlp.dtos.SentenceDto;
 import akura.cloundnlp.dtos.SentenceWordDto;
 import akura.utility.APIConnection;
+import akura.utility.Logger;
 import com.google.cloud.language.v1beta2.Document;
 import com.google.cloud.language.v1beta2.LanguageServiceClient;
 import com.google.gson.GsonBuilder;
@@ -101,8 +102,10 @@ public class RelationshipExtractor {
                             .replaceAll("(?i)this device", entity)
             );
         });
-        System.out.println("----------------Entity replaced sentence list(the phone, this phone, this device)----------------");
-        System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(replacedSentenceList));
+
+
+        Logger.Log("----------------Entity replaced sentence list(the phone, this phone, this device)----------------");
+        Logger.Log(new GsonBuilder().setPrettyPrinting().create().toJson(replacedSentenceList));
         return replacedSentenceList;
     }
 
@@ -178,8 +181,9 @@ public class RelationshipExtractor {
             }
             sentenceCount++;
         }
-        System.out.println("----------------Entity replacement by IT context----------------");
-        System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(replacedSentenceList));
+
+        Logger.Log("----------------Entity replacement by IT context----------------");
+        Logger.Log(new GsonBuilder().setPrettyPrinting().create().toJson(replacedSentenceList));
         return replacedSentenceList;
     }
 
@@ -197,8 +201,10 @@ public class RelationshipExtractor {
             prevSentenceWordDto.setSalience(Float.parseFloat(value.get(3)));
             sentenceWordDtos.add(prevSentenceWordDto);
         });
-        System.out.println("----------------Sentence list with word by word details----------------");
-        System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(sentenceWordDtos));
+
+        Logger.Log("----------------Sentence list with word by word details----------------");
+        Logger.Log(new GsonBuilder().setPrettyPrinting().create().toJson(sentenceWordDtos));
+
         return sentenceWordDtos;
     }
 
