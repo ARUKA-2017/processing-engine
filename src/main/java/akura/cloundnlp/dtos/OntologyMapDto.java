@@ -14,6 +14,7 @@ public class OntologyMapDto {
     private Map<String, Float> categoryMap;
     private List<SyntaxDto> syntaxTagList;
     private List<FinalEntityTagDto> finalEntityTaggedList;
+    private SpecificationDto specificationDto;
 
     public String getReviewId() {
         return reviewId;
@@ -69,5 +70,13 @@ public class OntologyMapDto {
 
     public void setFinalEntityTaggedList(List<FinalEntityTagDto> finalEntityTaggedList) {
         this.finalEntityTaggedList = finalEntityTaggedList;
+    }
+
+    public SpecificationDto getSpecificationDto() {
+        return specificationDto;
+    }
+
+    public void setSpecificationDto(SpecificationDto specificationDto) {
+        this.specificationDto = specificationDto;
     }
 }

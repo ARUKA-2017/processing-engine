@@ -1,5 +1,6 @@
 package akura.cloundnlp;
 
+import akura.cloundnlp.dtos.SpecificationDto;
 import akura.utility.APIConnection;
 
 import akura.cloundnlp.dtos.FinalEntityTagDto;
@@ -55,6 +56,8 @@ public class EntityExtractor {
             categoryMap.put(category.getName().split("/")[1], category.getConfidence());
             break;
         }
+        System.out.println("----------------Category Map----------------");
+        System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(categoryMap));
         return categoryMap;
     }
 
@@ -77,6 +80,8 @@ public class EntityExtractor {
             detailList.add(String.valueOf(entity.getSalience()));
             entityList.put(UUID.randomUUID().toString(), detailList);
         }
+        System.out.println("----------------Google NLP Entity List----------------");
+        System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(entityList));
         return entityList;
     }
 
@@ -179,6 +184,11 @@ public class EntityExtractor {
         }
         ontologyMapDto.setSyntaxTagList(syntaxDtos);
         ontologyMapDto.setFinalEntityTaggedList(constructAvgScores(prioritizeEntities(finalEntityTagDtos)));
+
+        SpecificationExtractor specificationExtractor = new SpecificationExtractor();
+        SpecificationDto specificationDto = specificationExtractor.extractDomainsFromSentenceSyntax(finalEntityTagDtos, review.get("mainEntity").toString());
+        ontologyMapDto.setSpecificationDto(specificationDto);
+
         return ontologyMapDto;
     }
 
@@ -228,6 +238,7 @@ public class EntityExtractor {
                     iterator.remove();
                 }
             }
+
             temporaryDto.setText(entityName);
             temporaryDto.setCategory(entityCategory);
             temporaryDto.setSentiment(sentiment / counter);
@@ -284,6 +295,7 @@ public class EntityExtractor {
         for (Object object : array) {
             JSONObject jsonObject = (JSONObject) object;
             jsonObject.put("reviewContent", text);
+            jsonObject.put("mainEntity", "IPhone 6S");
             String sampleText = jsonObject.get("reviewContent").toString();
             try {
                 ontologyMapDtos.add(constructJson(jsonObject, identifyReviewCategory(sampleText, languageServiceClient), analyseSyntax(sampleText, languageServiceClient)));

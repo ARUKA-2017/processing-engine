@@ -5,6 +5,8 @@ import akura.cloundnlp.dtos.SentenceWordDto;
 import akura.utility.APIConnection;
 import com.google.cloud.language.v1beta2.Document;
 import com.google.cloud.language.v1beta2.LanguageServiceClient;
+import com.google.gson.GsonBuilder;
+
 import java.io.IOException;
 import java.util.*;
 import java.util.regex.Matcher;
@@ -47,6 +49,8 @@ public class RelationshipExtractor {
         while (reMatcher.find()) {
             sentenceList.add(reMatcher.group());
         }
+        System.out.println("----------------Sentence wise tokenization----------------");
+        System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(sentenceList));
         return sentenceList;
     }
 
@@ -75,6 +79,8 @@ public class RelationshipExtractor {
             sentenceDto.setTotalSalience((float) totalSalience);
             analyzedSentenceDtoList.add(sentenceDto);
         });
+        System.out.println("----------------Analyzed sentence list----------------");
+        System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(analyzedSentenceDtoList));
         return analyzedSentenceDtoList;
     }
 
@@ -85,7 +91,7 @@ public class RelationshipExtractor {
      * @param entityList
      * @return
      */
-    public List<String>     replaceEntityInSentences(String entity, List<String> entityList) {
+    public List<String> replaceEntityInSentences(String entity, List<String> entityList) {
         List<String> replacedSentenceList = new LinkedList<>();
         entityList.forEach(sentence -> {
             replacedSentenceList.add(
@@ -95,6 +101,8 @@ public class RelationshipExtractor {
                             .replaceAll("(?i)this device", entity)
             );
         });
+        System.out.println("----------------Entity replaced sentence list(the phone, this phone, this device)----------------");
+        System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(replacedSentenceList));
         return replacedSentenceList;
     }
 
@@ -170,6 +178,8 @@ public class RelationshipExtractor {
             }
             sentenceCount++;
         }
+        System.out.println("----------------Entity replacement by IT context----------------");
+        System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(replacedSentenceList));
         return replacedSentenceList;
     }
 
@@ -187,6 +197,8 @@ public class RelationshipExtractor {
             prevSentenceWordDto.setSalience(Float.parseFloat(value.get(3)));
             sentenceWordDtos.add(prevSentenceWordDto);
         });
+        System.out.println("----------------Sentence list with word by word details----------------");
+        System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(sentenceWordDtos));
         return sentenceWordDtos;
     }
 

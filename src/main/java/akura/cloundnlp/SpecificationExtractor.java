@@ -28,7 +28,7 @@ public class SpecificationExtractor {
         specMap.put("device", new LinkedList<>());
     }
 
-    public void extractDomainsFromSentenceSyntax(List<FinalEntityTagDto> finalEntityTagDtoList){
+    public SpecificationDto extractDomainsFromSentenceSyntax(List<FinalEntityTagDto> finalEntityTagDtoList, String mainEntity){
         for (FinalEntityTagDto finalEntityTagDto: finalEntityTagDtoList){
             specMap.forEach((s, strings) -> {
                 if (s.equals(finalEntityTagDto.getCategory())
@@ -38,7 +38,7 @@ public class SpecificationExtractor {
                 }
             });
         }
-        specificationDto.setMainEntity("IPhone 6S");
+        specificationDto.setMainEntity(mainEntity);//should change it from the main method
         specMap.forEach((key, value) -> {
             if (key.equals("feature") || key.equals("factor") || key.equals("spec")){
                 value.forEach(s -> {
@@ -46,8 +46,9 @@ public class SpecificationExtractor {
                 });
             }
         });
-        System.out.println(specMap);
         specificationDto.setFeatureMap(featureMap);
+        System.out.println("----------------Feature understanding----------------");
         System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(specificationDto));
+        return specificationDto;
     }
 }

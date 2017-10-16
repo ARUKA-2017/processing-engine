@@ -1,121 +1,21 @@
 [
   {
     "reviewId": "R23WVOVFL0VD8X",
-    "review": "The iPhone 6S is nearly identical in design to the iPhone 6.In response to the bendgate design flaws of the previous model, changes were made to improve the durability of the chassis: the 6S was constructed from a stronger, 7000 series aluminum alloy, \"key points\" in the rear casing were strengthened, and touchscreen Integrated circuits were re-located to the display assembly.Alongside the existing gold, silver, and space gray options, a new rose gold color option was also introduced.The iPhone 6S is powered by the Apple A9 system-on-chip, which the company stated is up to 0.70 faster than Apple A8, and has up to 0.90 better graphics performance.The iPhone 6S has 2 GB of RAM, more than any previous iPhone, and also supports LTE Advanced.The Touch ID sensor on the 6S was also updated, with the new version having improved fingerprint scanning performance over the previous version.While the capacities of their batteries are slightly smaller, Apple rates iPhone 6S and 6S Plus as having the same average battery life as their respective predecessors.The A9 system-on-chip was dual-sourced from TSMC and Samsung.Although it was speculated that the Samsung version had worse battery performance than the TSMC version, multiple independent tests have shown there is no appreciable difference between the two chips.Although the device is not promoted as such, the iPhone 6S has a degree of water resistance because of a change to its internal design, which places a silicone seal around components of the logic board to prevent them from being shorted by accidental exposure to water.Their displays are the same sizes as those of the iPhone 6, coming in 4.7-inch 750p and 5.5-inch 1080p (Plus) sizes.The iPhone 6S features a technology known as 3D Touch; sensors are embedded in the screen\u0027s backlight layer that measure the firmness of the user\u0027s touch input by the distance between it and the cover glass, allowing the device to distinguish between normal and more forceful presses.3D Touch is combined with a Taptic Engine vibrator to provide associated haptic feedback.Although similar, this is distinct from the Force Touch technology used on the Apple Watch and Retina MacBook, as it is more sensitive and can recognize more levels of touch pressure than Force Touch.Due to the hardware needed to implement 3D Touch, the iPhone 6S is heavier than its predecessor.The iPhone 6S features a 12-megapixel rear-facing camera, an upgrade from the 8-megapixel unit on previous models, as well as a 5-megapixel front-facing camera.iPhone 6S can record 4K video, as well as 1080p video at 60 and now 120 frames per second.The iPhone 6S and 6S Plus were originally offered in models with 16, 64, and 128 GB of internal storage.Following the release of iPhone 7 in September 2016, the 16 and 64 GB models were dropped, and replaced by a new 32 GB option.For improved storage performance, iPhone 6S utilizes NVM Express (NVMe), resulting in a maximum average read speed of 1,840 megabytes per second.The iPhone 6S ships with iOS 9; the operating system leverages the 3D Touch hardware to allow recognition of new gestures and commands, including peeking at content with a light touch and popping it into view by pressing harder, and accessing context menus with links to commonly used functions within apps with harder presses on home screen icons.The camera app\u0027s Retina Flash feature allows the display\u0027s brightness to be used as a makeshift flash on images taken with the front camera, while Live Photos captures a short video alongside each photo taken.",
+    "review": "Earlier today, Apple unveiled two iPhone 6 models at its Special Event in Flint Center, Cupertino.The first device, the iPhone 6 comes with a 4.7-inch display and the second, the iPhone 6 Plus, comes with a 5.5-inch display.The iPhone 6 Plus has a 5.5-inch Retina HD display, with a pixel density of 401ppi and a resolution of 1920 x 1080 pixels.But there’s a lot more to the iPhone 6 Plus than just its screen.Here’s the full spec sheet of the iPhone 6 Plus.",
     "reviewRating": 1.0,
     "categoryMap": {
       "Internet \u0026 Telecom": 0.97
     },
     "syntaxTagList": [
       {
-        "text": "The",
-        "pos": "DET",
-        "lemma": "The"
-      },
-      {
-        "text": "iPhone",
-        "pos": "NOUN",
-        "lemma": "iPhone"
-      },
-      {
-        "text": "6S",
-        "pos": "NOUN",
-        "lemma": "6S"
-      },
-      {
-        "text": "is",
-        "pos": "VERB",
-        "lemma": "be"
-      },
-      {
-        "text": "nearly",
+        "text": "Earlier",
         "pos": "ADV",
-        "lemma": "nearly"
+        "lemma": "Earlier"
       },
       {
-        "text": "identical",
-        "pos": "ADJ",
-        "lemma": "identical"
-      },
-      {
-        "text": "in",
-        "pos": "ADP",
-        "lemma": "in"
-      },
-      {
-        "text": "design",
+        "text": "today",
         "pos": "NOUN",
-        "lemma": "design"
-      },
-      {
-        "text": "to",
-        "pos": "ADP",
-        "lemma": "to"
-      },
-      {
-        "text": "the",
-        "pos": "DET",
-        "lemma": "the"
-      },
-      {
-        "text": "iPhone",
-        "pos": "NOUN",
-        "lemma": "iPhone"
-      },
-      {
-        "text": "6.In",
-        "pos": "NOUN",
-        "lemma": "6.In"
-      },
-      {
-        "text": "response",
-        "pos": "NOUN",
-        "lemma": "response"
-      },
-      {
-        "text": "to",
-        "pos": "ADP",
-        "lemma": "to"
-      },
-      {
-        "text": "the",
-        "pos": "DET",
-        "lemma": "the"
-      },
-      {
-        "text": "bendgate",
-        "pos": "NOUN",
-        "lemma": "bendgate"
-      },
-      {
-        "text": "design",
-        "pos": "NOUN",
-        "lemma": "design"
-      },
-      {
-        "text": "flaws",
-        "pos": "NOUN",
-        "lemma": "flaw"
-      },
-      {
-        "text": "of",
-        "pos": "ADP",
-        "lemma": "of"
-      },
-      {
-        "text": "the",
-        "pos": "DET",
-        "lemma": "the"
-      },
-      {
-        "text": "previous",
-        "pos": "ADJ",
-        "lemma": "previous"
-      },
-      {
-        "text": "model",
-        "pos": "NOUN",
-        "lemma": "model"
+        "lemma": "today"
       },
       {
         "text": ",",
@@ -123,59 +23,99 @@
         "lemma": ","
       },
       {
-        "text": "changes",
+        "text": "Apple",
         "pos": "NOUN",
-        "lemma": "change"
+        "lemma": "Apple"
       },
       {
-        "text": "were",
+        "text": "unveiled",
         "pos": "VERB",
-        "lemma": "be"
+        "lemma": "unveil"
       },
       {
-        "text": "made",
-        "pos": "VERB",
-        "lemma": "make"
+        "text": "two",
+        "pos": "NUM",
+        "lemma": "two"
       },
       {
-        "text": "to",
-        "pos": "PRT",
-        "lemma": "to"
-      },
-      {
-        "text": "improve",
-        "pos": "VERB",
-        "lemma": "improve"
-      },
-      {
-        "text": "the",
-        "pos": "DET",
-        "lemma": "the"
-      },
-      {
-        "text": "durability",
+        "text": "iPhone",
         "pos": "NOUN",
-        "lemma": "durability"
+        "lemma": "iPhone"
       },
       {
-        "text": "of",
+        "text": "6",
+        "pos": "NUM",
+        "lemma": "6"
+      },
+      {
+        "text": "models",
+        "pos": "NOUN",
+        "lemma": "model"
+      },
+      {
+        "text": "at",
         "pos": "ADP",
-        "lemma": "of"
+        "lemma": "at"
       },
       {
-        "text": "the",
-        "pos": "DET",
-        "lemma": "the"
+        "text": "its",
+        "pos": "PRON",
+        "lemma": "its"
       },
       {
-        "text": "chassis",
+        "text": "Special",
+        "pos": "ADJ",
+        "lemma": "Special"
+      },
+      {
+        "text": "Event",
         "pos": "NOUN",
-        "lemma": "chassis"
+        "lemma": "Event"
       },
       {
-        "text": ":",
+        "text": "in",
+        "pos": "ADP",
+        "lemma": "in"
+      },
+      {
+        "text": "Flint",
+        "pos": "NOUN",
+        "lemma": "Flint"
+      },
+      {
+        "text": "Center",
+        "pos": "NOUN",
+        "lemma": "Center"
+      },
+      {
+        "text": ",",
         "pos": "PUNCT",
-        "lemma": ":"
+        "lemma": ","
+      },
+      {
+        "text": "Cupertino.",
+        "pos": "NOUN",
+        "lemma": "Cupertino."
+      },
+      {
+        "text": "The",
+        "pos": "DET",
+        "lemma": "The"
+      },
+      {
+        "text": "first",
+        "pos": "ADJ",
+        "lemma": "first"
+      },
+      {
+        "text": "device",
+        "pos": "NOUN",
+        "lemma": "device"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
       },
       {
         "text": "the",
@@ -183,24 +123,24 @@
         "lemma": "the"
       },
       {
-        "text": "6S",
+        "text": "iPhone",
         "pos": "NOUN",
-        "lemma": "6S"
+        "lemma": "iPhone"
       },
       {
-        "text": "was",
+        "text": "6",
+        "pos": "NUM",
+        "lemma": "6"
+      },
+      {
+        "text": "comes",
         "pos": "VERB",
-        "lemma": "be"
+        "lemma": "come"
       },
       {
-        "text": "constructed",
-        "pos": "VERB",
-        "lemma": "construct"
-      },
-      {
-        "text": "from",
+        "text": "with",
         "pos": "ADP",
-        "lemma": "from"
+        "lemma": "with"
       },
       {
         "text": "a",
@@ -208,134 +148,19 @@
         "lemma": "a"
       },
       {
-        "text": "stronger",
-        "pos": "ADJ",
-        "lemma": "strong"
-      },
-      {
-        "text": ",",
-        "pos": "PUNCT",
-        "lemma": ","
-      },
-      {
-        "text": "7000",
+        "text": "4.7",
         "pos": "NUM",
-        "lemma": "7000"
+        "lemma": "4.7"
       },
       {
-        "text": "series",
-        "pos": "NOUN",
-        "lemma": "series"
-      },
-      {
-        "text": "aluminum",
-        "pos": "NOUN",
-        "lemma": "aluminum"
-      },
-      {
-        "text": "alloy",
-        "pos": "NOUN",
-        "lemma": "alloy"
-      },
-      {
-        "text": ",",
+        "text": "-",
         "pos": "PUNCT",
-        "lemma": ","
+        "lemma": "-"
       },
       {
-        "text": "\"",
-        "pos": "PUNCT",
-        "lemma": "\""
-      },
-      {
-        "text": "key",
-        "pos": "ADJ",
-        "lemma": "key"
-      },
-      {
-        "text": "points",
+        "text": "inch",
         "pos": "NOUN",
-        "lemma": "point"
-      },
-      {
-        "text": "\"",
-        "pos": "PUNCT",
-        "lemma": "\""
-      },
-      {
-        "text": "in",
-        "pos": "ADP",
-        "lemma": "in"
-      },
-      {
-        "text": "the",
-        "pos": "DET",
-        "lemma": "the"
-      },
-      {
-        "text": "rear",
-        "pos": "ADJ",
-        "lemma": "rear"
-      },
-      {
-        "text": "casing",
-        "pos": "NOUN",
-        "lemma": "casing"
-      },
-      {
-        "text": "were",
-        "pos": "VERB",
-        "lemma": "be"
-      },
-      {
-        "text": "strengthened",
-        "pos": "VERB",
-        "lemma": "strengthen"
-      },
-      {
-        "text": ",",
-        "pos": "PUNCT",
-        "lemma": ","
-      },
-      {
-        "text": "and",
-        "pos": "CONJ",
-        "lemma": "and"
-      },
-      {
-        "text": "touchscreen",
-        "pos": "NOUN",
-        "lemma": "touchscreen"
-      },
-      {
-        "text": "Integrated",
-        "pos": "NOUN",
-        "lemma": "Integrated"
-      },
-      {
-        "text": "circuits",
-        "pos": "NOUN",
-        "lemma": "circuit"
-      },
-      {
-        "text": "were",
-        "pos": "VERB",
-        "lemma": "be"
-      },
-      {
-        "text": "re-located",
-        "pos": "VERB",
-        "lemma": "re-locate"
-      },
-      {
-        "text": "to",
-        "pos": "ADP",
-        "lemma": "to"
-      },
-      {
-        "text": "the",
-        "pos": "DET",
-        "lemma": "the"
+        "lemma": "inch"
       },
       {
         "text": "display",
@@ -343,14 +168,9 @@
         "lemma": "display"
       },
       {
-        "text": "assembly.",
-        "pos": "NOUN",
-        "lemma": "assembly."
-      },
-      {
-        "text": "Alongside",
-        "pos": "ADP",
-        "lemma": "Alongside"
+        "text": "and",
+        "pos": "CONJ",
+        "lemma": "and"
       },
       {
         "text": "the",
@@ -358,54 +178,49 @@
         "lemma": "the"
       },
       {
-        "text": "existing",
-        "pos": "VERB",
-        "lemma": "exist"
-      },
-      {
-        "text": "gold",
-        "pos": "NOUN",
-        "lemma": "gold"
-      },
-      {
-        "text": ",",
-        "pos": "PUNCT",
-        "lemma": ","
-      },
-      {
-        "text": "silver",
-        "pos": "NOUN",
-        "lemma": "silver"
-      },
-      {
-        "text": ",",
-        "pos": "PUNCT",
-        "lemma": ","
-      },
-      {
-        "text": "and",
-        "pos": "CONJ",
-        "lemma": "and"
-      },
-      {
-        "text": "space",
-        "pos": "NOUN",
-        "lemma": "space"
-      },
-      {
-        "text": "gray",
+        "text": "second",
         "pos": "ADJ",
-        "lemma": "gray"
-      },
-      {
-        "text": "options",
-        "pos": "NOUN",
-        "lemma": "option"
+        "lemma": "second"
       },
       {
         "text": ",",
         "pos": "PUNCT",
         "lemma": ","
+      },
+      {
+        "text": "the",
+        "pos": "DET",
+        "lemma": "the"
+      },
+      {
+        "text": "iPhone",
+        "pos": "NOUN",
+        "lemma": "iPhone"
+      },
+      {
+        "text": "6",
+        "pos": "NUM",
+        "lemma": "6"
+      },
+      {
+        "text": "Plus",
+        "pos": "NOUN",
+        "lemma": "Plus"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "comes",
+        "pos": "VERB",
+        "lemma": "come"
+      },
+      {
+        "text": "with",
+        "pos": "ADP",
+        "lemma": "with"
       },
       {
         "text": "a",
@@ -413,94 +228,9 @@
         "lemma": "a"
       },
       {
-        "text": "new",
-        "pos": "ADJ",
-        "lemma": "new"
-      },
-      {
-        "text": "rose",
-        "pos": "NOUN",
-        "lemma": "rose"
-      },
-      {
-        "text": "gold",
-        "pos": "NOUN",
-        "lemma": "gold"
-      },
-      {
-        "text": "color",
-        "pos": "NOUN",
-        "lemma": "color"
-      },
-      {
-        "text": "option",
-        "pos": "NOUN",
-        "lemma": "option"
-      },
-      {
-        "text": "was",
-        "pos": "VERB",
-        "lemma": "be"
-      },
-      {
-        "text": "also",
-        "pos": "ADV",
-        "lemma": "also"
-      },
-      {
-        "text": "introduced.",
-        "pos": "VERB",
-        "lemma": "introduced."
-      },
-      {
-        "text": "The",
-        "pos": "DET",
-        "lemma": "The"
-      },
-      {
-        "text": "iPhone",
-        "pos": "NOUN",
-        "lemma": "iPhone"
-      },
-      {
-        "text": "6S",
-        "pos": "NOUN",
-        "lemma": "6S"
-      },
-      {
-        "text": "is",
-        "pos": "VERB",
-        "lemma": "be"
-      },
-      {
-        "text": "powered",
-        "pos": "VERB",
-        "lemma": "power"
-      },
-      {
-        "text": "by",
-        "pos": "ADP",
-        "lemma": "by"
-      },
-      {
-        "text": "the",
-        "pos": "DET",
-        "lemma": "the"
-      },
-      {
-        "text": "Apple",
-        "pos": "NOUN",
-        "lemma": "Apple"
-      },
-      {
-        "text": "A9",
-        "pos": "NOUN",
-        "lemma": "A9"
-      },
-      {
-        "text": "system",
-        "pos": "NOUN",
-        "lemma": "system"
+        "text": "5.5",
+        "pos": "NUM",
+        "lemma": "5.5"
       },
       {
         "text": "-",
@@ -508,9 +238,49 @@
         "lemma": "-"
       },
       {
-        "text": "on",
-        "pos": "ADP",
-        "lemma": "on"
+        "text": "inch",
+        "pos": "NOUN",
+        "lemma": "inch"
+      },
+      {
+        "text": "display.",
+        "pos": "NOUN",
+        "lemma": "display."
+      },
+      {
+        "text": "The",
+        "pos": "DET",
+        "lemma": "The"
+      },
+      {
+        "text": "iPhone",
+        "pos": "NOUN",
+        "lemma": "iPhone"
+      },
+      {
+        "text": "6",
+        "pos": "NUM",
+        "lemma": "6"
+      },
+      {
+        "text": "Plus",
+        "pos": "NOUN",
+        "lemma": "Plus"
+      },
+      {
+        "text": "has",
+        "pos": "VERB",
+        "lemma": "have"
+      },
+      {
+        "text": "a",
+        "pos": "DET",
+        "lemma": "a"
+      },
+      {
+        "text": "5.5",
+        "pos": "NUM",
+        "lemma": "5.5"
       },
       {
         "text": "-",
@@ -518,269 +288,24 @@
         "lemma": "-"
       },
       {
-        "text": "chip",
+        "text": "inch",
         "pos": "NOUN",
-        "lemma": "chip"
+        "lemma": "inch"
       },
       {
-        "text": ",",
-        "pos": "PUNCT",
-        "lemma": ","
-      },
-      {
-        "text": "which",
-        "pos": "DET",
-        "lemma": "which"
-      },
-      {
-        "text": "the",
-        "pos": "DET",
-        "lemma": "the"
-      },
-      {
-        "text": "company",
+        "text": "Retina",
         "pos": "NOUN",
-        "lemma": "company"
+        "lemma": "Retina"
       },
       {
-        "text": "stated",
-        "pos": "VERB",
-        "lemma": "state"
-      },
-      {
-        "text": "is",
-        "pos": "VERB",
-        "lemma": "be"
-      },
-      {
-        "text": "up",
-        "pos": "ADP",
-        "lemma": "up"
-      },
-      {
-        "text": "to",
-        "pos": "ADP",
-        "lemma": "to"
-      },
-      {
-        "text": "0.70",
-        "pos": "NUM",
-        "lemma": "0.70"
-      },
-      {
-        "text": "faster",
-        "pos": "ADV",
-        "lemma": "faster"
-      },
-      {
-        "text": "than",
-        "pos": "ADP",
-        "lemma": "than"
-      },
-      {
-        "text": "Apple",
+        "text": "HD",
         "pos": "NOUN",
-        "lemma": "Apple"
+        "lemma": "HD"
       },
       {
-        "text": "A8",
+        "text": "display",
         "pos": "NOUN",
-        "lemma": "A8"
-      },
-      {
-        "text": ",",
-        "pos": "PUNCT",
-        "lemma": ","
-      },
-      {
-        "text": "and",
-        "pos": "CONJ",
-        "lemma": "and"
-      },
-      {
-        "text": "has",
-        "pos": "VERB",
-        "lemma": "have"
-      },
-      {
-        "text": "up",
-        "pos": "ADP",
-        "lemma": "up"
-      },
-      {
-        "text": "to",
-        "pos": "ADP",
-        "lemma": "to"
-      },
-      {
-        "text": "0.90",
-        "pos": "NUM",
-        "lemma": "0.90"
-      },
-      {
-        "text": "better",
-        "pos": "ADJ",
-        "lemma": "good"
-      },
-      {
-        "text": "graphics",
-        "pos": "NOUN",
-        "lemma": "graphic"
-      },
-      {
-        "text": "performance.",
-        "pos": "VERB",
-        "lemma": "performance."
-      },
-      {
-        "text": "The",
-        "pos": "DET",
-        "lemma": "The"
-      },
-      {
-        "text": "iPhone",
-        "pos": "NOUN",
-        "lemma": "iPhone"
-      },
-      {
-        "text": "6S",
-        "pos": "NOUN",
-        "lemma": "6S"
-      },
-      {
-        "text": "has",
-        "pos": "VERB",
-        "lemma": "have"
-      },
-      {
-        "text": "2",
-        "pos": "NUM",
-        "lemma": "2"
-      },
-      {
-        "text": "GB",
-        "pos": "NOUN",
-        "lemma": "GB"
-      },
-      {
-        "text": "of",
-        "pos": "ADP",
-        "lemma": "of"
-      },
-      {
-        "text": "RAM",
-        "pos": "NOUN",
-        "lemma": "RAM"
-      },
-      {
-        "text": ",",
-        "pos": "PUNCT",
-        "lemma": ","
-      },
-      {
-        "text": "more",
-        "pos": "ADJ",
-        "lemma": "more"
-      },
-      {
-        "text": "than",
-        "pos": "ADP",
-        "lemma": "than"
-      },
-      {
-        "text": "any",
-        "pos": "DET",
-        "lemma": "any"
-      },
-      {
-        "text": "previous",
-        "pos": "ADJ",
-        "lemma": "previous"
-      },
-      {
-        "text": "iPhone",
-        "pos": "NOUN",
-        "lemma": "iPhone"
-      },
-      {
-        "text": ",",
-        "pos": "PUNCT",
-        "lemma": ","
-      },
-      {
-        "text": "and",
-        "pos": "CONJ",
-        "lemma": "and"
-      },
-      {
-        "text": "also",
-        "pos": "ADV",
-        "lemma": "also"
-      },
-      {
-        "text": "supports",
-        "pos": "VERB",
-        "lemma": "support"
-      },
-      {
-        "text": "LTE",
-        "pos": "NOUN",
-        "lemma": "LTE"
-      },
-      {
-        "text": "Advanced.",
-        "pos": "NOUN",
-        "lemma": "Advanced."
-      },
-      {
-        "text": "The",
-        "pos": "NOUN",
-        "lemma": "The"
-      },
-      {
-        "text": "Touch",
-        "pos": "NOUN",
-        "lemma": "Touch"
-      },
-      {
-        "text": "ID",
-        "pos": "NOUN",
-        "lemma": "ID"
-      },
-      {
-        "text": "sensor",
-        "pos": "NOUN",
-        "lemma": "sensor"
-      },
-      {
-        "text": "on",
-        "pos": "ADP",
-        "lemma": "on"
-      },
-      {
-        "text": "the",
-        "pos": "DET",
-        "lemma": "the"
-      },
-      {
-        "text": "6S",
-        "pos": "NOUN",
-        "lemma": "6S"
-      },
-      {
-        "text": "was",
-        "pos": "VERB",
-        "lemma": "be"
-      },
-      {
-        "text": "also",
-        "pos": "ADV",
-        "lemma": "also"
-      },
-      {
-        "text": "updated",
-        "pos": "VERB",
-        "lemma": "update"
+        "lemma": "display"
       },
       {
         "text": ",",
@@ -793,79 +318,19 @@
         "lemma": "with"
       },
       {
-        "text": "the",
+        "text": "a",
         "pos": "DET",
-        "lemma": "the"
+        "lemma": "a"
       },
       {
-        "text": "new",
-        "pos": "ADJ",
-        "lemma": "new"
-      },
-      {
-        "text": "version",
+        "text": "pixel",
         "pos": "NOUN",
-        "lemma": "version"
+        "lemma": "pixel"
       },
       {
-        "text": "having",
-        "pos": "VERB",
-        "lemma": "have"
-      },
-      {
-        "text": "improved",
-        "pos": "VERB",
-        "lemma": "improve"
-      },
-      {
-        "text": "fingerprint",
+        "text": "density",
         "pos": "NOUN",
-        "lemma": "fingerprint"
-      },
-      {
-        "text": "scanning",
-        "pos": "NOUN",
-        "lemma": "scanning"
-      },
-      {
-        "text": "performance",
-        "pos": "NOUN",
-        "lemma": "performance"
-      },
-      {
-        "text": "over",
-        "pos": "ADP",
-        "lemma": "over"
-      },
-      {
-        "text": "the",
-        "pos": "DET",
-        "lemma": "the"
-      },
-      {
-        "text": "previous",
-        "pos": "ADJ",
-        "lemma": "previous"
-      },
-      {
-        "text": "version.",
-        "pos": "NOUN",
-        "lemma": "version."
-      },
-      {
-        "text": "While",
-        "pos": "ADP",
-        "lemma": "While"
-      },
-      {
-        "text": "the",
-        "pos": "DET",
-        "lemma": "the"
-      },
-      {
-        "text": "capacities",
-        "pos": "NOUN",
-        "lemma": "capacity"
+        "lemma": "density"
       },
       {
         "text": "of",
@@ -873,54 +338,9 @@
         "lemma": "of"
       },
       {
-        "text": "their",
-        "pos": "PRON",
-        "lemma": "their"
-      },
-      {
-        "text": "batteries",
+        "text": "401ppi",
         "pos": "NOUN",
-        "lemma": "battery"
-      },
-      {
-        "text": "are",
-        "pos": "VERB",
-        "lemma": "be"
-      },
-      {
-        "text": "slightly",
-        "pos": "ADV",
-        "lemma": "slightly"
-      },
-      {
-        "text": "smaller",
-        "pos": "ADJ",
-        "lemma": "small"
-      },
-      {
-        "text": ",",
-        "pos": "PUNCT",
-        "lemma": ","
-      },
-      {
-        "text": "Apple",
-        "pos": "NOUN",
-        "lemma": "Apple"
-      },
-      {
-        "text": "rates",
-        "pos": "VERB",
-        "lemma": "rate"
-      },
-      {
-        "text": "iPhone",
-        "pos": "NOUN",
-        "lemma": "iPhone"
-      },
-      {
-        "text": "6S",
-        "pos": "NOUN",
-        "lemma": "6S"
+        "lemma": "401ppi"
       },
       {
         "text": "and",
@@ -928,254 +348,44 @@
         "lemma": "and"
       },
       {
-        "text": "6S",
-        "pos": "NOUN",
-        "lemma": "6S"
-      },
-      {
-        "text": "Plus",
-        "pos": "NOUN",
-        "lemma": "Plus"
-      },
-      {
-        "text": "as",
-        "pos": "ADP",
-        "lemma": "as"
-      },
-      {
-        "text": "having",
-        "pos": "VERB",
-        "lemma": "have"
-      },
-      {
-        "text": "the",
+        "text": "a",
         "pos": "DET",
-        "lemma": "the"
+        "lemma": "a"
       },
       {
-        "text": "same",
-        "pos": "ADJ",
-        "lemma": "same"
-      },
-      {
-        "text": "average",
-        "pos": "ADJ",
-        "lemma": "average"
-      },
-      {
-        "text": "battery",
+        "text": "resolution",
         "pos": "NOUN",
-        "lemma": "battery"
+        "lemma": "resolution"
       },
       {
-        "text": "life",
-        "pos": "NOUN",
-        "lemma": "life"
-      },
-      {
-        "text": "as",
+        "text": "of",
         "pos": "ADP",
-        "lemma": "as"
+        "lemma": "of"
       },
       {
-        "text": "their",
-        "pos": "PRON",
-        "lemma": "their"
+        "text": "1920",
+        "pos": "NUM",
+        "lemma": "1920"
       },
       {
-        "text": "respective",
-        "pos": "ADJ",
-        "lemma": "respective"
+        "text": "x",
+        "pos": "X",
+        "lemma": "x"
       },
       {
-        "text": "predecessors.",
+        "text": "1080",
+        "pos": "NUM",
+        "lemma": "1080"
+      },
+      {
+        "text": "pixels.",
         "pos": "NOUN",
-        "lemma": "predecessors."
+        "lemma": "pixels."
       },
       {
-        "text": "The",
-        "pos": "DET",
-        "lemma": "The"
-      },
-      {
-        "text": "A9",
-        "pos": "NOUN",
-        "lemma": "A9"
-      },
-      {
-        "text": "system",
-        "pos": "NOUN",
-        "lemma": "system"
-      },
-      {
-        "text": "-",
-        "pos": "PUNCT",
-        "lemma": "-"
-      },
-      {
-        "text": "on",
-        "pos": "ADP",
-        "lemma": "on"
-      },
-      {
-        "text": "-",
-        "pos": "PUNCT",
-        "lemma": "-"
-      },
-      {
-        "text": "chip",
-        "pos": "NOUN",
-        "lemma": "chip"
-      },
-      {
-        "text": "was",
-        "pos": "VERB",
-        "lemma": "be"
-      },
-      {
-        "text": "dual",
-        "pos": "ADJ",
-        "lemma": "dual"
-      },
-      {
-        "text": "-",
-        "pos": "PUNCT",
-        "lemma": "-"
-      },
-      {
-        "text": "sourced",
-        "pos": "VERB",
-        "lemma": "source"
-      },
-      {
-        "text": "from",
-        "pos": "ADP",
-        "lemma": "from"
-      },
-      {
-        "text": "TSMC",
-        "pos": "NOUN",
-        "lemma": "TSMC"
-      },
-      {
-        "text": "and",
+        "text": "But",
         "pos": "CONJ",
-        "lemma": "and"
-      },
-      {
-        "text": "Samsung.",
-        "pos": "NOUN",
-        "lemma": "Samsung."
-      },
-      {
-        "text": "Although",
-        "pos": "ADP",
-        "lemma": "Although"
-      },
-      {
-        "text": "it",
-        "pos": "PRON",
-        "lemma": "it"
-      },
-      {
-        "text": "was",
-        "pos": "VERB",
-        "lemma": "be"
-      },
-      {
-        "text": "speculated",
-        "pos": "VERB",
-        "lemma": "speculate"
-      },
-      {
-        "text": "that",
-        "pos": "ADP",
-        "lemma": "that"
-      },
-      {
-        "text": "the",
-        "pos": "DET",
-        "lemma": "the"
-      },
-      {
-        "text": "Samsung",
-        "pos": "NOUN",
-        "lemma": "Samsung"
-      },
-      {
-        "text": "version",
-        "pos": "NOUN",
-        "lemma": "version"
-      },
-      {
-        "text": "had",
-        "pos": "VERB",
-        "lemma": "have"
-      },
-      {
-        "text": "worse",
-        "pos": "ADJ",
-        "lemma": "bad"
-      },
-      {
-        "text": "battery",
-        "pos": "NOUN",
-        "lemma": "battery"
-      },
-      {
-        "text": "performance",
-        "pos": "NOUN",
-        "lemma": "performance"
-      },
-      {
-        "text": "than",
-        "pos": "ADP",
-        "lemma": "than"
-      },
-      {
-        "text": "the",
-        "pos": "DET",
-        "lemma": "the"
-      },
-      {
-        "text": "TSMC",
-        "pos": "NOUN",
-        "lemma": "TSMC"
-      },
-      {
-        "text": "version",
-        "pos": "NOUN",
-        "lemma": "version"
-      },
-      {
-        "text": ",",
-        "pos": "PUNCT",
-        "lemma": ","
-      },
-      {
-        "text": "multiple",
-        "pos": "ADJ",
-        "lemma": "multiple"
-      },
-      {
-        "text": "independent",
-        "pos": "ADJ",
-        "lemma": "independent"
-      },
-      {
-        "text": "tests",
-        "pos": "NOUN",
-        "lemma": "test"
-      },
-      {
-        "text": "have",
-        "pos": "VERB",
-        "lemma": "have"
-      },
-      {
-        "text": "shown",
-        "pos": "VERB",
-        "lemma": "show"
+        "lemma": "But"
       },
       {
         "text": "there",
@@ -1183,89 +393,29 @@
         "lemma": "there"
       },
       {
-        "text": "is",
+        "text": "’s",
         "pos": "VERB",
         "lemma": "be"
       },
       {
-        "text": "no",
+        "text": "a",
         "pos": "DET",
-        "lemma": "no"
+        "lemma": "a"
       },
       {
-        "text": "appreciable",
+        "text": "lot",
+        "pos": "NOUN",
+        "lemma": "lot"
+      },
+      {
+        "text": "more",
         "pos": "ADJ",
-        "lemma": "appreciable"
+        "lemma": "more"
       },
       {
-        "text": "difference",
-        "pos": "NOUN",
-        "lemma": "difference"
-      },
-      {
-        "text": "between",
+        "text": "to",
         "pos": "ADP",
-        "lemma": "between"
-      },
-      {
-        "text": "the",
-        "pos": "DET",
-        "lemma": "the"
-      },
-      {
-        "text": "two",
-        "pos": "NUM",
-        "lemma": "two"
-      },
-      {
-        "text": "chips.",
-        "pos": "NOUN",
-        "lemma": "chips."
-      },
-      {
-        "text": "Although",
-        "pos": "ADP",
-        "lemma": "Although"
-      },
-      {
-        "text": "the",
-        "pos": "DET",
-        "lemma": "the"
-      },
-      {
-        "text": "device",
-        "pos": "NOUN",
-        "lemma": "device"
-      },
-      {
-        "text": "is",
-        "pos": "VERB",
-        "lemma": "be"
-      },
-      {
-        "text": "not",
-        "pos": "ADV",
-        "lemma": "not"
-      },
-      {
-        "text": "promoted",
-        "pos": "VERB",
-        "lemma": "promote"
-      },
-      {
-        "text": "as",
-        "pos": "ADP",
-        "lemma": "as"
-      },
-      {
-        "text": "such",
-        "pos": "ADJ",
-        "lemma": "such"
-      },
-      {
-        "text": ",",
-        "pos": "PUNCT",
-        "lemma": ","
+        "lemma": "to"
       },
       {
         "text": "the",
@@ -1278,64 +428,24 @@
         "lemma": "iPhone"
       },
       {
-        "text": "6S",
+        "text": "6",
+        "pos": "NUM",
+        "lemma": "6"
+      },
+      {
+        "text": "Plus",
         "pos": "NOUN",
-        "lemma": "6S"
+        "lemma": "Plus"
       },
       {
-        "text": "has",
-        "pos": "VERB",
-        "lemma": "have"
-      },
-      {
-        "text": "a",
-        "pos": "DET",
-        "lemma": "a"
-      },
-      {
-        "text": "degree",
-        "pos": "NOUN",
-        "lemma": "degree"
-      },
-      {
-        "text": "of",
+        "text": "than",
         "pos": "ADP",
-        "lemma": "of"
+        "lemma": "than"
       },
       {
-        "text": "water",
-        "pos": "NOUN",
-        "lemma": "water"
-      },
-      {
-        "text": "resistance",
-        "pos": "NOUN",
-        "lemma": "resistance"
-      },
-      {
-        "text": "because",
-        "pos": "ADP",
-        "lemma": "because"
-      },
-      {
-        "text": "of",
-        "pos": "ADP",
-        "lemma": "of"
-      },
-      {
-        "text": "a",
-        "pos": "DET",
-        "lemma": "a"
-      },
-      {
-        "text": "change",
-        "pos": "NOUN",
-        "lemma": "change"
-      },
-      {
-        "text": "to",
-        "pos": "ADP",
-        "lemma": "to"
+        "text": "just",
+        "pos": "ADV",
+        "lemma": "just"
       },
       {
         "text": "its",
@@ -1343,142 +453,17 @@
         "lemma": "its"
       },
       {
-        "text": "internal",
-        "pos": "ADJ",
-        "lemma": "internal"
-      },
-      {
-        "text": "design",
+        "text": "screen.",
         "pos": "NOUN",
-        "lemma": "design"
+        "lemma": "screen."
       },
       {
-        "text": ",",
-        "pos": "PUNCT",
-        "lemma": ","
+        "text": "Here",
+        "pos": "ADV",
+        "lemma": "Here"
       },
       {
-        "text": "which",
-        "pos": "DET",
-        "lemma": "which"
-      },
-      {
-        "text": "places",
-        "pos": "VERB",
-        "lemma": "place"
-      },
-      {
-        "text": "a",
-        "pos": "DET",
-        "lemma": "a"
-      },
-      {
-        "text": "silicone",
-        "pos": "NOUN",
-        "lemma": "silicone"
-      },
-      {
-        "text": "seal",
-        "pos": "NOUN",
-        "lemma": "seal"
-      },
-      {
-        "text": "around",
-        "pos": "ADP",
-        "lemma": "around"
-      },
-      {
-        "text": "components",
-        "pos": "NOUN",
-        "lemma": "component"
-      },
-      {
-        "text": "of",
-        "pos": "ADP",
-        "lemma": "of"
-      },
-      {
-        "text": "the",
-        "pos": "DET",
-        "lemma": "the"
-      },
-      {
-        "text": "logic",
-        "pos": "NOUN",
-        "lemma": "logic"
-      },
-      {
-        "text": "board",
-        "pos": "NOUN",
-        "lemma": "board"
-      },
-      {
-        "text": "to",
-        "pos": "PRT",
-        "lemma": "to"
-      },
-      {
-        "text": "prevent",
-        "pos": "VERB",
-        "lemma": "prevent"
-      },
-      {
-        "text": "them",
-        "pos": "PRON",
-        "lemma": "them"
-      },
-      {
-        "text": "from",
-        "pos": "ADP",
-        "lemma": "from"
-      },
-      {
-        "text": "being",
-        "pos": "VERB",
-        "lemma": "be"
-      },
-      {
-        "text": "shorted",
-        "pos": "VERB",
-        "lemma": "short"
-      },
-      {
-        "text": "by",
-        "pos": "ADP",
-        "lemma": "by"
-      },
-      {
-        "text": "accidental",
-        "pos": "ADJ",
-        "lemma": "accidental"
-      },
-      {
-        "text": "exposure",
-        "pos": "NOUN",
-        "lemma": "exposure"
-      },
-      {
-        "text": "to",
-        "pos": "PRT",
-        "lemma": "to"
-      },
-      {
-        "text": "water.",
-        "pos": "VERB",
-        "lemma": "water."
-      },
-      {
-        "text": "Their",
-        "pos": "PRON",
-        "lemma": "Their"
-      },
-      {
-        "text": "displays",
-        "pos": "NOUN",
-        "lemma": "display"
-      },
-      {
-        "text": "are",
+        "text": "’s",
         "pos": "VERB",
         "lemma": "be"
       },
@@ -1488,24 +473,19 @@
         "lemma": "the"
       },
       {
-        "text": "same",
+        "text": "full",
         "pos": "ADJ",
-        "lemma": "same"
+        "lemma": "full"
       },
       {
-        "text": "sizes",
+        "text": "spec",
         "pos": "NOUN",
-        "lemma": "size"
+        "lemma": "spec"
       },
       {
-        "text": "as",
-        "pos": "ADP",
-        "lemma": "as"
-      },
-      {
-        "text": "those",
-        "pos": "DET",
-        "lemma": "those"
+        "text": "sheet",
+        "pos": "NOUN",
+        "lemma": "sheet"
       },
       {
         "text": "of",
@@ -1528,1829 +508,9 @@
         "lemma": "6"
       },
       {
-        "text": ",",
-        "pos": "PUNCT",
-        "lemma": ","
-      },
-      {
-        "text": "coming",
-        "pos": "VERB",
-        "lemma": "come"
-      },
-      {
-        "text": "in",
-        "pos": "ADP",
-        "lemma": "in"
-      },
-      {
-        "text": "4.7",
-        "pos": "NUM",
-        "lemma": "4.7"
-      },
-      {
-        "text": "-",
-        "pos": "PUNCT",
-        "lemma": "-"
-      },
-      {
-        "text": "inch",
-        "pos": "NOUN",
-        "lemma": "inch"
-      },
-      {
-        "text": "750p",
-        "pos": "NOUN",
-        "lemma": "750p"
-      },
-      {
-        "text": "and",
-        "pos": "CONJ",
-        "lemma": "and"
-      },
-      {
-        "text": "5.5",
-        "pos": "NUM",
-        "lemma": "5.5"
-      },
-      {
-        "text": "-",
-        "pos": "PUNCT",
-        "lemma": "-"
-      },
-      {
-        "text": "inch",
-        "pos": "NOUN",
-        "lemma": "inch"
-      },
-      {
-        "text": "1080p",
-        "pos": "NOUN",
-        "lemma": "1080p"
-      },
-      {
-        "text": "(",
-        "pos": "PUNCT",
-        "lemma": "("
-      },
-      {
         "text": "Plus",
         "pos": "NOUN",
         "lemma": "Plus"
-      },
-      {
-        "text": ")",
-        "pos": "PUNCT",
-        "lemma": ")"
-      },
-      {
-        "text": "sizes.",
-        "pos": "VERB",
-        "lemma": "sizes."
-      },
-      {
-        "text": "The",
-        "pos": "DET",
-        "lemma": "The"
-      },
-      {
-        "text": "iPhone",
-        "pos": "NOUN",
-        "lemma": "iPhone"
-      },
-      {
-        "text": "6S",
-        "pos": "NOUN",
-        "lemma": "6S"
-      },
-      {
-        "text": "features",
-        "pos": "VERB",
-        "lemma": "feature"
-      },
-      {
-        "text": "a",
-        "pos": "DET",
-        "lemma": "a"
-      },
-      {
-        "text": "technology",
-        "pos": "NOUN",
-        "lemma": "technology"
-      },
-      {
-        "text": "known",
-        "pos": "VERB",
-        "lemma": "know"
-      },
-      {
-        "text": "as",
-        "pos": "ADP",
-        "lemma": "as"
-      },
-      {
-        "text": "3D",
-        "pos": "NOUN",
-        "lemma": "3D"
-      },
-      {
-        "text": "Touch",
-        "pos": "NOUN",
-        "lemma": "Touch"
-      },
-      {
-        "text": ";",
-        "pos": "PUNCT",
-        "lemma": ";"
-      },
-      {
-        "text": "sensors",
-        "pos": "NOUN",
-        "lemma": "sensor"
-      },
-      {
-        "text": "are",
-        "pos": "VERB",
-        "lemma": "be"
-      },
-      {
-        "text": "embedded",
-        "pos": "VERB",
-        "lemma": "embed"
-      },
-      {
-        "text": "in",
-        "pos": "ADP",
-        "lemma": "in"
-      },
-      {
-        "text": "the",
-        "pos": "DET",
-        "lemma": "the"
-      },
-      {
-        "text": "screen",
-        "pos": "NOUN",
-        "lemma": "screen"
-      },
-      {
-        "text": "\u0027s",
-        "pos": "PRT",
-        "lemma": "\u0027s"
-      },
-      {
-        "text": "backlight",
-        "pos": "NOUN",
-        "lemma": "backlight"
-      },
-      {
-        "text": "layer",
-        "pos": "NOUN",
-        "lemma": "layer"
-      },
-      {
-        "text": "that",
-        "pos": "DET",
-        "lemma": "that"
-      },
-      {
-        "text": "measure",
-        "pos": "VERB",
-        "lemma": "measure"
-      },
-      {
-        "text": "the",
-        "pos": "DET",
-        "lemma": "the"
-      },
-      {
-        "text": "firmness",
-        "pos": "NOUN",
-        "lemma": "firmness"
-      },
-      {
-        "text": "of",
-        "pos": "ADP",
-        "lemma": "of"
-      },
-      {
-        "text": "the",
-        "pos": "DET",
-        "lemma": "the"
-      },
-      {
-        "text": "user",
-        "pos": "NOUN",
-        "lemma": "user"
-      },
-      {
-        "text": "\u0027s",
-        "pos": "PRT",
-        "lemma": "\u0027s"
-      },
-      {
-        "text": "touch",
-        "pos": "NOUN",
-        "lemma": "touch"
-      },
-      {
-        "text": "input",
-        "pos": "NOUN",
-        "lemma": "input"
-      },
-      {
-        "text": "by",
-        "pos": "ADP",
-        "lemma": "by"
-      },
-      {
-        "text": "the",
-        "pos": "DET",
-        "lemma": "the"
-      },
-      {
-        "text": "distance",
-        "pos": "NOUN",
-        "lemma": "distance"
-      },
-      {
-        "text": "between",
-        "pos": "ADP",
-        "lemma": "between"
-      },
-      {
-        "text": "it",
-        "pos": "PRON",
-        "lemma": "it"
-      },
-      {
-        "text": "and",
-        "pos": "CONJ",
-        "lemma": "and"
-      },
-      {
-        "text": "the",
-        "pos": "DET",
-        "lemma": "the"
-      },
-      {
-        "text": "cover",
-        "pos": "NOUN",
-        "lemma": "cover"
-      },
-      {
-        "text": "glass",
-        "pos": "NOUN",
-        "lemma": "glass"
-      },
-      {
-        "text": ",",
-        "pos": "PUNCT",
-        "lemma": ","
-      },
-      {
-        "text": "allowing",
-        "pos": "VERB",
-        "lemma": "allow"
-      },
-      {
-        "text": "the",
-        "pos": "DET",
-        "lemma": "the"
-      },
-      {
-        "text": "device",
-        "pos": "NOUN",
-        "lemma": "device"
-      },
-      {
-        "text": "to",
-        "pos": "PRT",
-        "lemma": "to"
-      },
-      {
-        "text": "distinguish",
-        "pos": "VERB",
-        "lemma": "distinguish"
-      },
-      {
-        "text": "between",
-        "pos": "ADP",
-        "lemma": "between"
-      },
-      {
-        "text": "normal",
-        "pos": "ADJ",
-        "lemma": "normal"
-      },
-      {
-        "text": "and",
-        "pos": "CONJ",
-        "lemma": "and"
-      },
-      {
-        "text": "more",
-        "pos": "ADV",
-        "lemma": "more"
-      },
-      {
-        "text": "forceful",
-        "pos": "ADJ",
-        "lemma": "forceful"
-      },
-      {
-        "text": "presses.",
-        "pos": "NOUN",
-        "lemma": "presses."
-      },
-      {
-        "text": "3D",
-        "pos": "NOUN",
-        "lemma": "3D"
-      },
-      {
-        "text": "Touch",
-        "pos": "NOUN",
-        "lemma": "Touch"
-      },
-      {
-        "text": "is",
-        "pos": "VERB",
-        "lemma": "be"
-      },
-      {
-        "text": "combined",
-        "pos": "VERB",
-        "lemma": "combine"
-      },
-      {
-        "text": "with",
-        "pos": "ADP",
-        "lemma": "with"
-      },
-      {
-        "text": "a",
-        "pos": "DET",
-        "lemma": "a"
-      },
-      {
-        "text": "Taptic",
-        "pos": "NOUN",
-        "lemma": "Taptic"
-      },
-      {
-        "text": "Engine",
-        "pos": "NOUN",
-        "lemma": "Engine"
-      },
-      {
-        "text": "vibrator",
-        "pos": "NOUN",
-        "lemma": "vibrator"
-      },
-      {
-        "text": "to",
-        "pos": "PRT",
-        "lemma": "to"
-      },
-      {
-        "text": "provide",
-        "pos": "VERB",
-        "lemma": "provide"
-      },
-      {
-        "text": "associated",
-        "pos": "VERB",
-        "lemma": "associate"
-      },
-      {
-        "text": "haptic",
-        "pos": "ADJ",
-        "lemma": "haptic"
-      },
-      {
-        "text": "feedback.",
-        "pos": "NOUN",
-        "lemma": "feedback."
-      },
-      {
-        "text": "Although",
-        "pos": "ADP",
-        "lemma": "Although"
-      },
-      {
-        "text": "similar",
-        "pos": "ADJ",
-        "lemma": "similar"
-      },
-      {
-        "text": ",",
-        "pos": "PUNCT",
-        "lemma": ","
-      },
-      {
-        "text": "this",
-        "pos": "DET",
-        "lemma": "this"
-      },
-      {
-        "text": "is",
-        "pos": "VERB",
-        "lemma": "be"
-      },
-      {
-        "text": "distinct",
-        "pos": "ADJ",
-        "lemma": "distinct"
-      },
-      {
-        "text": "from",
-        "pos": "ADP",
-        "lemma": "from"
-      },
-      {
-        "text": "the",
-        "pos": "DET",
-        "lemma": "the"
-      },
-      {
-        "text": "Force",
-        "pos": "NOUN",
-        "lemma": "Force"
-      },
-      {
-        "text": "Touch",
-        "pos": "NOUN",
-        "lemma": "Touch"
-      },
-      {
-        "text": "technology",
-        "pos": "NOUN",
-        "lemma": "technology"
-      },
-      {
-        "text": "used",
-        "pos": "VERB",
-        "lemma": "use"
-      },
-      {
-        "text": "on",
-        "pos": "ADP",
-        "lemma": "on"
-      },
-      {
-        "text": "the",
-        "pos": "DET",
-        "lemma": "the"
-      },
-      {
-        "text": "Apple",
-        "pos": "NOUN",
-        "lemma": "Apple"
-      },
-      {
-        "text": "Watch",
-        "pos": "NOUN",
-        "lemma": "Watch"
-      },
-      {
-        "text": "and",
-        "pos": "CONJ",
-        "lemma": "and"
-      },
-      {
-        "text": "Retina",
-        "pos": "NOUN",
-        "lemma": "Retina"
-      },
-      {
-        "text": "MacBook",
-        "pos": "NOUN",
-        "lemma": "MacBook"
-      },
-      {
-        "text": ",",
-        "pos": "PUNCT",
-        "lemma": ","
-      },
-      {
-        "text": "as",
-        "pos": "ADP",
-        "lemma": "as"
-      },
-      {
-        "text": "it",
-        "pos": "PRON",
-        "lemma": "it"
-      },
-      {
-        "text": "is",
-        "pos": "VERB",
-        "lemma": "be"
-      },
-      {
-        "text": "more",
-        "pos": "ADV",
-        "lemma": "more"
-      },
-      {
-        "text": "sensitive",
-        "pos": "ADJ",
-        "lemma": "sensitive"
-      },
-      {
-        "text": "and",
-        "pos": "CONJ",
-        "lemma": "and"
-      },
-      {
-        "text": "can",
-        "pos": "VERB",
-        "lemma": "can"
-      },
-      {
-        "text": "recognize",
-        "pos": "VERB",
-        "lemma": "recognize"
-      },
-      {
-        "text": "more",
-        "pos": "ADJ",
-        "lemma": "more"
-      },
-      {
-        "text": "levels",
-        "pos": "NOUN",
-        "lemma": "level"
-      },
-      {
-        "text": "of",
-        "pos": "ADP",
-        "lemma": "of"
-      },
-      {
-        "text": "touch",
-        "pos": "NOUN",
-        "lemma": "touch"
-      },
-      {
-        "text": "pressure",
-        "pos": "NOUN",
-        "lemma": "pressure"
-      },
-      {
-        "text": "than",
-        "pos": "ADP",
-        "lemma": "than"
-      },
-      {
-        "text": "Force",
-        "pos": "NOUN",
-        "lemma": "Force"
-      },
-      {
-        "text": "Touch.",
-        "pos": "NOUN",
-        "lemma": "Touch."
-      },
-      {
-        "text": "Due",
-        "pos": "NOUN",
-        "lemma": "Due"
-      },
-      {
-        "text": "to",
-        "pos": "ADP",
-        "lemma": "to"
-      },
-      {
-        "text": "the",
-        "pos": "DET",
-        "lemma": "the"
-      },
-      {
-        "text": "hardware",
-        "pos": "NOUN",
-        "lemma": "hardware"
-      },
-      {
-        "text": "needed",
-        "pos": "VERB",
-        "lemma": "need"
-      },
-      {
-        "text": "to",
-        "pos": "PRT",
-        "lemma": "to"
-      },
-      {
-        "text": "implement",
-        "pos": "VERB",
-        "lemma": "implement"
-      },
-      {
-        "text": "3D",
-        "pos": "NOUN",
-        "lemma": "3D"
-      },
-      {
-        "text": "Touch",
-        "pos": "NOUN",
-        "lemma": "Touch"
-      },
-      {
-        "text": ",",
-        "pos": "PUNCT",
-        "lemma": ","
-      },
-      {
-        "text": "the",
-        "pos": "DET",
-        "lemma": "the"
-      },
-      {
-        "text": "iPhone",
-        "pos": "NOUN",
-        "lemma": "iPhone"
-      },
-      {
-        "text": "6S",
-        "pos": "NOUN",
-        "lemma": "6S"
-      },
-      {
-        "text": "is",
-        "pos": "VERB",
-        "lemma": "be"
-      },
-      {
-        "text": "heavier",
-        "pos": "ADJ",
-        "lemma": "heavy"
-      },
-      {
-        "text": "than",
-        "pos": "ADP",
-        "lemma": "than"
-      },
-      {
-        "text": "its",
-        "pos": "PRON",
-        "lemma": "its"
-      },
-      {
-        "text": "predecessor.",
-        "pos": "NOUN",
-        "lemma": "predecessor."
-      },
-      {
-        "text": "The",
-        "pos": "DET",
-        "lemma": "The"
-      },
-      {
-        "text": "iPhone",
-        "pos": "NOUN",
-        "lemma": "iPhone"
-      },
-      {
-        "text": "6S",
-        "pos": "NOUN",
-        "lemma": "6S"
-      },
-      {
-        "text": "features",
-        "pos": "VERB",
-        "lemma": "feature"
-      },
-      {
-        "text": "a",
-        "pos": "DET",
-        "lemma": "a"
-      },
-      {
-        "text": "12",
-        "pos": "NUM",
-        "lemma": "12"
-      },
-      {
-        "text": "-",
-        "pos": "PUNCT",
-        "lemma": "-"
-      },
-      {
-        "text": "megapixel",
-        "pos": "NOUN",
-        "lemma": "megapixel"
-      },
-      {
-        "text": "rear",
-        "pos": "NOUN",
-        "lemma": "rear"
-      },
-      {
-        "text": "-",
-        "pos": "PUNCT",
-        "lemma": "-"
-      },
-      {
-        "text": "facing",
-        "pos": "VERB",
-        "lemma": "face"
-      },
-      {
-        "text": "camera",
-        "pos": "NOUN",
-        "lemma": "camera"
-      },
-      {
-        "text": ",",
-        "pos": "PUNCT",
-        "lemma": ","
-      },
-      {
-        "text": "an",
-        "pos": "DET",
-        "lemma": "an"
-      },
-      {
-        "text": "upgrade",
-        "pos": "NOUN",
-        "lemma": "upgrade"
-      },
-      {
-        "text": "from",
-        "pos": "ADP",
-        "lemma": "from"
-      },
-      {
-        "text": "the",
-        "pos": "DET",
-        "lemma": "the"
-      },
-      {
-        "text": "8",
-        "pos": "NUM",
-        "lemma": "8"
-      },
-      {
-        "text": "-",
-        "pos": "PUNCT",
-        "lemma": "-"
-      },
-      {
-        "text": "megapixel",
-        "pos": "NOUN",
-        "lemma": "megapixel"
-      },
-      {
-        "text": "unit",
-        "pos": "NOUN",
-        "lemma": "unit"
-      },
-      {
-        "text": "on",
-        "pos": "ADP",
-        "lemma": "on"
-      },
-      {
-        "text": "previous",
-        "pos": "ADJ",
-        "lemma": "previous"
-      },
-      {
-        "text": "models",
-        "pos": "NOUN",
-        "lemma": "model"
-      },
-      {
-        "text": ",",
-        "pos": "PUNCT",
-        "lemma": ","
-      },
-      {
-        "text": "as",
-        "pos": "ADV",
-        "lemma": "as"
-      },
-      {
-        "text": "well",
-        "pos": "ADV",
-        "lemma": "well"
-      },
-      {
-        "text": "as",
-        "pos": "ADP",
-        "lemma": "as"
-      },
-      {
-        "text": "a",
-        "pos": "DET",
-        "lemma": "a"
-      },
-      {
-        "text": "5",
-        "pos": "NUM",
-        "lemma": "5"
-      },
-      {
-        "text": "-",
-        "pos": "PUNCT",
-        "lemma": "-"
-      },
-      {
-        "text": "megapixel",
-        "pos": "NOUN",
-        "lemma": "megapixel"
-      },
-      {
-        "text": "front",
-        "pos": "NOUN",
-        "lemma": "front"
-      },
-      {
-        "text": "-",
-        "pos": "PUNCT",
-        "lemma": "-"
-      },
-      {
-        "text": "facing",
-        "pos": "VERB",
-        "lemma": "face"
-      },
-      {
-        "text": "camera.",
-        "pos": "NOUN",
-        "lemma": "camera."
-      },
-      {
-        "text": "iPhone",
-        "pos": "NOUN",
-        "lemma": "iPhone"
-      },
-      {
-        "text": "6S",
-        "pos": "NOUN",
-        "lemma": "6S"
-      },
-      {
-        "text": "can",
-        "pos": "VERB",
-        "lemma": "can"
-      },
-      {
-        "text": "record",
-        "pos": "VERB",
-        "lemma": "record"
-      },
-      {
-        "text": "4K",
-        "pos": "NOUN",
-        "lemma": "4K"
-      },
-      {
-        "text": "video",
-        "pos": "NOUN",
-        "lemma": "video"
-      },
-      {
-        "text": ",",
-        "pos": "PUNCT",
-        "lemma": ","
-      },
-      {
-        "text": "as",
-        "pos": "ADV",
-        "lemma": "as"
-      },
-      {
-        "text": "well",
-        "pos": "ADV",
-        "lemma": "well"
-      },
-      {
-        "text": "as",
-        "pos": "ADP",
-        "lemma": "as"
-      },
-      {
-        "text": "1080p",
-        "pos": "NOUN",
-        "lemma": "1080p"
-      },
-      {
-        "text": "video",
-        "pos": "NOUN",
-        "lemma": "video"
-      },
-      {
-        "text": "at",
-        "pos": "ADP",
-        "lemma": "at"
-      },
-      {
-        "text": "60",
-        "pos": "NUM",
-        "lemma": "60"
-      },
-      {
-        "text": "and",
-        "pos": "CONJ",
-        "lemma": "and"
-      },
-      {
-        "text": "now",
-        "pos": "ADV",
-        "lemma": "now"
-      },
-      {
-        "text": "120",
-        "pos": "NUM",
-        "lemma": "120"
-      },
-      {
-        "text": "frames",
-        "pos": "NOUN",
-        "lemma": "frame"
-      },
-      {
-        "text": "per",
-        "pos": "ADP",
-        "lemma": "per"
-      },
-      {
-        "text": "second.",
-        "pos": "NOUN",
-        "lemma": "second."
-      },
-      {
-        "text": "The",
-        "pos": "DET",
-        "lemma": "The"
-      },
-      {
-        "text": "iPhone",
-        "pos": "NOUN",
-        "lemma": "iPhone"
-      },
-      {
-        "text": "6S",
-        "pos": "NOUN",
-        "lemma": "6S"
-      },
-      {
-        "text": "and",
-        "pos": "CONJ",
-        "lemma": "and"
-      },
-      {
-        "text": "6S",
-        "pos": "NOUN",
-        "lemma": "6S"
-      },
-      {
-        "text": "Plus",
-        "pos": "CONJ",
-        "lemma": "Plus"
-      },
-      {
-        "text": "were",
-        "pos": "VERB",
-        "lemma": "be"
-      },
-      {
-        "text": "originally",
-        "pos": "ADV",
-        "lemma": "originally"
-      },
-      {
-        "text": "offered",
-        "pos": "VERB",
-        "lemma": "offer"
-      },
-      {
-        "text": "in",
-        "pos": "ADP",
-        "lemma": "in"
-      },
-      {
-        "text": "models",
-        "pos": "NOUN",
-        "lemma": "model"
-      },
-      {
-        "text": "with",
-        "pos": "ADP",
-        "lemma": "with"
-      },
-      {
-        "text": "16",
-        "pos": "NUM",
-        "lemma": "16"
-      },
-      {
-        "text": ",",
-        "pos": "PUNCT",
-        "lemma": ","
-      },
-      {
-        "text": "64",
-        "pos": "NUM",
-        "lemma": "64"
-      },
-      {
-        "text": ",",
-        "pos": "PUNCT",
-        "lemma": ","
-      },
-      {
-        "text": "and",
-        "pos": "CONJ",
-        "lemma": "and"
-      },
-      {
-        "text": "128",
-        "pos": "NUM",
-        "lemma": "128"
-      },
-      {
-        "text": "GB",
-        "pos": "NOUN",
-        "lemma": "GB"
-      },
-      {
-        "text": "of",
-        "pos": "ADP",
-        "lemma": "of"
-      },
-      {
-        "text": "internal",
-        "pos": "ADJ",
-        "lemma": "internal"
-      },
-      {
-        "text": "storage.",
-        "pos": "NOUN",
-        "lemma": "storage."
-      },
-      {
-        "text": "Following",
-        "pos": "VERB",
-        "lemma": "follow"
-      },
-      {
-        "text": "the",
-        "pos": "DET",
-        "lemma": "the"
-      },
-      {
-        "text": "release",
-        "pos": "NOUN",
-        "lemma": "release"
-      },
-      {
-        "text": "of",
-        "pos": "ADP",
-        "lemma": "of"
-      },
-      {
-        "text": "iPhone",
-        "pos": "NOUN",
-        "lemma": "iPhone"
-      },
-      {
-        "text": "7",
-        "pos": "NUM",
-        "lemma": "7"
-      },
-      {
-        "text": "in",
-        "pos": "ADP",
-        "lemma": "in"
-      },
-      {
-        "text": "September",
-        "pos": "NOUN",
-        "lemma": "September"
-      },
-      {
-        "text": "2016",
-        "pos": "NUM",
-        "lemma": "2016"
-      },
-      {
-        "text": ",",
-        "pos": "PUNCT",
-        "lemma": ","
-      },
-      {
-        "text": "the",
-        "pos": "DET",
-        "lemma": "the"
-      },
-      {
-        "text": "16",
-        "pos": "NUM",
-        "lemma": "16"
-      },
-      {
-        "text": "and",
-        "pos": "CONJ",
-        "lemma": "and"
-      },
-      {
-        "text": "64",
-        "pos": "NUM",
-        "lemma": "64"
-      },
-      {
-        "text": "GB",
-        "pos": "NOUN",
-        "lemma": "GB"
-      },
-      {
-        "text": "models",
-        "pos": "NOUN",
-        "lemma": "model"
-      },
-      {
-        "text": "were",
-        "pos": "VERB",
-        "lemma": "be"
-      },
-      {
-        "text": "dropped",
-        "pos": "VERB",
-        "lemma": "drop"
-      },
-      {
-        "text": ",",
-        "pos": "PUNCT",
-        "lemma": ","
-      },
-      {
-        "text": "and",
-        "pos": "CONJ",
-        "lemma": "and"
-      },
-      {
-        "text": "replaced",
-        "pos": "VERB",
-        "lemma": "replace"
-      },
-      {
-        "text": "by",
-        "pos": "ADP",
-        "lemma": "by"
-      },
-      {
-        "text": "a",
-        "pos": "DET",
-        "lemma": "a"
-      },
-      {
-        "text": "new",
-        "pos": "ADJ",
-        "lemma": "new"
-      },
-      {
-        "text": "32",
-        "pos": "NUM",
-        "lemma": "32"
-      },
-      {
-        "text": "GB",
-        "pos": "NOUN",
-        "lemma": "GB"
-      },
-      {
-        "text": "option.",
-        "pos": "NOUN",
-        "lemma": "option."
-      },
-      {
-        "text": "For",
-        "pos": "ADP",
-        "lemma": "For"
-      },
-      {
-        "text": "improved",
-        "pos": "ADJ",
-        "lemma": "improved"
-      },
-      {
-        "text": "storage",
-        "pos": "NOUN",
-        "lemma": "storage"
-      },
-      {
-        "text": "performance",
-        "pos": "NOUN",
-        "lemma": "performance"
-      },
-      {
-        "text": ",",
-        "pos": "PUNCT",
-        "lemma": ","
-      },
-      {
-        "text": "iPhone",
-        "pos": "NOUN",
-        "lemma": "iPhone"
-      },
-      {
-        "text": "6S",
-        "pos": "NOUN",
-        "lemma": "6S"
-      },
-      {
-        "text": "utilizes",
-        "pos": "VERB",
-        "lemma": "utilize"
-      },
-      {
-        "text": "NVM",
-        "pos": "NOUN",
-        "lemma": "NVM"
-      },
-      {
-        "text": "Express",
-        "pos": "NOUN",
-        "lemma": "Express"
-      },
-      {
-        "text": "(",
-        "pos": "PUNCT",
-        "lemma": "("
-      },
-      {
-        "text": "NVMe",
-        "pos": "NOUN",
-        "lemma": "NVMe"
-      },
-      {
-        "text": ")",
-        "pos": "PUNCT",
-        "lemma": ")"
-      },
-      {
-        "text": ",",
-        "pos": "PUNCT",
-        "lemma": ","
-      },
-      {
-        "text": "resulting",
-        "pos": "VERB",
-        "lemma": "result"
-      },
-      {
-        "text": "in",
-        "pos": "ADP",
-        "lemma": "in"
-      },
-      {
-        "text": "a",
-        "pos": "DET",
-        "lemma": "a"
-      },
-      {
-        "text": "maximum",
-        "pos": "ADJ",
-        "lemma": "maximum"
-      },
-      {
-        "text": "average",
-        "pos": "ADJ",
-        "lemma": "average"
-      },
-      {
-        "text": "read",
-        "pos": "NOUN",
-        "lemma": "read"
-      },
-      {
-        "text": "speed",
-        "pos": "NOUN",
-        "lemma": "speed"
-      },
-      {
-        "text": "of",
-        "pos": "ADP",
-        "lemma": "of"
-      },
-      {
-        "text": "1,840",
-        "pos": "NUM",
-        "lemma": "1,840"
-      },
-      {
-        "text": "megabytes",
-        "pos": "NOUN",
-        "lemma": "megabyte"
-      },
-      {
-        "text": "per",
-        "pos": "ADP",
-        "lemma": "per"
-      },
-      {
-        "text": "second.",
-        "pos": "NOUN",
-        "lemma": "second."
-      },
-      {
-        "text": "The",
-        "pos": "DET",
-        "lemma": "The"
-      },
-      {
-        "text": "iPhone",
-        "pos": "NOUN",
-        "lemma": "iPhone"
-      },
-      {
-        "text": "6S",
-        "pos": "NOUN",
-        "lemma": "6S"
-      },
-      {
-        "text": "ships",
-        "pos": "NOUN",
-        "lemma": "ship"
-      },
-      {
-        "text": "with",
-        "pos": "ADP",
-        "lemma": "with"
-      },
-      {
-        "text": "iOS",
-        "pos": "NOUN",
-        "lemma": "io"
-      },
-      {
-        "text": "9",
-        "pos": "NUM",
-        "lemma": "9"
-      },
-      {
-        "text": ";",
-        "pos": "PUNCT",
-        "lemma": ";"
-      },
-      {
-        "text": "the",
-        "pos": "DET",
-        "lemma": "the"
-      },
-      {
-        "text": "operating",
-        "pos": "NOUN",
-        "lemma": "operating"
-      },
-      {
-        "text": "system",
-        "pos": "NOUN",
-        "lemma": "system"
-      },
-      {
-        "text": "leverages",
-        "pos": "VERB",
-        "lemma": "leverage"
-      },
-      {
-        "text": "the",
-        "pos": "DET",
-        "lemma": "the"
-      },
-      {
-        "text": "3D",
-        "pos": "NOUN",
-        "lemma": "3D"
-      },
-      {
-        "text": "Touch",
-        "pos": "NOUN",
-        "lemma": "Touch"
-      },
-      {
-        "text": "hardware",
-        "pos": "NOUN",
-        "lemma": "hardware"
-      },
-      {
-        "text": "to",
-        "pos": "PRT",
-        "lemma": "to"
-      },
-      {
-        "text": "allow",
-        "pos": "VERB",
-        "lemma": "allow"
-      },
-      {
-        "text": "recognition",
-        "pos": "NOUN",
-        "lemma": "recognition"
-      },
-      {
-        "text": "of",
-        "pos": "ADP",
-        "lemma": "of"
-      },
-      {
-        "text": "new",
-        "pos": "ADJ",
-        "lemma": "new"
-      },
-      {
-        "text": "gestures",
-        "pos": "NOUN",
-        "lemma": "gesture"
-      },
-      {
-        "text": "and",
-        "pos": "CONJ",
-        "lemma": "and"
-      },
-      {
-        "text": "commands",
-        "pos": "NOUN",
-        "lemma": "command"
-      },
-      {
-        "text": ",",
-        "pos": "PUNCT",
-        "lemma": ","
-      },
-      {
-        "text": "including",
-        "pos": "VERB",
-        "lemma": "include"
-      },
-      {
-        "text": "peeking",
-        "pos": "VERB",
-        "lemma": "peek"
-      },
-      {
-        "text": "at",
-        "pos": "ADP",
-        "lemma": "at"
-      },
-      {
-        "text": "content",
-        "pos": "NOUN",
-        "lemma": "content"
-      },
-      {
-        "text": "with",
-        "pos": "ADP",
-        "lemma": "with"
-      },
-      {
-        "text": "a",
-        "pos": "DET",
-        "lemma": "a"
-      },
-      {
-        "text": "light",
-        "pos": "ADJ",
-        "lemma": "light"
-      },
-      {
-        "text": "touch",
-        "pos": "NOUN",
-        "lemma": "touch"
-      },
-      {
-        "text": "and",
-        "pos": "CONJ",
-        "lemma": "and"
-      },
-      {
-        "text": "popping",
-        "pos": "VERB",
-        "lemma": "pop"
-      },
-      {
-        "text": "it",
-        "pos": "PRON",
-        "lemma": "it"
-      },
-      {
-        "text": "into",
-        "pos": "ADP",
-        "lemma": "into"
-      },
-      {
-        "text": "view",
-        "pos": "NOUN",
-        "lemma": "view"
-      },
-      {
-        "text": "by",
-        "pos": "ADP",
-        "lemma": "by"
-      },
-      {
-        "text": "pressing",
-        "pos": "VERB",
-        "lemma": "press"
-      },
-      {
-        "text": "harder",
-        "pos": "ADV",
-        "lemma": "hard"
-      },
-      {
-        "text": ",",
-        "pos": "PUNCT",
-        "lemma": ","
-      },
-      {
-        "text": "and",
-        "pos": "CONJ",
-        "lemma": "and"
-      },
-      {
-        "text": "accessing",
-        "pos": "VERB",
-        "lemma": "access"
-      },
-      {
-        "text": "context",
-        "pos": "NOUN",
-        "lemma": "context"
-      },
-      {
-        "text": "menus",
-        "pos": "NOUN",
-        "lemma": "menus"
-      },
-      {
-        "text": "with",
-        "pos": "ADP",
-        "lemma": "with"
-      },
-      {
-        "text": "links",
-        "pos": "NOUN",
-        "lemma": "link"
-      },
-      {
-        "text": "to",
-        "pos": "PRT",
-        "lemma": "to"
-      },
-      {
-        "text": "commonly",
-        "pos": "ADV",
-        "lemma": "commonly"
-      },
-      {
-        "text": "used",
-        "pos": "VERB",
-        "lemma": "use"
-      },
-      {
-        "text": "functions",
-        "pos": "NOUN",
-        "lemma": "function"
-      },
-      {
-        "text": "within",
-        "pos": "ADP",
-        "lemma": "within"
-      },
-      {
-        "text": "apps",
-        "pos": "NOUN",
-        "lemma": "app"
-      },
-      {
-        "text": "with",
-        "pos": "ADP",
-        "lemma": "with"
-      },
-      {
-        "text": "harder",
-        "pos": "ADJ",
-        "lemma": "hard"
-      },
-      {
-        "text": "presses",
-        "pos": "NOUN",
-        "lemma": "press"
-      },
-      {
-        "text": "on",
-        "pos": "ADP",
-        "lemma": "on"
-      },
-      {
-        "text": "home",
-        "pos": "NOUN",
-        "lemma": "home"
-      },
-      {
-        "text": "screen",
-        "pos": "NOUN",
-        "lemma": "screen"
-      },
-      {
-        "text": "icons.",
-        "pos": "NOUN",
-        "lemma": "icons."
-      },
-      {
-        "text": "The",
-        "pos": "DET",
-        "lemma": "The"
-      },
-      {
-        "text": "camera",
-        "pos": "NOUN",
-        "lemma": "camera"
-      },
-      {
-        "text": "app",
-        "pos": "NOUN",
-        "lemma": "app"
-      },
-      {
-        "text": "\u0027s",
-        "pos": "PRT",
-        "lemma": "\u0027s"
-      },
-      {
-        "text": "Retina",
-        "pos": "NOUN",
-        "lemma": "Retina"
-      },
-      {
-        "text": "Flash",
-        "pos": "NOUN",
-        "lemma": "Flash"
-      },
-      {
-        "text": "feature",
-        "pos": "NOUN",
-        "lemma": "feature"
-      },
-      {
-        "text": "allows",
-        "pos": "VERB",
-        "lemma": "allow"
-      },
-      {
-        "text": "the",
-        "pos": "DET",
-        "lemma": "the"
-      },
-      {
-        "text": "display",
-        "pos": "NOUN",
-        "lemma": "display"
-      },
-      {
-        "text": "\u0027s",
-        "pos": "PRT",
-        "lemma": "\u0027s"
-      },
-      {
-        "text": "brightness",
-        "pos": "NOUN",
-        "lemma": "brightness"
-      },
-      {
-        "text": "to",
-        "pos": "PRT",
-        "lemma": "to"
-      },
-      {
-        "text": "be",
-        "pos": "VERB",
-        "lemma": "be"
-      },
-      {
-        "text": "used",
-        "pos": "VERB",
-        "lemma": "use"
-      },
-      {
-        "text": "as",
-        "pos": "ADP",
-        "lemma": "as"
-      },
-      {
-        "text": "a",
-        "pos": "DET",
-        "lemma": "a"
-      },
-      {
-        "text": "makeshift",
-        "pos": "ADJ",
-        "lemma": "makeshift"
-      },
-      {
-        "text": "flash",
-        "pos": "NOUN",
-        "lemma": "flash"
-      },
-      {
-        "text": "on",
-        "pos": "ADP",
-        "lemma": "on"
-      },
-      {
-        "text": "images",
-        "pos": "NOUN",
-        "lemma": "image"
-      },
-      {
-        "text": "taken",
-        "pos": "VERB",
-        "lemma": "take"
-      },
-      {
-        "text": "with",
-        "pos": "ADP",
-        "lemma": "with"
-      },
-      {
-        "text": "the",
-        "pos": "DET",
-        "lemma": "the"
-      },
-      {
-        "text": "front",
-        "pos": "ADJ",
-        "lemma": "front"
-      },
-      {
-        "text": "camera",
-        "pos": "NOUN",
-        "lemma": "camera"
-      },
-      {
-        "text": ",",
-        "pos": "PUNCT",
-        "lemma": ","
-      },
-      {
-        "text": "while",
-        "pos": "ADP",
-        "lemma": "while"
-      },
-      {
-        "text": "Live",
-        "pos": "NOUN",
-        "lemma": "Live"
-      },
-      {
-        "text": "Photos",
-        "pos": "NOUN",
-        "lemma": "Photos"
-      },
-      {
-        "text": "captures",
-        "pos": "VERB",
-        "lemma": "capture"
-      },
-      {
-        "text": "a",
-        "pos": "DET",
-        "lemma": "a"
-      },
-      {
-        "text": "short",
-        "pos": "ADJ",
-        "lemma": "short"
-      },
-      {
-        "text": "video",
-        "pos": "NOUN",
-        "lemma": "video"
-      },
-      {
-        "text": "alongside",
-        "pos": "ADP",
-        "lemma": "alongside"
-      },
-      {
-        "text": "each",
-        "pos": "DET",
-        "lemma": "each"
-      },
-      {
-        "text": "photo",
-        "pos": "NOUN",
-        "lemma": "photo"
-      },
-      {
-        "text": "taken",
-        "pos": "VERB",
-        "lemma": "take"
       },
       {
         "text": ".",
@@ -3360,829 +520,116 @@
     ],
     "finalEntityTaggedList": [
       {
-        "text": "iPhone 6S",
-        "sentiment": -0.1,
-        "salience": 0.31921926,
-        "category": "CONSUMER_GOOD",
-        "nounCombination": "iPhone 6S",
-        "nounCombinationCategory": "device"
-      },
-      {
         "text": "Apple",
-        "sentiment": -0.2,
-        "salience": 0.05154127,
+        "sentiment": 0.0,
+        "salience": 0.31677318,
         "category": "ORGANIZATION",
         "nounCombination": "Apple",
         "nounCombinationCategory": "fruit"
       },
       {
-        "text": "points",
+        "text": "iPhone 6",
         "sentiment": 0.0,
-        "salience": 0.0103310365,
-        "category": "OTHER",
-        "nounCombination": "points",
-        "nounCombinationCategory": "advantage"
-      },
-      {
-        "text": "model",
-        "sentiment": -0.2,
-        "salience": 0.009804529,
-        "category": "OTHER",
-        "nounCombination": "model",
-        "nounCombinationCategory": "information"
-      },
-      {
-        "text": "changes",
-        "sentiment": 0.0,
-        "salience": 0.005336125,
-        "category": "OTHER",
-        "nounCombination": "changes",
-        "nounCombinationCategory": "topic"
-      },
-      {
-        "text": "options",
-        "sentiment": 0.0,
-        "salience": 0.009116843,
-        "category": "OTHER",
-        "nounCombination": "options",
-        "nounCombinationCategory": "derivative"
-      },
-      {
-        "text": "design",
-        "sentiment": -0.05,
-        "salience": 0.0051212506,
-        "category": "OTHER",
-        "nounCombination": "design",
-        "nounCombinationCategory": "factor"
-      },
-      {
-        "text": "system-on-chip",
-        "sentiment": 0.0,
-        "salience": 0.0036639743,
-        "category": "OTHER",
+        "salience": 0.06774538,
+        "category": "CONSUMER_GOOD",
         "nounCombination": "",
         "nounCombinationCategory": ""
       },
       {
-        "text": "gold",
+        "text": "models",
         "sentiment": 0.0,
-        "salience": 0.008300203,
-        "category": "OTHER",
-        "nounCombination": "gold",
-        "nounCombinationCategory": "metal"
-      },
-      {
-        "text": "aluminum alloy",
-        "sentiment": 0.0,
-        "salience": 0.0072707436,
-        "category": "OTHER",
-        "nounCombination": "aluminum alloy",
-        "nounCombinationCategory": "material"
-      },
-      {
-        "text": "casing",
-        "sentiment": 0.0,
-        "salience": 0.0072707436,
-        "category": "OTHER",
-        "nounCombination": "casing",
-        "nounCombinationCategory": "component"
-      },
-      {
-        "text": "silver",
-        "sentiment": 0.0,
-        "salience": 0.0072707436,
-        "category": "OTHER",
-        "nounCombination": "silver",
-        "nounCombinationCategory": "metal"
-      },
-      {
-        "text": "series",
-        "sentiment": 0.0,
-        "salience": 0.0072707436,
-        "category": "WORK_OF_ART",
-        "nounCombination": "series",
-        "nounCombinationCategory": "topic"
-      },
-      {
-        "text": "chassis",
-        "sentiment": 0.0,
-        "salience": 0.0072707436,
-        "category": "OTHER",
-        "nounCombination": "chassis",
-        "nounCombinationCategory": "product"
-      },
-      {
-        "text": "durability",
-        "sentiment": -0.2,
-        "salience": 0.0072707436,
-        "category": "OTHER",
-        "nounCombination": "durability",
-        "nounCombinationCategory": "feature"
-      },
-      {
-        "text": "circuits",
-        "sentiment": 0.0,
-        "salience": 0.0072707436,
-        "category": "OTHER",
-        "nounCombination": "circuits",
-        "nounCombinationCategory": "hardware"
-      },
-      {
-        "text": "display assembly.",
-        "sentiment": 0.0,
-        "salience": 0.0072707436,
-        "category": "ORGANIZATION",
-        "nounCombination": "display assembly.",
-        "nounCombinationCategory": "Not Found"
-      },
-      {
-        "text": "response",
-        "sentiment": -0.1,
-        "salience": 0.0072707436,
-        "category": "OTHER",
-        "nounCombination": "response",
-        "nounCombinationCategory": "measure"
-      },
-      {
-        "text": "bendgate design flaws",
-        "sentiment": -0.3,
-        "salience": 0.0072707436,
-        "category": "OTHER",
-        "nounCombination": "bendgate design flaws",
-        "nounCombinationCategory": "Not Found"
-      },
-      {
-        "text": "iPhone 6.In",
-        "sentiment": 0.0,
-        "salience": 0.0043191346,
-        "category": "OTHER",
-        "nounCombination": "iPhone 6.In",
-        "nounCombinationCategory": "Not Found"
-      },
-      {
-        "text": "version",
-        "sentiment": -0.29999998,
-        "salience": 0.0029982373,
+        "salience": 0.0981471,
         "category": "CONSUMER_GOOD",
-        "nounCombination": "version",
+        "nounCombination": "models",
         "nounCombinationCategory": "information"
       },
       {
-        "text": "color option",
-        "sentiment": -0.2,
-        "salience": 0.0035013945,
-        "category": "OTHER",
-        "nounCombination": "color option",
-        "nounCombinationCategory": "option"
-      },
-      {
-        "text": "fingerprint scanning performance",
-        "sentiment": 0.1,
-        "salience": 0.0035013945,
-        "category": "OTHER",
-        "nounCombination": "fingerprint scanning performance",
-        "nounCombinationCategory": "Not Found"
-      },
-      {
-        "text": "graphics",
-        "sentiment": 0.8,
-        "salience": 0.0032449383,
-        "category": "OTHER",
-        "nounCombination": "graphics",
-        "nounCombinationCategory": "content"
-      },
-      {
-        "text": "company",
+        "text": "spec sheet",
         "sentiment": 0.0,
-        "salience": 0.003185716,
-        "category": "ORGANIZATION",
-        "nounCombination": "company",
-        "nounCombinationCategory": "organization"
-      },
-      {
-        "text": "sensor",
-        "sentiment": -0.1,
-        "salience": 0.003185716,
+        "salience": 0.057927463,
         "category": "OTHER",
-        "nounCombination": "sensor",
-        "nounCombinationCategory": "device"
-      },
-      {
-        "text": "screen",
-        "sentiment": 0.3,
-        "salience": 0.0028362442,
-        "category": "OTHER",
-        "nounCombination": "screen",
-        "nounCombinationCategory": "equipment"
-      },
-      {
-        "text": "RAM",
-        "sentiment": -0.2,
-        "salience": 0.002788346,
-        "category": "OTHER",
-        "nounCombination": "RAM",
-        "nounCombinationCategory": "component"
-      },
-      {
-        "text": "A8",
-        "sentiment": 0.0,
-        "salience": 0.002788346,
-        "category": "OTHER",
-        "nounCombination": "A8",
-        "nounCombinationCategory": "model"
-      },
-      {
-        "text": "version.",
-        "sentiment": 0.0,
-        "salience": 0.002514498,
-        "category": "OTHER",
-        "nounCombination": "version.",
-        "nounCombinationCategory": "Not Found"
-      },
-      {
-        "text": "battery performance",
-        "sentiment": -0.8,
-        "salience": 0.0023366085,
-        "category": "OTHER",
-        "nounCombination": "battery performance",
-        "nounCombinationCategory": "technical issue"
-      },
-      {
-        "text": "batteries",
-        "sentiment": -0.2,
-        "salience": 0.0023366085,
-        "category": "CONSUMER_GOOD",
-        "nounCombination": "batteries",
-        "nounCombinationCategory": "item"
-      },
-      {
-        "text": "difference",
-        "sentiment": 0.0,
-        "salience": 0.0021927978,
-        "category": "OTHER",
-        "nounCombination": "difference",
-        "nounCombinationCategory": "word"
+        "nounCombination": "spec sheet",
+        "nounCombinationCategory": "product documentation"
       },
       {
         "text": "device",
-        "sentiment": -0.3,
-        "salience": 0.0015313294,
+        "sentiment": 0.0,
+        "salience": 0.0537277,
         "category": "CONSUMER_GOOD",
         "nounCombination": "device",
         "nounCombinationCategory": "resource"
       },
       {
-        "text": "predecessors.",
+        "text": "display.",
         "sentiment": 0.0,
-        "salience": 0.0021256623,
-        "category": "ORGANIZATION",
-        "nounCombination": "predecessors.",
+        "salience": 0.033240777,
+        "category": "OTHER",
+        "nounCombination": "display.",
         "nounCombinationCategory": "Not Found"
-      },
-      {
-        "text": "Apple A9",
-        "sentiment": 0.0,
-        "salience": 0.0018884718,
-        "category": "OTHER",
-        "nounCombination": "Apple A9",
-        "nounCombinationCategory": "Not Found"
-      },
-      {
-        "text": "battery life",
-        "sentiment": -0.1,
-        "salience": 0.0018602072,
-        "category": "OTHER",
-        "nounCombination": "battery life",
-        "nounCombinationCategory": "factor"
-      },
-      {
-        "text": "LTE Advanced.",
-        "sentiment": 0.0,
-        "salience": 0.0016525754,
-        "category": "OTHER",
-        "nounCombination": "LTE Advanced.",
-        "nounCombinationCategory": "Not Found"
-      },
-      {
-        "text": "The Touch ID",
-        "sentiment": 0.0,
-        "salience": 0.0016525754,
-        "category": "OTHER",
-        "nounCombination": "The Touch ID",
-        "nounCombinationCategory": "Not Found"
-      },
-      {
-        "text": "capacities",
-        "sentiment": -0.3,
-        "salience": 0.0015980655,
-        "category": "OTHER",
-        "nounCombination": "capacities",
-        "nounCombinationCategory": "factor"
-      },
-      {
-        "text": "tests",
-        "sentiment": 0.0,
-        "salience": 0.0015779614,
-        "category": "OTHER",
-        "nounCombination": "tests",
-        "nounCombinationCategory": "assessment"
-      },
-      {
-        "text": "TSMC",
-        "sentiment": 0.0,
-        "salience": 0.0014201719,
-        "category": "ORGANIZATION",
-        "nounCombination": "TSMC",
-        "nounCombinationCategory": "foundry"
-      },
-      {
-        "text": "Samsung.",
-        "sentiment": 0.0,
-        "salience": 0.0012593914,
-        "category": "LOCATION",
-        "nounCombination": "Samsung.",
-        "nounCombinationCategory": "Not Found"
-      },
-      {
-        "text": "6S Plus",
-        "sentiment": -0.05,
-        "salience": 0.0011416425,
-        "category": "OTHER",
-        "nounCombination": "6S Plus",
-        "nounCombinationCategory": "generation iphone"
-      },
-      {
-        "text": "displays",
-        "sentiment": -0.5,
-        "salience": 0.0011256579,
-        "category": "OTHER",
-        "nounCombination": "displays",
-        "nounCombinationCategory": "output device"
-      },
-      {
-        "text": "touch pressure",
-        "sentiment": 0.0,
-        "salience": 0.0010301354,
-        "category": "OTHER",
-        "nounCombination": "touch pressure",
-        "nounCombinationCategory": "function"
-      },
-      {
-        "text": "1080p",
-        "sentiment": -0.1,
-        "salience": 0.0010238936,
-        "category": "OTHER",
-        "nounCombination": "1080p",
-        "nounCombinationCategory": "resolution"
-      },
-      {
-        "text": "components",
-        "sentiment": -0.3,
-        "salience": 0.0010238936,
-        "category": "OTHER",
-        "nounCombination": "components",
-        "nounCombinationCategory": "product"
-      },
-      {
-        "text": "sensors",
-        "sentiment": -0.7,
-        "salience": 0.0010238936,
-        "category": "OTHER",
-        "nounCombination": "sensors",
-        "nounCombinationCategory": "device"
-      },
-      {
-        "text": "silicone seal",
-        "sentiment": 0.0,
-        "salience": 9.424486E-4,
-        "category": "OTHER",
-        "nounCombination": "silicone seal",
-        "nounCombinationCategory": "component"
-      },
-      {
-        "text": "technology",
-        "sentiment": 0.0,
-        "salience": 8.4620167E-4,
-        "category": "OTHER",
-        "nounCombination": "technology",
-        "nounCombinationCategory": "factor"
-      },
-      {
-        "text": "degree",
-        "sentiment": -0.2,
-        "salience": 8.958728E-4,
-        "category": "OTHER",
-        "nounCombination": "degree",
-        "nounCombinationCategory": "factor"
-      },
-      {
-        "text": "logic board",
-        "sentiment": -0.1,
-        "salience": 8.958728E-4,
-        "category": "OTHER",
-        "nounCombination": "logic board",
-        "nounCombinationCategory": "part"
-      },
-      {
-        "text": "exposure",
-        "sentiment": -0.9,
-        "salience": 8.958728E-4,
-        "category": "OTHER",
-        "nounCombination": "exposure",
-        "nounCombinationCategory": "factor"
-      },
-      {
-        "text": "sizes",
-        "sentiment": -0.1,
-        "salience": 8.958728E-4,
-        "category": "OTHER",
-        "nounCombination": "sizes",
-        "nounCombinationCategory": "free rich company datum"
-      },
-      {
-        "text": "water resistance",
-        "sentiment": -0.1,
-        "salience": 8.958728E-4,
-        "category": "OTHER",
-        "nounCombination": "water resistance",
-        "nounCombinationCategory": "property"
-      },
-      {
-        "text": "models",
-        "sentiment": -0.033333335,
-        "salience": 6.705974E-4,
-        "category": "OTHER",
-        "nounCombination": "models",
-        "nounCombinationCategory": "information"
-      },
-      {
-        "text": "user",
-        "sentiment": -0.1,
-        "salience": 8.198296E-4,
-        "category": "PERSON",
-        "nounCombination": "user",
-        "nounCombinationCategory": "information"
-      },
-      {
-        "text": "touch input",
-        "sentiment": -0.1,
-        "salience": 8.198296E-4,
-        "category": "OTHER",
-        "nounCombination": "touch input",
-        "nounCombinationCategory": "area"
-      },
-      {
-        "text": "backlight layer",
-        "sentiment": -0.1,
-        "salience": 8.198296E-4,
-        "category": "OTHER",
-        "nounCombination": "backlight layer",
-        "nounCombinationCategory": "Not Found"
-      },
-      {
-        "text": "distance",
-        "sentiment": 0.0,
-        "salience": 8.198296E-4,
-        "category": "OTHER",
-        "nounCombination": "distance",
-        "nounCombinationCategory": "factor"
-      },
-      {
-        "text": "firmness",
-        "sentiment": -0.1,
-        "salience": 8.198296E-4,
-        "category": "OTHER",
-        "nounCombination": "firmness",
-        "nounCombinationCategory": "parameter"
-      },
-      {
-        "text": "Engine vibrator",
-        "sentiment": -0.1,
-        "salience": 8.198296E-4,
-        "category": "OTHER",
-        "nounCombination": "Engine vibrator",
-        "nounCombinationCategory": "Not Found"
-      },
-      {
-        "text": "cover glass",
-        "sentiment": -0.1,
-        "salience": 8.198296E-4,
-        "category": "OTHER",
-        "nounCombination": "cover glass",
-        "nounCombinationCategory": "filter"
-      },
-      {
-        "text": "storage performance",
-        "sentiment": 0.4,
-        "salience": 7.6576165E-4,
-        "category": "OTHER",
-        "nounCombination": "storage performance",
-        "nounCombinationCategory": "battery characteristic"
-      },
-      {
-        "text": "operating system",
-        "sentiment": 0.0,
-        "salience": 7.6576165E-4,
-        "category": "OTHER",
-        "nounCombination": "operating system",
-        "nounCombinationCategory": "information"
-      },
-      {
-        "text": "touch",
-        "sentiment": 0.8,
-        "salience": 7.615413E-4,
-        "category": "OTHER",
-        "nounCombination": "touch",
-        "nounCombinationCategory": "sense"
-      },
-      {
-        "text": "levels",
-        "sentiment": 0.2,
-        "salience": 7.131498E-4,
-        "category": "OTHER",
-        "nounCombination": "levels",
-        "nounCombinationCategory": "factor"
-      },
-      {
-        "text": "hardware",
-        "sentiment": 0.0,
-        "salience": 5.018E-4,
-        "category": "OTHER",
-        "nounCombination": "hardware",
-        "nounCombinationCategory": "product"
-      },
-      {
-        "text": "feedback.",
-        "sentiment": 0.0,
-        "salience": 6.44384E-4,
-        "category": "OTHER",
-        "nounCombination": "feedback.",
-        "nounCombinationCategory": "Not Found"
-      },
-      {
-        "text": "ships",
-        "sentiment": 0.0,
-        "salience": 6.093872E-4,
-        "category": "OTHER",
-        "nounCombination": "ships",
-        "nounCombinationCategory": "vehicle"
-      },
-      {
-        "text": "release",
-        "sentiment": 0.0,
-        "salience": 6.093872E-4,
-        "category": "EVENT",
-        "nounCombination": "release",
-        "nounCombinationCategory": "publication"
-      },
-      {
-        "text": "speed",
-        "sentiment": -0.3,
-        "salience": 6.093872E-4,
-        "category": "OTHER",
-        "nounCombination": "read speed",
-        "nounCombinationCategory": "performance"
-      },
-      {
-        "text": "brightness",
-        "sentiment": -0.1,
-        "salience": 5.7925924E-4,
-        "category": "OTHER",
-        "nounCombination": "brightness",
-        "nounCombinationCategory": "setting"
-      },
-      {
-        "text": "camera",
-        "sentiment": 0.0,
-        "salience": 4.7409913E-4,
-        "category": "CONSUMER_GOOD",
-        "nounCombination": "camera",
-        "nounCombinationCategory": "item"
-      },
-      {
-        "text": "video",
-        "sentiment": 0.0,
-        "salience": 4.1195378E-4,
-        "category": "WORK_OF_ART",
-        "nounCombination": "4K video",
-        "nounCombinationCategory": "huge file"
       },
       {
         "text": "display",
-        "sentiment": -0.1,
-        "salience": 5.3021946E-4,
+        "sentiment": 0.0,
+        "salience": 0.032831088,
         "category": "OTHER",
         "nounCombination": "display",
         "nounCombinationCategory": "output device"
       },
       {
-        "text": "presses",
-        "sentiment": -0.2,
-        "salience": 5.3021946E-4,
-        "category": "OTHER",
-        "nounCombination": "presses",
-        "nounCombinationCategory": "machine"
-      },
-      {
-        "text": "Apple Watch",
-        "sentiment": -0.1,
-        "salience": 4.8539834E-4,
-        "category": "CONSUMER_GOOD",
-        "nounCombination": "Apple Watch",
-        "nounCombinationCategory": "wearable"
-      },
-      {
-        "text": "Retina MacBook",
-        "sentiment": -0.1,
-        "salience": 4.8539834E-4,
-        "category": "OTHER",
-        "nounCombination": "Retina MacBook",
-        "nounCombinationCategory": "high end device"
-      },
-      {
-        "text": "Taptic",
+        "text": "Retina HD display",
         "sentiment": 0.0,
-        "salience": 4.8539834E-4,
-        "category": "ORGANIZATION",
-        "nounCombination": "Taptic",
+        "salience": 0.030474644,
+        "category": "OTHER",
+        "nounCombination": "Retina HD display",
+        "nounCombinationCategory": "spec"
+      },
+      {
+        "text": "Cupertino.",
+        "sentiment": 0.0,
+        "salience": 0.023352256,
+        "category": "PERSON",
+        "nounCombination": "Cupertino.",
         "nounCombinationCategory": "Not Found"
       },
       {
-        "text": "flash",
+        "text": "Flint Center",
         "sentiment": 0.0,
-        "salience": 4.8225254E-4,
-        "category": "OTHER",
-        "nounCombination": "flash",
-        "nounCombinationCategory": "technology"
-      },
-      {
-        "text": "content",
-        "sentiment": 0.2,
-        "salience": 4.8225254E-4,
-        "category": "OTHER",
-        "nounCombination": "content",
-        "nounCombinationCategory": "factor"
-      },
-      {
-        "text": "photo",
-        "sentiment": 0.0,
-        "salience": 4.8225254E-4,
-        "category": "WORK_OF_ART",
-        "nounCombination": "photo",
-        "nounCombinationCategory": "file"
-      },
-      {
-        "text": "home screen",
-        "sentiment": 0.0,
-        "salience": 4.8225254E-4,
-        "category": "OTHER",
-        "nounCombination": "home screen",
-        "nounCombinationCategory": "personalization option"
-      },
-      {
-        "text": "functions",
-        "sentiment": 0.0,
-        "salience": 4.6107545E-4,
-        "category": "OTHER",
-        "nounCombination": "functions",
-        "nounCombinationCategory": "topic"
-      },
-      {
-        "text": "camera app",
-        "sentiment": 0.1,
-        "salience": 4.2191893E-4,
-        "category": "CONSUMER_GOOD",
-        "nounCombination": "camera app",
-        "nounCombinationCategory": "apps"
-      },
-      {
-        "text": "apps",
-        "sentiment": 0.0,
-        "salience": 4.2191893E-4,
-        "category": "CONSUMER_GOOD",
-        "nounCombination": "apps",
-        "nounCombinationCategory": "technology"
-      },
-      {
-        "text": "feature",
-        "sentiment": 0.0,
-        "salience": 4.2191893E-4,
-        "category": "OTHER",
-        "nounCombination": "feature",
-        "nounCombinationCategory": "information"
-      },
-      {
-        "text": "images",
-        "sentiment": 0.0,
-        "salience": 4.2191893E-4,
-        "category": "WORK_OF_ART",
-        "nounCombination": "images",
-        "nounCombinationCategory": "information"
-      },
-      {
-        "text": "context menus",
-        "sentiment": 0.0,
-        "salience": 4.2191893E-4,
-        "category": "OTHER",
-        "nounCombination": "context menus",
-        "nounCombinationCategory": "feature"
-      },
-      {
-        "text": "commands",
-        "sentiment": 0.0,
-        "salience": 4.2191893E-4,
-        "category": "OTHER",
-        "nounCombination": "commands",
-        "nounCombinationCategory": "information"
-      },
-      {
-        "text": "recognition",
-        "sentiment": 0.0,
-        "salience": 4.2191893E-4,
-        "category": "OTHER",
-        "nounCombination": "recognition",
-        "nounCombinationCategory": "factor"
-      },
-      {
-        "text": "links",
-        "sentiment": 0.0,
-        "salience": 4.2191893E-4,
-        "category": "OTHER",
-        "nounCombination": "links",
-        "nounCombinationCategory": "information"
-      },
-      {
-        "text": "gestures",
-        "sentiment": 0.0,
-        "salience": 4.2191893E-4,
-        "category": "OTHER",
-        "nounCombination": "gestures",
-        "nounCombinationCategory": "nonverbal cue"
-      },
-      {
-        "text": "view",
-        "sentiment": 0.0,
-        "salience": 4.2191893E-4,
-        "category": "OTHER",
-        "nounCombination": "view",
-        "nounCombinationCategory": "database object"
-      },
-      {
-        "text": "NVM Express",
-        "sentiment": 0.0,
-        "salience": 3.6076218E-4,
-        "category": "ORGANIZATION",
-        "nounCombination": "NVM Express",
-        "nounCombinationCategory": "Not Found"
-      },
-      {
-        "text": "1080p video",
-        "sentiment": 0.0,
-        "salience": 3.3764745E-4,
-        "category": "WORK_OF_ART",
-        "nounCombination": "1080p video",
-        "nounCombinationCategory": "today s latest technology"
-      },
-      {
-        "text": "Retina Flash",
-        "sentiment": 0.0,
-        "salience": 2.8547877E-4,
-        "category": "OTHER",
-        "nounCombination": "Retina Flash",
-        "nounCombinationCategory": "awesome new feature"
-      },
-      {
-        "text": "upgrade",
-        "sentiment": -0.1,
-        "salience": 2.6866762E-4,
-        "category": "OTHER",
-        "nounCombination": "upgrade",
-        "nounCombinationCategory": "alteration"
-      },
-      {
-        "text": "unit",
-        "sentiment": 0.0,
-        "salience": 2.6866762E-4,
+        "salience": 0.023352256,
         "category": "LOCATION",
-        "nounCombination": "unit",
-        "nounCombinationCategory": "term"
+        "nounCombination": "Flint Center",
+        "nounCombinationCategory": "Not Found"
       },
       {
-        "text": "frames",
-        "sentiment": -0.1,
-        "salience": 2.6866762E-4,
-        "category": "OTHER",
-        "nounCombination": "frames",
-        "nounCombinationCategory": "item"
-      },
-      {
-        "text": "Live Photos",
+        "text": "lot",
         "sentiment": 0.0,
-        "salience": 2.2435327E-4,
-        "category": "WORK_OF_ART",
-        "nounCombination": "Live Photos",
+        "salience": 0.01826394,
+        "category": "OTHER",
+        "nounCombination": "lot",
+        "nounCombinationCategory": "information"
+      },
+      {
+        "text": "resolution",
+        "sentiment": 0.0,
+        "salience": 0.008063523,
+        "category": "OTHER",
+        "nounCombination": "resolution",
+        "nounCombinationCategory": "parameter"
+      },
+      {
+        "text": "pixel density",
+        "sentiment": 0.0,
+        "salience": 0.008063523,
+        "category": "OTHER",
+        "nounCombination": "pixel density",
         "nounCombinationCategory": "feature"
       }
-    ]
+    ],
+    "specificationDto": {
+      "mainEntity": "IPhone 6S",
+      "featureMap": {
+        "pixel density": "feature",
+        "Retina HD display": "spec"
+      }
+    }
   }
 ]
