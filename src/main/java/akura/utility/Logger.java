@@ -11,11 +11,11 @@ public class Logger {
     public static void Log(String s){
         PropertyConfigurator.configure("log4j.properties");
         logger.info(s);
-        try {
-            APIConnection.sendSocketRequest("VALUE", s);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            APIConnection.sendSocketRequest("VALUE", s);
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
         System.out.println(s);
     }
 }

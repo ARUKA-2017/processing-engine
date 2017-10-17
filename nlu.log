@@ -1618,3 +1618,671 @@ INFO	2017-10-16 19:47:55,440	54947	root	[main]	{
   "mainEntity": "IPhone 6S",
   "featureMap": {}
 }
+INFO	2017-10-17 18:34:50,123	4	root	[qtp549021848-24]	----------------Category Map----------------
+INFO	2017-10-17 18:34:51,239	1120	root	[qtp549021848-24]	{
+  "Internet \u0026 Telecom": 0.97
+}
+INFO	2017-10-17 18:34:53,450	3331	root	[qtp549021848-24]	----------------Google NLP Entity List----------------
+INFO	2017-10-17 18:34:54,456	4337	root	[qtp549021848-24]	{
+  "28f67f6c-2d6f-4295-8ea7-decdb14680bd": [
+    "screen",
+    "OTHER",
+    "0.0",
+    "0.011348591"
+  ],
+  "756b2bb4-79cb-4f53-9f2b-44cbdba3276a": [
+    "Cupertino",
+    "LOCATION",
+    "0.0",
+    "0.030619213"
+  ],
+  "9639c414-351c-4131-b035-79fad9ab99f9": [
+    "spec sheet",
+    "OTHER",
+    "0.0",
+    "0.009017224"
+  ],
+  "574a17f0-83d1-4d7e-82bb-f50d69890d95": [
+    "resolution",
+    "OTHER",
+    "0.0",
+    "0.0050102235"
+  ],
+  "5251f18a-75c8-4396-9313-0b8470e163f4": [
+    "Special Event",
+    "EVENT",
+    "0.0",
+    "0.07828628"
+  ],
+  "a4e7260b-c8b7-4a31-b832-a45bad230d1a": [
+    "Apple",
+    "ORGANIZATION",
+    "0.0",
+    "0.34628057"
+  ],
+  "7829d176-5a74-4b78-9316-a6b5c49290ec": [
+    "Retina HD display",
+    "OTHER",
+    "0.0",
+    "0.019088581"
+  ],
+  "2ffd9d4a-d9b2-481f-8810-76550bb58e0a": [
+    "lot",
+    "OTHER",
+    "0.0",
+    "0.011348591"
+  ],
+  "349fbe50-dbdd-430e-aaf5-d435ce53743b": [
+    "device",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.034110826"
+  ],
+  "cb08531b-c6e2-4182-87c7-fd536afa55df": [
+    "display",
+    "OTHER",
+    "0.0",
+    "0.020687127"
+  ],
+  "47e6646a-0a42-464e-89b2-e957b7919754": [
+    "iPhone 6",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.17305742"
+  ],
+  "479b4f19-c933-4806-8af0-7befc7e3862a": [
+    "display",
+    "OTHER",
+    "0.0",
+    "0.020948365"
+  ],
+  "441cec74-3b67-4911-b941-e0a2dd7e8677": [
+    "models",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.12868936"
+  ],
+  "3520590f-0759-409d-8e68-e640c04a0770": [
+    "Flint Center",
+    "LOCATION",
+    "0.0",
+    "0.030619213"
+  ],
+  "3c40398d-b40b-447d-96ae-65cb30d9381e": [
+    "second",
+    "OTHER",
+    "0.0",
+    "0.016495448"
+  ],
+  "7fb4053d-5ca2-4847-9e09-823d313ee355": [
+    "iPhone 6 Plus",
+    "ORGANIZATION",
+    "0.0",
+    "0.03367175"
+  ],
+  "fafd490b-8053-46a9-b8e5-e33cee6ffa9f": [
+    "pixel density",
+    "OTHER",
+    "0.0",
+    "0.015218228"
+  ]
+}
+INFO	2017-10-17 18:36:55,713	0	root	[qtp1317692469-20]	----------------Category Map----------------
+INFO	2017-10-17 18:36:56,734	1021	root	[qtp1317692469-20]	{
+  "Internet \u0026 Telecom": 0.97
+}
+INFO	2017-10-17 18:36:58,304	2591	root	[qtp1317692469-20]	----------------Google NLP Entity List----------------
+INFO	2017-10-17 18:36:59,319	3606	root	[qtp1317692469-20]	{
+  "b9a2d0bd-3ac6-4206-8f5b-4a83030176b2": [
+    "Cupertino",
+    "LOCATION",
+    "0.0",
+    "0.030619213"
+  ],
+  "32b13c05-1ddb-491d-a4df-6512cb36065a": [
+    "Apple",
+    "ORGANIZATION",
+    "0.0",
+    "0.34628057"
+  ],
+  "d2ca13ca-bee2-48a9-9686-a223d6c85331": [
+    "second",
+    "OTHER",
+    "0.0",
+    "0.016495448"
+  ],
+  "8a174da3-1248-4672-a7b1-f7f4c0a27dc7": [
+    "Retina HD display",
+    "OTHER",
+    "0.0",
+    "0.019088581"
+  ],
+  "7021f121-bbdd-4364-a6b7-e04915d1de5b": [
+    "iPhone 6 Plus",
+    "ORGANIZATION",
+    "0.0",
+    "0.03367175"
+  ],
+  "b4c272a5-724e-4dea-a525-f00297cadb3b": [
+    "iPhone 6",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.17305742"
+  ],
+  "9ff6c330-556e-4e41-9094-830871e890cb": [
+    "Flint Center",
+    "LOCATION",
+    "0.0",
+    "0.030619213"
+  ],
+  "529a5cf5-a567-4ece-9838-f3a8e2785c86": [
+    "screen",
+    "OTHER",
+    "0.0",
+    "0.011348591"
+  ],
+  "eeb17ea6-d41d-4c43-a0f5-84675267fc67": [
+    "models",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.12868936"
+  ],
+  "61e1c43c-4829-4231-94ad-d23b1b14e981": [
+    "display",
+    "OTHER",
+    "0.0",
+    "0.020687127"
+  ],
+  "27a19869-8c28-4d42-b233-a2cfdfd9abf0": [
+    "spec sheet",
+    "OTHER",
+    "0.0",
+    "0.009017224"
+  ],
+  "38f2d7d9-03c4-4d07-b31d-503dd54e5d10": [
+    "display",
+    "OTHER",
+    "0.0",
+    "0.020948365"
+  ],
+  "6ba3d891-441a-42a8-bd46-6989f9b393ba": [
+    "device",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.034110826"
+  ],
+  "da41d58e-8708-4aaf-8ec0-00c91d90e713": [
+    "resolution",
+    "OTHER",
+    "0.0",
+    "0.0050102235"
+  ],
+  "500d7d81-4b86-426d-86a7-f4207f9d1de8": [
+    "Special Event",
+    "EVENT",
+    "0.0",
+    "0.07828628"
+  ],
+  "261fc0b1-d47e-4fae-a83f-9c4bfb412efe": [
+    "pixel density",
+    "OTHER",
+    "0.0",
+    "0.015218228"
+  ],
+  "0d6f368d-2c9d-4b51-9199-52d61d8eead4": [
+    "lot",
+    "OTHER",
+    "0.0",
+    "0.011348591"
+  ]
+}
+INFO	2017-10-17 18:37:53,487	57774	root	[qtp1317692469-20]	----------------Noun combination sequences----------------
+INFO	2017-10-17 18:37:54,500	58787	root	[qtp1317692469-20]	{
+  "today": "time",
+  "Apple": "fruit",
+  "iPhone": "device",
+  "models": "information",
+  "Event": "information",
+  "Flint Center": "Not Found",
+  "Cupertino": "city",
+  "device": "resource",
+  "inch display": "Not Found",
+  "Plus": "setting",
+  "inch Retina HD display": "Not Found",
+  "pixel density": "feature",
+  "401ppi": "Not Found",
+  "resolution": "parameter",
+  "pixels": "information",
+  "lot": "information",
+  "screen": "equipment",
+  "spec sheet": "product documentation"
+}
+INFO	2017-10-17 18:37:55,511	59798	root	[qtp1317692469-20]	--------- Synatx Map ------------
+INFO	2017-10-17 18:37:56,519	60806	root	[qtp1317692469-20]	{1=[Earlier, ADV, Earlier], 2=[today, NOUN, today], 3=[,, PUNCT, ,], 4=[Apple, NOUN, Apple], 5=[unveiled, VERB, unveil], 6=[two, NUM, two], 7=[iPhone, NOUN, iPhone], 8=[6, NUM, 6], 9=[models, NOUN, model], 10=[at, ADP, at], 11=[its, PRON, its], 12=[Special, ADJ, Special], 13=[Event, NOUN, Event], 14=[in, ADP, in], 15=[Flint, NOUN, Flint], 16=[Center, NOUN, Center], 17=[,, PUNCT, ,], 18=[Cupertino, NOUN, Cupertino], 19=[., PUNCT, .], 20=[The, DET, The], 21=[first, ADJ, first], 22=[device, NOUN, device], 23=[,, PUNCT, ,], 24=[the, DET, the], 25=[iPhone, NOUN, iPhone], 26=[6, NUM, 6], 27=[comes, VERB, come], 28=[with, ADP, with], 29=[a, DET, a], 30=[4.7, NUM, 4.7], 31=[-, PUNCT, -], 32=[inch, NOUN, inch], 33=[display, NOUN, display], 34=[and, CONJ, and], 35=[the, DET, the], 36=[second, ADJ, second], 37=[,, PUNCT, ,], 38=[the, DET, the], 39=[iPhone, NOUN, iPhone], 40=[6, NUM, 6], 41=[Plus, NOUN, Plus], 42=[,, PUNCT, ,], 43=[comes, VERB, come], 44=[with, ADP, with], 45=[a, DET, a], 46=[5.5, NUM, 5.5], 47=[-, PUNCT, -], 48=[inch, NOUN, inch], 49=[display, NOUN, display], 50=[., PUNCT, .], 51=[The, DET, The], 52=[iPhone, NOUN, iPhone], 53=[6, NUM, 6], 54=[Plus, NOUN, Plus], 55=[has, VERB, have], 56=[a, DET, a], 57=[5.5, NUM, 5.5], 58=[-, PUNCT, -], 59=[inch, NOUN, inch], 60=[Retina, NOUN, Retina], 61=[HD, NOUN, HD], 62=[display, NOUN, display], 63=[,, PUNCT, ,], 64=[with, ADP, with], 65=[a, DET, a], 66=[pixel, NOUN, pixel], 67=[density, NOUN, density], 68=[of, ADP, of], 69=[401ppi, NOUN, 401ppi], 70=[and, CONJ, and], 71=[a, DET, a], 72=[resolution, NOUN, resolution], 73=[of, ADP, of], 74=[1920, NUM, 1920], 75=[x, X, x], 76=[1080, NUM, 1080], 77=[pixels, NOUN, pixel], 78=[., PUNCT, .], 79=[But, CONJ, But], 80=[there, DET, there], 81=[’s, VERB, be], 82=[a, DET, a], 83=[lot, NOUN, lot], 84=[more, ADJ, more], 85=[to, ADP, to], 86=[the, DET, the], 87=[iPhone, NOUN, iPhone], 88=[6, NUM, 6], 89=[Plus, NOUN, Plus], 90=[than, ADP, than], 91=[just, ADV, just], 92=[its, PRON, its], 93=[screen, NOUN, screen], 94=[., PUNCT, .], 95=[Here, ADV, Here], 96=[’s, VERB, be], 97=[the, DET, the], 98=[full, ADJ, full], 99=[spec, NOUN, spec], 100=[sheet, NOUN, sheet], 101=[of, ADP, of], 102=[the, DET, the], 103=[iPhone, NOUN, iPhone], 104=[6, NUM, 6], 105=[Plus, NOUN, Plus], 106=[., PUNCT, .]}
+INFO	2017-10-17 18:37:57,530	61817	root	[qtp1317692469-20]	--------- finalEntityTaggedMap ------------
+INFO	2017-10-17 18:37:58,552	62839	root	[qtp1317692469-20]	{1=[Cupertino, 0.0, 0.030619213, LOCATION, Cupertino, city], 2=[Apple, 0.0, 0.34628057, ORGANIZATION, Apple, fruit], 3=[second, 0.0, 0.016495448, OTHER], 4=[Retina HD display, 0.0, 0.019088581, OTHER, inch Retina HD display, Not Found], 5=[iPhone 6 Plus, 0.0, 0.03367175, ORGANIZATION], 6=[iPhone 6, 0.0, 0.17305742, CONSUMER_GOOD], 7=[Flint Center, 0.0, 0.030619213, LOCATION, Flint Center, Not Found], 8=[screen, 0.0, 0.011348591, OTHER, screen, equipment], 9=[models, 0.0, 0.12868936, CONSUMER_GOOD, models, information], 10=[display, 0.0, 0.020687127, OTHER, inch display, Not Found], 11=[spec sheet, 0.0, 0.009017224, OTHER, spec sheet, product documentation], 12=[display, 0.0, 0.020948365, OTHER, inch display, Not Found], 13=[device, 0.0, 0.034110826, CONSUMER_GOOD, device, resource], 14=[resolution, 0.0, 0.0050102235, OTHER, resolution, parameter], 15=[Special Event, 0.0, 0.07828628, EVENT], 16=[pixel density, 0.0, 0.015218228, OTHER, pixel density, feature], 17=[lot, 0.0, 0.011348591, OTHER, lot, information]}
+INFO	2017-10-17 18:37:59,647	63934	root	[qtp1317692469-20]	----------------Feature understanding----------------
+INFO	2017-10-17 18:38:00,674	64961	root	[qtp1317692469-20]	{
+  "mainEntity": "IPhone 6S",
+  "featureMap": {}
+}
+INFO	2017-10-17 18:50:56,183	0	root	[qtp339925473-20]	----------------Category Map----------------
+INFO	2017-10-17 18:50:56,194	11	root	[qtp339925473-20]	{
+  "Internet \u0026 Telecom": 0.97
+}
+INFO	2017-10-17 18:50:56,767	584	root	[qtp339925473-20]	----------------Google NLP Entity List----------------
+INFO	2017-10-17 18:50:56,774	591	root	[qtp339925473-20]	{
+  "ff5c4b7f-c779-440e-8dc7-43c2a3785edc": [
+    "Flint Center",
+    "LOCATION",
+    "0.0",
+    "0.030619213"
+  ],
+  "a5b722ec-9065-4506-ab89-28f51082a2f9": [
+    "Retina HD display",
+    "OTHER",
+    "0.0",
+    "0.019088581"
+  ],
+  "e2cd9f48-3ec6-4a6a-b39e-c251f210b9a2": [
+    "Special Event",
+    "EVENT",
+    "0.0",
+    "0.07828628"
+  ],
+  "db2a55c0-07a3-4d1c-82da-69093befa61b": [
+    "iPhone 6 Plus",
+    "ORGANIZATION",
+    "0.0",
+    "0.03367175"
+  ],
+  "d4a75953-d9e8-476d-b338-5203c17c7941": [
+    "screen",
+    "OTHER",
+    "0.0",
+    "0.011348591"
+  ],
+  "3ed51fe8-503d-49d8-beef-aff45498ead0": [
+    "Apple",
+    "ORGANIZATION",
+    "0.0",
+    "0.34628057"
+  ],
+  "85e07be3-3a11-45fb-a9f3-09006ad3ed4e": [
+    "second",
+    "OTHER",
+    "0.0",
+    "0.016495448"
+  ],
+  "acd30a20-d5cb-49f0-b69b-6855aac29a0b": [
+    "display",
+    "OTHER",
+    "0.0",
+    "0.020687127"
+  ],
+  "64447dd8-c0e6-47c4-8cd3-5aaf635a0cc9": [
+    "pixel density",
+    "OTHER",
+    "0.0",
+    "0.015218228"
+  ],
+  "068ec47a-d1a6-432c-bfab-40d2483d809e": [
+    "device",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.034110826"
+  ],
+  "6ea25fd7-6339-41d8-8a4b-a0f07bd8563f": [
+    "display",
+    "OTHER",
+    "0.0",
+    "0.020948365"
+  ],
+  "d83dfe1d-7566-4a76-97e1-0f3e098a2785": [
+    "spec sheet",
+    "OTHER",
+    "0.0",
+    "0.009017224"
+  ],
+  "120f970a-ea7f-4f75-8a6e-228bf83dd09d": [
+    "models",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.12868936"
+  ],
+  "7e816f9c-c427-40fd-b8ab-9dd2f7dc37cb": [
+    "lot",
+    "OTHER",
+    "0.0",
+    "0.011348591"
+  ],
+  "d30d08da-4334-4574-8704-f6800ce7fb3a": [
+    "iPhone 6",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.17305742"
+  ],
+  "3efa1643-5f20-42b5-a53b-037116418ab9": [
+    "Cupertino",
+    "LOCATION",
+    "0.0",
+    "0.030619213"
+  ],
+  "5cd71f9a-07db-4a46-a25d-6e5c3ca7b77f": [
+    "resolution",
+    "OTHER",
+    "0.0",
+    "0.0050102235"
+  ]
+}
+INFO	2017-10-17 18:51:53,461	57278	root	[qtp339925473-20]	----------------Noun combination sequences----------------
+INFO	2017-10-17 18:51:53,468	57285	root	[qtp339925473-20]	{
+  "today": "time",
+  "Apple": "fruit",
+  "iPhone": "device",
+  "models": "information",
+  "Event": "information",
+  "Flint Center": "Not Found",
+  "Cupertino": "city",
+  "device": "resource",
+  "inch display": "Not Found",
+  "Plus": "setting",
+  "inch Retina HD display": "Not Found",
+  "pixel density": "feature",
+  "401ppi": "Not Found",
+  "resolution": "parameter",
+  "pixels": "information",
+  "lot": "information",
+  "screen": "equipment",
+  "spec sheet": "product documentation"
+}
+INFO	2017-10-17 18:51:53,474	57291	root	[qtp339925473-20]	--------- Synatx Map ------------
+INFO	2017-10-17 18:51:53,480	57297	root	[qtp339925473-20]	{1=[Earlier, ADV, Earlier], 2=[today, NOUN, today], 3=[,, PUNCT, ,], 4=[Apple, NOUN, Apple], 5=[unveiled, VERB, unveil], 6=[two, NUM, two], 7=[iPhone, NOUN, iPhone], 8=[6, NUM, 6], 9=[models, NOUN, model], 10=[at, ADP, at], 11=[its, PRON, its], 12=[Special, ADJ, Special], 13=[Event, NOUN, Event], 14=[in, ADP, in], 15=[Flint, NOUN, Flint], 16=[Center, NOUN, Center], 17=[,, PUNCT, ,], 18=[Cupertino, NOUN, Cupertino], 19=[., PUNCT, .], 20=[The, DET, The], 21=[first, ADJ, first], 22=[device, NOUN, device], 23=[,, PUNCT, ,], 24=[the, DET, the], 25=[iPhone, NOUN, iPhone], 26=[6, NUM, 6], 27=[comes, VERB, come], 28=[with, ADP, with], 29=[a, DET, a], 30=[4.7, NUM, 4.7], 31=[-, PUNCT, -], 32=[inch, NOUN, inch], 33=[display, NOUN, display], 34=[and, CONJ, and], 35=[the, DET, the], 36=[second, ADJ, second], 37=[,, PUNCT, ,], 38=[the, DET, the], 39=[iPhone, NOUN, iPhone], 40=[6, NUM, 6], 41=[Plus, NOUN, Plus], 42=[,, PUNCT, ,], 43=[comes, VERB, come], 44=[with, ADP, with], 45=[a, DET, a], 46=[5.5, NUM, 5.5], 47=[-, PUNCT, -], 48=[inch, NOUN, inch], 49=[display, NOUN, display], 50=[., PUNCT, .], 51=[The, DET, The], 52=[iPhone, NOUN, iPhone], 53=[6, NUM, 6], 54=[Plus, NOUN, Plus], 55=[has, VERB, have], 56=[a, DET, a], 57=[5.5, NUM, 5.5], 58=[-, PUNCT, -], 59=[inch, NOUN, inch], 60=[Retina, NOUN, Retina], 61=[HD, NOUN, HD], 62=[display, NOUN, display], 63=[,, PUNCT, ,], 64=[with, ADP, with], 65=[a, DET, a], 66=[pixel, NOUN, pixel], 67=[density, NOUN, density], 68=[of, ADP, of], 69=[401ppi, NOUN, 401ppi], 70=[and, CONJ, and], 71=[a, DET, a], 72=[resolution, NOUN, resolution], 73=[of, ADP, of], 74=[1920, NUM, 1920], 75=[x, X, x], 76=[1080, NUM, 1080], 77=[pixels, NOUN, pixel], 78=[., PUNCT, .], 79=[But, CONJ, But], 80=[there, DET, there], 81=[’s, VERB, be], 82=[a, DET, a], 83=[lot, NOUN, lot], 84=[more, ADJ, more], 85=[to, ADP, to], 86=[the, DET, the], 87=[iPhone, NOUN, iPhone], 88=[6, NUM, 6], 89=[Plus, NOUN, Plus], 90=[than, ADP, than], 91=[just, ADV, just], 92=[its, PRON, its], 93=[screen, NOUN, screen], 94=[., PUNCT, .], 95=[Here, ADV, Here], 96=[’s, VERB, be], 97=[the, DET, the], 98=[full, ADJ, full], 99=[spec, NOUN, spec], 100=[sheet, NOUN, sheet], 101=[of, ADP, of], 102=[the, DET, the], 103=[iPhone, NOUN, iPhone], 104=[6, NUM, 6], 105=[Plus, NOUN, Plus], 106=[., PUNCT, .]}
+INFO	2017-10-17 18:51:53,486	57303	root	[qtp339925473-20]	--------- finalEntityTaggedMap ------------
+INFO	2017-10-17 18:51:53,492	57309	root	[qtp339925473-20]	{1=[Flint Center, 0.0, 0.030619213, LOCATION, Flint Center, Not Found], 2=[Retina HD display, 0.0, 0.019088581, OTHER, inch Retina HD display, Not Found], 3=[Special Event, 0.0, 0.07828628, EVENT], 4=[iPhone 6 Plus, 0.0, 0.03367175, ORGANIZATION], 5=[screen, 0.0, 0.011348591, OTHER, screen, equipment], 6=[Apple, 0.0, 0.34628057, ORGANIZATION, Apple, fruit], 7=[second, 0.0, 0.016495448, OTHER], 8=[display, 0.0, 0.020687127, OTHER, inch display, Not Found], 9=[pixel density, 0.0, 0.015218228, OTHER, pixel density, feature], 10=[device, 0.0, 0.034110826, CONSUMER_GOOD, device, resource], 11=[display, 0.0, 0.020948365, OTHER, inch display, Not Found], 12=[spec sheet, 0.0, 0.009017224, OTHER, spec sheet, product documentation], 13=[models, 0.0, 0.12868936, CONSUMER_GOOD, models, information], 14=[lot, 0.0, 0.011348591, OTHER, lot, information], 15=[iPhone 6, 0.0, 0.17305742, CONSUMER_GOOD], 16=[Cupertino, 0.0, 0.030619213, LOCATION, Cupertino, city], 17=[resolution, 0.0, 0.0050102235, OTHER, resolution, parameter]}
+INFO	2017-10-17 18:51:53,507	57324	root	[qtp339925473-20]	----------------Feature understanding----------------
+INFO	2017-10-17 18:51:53,514	57331	root	[qtp339925473-20]	{
+  "mainEntity": "IPhone 6S",
+  "featureMap": {}
+}
+INFO	2017-10-17 19:11:11,995	0	root	[qtp1205686495-21]	----------------Category Map----------------
+INFO	2017-10-17 19:11:12,016	21	root	[qtp1205686495-21]	{
+  "Internet \u0026 Telecom": 0.97
+}
+INFO	2017-10-17 19:11:12,615	620	root	[qtp1205686495-21]	----------------Google NLP Entity List----------------
+INFO	2017-10-17 19:11:12,637	642	root	[qtp1205686495-21]	{
+  "8046d6e8-fb38-4271-873c-fce9fb16cd7d": [
+    "screen",
+    "OTHER",
+    "0.0",
+    "0.011348591"
+  ],
+  "ba54b4d7-1597-48eb-b7d1-68bc0c9014c6": [
+    "resolution",
+    "OTHER",
+    "0.0",
+    "0.0050102235"
+  ],
+  "7f5bb5ad-9fbb-499c-8b6f-3440a8f2995b": [
+    "second",
+    "OTHER",
+    "0.0",
+    "0.016495448"
+  ],
+  "9e0a833d-cdef-419d-acce-8f952f46c803": [
+    "lot",
+    "OTHER",
+    "0.0",
+    "0.011348591"
+  ],
+  "512a8ece-7525-46d9-939c-cf6d763f5856": [
+    "spec sheet",
+    "OTHER",
+    "0.0",
+    "0.009017224"
+  ],
+  "b80abbdf-e29e-444a-8209-e8e66de73f80": [
+    "display",
+    "OTHER",
+    "0.0",
+    "0.020687127"
+  ],
+  "22c027f5-9ba1-4692-b51f-11873e8fefa9": [
+    "iPhone 6 Plus",
+    "ORGANIZATION",
+    "0.0",
+    "0.03367175"
+  ],
+  "aea00c04-d2a1-4e08-8312-5abae5765d0b": [
+    "display",
+    "OTHER",
+    "0.0",
+    "0.020948365"
+  ],
+  "4282b9bb-558f-49cf-8cec-ee487ac12edc": [
+    "iPhone 6",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.17305742"
+  ],
+  "57a4a165-82c5-45f6-8b33-2cb190bca47e": [
+    "Special Event",
+    "EVENT",
+    "0.0",
+    "0.07828628"
+  ],
+  "fec6f9b2-6c21-4c27-bed1-9821fc78f901": [
+    "Cupertino",
+    "LOCATION",
+    "0.0",
+    "0.030619213"
+  ],
+  "cd13b8c5-cb82-479d-830f-05704ab5e63a": [
+    "Apple",
+    "ORGANIZATION",
+    "0.0",
+    "0.34628057"
+  ],
+  "d234535e-39b8-4929-945e-b10edd66b1c4": [
+    "pixel density",
+    "OTHER",
+    "0.0",
+    "0.015218228"
+  ],
+  "67d71941-a34d-400c-a3c6-ee69c66fd034": [
+    "Flint Center",
+    "LOCATION",
+    "0.0",
+    "0.030619213"
+  ],
+  "9f136a07-4c0e-4032-9053-655d87d2b8cc": [
+    "Retina HD display",
+    "OTHER",
+    "0.0",
+    "0.019088581"
+  ],
+  "c8b2c3a0-fd80-4395-80a6-a0b21042b53a": [
+    "models",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.12868936"
+  ],
+  "86bbf28b-977d-40a8-b5b1-fc903f04ebfc": [
+    "device",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.034110826"
+  ]
+}
+INFO	2017-10-17 19:12:22,744	70749	root	[qtp1205686495-21]	----------------Noun combination sequences----------------
+INFO	2017-10-17 19:12:22,749	70754	root	[qtp1205686495-21]	{
+  "today": "time",
+  "Apple": "fruit",
+  "iPhone": "device",
+  "models": "information",
+  "Event": "information",
+  "Flint Center": "Not Found",
+  "Cupertino": "city",
+  "device": "resource",
+  "inch display": "Not Found",
+  "Plus": "setting",
+  "inch Retina HD display": "Not Found",
+  "pixel density": "feature",
+  "401ppi": "Not Found",
+  "resolution": "parameter",
+  "pixels": "information",
+  "lot": "information",
+  "screen": "equipment",
+  "spec sheet": "product documentation"
+}
+INFO	2017-10-17 19:12:22,759	70764	root	[qtp1205686495-21]	--------- Synatx Map ------------
+INFO	2017-10-17 19:12:22,769	70774	root	[qtp1205686495-21]	{1=[Earlier, ADV, Earlier], 2=[today, NOUN, today], 3=[,, PUNCT, ,], 4=[Apple, NOUN, Apple], 5=[unveiled, VERB, unveil], 6=[two, NUM, two], 7=[iPhone, NOUN, iPhone], 8=[6, NUM, 6], 9=[models, NOUN, model], 10=[at, ADP, at], 11=[its, PRON, its], 12=[Special, ADJ, Special], 13=[Event, NOUN, Event], 14=[in, ADP, in], 15=[Flint, NOUN, Flint], 16=[Center, NOUN, Center], 17=[,, PUNCT, ,], 18=[Cupertino, NOUN, Cupertino], 19=[., PUNCT, .], 20=[The, DET, The], 21=[first, ADJ, first], 22=[device, NOUN, device], 23=[,, PUNCT, ,], 24=[the, DET, the], 25=[iPhone, NOUN, iPhone], 26=[6, NUM, 6], 27=[comes, VERB, come], 28=[with, ADP, with], 29=[a, DET, a], 30=[4.7, NUM, 4.7], 31=[-, PUNCT, -], 32=[inch, NOUN, inch], 33=[display, NOUN, display], 34=[and, CONJ, and], 35=[the, DET, the], 36=[second, ADJ, second], 37=[,, PUNCT, ,], 38=[the, DET, the], 39=[iPhone, NOUN, iPhone], 40=[6, NUM, 6], 41=[Plus, NOUN, Plus], 42=[,, PUNCT, ,], 43=[comes, VERB, come], 44=[with, ADP, with], 45=[a, DET, a], 46=[5.5, NUM, 5.5], 47=[-, PUNCT, -], 48=[inch, NOUN, inch], 49=[display, NOUN, display], 50=[., PUNCT, .], 51=[The, DET, The], 52=[iPhone, NOUN, iPhone], 53=[6, NUM, 6], 54=[Plus, NOUN, Plus], 55=[has, VERB, have], 56=[a, DET, a], 57=[5.5, NUM, 5.5], 58=[-, PUNCT, -], 59=[inch, NOUN, inch], 60=[Retina, NOUN, Retina], 61=[HD, NOUN, HD], 62=[display, NOUN, display], 63=[,, PUNCT, ,], 64=[with, ADP, with], 65=[a, DET, a], 66=[pixel, NOUN, pixel], 67=[density, NOUN, density], 68=[of, ADP, of], 69=[401ppi, NOUN, 401ppi], 70=[and, CONJ, and], 71=[a, DET, a], 72=[resolution, NOUN, resolution], 73=[of, ADP, of], 74=[1920, NUM, 1920], 75=[x, X, x], 76=[1080, NUM, 1080], 77=[pixels, NOUN, pixel], 78=[., PUNCT, .], 79=[But, CONJ, But], 80=[there, DET, there], 81=[’s, VERB, be], 82=[a, DET, a], 83=[lot, NOUN, lot], 84=[more, ADJ, more], 85=[to, ADP, to], 86=[the, DET, the], 87=[iPhone, NOUN, iPhone], 88=[6, NUM, 6], 89=[Plus, NOUN, Plus], 90=[than, ADP, than], 91=[just, ADV, just], 92=[its, PRON, its], 93=[screen, NOUN, screen], 94=[., PUNCT, .], 95=[Here, ADV, Here], 96=[’s, VERB, be], 97=[the, DET, the], 98=[full, ADJ, full], 99=[spec, NOUN, spec], 100=[sheet, NOUN, sheet], 101=[of, ADP, of], 102=[the, DET, the], 103=[iPhone, NOUN, iPhone], 104=[6, NUM, 6], 105=[Plus, NOUN, Plus], 106=[., PUNCT, .]}
+INFO	2017-10-17 19:12:22,774	70779	root	[qtp1205686495-21]	--------- finalEntityTaggedMap ------------
+INFO	2017-10-17 19:12:22,784	70789	root	[qtp1205686495-21]	{1=[screen, 0.0, 0.011348591, OTHER, screen, equipment], 2=[resolution, 0.0, 0.0050102235, OTHER, resolution, parameter], 3=[second, 0.0, 0.016495448, OTHER], 4=[lot, 0.0, 0.011348591, OTHER, lot, information], 5=[spec sheet, 0.0, 0.009017224, OTHER, spec sheet, product documentation], 6=[display, 0.0, 0.020687127, OTHER, inch display, Not Found], 7=[iPhone 6 Plus, 0.0, 0.03367175, ORGANIZATION], 8=[display, 0.0, 0.020948365, OTHER, inch display, Not Found], 9=[iPhone 6, 0.0, 0.17305742, CONSUMER_GOOD], 10=[Special Event, 0.0, 0.07828628, EVENT], 11=[Cupertino, 0.0, 0.030619213, LOCATION, Cupertino, city], 12=[Apple, 0.0, 0.34628057, ORGANIZATION, Apple, fruit], 13=[pixel density, 0.0, 0.015218228, OTHER, pixel density, feature], 14=[Flint Center, 0.0, 0.030619213, LOCATION, Flint Center, Not Found], 15=[Retina HD display, 0.0, 0.019088581, OTHER, inch Retina HD display, Not Found], 16=[models, 0.0, 0.12868936, CONSUMER_GOOD, models, information], 17=[device, 0.0, 0.034110826, CONSUMER_GOOD, device, resource]}
+INFO	2017-10-17 19:13:52,341	160346	root	[qtp1205686495-21]	----------------Feature understanding----------------
+INFO	2017-10-17 19:13:52,351	160356	root	[qtp1205686495-21]	{
+  "mainEntity": "IPhone 6S",
+  "featureMap": {}
+}
+INFO	2017-10-17 19:15:50,492	0	root	[qtp1730999272-19]	----------------Category Map----------------
+INFO	2017-10-17 19:15:50,502	10	root	[qtp1730999272-19]	{
+  "Internet \u0026 Telecom": 0.97
+}
+INFO	2017-10-17 19:15:51,070	578	root	[qtp1730999272-19]	----------------Google NLP Entity List----------------
+INFO	2017-10-17 19:15:51,078	586	root	[qtp1730999272-19]	{
+  "a581dbe7-6c7e-467d-a4d1-18018039fa80": [
+    "models",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.12868936"
+  ],
+  "bc786f76-14fe-4913-8597-7cc80107c0ce": [
+    "lot",
+    "OTHER",
+    "0.0",
+    "0.011348591"
+  ],
+  "4f8a7235-fe3a-4b57-b779-694cc38e7a68": [
+    "second",
+    "OTHER",
+    "0.0",
+    "0.016495448"
+  ],
+  "fb0fb0a4-b74d-4a3c-9958-a001793c4888": [
+    "Apple",
+    "ORGANIZATION",
+    "0.0",
+    "0.34628057"
+  ],
+  "7d8aa5d5-4821-4b46-a6ca-d1af2d1165f5": [
+    "device",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.034110826"
+  ],
+  "5da0c3a8-197d-49a5-a6d6-e3cdc83bc0b5": [
+    "Flint Center",
+    "LOCATION",
+    "0.0",
+    "0.030619213"
+  ],
+  "1a012ec6-5ca2-4bc6-91a9-d93e08e85700": [
+    "iPhone 6",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.17305742"
+  ],
+  "ca5f287e-d048-40c0-a4b9-5d4160470309": [
+    "pixel density",
+    "OTHER",
+    "0.0",
+    "0.015218228"
+  ],
+  "2114be18-09f2-4646-9f82-f2c9f94f4f21": [
+    "resolution",
+    "OTHER",
+    "0.0",
+    "0.0050102235"
+  ],
+  "cbf89d98-030a-44d1-ba62-b483375e925d": [
+    "display",
+    "OTHER",
+    "0.0",
+    "0.020948365"
+  ],
+  "98c557ab-3c0d-4cb9-8bc4-9e4f31cc2505": [
+    "display",
+    "OTHER",
+    "0.0",
+    "0.020687127"
+  ],
+  "5c8bef42-e1d2-482a-8d3c-8956d880faaf": [
+    "iPhone 6 Plus",
+    "ORGANIZATION",
+    "0.0",
+    "0.03367175"
+  ],
+  "31f8086f-1ec4-43eb-a86b-241a1d3dfb42": [
+    "Special Event",
+    "EVENT",
+    "0.0",
+    "0.07828628"
+  ],
+  "94e96d59-0141-4e2e-96cb-60b63b3b47a3": [
+    "Retina HD display",
+    "OTHER",
+    "0.0",
+    "0.019088581"
+  ],
+  "e9f3c617-5307-4c69-93cd-50da3dece415": [
+    "screen",
+    "OTHER",
+    "0.0",
+    "0.011348591"
+  ],
+  "1f5f0824-8eeb-4113-816f-8ff5a463c962": [
+    "spec sheet",
+    "OTHER",
+    "0.0",
+    "0.009017224"
+  ],
+  "6e5e4548-b63f-480c-a20c-280422c907f7": [
+    "Cupertino",
+    "LOCATION",
+    "0.0",
+    "0.030619213"
+  ]
+}
+INFO	2017-10-17 19:16:43,651	53159	root	[qtp1730999272-19]	----------------Noun combination sequences----------------
+INFO	2017-10-17 19:16:43,656	53164	root	[qtp1730999272-19]	{
+  "today": "time",
+  "Apple": "fruit",
+  "iPhone": "device",
+  "models": "information",
+  "Event": "information",
+  "Flint Center": "Not Found",
+  "Cupertino": "city",
+  "device": "resource",
+  "inch display": "Not Found",
+  "Plus": "setting",
+  "inch Retina HD display": "Not Found",
+  "pixel density": "feature",
+  "401ppi": "Not Found",
+  "resolution": "parameter",
+  "pixels": "information",
+  "lot": "information",
+  "screen": "equipment",
+  "spec sheet": "product documentation"
+}
+INFO	2017-10-17 19:16:43,661	53169	root	[qtp1730999272-19]	--------- Synatx Map ------------
+INFO	2017-10-17 19:16:43,666	53174	root	[qtp1730999272-19]	{1=[Earlier, ADV, Earlier], 2=[today, NOUN, today], 3=[,, PUNCT, ,], 4=[Apple, NOUN, Apple], 5=[unveiled, VERB, unveil], 6=[two, NUM, two], 7=[iPhone, NOUN, iPhone], 8=[6, NUM, 6], 9=[models, NOUN, model], 10=[at, ADP, at], 11=[its, PRON, its], 12=[Special, ADJ, Special], 13=[Event, NOUN, Event], 14=[in, ADP, in], 15=[Flint, NOUN, Flint], 16=[Center, NOUN, Center], 17=[,, PUNCT, ,], 18=[Cupertino, NOUN, Cupertino], 19=[., PUNCT, .], 20=[The, DET, The], 21=[first, ADJ, first], 22=[device, NOUN, device], 23=[,, PUNCT, ,], 24=[the, DET, the], 25=[iPhone, NOUN, iPhone], 26=[6, NUM, 6], 27=[comes, VERB, come], 28=[with, ADP, with], 29=[a, DET, a], 30=[4.7, NUM, 4.7], 31=[-, PUNCT, -], 32=[inch, NOUN, inch], 33=[display, NOUN, display], 34=[and, CONJ, and], 35=[the, DET, the], 36=[second, ADJ, second], 37=[,, PUNCT, ,], 38=[the, DET, the], 39=[iPhone, NOUN, iPhone], 40=[6, NUM, 6], 41=[Plus, NOUN, Plus], 42=[,, PUNCT, ,], 43=[comes, VERB, come], 44=[with, ADP, with], 45=[a, DET, a], 46=[5.5, NUM, 5.5], 47=[-, PUNCT, -], 48=[inch, NOUN, inch], 49=[display, NOUN, display], 50=[., PUNCT, .], 51=[The, DET, The], 52=[iPhone, NOUN, iPhone], 53=[6, NUM, 6], 54=[Plus, NOUN, Plus], 55=[has, VERB, have], 56=[a, DET, a], 57=[5.5, NUM, 5.5], 58=[-, PUNCT, -], 59=[inch, NOUN, inch], 60=[Retina, NOUN, Retina], 61=[HD, NOUN, HD], 62=[display, NOUN, display], 63=[,, PUNCT, ,], 64=[with, ADP, with], 65=[a, DET, a], 66=[pixel, NOUN, pixel], 67=[density, NOUN, density], 68=[of, ADP, of], 69=[401ppi, NOUN, 401ppi], 70=[and, CONJ, and], 71=[a, DET, a], 72=[resolution, NOUN, resolution], 73=[of, ADP, of], 74=[1920, NUM, 1920], 75=[x, X, x], 76=[1080, NUM, 1080], 77=[pixels, NOUN, pixel], 78=[., PUNCT, .], 79=[But, CONJ, But], 80=[there, DET, there], 81=[’s, VERB, be], 82=[a, DET, a], 83=[lot, NOUN, lot], 84=[more, ADJ, more], 85=[to, ADP, to], 86=[the, DET, the], 87=[iPhone, NOUN, iPhone], 88=[6, NUM, 6], 89=[Plus, NOUN, Plus], 90=[than, ADP, than], 91=[just, ADV, just], 92=[its, PRON, its], 93=[screen, NOUN, screen], 94=[., PUNCT, .], 95=[Here, ADV, Here], 96=[’s, VERB, be], 97=[the, DET, the], 98=[full, ADJ, full], 99=[spec, NOUN, spec], 100=[sheet, NOUN, sheet], 101=[of, ADP, of], 102=[the, DET, the], 103=[iPhone, NOUN, iPhone], 104=[6, NUM, 6], 105=[Plus, NOUN, Plus], 106=[., PUNCT, .]}
+INFO	2017-10-17 19:16:43,671	53179	root	[qtp1730999272-19]	--------- finalEntityTaggedMap ------------
+INFO	2017-10-17 19:16:43,676	53184	root	[qtp1730999272-19]	{1=[models, 0.0, 0.12868936, CONSUMER_GOOD, models, information], 2=[lot, 0.0, 0.011348591, OTHER, lot, information], 3=[second, 0.0, 0.016495448, OTHER], 4=[Apple, 0.0, 0.34628057, ORGANIZATION, Apple, fruit], 5=[device, 0.0, 0.034110826, CONSUMER_GOOD, device, resource], 6=[Flint Center, 0.0, 0.030619213, LOCATION, Flint Center, Not Found], 7=[iPhone 6, 0.0, 0.17305742, CONSUMER_GOOD], 8=[pixel density, 0.0, 0.015218228, OTHER, pixel density, feature], 9=[resolution, 0.0, 0.0050102235, OTHER, resolution, parameter], 10=[display, 0.0, 0.020948365, OTHER, inch display, Not Found], 11=[display, 0.0, 0.020687127, OTHER, inch display, Not Found], 12=[iPhone 6 Plus, 0.0, 0.03367175, ORGANIZATION], 13=[Special Event, 0.0, 0.07828628, EVENT], 14=[Retina HD display, 0.0, 0.019088581, OTHER, inch Retina HD display, Not Found], 15=[screen, 0.0, 0.011348591, OTHER, screen, equipment], 16=[spec sheet, 0.0, 0.009017224, OTHER, spec sheet, product documentation], 17=[Cupertino, 0.0, 0.030619213, LOCATION, Cupertino, city]}
+INFO	2017-10-17 19:16:49,427	58935	root	[qtp1730999272-19]	----------------Feature understanding----------------
+INFO	2017-10-17 19:16:49,433	58941	root	[qtp1730999272-19]	{
+  "mainEntity": "IPhone 6S",
+  "featureMap": {
+    "pixel density": "feature",
+    "Retina HD display": "spec"
+  }
+}

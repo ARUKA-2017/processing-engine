@@ -140,8 +140,8 @@ public class EntityExtractor {
         Logger.Log("--------- finalEntityTaggedMap ------------");
         Logger.Log(finalEntityTaggedMap.toString());
 
-//        outputMap.put("syntaxTagMap", syntaxTagMap);
-//        outputMap.put("finalEntityTaggedMap", finalEntityTaggedMap);
+        outputMap.put("syntaxTagMap", syntaxTagMap);
+        outputMap.put("finalEntityTaggedMap", finalEntityTaggedMap);
         return outputMap;
     }
 
