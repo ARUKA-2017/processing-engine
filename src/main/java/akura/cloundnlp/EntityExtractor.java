@@ -208,7 +208,7 @@ public class EntityExtractor {
      */
     public List<FinalEntityTagDto> prioritizeEntities(List<FinalEntityTagDto> finalEntityTagDtos) {
         Collections.sort(finalEntityTagDtos, (object1, object2) -> (int)(object1.getSalience()*10000-object2.getSalience()*10000));
-//        System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(finalEntityTagDtos));
+        System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(finalEntityTagDtos));
         return finalEntityTagDtos;
 //        return finalEntityTagDtos
 //                .stream()
@@ -261,7 +261,7 @@ public class EntityExtractor {
             iterator = finalEntityTagDtos.iterator();
         }
         System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(outputDtoList));
-        return outputDtoList;
+        return this.prioritizeEntities(outputDtoList);
     }
 
     /**

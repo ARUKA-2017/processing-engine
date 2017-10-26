@@ -34,6 +34,7 @@ public class SpecificationExtractor {
         specMap.put("feature", new LinkedList<>());
         specMap.put("spec", new LinkedList<>());
         specMap.put("device", new LinkedList<>());
+        specMap.put("phone", new LinkedList<>());
     }
 
     public SpecificationDto extractDomainsFromSentenceSyntax(List<FinalEntityTagDto> finalEntityTagDtoList){
@@ -70,7 +71,8 @@ public class SpecificationExtractor {
         for (FinalEntityTagDto finalEntityTagDto: finalEntityTagDtoList){
             if (finalEntityTagDto.getCategory().equalsIgnoreCase("CONSUMER_GOOD")
                     || finalEntityTagDto.getCategory().equalsIgnoreCase("ORGANIZATION")
-                    || finalEntityTagDto.getNounCombinationCategory().equalsIgnoreCase("device")){
+                    || finalEntityTagDto.getNounCombinationCategory().equalsIgnoreCase("device")
+                    || finalEntityTagDto.getNounCombinationCategory().equalsIgnoreCase("phone")){
 
                 for (MobileDataSet mobileDataSet: mobileDataSetList){
                     if (mobileDataSet.getName().toString().contains(finalEntityTagDto.getText())){
