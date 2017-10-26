@@ -195,7 +195,7 @@ public class EntityExtractor {
         ontologyMapDto.setFinalEntityTaggedList(constructAvgScores(prioritizeEntities(finalEntityTagDtos)));
 
         SpecificationExtractor specificationExtractor = new SpecificationExtractor();
-        SpecificationDto specificationDto = specificationExtractor.extractDomainsFromSentenceSyntax(finalEntityTagDtos, review.get("mainEntity").toString());
+        SpecificationDto specificationDto = specificationExtractor.extractDomainsFromSentenceSyntax(ontologyMapDto.getFinalEntityTaggedList());
         ontologyMapDto.setSpecificationDto(specificationDto);
 
         return ontologyMapDto;
@@ -207,15 +207,18 @@ public class EntityExtractor {
      * @param finalEntityTagDtos
      */
     public List<FinalEntityTagDto> prioritizeEntities(List<FinalEntityTagDto> finalEntityTagDtos) {
-        return finalEntityTagDtos
-                .stream()
-                .sorted(
-                        Comparator
-                                .comparing(
-                                        FinalEntityTagDto::getSalience
-                                ).reversed()
-                )
-                .collect(Collectors.toList());
+        Collections.sort(finalEntityTagDtos, (object1, object2) -> (int)(object1.getSalience()*10000-object2.getSalience()*10000));
+//        System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(finalEntityTagDtos));
+        return finalEntityTagDtos;
+//        return finalEntityTagDtos
+//                .stream()
+//                .sorted(
+//                        Comparator
+//                                .comparing(
+//                                        FinalEntityTagDto::getSalience
+//                                ).reversed()
+//                )
+//                .collect(Collectors.toList());
     }
 
     /**
@@ -240,7 +243,7 @@ public class EntityExtractor {
             int counter = 1;
             while (iterator.hasNext()) {
                 FinalEntityTagDto finalEntityTagDto1 = iterator.next();
-                if (entityName.equalsIgnoreCase(finalEntityTagDto1.getText()) || nounCombination.equalsIgnoreCase(finalEntityTagDto1.getNounCombination())) {
+                if (entityName.equalsIgnoreCase(finalEntityTagDto1.getText()) || (nounCombination.equalsIgnoreCase(finalEntityTagDto1.getNounCombination()) && !nounCombination.equals("") && !finalEntityTagDto1.getNounCombination().equals(""))) {
                     counter++;
                     sentiment = (sentiment + finalEntityTagDto1.getSentiment());
                     salience = (salience + finalEntityTagDto1.getSalience());
@@ -257,6 +260,7 @@ public class EntityExtractor {
             outputDtoList.add(temporaryDto);
             iterator = finalEntityTagDtos.iterator();
         }
+        System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(outputDtoList));
         return outputDtoList;
     }
 

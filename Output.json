@@ -1,16 +1,1880 @@
 [
   {
     "reviewId": "R23WVOVFL0VD8X",
-    "review": "Earlier today, Apple unveiled two iPhone 6 models at its Special Event in Flint Center, Cupertino.The first device, the iPhone 6 comes with a 4.7-inch display and the second, the iPhone 6 Plus, comes with a 5.5-inch display.The iPhone 6 Plus has a 5.5-inch Retina HD display, with a pixel density of 401ppi and a resolution of 1920 x 1080 pixels.But there’s a lot more to the iPhone 6 Plus than just its screen.Here’s the full spec sheet of the iPhone 6 Plus.",
+    "review": "iPhone 6S and iPhone 6S Plus (stylized and marketed as iPhone 6s and iPhone 6s Plus) are smartphones designed, developed and marketed by Apple Inc.They were announced on September 9, 2015, at the Bill Graham Civic Auditorium in San Francisco by Apple CEO Tim Cook, with pre-orders beginning September 12 and official release on September 25, 2015.The iPhone 6S and 6S Plus were succeeded by the iPhone 7 and iPhone 7 Plus in September 2016.The iPhone 6S has a similar design to the 6 but updated hardware, including a strengthened chassis and upgraded system-on-chip, a 12-megapixel camera, improved fingerprint recognition sensor, and LTE Advanced support.The iPhone 6S also introduces a new hardware feature known as \"3D Touch\", which enables pressure-sensitive touch inputs.iPhone 6S had a mostly positive reception.While performance and camera quality were praised by most reviewers, the addition of 3D Touch was liked by one critic for the potential of entirely new interface interactions, but disliked by another critic for not providing users with an expected intuitive response before actually using the feature.The battery life was criticized, and one reviewer asserted that IPhone 6\u0027s camera wasn\u0027t significantly better than the rest of the industry.The iPhone 6S set a new first-weekend sales record, selling 13 million models, up from 10 million for the iPhone 6 in the previous year.However, Apple saw its first-ever quarterly year-over-year decline in iPhone sales in the months after the launch, credited to a saturated smartphone market in Apple\u0027s biggest countries and a lack of iPhone purchases in developing countries.",
     "reviewRating": 1.0,
     "categoryMap": {
-      "Internet \u0026 Telecom": 0.97
+      "Computers \u0026 Electronics": 0.99
     },
-    "syntaxTagList": [],
-    "finalEntityTaggedList": [],
+    "syntaxTagList": [
+      {
+        "text": "iPhone",
+        "pos": "NOUN",
+        "lemma": "iPhone"
+      },
+      {
+        "text": "6S",
+        "pos": "NOUN",
+        "lemma": "6S"
+      },
+      {
+        "text": "and",
+        "pos": "CONJ",
+        "lemma": "and"
+      },
+      {
+        "text": "iPhone",
+        "pos": "NOUN",
+        "lemma": "iPhone"
+      },
+      {
+        "text": "6S",
+        "pos": "NOUN",
+        "lemma": "6S"
+      },
+      {
+        "text": "Plus",
+        "pos": "NOUN",
+        "lemma": "Plus"
+      },
+      {
+        "text": "(",
+        "pos": "PUNCT",
+        "lemma": "("
+      },
+      {
+        "text": "stylized",
+        "pos": "VERB",
+        "lemma": "stylize"
+      },
+      {
+        "text": "and",
+        "pos": "CONJ",
+        "lemma": "and"
+      },
+      {
+        "text": "marketed",
+        "pos": "VERB",
+        "lemma": "markete"
+      },
+      {
+        "text": "as",
+        "pos": "ADP",
+        "lemma": "as"
+      },
+      {
+        "text": "iPhone",
+        "pos": "NOUN",
+        "lemma": "iPhone"
+      },
+      {
+        "text": "6s",
+        "pos": "NOUN",
+        "lemma": "6"
+      },
+      {
+        "text": "and",
+        "pos": "CONJ",
+        "lemma": "and"
+      },
+      {
+        "text": "iPhone",
+        "pos": "NOUN",
+        "lemma": "iPhone"
+      },
+      {
+        "text": "6s",
+        "pos": "NOUN",
+        "lemma": "6"
+      },
+      {
+        "text": "Plus",
+        "pos": "NOUN",
+        "lemma": "Plus"
+      },
+      {
+        "text": ")",
+        "pos": "PUNCT",
+        "lemma": ")"
+      },
+      {
+        "text": "are",
+        "pos": "VERB",
+        "lemma": "be"
+      },
+      {
+        "text": "smartphones",
+        "pos": "NOUN",
+        "lemma": "smartphone"
+      },
+      {
+        "text": "designed",
+        "pos": "VERB",
+        "lemma": "design"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "developed",
+        "pos": "VERB",
+        "lemma": "develop"
+      },
+      {
+        "text": "and",
+        "pos": "CONJ",
+        "lemma": "and"
+      },
+      {
+        "text": "marketed",
+        "pos": "VERB",
+        "lemma": "markete"
+      },
+      {
+        "text": "by",
+        "pos": "ADP",
+        "lemma": "by"
+      },
+      {
+        "text": "Apple",
+        "pos": "NOUN",
+        "lemma": "Apple"
+      },
+      {
+        "text": "Inc.",
+        "pos": "NOUN",
+        "lemma": "Inc."
+      },
+      {
+        "text": "They",
+        "pos": "PRON",
+        "lemma": "They"
+      },
+      {
+        "text": "were",
+        "pos": "VERB",
+        "lemma": "be"
+      },
+      {
+        "text": "announced",
+        "pos": "VERB",
+        "lemma": "announce"
+      },
+      {
+        "text": "on",
+        "pos": "ADP",
+        "lemma": "on"
+      },
+      {
+        "text": "September",
+        "pos": "NOUN",
+        "lemma": "September"
+      },
+      {
+        "text": "9",
+        "pos": "NUM",
+        "lemma": "9"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "2015",
+        "pos": "NUM",
+        "lemma": "2015"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "at",
+        "pos": "ADP",
+        "lemma": "at"
+      },
+      {
+        "text": "the",
+        "pos": "DET",
+        "lemma": "the"
+      },
+      {
+        "text": "Bill",
+        "pos": "NOUN",
+        "lemma": "Bill"
+      },
+      {
+        "text": "Graham",
+        "pos": "NOUN",
+        "lemma": "Graham"
+      },
+      {
+        "text": "Civic",
+        "pos": "NOUN",
+        "lemma": "Civic"
+      },
+      {
+        "text": "Auditorium",
+        "pos": "NOUN",
+        "lemma": "Auditorium"
+      },
+      {
+        "text": "in",
+        "pos": "ADP",
+        "lemma": "in"
+      },
+      {
+        "text": "San",
+        "pos": "NOUN",
+        "lemma": "San"
+      },
+      {
+        "text": "Francisco",
+        "pos": "NOUN",
+        "lemma": "Francisco"
+      },
+      {
+        "text": "by",
+        "pos": "ADP",
+        "lemma": "by"
+      },
+      {
+        "text": "Apple",
+        "pos": "NOUN",
+        "lemma": "Apple"
+      },
+      {
+        "text": "CEO",
+        "pos": "NOUN",
+        "lemma": "CEO"
+      },
+      {
+        "text": "Tim",
+        "pos": "NOUN",
+        "lemma": "Tim"
+      },
+      {
+        "text": "Cook",
+        "pos": "NOUN",
+        "lemma": "Cook"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "with",
+        "pos": "ADP",
+        "lemma": "with"
+      },
+      {
+        "text": "pre-orders",
+        "pos": "NOUN",
+        "lemma": "pre-order"
+      },
+      {
+        "text": "beginning",
+        "pos": "VERB",
+        "lemma": "begin"
+      },
+      {
+        "text": "September",
+        "pos": "NOUN",
+        "lemma": "September"
+      },
+      {
+        "text": "12",
+        "pos": "NUM",
+        "lemma": "12"
+      },
+      {
+        "text": "and",
+        "pos": "CONJ",
+        "lemma": "and"
+      },
+      {
+        "text": "official",
+        "pos": "ADJ",
+        "lemma": "official"
+      },
+      {
+        "text": "release",
+        "pos": "NOUN",
+        "lemma": "release"
+      },
+      {
+        "text": "on",
+        "pos": "ADP",
+        "lemma": "on"
+      },
+      {
+        "text": "September",
+        "pos": "NOUN",
+        "lemma": "September"
+      },
+      {
+        "text": "25",
+        "pos": "NUM",
+        "lemma": "25"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "2015.",
+        "pos": "NUM",
+        "lemma": "2015."
+      },
+      {
+        "text": "The",
+        "pos": "DET",
+        "lemma": "The"
+      },
+      {
+        "text": "iPhone",
+        "pos": "NOUN",
+        "lemma": "iPhone"
+      },
+      {
+        "text": "6S",
+        "pos": "NOUN",
+        "lemma": "6S"
+      },
+      {
+        "text": "and",
+        "pos": "CONJ",
+        "lemma": "and"
+      },
+      {
+        "text": "6S",
+        "pos": "NOUN",
+        "lemma": "6S"
+      },
+      {
+        "text": "Plus",
+        "pos": "NOUN",
+        "lemma": "Plus"
+      },
+      {
+        "text": "were",
+        "pos": "VERB",
+        "lemma": "be"
+      },
+      {
+        "text": "succeeded",
+        "pos": "VERB",
+        "lemma": "succeed"
+      },
+      {
+        "text": "by",
+        "pos": "ADP",
+        "lemma": "by"
+      },
+      {
+        "text": "the",
+        "pos": "DET",
+        "lemma": "the"
+      },
+      {
+        "text": "iPhone",
+        "pos": "NOUN",
+        "lemma": "iPhone"
+      },
+      {
+        "text": "7",
+        "pos": "NUM",
+        "lemma": "7"
+      },
+      {
+        "text": "and",
+        "pos": "CONJ",
+        "lemma": "and"
+      },
+      {
+        "text": "iPhone",
+        "pos": "NOUN",
+        "lemma": "iPhone"
+      },
+      {
+        "text": "7",
+        "pos": "NUM",
+        "lemma": "7"
+      },
+      {
+        "text": "Plus",
+        "pos": "CONJ",
+        "lemma": "Plus"
+      },
+      {
+        "text": "in",
+        "pos": "ADP",
+        "lemma": "in"
+      },
+      {
+        "text": "September",
+        "pos": "NOUN",
+        "lemma": "September"
+      },
+      {
+        "text": "2016.",
+        "pos": "NUM",
+        "lemma": "2016."
+      },
+      {
+        "text": "The",
+        "pos": "DET",
+        "lemma": "The"
+      },
+      {
+        "text": "iPhone",
+        "pos": "NOUN",
+        "lemma": "iPhone"
+      },
+      {
+        "text": "6S",
+        "pos": "NOUN",
+        "lemma": "6S"
+      },
+      {
+        "text": "has",
+        "pos": "VERB",
+        "lemma": "have"
+      },
+      {
+        "text": "a",
+        "pos": "DET",
+        "lemma": "a"
+      },
+      {
+        "text": "similar",
+        "pos": "ADJ",
+        "lemma": "similar"
+      },
+      {
+        "text": "design",
+        "pos": "NOUN",
+        "lemma": "design"
+      },
+      {
+        "text": "to",
+        "pos": "ADP",
+        "lemma": "to"
+      },
+      {
+        "text": "the",
+        "pos": "DET",
+        "lemma": "the"
+      },
+      {
+        "text": "6",
+        "pos": "NUM",
+        "lemma": "6"
+      },
+      {
+        "text": "but",
+        "pos": "CONJ",
+        "lemma": "but"
+      },
+      {
+        "text": "updated",
+        "pos": "VERB",
+        "lemma": "update"
+      },
+      {
+        "text": "hardware",
+        "pos": "NOUN",
+        "lemma": "hardware"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "including",
+        "pos": "VERB",
+        "lemma": "include"
+      },
+      {
+        "text": "a",
+        "pos": "DET",
+        "lemma": "a"
+      },
+      {
+        "text": "strengthened",
+        "pos": "VERB",
+        "lemma": "strengthen"
+      },
+      {
+        "text": "chassis",
+        "pos": "NOUN",
+        "lemma": "chassis"
+      },
+      {
+        "text": "and",
+        "pos": "CONJ",
+        "lemma": "and"
+      },
+      {
+        "text": "upgraded",
+        "pos": "VERB",
+        "lemma": "upgrade"
+      },
+      {
+        "text": "system",
+        "pos": "NOUN",
+        "lemma": "system"
+      },
+      {
+        "text": "-",
+        "pos": "PUNCT",
+        "lemma": "-"
+      },
+      {
+        "text": "on",
+        "pos": "ADP",
+        "lemma": "on"
+      },
+      {
+        "text": "-",
+        "pos": "PUNCT",
+        "lemma": "-"
+      },
+      {
+        "text": "chip",
+        "pos": "NOUN",
+        "lemma": "chip"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "a",
+        "pos": "DET",
+        "lemma": "a"
+      },
+      {
+        "text": "12",
+        "pos": "NUM",
+        "lemma": "12"
+      },
+      {
+        "text": "-",
+        "pos": "PUNCT",
+        "lemma": "-"
+      },
+      {
+        "text": "megapixel",
+        "pos": "NOUN",
+        "lemma": "megapixel"
+      },
+      {
+        "text": "camera",
+        "pos": "NOUN",
+        "lemma": "camera"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "improved",
+        "pos": "ADJ",
+        "lemma": "improved"
+      },
+      {
+        "text": "fingerprint",
+        "pos": "NOUN",
+        "lemma": "fingerprint"
+      },
+      {
+        "text": "recognition",
+        "pos": "NOUN",
+        "lemma": "recognition"
+      },
+      {
+        "text": "sensor",
+        "pos": "NOUN",
+        "lemma": "sensor"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "and",
+        "pos": "CONJ",
+        "lemma": "and"
+      },
+      {
+        "text": "LTE",
+        "pos": "NOUN",
+        "lemma": "LTE"
+      },
+      {
+        "text": "Advanced",
+        "pos": "NOUN",
+        "lemma": "Advanced"
+      },
+      {
+        "text": "support.",
+        "pos": "VERB",
+        "lemma": "support."
+      },
+      {
+        "text": "The",
+        "pos": "DET",
+        "lemma": "The"
+      },
+      {
+        "text": "iPhone",
+        "pos": "NOUN",
+        "lemma": "iPhone"
+      },
+      {
+        "text": "6S",
+        "pos": "NOUN",
+        "lemma": "6S"
+      },
+      {
+        "text": "also",
+        "pos": "ADV",
+        "lemma": "also"
+      },
+      {
+        "text": "introduces",
+        "pos": "VERB",
+        "lemma": "introduce"
+      },
+      {
+        "text": "a",
+        "pos": "DET",
+        "lemma": "a"
+      },
+      {
+        "text": "new",
+        "pos": "ADJ",
+        "lemma": "new"
+      },
+      {
+        "text": "hardware",
+        "pos": "NOUN",
+        "lemma": "hardware"
+      },
+      {
+        "text": "feature",
+        "pos": "NOUN",
+        "lemma": "feature"
+      },
+      {
+        "text": "known",
+        "pos": "VERB",
+        "lemma": "know"
+      },
+      {
+        "text": "as",
+        "pos": "ADP",
+        "lemma": "as"
+      },
+      {
+        "text": "\"",
+        "pos": "PUNCT",
+        "lemma": "\""
+      },
+      {
+        "text": "3D",
+        "pos": "NOUN",
+        "lemma": "3D"
+      },
+      {
+        "text": "Touch",
+        "pos": "NOUN",
+        "lemma": "Touch"
+      },
+      {
+        "text": "\"",
+        "pos": "PUNCT",
+        "lemma": "\""
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "which",
+        "pos": "DET",
+        "lemma": "which"
+      },
+      {
+        "text": "enables",
+        "pos": "VERB",
+        "lemma": "enable"
+      },
+      {
+        "text": "pressure",
+        "pos": "NOUN",
+        "lemma": "pressure"
+      },
+      {
+        "text": "-",
+        "pos": "PUNCT",
+        "lemma": "-"
+      },
+      {
+        "text": "sensitive",
+        "pos": "ADJ",
+        "lemma": "sensitive"
+      },
+      {
+        "text": "touch",
+        "pos": "NOUN",
+        "lemma": "touch"
+      },
+      {
+        "text": "inputs.",
+        "pos": "NOUN",
+        "lemma": "inputs."
+      },
+      {
+        "text": "iPhone",
+        "pos": "NOUN",
+        "lemma": "iPhone"
+      },
+      {
+        "text": "6S",
+        "pos": "NOUN",
+        "lemma": "6S"
+      },
+      {
+        "text": "had",
+        "pos": "VERB",
+        "lemma": "have"
+      },
+      {
+        "text": "a",
+        "pos": "DET",
+        "lemma": "a"
+      },
+      {
+        "text": "mostly",
+        "pos": "ADV",
+        "lemma": "mostly"
+      },
+      {
+        "text": "positive",
+        "pos": "ADJ",
+        "lemma": "positive"
+      },
+      {
+        "text": "reception.",
+        "pos": "NOUN",
+        "lemma": "reception."
+      },
+      {
+        "text": "While",
+        "pos": "ADP",
+        "lemma": "While"
+      },
+      {
+        "text": "performance",
+        "pos": "NOUN",
+        "lemma": "performance"
+      },
+      {
+        "text": "and",
+        "pos": "CONJ",
+        "lemma": "and"
+      },
+      {
+        "text": "camera",
+        "pos": "NOUN",
+        "lemma": "camera"
+      },
+      {
+        "text": "quality",
+        "pos": "NOUN",
+        "lemma": "quality"
+      },
+      {
+        "text": "were",
+        "pos": "VERB",
+        "lemma": "be"
+      },
+      {
+        "text": "praised",
+        "pos": "VERB",
+        "lemma": "praise"
+      },
+      {
+        "text": "by",
+        "pos": "ADP",
+        "lemma": "by"
+      },
+      {
+        "text": "most",
+        "pos": "ADJ",
+        "lemma": "most"
+      },
+      {
+        "text": "reviewers",
+        "pos": "NOUN",
+        "lemma": "reviewer"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "the",
+        "pos": "DET",
+        "lemma": "the"
+      },
+      {
+        "text": "addition",
+        "pos": "NOUN",
+        "lemma": "addition"
+      },
+      {
+        "text": "of",
+        "pos": "ADP",
+        "lemma": "of"
+      },
+      {
+        "text": "3D",
+        "pos": "NOUN",
+        "lemma": "3D"
+      },
+      {
+        "text": "Touch",
+        "pos": "NOUN",
+        "lemma": "Touch"
+      },
+      {
+        "text": "was",
+        "pos": "VERB",
+        "lemma": "be"
+      },
+      {
+        "text": "liked",
+        "pos": "VERB",
+        "lemma": "like"
+      },
+      {
+        "text": "by",
+        "pos": "ADP",
+        "lemma": "by"
+      },
+      {
+        "text": "one",
+        "pos": "NUM",
+        "lemma": "one"
+      },
+      {
+        "text": "critic",
+        "pos": "NOUN",
+        "lemma": "critic"
+      },
+      {
+        "text": "for",
+        "pos": "ADP",
+        "lemma": "for"
+      },
+      {
+        "text": "the",
+        "pos": "DET",
+        "lemma": "the"
+      },
+      {
+        "text": "potential",
+        "pos": "NOUN",
+        "lemma": "potential"
+      },
+      {
+        "text": "of",
+        "pos": "ADP",
+        "lemma": "of"
+      },
+      {
+        "text": "entirely",
+        "pos": "ADV",
+        "lemma": "entirely"
+      },
+      {
+        "text": "new",
+        "pos": "ADJ",
+        "lemma": "new"
+      },
+      {
+        "text": "interface",
+        "pos": "NOUN",
+        "lemma": "interface"
+      },
+      {
+        "text": "interactions",
+        "pos": "NOUN",
+        "lemma": "interaction"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "but",
+        "pos": "CONJ",
+        "lemma": "but"
+      },
+      {
+        "text": "disliked",
+        "pos": "VERB",
+        "lemma": "dislike"
+      },
+      {
+        "text": "by",
+        "pos": "ADP",
+        "lemma": "by"
+      },
+      {
+        "text": "another",
+        "pos": "DET",
+        "lemma": "another"
+      },
+      {
+        "text": "critic",
+        "pos": "NOUN",
+        "lemma": "critic"
+      },
+      {
+        "text": "for",
+        "pos": "ADP",
+        "lemma": "for"
+      },
+      {
+        "text": "not",
+        "pos": "ADV",
+        "lemma": "not"
+      },
+      {
+        "text": "providing",
+        "pos": "VERB",
+        "lemma": "provide"
+      },
+      {
+        "text": "users",
+        "pos": "NOUN",
+        "lemma": "user"
+      },
+      {
+        "text": "with",
+        "pos": "ADP",
+        "lemma": "with"
+      },
+      {
+        "text": "an",
+        "pos": "DET",
+        "lemma": "an"
+      },
+      {
+        "text": "expected",
+        "pos": "VERB",
+        "lemma": "expect"
+      },
+      {
+        "text": "intuitive",
+        "pos": "ADJ",
+        "lemma": "intuitive"
+      },
+      {
+        "text": "response",
+        "pos": "NOUN",
+        "lemma": "response"
+      },
+      {
+        "text": "before",
+        "pos": "ADP",
+        "lemma": "before"
+      },
+      {
+        "text": "actually",
+        "pos": "ADV",
+        "lemma": "actually"
+      },
+      {
+        "text": "using",
+        "pos": "VERB",
+        "lemma": "use"
+      },
+      {
+        "text": "the",
+        "pos": "DET",
+        "lemma": "the"
+      },
+      {
+        "text": "feature.",
+        "pos": "NOUN",
+        "lemma": "feature."
+      },
+      {
+        "text": "The",
+        "pos": "DET",
+        "lemma": "The"
+      },
+      {
+        "text": "battery",
+        "pos": "NOUN",
+        "lemma": "battery"
+      },
+      {
+        "text": "life",
+        "pos": "NOUN",
+        "lemma": "life"
+      },
+      {
+        "text": "was",
+        "pos": "VERB",
+        "lemma": "be"
+      },
+      {
+        "text": "criticized",
+        "pos": "VERB",
+        "lemma": "criticize"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "and",
+        "pos": "CONJ",
+        "lemma": "and"
+      },
+      {
+        "text": "one",
+        "pos": "NUM",
+        "lemma": "one"
+      },
+      {
+        "text": "reviewer",
+        "pos": "NOUN",
+        "lemma": "reviewer"
+      },
+      {
+        "text": "asserted",
+        "pos": "VERB",
+        "lemma": "assert"
+      },
+      {
+        "text": "that",
+        "pos": "ADP",
+        "lemma": "that"
+      },
+      {
+        "text": "IPhone",
+        "pos": "NOUN",
+        "lemma": "IPhone"
+      },
+      {
+        "text": "6",
+        "pos": "NUM",
+        "lemma": "6"
+      },
+      {
+        "text": "\u0027s",
+        "pos": "PRT",
+        "lemma": "\u0027s"
+      },
+      {
+        "text": "camera",
+        "pos": "NOUN",
+        "lemma": "camera"
+      },
+      {
+        "text": "was",
+        "pos": "VERB",
+        "lemma": "be"
+      },
+      {
+        "text": "n\u0027t",
+        "pos": "ADV",
+        "lemma": "n\u0027t"
+      },
+      {
+        "text": "significantly",
+        "pos": "ADV",
+        "lemma": "significantly"
+      },
+      {
+        "text": "better",
+        "pos": "ADJ",
+        "lemma": "good"
+      },
+      {
+        "text": "than",
+        "pos": "ADP",
+        "lemma": "than"
+      },
+      {
+        "text": "the",
+        "pos": "DET",
+        "lemma": "the"
+      },
+      {
+        "text": "rest",
+        "pos": "NOUN",
+        "lemma": "rest"
+      },
+      {
+        "text": "of",
+        "pos": "ADP",
+        "lemma": "of"
+      },
+      {
+        "text": "the",
+        "pos": "DET",
+        "lemma": "the"
+      },
+      {
+        "text": "industry.",
+        "pos": "NOUN",
+        "lemma": "industry."
+      },
+      {
+        "text": "The",
+        "pos": "DET",
+        "lemma": "The"
+      },
+      {
+        "text": "iPhone",
+        "pos": "NOUN",
+        "lemma": "iPhone"
+      },
+      {
+        "text": "6S",
+        "pos": "NOUN",
+        "lemma": "6S"
+      },
+      {
+        "text": "set",
+        "pos": "VERB",
+        "lemma": "set"
+      },
+      {
+        "text": "a",
+        "pos": "DET",
+        "lemma": "a"
+      },
+      {
+        "text": "new",
+        "pos": "ADJ",
+        "lemma": "new"
+      },
+      {
+        "text": "first",
+        "pos": "ADJ",
+        "lemma": "first"
+      },
+      {
+        "text": "-",
+        "pos": "PUNCT",
+        "lemma": "-"
+      },
+      {
+        "text": "weekend",
+        "pos": "NOUN",
+        "lemma": "weekend"
+      },
+      {
+        "text": "sales",
+        "pos": "NOUN",
+        "lemma": "sale"
+      },
+      {
+        "text": "record",
+        "pos": "NOUN",
+        "lemma": "record"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "selling",
+        "pos": "VERB",
+        "lemma": "sell"
+      },
+      {
+        "text": "13",
+        "pos": "NUM",
+        "lemma": "13"
+      },
+      {
+        "text": "million",
+        "pos": "NUM",
+        "lemma": "million"
+      },
+      {
+        "text": "models",
+        "pos": "NOUN",
+        "lemma": "model"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "up",
+        "pos": "ADV",
+        "lemma": "up"
+      },
+      {
+        "text": "from",
+        "pos": "ADP",
+        "lemma": "from"
+      },
+      {
+        "text": "10",
+        "pos": "NUM",
+        "lemma": "10"
+      },
+      {
+        "text": "million",
+        "pos": "NUM",
+        "lemma": "million"
+      },
+      {
+        "text": "for",
+        "pos": "ADP",
+        "lemma": "for"
+      },
+      {
+        "text": "the",
+        "pos": "DET",
+        "lemma": "the"
+      },
+      {
+        "text": "iPhone",
+        "pos": "NOUN",
+        "lemma": "iPhone"
+      },
+      {
+        "text": "6",
+        "pos": "NUM",
+        "lemma": "6"
+      },
+      {
+        "text": "in",
+        "pos": "ADP",
+        "lemma": "in"
+      },
+      {
+        "text": "the",
+        "pos": "DET",
+        "lemma": "the"
+      },
+      {
+        "text": "previous",
+        "pos": "ADJ",
+        "lemma": "previous"
+      },
+      {
+        "text": "year.",
+        "pos": "NOUN",
+        "lemma": "year."
+      },
+      {
+        "text": "However",
+        "pos": "ADV",
+        "lemma": "However"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "Apple",
+        "pos": "NOUN",
+        "lemma": "Apple"
+      },
+      {
+        "text": "saw",
+        "pos": "VERB",
+        "lemma": "see"
+      },
+      {
+        "text": "its",
+        "pos": "PRON",
+        "lemma": "its"
+      },
+      {
+        "text": "first",
+        "pos": "ADJ",
+        "lemma": "first"
+      },
+      {
+        "text": "-",
+        "pos": "PUNCT",
+        "lemma": "-"
+      },
+      {
+        "text": "ever",
+        "pos": "ADV",
+        "lemma": "ever"
+      },
+      {
+        "text": "quarterly",
+        "pos": "ADJ",
+        "lemma": "quarterly"
+      },
+      {
+        "text": "year",
+        "pos": "NOUN",
+        "lemma": "year"
+      },
+      {
+        "text": "-",
+        "pos": "PUNCT",
+        "lemma": "-"
+      },
+      {
+        "text": "over-year",
+        "pos": "ADJ",
+        "lemma": "over-year"
+      },
+      {
+        "text": "decline",
+        "pos": "NOUN",
+        "lemma": "decline"
+      },
+      {
+        "text": "in",
+        "pos": "ADP",
+        "lemma": "in"
+      },
+      {
+        "text": "iPhone",
+        "pos": "NOUN",
+        "lemma": "iPhone"
+      },
+      {
+        "text": "sales",
+        "pos": "NOUN",
+        "lemma": "sale"
+      },
+      {
+        "text": "in",
+        "pos": "ADP",
+        "lemma": "in"
+      },
+      {
+        "text": "the",
+        "pos": "DET",
+        "lemma": "the"
+      },
+      {
+        "text": "months",
+        "pos": "NOUN",
+        "lemma": "month"
+      },
+      {
+        "text": "after",
+        "pos": "ADP",
+        "lemma": "after"
+      },
+      {
+        "text": "the",
+        "pos": "DET",
+        "lemma": "the"
+      },
+      {
+        "text": "launch",
+        "pos": "NOUN",
+        "lemma": "launch"
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ","
+      },
+      {
+        "text": "credited",
+        "pos": "VERB",
+        "lemma": "credit"
+      },
+      {
+        "text": "to",
+        "pos": "ADP",
+        "lemma": "to"
+      },
+      {
+        "text": "a",
+        "pos": "DET",
+        "lemma": "a"
+      },
+      {
+        "text": "saturated",
+        "pos": "VERB",
+        "lemma": "saturate"
+      },
+      {
+        "text": "smartphone",
+        "pos": "NOUN",
+        "lemma": "smartphone"
+      },
+      {
+        "text": "market",
+        "pos": "NOUN",
+        "lemma": "market"
+      },
+      {
+        "text": "in",
+        "pos": "ADP",
+        "lemma": "in"
+      },
+      {
+        "text": "Apple",
+        "pos": "NOUN",
+        "lemma": "Apple"
+      },
+      {
+        "text": "\u0027s",
+        "pos": "PRT",
+        "lemma": "\u0027s"
+      },
+      {
+        "text": "biggest",
+        "pos": "ADJ",
+        "lemma": "big"
+      },
+      {
+        "text": "countries",
+        "pos": "NOUN",
+        "lemma": "country"
+      },
+      {
+        "text": "and",
+        "pos": "CONJ",
+        "lemma": "and"
+      },
+      {
+        "text": "a",
+        "pos": "DET",
+        "lemma": "a"
+      },
+      {
+        "text": "lack",
+        "pos": "NOUN",
+        "lemma": "lack"
+      },
+      {
+        "text": "of",
+        "pos": "ADP",
+        "lemma": "of"
+      },
+      {
+        "text": "iPhone",
+        "pos": "NOUN",
+        "lemma": "iPhone"
+      },
+      {
+        "text": "purchases",
+        "pos": "NOUN",
+        "lemma": "purchase"
+      },
+      {
+        "text": "in",
+        "pos": "ADP",
+        "lemma": "in"
+      },
+      {
+        "text": "developing",
+        "pos": "VERB",
+        "lemma": "develop"
+      },
+      {
+        "text": "countries",
+        "pos": "NOUN",
+        "lemma": "country"
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": "."
+      }
+    ],
+    "finalEntityTaggedList": [
+      {
+        "text": "smartphone market",
+        "sentiment": 0.0,
+        "salience": 0.0023088693,
+        "category": "OTHER",
+        "nounCombination": "smartphone market",
+        "nounCombinationCategory": "space"
+      },
+      {
+        "text": "decline",
+        "sentiment": -0.2,
+        "salience": 0.0023088693,
+        "category": "OTHER",
+        "nounCombination": "decline",
+        "nounCombinationCategory": "assumption"
+      },
+      {
+        "text": "lack",
+        "sentiment": -0.3,
+        "salience": 0.0023088693,
+        "category": "OTHER",
+        "nounCombination": "lack",
+        "nounCombinationCategory": "factor"
+      },
+      {
+        "text": "purchases",
+        "sentiment": -0.4,
+        "salience": 0.0023088693,
+        "category": "OTHER",
+        "nounCombination": "purchases",
+        "nounCombinationCategory": "transaction"
+      },
+      {
+        "text": "launch",
+        "sentiment": 0.0,
+        "salience": 0.0023088693,
+        "category": "EVENT",
+        "nounCombination": "launch",
+        "nounCombinationCategory": "event"
+      },
+      {
+        "text": "users",
+        "sentiment": 0.0,
+        "salience": 0.002419451,
+        "category": "PERSON",
+        "nounCombination": "users",
+        "nounCombinationCategory": "information"
+      },
+      {
+        "text": "countries",
+        "sentiment": 0.0,
+        "salience": 0.0026387116,
+        "category": "LOCATION",
+        "nounCombination": "countries",
+        "nounCombinationCategory": "Not Found"
+      },
+      {
+        "text": "sales",
+        "sentiment": -0.1,
+        "salience": 0.0026387116,
+        "category": "OTHER",
+        "nounCombination": "sales",
+        "nounCombinationCategory": "department"
+      },
+      {
+        "text": "rest",
+        "sentiment": -0.4,
+        "salience": 0.0030776563,
+        "category": "OTHER",
+        "nounCombination": "rest",
+        "nounCombinationCategory": "conservative treatment"
+      },
+      {
+        "text": "response",
+        "sentiment": 0.9,
+        "salience": 0.0030776563,
+        "category": "OTHER",
+        "nounCombination": "response",
+        "nounCombinationCategory": "measure"
+      },
+      {
+        "text": "critic",
+        "sentiment": -0.2,
+        "salience": 0.007105276,
+        "category": "PERSON",
+        "nounCombination": "critic",
+        "nounCombinationCategory": "person"
+      },
+      {
+        "text": "reviewer",
+        "sentiment": -0.3,
+        "salience": 0.007105276,
+        "category": "PERSON",
+        "nounCombination": "reviewers",
+        "nounCombinationCategory": "role"
+      },
+      {
+        "text": "feature.",
+        "sentiment": 0.1,
+        "salience": 0.0035170945,
+        "category": "OTHER",
+        "nounCombination": "feature.",
+        "nounCombinationCategory": "Not Found"
+      },
+      {
+        "text": "IPhone 6",
+        "sentiment": -0.5,
+        "salience": 0.0036151747,
+        "category": "CONSUMER_GOOD",
+        "nounCombination": "",
+        "nounCombinationCategory": ""
+      },
+      {
+        "text": "battery life",
+        "sentiment": -0.9,
+        "salience": 0.003914504,
+        "category": "OTHER",
+        "nounCombination": "battery life",
+        "nounCombinationCategory": "factor"
+      },
+      {
+        "text": "camera",
+        "sentiment": -0.55,
+        "salience": 0.008638396,
+        "category": "OTHER",
+        "nounCombination": "megapixel camera",
+        "nounCombinationCategory": "latest technology"
+      },
+      {
+        "text": "models",
+        "sentiment": -0.5,
+        "salience": 0.007003152,
+        "category": "CONSUMER_GOOD",
+        "nounCombination": "models",
+        "nounCombinationCategory": "information"
+      },
+      {
+        "text": "LTE Advanced",
+        "sentiment": -0.3,
+        "salience": 0.007060845,
+        "category": "OTHER",
+        "nounCombination": "LTE Advanced",
+        "nounCombinationCategory": "technology"
+      },
+      {
+        "text": "sales record",
+        "sentiment": -0.3,
+        "salience": 0.008000393,
+        "category": "OTHER",
+        "nounCombination": "sales record",
+        "nounCombinationCategory": "sale system"
+      },
+      {
+        "text": "performance",
+        "sentiment": -0.4,
+        "salience": 0.008046776,
+        "category": "OTHER",
+        "nounCombination": "performance",
+        "nounCombinationCategory": "factor"
+      },
+      {
+        "text": "chassis",
+        "sentiment": 0.0,
+        "salience": 0.008357345,
+        "category": "OTHER",
+        "nounCombination": "chassis",
+        "nounCombinationCategory": "product"
+      },
+      {
+        "text": "Bill Graham Civic Auditorium",
+        "sentiment": -0.2,
+        "salience": 0.0089749275,
+        "category": "LOCATION",
+        "nounCombination": "Bill Graham Civic Auditorium",
+        "nounCombinationCategory": "venue"
+      },
+      {
+        "text": "San Francisco",
+        "sentiment": -0.2,
+        "salience": 0.0089749275,
+        "category": "LOCATION",
+        "nounCombination": "San Francisco",
+        "nounCombinationCategory": "city"
+      },
+      {
+        "text": "iPhone 7 Plus",
+        "sentiment": -0.4,
+        "salience": 0.009088879,
+        "category": "ORGANIZATION",
+        "nounCombination": "",
+        "nounCombinationCategory": ""
+      },
+      {
+        "text": "addition",
+        "sentiment": -0.6,
+        "salience": 0.009362421,
+        "category": "OTHER",
+        "nounCombination": "addition",
+        "nounCombinationCategory": "change"
+      },
+      {
+        "text": "camera quality",
+        "sentiment": 0.5,
+        "salience": 0.009362421,
+        "category": "OTHER",
+        "nounCombination": "camera quality",
+        "nounCombinationCategory": "factor"
+      },
+      {
+        "text": "potential",
+        "sentiment": -0.4,
+        "salience": 0.009362421,
+        "category": "OTHER",
+        "nounCombination": "potential",
+        "nounCombinationCategory": "word"
+      },
+      {
+        "text": "reception.",
+        "sentiment": 0.0,
+        "salience": 0.009362421,
+        "category": "OTHER",
+        "nounCombination": "reception.",
+        "nounCombinationCategory": "Not Found"
+      },
+      {
+        "text": "design",
+        "sentiment": -0.3,
+        "salience": 0.010098357,
+        "category": "OTHER",
+        "nounCombination": "design",
+        "nounCombinationCategory": "factor"
+      },
+      {
+        "text": "system-on-chip",
+        "sentiment": -0.4,
+        "salience": 0.010098357,
+        "category": "OTHER",
+        "nounCombination": "",
+        "nounCombinationCategory": ""
+      },
+      {
+        "text": "fingerprint recognition sensor",
+        "sentiment": 0.0,
+        "salience": 0.010226484,
+        "category": "OTHER",
+        "nounCombination": "fingerprint recognition sensor",
+        "nounCombinationCategory": "feature"
+      },
+      {
+        "text": "interface interactions",
+        "sentiment": -0.3,
+        "salience": 0.010693458,
+        "category": "OTHER",
+        "nounCombination": "interface interactions",
+        "nounCombinationCategory": "issue"
+      },
+      {
+        "text": "hardware",
+        "sentiment": -0.4,
+        "salience": 0.011533293,
+        "category": "OTHER",
+        "nounCombination": "hardware",
+        "nounCombinationCategory": "product"
+      },
+      {
+        "text": "pre-orders",
+        "sentiment": -0.2,
+        "salience": 0.015108842,
+        "category": "OTHER",
+        "nounCombination": "pre-orders",
+        "nounCombinationCategory": "program"
+      },
+      {
+        "text": "release",
+        "sentiment": -0.2,
+        "salience": 0.015108842,
+        "category": "EVENT",
+        "nounCombination": "release",
+        "nounCombinationCategory": "publication"
+      },
+      {
+        "text": "hardware feature",
+        "sentiment": -0.4,
+        "salience": 0.015599377,
+        "category": "OTHER",
+        "nounCombination": "hardware feature",
+        "nounCombinationCategory": "issue"
+      },
+      {
+        "text": "iPhone 7",
+        "sentiment": -0.2,
+        "salience": 0.017725268,
+        "category": "ORGANIZATION",
+        "nounCombination": "",
+        "nounCombinationCategory": ""
+      },
+      {
+        "text": "iPhone 6S Plus",
+        "sentiment": -0.4,
+        "salience": 0.029220382,
+        "category": "ORGANIZATION",
+        "nounCombination": "iPhone 6S Plus",
+        "nounCombinationCategory": "device"
+      },
+      {
+        "text": "Tim Cook",
+        "sentiment": -0.3,
+        "salience": 0.0341043,
+        "category": "PERSON",
+        "nounCombination": "Apple CEO Tim Cook",
+        "nounCombinationCategory": "digital entrepreneur"
+      },
+      {
+        "text": "smartphones",
+        "sentiment": -0.2,
+        "salience": 0.04448605,
+        "category": "CONSUMER_GOOD",
+        "nounCombination": "smartphones",
+        "nounCombinationCategory": "mobile device"
+      },
+      {
+        "text": "6s",
+        "sentiment": -0.35000002,
+        "salience": 0.1231966,
+        "category": "OTHER",
+        "nounCombination": "iPhone 6s",
+        "nounCombinationCategory": "device"
+      },
+      {
+        "text": "3D Touch",
+        "sentiment": -0.1,
+        "salience": 0.08305934,
+        "category": "OTHER",
+        "nounCombination": "3D Touch",
+        "nounCombinationCategory": "feature"
+      },
+      {
+        "text": "Apple Inc.",
+        "sentiment": -0.1,
+        "salience": 0.13509394,
+        "category": "ORGANIZATION",
+        "nounCombination": "Apple Inc.",
+        "nounCombinationCategory": "company"
+      }
+    ],
     "specificationDto": {
-      "mainEntity": "IPhone 6S",
-      "featureMap": {}
+      "mainEntity": "iPhone 6s",
+      "featureMap": {
+        "fingerprint recognition sensor": "feature",
+        "3D Touch": "feature",
+        "lack": "factor",
+        "battery life": "factor",
+        "performance": "factor",
+        "camera quality": "factor",
+        "design": "factor"
+      }
     }
   }
 ]
