@@ -4,7 +4,6 @@ import akura.cloundnlp.dtos.FinalEntityTagDto;
 import akura.cloundnlp.dtos.MobileDataSet;
 import akura.cloundnlp.dtos.SpecificationDto;
 import akura.utility.Logger;
-import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -35,6 +34,9 @@ public class SpecificationExtractor {
         specMap.put("spec", new LinkedList<>());
         specMap.put("device", new LinkedList<>());
         specMap.put("phone", new LinkedList<>());
+        specMap.put("sensor", new LinkedList<>());
+        specMap.put("component", new LinkedList<>());
+        specMap.put("function", new LinkedList<>());
     }
 
     public SpecificationDto extractDomainsFromSentenceSyntax(List<FinalEntityTagDto> finalEntityTagDtoList){
@@ -47,9 +49,15 @@ public class SpecificationExtractor {
                 }
             });
         }
-        specificationDto.setMainEntity(this.findMainEntity(finalEntityTagDtoList));//should change it from the main method
+        List<FinalEntityTagDto> finalEntityTagDtos = this.findMainEntityAndRelativeEntities(finalEntityTagDtoList);
+
+        FinalEntityTagDto mainEntity = (finalEntityTagDtos != null?finalEntityTagDtos.get(finalEntityTagDtos.size()-1):null);
+
+        specificationDto.setMainEntity(mainEntity);//should change it from the main method
+        finalEntityTagDtos.remove(finalEntityTagDtos.get(finalEntityTagDtos.size()-1));
+        specificationDto.setRelativeEntityList(finalEntityTagDtos);
         specMap.forEach((key, value) -> {
-            if (key.equals("feature") || key.equals("factor") || key.equals("spec")){
+            if (key.equals("feature") || key.equals("factor") || key.equals("spec") || key.equals("item") || key.equals("sensor") || key.equals("component") || key.equals("function")){
                 value.forEach(s -> {
                     featureMap.put(s, key);
                 });
@@ -64,18 +72,19 @@ public class SpecificationExtractor {
     }
 
     //get entities and match with the phone dataset inside the resources folder and get its mapped feature set in addition to the original feature set extracted from the nlp processes
-    public String findMainEntity(List<FinalEntityTagDto> finalEntityTagDtoList){
+    public List<FinalEntityTagDto> findMainEntityAndRelativeEntities(List<FinalEntityTagDto> finalEntityTagDtoList){
         List<FinalEntityTagDto> tmpFinalEntityTagDtoList = new LinkedList<>();
         List<MobileDataSet> mobileDataSetList = this.getPhoneDataList();
 
         for (FinalEntityTagDto finalEntityTagDto: finalEntityTagDtoList){
             if (finalEntityTagDto.getCategory().equalsIgnoreCase("CONSUMER_GOOD")
                     || finalEntityTagDto.getCategory().equalsIgnoreCase("ORGANIZATION")
+                    || finalEntityTagDto.getCategory().equalsIgnoreCase("OTHER")
                     || finalEntityTagDto.getNounCombinationCategory().equalsIgnoreCase("device")
                     || finalEntityTagDto.getNounCombinationCategory().equalsIgnoreCase("phone")){
 
                 for (MobileDataSet mobileDataSet: mobileDataSetList){
-                    if (mobileDataSet.getName().toString().contains(finalEntityTagDto.getText())){
+                    if (mobileDataSet.getName().toLowerCase().toString().contains(finalEntityTagDto.getText().toLowerCase())){
                         System.out.println(mobileDataSet.getName().toString());
                         tmpFinalEntityTagDtoList.add(finalEntityTagDto);
                         break;
@@ -83,14 +92,11 @@ public class SpecificationExtractor {
                 }
             }
         }
+        System.out.println("\ntemporary final entity tag dto list");
         System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(tmpFinalEntityTagDtoList));
-        String mainEntity = "";
-        if (tmpFinalEntityTagDtoList.get(tmpFinalEntityTagDtoList.size()-1).getText().length() >= tmpFinalEntityTagDtoList.get(tmpFinalEntityTagDtoList.size()-1).getNounCombination().length()){
-            mainEntity = tmpFinalEntityTagDtoList.get(tmpFinalEntityTagDtoList.size()-1).getText();
-        } else {
-            mainEntity = tmpFinalEntityTagDtoList.get(tmpFinalEntityTagDtoList.size()-1).getNounCombination();
-        }
-        return mainEntity;
+        System.out.println();
+
+        return tmpFinalEntityTagDtoList;
     }
 
     private List<MobileDataSet> getPhoneDataList(){
