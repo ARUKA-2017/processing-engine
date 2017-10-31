@@ -195,7 +195,7 @@ public class EntityExtractor {
         ontologyMapDto.setFinalEntityTaggedList(constructAvgScores(prioritizeEntities(finalEntityTagDtos)));
 
         SpecificationExtractor specificationExtractor = new SpecificationExtractor();
-        SpecificationDto specificationDto = specificationExtractor.extractDomainsFromSentenceSyntax(ontologyMapDto.getFinalEntityTaggedList());
+        SpecificationDto specificationDto = specificationExtractor.extractDomainsFromSentenceSyntax(ontologyMapDto.getFinalEntityTaggedList(), ontologyMapDto.getReview());
         ontologyMapDto.setSpecificationDto(specificationDto);
 
         return ontologyMapDto;
@@ -289,9 +289,15 @@ public class EntityExtractor {
      * @param text
      * @return
      */
-    public List<OntologyMapDto> extractEntityData(String text) {
+    public List<OntologyMapDto> extractEntityData(String text, String entity) {
         try {
             languageServiceClient = APIConnection.provideLanguageServiceClient();
+            List<String> replacedText = new RelationshipExtractor().executeModifier(text, entity);
+            text = "";
+            for (String newStr : replacedText){
+                text += " "+newStr;
+            }
+            System.out.println(text);
         } catch (IOException e) {
             e.printStackTrace();
         }

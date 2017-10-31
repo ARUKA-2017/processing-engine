@@ -7,6 +7,7 @@ public class SpecificationDto {
     private FinalEntityTagDto mainEntity;
     private List<FinalEntityTagDto> relativeEntityList;
     private Map<String, String> featureMap;
+    private List<SpecRelationshipDto> specRelationshipDtoList;
 
     public FinalEntityTagDto getMainEntity() {
         return mainEntity;
@@ -30,5 +31,13 @@ public class SpecificationDto {
 
     public void setFeatureMap(Map<String, String> featureMap) {
         this.featureMap = featureMap;
+    }
+
+    public List<SpecRelationshipDto> getSpecRelationshipDtoList() {
+        return specRelationshipDtoList;
+    }
+
+    public void setSpecRelationshipDtoList(List<SpecRelationshipDto> specRelationshipDtoList) {
+        this.specRelationshipDtoList = specRelationshipDtoList;
     }
 }

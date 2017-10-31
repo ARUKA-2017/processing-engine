@@ -34,7 +34,7 @@ public class App {
 
         post("/extract-entity", (req, res) -> {
             EntityServiceResponse entityServiceResponse = gson.fromJson(req.body(), EntityServiceResponse.class);
-            List<OntologyMapDto> response = entityExtractorService.extractEntity(entityServiceResponse.text);
+            List<OntologyMapDto> response = entityExtractorService.extractEntity(entityServiceResponse.text, entityServiceResponse.entity);
             return new GsonBuilder().setPrettyPrinting().create().toJson(response);
         });
 

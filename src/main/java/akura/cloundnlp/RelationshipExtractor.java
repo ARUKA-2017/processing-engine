@@ -44,7 +44,7 @@ public class RelationshipExtractor {
      * @param paragraph
      * @return
      */
-    public List<String> sentenceTokenize(String paragraph) {
+    public static List<String> sentenceTokenize(String paragraph) {
         List<String> sentenceList = new ArrayList<>();
         Matcher reMatcher = Pattern.compile(REGEX, Pattern.MULTILINE | Pattern.COMMENTS).matcher(paragraph);
         while (reMatcher.find()) {
