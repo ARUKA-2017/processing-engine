@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ce70221-10d1-4f3d-ab8c-775e980951f2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/akura/utility/CrawlerServiceResponse.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nlu.log" afterPath="$PROJECT_DIR$/nlu.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/akura/App.java" afterPath="$PROJECT_DIR$/src/main/java/akura/App.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/akura/cloundnlp/EntityExtractor.java" afterPath="$PROJECT_DIR$/src/main/java/akura/cloundnlp/EntityExtractor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/akura/cloundnlp/RelationshipExtractor.java" afterPath="$PROJECT_DIR$/src/main/java/akura/cloundnlp/RelationshipExtractor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/akura/cloundnlp/SpecificationExtractor.java" afterPath="$PROJECT_DIR$/src/main/java/akura/cloundnlp/SpecificationExtractor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/akura/cloundnlp/TestScenario.java" afterPath="$PROJECT_DIR$/src/main/java/akura/cloundnlp/TestScenario.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/akura/cloundnlp/sample_resources/SampleReviews.json" afterPath="$PROJECT_DIR$/src/main/java/akura/cloundnlp/sample_resources/SampleReviews.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/akura/crawler/Crawler.java" afterPath="$PROJECT_DIR$/src/main/java/akura/crawler/Crawler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/akura/crawler/Execute.java" afterPath="$PROJECT_DIR$/src/main/java/akura/crawler/Execute.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,24 +19,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Crawler.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Crawler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/akura/crawler/Crawler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="82" column="31" lean-forward="true" selection-start-line="82" selection-start-column="31" selection-end-line="82" selection-end-column="31" />
+            <state relative-caret-position="510">
+              <caret line="84" column="32" lean-forward="true" selection-start-line="84" selection-start-column="32" selection-end-line="84" selection-end-column="32" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Execute.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/akura/crawler/Execute.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="46" column="56" lean-forward="true" selection-start-line="46" selection-start-column="56" selection-end-line="46" selection-end-column="57" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -56,16 +39,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EntityExtractor.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SpecificationExtractor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/SpecificationExtractor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="144" column="45" lean-forward="false" selection-start-line="144" selection-start-column="28" selection-end-line="144" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <marker date="1511113748084" expanded="true" signature="5679:5792" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="phone_dataset.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/sample_resources/phone_dataset.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="106">
+              <caret line="3904" column="21" lean-forward="false" selection-start-line="3904" selection-start-column="13" selection-end-line="3904" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EntityExtractor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/EntityExtractor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="354" column="54" lean-forward="false" selection-start-line="354" selection-start-column="54" selection-end-line="354" selection-end-column="54" />
+            <state relative-caret-position="241">
+              <caret line="327" column="31" lean-forward="true" selection-start-line="327" selection-start-column="31" selection-end-line="327" selection-end-column="31" />
               <folding>
                 <element signature="method#identifyReviewCategory#0;class#EntityExtractor#0" expanded="false" />
-                <element signature="method#analyseEntity#0;class#EntityExtractor#0" expanded="false" />
                 <element signature="method#analyseSyntax#0;class#EntityExtractor#0" expanded="false" />
-                <element signature="method#prioritizeEntities#0;class#EntityExtractor#0" expanded="false" />
                 <element signature="method#constructAvgScores#0;class#EntityExtractor#0" expanded="false" />
                 <element signature="method#writeDocumentOutput#0;class#EntityExtractor#0" expanded="false" />
               </folding>
@@ -73,26 +77,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SampleReviews.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/sample_resources/SampleReviews.json">
+      <file leaf-file-name="EntityExtractorService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/akura/service/EntityExtractorService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-69">
-              <caret line="22" column="16" lean-forward="false" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-              <folding>
-                <marker date="1511104148505" expanded="true" signature="0:3614" ph="[...]" />
-                <marker date="1511104148505" expanded="true" signature="4:25" ph="{&quot;review_id&quot;: &quot;RN9RYMERZKNJC&quot;...}" />
-              </folding>
+            <state relative-caret-position="127">
+              <caret line="18" column="42" lean-forward="false" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RelationshipExtractor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/RelationshipExtractor.java">
+      <file leaf-file-name="SampleReviews.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/sample_resources/SampleReviews.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="140" column="116" lean-forward="false" selection-start-line="140" selection-start-column="116" selection-end-line="140" selection-end-column="116" />
+            <state relative-caret-position="1513">
+              <caret line="89" column="19" lean-forward="true" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NounCombinationEntityExtractor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/NounCombinationEntityExtractor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="430">
+              <caret line="46" column="83" lean-forward="false" selection-start-line="46" selection-start-column="83" selection-end-line="46" selection-end-column="83" />
               <folding>
-                <marker date="1511095750258" expanded="true" signature="9402:9441" ph="{...}" />
+                <marker date="1508164135176" expanded="true" signature="1685:1786" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -101,28 +112,8 @@
       <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/akura/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="51" column="64" lean-forward="false" selection-start-line="51" selection-start-column="64" selection-end-line="51" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CrawlerServiceResponse.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/akura/utility/CrawlerServiceResponse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EntityServiceResponse.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/akura/utility/EntityServiceResponse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="4" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="7" selection-end-column="25" />
+            <state relative-caret-position="182">
+              <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -139,8 +130,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>textrazor</find>
-      <find>r05</find>
       <find>ch.qos.logback</find>
       <find>org.slf4j</find>
       <find>edu.stanford.nlp</find>
@@ -169,6 +158,8 @@
       <find>Sentence list with word by word details</find>
       <find>Originally</find>
       <find>Originally I ordered an S7 from wireless medics and S7</find>
+      <find>phone_data</find>
+      <find>iPhone 6</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -203,14 +194,14 @@
         <option value="$PROJECT_DIR$/Output.json" />
         <option value="$PROJECT_DIR$/src/main/java/akura/cloundnlp/TestScenario.java" />
         <option value="$PROJECT_DIR$/ReviewOutput.json" />
-        <option value="$PROJECT_DIR$/src/main/java/akura/cloundnlp/SpecificationExtractor.java" />
         <option value="$PROJECT_DIR$/src/main/java/akura/cloundnlp/sample_resources/SampleReviews.json" />
         <option value="$PROJECT_DIR$/src/main/java/akura/cloundnlp/RelationshipExtractor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/akura/cloundnlp/EntityExtractor.java" />
         <option value="$PROJECT_DIR$/src/main/java/akura/crawler/Execute.java" />
         <option value="$PROJECT_DIR$/src/main/java/akura/utility/CrawlerServiceResponse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/akura/App.java" />
         <option value="$PROJECT_DIR$/src/main/java/akura/crawler/Crawler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/akura/App.java" />
+        <option value="$PROJECT_DIR$/src/main/java/akura/cloundnlp/SpecificationExtractor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/akura/cloundnlp/EntityExtractor.java" />
       </list>
     </option>
   </component>
@@ -963,7 +954,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165942000" />
+    <option name="totallyTimeSpent" value="176002000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
@@ -979,16 +970,16 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37654322" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41666666" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41666666" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15658094" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19591528" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4521605" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7546296" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1070,22 +1061,64 @@
           <option name="timeStamp" value="121" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/akura/crawler/Crawler.java</url>
-          <line>84</line>
+          <url>file://$PROJECT_DIR$/src/main/java/akura/App.java</url>
+          <line>42</line>
           <properties />
-          <option name="timeStamp" value="126" />
+          <option name="timeStamp" value="135" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/akura/crawler/Crawler.java</url>
-          <line>72</line>
+          <url>file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/EntityExtractor.java</url>
+          <line>275</line>
           <properties />
-          <option name="timeStamp" value="127" />
+          <option name="timeStamp" value="138" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/EntityExtractor.java</url>
+          <line>315</line>
+          <properties />
+          <option name="timeStamp" value="144" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/akura/App.java</url>
+          <line>44</line>
+          <properties />
+          <option name="timeStamp" value="146" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/akura/App.java</url>
+          <line>40</line>
+          <properties />
+          <option name="timeStamp" value="147" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/EntityExtractor.java</url>
+          <line>284</line>
+          <properties />
+          <option name="timeStamp" value="149" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/EntityExtractor.java</url>
+          <line>288</line>
+          <properties />
+          <option name="timeStamp" value="150" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/EntityExtractor.java</url>
+          <line>279</line>
+          <properties />
+          <option name="timeStamp" value="151" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/EntityExtractor.java</url>
+          <line>280</line>
+          <properties />
+          <option name="timeStamp" value="154" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="128" />
+      <option name="time" value="156" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1264,17 +1297,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/dtos/SpecificationDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="35" column="67" lean-forward="false" selection-start-line="35" selection-start-column="67" selection-end-line="35" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1055#1056#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/dtos/SpecRelationshipDto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1301,24 +1323,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/sample_resources/phone_dataset.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20605" column="1" lean-forward="false" selection-start-line="20605" selection-start-column="1" selection-end-line="20605" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/NounCombinationEntityExtractor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="46" column="83" lean-forward="false" selection-start-line="46" selection-start-column="83" selection-end-line="46" selection-end-column="83" />
-          <folding>
-            <marker date="1508164135176" expanded="true" signature="1685:1786" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/dtos/FinalEntityTagDto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -1331,22 +1335,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/akura/service/EntityExtractorService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/TestScenario.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="103" column="51" lean-forward="false" selection-start-line="103" selection-start-column="51" selection-end-line="103" selection-end-column="51" />
           <folding />
         </state>
       </provider>
@@ -1372,19 +1360,6 @@
         <state relative-caret-position="68">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/SpecificationExtractor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="71" column="49" lean-forward="false" selection-start-line="71" selection-start-column="49" selection-end-line="71" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#findMainEntityAndRelativeEntities#0;class#SpecificationExtractor#0" expanded="false" />
-            <element signature="method#getPhoneDataList#0;class#SpecificationExtractor#0" expanded="false" />
-            <marker date="1511081650001" expanded="true" signature="5622:5735" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1422,18 +1397,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/EntityExtractor.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/akura/crawler/Execute.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="354" column="54" lean-forward="false" selection-start-line="354" selection-start-column="54" selection-end-line="354" selection-end-column="54" />
+        <state relative-caret-position="313">
+          <caret line="46" column="56" lean-forward="true" selection-start-line="46" selection-start-column="56" selection-end-line="46" selection-end-column="57" />
           <folding>
-            <element signature="method#identifyReviewCategory#0;class#EntityExtractor#0" expanded="false" />
-            <element signature="method#analyseEntity#0;class#EntityExtractor#0" expanded="false" />
-            <element signature="method#analyseSyntax#0;class#EntityExtractor#0" expanded="false" />
-            <element signature="method#prioritizeEntities#0;class#EntityExtractor#0" expanded="false" />
-            <element signature="method#constructAvgScores#0;class#EntityExtractor#0" expanded="false" />
-            <element signature="method#writeDocumentOutput#0;class#EntityExtractor#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/dtos/SpecificationDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" column="62" lean-forward="true" selection-start-line="9" selection-start-column="62" selection-end-line="9" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/akura/service/EntityExtractorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="18" column="42" lean-forward="false" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1441,24 +1427,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/RelationshipExtractor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="140" column="116" lean-forward="false" selection-start-line="140" selection-start-column="116" selection-end-line="140" selection-end-column="116" />
-          <folding>
-            <marker date="1511095750258" expanded="true" signature="9402:9441" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/akura/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="51" column="64" lean-forward="false" selection-start-line="51" selection-start-column="64" selection-end-line="51" selection-end-column="64" />
           <folding />
         </state>
       </provider>
@@ -1471,32 +1439,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/akura/crawler/Execute.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/TestScenario.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="46" column="56" lean-forward="true" selection-start-line="46" selection-start-column="56" selection-end-line="46" selection-end-column="57" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/sample_resources/SampleReviews.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-69">
-          <caret line="22" column="16" lean-forward="false" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-          <folding>
-            <marker date="1511104148505" expanded="true" signature="0:3614" ph="[...]" />
-            <marker date="1511104148505" expanded="true" signature="4:25" ph="{&quot;review_id&quot;: &quot;RN9RYMERZKNJC&quot;...}" />
-          </folding>
+        <state relative-caret-position="239">
+          <caret line="51" column="543" lean-forward="true" selection-start-line="51" selection-start-column="80" selection-end-line="51" selection-end-column="543" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/akura/crawler/Crawler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="82" column="31" lean-forward="true" selection-start-line="82" selection-start-column="31" selection-end-line="82" selection-end-column="31" />
+        <state relative-caret-position="510">
+          <caret line="84" column="32" lean-forward="true" selection-start-line="84" selection-start-column="32" selection-end-line="84" selection-end-column="32" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/sample_resources/SampleReviews.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1513">
+          <caret line="89" column="19" lean-forward="true" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/NounCombinationEntityExtractor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="46" column="83" lean-forward="false" selection-start-line="46" selection-start-column="83" selection-end-line="46" selection-end-column="83" />
+          <folding>
+            <marker date="1508164135176" expanded="true" signature="1685:1786" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/RelationshipExtractor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="140" column="116" lean-forward="false" selection-start-line="140" selection-start-column="116" selection-end-line="140" selection-end-column="116" />
+          <folding>
+            <marker date="1511095750258" expanded="true" signature="9402:9441" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/SpecificationExtractor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="144" column="45" lean-forward="false" selection-start-line="144" selection-start-column="28" selection-end-line="144" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1511113748084" expanded="true" signature="5679:5792" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/sample_resources/phone_dataset.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="3904" column="21" lean-forward="false" selection-start-line="3904" selection-start-column="13" selection-end-line="3904" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/akura/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/EntityExtractor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="327" column="31" lean-forward="true" selection-start-line="327" selection-start-column="31" selection-end-line="327" selection-end-column="31" />
+          <folding>
+            <element signature="method#identifyReviewCategory#0;class#EntityExtractor#0" expanded="false" />
+            <element signature="method#analyseSyntax#0;class#EntityExtractor#0" expanded="false" />
+            <element signature="method#constructAvgScores#0;class#EntityExtractor#0" expanded="false" />
+            <element signature="method#writeDocumentOutput#0;class#EntityExtractor#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -28,6 +28,7 @@ public class SpecificationExtractor {
 
     public SpecificationExtractor(){
         specMap.put("CONSUMER_GOOD", new LinkedList<>());
+        specMap.put("ORGANIZATION", new LinkedList<>());
         specMap.put("output device", new LinkedList<>());
         specMap.put("parameter", new LinkedList<>());
         specMap.put("item", new LinkedList<>());
@@ -166,11 +167,11 @@ public class SpecificationExtractor {
         return tmpFinalEntityTagDtoList;
     }
 
-    private List<MobileDataSet> getPhoneDataList(){
+    public static List<MobileDataSet> getPhoneDataList(){
         JSONParser jsonParser = new JSONParser();
         List<MobileDataSet> mobileDataSetList = new LinkedList<>();
         try {
-            JSONArray jsonArray = (JSONArray) jsonParser.parse(new FileReader("I:\\processing-engine\\src\\main\\java\\akura\\cloundnlp\\sample_resources\\phone_dataset.json"));
+            JSONArray jsonArray = (JSONArray) jsonParser.parse(new FileReader("./src/main/java/akura/cloundnlp/sample_resources/phone_dataset.json"));
 
             for (Object object: jsonArray){
                 JSONObject jsonObject = (JSONObject) object;

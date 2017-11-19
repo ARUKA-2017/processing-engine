@@ -1,11 +1,8 @@
 package akura.cloundnlp;
 
-import akura.cloundnlp.dtos.SpecificationDto;
+import akura.cloundnlp.dtos.*;
 import akura.utility.APIConnection;
 
-import akura.cloundnlp.dtos.FinalEntityTagDto;
-import akura.cloundnlp.dtos.OntologyMapDto;
-import akura.cloundnlp.dtos.SyntaxDto;
 import akura.utility.Logger;
 import com.google.cloud.language.v1beta2.*;
 import com.google.gson.Gson;
@@ -159,7 +156,7 @@ public class EntityExtractor {
         ontologyMapDto = new OntologyMapDto();
         ontologyMapDto.setReviewId(review.get("review_id").toString());
         ontologyMapDto.setReview(review.get("reviewContent").toString());
-        ontologyMapDto.setReviewRating(Float.parseFloat(review.get("rating").toString()));
+        ontologyMapDto.setReviewRating((review.get("rating").equals("N/A"))?0:Float.parseFloat(review.get("rating").toString()));
         ontologyMapDto.setCategoryMap(categoryMap);
         List<SyntaxDto> syntaxDtos = new LinkedList<>();
         List<FinalEntityTagDto> finalEntityTagDtos = new LinkedList<>();
@@ -268,6 +265,29 @@ public class EntityExtractor {
         }
     }
 
+    public static String getMainSalienceEntity(String text){
+        try {
+            languageServiceClient = APIConnection.provideLanguageServiceClient();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Document doc = Document.newBuilder().setContent(text).setType(Document.Type.PLAIN_TEXT).build();
+        AnalyzeEntitySentimentRequest request = AnalyzeEntitySentimentRequest.newBuilder().setDocument(doc).setEncodingType(EncodingType.UTF16).build();
+        AnalyzeEntitySentimentResponse response = languageServiceClient.analyzeEntitySentiment(request);
+
+        List<MobileDataSet> mobileDataSetList = SpecificationExtractor.getPhoneDataList();
+        String mainEntity = "";
+        for (Entity entity: response.getEntitiesList()){
+            System.out.println(entity.getName());
+            for (MobileDataSet mobileDataSet: mobileDataSetList){
+                if (mobileDataSet.getName().toLowerCase().equals(entity.getName().toLowerCase())
+                        && mobileDataSet.getName().toLowerCase().contains(entity.getName().toLowerCase())){
+                    return entity.getName();
+                }
+            }
+        }
+            return mainEntity;
+    }
     /**
      *
      * api endpoint method - test
@@ -291,28 +311,19 @@ public class EntityExtractor {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        JSONParser jsonParser = new JSONParser();
-        JSONArray array = null;
+
+        List<OntologyMapDto> ontologyMapDtos = new LinkedList<>();
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("review_id", "N/A");
+        jsonObject.put("reviewContent", text);
+        jsonObject.put("mainEntity", entity);
+        jsonObject.put("rating", "N/A");
         try {
-            array = (JSONArray) jsonParser.parse(new FileReader("./src/main/java/akura/cloundnlp/sample_resources/SampleReviews.json"));
+            ontologyMapDtos.add(constructJson(jsonObject, identifyReviewCategory(text, languageServiceClient), analyseSyntax(text, languageServiceClient)));
         } catch (IOException e) {
             e.printStackTrace();
-        } catch (ParseException e) {
+        } catch (GeneralSecurityException e) {
             e.printStackTrace();
-        }
-        List<OntologyMapDto> ontologyMapDtos = new LinkedList<>();
-        for (Object object : array) {
-            JSONObject jsonObject = (JSONObject) object;
-            jsonObject.put("reviewContent", text);
-            jsonObject.put("mainEntity", entity);
-            String sampleText = jsonObject.get("reviewContent").toString();
-            try {
-                ontologyMapDtos.add(constructJson(jsonObject, identifyReviewCategory(sampleText, languageServiceClient), analyseSyntax(sampleText, languageServiceClient)));
-            } catch (IOException e) {
-                e.printStackTrace();
-            } catch (GeneralSecurityException e) {
-                e.printStackTrace();
-            }
         }
         return ontologyMapDtos;
     }

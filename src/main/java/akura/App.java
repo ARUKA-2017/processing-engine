@@ -1,5 +1,6 @@
 package akura;
 
+import akura.cloundnlp.EntityExtractor;
 import akura.cloundnlp.dtos.OntologyMapDto;
 import akura.crawler.Execute;
 import akura.service.EntityExtractorService;
@@ -37,13 +38,21 @@ public class App {
 
         post("/extract-entity", (req, res) -> {
             EntityServiceResponse entityServiceResponse = gson.fromJson(req.body(), EntityServiceResponse.class);
-            List<OntologyMapDto> response = entityExtractorService.extractEntity(entityServiceResponse.text, entityServiceResponse.entity);
+            String mainEntity = EntityExtractor.getMainSalienceEntity(entityServiceResponse.text);
+
+            System.out.println(mainEntity);
+
+            List<OntologyMapDto> response = entityExtractorService.extractEntity(entityServiceResponse.text, mainEntity);
             return new GsonBuilder().setPrettyPrinting().create().toJson(response);
         });
 
         post("/modify-sentence", (req, res) -> {
             SentenceServiceResponse sentenceServiceResponse = gson.fromJson(req.body(), SentenceServiceResponse.class);
-            List<String> response = entityExtractorService.modifiedSentenceList(sentenceServiceResponse.text, sentenceServiceResponse.entity);
+            String mainEntity = EntityExtractor.getMainSalienceEntity(sentenceServiceResponse.text);
+
+            System.out.println(mainEntity);
+
+            List<String> response = entityExtractorService.modifiedSentenceList(sentenceServiceResponse.text, mainEntity);
             return new GsonBuilder().setPrettyPrinting().create().toJson(response);
         });
 
