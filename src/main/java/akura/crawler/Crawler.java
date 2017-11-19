@@ -12,8 +12,10 @@ import java.util.Collections;
 import java.util.Date;
 import java.util.Locale;
 
+import akura.cloundnlp.EntityExtractor;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import org.json.JSONException;
 import org.json.JSONObject;
 import org.jsoup.HttpStatusException;
 import org.jsoup.Jsoup;
@@ -21,11 +23,13 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 public class Crawler {	
-	public static ArrayList<Review> reviewList = new ArrayList<Review>();
-    public static ArrayList<JSONObject> finalReviewList = new ArrayList<JSONObject>();
+	public static ArrayList<Review> reviewList;
+    public static ArrayList<JSONObject> finalReviewList;
 
     ArrayList<Integer>  pagesScraped;
 	public void fetchReview(String itemID, int noOfPages) {
+        reviewList = new ArrayList<Review>();
+        finalReviewList = new ArrayList<JSONObject>();
         String url = Configuration.ITEM_ID_PREFIX + itemID + Configuration.ITEM_ID_POSTFIX + 0; //(1 + (int) (Math.random() * 10))
         // http://www.amazon.com/product-reviews/B00UC9QKQ2/?showViewpoints=0&sortBy=byRankDescending&pageNumber=0
         //Modify this file name to reflect the name of the product you are reviewing.
@@ -73,19 +77,22 @@ public class Crawler {
                     }
                 }
 
-                if(p==noOfPages) {
+                if(p < noOfPages) {// before p==noOfPages
 //                    System.out.println(reviewList);
                     for (Review review: reviewList){
                         finalReviewList.add(review.getJSONObject());
                     }
-                    try (Writer writer = new FileWriter("ReviewOutput.json")) {
+                    try (Writer writer = new FileWriter("./src/main/java/akura/cloundnlp/sample_resources/SampleReviews.json")) {
+//                    try (Writer writer = new FileWriter("ReviewOutput.json")) {
                         Gson gson = new GsonBuilder().setPrettyPrinting().create();
-                        gson.toJson(finalReviewList, writer);
+                        gson.toJson(reviewList, writer);
+//                        gson.toJson(finalReviewList, writer);
                     }
                     break;
                 }
                 p++;
             }
+
         } catch (Exception e) {
             try {
                 Thread.sleep((int)(1000.0 + Math.random() * 10000));

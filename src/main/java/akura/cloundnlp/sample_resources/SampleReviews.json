@@ -1,11 +1,92 @@
 [
   {
-    "date": "Fri Jul 14 00:00:00 IST 2017",
-    "review_id": "R23WVOVFL0VD8X",
-    "classLabel": 1,
-    "reviewContent": "A9 chip with M9 motion coprocessor Delivers outstanding overall performance for opening and running applications, flipping through menus, running home screens and more. Apple iOS 10 Everything you love is now even better. Express yourself in bold new ways in Messages. Find your route with beautifully redesigned Maps. Relive memories like never before in Photos. And use the power of Siri in more apps. 4GLTE speed Provides fast Web connection for downloading apps, streaming content and staying connected with social media. 4\" touch-screen Retina display with 1136 x 640 resolution and 326 ppi LED-backlit widescreen Multi-Touch display. 1136-by-640-pixel resolution at 326 ppi. Fingerprint-resistant oleophobic coating on front. 12MP iSight camera with Focus Pixels and True Tone flash Capture images while youre out and about. Also includes a front-facing 1.2MP FaceTime HD camera with Retina Flash. 32GB internal memory Provides plenty of storage space for your contacts, music, photos, apps and more. Cloud support lets you access your files anywhere Store your photos, videos, documents and other files on iCloud for secure access across multiple devices. Fees may apply. Touch ID fingerprint identity sensor Put your finger on the Home button, and just like that your iPhone unlocks. Your fingerprint can also approve purchases from iTunes or the App Store.",
-    "rating": 1,
-    "title": "I was supposed to get the US997 version and got the Tmobile version instead",
-    "url": "http://www.amazon.com/product-reviews/B06XYQGPKT/?sortBy=helpful&pageNumber=0"
+    "review_id": "R3GMAEHSLAQL7I",
+    "title": "Will not automatically download multi-media (photo) messages. Need wi-fi to be manually switched off every time.",
+    "rating": 2,
+    "url": "http://www.amazon.com/product-reviews/B01CYYYRMQ/?sortBy\u003dhelpful\u0026pageNumber\u003d0",
+    "date": "Nov 16, 2017 12:00:00 AM",
+    "reviewContent": "This phone is a T-Mobile phone (not AT\u0026T) and that information was not published in the description. The phone does not download multi-media messages automatically. The only way you can get a \"picture message\" is by turning off wi-fi and using data. It does not automatically do that. I find this phone to be barely acceptable because of that non-working function.",
+    "classLabel": 2
+  },
+  {
+    "review_id": "R3FRIPCJ1R24EW",
+    "title": "Five Stars",
+    "rating": 5,
+    "url": "http://www.amazon.com/product-reviews/B01CYYYRMQ/?sortBy\u003dhelpful\u0026pageNumber\u003d0",
+    "date": "Apr 7, 2017 12:00:00 AM",
+    "reviewContent": "Excellent!",
+    "classLabel": 5
+  },
+  {
+    "review_id": "R6BIATUD5Q272",
+    "title": "Perfect phone. Love it",
+    "rating": 4,
+    "url": "http://www.amazon.com/product-reviews/B01CYYYRMQ/?sortBy\u003dhelpful\u0026pageNumber\u003d0",
+    "date": "Nov 5, 2017 12:00:00 AM",
+    "reviewContent": "Perfect phone. Love it. The battery usage is a bit heavy though even though I rarely use it for anything other than phone calls.",
+    "classLabel": 4
+  },
+  {
+    "review_id": "R1KU6SONMHMHJN",
+    "title": "Three Stars",
+    "rating": 3,
+    "url": "http://www.amazon.com/product-reviews/B01CYYYRMQ/?sortBy\u003dhelpful\u0026pageNumber\u003d0",
+    "date": "Oct 20, 2017 12:00:00 AM",
+    "reviewContent": "Battery don’t last long",
+    "classLabel": 3
+  },
+  {
+    "review_id": "R1TZ8Y4EXHGR6B",
+    "title": "Five Stars",
+    "rating": 5,
+    "url": "http://www.amazon.com/product-reviews/B01CYYYRMQ/?sortBy\u003dhelpful\u0026pageNumber\u003d0",
+    "date": "Oct 31, 2017 12:00:00 AM",
+    "reviewContent": "So far so good.",
+    "classLabel": 5
+  },
+  {
+    "review_id": "R2JL85RDG39PTU",
+    "title": "Five Stars",
+    "rating": 5,
+    "url": "http://www.amazon.com/product-reviews/B01CYYYRMQ/?sortBy\u003dhelpful\u0026pageNumber\u003d0",
+    "date": "Nov 16, 2017 12:00:00 AM",
+    "reviewContent": "Phone works well and is in good condition!",
+    "classLabel": 5
+  },
+  {
+    "review_id": "R3PWPHK5O0XGCO",
+    "title": "Five Stars",
+    "rating": 5,
+    "url": "http://www.amazon.com/product-reviews/B01CYYYRMQ/?sortBy\u003dhelpful\u0026pageNumber\u003d0",
+    "date": "Jul 10, 2017 12:00:00 AM",
+    "reviewContent": "Awesome phone",
+    "classLabel": 5
+  },
+  {
+    "review_id": "R3FZSE6N4LEUVK",
+    "title": "Five Stars",
+    "rating": 5,
+    "url": "http://www.amazon.com/product-reviews/B01CYYYRMQ/?sortBy\u003dhelpful\u0026pageNumber\u003d0",
+    "date": "Nov 10, 2017 12:00:00 AM",
+    "reviewContent": "Love it! Arrive in awesome condition.",
+    "classLabel": 5
+  },
+  {
+    "review_id": "RZYETT9A0Q1N8",
+    "title": "Five Stars",
+    "rating": 5,
+    "url": "http://www.amazon.com/product-reviews/B01CYYYRMQ/?sortBy\u003dhelpful\u0026pageNumber\u003d0",
+    "date": "Oct 11, 2017 12:00:00 AM",
+    "reviewContent": "works great",
+    "classLabel": 5
+  },
+  {
+    "review_id": "R2KFINXMZQZKD9",
+    "title": "awesome.",
+    "rating": 5,
+    "url": "http://www.amazon.com/product-reviews/B01CYYYRMQ/?sortBy\u003dhelpful\u0026pageNumber\u003d0",
+    "date": "Oct 13, 2016 12:00:00 AM",
+    "reviewContent": "Definitely, high quality product, brand new, awesome.",
+    "classLabel": 5
   }
 ]

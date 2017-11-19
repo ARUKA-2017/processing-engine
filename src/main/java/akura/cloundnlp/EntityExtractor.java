@@ -24,6 +24,8 @@ import java.security.GeneralSecurityException;
 import java.util.*;
 import java.util.stream.Collectors;
 
+import static java.awt.SystemColor.text;
+
 /**
  * A snippet for Google Cloud Speech API showing how to analyze text message sentiment.
  */
@@ -208,17 +210,7 @@ public class EntityExtractor {
      */
     public List<FinalEntityTagDto> prioritizeEntities(List<FinalEntityTagDto> finalEntityTagDtos) {
         Collections.sort(finalEntityTagDtos, (object1, object2) -> (int)(object1.getSalience()*10000-object2.getSalience()*10000));
-        System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(finalEntityTagDtos));
         return finalEntityTagDtos;
-//        return finalEntityTagDtos
-//                .stream()
-//                .sorted(
-//                        Comparator
-//                                .comparing(
-//                                        FinalEntityTagDto::getSalience
-//                                ).reversed()
-//                )
-//                .collect(Collectors.toList());
     }
 
     /**
@@ -260,7 +252,6 @@ public class EntityExtractor {
             outputDtoList.add(temporaryDto);
             iterator = finalEntityTagDtos.iterator();
         }
-        System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(outputDtoList));
         return this.prioritizeEntities(outputDtoList);
     }
 
@@ -297,7 +288,6 @@ public class EntityExtractor {
             for (String newStr : replacedText){
                 text += " "+newStr;
             }
-            System.out.println(text);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -314,7 +304,7 @@ public class EntityExtractor {
         for (Object object : array) {
             JSONObject jsonObject = (JSONObject) object;
             jsonObject.put("reviewContent", text);
-            jsonObject.put("mainEntity", "IPhone 6S");
+            jsonObject.put("mainEntity", entity);
             String sampleText = jsonObject.get("reviewContent").toString();
             try {
                 ontologyMapDtos.add(constructJson(jsonObject, identifyReviewCategory(sampleText, languageServiceClient), analyseSyntax(sampleText, languageServiceClient)));
@@ -324,6 +314,55 @@ public class EntityExtractor {
                 e.printStackTrace();
             }
         }
+        return ontologyMapDtos;
+    }
+
+    /**
+     * Endpoint - extracted entity data
+     *
+     * @return
+     */
+    public List<OntologyMapDto> extractEntityData(String searchKeyWord) {
+        try {
+            languageServiceClient = APIConnection.provideLanguageServiceClient();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        JSONParser jsonParser = new JSONParser();
+        JSONArray array = null;
+        try {
+            array = (JSONArray) jsonParser.parse(new FileReader("./src/main/java/akura/cloundnlp/sample_resources/SampleReviews.json"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        List<OntologyMapDto> ontologyMapDtos = new LinkedList<>();
+        for (Object object : array) {
+            JSONObject jsonObject = (JSONObject) object;
+            String text = jsonObject.get("reviewContent").toString();
+            if (text.split(" ").length<=20) continue;
+            try {
+                List<String> replacedText = new RelationshipExtractor().executeModifier(text, searchKeyWord);//change
+                text = "";
+                for (String newStr : replacedText){
+                    text += " "+newStr;
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            jsonObject.put("reviewContent", text);
+            jsonObject.put("mainEntity", searchKeyWord);//change
+            String sampleText = jsonObject.get("reviewContent").toString();
+            try {
+                ontologyMapDtos.add(constructJson(jsonObject, identifyReviewCategory(sampleText, languageServiceClient), analyseSyntax(sampleText, languageServiceClient)));
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (GeneralSecurityException e) {
+                e.printStackTrace();
+            }
+        }
+        System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(ontologyMapDtos));
         return ontologyMapDtos;
     }
 }

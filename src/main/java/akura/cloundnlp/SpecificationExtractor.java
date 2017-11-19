@@ -57,7 +57,7 @@ public class SpecificationExtractor {
         }
         List<FinalEntityTagDto> finalEntityTagDtos = this.findMainEntityAndRelativeEntities(finalEntityTagDtoList);
 
-        FinalEntityTagDto mainEntity = (finalEntityTagDtos != null?finalEntityTagDtos.get(finalEntityTagDtos.size()-1):null);
+        FinalEntityTagDto mainEntity = ((finalEntityTagDtos != null && !finalEntityTagDtos.isEmpty())?finalEntityTagDtos.get(finalEntityTagDtos.size()-1):null);
 
         specificationDto.setMainEntity(mainEntity);//should change it from the main method
 //        finalEntityTagDtos.remove(finalEntityTagDtos.get(finalEntityTagDtos.size()-1));
