@@ -13,6 +13,8 @@ import org.json.simple.parser.ParseException;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.FileSystems;
+import java.nio.file.Path;
 import java.util.*;
 import java.util.regex.Pattern;
 
@@ -172,11 +174,12 @@ public class SpecificationExtractor {
         List<MobileDataSet> mobileDataSetList = new LinkedList<>();
         try {
 
-            JSONArray jsonArray = (JSONArray) jsonParser.parse(new FileReader(System.getProperty("user.dir")+"/src/main/java/akura/cloundnlp/sample_resources/phone_dataset.json"));
+            Path path = FileSystems.getDefault().getPath("src/main/java/akura/cloundnlp/sample_resources/phone_dataset.json");
+            JSONArray jsonArray = (JSONArray) jsonParser.parse(new FileReader(String.valueOf(path.toAbsolutePath())));
 
             for (Object object: jsonArray){
                 JSONObject jsonObject = (JSONObject) object;
-                MobileDataSet mobileDataSet = new MobileDataSet();
+                MobileDataSet mobileDataSet = new MobileDataSet();å
                 jsonObject.forEach((key, value) -> {
 
                     switch (key.toString()){
