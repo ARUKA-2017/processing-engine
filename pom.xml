@@ -75,17 +75,17 @@
             <version>1.9.1</version>
         </dependency>
         <!-- stanford coreNLP -->
-        <dependency>
-            <groupId>edu.stanford.nlp</groupId>
-            <artifactId>stanford-corenlp</artifactId>
-            <version>3.8.0</version>
-        </dependency>
-        <dependency>
-            <groupId>edu.stanford.nlp</groupId>
-            <artifactId>stanford-corenlp</artifactId>
-            <version>3.8.0</version>
-            <classifier>models-english</classifier>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>edu.stanford.nlp</groupId>-->
+            <!--<artifactId>stanford-corenlp</artifactId>-->
+            <!--<version>3.8.0</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>edu.stanford.nlp</groupId>-->
+            <!--<artifactId>stanford-corenlp</artifactId>-->
+            <!--<version>3.8.0</version>-->
+            <!--<classifier>models-english</classifier>-->
+        <!--</dependency>-->
         <!-- slf4j dependencies -->
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -152,11 +152,11 @@
             <version>3.4.0</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/uk.ac.gate/gate-core -->
-        <dependency>
-            <groupId>uk.ac.gate</groupId>
-            <artifactId>gate-core</artifactId>
-            <version>6.1</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>uk.ac.gate</groupId>-->
+            <!--<artifactId>gate-core</artifactId>-->
+            <!--<version>6.1</version>-->
+        <!--</dependency>-->
         <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
