@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3ce70221-10d1-4f3d-ab8c-775e980951f2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/akura/cloundnlp/SpecificationExtractor.java" afterPath="$PROJECT_DIR$/src/main/java/akura/cloundnlp/SpecificationExtractor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/akura/cloundnlp/TestScenario.java" afterPath="$PROJECT_DIR$/src/main/java/akura/cloundnlp/TestScenario.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -98,8 +97,8 @@
       <file leaf-file-name="SpecificationExtractor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/SpecificationExtractor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="181" column="67" lean-forward="false" selection-start-line="181" selection-start-column="67" selection-end-line="181" selection-end-column="67" />
+            <state relative-caret-position="964">
+              <caret line="181" column="66" lean-forward="false" selection-start-line="181" selection-start-column="66" selection-end-line="181" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1292,8 +1291,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/akura/cloundnlp/SpecificationExtractor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="181" column="67" lean-forward="false" selection-start-line="181" selection-start-column="67" selection-end-line="181" selection-end-column="67" />
+        <state relative-caret-position="964">
+          <caret line="181" column="66" lean-forward="false" selection-start-line="181" selection-start-column="66" selection-end-line="181" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

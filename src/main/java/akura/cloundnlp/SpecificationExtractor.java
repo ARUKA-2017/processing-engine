@@ -179,7 +179,7 @@ public class SpecificationExtractor {
 
             for (Object object: jsonArray){
                 JSONObject jsonObject = (JSONObject) object;
-                MobileDataSet mobileDataSet = new MobileDataSet();å
+                MobileDataSet mobileDataSet = new MobileDataSet();
                 jsonObject.forEach((key, value) -> {
 
                     switch (key.toString()){
