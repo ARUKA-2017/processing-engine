@@ -65,11 +65,12 @@ public class SpecificationExtractor {
         specificationDto.setMainEntity(mainEntity);
 //        finalEntityTagDtos.remove(finalEntityTagDtos.get(finalEntityTagDtos.size()-1));
 
+//        specificationDto.setRelativeEntityList(finalEntityTagDtos);
         //relative entity list specifies main entity is better than the other entities
         if (finalEntityTagDtos != null && !finalEntityTagDtos.isEmpty()){
             List<FinalEntityTagDto> tmpRelativeEntityList = new LinkedList<>();
             List<FinalEntityTagDto> relativeEntityList = finalEntityTagDtos;
-            relativeEntityList.remove(relativeEntityList.size()-1);
+//            relativeEntityList.remove(relativeEntityList.size()-1);
             List<MobileDataSet> mobileDataSets = this.getPhoneDataList();
             if (relativeEntityList != null && !relativeEntityList.isEmpty())
                 for(FinalEntityTagDto finalEntityTagDto : relativeEntityList){
