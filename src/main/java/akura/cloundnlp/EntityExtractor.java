@@ -1,11 +1,8 @@
 package akura.cloundnlp;
 
-import akura.cloundnlp.dtos.SpecificationDto;
+import akura.cloundnlp.dtos.*;
 import akura.utility.APIConnection;
 
-import akura.cloundnlp.dtos.FinalEntityTagDto;
-import akura.cloundnlp.dtos.OntologyMapDto;
-import akura.cloundnlp.dtos.SyntaxDto;
 import akura.utility.Logger;
 import com.google.cloud.language.v1beta2.*;
 import com.google.gson.Gson;
@@ -23,6 +20,8 @@ import java.io.IOException;
 import java.security.GeneralSecurityException;
 import java.util.*;
 import java.util.stream.Collectors;
+
+import static java.awt.SystemColor.text;
 
 /**
  * A snippet for Google Cloud Speech API showing how to analyze text message sentiment.
@@ -157,7 +156,7 @@ public class EntityExtractor {
         ontologyMapDto = new OntologyMapDto();
         ontologyMapDto.setReviewId(review.get("review_id").toString());
         ontologyMapDto.setReview(review.get("reviewContent").toString());
-        ontologyMapDto.setReviewRating(Float.parseFloat(review.get("rating").toString()));
+        ontologyMapDto.setReviewRating((review.get("rating").equals("N/A"))?0:Float.parseFloat(review.get("rating").toString()));
         ontologyMapDto.setCategoryMap(categoryMap);
         List<SyntaxDto> syntaxDtos = new LinkedList<>();
         List<FinalEntityTagDto> finalEntityTagDtos = new LinkedList<>();
@@ -195,7 +194,7 @@ public class EntityExtractor {
         ontologyMapDto.setFinalEntityTaggedList(constructAvgScores(prioritizeEntities(finalEntityTagDtos)));
 
         SpecificationExtractor specificationExtractor = new SpecificationExtractor();
-        SpecificationDto specificationDto = specificationExtractor.extractDomainsFromSentenceSyntax(ontologyMapDto.getFinalEntityTaggedList());
+        SpecificationDto specificationDto = specificationExtractor.extractDomainsFromSentenceSyntax(ontologyMapDto.getFinalEntityTaggedList(), ontologyMapDto.getReview());
         ontologyMapDto.setSpecificationDto(specificationDto);
 
         return ontologyMapDto;
@@ -208,17 +207,7 @@ public class EntityExtractor {
      */
     public List<FinalEntityTagDto> prioritizeEntities(List<FinalEntityTagDto> finalEntityTagDtos) {
         Collections.sort(finalEntityTagDtos, (object1, object2) -> (int)(object1.getSalience()*10000-object2.getSalience()*10000));
-//        System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(finalEntityTagDtos));
         return finalEntityTagDtos;
-//        return finalEntityTagDtos
-//                .stream()
-//                .sorted(
-//                        Comparator
-//                                .comparing(
-//                                        FinalEntityTagDto::getSalience
-//                                ).reversed()
-//                )
-//                .collect(Collectors.toList());
     }
 
     /**
@@ -260,8 +249,7 @@ public class EntityExtractor {
             outputDtoList.add(temporaryDto);
             iterator = finalEntityTagDtos.iterator();
         }
-        System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(outputDtoList));
-        return outputDtoList;
+        return this.prioritizeEntities(outputDtoList);
     }
 
     /**
@@ -277,6 +265,29 @@ public class EntityExtractor {
         }
     }
 
+    public static String getMainSalienceEntity(String text){
+        try {
+            languageServiceClient = APIConnection.provideLanguageServiceClient();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Document doc = Document.newBuilder().setContent(text).setType(Document.Type.PLAIN_TEXT).build();
+        AnalyzeEntitySentimentRequest request = AnalyzeEntitySentimentRequest.newBuilder().setDocument(doc).setEncodingType(EncodingType.UTF16).build();
+        AnalyzeEntitySentimentResponse response = languageServiceClient.analyzeEntitySentiment(request);
+
+        List<MobileDataSet> mobileDataSetList = SpecificationExtractor.getPhoneDataList();
+        String mainEntity = "";
+        for (Entity entity: response.getEntitiesList()){
+            System.out.println(entity.getName());
+            for (MobileDataSet mobileDataSet: mobileDataSetList){
+                if (mobileDataSet.getName().toLowerCase().equals(entity.getName().toLowerCase())
+                        && mobileDataSet.getName().toLowerCase().contains(entity.getName().toLowerCase())){
+                    return entity.getName();
+                }
+            }
+        }
+            return mainEntity;
+    }
     /**
      *
      * api endpoint method - test
@@ -289,7 +300,40 @@ public class EntityExtractor {
      * @param text
      * @return
      */
-    public List<OntologyMapDto> extractEntityData(String text) {
+    public List<OntologyMapDto> extractEntityData(String text, String entity) {
+        try {
+            languageServiceClient = APIConnection.provideLanguageServiceClient();
+            List<String> replacedText = new RelationshipExtractor().executeModifier(text, entity);
+            text = "";
+            for (String newStr : replacedText){
+                text += " "+newStr;
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        List<OntologyMapDto> ontologyMapDtos = new LinkedList<>();
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("review_id", "N/A");
+        jsonObject.put("reviewContent", text);
+        jsonObject.put("mainEntity", entity);
+        jsonObject.put("rating", "N/A");
+        try {
+            ontologyMapDtos.add(constructJson(jsonObject, identifyReviewCategory(text, languageServiceClient), analyseSyntax(text, languageServiceClient)));
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (GeneralSecurityException e) {
+            e.printStackTrace();
+        }
+        return ontologyMapDtos;
+    }
+
+    /**
+     * Endpoint - extracted entity data
+     *
+     * @return
+     */
+    public List<OntologyMapDto> extractEntityData(String searchKeyWord) {
         try {
             languageServiceClient = APIConnection.provideLanguageServiceClient();
         } catch (IOException e) {
@@ -307,8 +351,19 @@ public class EntityExtractor {
         List<OntologyMapDto> ontologyMapDtos = new LinkedList<>();
         for (Object object : array) {
             JSONObject jsonObject = (JSONObject) object;
+            String text = jsonObject.get("reviewContent").toString();
+            if (text.split(" ").length<=20) continue;
+            try {
+                List<String> replacedText = new RelationshipExtractor().executeModifier(text, searchKeyWord);//change
+                text = "";
+                for (String newStr : replacedText){
+                    text += " "+newStr;
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
             jsonObject.put("reviewContent", text);
-            jsonObject.put("mainEntity", "IPhone 6S");
+            jsonObject.put("mainEntity", searchKeyWord);//change
             String sampleText = jsonObject.get("reviewContent").toString();
             try {
                 ontologyMapDtos.add(constructJson(jsonObject, identifyReviewCategory(sampleText, languageServiceClient), analyseSyntax(sampleText, languageServiceClient)));
@@ -318,6 +373,7 @@ public class EntityExtractor {
                 e.printStackTrace();
             }
         }
+        System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(ontologyMapDtos));
         return ontologyMapDtos;
     }
 }

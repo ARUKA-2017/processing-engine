@@ -1,6 +1,10 @@
 package akura.crawler;
 
+import akura.cloundnlp.EntityExtractor;
+import akura.cloundnlp.dtos.OntologyMapDto;
+
 import java.io.IOException;
+import java.util.List;
 
 public class Execute {
 
@@ -11,7 +15,7 @@ public class Execute {
 //        Crawler crawler = new Crawler();
 //        crawler.fetchReview("B00UC9QKQ2", 1);//(Item Id, Number of pages to crawl)
         //B01DQCB930
-        ItemLookUp il = new ItemLookUp("https://www.amazon.com/Apple-iPhone-16GB-Unlocked-Smartphone/dp/B00YD547Q6");
+        ItemLookUp il = new ItemLookUp("https://www.amazon.com/Samsung-Galaxy-SM-G930A-Unlocked-Smartphone/dp/B01CYYYRNK");
         System.out.println("Asin: " + il.getItem().getAsinCode());
         System.out.println("Availability: " + il.getItem().getAvailability());
         System.out.println("Category: " + il.getItem().getCategory());
@@ -23,6 +27,25 @@ public class Execute {
 
         Crawler crawler = new Crawler();
         crawler.fetchReview(il.getItem().getAsinCode(), 1);//(Item Id, Number of pages to crawl)
+        EntityExtractor ex = new EntityExtractor();
+        ex.extractEntityData("IPhone 6S");
     }
 
+    /**
+     * endpoint
+     */
+    public List<OntologyMapDto> extractReviewOntologyMap(String url, String searchKeyWord){
+        ItemLookUp il = null;
+        try {
+            il = new ItemLookUp(url);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+
+        Crawler crawler = new Crawler();
+        crawler.fetchReview(il.getItem().getAsinCode(), 1);//(Item Id, Number of pages to crawl)
+        EntityExtractor ex = new EntityExtractor();
+        return ex.extractEntityData(searchKeyWord);
+    }
 }

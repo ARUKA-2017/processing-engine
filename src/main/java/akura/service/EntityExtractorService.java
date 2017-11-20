@@ -16,8 +16,8 @@ public class EntityExtractorService {
     private EntityExtractor entityExtractor = new EntityExtractor();
     private RelationshipExtractor relationshipExtractor = new RelationshipExtractor();
 
-    public List<OntologyMapDto> extractEntity(String text) throws Exception {
-        return entityExtractor.extractEntityData(text);
+    public List<OntologyMapDto> extractEntity(String text, String entity) throws Exception {
+        return entityExtractor.extractEntityData(text, entity);
     }
 
     public List<String> modifiedSentenceList(String text, String entity) {

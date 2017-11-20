@@ -44,14 +44,13 @@ public class RelationshipExtractor {
      * @param paragraph
      * @return
      */
-    public List<String> sentenceTokenize(String paragraph) {
+    public static List<String> sentenceTokenize(String paragraph) {
         List<String> sentenceList = new ArrayList<>();
         Matcher reMatcher = Pattern.compile(REGEX, Pattern.MULTILINE | Pattern.COMMENTS).matcher(paragraph);
         while (reMatcher.find()) {
             sentenceList.add(reMatcher.group());
         }
-        System.out.println("----------------Sentence wise tokenization----------------");
-        System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(sentenceList));
+
         return sentenceList;
     }
 
@@ -80,8 +79,7 @@ public class RelationshipExtractor {
             sentenceDto.setTotalSalience((float) totalSalience);
             analyzedSentenceDtoList.add(sentenceDto);
         });
-        System.out.println("----------------Analyzed sentence list----------------");
-        System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(analyzedSentenceDtoList));
+
         return analyzedSentenceDtoList;
     }
 
@@ -138,7 +136,12 @@ public class RelationshipExtractor {
                         .stream()
                         .filter(words -> (salience.size() > 0 && words.getSalience() == salience.get(0)))
                         .findFirst().orElse(null);
-                String x = sentence.getSentence().replaceAll("It", eligibleEntity.getText());
+                String x = "";// = sentence.getSentence().replaceAll("It", eligibleEntity.getText());
+                try{
+                    x = sentence.getSentence().replaceAll("It", (eligibleEntity != null)?eligibleEntity.getText():"");
+                } catch (NullPointerException e){
+                    System.out.println(e);
+                }
                 sentence.setSentence(x);
             }
             String newSentence = "";

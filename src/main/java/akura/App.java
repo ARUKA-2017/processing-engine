@@ -1,8 +1,11 @@
 package akura;
 
+import akura.cloundnlp.EntityExtractor;
 import akura.cloundnlp.dtos.OntologyMapDto;
+import akura.crawler.Execute;
 import akura.service.EntityExtractorService;
 import akura.service.SparkMiddleware;
+import akura.utility.CrawlerServiceResponse;
 import akura.utility.EntityServiceResponse;
 import akura.utility.SentenceServiceResponse;
 import com.google.gson.Gson;
@@ -22,6 +25,7 @@ public class App {
 
         Gson gson = new Gson();
         EntityExtractorService entityExtractorService = new EntityExtractorService();
+        Execute execute = new Execute();
 
         port(4568);
         Spark.staticFileLocation("/public");
@@ -34,16 +38,29 @@ public class App {
 
         post("/extract-entity", (req, res) -> {
             EntityServiceResponse entityServiceResponse = gson.fromJson(req.body(), EntityServiceResponse.class);
-            List<OntologyMapDto> response = entityExtractorService.extractEntity(entityServiceResponse.text);
+            String mainEntity = EntityExtractor.getMainSalienceEntity(entityServiceResponse.text);
+
+            System.out.println(mainEntity);
+
+            List<OntologyMapDto> response = entityExtractorService.extractEntity(entityServiceResponse.text, mainEntity);
             return new GsonBuilder().setPrettyPrinting().create().toJson(response);
         });
 
         post("/modify-sentence", (req, res) -> {
             SentenceServiceResponse sentenceServiceResponse = gson.fromJson(req.body(), SentenceServiceResponse.class);
-            List<String> response = entityExtractorService.modifiedSentenceList(sentenceServiceResponse.text, sentenceServiceResponse.entity);
+            String mainEntity = EntityExtractor.getMainSalienceEntity(sentenceServiceResponse.text);
+
+            System.out.println(mainEntity);
+
+            List<String> response = entityExtractorService.modifiedSentenceList(sentenceServiceResponse.text, mainEntity);
             return new GsonBuilder().setPrettyPrinting().create().toJson(response);
         });
 
+        post("/extract-review", (req, res) -> {
+            CrawlerServiceResponse crawlerServiceResponse = gson.fromJson(req.body(), CrawlerServiceResponse.class);
+            List<OntologyMapDto> ontologyMapDtos = execute.extractReviewOntologyMap(crawlerServiceResponse.url, crawlerServiceResponse.searchKeyWord);
+            return new GsonBuilder().setPrettyPrinting().create().toJson(ontologyMapDtos);
+        });
     }
 }
 
