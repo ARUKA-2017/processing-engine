@@ -16042,3 +16042,1550 @@ INFO	2017-10-26 11:27:45,536	113284	root	[qtp931686860-21]	{
     "Retina HD display": "spec"
   }
 }
+INFO	2017-10-26 13:36:04,086	0	root	[qtp1521637044-23]	----------------Category Map----------------
+INFO	2017-10-26 13:36:04,091	5	root	[qtp1521637044-23]	{
+  "Computers \u0026 Electronics": 0.98
+}
+INFO	2017-10-26 13:36:04,866	780	root	[qtp1521637044-23]	----------------Google NLP Entity List----------------
+INFO	2017-10-26 13:36:04,868	782	root	[qtp1521637044-23]	{
+  "cac2260e-094e-4406-893d-ff7ba28ea28f": [
+    "flagship",
+    "OTHER",
+    "0.0",
+    "0.07341458"
+  ],
+  "56ce6408-1cab-4af0-ad0d-208aa4f7c4cf": [
+    "use",
+    "OTHER",
+    "-0.1",
+    "0.009111574"
+  ],
+  "b6f59eaa-9874-485f-a45d-3ffbfb745084": [
+    "phone",
+    "CONSUMER_GOOD",
+    "0.8",
+    "0.0038288746"
+  ],
+  "de236795-b986-4f80-8aee-fb10611de3f0": [
+    "G3",
+    "OTHER",
+    "0.8",
+    "0.0034304033"
+  ],
+  "a2ac36fe-a908-40d9-9283-0f06744317ae": [
+    "apps",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.020527342"
+  ],
+  "a2eef07f-46ab-4256-84af-6c2b29316679": [
+    "battery life",
+    "OTHER",
+    "-0.7",
+    "0.010470013"
+  ],
+  "9c4c4d8a-e60f-4fb7-9b03-19a40a7af74d": [
+    "iPhone 6",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.004419087"
+  ],
+  "27c91eb8-dfac-4b57-9518-6951085cfe5a": [
+    "device",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.004142645"
+  ],
+  "a628dcaa-8cf4-4e26-aa3d-7ffa9a7de77a": [
+    "Micro USB flap",
+    "OTHER",
+    "-0.7",
+    "0.009078508"
+  ],
+  "09dd8e86-0587-436b-80fa-043cc3095867": [
+    "upgrading",
+    "OTHER",
+    "-0.6",
+    "0.0018180325"
+  ],
+  "49d1da9e-88ca-4425-b7c3-d5aa4d831f10": [
+    "performance",
+    "OTHER",
+    "0.0",
+    "0.023868844"
+  ],
+  "a8bf1c0d-c059-4d43-872e-12832483aa2b": [
+    "release cycle",
+    "OTHER",
+    "0.0",
+    "0.005556968"
+  ],
+  "1db1dbcf-9778-4e19-b8ff-deaf433a3e96": [
+    "tag",
+    "OTHER",
+    "0.0",
+    "0.0061029084"
+  ],
+  "ffd2c1b9-c882-4959-8191-8b315bca8527": [
+    "phones",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.0022845615"
+  ],
+  "82fff926-5dd6-4a73-8a3a-2e4b8824f8c9": [
+    "sequel",
+    "WORK_OF_ART",
+    "0.0",
+    "0.0018180325"
+  ],
+  "84e0ce14-b6b2-4a52-a5b3-2bffe7847a35": [
+    "price difference",
+    "OTHER",
+    "0.0",
+    "0.004883854"
+  ],
+  "c843dc1d-fdcd-4f39-80d0-a21d26b38983": [
+    "drop",
+    "OTHER",
+    "0.0",
+    "0.023689613"
+  ],
+  "dcbec7ea-42d5-40cd-9197-32a4207f0ed7": [
+    "camera",
+    "CONSUMER_GOOD",
+    "0.8",
+    "0.01079296"
+  ],
+  "c63fa382-659d-4202-bf09-bdcd4aebcd35": [
+    "waterproofing",
+    "OTHER",
+    "-0.4",
+    "0.0060571698"
+  ],
+  "75bf1946-15a0-4767-bcfd-a0b2899955ac": [
+    "handset",
+    "CONSUMER_GOOD",
+    "-0.7",
+    "0.0055652577"
+  ],
+  "c9f30a63-2a03-4eca-9059-7e391fdc2f64": [
+    "price",
+    "OTHER",
+    "-0.9",
+    "0.007260006"
+  ],
+  "32f786d1-1654-4fdc-b635-ec8cb63cf4dd": [
+    "Z3",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.055496417"
+  ],
+  "9ab6f3fe-cb56-41b7-86d2-8439f141d9b2": [
+    "UK",
+    "LOCATION",
+    "0.0",
+    "0.0010790285"
+  ],
+  "63109036-4215-4f7b-aa92-5e919f3e6fbd": [
+    "Sony Xperia Z3",
+    "CONSUMER_GOOD",
+    "0.8",
+    "0.021823665"
+  ],
+  "d2a727f3-36e1-4872-bfde-97d719a08422": [
+    "smartphone",
+    "CONSUMER_GOOD",
+    "-0.9",
+    "0.0063594477"
+  ],
+  "6ea5cff8-cfbd-4bed-b070-8174726d9acd": [
+    "Z3",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.0018312582"
+  ],
+  "14cd05be-0bc6-44e9-abd4-001006ab75f4": [
+    "Xperia Z3",
+    "OTHER",
+    "-0.4",
+    "0.040659137"
+  ],
+  "11eef206-9341-4119-afda-e52f3a42c77f": [
+    "bottom line",
+    "OTHER",
+    "0.0",
+    "0.004756506"
+  ],
+  "fdbd8915-dcfe-42f0-9d34-22c18c57b0e5": [
+    "Android",
+    "CONSUMER_GOOD",
+    "-0.7",
+    "0.0032967736"
+  ],
+  "b97af0f6-5aa8-48b1-ba9e-4904a742b4f0": [
+    "HTC One M8",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.0036085488"
+  ],
+  "0bb32bb6-9cc9-4dee-83cd-297ca99d6e24": [
+    "LG G3",
+    "ORGANIZATION",
+    "0.2",
+    "0.0064624907"
+  ],
+  "520a811e-a26d-4192-a685-f8342c675434": [
+    "Sony Xperia Z3",
+    "ORGANIZATION",
+    "0.0",
+    "0.5494568"
+  ],
+  "f62e2ed6-57f5-4ba8-b754-0505d369a664": [
+    "bit",
+    "OTHER",
+    "0.0",
+    "0.009111574"
+  ],
+  "1ea9fdd5-a2b7-40d3-9451-f628e2d185b4": [
+    "Sony Xperia Z3+",
+    "ORGANIZATION",
+    "0.0",
+    "0.0060470686"
+  ],
+  "c4e91fae-de12-4ad0-bb7c-24cf50158f6b": [
+    "eBay",
+    "OTHER",
+    "-0.1",
+    "0.0016936301"
+  ],
+  "25590aa4-e99e-4130-85e8-62fbb2c6c3b4": [
+    "flagship",
+    "OTHER",
+    "0.0",
+    "0.0034860556"
+  ],
+  "12baca89-d6e5-4af0-a59f-2f51f94d70a5": [
+    "smartphones",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.006349978"
+  ],
+  "9d5b7dd0-5e28-4c81-b1c6-0731bef83f9a": [
+    "brand",
+    "ORGANIZATION",
+    "0.0",
+    "0.006026173"
+  ],
+  "3a730cf4-b6a5-4a67-9972-0883ef10375c": [
+    "issue",
+    "OTHER",
+    "0.0",
+    "0.023868844"
+  ],
+  "fa6f55b0-d5e5-4dc2-948e-52658722a38d": [
+    "contrast",
+    "OTHER",
+    "0.0",
+    "0.0060910163"
+  ],
+  "5d86d976-1d3e-4da4-b725-bcd85b8c42eb": [
+    "Apple",
+    "ORGANIZATION",
+    "-0.6",
+    "0.0032967736"
+  ],
+  "ff1b8481-4236-4d3f-bf55-72ecf5043349": [
+    "Clove",
+    "OTHER",
+    "0.0",
+    "0.001077588"
+  ]
+}
+INFO	2017-10-26 13:37:41,269	97183	root	[qtp1521637044-23]	----------------Noun combination sequences----------------
+INFO	2017-10-26 13:37:41,273	97187	root	[qtp1521637044-23]	{
+  "Sony Xperia Z3": "phone",
+  "months": "calendar view",
+  "flagship": "single specie",
+  "performance": "factor",
+  "Z3": "machine",
+  "power": "issue",
+  "apps": "technology",
+  "issue": "information",
+  "camera": "item",
+  "battery life": "factor",
+  "bit": "information",
+  "day": "calendar view",
+  "use": "word",
+  "Micro USB flap": "Not Found",
+  "waterproofing": "service",
+  "price": "factor",
+  "Xperia Z3 brand": "Not Found",
+  "drop": "feature",
+  "tag": "game",
+  "contrast": "factor",
+  "iPhone": "device",
+  "LG G3": "device",
+  "HTC": "company",
+  "M8": "model",
+  "Xperia Z3": "device",
+  "Android smartphone": "device",
+  "proposition": "film",
+  "Apple": "fruit",
+  "handset": "mobile device",
+  "Sony": "company",
+  "month release cycle": "Not Found",
+  "smartphones": "mobile device",
+  "Sony Xperia Z3+": "Not Found",
+  "UK": "Not Found",
+  "Clove": "spice",
+  "upgrading": "task",
+  "phones": "device",
+  "sequel": "work",
+  "device": "resource",
+  "price difference": "relative concept",
+  "line": "object",
+  "phone": "device",
+  "Z3+": "Not Found",
+  "eBay": "site"
+}
+INFO	2017-10-26 13:37:41,274	97188	root	[qtp1521637044-23]	--------- Synatx Map ------------
+INFO	2017-10-26 13:37:41,275	97189	root	[qtp1521637044-23]	{1=[The, DET, The], 2=[Sony, NOUN, Sony], 3=[Xperia, NOUN, Xperia], 4=[Z3, NOUN, Z3], 5=[has, VERB, have], 6=[been, VERB, be], 7=[with, ADP, with], 8=[us, PRON, us], 9=[for, ADP, for], 10=[nine, NUM, nine], 11=[months, NOUN, month], 12=[,, PUNCT, ,], 13=[but, CONJ, but], 14=[it, PRON, it], 15=[is, VERB, be], 16=[still, ADV, still], 17=[the, DET, the], 18=[formidable, ADJ, formidable], 19=[flagship, NOUN, flagship], 20=[we, PRON, we], 21=[once, ADV, once], 22=[knew, VERB, know], 23=[?, PUNCT, ?], 24=[When, ADV, When], 25=[it, PRON, it], 26=[comes, VERB, come], 27=[to, ADP, to], 28=[the, DET, the], 29=[performance, NOUN, performance], 30=[,, PUNCT, ,], 31=[our, PRON, our], 32=[Z3, NOUN, Z3], 33=[is, VERB, be], 34=[still, ADV, still], 35=[running, VERB, run], 36=[power, NOUN, power], 37=[-, PUNCT, -], 38=[hungry, ADJ, hungry], 39=[apps, NOUN, app], 40=[without, ADP, without], 41=[issue, NOUN, issue], 42=[,, PUNCT, ,], 43=[and, CONJ, and], 44=[the, DET, the], 45=[camera, NOUN, camera], 46=[is, VERB, be], 47=[as, ADV, as], 48=[good, ADJ, good], 49=[as, ADP, as], 50=[ever, ADV, ever], 51=[., PUNCT, .], 52=[The, DET, The], 53=[once, ADV, once], 54=[-, PUNCT, -], 55=[interminable, ADJ, interminable], 56=[battery, NOUN, battery], 57=[life, NOUN, life], 58=[has, VERB, have], 59=[dropped, VERB, drop], 60=[off, PRT, off], 61=[a, DET, a], 62=[bit, NOUN, bit], 63=[now, ADV, now], 64=[though, ADV, though], 65=[,, PUNCT, ,], 66=[so, CONJ, so], 67=[you, PRON, you], 68=[’re, VERB, be], 69=[looking, VERB, look], 70=[at, ADP, at], 71=[about, ADV, about], 72=[one, NUM, one], 73=[day, NOUN, day], 74=[’s, PRT, ’s], 75=[use, NOUN, use], 76=[., PUNCT, .], 77=[Also, ADV, Also], 78=[,, PUNCT, ,], 79=[the, DET, the], 80=[Micro, NOUN, Micro], 81=[USB, NOUN, USB], 82=[flap, NOUN, flap], 83=[refuses, VERB, refuse], 84=[to, PRT, to], 85=[tuck, VERB, tuck], 86=[in, PRT, in], 87=[anymore, ADV, anymore], 88=[–, PUNCT, –], 89=[goodbye, X, goodbye], 90=[,, PUNCT, ,], 91=[waterproofing, NOUN, waterproofing], 92=[., PUNCT, .], 93=[That, DET, That], 94=[said, VERB, say], 95=[,, PUNCT, ,], 96=[the, DET, the], 97=[price, NOUN, price], 98=[has, VERB, have], 99=[fallen, VERB, fall], 100=[significantly, ADV, significantly], 101=[from, ADP, from], 102=[when, ADV, when], 103=[we, PRON, we], 104=[first, ADV, first], 105=[reviewed, VERB, review], 106=[it, PRON, it], 107=[., PUNCT, .], 108=[You, PRON, You], 109=[can, VERB, can], 110=[now, ADV, now], 111=[purchase, VERB, purchase], 112=[the, DET, the], 113=[Xperia, NOUN, Xperia], 114=[Z3, NOUN, Z3], 115=[brand, NOUN, brand], 116=[new, ADJ, new], 117=[for, ADP, for], 118=[around, ADV, around], 119=[£, PUNCT, £], 120=[360, NUM, 360], 121=[,, PUNCT, ,], 122=[which, DET, which], 123=[is, VERB, be], 124=[a, DET, a], 125=[big, ADJ, big], 126=[drop, NOUN, drop], 127=[from, ADP, from], 128=[the, DET, the], 129=[original, ADJ, original], 130=[£, PUNCT, £], 131=[525, NUM, 525], 132=[tag, NOUN, tag], 133=[., PUNCT, .], 134=[By, ADP, By], 135=[contrast, NOUN, contrast], 136=[,, PUNCT, ,], 137=[you, PRON, you], 138=[can, VERB, can], 139=[currently, ADV, currently], 140=[get, VERB, get], 141=[the, DET, the], 142=[iPhone, NOUN, iPhone], 143=[6, NUM, 6], 144=[for, ADP, for], 145=[£, PUNCT, £], 146=[470, NUM, 470], 147=[,, PUNCT, ,], 148=[the, DET, the], 149=[LG, NOUN, LG], 150=[G3, NOUN, G3], 151=[for, ADP, for], 152=[£, PUNCT, £], 153=[260, NUM, 260], 154=[,, PUNCT, ,], 155=[or, CONJ, or], 156=[the, DET, the], 157=[HTC, NOUN, HTC], 158=[One, NUM, One], 159=[M8, NOUN, M8], 160=[for, ADP, for], 161=[£, PUNCT, £], 162=[305, NUM, 305], 163=[., PUNCT, .], 164=[The, DET, The], 165=[Xperia, NOUN, Xperia], 166=[Z3, NOUN, Z3], 167=[is, VERB, be], 168=[pricy, ADJ, pricy], 169=[for, ADP, for], 170=[an, DET, an], 171=[ailing, ADJ, ailing], 172=[Android, NOUN, Android], 173=[smartphone, NOUN, smartphone], 174=[,, PUNCT, ,], 175=[but, CONJ, but], 176=[it, PRON, it], 177=[’s, VERB, be], 178=[still, ADV, still], 179=[a, DET, a], 180=[cheaper, ADJ, cheap], 181=[proposition, NOUN, proposition], 182=[than, ADP, than], 183=[Apple, NOUN, Apple], 184=[’s, PRT, ’s], 185=[latest, ADJ, late], 186=[handset, NOUN, handset], 187=[., PUNCT, .], 188=[Do, VERB, Do], 189=[n’t, ADV, n’t], 190=[forget, VERB, forget], 191=[that, ADP, that], 192=[Sony, NOUN, Sony], 193=[runs, VERB, run], 194=[a, DET, a], 195=[6, NUM, 6], 196=[-, PUNCT, -], 197=[month, NOUN, month], 198=[release, NOUN, release], 199=[cycle, NOUN, cycle], 200=[for, ADP, for], 201=[its, PRON, its], 202=[smartphones, NOUN, smartphone], 203=[,, PUNCT, ,], 204=[so, CONJ, so], 205=[the, DET, the], 206=[Sony, NOUN, Sony], 207=[Xperia, NOUN, Xperia], 208=[Z3+, NOUN, Z3+], 209=[has, VERB, have], 210=[just, ADV, just], 211=[launched, VERB, launch], 212=[here, ADV, here], 213=[in, ADP, in], 214=[the, DET, the], 215=[UK, NOUN, UK], 216=[., PUNCT, .], 217=[That, DET, That], 218=[’s, VERB, be], 219=[retailing, VERB, retail], 220=[over, PRT, over], 221=[at, ADP, at], 222=[Clove, NOUN, Clove], 223=[for, ADP, for], 224=[£, PUNCT, £], 225=[400, NUM, 400], 226=[right, ADV, right], 227=[now, ADV, now], 228=[., PUNCT, .], 229=[If, ADP, If], 230=[you, PRON, you], 231=[’ve, VERB, have], 232=[got, VERB, get], 233=[a, DET, a], 234=[Z3, NOUN, Z3], 235=[,, PUNCT, ,], 236=[do, VERB, do], 237=[n’t, ADV, n’t], 238=[bother, VERB, bother], 239=[upgrading, NOUN, upgrading], 240=[,, PUNCT, ,], 241=[but, CONJ, but], 242=[those, DET, those], 243=[with, ADP, with], 244=[older, ADJ, old], 245=[phones, NOUN, phone], 246=[will, VERB, will], 247=[want, VERB, want], 248=[to, PRT, to], 249=[consider, VERB, consider], 250=[the, DET, the], 251=[sequel, NOUN, sequel], 252=[if, ADP, if], 253=[you, PRON, you], 254=[’re, VERB, be], 255=[looking, VERB, look], 256=[for, ADP, for], 257=[a, DET, a], 258=[new, ADJ, new], 259=[device, NOUN, device], 260=[–, PUNCT, –], 261=[the, DET, the], 262=[price, NOUN, price], 263=[difference, NOUN, difference], 264=[is, VERB, be], 265=[a, DET, a], 266=[mere, ADJ, mere], 267=[£, PUNCT, £], 268=[40, NUM, 40], 269=[., PUNCT, .], 270=[Here, ADV, Here], 271=[’s, VERB, be], 272=[the, DET, the], 273=[bottom, ADJ, bottom], 274=[line, NOUN, line], 275=[:, PUNCT, :], 276=[the, DET, the], 277=[Sony, NOUN, Sony], 278=[Xperia, NOUN, Xperia], 279=[Z3, NOUN, Z3], 280=[is, VERB, be], 281=[still, ADV, still], 282=[a, DET, a], 283=[great, ADJ, great], 284=[phone, NOUN, phone], 285=[,, PUNCT, ,], 286=[but, CONJ, but], 287=[you, PRON, you], 288=[can, VERB, can], 289=[get, VERB, get], 290=[the, DET, the], 291=[equally, ADV, equally], 292=[impressive, ADJ, impressive], 293=[LG, NOUN, LG], 294=[G3, NOUN, G3], 295=[for, ADP, for], 296=[£, PUNCT, £], 297=[100, NUM, 100], 298=[less, ADJ, less], 299=[., PUNCT, .], 300=[It, PRON, It], 301=[’s, VERB, be], 302=[also, ADV, also], 303=[been, VERB, be], 304=[superseded, VERB, supersede], 305=[by, ADP, by], 306=[the, DET, the], 307=[Z3+, NOUN, Z3+], 308=[,, PUNCT, ,], 309=[so, ADP, so], 310=[it, PRON, it], 311=[’s, VERB, be], 312=[not, ADV, not], 313=[even, ADV, even], 314=[Sony, NOUN, Sony], 315=[’s, PRT, ’s], 316=[flagship, NOUN, flagship], 317=[anymore, ADV, anymore], 318=[., PUNCT, .], 319=[It, PRON, It], 320=[’s, VERB, be], 321=[a, DET, a], 322=[good, ADJ, good], 323=[phone, NOUN, phone], 324=[if, ADP, if], 325=[you, PRON, you], 326=[can, VERB, can], 327=[bag, VERB, bag], 328=[one, NUM, one], 329=[cheap, ADJ, cheap], 330=[on, ADP, on], 331=[eBay, NOUN, eBay], 332=[,, PUNCT, ,], 333=[but, CONJ, but], 334=[we, PRON, we], 335=[ca, VERB, ca], 336=[n’t, ADV, n’t], 337=[recommend, VERB, recommend], 338=[it, PRON, it], 339=[as, ADP, as], 340=[new, ADJ, new], 341=[., PUNCT, .]}
+INFO	2017-10-26 13:37:41,276	97190	root	[qtp1521637044-23]	--------- finalEntityTaggedMap ------------
+INFO	2017-10-26 13:37:41,277	97191	root	[qtp1521637044-23]	{1=[flagship, 0.0, 0.07341458, OTHER, flagship, single specie], 2=[use, -0.1, 0.009111574, OTHER, use, word], 3=[phone, 0.8, 0.0038288746, CONSUMER_GOOD, Android smartphone, device], 4=[G3, 0.8, 0.0034304033, OTHER, LG G3, device], 5=[apps, 0.0, 0.020527342, CONSUMER_GOOD, apps, technology], 6=[battery life, -0.7, 0.010470013, OTHER, battery life, factor], 7=[iPhone 6, 0.0, 0.004419087, CONSUMER_GOOD], 8=[device, 0.0, 0.004142645, CONSUMER_GOOD, device, resource], 9=[Micro USB flap, -0.7, 0.009078508, OTHER, Micro USB flap, Not Found], 10=[upgrading, -0.6, 0.0018180325, OTHER, upgrading, task], 11=[performance, 0.0, 0.023868844, OTHER, performance, factor], 12=[release cycle, 0.0, 0.005556968, OTHER, month release cycle, Not Found], 13=[tag, 0.0, 0.0061029084, OTHER, tag, game], 14=[phones, 0.0, 0.0022845615, CONSUMER_GOOD, smartphones, mobile device], 15=[sequel, 0.0, 0.0018180325, WORK_OF_ART, sequel, work], 16=[price difference, 0.0, 0.004883854, OTHER, price difference, relative concept], 17=[drop, 0.0, 0.023689613, OTHER, drop, feature], 18=[camera, 0.8, 0.01079296, CONSUMER_GOOD, camera, item], 19=[waterproofing, -0.4, 0.0060571698, OTHER, waterproofing, service], 20=[handset, -0.7, 0.0055652577, CONSUMER_GOOD, handset, mobile device], 21=[price, -0.9, 0.007260006, OTHER, price, factor], 22=[Z3, 0.0, 0.055496417, CONSUMER_GOOD, Sony Xperia Z3, phone], 23=[UK, 0.0, 0.0010790285, LOCATION, UK, Not Found], 24=[Sony Xperia Z3, 0.8, 0.021823665, CONSUMER_GOOD, Sony Xperia Z3, phone], 25=[smartphone, -0.9, 0.0063594477, CONSUMER_GOOD, Android smartphone, device], 26=[Z3, 0.0, 0.0018312582, CONSUMER_GOOD, Sony Xperia Z3, phone], 27=[Xperia Z3, -0.4, 0.040659137, OTHER, Sony Xperia Z3, phone], 28=[bottom line, 0.0, 0.004756506, OTHER], 29=[Android, -0.7, 0.0032967736, CONSUMER_GOOD, Android smartphone, device], 30=[HTC One M8, 0.0, 0.0036085488, CONSUMER_GOOD], 31=[LG G3, 0.2, 0.0064624907, ORGANIZATION, LG G3, device], 32=[Sony Xperia Z3, 0.0, 0.5494568, ORGANIZATION, Sony Xperia Z3, phone], 33=[bit, 0.0, 0.009111574, OTHER, bit, information], 34=[Sony Xperia Z3+, 0.0, 0.0060470686, ORGANIZATION, Sony Xperia Z3+, Not Found], 35=[eBay, -0.1, 0.0016936301, OTHER, eBay, site], 36=[flagship, 0.0, 0.0034860556, OTHER, flagship, single specie], 37=[smartphones, 0.0, 0.006349978, CONSUMER_GOOD, smartphones, mobile device], 38=[brand, 0.0, 0.006026173, ORGANIZATION, Xperia Z3 brand, Not Found], 39=[issue, 0.0, 0.023868844, OTHER, issue, information], 40=[contrast, 0.0, 0.0060910163, OTHER, contrast, factor], 41=[Apple, -0.6, 0.0032967736, ORGANIZATION, Apple, fruit], 42=[Clove, 0.0, 0.001077588, OTHER, Clove, spice]}
+INFO	2017-10-26 13:40:27,048	0	root	[qtp2137858263-23]	----------------Category Map----------------
+INFO	2017-10-26 13:40:27,053	5	root	[qtp2137858263-23]	{
+  "Computers \u0026 Electronics": 0.98
+}
+INFO	2017-10-26 13:40:27,993	945	root	[qtp2137858263-23]	----------------Google NLP Entity List----------------
+INFO	2017-10-26 13:40:28,000	952	root	[qtp2137858263-23]	{
+  "edf449ca-671c-431f-8c8a-73207eb2a0af": [
+    "Sony Xperia Z3",
+    "ORGANIZATION",
+    "0.0",
+    "0.5494568"
+  ],
+  "f51d72a6-d9ce-48f9-8e9a-27b6258404c6": [
+    "issue",
+    "OTHER",
+    "0.0",
+    "0.023868844"
+  ],
+  "631b9e2a-e476-4446-99f4-d6599e8a0d37": [
+    "bit",
+    "OTHER",
+    "0.0",
+    "0.009111574"
+  ],
+  "c31261ac-49e1-420c-a051-54dbd0f8098b": [
+    "sequel",
+    "WORK_OF_ART",
+    "0.0",
+    "0.0018180325"
+  ],
+  "1f09532a-f6b8-4a95-9da7-b54f09f25fff": [
+    "smartphone",
+    "CONSUMER_GOOD",
+    "-0.9",
+    "0.0063594477"
+  ],
+  "77dd0c76-aacd-4c88-838c-3c34791fd919": [
+    "performance",
+    "OTHER",
+    "0.0",
+    "0.023868844"
+  ],
+  "379204f5-a65f-43ef-a41d-45097216876e": [
+    "camera",
+    "CONSUMER_GOOD",
+    "0.8",
+    "0.01079296"
+  ],
+  "e4849354-ea2b-4b2c-9ec0-cd2b50dc90be": [
+    "tag",
+    "OTHER",
+    "0.0",
+    "0.0061029084"
+  ],
+  "06563739-0731-476a-8f4d-61b437b06b20": [
+    "Sony Xperia Z3",
+    "CONSUMER_GOOD",
+    "0.8",
+    "0.021823665"
+  ],
+  "bd7b6ad2-5099-449c-8a4f-901c4d2b9dc3": [
+    "use",
+    "OTHER",
+    "-0.1",
+    "0.009111574"
+  ],
+  "e3e59b01-666b-4e40-899b-b895a259ea01": [
+    "price",
+    "OTHER",
+    "-0.9",
+    "0.007260006"
+  ],
+  "198b6d32-77aa-4ab2-9537-13b27d8f1a2e": [
+    "Sony Xperia Z3+",
+    "ORGANIZATION",
+    "0.0",
+    "0.0060470686"
+  ],
+  "7046a5dd-c47f-47f2-9783-ec90727cff1c": [
+    "G3",
+    "OTHER",
+    "0.8",
+    "0.0034304033"
+  ],
+  "6df486d7-13b0-4e6b-8e18-09cf5768d080": [
+    "upgrading",
+    "OTHER",
+    "-0.6",
+    "0.0018180325"
+  ],
+  "c729c604-fd48-4469-9510-9401a9513ecc": [
+    "bottom line",
+    "OTHER",
+    "0.0",
+    "0.004756506"
+  ],
+  "ac11a385-7801-4a8e-9e2b-2e43195d8f70": [
+    "phones",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.0022845615"
+  ],
+  "9092cfb8-0c3e-4fe0-8892-9a832c68f753": [
+    "contrast",
+    "OTHER",
+    "0.0",
+    "0.0060910163"
+  ],
+  "d0e471bc-2755-4441-b9ad-3ad7ac41eb43": [
+    "handset",
+    "CONSUMER_GOOD",
+    "-0.7",
+    "0.0055652577"
+  ],
+  "fbaefe55-6a1b-4e25-981a-fe43006fc713": [
+    "iPhone 6",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.004419087"
+  ],
+  "2beffee6-70cd-4b3a-879a-124c724f07fc": [
+    "Micro USB flap",
+    "OTHER",
+    "-0.7",
+    "0.009078508"
+  ],
+  "a1f3243e-49cb-465b-88e4-fd95c6871b9d": [
+    "LG G3",
+    "ORGANIZATION",
+    "0.2",
+    "0.0064624907"
+  ],
+  "d66b751c-2a69-4036-84ab-ece24536b938": [
+    "Apple",
+    "ORGANIZATION",
+    "-0.6",
+    "0.0032967736"
+  ],
+  "f57cbad7-cebc-4fe1-a9a8-5597b8dfca9e": [
+    "flagship",
+    "OTHER",
+    "0.0",
+    "0.0034860556"
+  ],
+  "860b7069-b2c3-437d-a534-ca3603cea92e": [
+    "Z3",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.055496417"
+  ],
+  "9e192071-1e5c-46f7-b5a9-cde76eb8ebae": [
+    "Clove",
+    "OTHER",
+    "0.0",
+    "0.001077588"
+  ],
+  "ed46ef8d-596f-48de-9757-ab42bda4f604": [
+    "battery life",
+    "OTHER",
+    "-0.7",
+    "0.010470013"
+  ],
+  "f0d6de7f-389a-42d5-8b09-80e99105e23a": [
+    "flagship",
+    "OTHER",
+    "0.0",
+    "0.07341458"
+  ],
+  "c42702e6-8b7e-47e6-8661-f4e7534d34ea": [
+    "brand",
+    "ORGANIZATION",
+    "0.0",
+    "0.006026173"
+  ],
+  "bfa032b0-bd62-4231-95ed-6b4ab711d868": [
+    "eBay",
+    "OTHER",
+    "-0.1",
+    "0.0016936301"
+  ],
+  "473acd31-2bae-47de-a1f6-0e727760f62a": [
+    "apps",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.020527342"
+  ],
+  "3bc684af-14bf-4961-9b75-0524f9d9b7c0": [
+    "price difference",
+    "OTHER",
+    "0.0",
+    "0.004883854"
+  ],
+  "9b3f88bd-d4b9-44f5-9572-697d1a600b68": [
+    "waterproofing",
+    "OTHER",
+    "-0.4",
+    "0.0060571698"
+  ],
+  "15f28589-3760-476c-a318-8d9966e625af": [
+    "release cycle",
+    "OTHER",
+    "0.0",
+    "0.005556968"
+  ],
+  "e09bc410-8e5c-4907-9348-576488c2f668": [
+    "phone",
+    "CONSUMER_GOOD",
+    "0.8",
+    "0.0038288746"
+  ],
+  "43945f26-ed78-4a0e-863c-ec195513bf95": [
+    "Xperia Z3",
+    "OTHER",
+    "-0.4",
+    "0.040659137"
+  ],
+  "61bc37bb-9958-4ba8-bb85-bac282b7964f": [
+    "UK",
+    "LOCATION",
+    "0.0",
+    "0.0010790285"
+  ],
+  "bf9c8a21-18fb-45ad-b2cb-00813eefef9f": [
+    "device",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.004142645"
+  ],
+  "449edb15-587f-4c02-89d2-2c478a1b1494": [
+    "HTC One M8",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.0036085488"
+  ],
+  "f175947c-d245-491d-8f82-23bde028d073": [
+    "Android",
+    "CONSUMER_GOOD",
+    "-0.7",
+    "0.0032967736"
+  ],
+  "9b4f8d83-623f-435c-8f9b-daaddff0e7e5": [
+    "drop",
+    "OTHER",
+    "0.0",
+    "0.023689613"
+  ],
+  "4d370bb8-22eb-49ef-a5b5-db5ce1717357": [
+    "smartphones",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.006349978"
+  ],
+  "8199eda6-74fc-42df-8e4d-3e880a7e64c8": [
+    "Z3",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.0018312582"
+  ]
+}
+INFO	2017-10-26 13:42:23,559	116511	root	[qtp2137858263-23]	----------------Noun combination sequences----------------
+INFO	2017-10-26 13:42:23,560	116512	root	[qtp2137858263-23]	{
+  "Sony Xperia Z3": "phone",
+  "months": "calendar view",
+  "flagship": "single specie",
+  "performance": "factor",
+  "Z3": "machine",
+  "power": "issue",
+  "apps": "technology",
+  "issue": "information",
+  "camera": "item",
+  "battery life": "factor",
+  "bit": "information",
+  "day": "calendar view",
+  "use": "word",
+  "Micro USB flap": "Not Found",
+  "waterproofing": "service",
+  "price": "factor",
+  "Xperia Z3 brand": "Not Found",
+  "drop": "feature",
+  "tag": "game",
+  "contrast": "factor",
+  "iPhone": "device",
+  "LG G3": "device",
+  "HTC": "company",
+  "M8": "model",
+  "Xperia Z3": "device",
+  "Android smartphone": "device",
+  "proposition": "film",
+  "Apple": "fruit",
+  "handset": "mobile device",
+  "Sony": "company",
+  "month release cycle": "Not Found",
+  "smartphones": "mobile device",
+  "Sony Xperia Z3+": "Not Found",
+  "UK": "Not Found",
+  "Clove": "spice",
+  "upgrading": "task",
+  "phones": "device",
+  "sequel": "work",
+  "device": "resource",
+  "price difference": "relative concept",
+  "line": "object",
+  "phone": "device",
+  "Z3+": "Not Found",
+  "eBay": "site"
+}
+INFO	2017-10-26 13:42:23,561	116513	root	[qtp2137858263-23]	--------- Synatx Map ------------
+INFO	2017-10-26 13:42:23,562	116514	root	[qtp2137858263-23]	{1=[The, DET, The], 2=[Sony, NOUN, Sony], 3=[Xperia, NOUN, Xperia], 4=[Z3, NOUN, Z3], 5=[has, VERB, have], 6=[been, VERB, be], 7=[with, ADP, with], 8=[us, PRON, us], 9=[for, ADP, for], 10=[nine, NUM, nine], 11=[months, NOUN, month], 12=[,, PUNCT, ,], 13=[but, CONJ, but], 14=[it, PRON, it], 15=[is, VERB, be], 16=[still, ADV, still], 17=[the, DET, the], 18=[formidable, ADJ, formidable], 19=[flagship, NOUN, flagship], 20=[we, PRON, we], 21=[once, ADV, once], 22=[knew, VERB, know], 23=[?, PUNCT, ?], 24=[When, ADV, When], 25=[it, PRON, it], 26=[comes, VERB, come], 27=[to, ADP, to], 28=[the, DET, the], 29=[performance, NOUN, performance], 30=[,, PUNCT, ,], 31=[our, PRON, our], 32=[Z3, NOUN, Z3], 33=[is, VERB, be], 34=[still, ADV, still], 35=[running, VERB, run], 36=[power, NOUN, power], 37=[-, PUNCT, -], 38=[hungry, ADJ, hungry], 39=[apps, NOUN, app], 40=[without, ADP, without], 41=[issue, NOUN, issue], 42=[,, PUNCT, ,], 43=[and, CONJ, and], 44=[the, DET, the], 45=[camera, NOUN, camera], 46=[is, VERB, be], 47=[as, ADV, as], 48=[good, ADJ, good], 49=[as, ADP, as], 50=[ever, ADV, ever], 51=[., PUNCT, .], 52=[The, DET, The], 53=[once, ADV, once], 54=[-, PUNCT, -], 55=[interminable, ADJ, interminable], 56=[battery, NOUN, battery], 57=[life, NOUN, life], 58=[has, VERB, have], 59=[dropped, VERB, drop], 60=[off, PRT, off], 61=[a, DET, a], 62=[bit, NOUN, bit], 63=[now, ADV, now], 64=[though, ADV, though], 65=[,, PUNCT, ,], 66=[so, CONJ, so], 67=[you, PRON, you], 68=[’re, VERB, be], 69=[looking, VERB, look], 70=[at, ADP, at], 71=[about, ADV, about], 72=[one, NUM, one], 73=[day, NOUN, day], 74=[’s, PRT, ’s], 75=[use, NOUN, use], 76=[., PUNCT, .], 77=[Also, ADV, Also], 78=[,, PUNCT, ,], 79=[the, DET, the], 80=[Micro, NOUN, Micro], 81=[USB, NOUN, USB], 82=[flap, NOUN, flap], 83=[refuses, VERB, refuse], 84=[to, PRT, to], 85=[tuck, VERB, tuck], 86=[in, PRT, in], 87=[anymore, ADV, anymore], 88=[–, PUNCT, –], 89=[goodbye, X, goodbye], 90=[,, PUNCT, ,], 91=[waterproofing, NOUN, waterproofing], 92=[., PUNCT, .], 93=[That, DET, That], 94=[said, VERB, say], 95=[,, PUNCT, ,], 96=[the, DET, the], 97=[price, NOUN, price], 98=[has, VERB, have], 99=[fallen, VERB, fall], 100=[significantly, ADV, significantly], 101=[from, ADP, from], 102=[when, ADV, when], 103=[we, PRON, we], 104=[first, ADV, first], 105=[reviewed, VERB, review], 106=[it, PRON, it], 107=[., PUNCT, .], 108=[You, PRON, You], 109=[can, VERB, can], 110=[now, ADV, now], 111=[purchase, VERB, purchase], 112=[the, DET, the], 113=[Xperia, NOUN, Xperia], 114=[Z3, NOUN, Z3], 115=[brand, NOUN, brand], 116=[new, ADJ, new], 117=[for, ADP, for], 118=[around, ADV, around], 119=[£, PUNCT, £], 120=[360, NUM, 360], 121=[,, PUNCT, ,], 122=[which, DET, which], 123=[is, VERB, be], 124=[a, DET, a], 125=[big, ADJ, big], 126=[drop, NOUN, drop], 127=[from, ADP, from], 128=[the, DET, the], 129=[original, ADJ, original], 130=[£, PUNCT, £], 131=[525, NUM, 525], 132=[tag, NOUN, tag], 133=[., PUNCT, .], 134=[By, ADP, By], 135=[contrast, NOUN, contrast], 136=[,, PUNCT, ,], 137=[you, PRON, you], 138=[can, VERB, can], 139=[currently, ADV, currently], 140=[get, VERB, get], 141=[the, DET, the], 142=[iPhone, NOUN, iPhone], 143=[6, NUM, 6], 144=[for, ADP, for], 145=[£, PUNCT, £], 146=[470, NUM, 470], 147=[,, PUNCT, ,], 148=[the, DET, the], 149=[LG, NOUN, LG], 150=[G3, NOUN, G3], 151=[for, ADP, for], 152=[£, PUNCT, £], 153=[260, NUM, 260], 154=[,, PUNCT, ,], 155=[or, CONJ, or], 156=[the, DET, the], 157=[HTC, NOUN, HTC], 158=[One, NUM, One], 159=[M8, NOUN, M8], 160=[for, ADP, for], 161=[£, PUNCT, £], 162=[305, NUM, 305], 163=[., PUNCT, .], 164=[The, DET, The], 165=[Xperia, NOUN, Xperia], 166=[Z3, NOUN, Z3], 167=[is, VERB, be], 168=[pricy, ADJ, pricy], 169=[for, ADP, for], 170=[an, DET, an], 171=[ailing, ADJ, ailing], 172=[Android, NOUN, Android], 173=[smartphone, NOUN, smartphone], 174=[,, PUNCT, ,], 175=[but, CONJ, but], 176=[it, PRON, it], 177=[’s, VERB, be], 178=[still, ADV, still], 179=[a, DET, a], 180=[cheaper, ADJ, cheap], 181=[proposition, NOUN, proposition], 182=[than, ADP, than], 183=[Apple, NOUN, Apple], 184=[’s, PRT, ’s], 185=[latest, ADJ, late], 186=[handset, NOUN, handset], 187=[., PUNCT, .], 188=[Do, VERB, Do], 189=[n’t, ADV, n’t], 190=[forget, VERB, forget], 191=[that, ADP, that], 192=[Sony, NOUN, Sony], 193=[runs, VERB, run], 194=[a, DET, a], 195=[6, NUM, 6], 196=[-, PUNCT, -], 197=[month, NOUN, month], 198=[release, NOUN, release], 199=[cycle, NOUN, cycle], 200=[for, ADP, for], 201=[its, PRON, its], 202=[smartphones, NOUN, smartphone], 203=[,, PUNCT, ,], 204=[so, CONJ, so], 205=[the, DET, the], 206=[Sony, NOUN, Sony], 207=[Xperia, NOUN, Xperia], 208=[Z3+, NOUN, Z3+], 209=[has, VERB, have], 210=[just, ADV, just], 211=[launched, VERB, launch], 212=[here, ADV, here], 213=[in, ADP, in], 214=[the, DET, the], 215=[UK, NOUN, UK], 216=[., PUNCT, .], 217=[That, DET, That], 218=[’s, VERB, be], 219=[retailing, VERB, retail], 220=[over, PRT, over], 221=[at, ADP, at], 222=[Clove, NOUN, Clove], 223=[for, ADP, for], 224=[£, PUNCT, £], 225=[400, NUM, 400], 226=[right, ADV, right], 227=[now, ADV, now], 228=[., PUNCT, .], 229=[If, ADP, If], 230=[you, PRON, you], 231=[’ve, VERB, have], 232=[got, VERB, get], 233=[a, DET, a], 234=[Z3, NOUN, Z3], 235=[,, PUNCT, ,], 236=[do, VERB, do], 237=[n’t, ADV, n’t], 238=[bother, VERB, bother], 239=[upgrading, NOUN, upgrading], 240=[,, PUNCT, ,], 241=[but, CONJ, but], 242=[those, DET, those], 243=[with, ADP, with], 244=[older, ADJ, old], 245=[phones, NOUN, phone], 246=[will, VERB, will], 247=[want, VERB, want], 248=[to, PRT, to], 249=[consider, VERB, consider], 250=[the, DET, the], 251=[sequel, NOUN, sequel], 252=[if, ADP, if], 253=[you, PRON, you], 254=[’re, VERB, be], 255=[looking, VERB, look], 256=[for, ADP, for], 257=[a, DET, a], 258=[new, ADJ, new], 259=[device, NOUN, device], 260=[–, PUNCT, –], 261=[the, DET, the], 262=[price, NOUN, price], 263=[difference, NOUN, difference], 264=[is, VERB, be], 265=[a, DET, a], 266=[mere, ADJ, mere], 267=[£, PUNCT, £], 268=[40, NUM, 40], 269=[., PUNCT, .], 270=[Here, ADV, Here], 271=[’s, VERB, be], 272=[the, DET, the], 273=[bottom, ADJ, bottom], 274=[line, NOUN, line], 275=[:, PUNCT, :], 276=[the, DET, the], 277=[Sony, NOUN, Sony], 278=[Xperia, NOUN, Xperia], 279=[Z3, NOUN, Z3], 280=[is, VERB, be], 281=[still, ADV, still], 282=[a, DET, a], 283=[great, ADJ, great], 284=[phone, NOUN, phone], 285=[,, PUNCT, ,], 286=[but, CONJ, but], 287=[you, PRON, you], 288=[can, VERB, can], 289=[get, VERB, get], 290=[the, DET, the], 291=[equally, ADV, equally], 292=[impressive, ADJ, impressive], 293=[LG, NOUN, LG], 294=[G3, NOUN, G3], 295=[for, ADP, for], 296=[£, PUNCT, £], 297=[100, NUM, 100], 298=[less, ADJ, less], 299=[., PUNCT, .], 300=[It, PRON, It], 301=[’s, VERB, be], 302=[also, ADV, also], 303=[been, VERB, be], 304=[superseded, VERB, supersede], 305=[by, ADP, by], 306=[the, DET, the], 307=[Z3+, NOUN, Z3+], 308=[,, PUNCT, ,], 309=[so, ADP, so], 310=[it, PRON, it], 311=[’s, VERB, be], 312=[not, ADV, not], 313=[even, ADV, even], 314=[Sony, NOUN, Sony], 315=[’s, PRT, ’s], 316=[flagship, NOUN, flagship], 317=[anymore, ADV, anymore], 318=[., PUNCT, .], 319=[It, PRON, It], 320=[’s, VERB, be], 321=[a, DET, a], 322=[good, ADJ, good], 323=[phone, NOUN, phone], 324=[if, ADP, if], 325=[you, PRON, you], 326=[can, VERB, can], 327=[bag, VERB, bag], 328=[one, NUM, one], 329=[cheap, ADJ, cheap], 330=[on, ADP, on], 331=[eBay, NOUN, eBay], 332=[,, PUNCT, ,], 333=[but, CONJ, but], 334=[we, PRON, we], 335=[ca, VERB, ca], 336=[n’t, ADV, n’t], 337=[recommend, VERB, recommend], 338=[it, PRON, it], 339=[as, ADP, as], 340=[new, ADJ, new], 341=[., PUNCT, .]}
+INFO	2017-10-26 13:42:23,563	116515	root	[qtp2137858263-23]	--------- finalEntityTaggedMap ------------
+INFO	2017-10-26 13:42:23,564	116516	root	[qtp2137858263-23]	{1=[Sony Xperia Z3, 0.0, 0.5494568, ORGANIZATION, Sony Xperia Z3, phone], 2=[issue, 0.0, 0.023868844, OTHER, issue, information], 3=[bit, 0.0, 0.009111574, OTHER, bit, information], 4=[sequel, 0.0, 0.0018180325, WORK_OF_ART, sequel, work], 5=[smartphone, -0.9, 0.0063594477, CONSUMER_GOOD, Android smartphone, device], 6=[performance, 0.0, 0.023868844, OTHER, performance, factor], 7=[camera, 0.8, 0.01079296, CONSUMER_GOOD, camera, item], 8=[tag, 0.0, 0.0061029084, OTHER, tag, game], 9=[Sony Xperia Z3, 0.8, 0.021823665, CONSUMER_GOOD, Sony Xperia Z3, phone], 10=[use, -0.1, 0.009111574, OTHER, use, word], 11=[price, -0.9, 0.007260006, OTHER, price, factor], 12=[Sony Xperia Z3+, 0.0, 0.0060470686, ORGANIZATION, Sony Xperia Z3+, Not Found], 13=[G3, 0.8, 0.0034304033, OTHER, LG G3, device], 14=[upgrading, -0.6, 0.0018180325, OTHER, upgrading, task], 15=[bottom line, 0.0, 0.004756506, OTHER], 16=[phones, 0.0, 0.0022845615, CONSUMER_GOOD, smartphones, mobile device], 17=[contrast, 0.0, 0.0060910163, OTHER, contrast, factor], 18=[handset, -0.7, 0.0055652577, CONSUMER_GOOD, handset, mobile device], 19=[iPhone 6, 0.0, 0.004419087, CONSUMER_GOOD], 20=[Micro USB flap, -0.7, 0.009078508, OTHER, Micro USB flap, Not Found], 21=[LG G3, 0.2, 0.0064624907, ORGANIZATION, LG G3, device], 22=[Apple, -0.6, 0.0032967736, ORGANIZATION, Apple, fruit], 23=[flagship, 0.0, 0.0034860556, OTHER, flagship, single specie], 24=[Z3, 0.0, 0.055496417, CONSUMER_GOOD, Sony Xperia Z3, phone], 25=[Clove, 0.0, 0.001077588, OTHER, Clove, spice], 26=[battery life, -0.7, 0.010470013, OTHER, battery life, factor], 27=[flagship, 0.0, 0.07341458, OTHER, flagship, single specie], 28=[brand, 0.0, 0.006026173, ORGANIZATION, Xperia Z3 brand, Not Found], 29=[eBay, -0.1, 0.0016936301, OTHER, eBay, site], 30=[apps, 0.0, 0.020527342, CONSUMER_GOOD, apps, technology], 31=[price difference, 0.0, 0.004883854, OTHER, price difference, relative concept], 32=[waterproofing, -0.4, 0.0060571698, OTHER, waterproofing, service], 33=[release cycle, 0.0, 0.005556968, OTHER, month release cycle, Not Found], 34=[phone, 0.8, 0.0038288746, CONSUMER_GOOD, Android smartphone, device], 35=[Xperia Z3, -0.4, 0.040659137, OTHER, Sony Xperia Z3, phone], 36=[UK, 0.0, 0.0010790285, LOCATION, UK, Not Found], 37=[device, 0.0, 0.004142645, CONSUMER_GOOD, device, resource], 38=[HTC One M8, 0.0, 0.0036085488, CONSUMER_GOOD], 39=[Android, -0.7, 0.0032967736, CONSUMER_GOOD, Android smartphone, device], 40=[drop, 0.0, 0.023689613, OTHER, drop, feature], 41=[smartphones, 0.0, 0.006349978, CONSUMER_GOOD, smartphones, mobile device], 42=[Z3, 0.0, 0.0018312582, CONSUMER_GOOD, Sony Xperia Z3, phone]}
+INFO	2017-10-26 16:09:43,893	8956845	root	[qtp2137858263-23]	----------------Category Map----------------
+INFO	2017-10-26 16:09:43,895	8956847	root	[qtp2137858263-23]	{
+  "Computers \u0026 Electronics": 0.91
+}
+INFO	2017-10-26 16:09:45,110	8958062	root	[qtp2137858263-23]	----------------Google NLP Entity List----------------
+INFO	2017-10-26 16:09:45,113	8958065	root	[qtp2137858263-23]	{
+  "191ad009-8cce-4cc3-bb40-db0ec574cc10": [
+    "G3",
+    "ORGANIZATION",
+    "0.4",
+    "0.0020640104"
+  ],
+  "88540ceb-7cf5-4531-ade6-bb9ceb21c88d": [
+    "preferences",
+    "OTHER",
+    "0.0",
+    "0.0036734794"
+  ],
+  "fb46b7b3-5d92-4154-a25a-30dff72d6d2b": [
+    "phone",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.010526054"
+  ],
+  "d18ac4c1-a441-4bad-85d0-1f44f435c784": [
+    "course",
+    "OTHER",
+    "0.0",
+    "0.007743868"
+  ],
+  "f39bc422-2b4e-48b5-8a72-5468ed743c76": [
+    "camera",
+    "CONSUMER_GOOD",
+    "0.5",
+    "0.030220505"
+  ],
+  "d9581530-754f-4e7e-92e1-25b14cefcf24": [
+    "edge",
+    "OTHER",
+    "0.0",
+    "0.011653823"
+  ],
+  "a956de2a-a03f-47b1-9722-d01bcc261a62": [
+    "some",
+    "OTHER",
+    "-0.6",
+    "0.014621107"
+  ],
+  "74c4bdc5-a5bc-4af1-ad2f-9be1df30f3ff": [
+    "Samsung Galaxy A5",
+    "ORGANIZATION",
+    "0.2",
+    "0.0069166045"
+  ],
+  "e7ca0939-6971-41d8-a7c4-0f6128678108": [
+    "screen",
+    "OTHER",
+    "0.0",
+    "0.029676532"
+  ],
+  "57d5521e-15e4-4185-86af-46de5c1e4d3f": [
+    "alternatives",
+    "OTHER",
+    "-0.5",
+    "0.011653823"
+  ],
+  "2529d1fa-ad76-46fc-b883-c6e4a9b6e989": [
+    "S5",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.5517069"
+  ],
+  "5cf16658-cb95-462b-84cc-1144d0c26fb9": [
+    "some",
+    "OTHER",
+    "0.0",
+    "0.07766952"
+  ],
+  "bf987eff-a416-4e2a-a3c8-167831f1adb3": [
+    "departments",
+    "ORGANIZATION",
+    "0.0",
+    "0.005310743"
+  ],
+  "2814d087-530b-4ebb-ade8-97eaad0c1e99": [
+    "feature",
+    "OTHER",
+    "0.0",
+    "0.02227755"
+  ],
+  "8d8d2aa1-ed10-41b0-933b-940e35fd744a": [
+    "water",
+    "OTHER",
+    "0.0",
+    "0.0088460585"
+  ],
+  "f4009055-1190-4191-9445-547942bd5d65": [
+    "processor",
+    "OTHER",
+    "0.7",
+    "0.0036680067"
+  ],
+  "762ea94b-3cb5-4414-b67a-96fda6eb4138": [
+    "SIM",
+    "ORGANIZATION",
+    "0.0",
+    "0.0013812354"
+  ],
+  "c699d188-b79b-4b9e-b962-42a89862279b": [
+    "Sony Xperia Z3",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.035699584"
+  ],
+  "922d8d70-3be0-4a62-a7ed-7e8a9737c1b2": [
+    "microSD card slot",
+    "OTHER",
+    "0.0",
+    "0.007743868"
+  ],
+  "df1d2f0d-32a6-41bf-ad3a-d6a5171ca8b9": [
+    "LG",
+    "ORGANIZATION",
+    "0.0",
+    "0.0013839368"
+  ],
+  "65a3aabb-4c43-4bfc-9daa-f79332c2f051": [
+    "water",
+    "OTHER",
+    "0.0",
+    "0.008925927"
+  ],
+  "168f546f-d07e-4094-b991-3119e8d01c6f": [
+    "consideration",
+    "OTHER",
+    "0.0",
+    "0.007132592"
+  ],
+  "96ab58a1-7f27-4dac-9b73-7e798d420c2a": [
+    "screen",
+    "OTHER",
+    "-0.1",
+    "0.046538495"
+  ],
+  "10317e57-bc80-4d59-b684-ff77dec5c64e": [
+    "two",
+    "PERSON",
+    "0.1",
+    "0.007813832"
+  ],
+  "1b5c54ce-6780-49a5-9872-8465781945e5": [
+    "phones",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.07766952"
+  ],
+  "4c069936-67b4-4b38-9856-fd23a440ab45": [
+    "Galaxy S6",
+    "OTHER",
+    "0.0",
+    "0.004591646"
+  ]
+}
+INFO	2017-10-26 16:10:32,740	9005692	root	[qtp2137858263-23]	----------------Noun combination sequences----------------
+INFO	2017-10-26 16:10:32,742	9005694	root	[qtp2137858263-23]	{
+  "S5": "phone",
+  "phones": "device",
+  "screen": "equipment",
+  "camera": "item",
+  "edge": "feature",
+  "alternatives": "multidisciplinary management",
+  "Samsung Galaxy A5": "phone",
+  "course": "activity",
+  "Galaxy S6": "flagship phone",
+  "water": "liquid",
+  "microSD card slot": "feature",
+  "Sony Xperia Z3": "phone",
+  "end water": "Not Found",
+  "phone": "device",
+  "feature": "information",
+  "consideration": "concept",
+  "LG G3": "device",
+  "S5 SIM": "Not Found",
+  "departments": "information",
+  "inch screen": "Not Found",
+  "thing": "film",
+  "preferences": "factor",
+  "G3": "rifle",
+  "processor": "component"
+}
+INFO	2017-10-26 16:10:32,743	9005695	root	[qtp2137858263-23]	--------- Synatx Map ------------
+INFO	2017-10-26 16:10:32,745	9005697	root	[qtp2137858263-23]	{1=[Overall, ADV, Overall], 2=[,, PUNCT, ,], 3=[we, PRON, we], 4=[still, ADV, still], 5=[think, VERB, think], 6=[the, DET, the], 7=[S5, NOUN, S5], 8=[measures, VERB, measure], 9=[up, PRT, up], 10=[well, ADV, well], 11=[compared, VERB, compare], 12=[to, ADP, to], 13=[some, DET, some], 14=[of, ADP, of], 15=[the, DET, the], 16=[latest, ADJ, late], 17=[phones, NOUN, phone], 18=[., PUNCT, .], 19=[Its, PRON, Its], 20=[screen, NOUN, screen], 21=[and, CONJ, and], 22=[camera, NOUN, camera], 23=[are, VERB, be], 24=[still, ADV, still], 25=[very, ADV, very], 26=[good, ADJ, good], 27=[and, CONJ, and], 28=[have, VERB, have], 29=[en, ADP, en], 30=[edge, NOUN, edge], 31=[over, ADP, over], 32=[some, DET, some], 33=[of, ADP, of], 34=[the, DET, the], 35=[pricier, ADJ, pricy], 36=[mid-range, ADJ, mid-range], 37=[alternatives, NOUN, alternative], 38=[,, PUNCT, ,], 39=[like, ADP, like], 40=[the, DET, the], 41=[Samsung, NOUN, Samsung], 42=[Galaxy, NOUN, Galaxy], 43=[A5, NOUN, A5], 44=[., PUNCT, .], 45=[And, CONJ, And], 46=[,, PUNCT, ,], 47=[of, ADP, of], 48=[course, NOUN, course], 49=[,, PUNCT, ,], 50=[unlike, ADP, unlike], 51=[the, DET, the], 52=[Galaxy, NOUN, Galaxy], 53=[S6, NOUN, S6], 54=[,, PUNCT, ,], 55=[the, DET, the], 56=[S5, NOUN, S5], 57=[is, VERB, be], 58=[water, NOUN, water], 59=[resistant, ADJ, resistant], 60=[and, CONJ, and], 61=[has, VERB, have], 62=[a, DET, a], 63=[microSD, NOUN, microSD], 64=[card, NOUN, card], 65=[slot, NOUN, slot], 66=[., PUNCT, .], 67=[The, DET, The], 68=[Sony, NOUN, Sony], 69=[Xperia, NOUN, Xperia], 70=[Z3, NOUN, Z3], 71=[is, VERB, be], 72=[the, DET, the], 73=[only, ADJ, only], 74=[other, ADJ, other], 75=[top, ADJ, top], 76=[-, PUNCT, -], 77=[end, NOUN, end], 78=[water, NOUN, water], 79=[resistant, ADJ, resistant], 80=[phone, NOUN, phone], 81=[worth, ADJ, worth], 82=[considering, VERB, consider], 83=[,, PUNCT, ,], 84=[and, CONJ, and], 85=[the, DET, the], 86=[S5, NOUN, S5], 87=[remains, VERB, remain], 88=[the, DET, the], 89=[better, ADJ, good], 90=[of, ADP, of], 91=[the, DET, the], 92=[two, NUM, two], 93=[., PUNCT, .], 94=[If, ADP, If], 95=[that, DET, that], 96=[’s, VERB, be], 97=[a, DET, a], 98=[feature, NOUN, feature], 99=[you, PRON, you], 100=[really, ADV, really], 101=[care, VERB, care], 102=[about, ADP, about], 103=[,, PUNCT, ,], 104=[the, DET, the], 105=[S5, NOUN, S5], 106=[still, ADV, still], 107=[deserves, VERB, deserve], 108=[serious, ADJ, serious], 109=[consideration, NOUN, consideration], 110=[., PUNCT, .], 111=[One, NUM, One], 112=[major, ADJ, major], 113=[phone, NOUN, phone], 114=[we, PRON, we], 115=[would, VERB, would], 116=[consider, VERB, consider], 117=[,, PUNCT, ,], 118=[however, ADV, however], 119=[,, PUNCT, ,], 120=[is, VERB, be], 121=[the, DET, the], 122=[LG, NOUN, LG], 123=[G3, NOUN, G3], 124=[., PUNCT, .], 125=[It, PRON, It], 126=[’s, VERB, be], 127=[generally, ADV, generally], 128=[available, ADJ, available], 129=[for, ADP, for], 130=[slightly, ADV, slightly], 131=[less, ADJ, less], 132=[than, ADP, than], 133=[the, DET, the], 134=[S5, NOUN, S5], 135=[SIM, NOUN, SIM], 136=[-, PUNCT, -], 137=[free, ADJ, free], 138=[,, PUNCT, ,], 139=[and, CONJ, and], 140=[edges, VERB, edge], 141=[it, PRON, it], 142=[in, ADP, in], 143=[some, DET, some], 144=[departments, NOUN, department], 145=[., PUNCT, .], 146=[It, PRON, It], 147=[has, VERB, have], 148=[a, DET, a], 149=[larger, ADJ, large], 150=[5.5, NUM, 5.5], 151=[-, PUNCT, -], 152=[inch, NOUN, inch], 153=[screen, NOUN, screen], 154=[,, PUNCT, ,], 155=[though, ADV, though], 156=[,, PUNCT, ,], 157=[which, DET, which], 158=[is, VERB, be], 159=[either, CONJ, either], 160=[a, DET, a], 161=[good, ADJ, good], 162=[or, CONJ, or], 163=[bad, ADJ, bad], 164=[thing, NOUN, thing], 165=[depending, VERB, depend], 166=[on, ADP, on], 167=[your, PRON, your], 168=[preferences, NOUN, preference], 169=[., PUNCT, .], 170=[The, DET, The], 171=[G3, NOUN, G3], 172=[has, VERB, have], 173=[a, DET, a], 174=[faster, ADJ, fast], 175=[processor, NOUN, processor], 176=[,, PUNCT, ,], 177=[too, ADV, too], 178=[,, PUNCT, ,], 179=[but, CONJ, but], 180=[the, DET, the], 181=[S5, NOUN, S5], 182=[is, VERB, be], 183=[still, ADV, still], 184=[capable, ADJ, capable], 185=[enough, ADV, enough], 186=[., PUNCT, .]}
+INFO	2017-10-26 16:10:32,746	9005698	root	[qtp2137858263-23]	--------- finalEntityTaggedMap ------------
+INFO	2017-10-26 16:10:32,747	9005699	root	[qtp2137858263-23]	{1=[G3, 0.4, 0.0020640104, ORGANIZATION, LG G3, device], 2=[preferences, 0.0, 0.0036734794, OTHER, preferences, factor], 3=[phone, 0.0, 0.010526054, CONSUMER_GOOD, phones, device], 4=[course, 0.0, 0.007743868, OTHER, course, activity], 5=[camera, 0.5, 0.030220505, CONSUMER_GOOD, camera, item], 6=[edge, 0.0, 0.011653823, OTHER, edge, feature], 7=[some, -0.6, 0.014621107, OTHER], 8=[Samsung Galaxy A5, 0.2, 0.0069166045, ORGANIZATION, Samsung Galaxy A5, phone], 9=[screen, 0.0, 0.029676532, OTHER, screen, equipment], 10=[alternatives, -0.5, 0.011653823, OTHER, alternatives, multidisciplinary management], 11=[S5, 0.0, 0.5517069, CONSUMER_GOOD, S5, phone], 12=[some, 0.0, 0.07766952, OTHER], 13=[departments, 0.0, 0.005310743, ORGANIZATION, departments, information], 14=[feature, 0.0, 0.02227755, OTHER, feature, information], 15=[water, 0.0, 0.0088460585, OTHER, water, liquid], 16=[processor, 0.7, 0.0036680067, OTHER, processor, component], 17=[SIM, 0.0, 0.0013812354, ORGANIZATION, S5 SIM, Not Found], 18=[Sony Xperia Z3, 0.0, 0.035699584, CONSUMER_GOOD, Sony Xperia Z3, phone], 19=[microSD card slot, 0.0, 0.007743868, OTHER, microSD card slot, feature], 20=[LG, 0.0, 0.0013839368, ORGANIZATION, LG G3, device], 21=[water, 0.0, 0.008925927, OTHER, water, liquid], 22=[consideration, 0.0, 0.007132592, OTHER, consideration, concept], 23=[screen, -0.1, 0.046538495, OTHER, screen, equipment], 24=[two, 0.1, 0.007813832, PERSON], 25=[phones, 0.0, 0.07766952, CONSUMER_GOOD, phones, device], 26=[Galaxy S6, 0.0, 0.004591646, OTHER, Galaxy S6, flagship phone]}
+INFO	2017-10-26 16:12:42,625	0	root	[qtp777752244-22]	----------------Category Map----------------
+INFO	2017-10-26 16:12:42,628	3	root	[qtp777752244-22]	{
+  "Computers \u0026 Electronics": 0.91
+}
+INFO	2017-10-26 16:12:44,133	1508	root	[qtp777752244-22]	----------------Google NLP Entity List----------------
+INFO	2017-10-26 16:12:44,145	1520	root	[qtp777752244-22]	{
+  "328f039b-5e18-49b9-9159-32e62236b951": [
+    "Sony Xperia Z3",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.035699584"
+  ],
+  "a94dea10-f8e9-460f-9b98-dca76165cfa8": [
+    "some",
+    "OTHER",
+    "-0.6",
+    "0.014621107"
+  ],
+  "f710d141-686c-4b7d-9f84-b7fa6de288c8": [
+    "departments",
+    "ORGANIZATION",
+    "0.0",
+    "0.005310743"
+  ],
+  "58715e4a-017e-42f2-816d-2ede8f8bed07": [
+    "G3",
+    "ORGANIZATION",
+    "0.4",
+    "0.0020640104"
+  ],
+  "139c53f5-d4e7-47b7-a14a-0b896339c22a": [
+    "Samsung Galaxy A5",
+    "ORGANIZATION",
+    "0.2",
+    "0.0069166045"
+  ],
+  "b65434a8-77b7-48a3-a81e-2f5960555238": [
+    "screen",
+    "OTHER",
+    "-0.1",
+    "0.046538495"
+  ],
+  "95fe4101-9ff3-41fc-87a7-78da2b44e3b3": [
+    "alternatives",
+    "OTHER",
+    "-0.5",
+    "0.011653823"
+  ],
+  "2e076067-eb88-4bbe-a7b1-01c37520ed28": [
+    "two",
+    "PERSON",
+    "0.1",
+    "0.007813832"
+  ],
+  "6d27d83f-0398-4364-bf29-ad7797d2c896": [
+    "edge",
+    "OTHER",
+    "0.0",
+    "0.011653823"
+  ],
+  "e06f8c69-f6a4-4fe9-bfce-57f4bfcb7662": [
+    "LG",
+    "ORGANIZATION",
+    "0.0",
+    "0.0013839368"
+  ],
+  "348d89d8-2f47-4b3f-8898-d58b4aad342b": [
+    "camera",
+    "CONSUMER_GOOD",
+    "0.5",
+    "0.030220505"
+  ],
+  "e996ba19-1f02-47bc-9450-8b146bc50083": [
+    "microSD card slot",
+    "OTHER",
+    "0.0",
+    "0.007743868"
+  ],
+  "9b197d00-81c4-47c0-9499-5b9f9da87f07": [
+    "preferences",
+    "OTHER",
+    "0.0",
+    "0.0036734794"
+  ],
+  "e26e6761-76ca-45e9-8dc3-936213bd479e": [
+    "consideration",
+    "OTHER",
+    "0.0",
+    "0.007132592"
+  ],
+  "c1e8d608-c219-4f31-a8e0-38bf2214b71a": [
+    "S5",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.5517069"
+  ],
+  "e6dd51f4-cc7c-42ab-8c24-6ccc414cd2dd": [
+    "feature",
+    "OTHER",
+    "0.0",
+    "0.02227755"
+  ],
+  "96fe4e5b-b290-4dbf-a7fb-0657766166eb": [
+    "phones",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.07766952"
+  ],
+  "19bb9920-9b2a-41d3-971a-401992e9d4f2": [
+    "phone",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.010526054"
+  ],
+  "0f449a8e-388d-4582-8eb8-27f73c7ef400": [
+    "course",
+    "OTHER",
+    "0.0",
+    "0.007743868"
+  ],
+  "91faf862-9a68-49ca-b192-33e6f3d2de76": [
+    "water",
+    "OTHER",
+    "0.0",
+    "0.0088460585"
+  ],
+  "c2b99a3e-bbff-43a3-adeb-9b19344787a4": [
+    "Galaxy S6",
+    "OTHER",
+    "0.0",
+    "0.004591646"
+  ],
+  "f9824068-f413-4658-8ec0-fdfa42c290a7": [
+    "SIM",
+    "ORGANIZATION",
+    "0.0",
+    "0.0013812354"
+  ],
+  "fc60ab05-7dd9-49c0-abf8-7c0fc1a78ece": [
+    "screen",
+    "OTHER",
+    "0.0",
+    "0.029676532"
+  ],
+  "19ac0030-0c4c-4816-8889-f138d02bdea1": [
+    "water",
+    "OTHER",
+    "0.0",
+    "0.008925927"
+  ],
+  "5df9542f-6d38-466d-a70d-5e984b536a3c": [
+    "some",
+    "OTHER",
+    "0.0",
+    "0.07766952"
+  ],
+  "e0d4b391-0de9-4c5a-891a-d3f794ef8afb": [
+    "processor",
+    "OTHER",
+    "0.7",
+    "0.0036680067"
+  ]
+}
+INFO	2017-10-26 16:15:54,755	192130	root	[qtp777752244-22]	----------------Noun combination sequences----------------
+INFO	2017-10-26 16:15:54,756	192131	root	[qtp777752244-22]	{
+  "S5": "phone",
+  "phones": "device",
+  "screen": "equipment",
+  "camera": "item",
+  "edge": "feature",
+  "alternatives": "multidisciplinary management",
+  "Samsung Galaxy A5": "phone",
+  "course": "activity",
+  "Galaxy S6": "flagship phone",
+  "water": "liquid",
+  "microSD card slot": "feature",
+  "Sony Xperia Z3": "phone",
+  "end water": "Not Found",
+  "phone": "device",
+  "feature": "information",
+  "consideration": "concept",
+  "LG G3": "device",
+  "S5 SIM": "Not Found",
+  "departments": "information",
+  "inch screen": "Not Found",
+  "thing": "film",
+  "preferences": "factor",
+  "G3": "rifle",
+  "processor": "component"
+}
+INFO	2017-10-26 16:15:54,762	192137	root	[qtp777752244-22]	--------- Synatx Map ------------
+INFO	2017-10-26 16:15:54,763	192138	root	[qtp777752244-22]	{1=[Overall, ADV, Overall], 2=[,, PUNCT, ,], 3=[we, PRON, we], 4=[still, ADV, still], 5=[think, VERB, think], 6=[the, DET, the], 7=[S5, NOUN, S5], 8=[measures, VERB, measure], 9=[up, PRT, up], 10=[well, ADV, well], 11=[compared, VERB, compare], 12=[to, ADP, to], 13=[some, DET, some], 14=[of, ADP, of], 15=[the, DET, the], 16=[latest, ADJ, late], 17=[phones, NOUN, phone], 18=[., PUNCT, .], 19=[Its, PRON, Its], 20=[screen, NOUN, screen], 21=[and, CONJ, and], 22=[camera, NOUN, camera], 23=[are, VERB, be], 24=[still, ADV, still], 25=[very, ADV, very], 26=[good, ADJ, good], 27=[and, CONJ, and], 28=[have, VERB, have], 29=[en, ADP, en], 30=[edge, NOUN, edge], 31=[over, ADP, over], 32=[some, DET, some], 33=[of, ADP, of], 34=[the, DET, the], 35=[pricier, ADJ, pricy], 36=[mid-range, ADJ, mid-range], 37=[alternatives, NOUN, alternative], 38=[,, PUNCT, ,], 39=[like, ADP, like], 40=[the, DET, the], 41=[Samsung, NOUN, Samsung], 42=[Galaxy, NOUN, Galaxy], 43=[A5, NOUN, A5], 44=[., PUNCT, .], 45=[And, CONJ, And], 46=[,, PUNCT, ,], 47=[of, ADP, of], 48=[course, NOUN, course], 49=[,, PUNCT, ,], 50=[unlike, ADP, unlike], 51=[the, DET, the], 52=[Galaxy, NOUN, Galaxy], 53=[S6, NOUN, S6], 54=[,, PUNCT, ,], 55=[the, DET, the], 56=[S5, NOUN, S5], 57=[is, VERB, be], 58=[water, NOUN, water], 59=[resistant, ADJ, resistant], 60=[and, CONJ, and], 61=[has, VERB, have], 62=[a, DET, a], 63=[microSD, NOUN, microSD], 64=[card, NOUN, card], 65=[slot, NOUN, slot], 66=[., PUNCT, .], 67=[The, DET, The], 68=[Sony, NOUN, Sony], 69=[Xperia, NOUN, Xperia], 70=[Z3, NOUN, Z3], 71=[is, VERB, be], 72=[the, DET, the], 73=[only, ADJ, only], 74=[other, ADJ, other], 75=[top, ADJ, top], 76=[-, PUNCT, -], 77=[end, NOUN, end], 78=[water, NOUN, water], 79=[resistant, ADJ, resistant], 80=[phone, NOUN, phone], 81=[worth, ADJ, worth], 82=[considering, VERB, consider], 83=[,, PUNCT, ,], 84=[and, CONJ, and], 85=[the, DET, the], 86=[S5, NOUN, S5], 87=[remains, VERB, remain], 88=[the, DET, the], 89=[better, ADJ, good], 90=[of, ADP, of], 91=[the, DET, the], 92=[two, NUM, two], 93=[., PUNCT, .], 94=[If, ADP, If], 95=[that, DET, that], 96=[’s, VERB, be], 97=[a, DET, a], 98=[feature, NOUN, feature], 99=[you, PRON, you], 100=[really, ADV, really], 101=[care, VERB, care], 102=[about, ADP, about], 103=[,, PUNCT, ,], 104=[the, DET, the], 105=[S5, NOUN, S5], 106=[still, ADV, still], 107=[deserves, VERB, deserve], 108=[serious, ADJ, serious], 109=[consideration, NOUN, consideration], 110=[., PUNCT, .], 111=[One, NUM, One], 112=[major, ADJ, major], 113=[phone, NOUN, phone], 114=[we, PRON, we], 115=[would, VERB, would], 116=[consider, VERB, consider], 117=[,, PUNCT, ,], 118=[however, ADV, however], 119=[,, PUNCT, ,], 120=[is, VERB, be], 121=[the, DET, the], 122=[LG, NOUN, LG], 123=[G3, NOUN, G3], 124=[., PUNCT, .], 125=[It, PRON, It], 126=[’s, VERB, be], 127=[generally, ADV, generally], 128=[available, ADJ, available], 129=[for, ADP, for], 130=[slightly, ADV, slightly], 131=[less, ADJ, less], 132=[than, ADP, than], 133=[the, DET, the], 134=[S5, NOUN, S5], 135=[SIM, NOUN, SIM], 136=[-, PUNCT, -], 137=[free, ADJ, free], 138=[,, PUNCT, ,], 139=[and, CONJ, and], 140=[edges, VERB, edge], 141=[it, PRON, it], 142=[in, ADP, in], 143=[some, DET, some], 144=[departments, NOUN, department], 145=[., PUNCT, .], 146=[It, PRON, It], 147=[has, VERB, have], 148=[a, DET, a], 149=[larger, ADJ, large], 150=[5.5, NUM, 5.5], 151=[-, PUNCT, -], 152=[inch, NOUN, inch], 153=[screen, NOUN, screen], 154=[,, PUNCT, ,], 155=[though, ADV, though], 156=[,, PUNCT, ,], 157=[which, DET, which], 158=[is, VERB, be], 159=[either, CONJ, either], 160=[a, DET, a], 161=[good, ADJ, good], 162=[or, CONJ, or], 163=[bad, ADJ, bad], 164=[thing, NOUN, thing], 165=[depending, VERB, depend], 166=[on, ADP, on], 167=[your, PRON, your], 168=[preferences, NOUN, preference], 169=[., PUNCT, .], 170=[The, DET, The], 171=[G3, NOUN, G3], 172=[has, VERB, have], 173=[a, DET, a], 174=[faster, ADJ, fast], 175=[processor, NOUN, processor], 176=[,, PUNCT, ,], 177=[too, ADV, too], 178=[,, PUNCT, ,], 179=[but, CONJ, but], 180=[the, DET, the], 181=[S5, NOUN, S5], 182=[is, VERB, be], 183=[still, ADV, still], 184=[capable, ADJ, capable], 185=[enough, ADV, enough], 186=[., PUNCT, .]}
+INFO	2017-10-26 16:15:54,764	192139	root	[qtp777752244-22]	--------- finalEntityTaggedMap ------------
+INFO	2017-10-26 16:15:54,764	192139	root	[qtp777752244-22]	{1=[Sony Xperia Z3, 0.0, 0.035699584, CONSUMER_GOOD, Sony Xperia Z3, phone], 2=[some, -0.6, 0.014621107, OTHER], 3=[departments, 0.0, 0.005310743, ORGANIZATION, departments, information], 4=[G3, 0.4, 0.0020640104, ORGANIZATION, LG G3, device], 5=[Samsung Galaxy A5, 0.2, 0.0069166045, ORGANIZATION, Samsung Galaxy A5, phone], 6=[screen, -0.1, 0.046538495, OTHER, screen, equipment], 7=[alternatives, -0.5, 0.011653823, OTHER, alternatives, multidisciplinary management], 8=[two, 0.1, 0.007813832, PERSON], 9=[edge, 0.0, 0.011653823, OTHER, edge, feature], 10=[LG, 0.0, 0.0013839368, ORGANIZATION, LG G3, device], 11=[camera, 0.5, 0.030220505, CONSUMER_GOOD, camera, item], 12=[microSD card slot, 0.0, 0.007743868, OTHER, microSD card slot, feature], 13=[preferences, 0.0, 0.0036734794, OTHER, preferences, factor], 14=[consideration, 0.0, 0.007132592, OTHER, consideration, concept], 15=[S5, 0.0, 0.5517069, CONSUMER_GOOD, S5, phone], 16=[feature, 0.0, 0.02227755, OTHER, feature, information], 17=[phones, 0.0, 0.07766952, CONSUMER_GOOD, phones, device], 18=[phone, 0.0, 0.010526054, CONSUMER_GOOD, phones, device], 19=[course, 0.0, 0.007743868, OTHER, course, activity], 20=[water, 0.0, 0.0088460585, OTHER, water, liquid], 21=[Galaxy S6, 0.0, 0.004591646, OTHER, Galaxy S6, flagship phone], 22=[SIM, 0.0, 0.0013812354, ORGANIZATION, S5 SIM, Not Found], 23=[screen, 0.0, 0.029676532, OTHER, screen, equipment], 24=[water, 0.0, 0.008925927, OTHER, water, liquid], 25=[some, 0.0, 0.07766952, OTHER], 26=[processor, 0.7, 0.0036680067, OTHER, processor, component]}
+INFO	2017-10-26 16:18:36,105	0	root	[qtp1003823409-22]	----------------Category Map----------------
+INFO	2017-10-26 16:18:36,109	4	root	[qtp1003823409-22]	{
+  "Computers \u0026 Electronics": 0.91
+}
+INFO	2017-10-26 16:18:45,043	8938	root	[qtp1003823409-22]	----------------Google NLP Entity List----------------
+INFO	2017-10-26 16:18:45,045	8940	root	[qtp1003823409-22]	{
+  "639a47ac-362c-458e-837c-1eafc0d3e518": [
+    "course",
+    "OTHER",
+    "0.0",
+    "0.007743868"
+  ],
+  "9f4132e1-b527-42da-a2a7-bfb55c939ad2": [
+    "S5",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.5517069"
+  ],
+  "29ee2b9e-4767-425d-9cef-8b3c3b5ff8d6": [
+    "processor",
+    "OTHER",
+    "0.7",
+    "0.0036680067"
+  ],
+  "953c55bf-9979-44bd-8299-7b71b9fe8055": [
+    "SIM",
+    "ORGANIZATION",
+    "0.0",
+    "0.0013812354"
+  ],
+  "c0726681-a5a9-4027-a187-126175377470": [
+    "screen",
+    "OTHER",
+    "0.0",
+    "0.029676532"
+  ],
+  "ab74a8c8-85e5-4536-a4c2-b48c95e73295": [
+    "some",
+    "OTHER",
+    "-0.6",
+    "0.014621107"
+  ],
+  "82ea1e62-d22a-4624-8fd6-33fb731f0502": [
+    "phone",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.010526054"
+  ],
+  "69c29f6e-45a3-4b64-84d5-e05fcd6941d7": [
+    "consideration",
+    "OTHER",
+    "0.0",
+    "0.007132592"
+  ],
+  "e168dba4-4615-4569-b0d0-d09499335c98": [
+    "two",
+    "PERSON",
+    "0.1",
+    "0.007813832"
+  ],
+  "c9e029cc-7962-4d8c-91c4-fa893b80df6e": [
+    "departments",
+    "ORGANIZATION",
+    "0.0",
+    "0.005310743"
+  ],
+  "750ac5d2-50a4-4c61-b907-243bfbd72538": [
+    "phones",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.07766952"
+  ],
+  "ca037eec-ccf0-4c0b-9cba-7cd0221888e5": [
+    "microSD card slot",
+    "OTHER",
+    "0.0",
+    "0.007743868"
+  ],
+  "3275be8a-4d24-4b9f-ad1e-fc657bf0d278": [
+    "some",
+    "OTHER",
+    "0.0",
+    "0.07766952"
+  ],
+  "54ecf727-c0b9-408a-b6f4-f6c21c458a93": [
+    "screen",
+    "OTHER",
+    "-0.1",
+    "0.046538495"
+  ],
+  "e73b223a-e2ea-4c35-a2aa-ebb9bf0a407c": [
+    "alternatives",
+    "OTHER",
+    "-0.5",
+    "0.011653823"
+  ],
+  "946398a6-a4c6-4d78-a6a6-33c76276c4ec": [
+    "edge",
+    "OTHER",
+    "0.0",
+    "0.011653823"
+  ],
+  "3eea7401-47a4-4cb1-92ea-32e96a446460": [
+    "water",
+    "OTHER",
+    "0.0",
+    "0.0088460585"
+  ],
+  "7b59d91c-350c-4074-98d3-a471dd018438": [
+    "preferences",
+    "OTHER",
+    "0.0",
+    "0.0036734794"
+  ],
+  "fd1f657e-c81a-497e-9c9f-f638a7692172": [
+    "water",
+    "OTHER",
+    "0.0",
+    "0.008925927"
+  ],
+  "43d2301d-7422-4bb5-b39d-6fc3f759dec4": [
+    "Sony Xperia Z3",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.035699584"
+  ],
+  "dc42fb76-2382-462a-8db5-5d38b09a8d88": [
+    "feature",
+    "OTHER",
+    "0.0",
+    "0.02227755"
+  ],
+  "eec0e852-8dfc-4e33-ab06-99199833f051": [
+    "camera",
+    "CONSUMER_GOOD",
+    "0.5",
+    "0.030220505"
+  ],
+  "2b518b0b-5e82-4375-ba70-74631ee49ba7": [
+    "Galaxy S6",
+    "OTHER",
+    "0.0",
+    "0.004591646"
+  ],
+  "99dbb92b-8182-43ca-a371-b4c9dae38622": [
+    "LG",
+    "ORGANIZATION",
+    "0.0",
+    "0.0013839368"
+  ],
+  "8fd65710-73bb-40b1-8bce-b881c668f8a6": [
+    "Samsung Galaxy A5",
+    "ORGANIZATION",
+    "0.2",
+    "0.0069166045"
+  ],
+  "097d168d-520b-40a8-a941-80f278d12b16": [
+    "G3",
+    "ORGANIZATION",
+    "0.4",
+    "0.0020640104"
+  ]
+}
+INFO	2017-10-26 16:21:16,898	160793	root	[qtp1003823409-22]	----------------Noun combination sequences----------------
+INFO	2017-10-26 16:21:16,899	160794	root	[qtp1003823409-22]	{
+  "S5": "phone",
+  "phones": "device",
+  "screen": "equipment",
+  "camera": "item",
+  "edge": "feature",
+  "alternatives": "multidisciplinary management",
+  "Samsung Galaxy A5": "phone",
+  "course": "activity",
+  "Galaxy S6": "flagship phone",
+  "water": "liquid",
+  "microSD card slot": "feature",
+  "Sony Xperia Z3": "phone",
+  "end water": "Not Found",
+  "phone": "device",
+  "feature": "information",
+  "consideration": "concept",
+  "LG G3": "device",
+  "S5 SIM": "Not Found",
+  "departments": "information",
+  "inch screen": "Not Found",
+  "thing": "film",
+  "preferences": "factor",
+  "G3": "rifle",
+  "processor": "component"
+}
+INFO	2017-10-26 16:21:16,905	160800	root	[qtp1003823409-22]	--------- Synatx Map ------------
+INFO	2017-10-26 16:21:16,907	160802	root	[qtp1003823409-22]	{1=[Overall, ADV, Overall], 2=[,, PUNCT, ,], 3=[we, PRON, we], 4=[still, ADV, still], 5=[think, VERB, think], 6=[the, DET, the], 7=[S5, NOUN, S5], 8=[measures, VERB, measure], 9=[up, PRT, up], 10=[well, ADV, well], 11=[compared, VERB, compare], 12=[to, ADP, to], 13=[some, DET, some], 14=[of, ADP, of], 15=[the, DET, the], 16=[latest, ADJ, late], 17=[phones, NOUN, phone], 18=[., PUNCT, .], 19=[Its, PRON, Its], 20=[screen, NOUN, screen], 21=[and, CONJ, and], 22=[camera, NOUN, camera], 23=[are, VERB, be], 24=[still, ADV, still], 25=[very, ADV, very], 26=[good, ADJ, good], 27=[and, CONJ, and], 28=[have, VERB, have], 29=[en, ADP, en], 30=[edge, NOUN, edge], 31=[over, ADP, over], 32=[some, DET, some], 33=[of, ADP, of], 34=[the, DET, the], 35=[pricier, ADJ, pricy], 36=[mid-range, ADJ, mid-range], 37=[alternatives, NOUN, alternative], 38=[,, PUNCT, ,], 39=[like, ADP, like], 40=[the, DET, the], 41=[Samsung, NOUN, Samsung], 42=[Galaxy, NOUN, Galaxy], 43=[A5, NOUN, A5], 44=[., PUNCT, .], 45=[And, CONJ, And], 46=[,, PUNCT, ,], 47=[of, ADP, of], 48=[course, NOUN, course], 49=[,, PUNCT, ,], 50=[unlike, ADP, unlike], 51=[the, DET, the], 52=[Galaxy, NOUN, Galaxy], 53=[S6, NOUN, S6], 54=[,, PUNCT, ,], 55=[the, DET, the], 56=[S5, NOUN, S5], 57=[is, VERB, be], 58=[water, NOUN, water], 59=[resistant, ADJ, resistant], 60=[and, CONJ, and], 61=[has, VERB, have], 62=[a, DET, a], 63=[microSD, NOUN, microSD], 64=[card, NOUN, card], 65=[slot, NOUN, slot], 66=[., PUNCT, .], 67=[The, DET, The], 68=[Sony, NOUN, Sony], 69=[Xperia, NOUN, Xperia], 70=[Z3, NOUN, Z3], 71=[is, VERB, be], 72=[the, DET, the], 73=[only, ADJ, only], 74=[other, ADJ, other], 75=[top, ADJ, top], 76=[-, PUNCT, -], 77=[end, NOUN, end], 78=[water, NOUN, water], 79=[resistant, ADJ, resistant], 80=[phone, NOUN, phone], 81=[worth, ADJ, worth], 82=[considering, VERB, consider], 83=[,, PUNCT, ,], 84=[and, CONJ, and], 85=[the, DET, the], 86=[S5, NOUN, S5], 87=[remains, VERB, remain], 88=[the, DET, the], 89=[better, ADJ, good], 90=[of, ADP, of], 91=[the, DET, the], 92=[two, NUM, two], 93=[., PUNCT, .], 94=[If, ADP, If], 95=[that, DET, that], 96=[’s, VERB, be], 97=[a, DET, a], 98=[feature, NOUN, feature], 99=[you, PRON, you], 100=[really, ADV, really], 101=[care, VERB, care], 102=[about, ADP, about], 103=[,, PUNCT, ,], 104=[the, DET, the], 105=[S5, NOUN, S5], 106=[still, ADV, still], 107=[deserves, VERB, deserve], 108=[serious, ADJ, serious], 109=[consideration, NOUN, consideration], 110=[., PUNCT, .], 111=[One, NUM, One], 112=[major, ADJ, major], 113=[phone, NOUN, phone], 114=[we, PRON, we], 115=[would, VERB, would], 116=[consider, VERB, consider], 117=[,, PUNCT, ,], 118=[however, ADV, however], 119=[,, PUNCT, ,], 120=[is, VERB, be], 121=[the, DET, the], 122=[LG, NOUN, LG], 123=[G3, NOUN, G3], 124=[., PUNCT, .], 125=[It, PRON, It], 126=[’s, VERB, be], 127=[generally, ADV, generally], 128=[available, ADJ, available], 129=[for, ADP, for], 130=[slightly, ADV, slightly], 131=[less, ADJ, less], 132=[than, ADP, than], 133=[the, DET, the], 134=[S5, NOUN, S5], 135=[SIM, NOUN, SIM], 136=[-, PUNCT, -], 137=[free, ADJ, free], 138=[,, PUNCT, ,], 139=[and, CONJ, and], 140=[edges, VERB, edge], 141=[it, PRON, it], 142=[in, ADP, in], 143=[some, DET, some], 144=[departments, NOUN, department], 145=[., PUNCT, .], 146=[It, PRON, It], 147=[has, VERB, have], 148=[a, DET, a], 149=[larger, ADJ, large], 150=[5.5, NUM, 5.5], 151=[-, PUNCT, -], 152=[inch, NOUN, inch], 153=[screen, NOUN, screen], 154=[,, PUNCT, ,], 155=[though, ADV, though], 156=[,, PUNCT, ,], 157=[which, DET, which], 158=[is, VERB, be], 159=[either, CONJ, either], 160=[a, DET, a], 161=[good, ADJ, good], 162=[or, CONJ, or], 163=[bad, ADJ, bad], 164=[thing, NOUN, thing], 165=[depending, VERB, depend], 166=[on, ADP, on], 167=[your, PRON, your], 168=[preferences, NOUN, preference], 169=[., PUNCT, .], 170=[The, DET, The], 171=[G3, NOUN, G3], 172=[has, VERB, have], 173=[a, DET, a], 174=[faster, ADJ, fast], 175=[processor, NOUN, processor], 176=[,, PUNCT, ,], 177=[too, ADV, too], 178=[,, PUNCT, ,], 179=[but, CONJ, but], 180=[the, DET, the], 181=[S5, NOUN, S5], 182=[is, VERB, be], 183=[still, ADV, still], 184=[capable, ADJ, capable], 185=[enough, ADV, enough], 186=[., PUNCT, .]}
+INFO	2017-10-26 16:21:16,907	160802	root	[qtp1003823409-22]	--------- finalEntityTaggedMap ------------
+INFO	2017-10-26 16:21:16,908	160803	root	[qtp1003823409-22]	{1=[course, 0.0, 0.007743868, OTHER, course, activity], 2=[S5, 0.0, 0.5517069, CONSUMER_GOOD, S5, phone], 3=[processor, 0.7, 0.0036680067, OTHER, processor, component], 4=[SIM, 0.0, 0.0013812354, ORGANIZATION, S5 SIM, Not Found], 5=[screen, 0.0, 0.029676532, OTHER, screen, equipment], 6=[some, -0.6, 0.014621107, OTHER], 7=[phone, 0.0, 0.010526054, CONSUMER_GOOD, phones, device], 8=[consideration, 0.0, 0.007132592, OTHER, consideration, concept], 9=[two, 0.1, 0.007813832, PERSON], 10=[departments, 0.0, 0.005310743, ORGANIZATION, departments, information], 11=[phones, 0.0, 0.07766952, CONSUMER_GOOD, phones, device], 12=[microSD card slot, 0.0, 0.007743868, OTHER, microSD card slot, feature], 13=[some, 0.0, 0.07766952, OTHER], 14=[screen, -0.1, 0.046538495, OTHER, screen, equipment], 15=[alternatives, -0.5, 0.011653823, OTHER, alternatives, multidisciplinary management], 16=[edge, 0.0, 0.011653823, OTHER, edge, feature], 17=[water, 0.0, 0.0088460585, OTHER, water, liquid], 18=[preferences, 0.0, 0.0036734794, OTHER, preferences, factor], 19=[water, 0.0, 0.008925927, OTHER, water, liquid], 20=[Sony Xperia Z3, 0.0, 0.035699584, CONSUMER_GOOD, Sony Xperia Z3, phone], 21=[feature, 0.0, 0.02227755, OTHER, feature, information], 22=[camera, 0.5, 0.030220505, CONSUMER_GOOD, camera, item], 23=[Galaxy S6, 0.0, 0.004591646, OTHER, Galaxy S6, flagship phone], 24=[LG, 0.0, 0.0013839368, ORGANIZATION, LG G3, device], 25=[Samsung Galaxy A5, 0.2, 0.0069166045, ORGANIZATION, Samsung Galaxy A5, phone], 26=[G3, 0.4, 0.0020640104, ORGANIZATION, LG G3, device]}
+INFO	2017-10-26 16:22:52,208	0	root	[qtp1421913278-23]	----------------Category Map----------------
+INFO	2017-10-26 16:22:52,212	4	root	[qtp1421913278-23]	{
+  "Computers \u0026 Electronics": 0.91
+}
+INFO	2017-10-26 16:22:52,948	740	root	[qtp1421913278-23]	----------------Google NLP Entity List----------------
+INFO	2017-10-26 16:22:52,950	742	root	[qtp1421913278-23]	{
+  "4fd45aac-701e-4bbc-a127-abead90a437a": [
+    "some",
+    "OTHER",
+    "-0.6",
+    "0.014621107"
+  ],
+  "ae012b01-6023-430b-9ee0-f59c25feefa4": [
+    "edge",
+    "OTHER",
+    "0.0",
+    "0.011653823"
+  ],
+  "90c3ba9c-2e5c-42ab-84ec-a34d139f131b": [
+    "screen",
+    "OTHER",
+    "-0.1",
+    "0.046538495"
+  ],
+  "ad040b5e-79ca-4d7c-9fa4-f0cb2a0df51c": [
+    "some",
+    "OTHER",
+    "0.0",
+    "0.07766952"
+  ],
+  "ab6be98a-c3df-4d0d-b674-786f794366c4": [
+    "course",
+    "OTHER",
+    "0.0",
+    "0.007743868"
+  ],
+  "0ab1ad6a-7f8e-437b-9d88-8b2ab2e8f0fd": [
+    "S5",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.5517069"
+  ],
+  "59148f1d-6131-4811-846d-6606b76d8ed9": [
+    "LG",
+    "ORGANIZATION",
+    "0.0",
+    "0.0013839368"
+  ],
+  "21d16af8-9b15-420e-b2a7-00266ac98f25": [
+    "processor",
+    "OTHER",
+    "0.7",
+    "0.0036680067"
+  ],
+  "c6bd187b-e252-4662-aa64-99ca7ac40167": [
+    "phones",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.07766952"
+  ],
+  "501fbead-b065-4c9f-bb14-ecc2f233e8d5": [
+    "Sony Xperia Z3",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.035699584"
+  ],
+  "29d595a6-d125-4c3f-b2c7-4418a39199ae": [
+    "G3",
+    "ORGANIZATION",
+    "0.4",
+    "0.0020640104"
+  ],
+  "2e258961-9c79-47a2-a531-e26b229b0eec": [
+    "Samsung Galaxy A5",
+    "ORGANIZATION",
+    "0.2",
+    "0.0069166045"
+  ],
+  "92374cf0-495f-4ebd-b6c8-fe3acfd63f7a": [
+    "two",
+    "PERSON",
+    "0.1",
+    "0.007813832"
+  ],
+  "38273416-6ebe-4426-a71c-0b08854269cd": [
+    "water",
+    "OTHER",
+    "0.0",
+    "0.0088460585"
+  ],
+  "e6d2c702-fdca-4c70-9cd5-ac879a7a52e6": [
+    "feature",
+    "OTHER",
+    "0.0",
+    "0.02227755"
+  ],
+  "6bb5c172-6f43-4060-aab0-eb387a0e5a11": [
+    "departments",
+    "ORGANIZATION",
+    "0.0",
+    "0.005310743"
+  ],
+  "5e21e9a7-57d0-4edc-802a-15ae032b1460": [
+    "alternatives",
+    "OTHER",
+    "-0.5",
+    "0.011653823"
+  ],
+  "829c5910-4256-42b4-8c0d-404d8b9cae42": [
+    "phone",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.010526054"
+  ],
+  "c7229385-1e6d-492f-8e48-636dba852b56": [
+    "Galaxy S6",
+    "OTHER",
+    "0.0",
+    "0.004591646"
+  ],
+  "14babc97-4f80-4544-9c03-09ce2e03c7b1": [
+    "SIM",
+    "ORGANIZATION",
+    "0.0",
+    "0.0013812354"
+  ],
+  "84eaae08-eeff-42ec-a41c-173b267c516d": [
+    "screen",
+    "OTHER",
+    "0.0",
+    "0.029676532"
+  ],
+  "9f1d21df-a115-446d-89cd-fae43ef71371": [
+    "water",
+    "OTHER",
+    "0.0",
+    "0.008925927"
+  ],
+  "e269f1fc-c053-4d6c-bef2-9df54259d80b": [
+    "preferences",
+    "OTHER",
+    "0.0",
+    "0.0036734794"
+  ],
+  "54f3f2ae-85ca-406b-8f99-1c3f6831b3b1": [
+    "camera",
+    "CONSUMER_GOOD",
+    "0.5",
+    "0.030220505"
+  ],
+  "4bec594f-8bf6-4aee-9e9b-883e262da4bc": [
+    "microSD card slot",
+    "OTHER",
+    "0.0",
+    "0.007743868"
+  ],
+  "a932b37b-2570-4a49-8857-d7a412070d4d": [
+    "consideration",
+    "OTHER",
+    "0.0",
+    "0.007132592"
+  ]
+}
+INFO	2017-10-26 16:23:37,599	45391	root	[qtp1421913278-23]	----------------Noun combination sequences----------------
+INFO	2017-10-26 16:23:37,602	45394	root	[qtp1421913278-23]	{
+  "S5": "phone",
+  "phones": "device",
+  "screen": "equipment",
+  "camera": "item",
+  "edge": "feature",
+  "alternatives": "multidisciplinary management",
+  "Samsung Galaxy A5": "phone",
+  "course": "activity",
+  "Galaxy S6": "flagship phone",
+  "water": "liquid",
+  "microSD card slot": "feature",
+  "Sony Xperia Z3": "phone",
+  "end water": "Not Found",
+  "phone": "device",
+  "feature": "information",
+  "consideration": "concept",
+  "LG G3": "device",
+  "S5 SIM": "Not Found",
+  "departments": "information",
+  "inch screen": "Not Found",
+  "thing": "film",
+  "preferences": "factor",
+  "G3": "rifle",
+  "processor": "component"
+}
+INFO	2017-10-26 16:23:37,607	45399	root	[qtp1421913278-23]	--------- Synatx Map ------------
+INFO	2017-10-26 16:23:37,610	45402	root	[qtp1421913278-23]	{1=[Overall, ADV, Overall], 2=[,, PUNCT, ,], 3=[we, PRON, we], 4=[still, ADV, still], 5=[think, VERB, think], 6=[the, DET, the], 7=[S5, NOUN, S5], 8=[measures, VERB, measure], 9=[up, PRT, up], 10=[well, ADV, well], 11=[compared, VERB, compare], 12=[to, ADP, to], 13=[some, DET, some], 14=[of, ADP, of], 15=[the, DET, the], 16=[latest, ADJ, late], 17=[phones, NOUN, phone], 18=[., PUNCT, .], 19=[Its, PRON, Its], 20=[screen, NOUN, screen], 21=[and, CONJ, and], 22=[camera, NOUN, camera], 23=[are, VERB, be], 24=[still, ADV, still], 25=[very, ADV, very], 26=[good, ADJ, good], 27=[and, CONJ, and], 28=[have, VERB, have], 29=[en, ADP, en], 30=[edge, NOUN, edge], 31=[over, ADP, over], 32=[some, DET, some], 33=[of, ADP, of], 34=[the, DET, the], 35=[pricier, ADJ, pricy], 36=[mid-range, ADJ, mid-range], 37=[alternatives, NOUN, alternative], 38=[,, PUNCT, ,], 39=[like, ADP, like], 40=[the, DET, the], 41=[Samsung, NOUN, Samsung], 42=[Galaxy, NOUN, Galaxy], 43=[A5, NOUN, A5], 44=[., PUNCT, .], 45=[And, CONJ, And], 46=[,, PUNCT, ,], 47=[of, ADP, of], 48=[course, NOUN, course], 49=[,, PUNCT, ,], 50=[unlike, ADP, unlike], 51=[the, DET, the], 52=[Galaxy, NOUN, Galaxy], 53=[S6, NOUN, S6], 54=[,, PUNCT, ,], 55=[the, DET, the], 56=[S5, NOUN, S5], 57=[is, VERB, be], 58=[water, NOUN, water], 59=[resistant, ADJ, resistant], 60=[and, CONJ, and], 61=[has, VERB, have], 62=[a, DET, a], 63=[microSD, NOUN, microSD], 64=[card, NOUN, card], 65=[slot, NOUN, slot], 66=[., PUNCT, .], 67=[The, DET, The], 68=[Sony, NOUN, Sony], 69=[Xperia, NOUN, Xperia], 70=[Z3, NOUN, Z3], 71=[is, VERB, be], 72=[the, DET, the], 73=[only, ADJ, only], 74=[other, ADJ, other], 75=[top, ADJ, top], 76=[-, PUNCT, -], 77=[end, NOUN, end], 78=[water, NOUN, water], 79=[resistant, ADJ, resistant], 80=[phone, NOUN, phone], 81=[worth, ADJ, worth], 82=[considering, VERB, consider], 83=[,, PUNCT, ,], 84=[and, CONJ, and], 85=[the, DET, the], 86=[S5, NOUN, S5], 87=[remains, VERB, remain], 88=[the, DET, the], 89=[better, ADJ, good], 90=[of, ADP, of], 91=[the, DET, the], 92=[two, NUM, two], 93=[., PUNCT, .], 94=[If, ADP, If], 95=[that, DET, that], 96=[’s, VERB, be], 97=[a, DET, a], 98=[feature, NOUN, feature], 99=[you, PRON, you], 100=[really, ADV, really], 101=[care, VERB, care], 102=[about, ADP, about], 103=[,, PUNCT, ,], 104=[the, DET, the], 105=[S5, NOUN, S5], 106=[still, ADV, still], 107=[deserves, VERB, deserve], 108=[serious, ADJ, serious], 109=[consideration, NOUN, consideration], 110=[., PUNCT, .], 111=[One, NUM, One], 112=[major, ADJ, major], 113=[phone, NOUN, phone], 114=[we, PRON, we], 115=[would, VERB, would], 116=[consider, VERB, consider], 117=[,, PUNCT, ,], 118=[however, ADV, however], 119=[,, PUNCT, ,], 120=[is, VERB, be], 121=[the, DET, the], 122=[LG, NOUN, LG], 123=[G3, NOUN, G3], 124=[., PUNCT, .], 125=[It, PRON, It], 126=[’s, VERB, be], 127=[generally, ADV, generally], 128=[available, ADJ, available], 129=[for, ADP, for], 130=[slightly, ADV, slightly], 131=[less, ADJ, less], 132=[than, ADP, than], 133=[the, DET, the], 134=[S5, NOUN, S5], 135=[SIM, NOUN, SIM], 136=[-, PUNCT, -], 137=[free, ADJ, free], 138=[,, PUNCT, ,], 139=[and, CONJ, and], 140=[edges, VERB, edge], 141=[it, PRON, it], 142=[in, ADP, in], 143=[some, DET, some], 144=[departments, NOUN, department], 145=[., PUNCT, .], 146=[It, PRON, It], 147=[has, VERB, have], 148=[a, DET, a], 149=[larger, ADJ, large], 150=[5.5, NUM, 5.5], 151=[-, PUNCT, -], 152=[inch, NOUN, inch], 153=[screen, NOUN, screen], 154=[,, PUNCT, ,], 155=[though, ADV, though], 156=[,, PUNCT, ,], 157=[which, DET, which], 158=[is, VERB, be], 159=[either, CONJ, either], 160=[a, DET, a], 161=[good, ADJ, good], 162=[or, CONJ, or], 163=[bad, ADJ, bad], 164=[thing, NOUN, thing], 165=[depending, VERB, depend], 166=[on, ADP, on], 167=[your, PRON, your], 168=[preferences, NOUN, preference], 169=[., PUNCT, .], 170=[The, DET, The], 171=[G3, NOUN, G3], 172=[has, VERB, have], 173=[a, DET, a], 174=[faster, ADJ, fast], 175=[processor, NOUN, processor], 176=[,, PUNCT, ,], 177=[too, ADV, too], 178=[,, PUNCT, ,], 179=[but, CONJ, but], 180=[the, DET, the], 181=[S5, NOUN, S5], 182=[is, VERB, be], 183=[still, ADV, still], 184=[capable, ADJ, capable], 185=[enough, ADV, enough], 186=[., PUNCT, .]}
+INFO	2017-10-26 16:23:37,611	45403	root	[qtp1421913278-23]	--------- finalEntityTaggedMap ------------
+INFO	2017-10-26 16:23:37,612	45404	root	[qtp1421913278-23]	{1=[some, -0.6, 0.014621107, OTHER], 2=[edge, 0.0, 0.011653823, OTHER, edge, feature], 3=[screen, -0.1, 0.046538495, OTHER, screen, equipment], 4=[some, 0.0, 0.07766952, OTHER], 5=[course, 0.0, 0.007743868, OTHER, course, activity], 6=[S5, 0.0, 0.5517069, CONSUMER_GOOD, S5, phone], 7=[LG, 0.0, 0.0013839368, ORGANIZATION, LG G3, device], 8=[processor, 0.7, 0.0036680067, OTHER, processor, component], 9=[phones, 0.0, 0.07766952, CONSUMER_GOOD, phones, device], 10=[Sony Xperia Z3, 0.0, 0.035699584, CONSUMER_GOOD, Sony Xperia Z3, phone], 11=[G3, 0.4, 0.0020640104, ORGANIZATION, LG G3, device], 12=[Samsung Galaxy A5, 0.2, 0.0069166045, ORGANIZATION, Samsung Galaxy A5, phone], 13=[two, 0.1, 0.007813832, PERSON], 14=[water, 0.0, 0.0088460585, OTHER, water, liquid], 15=[feature, 0.0, 0.02227755, OTHER, feature, information], 16=[departments, 0.0, 0.005310743, ORGANIZATION, departments, information], 17=[alternatives, -0.5, 0.011653823, OTHER, alternatives, multidisciplinary management], 18=[phone, 0.0, 0.010526054, CONSUMER_GOOD, phones, device], 19=[Galaxy S6, 0.0, 0.004591646, OTHER, Galaxy S6, flagship phone], 20=[SIM, 0.0, 0.0013812354, ORGANIZATION, S5 SIM, Not Found], 21=[screen, 0.0, 0.029676532, OTHER, screen, equipment], 22=[water, 0.0, 0.008925927, OTHER, water, liquid], 23=[preferences, 0.0, 0.0036734794, OTHER, preferences, factor], 24=[camera, 0.5, 0.030220505, CONSUMER_GOOD, camera, item], 25=[microSD card slot, 0.0, 0.007743868, OTHER, microSD card slot, feature], 26=[consideration, 0.0, 0.007132592, OTHER, consideration, concept]}
+INFO	2017-10-26 16:23:39,458	47250	root	[qtp1421913278-23]	----------------Feature understanding----------------
+INFO	2017-10-26 16:23:39,461	47253	root	[qtp1421913278-23]	{
+  "mainEntity": "S5",
+  "featureMap": {
+    "microSD card slot": "feature",
+    "edge": "feature",
+    "preferences": "factor"
+  }
+}
+INFO	2017-10-26 16:28:37,490	345282	root	[qtp1421913278-18]	----------------Category Map----------------
+INFO	2017-10-26 16:28:37,491	345283	root	[qtp1421913278-18]	{
+  "Internet \u0026 Telecom": 0.97
+}
+INFO	2017-10-26 16:28:38,074	345866	root	[qtp1421913278-18]	----------------Google NLP Entity List----------------
+INFO	2017-10-26 16:28:38,082	345874	root	[qtp1421913278-18]	{
+  "7786861f-e4a7-46af-8460-0db74fe34058": [
+    "iPhone 6",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.17305742"
+  ],
+  "2c2efc72-ff06-4fa0-a488-c49be3c2684c": [
+    "device",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.034110826"
+  ],
+  "cafe87ae-fabf-41b4-a550-505c3114bfd2": [
+    "Special Event",
+    "EVENT",
+    "0.0",
+    "0.07828628"
+  ],
+  "1df66c25-0fdc-43e2-8850-feb2e411e5ee": [
+    "models",
+    "CONSUMER_GOOD",
+    "0.0",
+    "0.12868936"
+  ],
+  "92e47f7a-dde3-40ce-9727-ea18cd625cae": [
+    "Retina HD display",
+    "OTHER",
+    "0.0",
+    "0.019088581"
+  ],
+  "02912ef6-d03e-4c5b-b80a-6745829f37de": [
+    "Apple",
+    "ORGANIZATION",
+    "0.0",
+    "0.34628057"
+  ],
+  "8dcdf57a-ce11-4117-adc0-0316b911cb54": [
+    "pixel density",
+    "OTHER",
+    "0.0",
+    "0.015218228"
+  ],
+  "fd033cf8-abf1-4915-a22f-a639b63b90f2": [
+    "spec sheet",
+    "OTHER",
+    "0.0",
+    "0.009017224"
+  ],
+  "c9f590dc-2a3d-429b-b834-6e81ab06bbf0": [
+    "Cupertino",
+    "LOCATION",
+    "0.0",
+    "0.030619213"
+  ],
+  "6e5ef42d-64df-4b2b-bf7d-5903c71484d7": [
+    "Flint Center",
+    "LOCATION",
+    "0.0",
+    "0.030619213"
+  ],
+  "40fa4037-7206-4d63-870e-b385a49fa883": [
+    "second",
+    "OTHER",
+    "0.0",
+    "0.016495448"
+  ],
+  "a3000c66-03ca-48f9-88e1-a56f32a002e2": [
+    "iPhone 6 Plus",
+    "ORGANIZATION",
+    "0.0",
+    "0.03367175"
+  ],
+  "26c2ad44-a19f-4427-b1bc-686b3cf90e5c": [
+    "screen",
+    "OTHER",
+    "0.0",
+    "0.011348591"
+  ],
+  "651b7d78-257c-464b-a8ff-7c1a1e53b9a6": [
+    "resolution",
+    "OTHER",
+    "0.0",
+    "0.0050102235"
+  ],
+  "a905951f-fa45-4462-920a-c0bb9d2aecd3": [
+    "display",
+    "OTHER",
+    "0.0",
+    "0.020687127"
+  ],
+  "0b61f5a6-27bc-485f-b06f-471efc8abba4": [
+    "display",
+    "OTHER",
+    "0.0",
+    "0.020948365"
+  ],
+  "acfddf28-04c2-47a2-85b3-7ef17e60bbb5": [
+    "lot",
+    "OTHER",
+    "0.0",
+    "0.011348591"
+  ]
+}
+INFO	2017-10-26 16:29:25,658	393450	root	[qtp1421913278-18]	----------------Noun combination sequences----------------
+INFO	2017-10-26 16:29:25,659	393451	root	[qtp1421913278-18]	{
+  "today": "time",
+  "Apple": "fruit",
+  "iPhone": "device",
+  "models": "information",
+  "Event": "information",
+  "Flint Center": "Not Found",
+  "Cupertino": "city",
+  "device": "resource",
+  "inch display": "Not Found",
+  "Plus": "setting",
+  "inch Retina HD display": "Not Found",
+  "pixel density": "feature",
+  "401ppi": "Not Found",
+  "resolution": "parameter",
+  "pixels": "information",
+  "lot": "information",
+  "screen": "equipment",
+  "spec sheet": "product documentation"
+}
+INFO	2017-10-26 16:29:25,665	393457	root	[qtp1421913278-18]	--------- Synatx Map ------------
+INFO	2017-10-26 16:29:25,666	393458	root	[qtp1421913278-18]	{1=[Earlier, ADV, Earlier], 2=[today, NOUN, today], 3=[,, PUNCT, ,], 4=[Apple, NOUN, Apple], 5=[unveiled, VERB, unveil], 6=[two, NUM, two], 7=[iPhone, NOUN, iPhone], 8=[6, NUM, 6], 9=[models, NOUN, model], 10=[at, ADP, at], 11=[its, PRON, its], 12=[Special, ADJ, Special], 13=[Event, NOUN, Event], 14=[in, ADP, in], 15=[Flint, NOUN, Flint], 16=[Center, NOUN, Center], 17=[,, PUNCT, ,], 18=[Cupertino, NOUN, Cupertino], 19=[., PUNCT, .], 20=[The, DET, The], 21=[first, ADJ, first], 22=[device, NOUN, device], 23=[,, PUNCT, ,], 24=[the, DET, the], 25=[iPhone, NOUN, iPhone], 26=[6, NUM, 6], 27=[comes, VERB, come], 28=[with, ADP, with], 29=[a, DET, a], 30=[4.7, NUM, 4.7], 31=[-, PUNCT, -], 32=[inch, NOUN, inch], 33=[display, NOUN, display], 34=[and, CONJ, and], 35=[the, DET, the], 36=[second, ADJ, second], 37=[,, PUNCT, ,], 38=[the, DET, the], 39=[iPhone, NOUN, iPhone], 40=[6, NUM, 6], 41=[Plus, NOUN, Plus], 42=[,, PUNCT, ,], 43=[comes, VERB, come], 44=[with, ADP, with], 45=[a, DET, a], 46=[5.5, NUM, 5.5], 47=[-, PUNCT, -], 48=[inch, NOUN, inch], 49=[display, NOUN, display], 50=[., PUNCT, .], 51=[The, DET, The], 52=[iPhone, NOUN, iPhone], 53=[6, NUM, 6], 54=[Plus, NOUN, Plus], 55=[has, VERB, have], 56=[a, DET, a], 57=[5.5, NUM, 5.5], 58=[-, PUNCT, -], 59=[inch, NOUN, inch], 60=[Retina, NOUN, Retina], 61=[HD, NOUN, HD], 62=[display, NOUN, display], 63=[,, PUNCT, ,], 64=[with, ADP, with], 65=[a, DET, a], 66=[pixel, NOUN, pixel], 67=[density, NOUN, density], 68=[of, ADP, of], 69=[401ppi, NOUN, 401ppi], 70=[and, CONJ, and], 71=[a, DET, a], 72=[resolution, NOUN, resolution], 73=[of, ADP, of], 74=[1920, NUM, 1920], 75=[x, X, x], 76=[1080, NUM, 1080], 77=[pixels, NOUN, pixel], 78=[., PUNCT, .], 79=[But, CONJ, But], 80=[there, DET, there], 81=[’s, VERB, be], 82=[a, DET, a], 83=[lot, NOUN, lot], 84=[more, ADJ, more], 85=[to, ADP, to], 86=[the, DET, the], 87=[iPhone, NOUN, iPhone], 88=[6, NUM, 6], 89=[Plus, NOUN, Plus], 90=[than, ADP, than], 91=[just, ADV, just], 92=[its, PRON, its], 93=[screen, NOUN, screen], 94=[., PUNCT, .], 95=[Here, ADV, Here], 96=[’s, VERB, be], 97=[the, DET, the], 98=[full, ADJ, full], 99=[spec, NOUN, spec], 100=[sheet, NOUN, sheet], 101=[of, ADP, of], 102=[the, DET, the], 103=[iPhone, NOUN, iPhone], 104=[6, NUM, 6], 105=[Plus, NOUN, Plus], 106=[., PUNCT, .]}
+INFO	2017-10-26 16:29:25,667	393459	root	[qtp1421913278-18]	--------- finalEntityTaggedMap ------------
+INFO	2017-10-26 16:29:25,668	393460	root	[qtp1421913278-18]	{1=[iPhone 6, 0.0, 0.17305742, CONSUMER_GOOD], 2=[device, 0.0, 0.034110826, CONSUMER_GOOD, device, resource], 3=[Special Event, 0.0, 0.07828628, EVENT], 4=[models, 0.0, 0.12868936, CONSUMER_GOOD, models, information], 5=[Retina HD display, 0.0, 0.019088581, OTHER, inch Retina HD display, Not Found], 6=[Apple, 0.0, 0.34628057, ORGANIZATION, Apple, fruit], 7=[pixel density, 0.0, 0.015218228, OTHER, pixel density, feature], 8=[spec sheet, 0.0, 0.009017224, OTHER, spec sheet, product documentation], 9=[Cupertino, 0.0, 0.030619213, LOCATION, Cupertino, city], 10=[Flint Center, 0.0, 0.030619213, LOCATION, Flint Center, Not Found], 11=[second, 0.0, 0.016495448, OTHER], 12=[iPhone 6 Plus, 0.0, 0.03367175, ORGANIZATION], 13=[screen, 0.0, 0.011348591, OTHER, screen, equipment], 14=[resolution, 0.0, 0.0050102235, OTHER, resolution, parameter], 15=[display, 0.0, 0.020687127, OTHER, inch display, Not Found], 16=[display, 0.0, 0.020948365, OTHER, inch display, Not Found], 17=[lot, 0.0, 0.011348591, OTHER, lot, information]}
+INFO	2017-10-26 16:29:30,802	398594	root	[qtp1421913278-18]	----------------Feature understanding----------------
+INFO	2017-10-26 16:29:30,807	398599	root	[qtp1421913278-18]	{
+  "mainEntity": "iPhone 6",
+  "featureMap": {
+    "pixel density": "feature",
+    "Retina HD display": "spec"
+  }
+}

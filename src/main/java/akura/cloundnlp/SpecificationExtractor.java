@@ -95,8 +95,8 @@ public class SpecificationExtractor {
         JSONParser jsonParser = new JSONParser();
         List<MobileDataSet> mobileDataSetList = new LinkedList<>();
         try {
-            JSONArray jsonArray = (JSONArray) jsonParser.parse(new FileReader("I:\\processing-engine\\src\\main\\java\\akura\\cloundnlp\\sample_resources\\phone_dataset.json"));
-
+            JSONArray jsonArray = (JSONArray) jsonParser.parse(new FileReader(System.getProperty("user.dir")+"/src/main/java/akura/cloundnlp/sample_resources/phone_dataset.json"));
+           
             for (Object object: jsonArray){
                 JSONObject jsonObject = (JSONObject) object;
                 MobileDataSet mobileDataSet = new MobileDataSet();
