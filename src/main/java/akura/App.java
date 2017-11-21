@@ -39,9 +39,6 @@ public class App {
         post("/extract-entity", (req, res) -> {
             EntityServiceResponse entityServiceResponse = gson.fromJson(req.body(), EntityServiceResponse.class);
             String mainEntity = EntityExtractor.getMainSalienceEntity(entityServiceResponse.text);
-
-            System.out.println(mainEntity);
-
             List<OntologyMapDto> response = entityExtractorService.extractEntity(entityServiceResponse.text, mainEntity);
             return new GsonBuilder().setPrettyPrinting().create().toJson(response);
         });
@@ -49,9 +46,6 @@ public class App {
         post("/modify-sentence", (req, res) -> {
             SentenceServiceResponse sentenceServiceResponse = gson.fromJson(req.body(), SentenceServiceResponse.class);
             String mainEntity = EntityExtractor.getMainSalienceEntity(sentenceServiceResponse.text);
-
-            System.out.println(mainEntity);
-
             List<String> response = entityExtractorService.modifiedSentenceList(sentenceServiceResponse.text, mainEntity);
             return new GsonBuilder().setPrettyPrinting().create().toJson(response);
         });

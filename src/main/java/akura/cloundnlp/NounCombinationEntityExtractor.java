@@ -42,9 +42,6 @@ public class NounCombinationEntityExtractor {
             }
         }
 
-
-        Logger.Log("----------------Noun combination sequences----------------");
-        Logger.Log(new GsonBuilder().setPrettyPrinting().create().toJson(entityTags));
         return entityTags;
     }
 }

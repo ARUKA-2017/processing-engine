@@ -56,10 +56,6 @@ public class EntityExtractor {
             categoryMap.put(category.getName().split("/")[1], category.getConfidence());
             break;
         }
-
-        Logger.Log("----------------Category Map----------------");
-        Logger.Log(new GsonBuilder().setPrettyPrinting().create().toJson(categoryMap));
-
         return categoryMap;
     }
 
@@ -82,8 +78,6 @@ public class EntityExtractor {
             detailList.add(String.valueOf(entity.getSalience()));
             entityList.put(UUID.randomUUID().toString(), detailList);
         }
-        Logger.Log("----------------Google NLP Entity List----------------");
-        Logger.Log(new GsonBuilder().setPrettyPrinting().create().toJson(entityList));
         return entityList;
     }
 
@@ -205,7 +199,6 @@ public class EntityExtractor {
         SpecificationExtractor specificationExtractor = new SpecificationExtractor();
         SpecificationDto specificationDto = specificationExtractor.extractDomainsFromSentenceSyntax(ontologyMapDto.getFinalEntityTaggedList(), ontologyMapDto.getReview());
         ontologyMapDto.setSpecificationDto(specificationDto);
-
 
         Logger.Log("#TITLE-STEP 11: Construct Entity Detail Map");
         Logger.Log("#JSON-".concat(new Gson().toJson(ontologyMapDto)));

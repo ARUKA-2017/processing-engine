@@ -101,9 +101,6 @@ public class RelationshipExtractor {
             );
         });
 
-
-        Logger.Log("----------------Entity replaced sentence list(the phone, this phone, this device)----------------");
-        Logger.Log(new GsonBuilder().setPrettyPrinting().create().toJson(replacedSentenceList));
         return replacedSentenceList;
     }
 
@@ -185,8 +182,6 @@ public class RelationshipExtractor {
             sentenceCount++;
         }
 
-        Logger.Log("----------------Entity replacement by IT context----------------");
-        Logger.Log(new GsonBuilder().setPrettyPrinting().create().toJson(replacedSentenceList));
         return replacedSentenceList;
     }
 
@@ -204,9 +199,6 @@ public class RelationshipExtractor {
             prevSentenceWordDto.setSalience(Float.parseFloat(value.get(3)));
             sentenceWordDtos.add(prevSentenceWordDto);
         });
-
-        Logger.Log("----------------Sentence list with word by word details----------------");
-        Logger.Log(new GsonBuilder().setPrettyPrinting().create().toJson(sentenceWordDtos));
 
         return sentenceWordDtos;
     }

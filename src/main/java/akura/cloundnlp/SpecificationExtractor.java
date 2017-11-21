@@ -80,7 +80,6 @@ public class SpecificationExtractor {
                                 && finalEntityTagDto.getText().toLowerCase().contains(mobileDataSet.getName().toLowerCase()))
                                 || (finalEntityTagDto.getNounCombination().toLowerCase().equals(mobileDataSet.getName().toLowerCase())
                                 && finalEntityTagDto.getNounCombination().toLowerCase().contains(mobileDataSet.getName().toLowerCase()))){
-                            System.out.println("matched " + mobileDataSet.getName());
                             tmpRelativeEntityList.add(finalEntityTagDto);
                         }
                     }
@@ -116,7 +115,6 @@ public class SpecificationExtractor {
 //        List<SpecRelationshipDto> specRelationshipDtoList = getSpecificationRelationshipList(review, finalEntityTagDtos, featureMap);
 
         specificationDto.setSpecRelationshipDtoList(specRelationshipDtoList);
-        System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(specRelationshipDtoList));
 //        Logger.Log("----------------Feature understanding----------------");
 //        Logger.Log(new GsonBuilder().setPrettyPrinting().create().toJson(specificationDto));
         return specificationDto;
@@ -188,16 +186,12 @@ public class SpecificationExtractor {
 
                 for (MobileDataSet mobileDataSet: mobileDataSetList){
                     if (mobileDataSet.getName().toLowerCase().toString().contains(finalEntityTagDto.getText().toLowerCase())){
-                        System.out.println(mobileDataSet.getName().toString());
                         tmpFinalEntityTagDtoList.add(finalEntityTagDto);
                         break;
                     }
                 }
             }
         }
-        System.out.println("\ntemporary final entity tag dto list");
-        System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(tmpFinalEntityTagDtoList));
-        System.out.println();
 
         return tmpFinalEntityTagDtoList;
     }
