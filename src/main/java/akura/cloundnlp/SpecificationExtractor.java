@@ -14,6 +14,8 @@ import org.json.simple.parser.ParseException;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.FileSystems;
+import java.nio.file.Path;
 import java.util.*;
 import java.util.regex.Pattern;
 
@@ -61,9 +63,35 @@ public class SpecificationExtractor {
 
         FinalEntityTagDto mainEntity = ((finalEntityTagDtos != null && !finalEntityTagDtos.isEmpty())?finalEntityTagDtos.get(finalEntityTagDtos.size()-1):null);
 
-        specificationDto.setMainEntity(mainEntity);//should change it from the main method
+        specificationDto.setMainEntity(mainEntity);
 //        finalEntityTagDtos.remove(finalEntityTagDtos.get(finalEntityTagDtos.size()-1));
-        specificationDto.setRelativeEntityList(finalEntityTagDtos);
+
+//        specificationDto.setRelativeEntityList(finalEntityTagDtos);
+        //relative entity list specifies main entity is better than the other entities
+        if (finalEntityTagDtos != null && !finalEntityTagDtos.isEmpty()){
+            List<FinalEntityTagDto> tmpRelativeEntityList = new LinkedList<>();
+            List<FinalEntityTagDto> relativeEntityList = finalEntityTagDtos;
+//            relativeEntityList.remove(relativeEntityList.size()-1);
+            List<MobileDataSet> mobileDataSets = this.getPhoneDataList();
+            if (relativeEntityList != null && !relativeEntityList.isEmpty())
+                for(FinalEntityTagDto finalEntityTagDto : relativeEntityList){
+                    for (MobileDataSet mobileDataSet : mobileDataSets){
+                        if ((finalEntityTagDto.getText().toLowerCase().equals(mobileDataSet.getName().toLowerCase())
+                                && finalEntityTagDto.getText().toLowerCase().contains(mobileDataSet.getName().toLowerCase()))
+                                || (finalEntityTagDto.getNounCombination().toLowerCase().equals(mobileDataSet.getName().toLowerCase())
+                                && finalEntityTagDto.getNounCombination().toLowerCase().contains(mobileDataSet.getName().toLowerCase()))){
+                            System.out.println("matched " + mobileDataSet.getName());
+                            tmpRelativeEntityList.add(finalEntityTagDto);
+                        }
+                    }
+                }
+
+            specificationDto.setRelativeEntityList(tmpRelativeEntityList);
+        }
+
+
+
+
         specMap.forEach((key, value) -> {
             if (key.equals("feature") || key.equals("factor") || key.equals("spec") || key.equals("item") || key.equals("sensor") || key.equals("component") || key.equals("function") || key.equals("output device")){
                 value.forEach(s -> {
@@ -178,7 +206,9 @@ public class SpecificationExtractor {
         JSONParser jsonParser = new JSONParser();
         List<MobileDataSet> mobileDataSetList = new LinkedList<>();
         try {
-            JSONArray jsonArray = (JSONArray) jsonParser.parse(new FileReader("./src/main/java/akura/cloundnlp/sample_resources/phone_dataset.json"));
+
+            Path path = FileSystems.getDefault().getPath("src/main/java/akura/cloundnlp/sample_resources/phone_dataset.json");
+            JSONArray jsonArray = (JSONArray) jsonParser.parse(new FileReader(String.valueOf(path.toAbsolutePath())));
 
             for (Object object: jsonArray){
                 JSONObject jsonObject = (JSONObject) object;

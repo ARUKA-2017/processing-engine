@@ -15,6 +15,8 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Writer;
+import java.nio.file.FileSystems;
+import java.nio.file.Path;
 import java.security.GeneralSecurityException;
 import java.util.Arrays;
 import java.util.Collections;
@@ -87,23 +89,25 @@ public class TestScenario {
 //                System.out.println(false);
 //            }
 //        }
-        JSONParser jsonParser = new JSONParser();
-        JSONArray array = null;
-        try {
-            array = (JSONArray) jsonParser.parse(new FileReader("./src/main/java/akura/cloundnlp/sample_resources/SampleReviews.json"));
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-
-        List<OntologyMapDto> ontologyMapDtos = new LinkedList<>();
-        for (Object object : array) {
-            JSONObject jsonObject = (JSONObject) object;
-            System.out.println(jsonObject.get("date"));
-            System.out.println();
-
-        }
+//        JSONParser jsonParser = new JSONParser();
+//        JSONArray array = null;
+//        try {
+//            array = (JSONArray) jsonParser.parse(new FileReader("./src/main/java/akura/cloundnlp/sample_resources/SampleReviews.json"));
+//
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        } catch (ParseException e) {
+//            e.printStackTrace();
+//        }
+//
+//        List<OntologyMapDto> ontologyMapDtos = new LinkedList<>();
+//        for (Object object : array) {
+//            JSONObject jsonObject = (JSONObject) object;
+//            System.out.println(jsonObject.get("date"));
+//            System.out.println();
+//
+//        }
+        Path path = FileSystems.getDefault().getPath("src/main/java/akura/cloundnlp/sample_resources/phone_dataset.json");
+        System.out.println(path.toAbsolutePath());
     }
 }
