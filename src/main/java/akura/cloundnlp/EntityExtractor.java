@@ -112,6 +112,10 @@ public class EntityExtractor {
             syntaxTagMap.put(++counter, tokenTags);
         }
         Map<String, String> mergedNouns = NounCombinationEntityExtractor.mergeNouns(syntaxTagMap);
+
+        Logger.Log("#TITLE-STEP 4: Identify noun combination categories through ProBase");
+        Logger.Log("#JSON-".concat(new Gson().toJson(mergedNouns)));
+
         Map<Integer, List<String>> finalEntityTaggedMap = new LinkedHashMap<>();
         counter = 0;
         for (Map.Entry<String, List<String>> entityRow : entitiesFound.entrySet()) {
@@ -133,11 +137,12 @@ public class EntityExtractor {
             }
             finalEntityTaggedMap.put(++counter, temporaryEntityDetailList);
         }
-        Logger.Log("--------- Synatx Map ------------");
-        Logger.Log(syntaxTagMap.toString());
-
-        Logger.Log("--------- finalEntityTaggedMap ------------");
-        Logger.Log(finalEntityTaggedMap.toString());
+        Logger.Log("#TITLE-STEP 5: Construct Syntax Tags");
+        Logger.Log("#SUB- Tags included->test,pos tag,lemmatization tag");
+        Logger.Log("#JSON-".concat(new Gson().toJson(syntaxTagMap)));
+        Logger.Log("#TITLE-STEP 6: Construct Entity Tags");
+        Logger.Log("#SUB- Tags included->text,sentiment,salience,category,noun combination,noun combination category");
+        Logger.Log("#JSON-".concat(new Gson().toJson(finalEntityTaggedMap)));
 
         outputMap.put("syntaxTagMap", syntaxTagMap);
         outputMap.put("finalEntityTaggedMap", finalEntityTaggedMap);
@@ -158,6 +163,10 @@ public class EntityExtractor {
         ontologyMapDto.setReview(review.get("reviewContent").toString());
         ontologyMapDto.setReviewRating((review.get("rating").equals("N/A"))?0:Float.parseFloat(review.get("rating").toString()));
         ontologyMapDto.setCategoryMap(categoryMap);
+
+        Logger.Log("#TITLE-STEP 7: Identify Sentence/Paragraph domain");
+        Logger.Log("#JSON-".concat(new Gson().toJson(categoryMap)));
+
         List<SyntaxDto> syntaxDtos = new LinkedList<>();
         List<FinalEntityTagDto> finalEntityTagDtos = new LinkedList<>();
         for (Map.Entry<String, Map<Integer, List<String>>> entry : outputMap.entrySet()) {
@@ -196,6 +205,10 @@ public class EntityExtractor {
         SpecificationExtractor specificationExtractor = new SpecificationExtractor();
         SpecificationDto specificationDto = specificationExtractor.extractDomainsFromSentenceSyntax(ontologyMapDto.getFinalEntityTaggedList(), ontologyMapDto.getReview());
         ontologyMapDto.setSpecificationDto(specificationDto);
+
+
+        Logger.Log("#TITLE-STEP 11: Construct Entity Detail Map");
+        Logger.Log("#JSON-".concat(new Gson().toJson(ontologyMapDto)));
 
         return ontologyMapDto;
     }
@@ -249,6 +262,8 @@ public class EntityExtractor {
             outputDtoList.add(temporaryDto);
             iterator = finalEntityTagDtos.iterator();
         }
+        Logger.Log("#TITLE-STEP 8: Prioritize entity list by salience");
+        Logger.Log("#JSON-".concat(new Gson().toJson(outputDtoList)));
         return this.prioritizeEntities(outputDtoList);
     }
 
@@ -282,11 +297,15 @@ public class EntityExtractor {
             for (MobileDataSet mobileDataSet: mobileDataSetList){
                 if (mobileDataSet.getName().toLowerCase().equals(entity.getName().toLowerCase())
                         && mobileDataSet.getName().toLowerCase().contains(entity.getName().toLowerCase())){
+                    Logger.Log("#TITLE-STEP 1: Main Entity Extraction");
+                    Logger.Log("#CONT-".concat(entity.getName()));
                     return entity.getName();
                 }
             }
         }
-            return mainEntity;
+        Logger.Log("#TITLE-STEP 1: Main Entity Extraction");
+        Logger.Log("#CONT-".concat(mainEntity));
+        return mainEntity;
     }
     /**
      *
@@ -304,6 +323,11 @@ public class EntityExtractor {
         try {
             languageServiceClient = APIConnection.provideLanguageServiceClient();
             List<String> replacedText = new RelationshipExtractor().executeModifier(text, entity);
+
+            Logger.Log("#TITLE-STEP 2: Sentence modification");
+            Logger.Log("#SUB- Replace and modify IT context of sentences by salience");
+            Logger.Log("#JSON-".concat(new Gson().toJson(replacedText)));
+
             text = "";
             for (String newStr : replacedText){
                 text += " "+newStr;
@@ -325,6 +349,10 @@ public class EntityExtractor {
         } catch (GeneralSecurityException e) {
             e.printStackTrace();
         }
+
+        Logger.Log("#TITLE-STEP 12: Construct Final JSON output structure");
+        Logger.Log("#JSON-".concat(new Gson().toJson(ontologyMapDtos)));
+
         return ontologyMapDtos;
     }
 

@@ -5,6 +5,7 @@ import akura.cloundnlp.dtos.MobileDataSet;
 import akura.cloundnlp.dtos.SpecRelationshipDto;
 import akura.cloundnlp.dtos.SpecificationDto;
 import akura.utility.Logger;
+import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -70,6 +71,10 @@ public class SpecificationExtractor {
                 });
             }
         });
+
+        Logger.Log("#TITLE-STEP 9: Construct Feature Map");
+        Logger.Log("#JSON-".concat(new Gson().toJson(featureMap)));
+
         specificationDto.setFeatureMap(featureMap);
         //relationship list between specifications and entities
         List<SpecRelationshipDto> specRelationshipDtoList = getSpecificationRelationshipList(
@@ -78,12 +83,14 @@ public class SpecificationExtractor {
                 finalEntityTagDtos,
                 featureMap
         );
+        Logger.Log("#TITLE-STEP 10: Construct Relationship List");
+        Logger.Log("#JSON-".concat(new Gson().toJson(specRelationshipDtoList)));
 //        List<SpecRelationshipDto> specRelationshipDtoList = getSpecificationRelationshipList(review, finalEntityTagDtos, featureMap);
 
         specificationDto.setSpecRelationshipDtoList(specRelationshipDtoList);
         System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(specRelationshipDtoList));
-        Logger.Log("----------------Feature understanding----------------");
-        Logger.Log(new GsonBuilder().setPrettyPrinting().create().toJson(specificationDto));
+//        Logger.Log("----------------Feature understanding----------------");
+//        Logger.Log(new GsonBuilder().setPrettyPrinting().create().toJson(specificationDto));
         return specificationDto;
     }
 
