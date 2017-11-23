@@ -99,7 +99,7 @@ public class SpecificationExtractor {
             }
         });
 
-        Logger.Log("#TITLE-STEP 9: Construct Feature Map");
+        Logger.Log("#TITLE-STEP 8: Construct Feature Map");
         Logger.Log("#JSON-".concat(new Gson().toJson(featureMap)));
 
         specificationDto.setFeatureMap(featureMap);
@@ -110,7 +110,7 @@ public class SpecificationExtractor {
                 finalEntityTagDtos,
                 featureMap
         );
-        Logger.Log("#TITLE-STEP 10: Construct Relationship List");
+        Logger.Log("#TITLE-STEP 9: Construct Relationship List");
         Logger.Log("#JSON-".concat(new Gson().toJson(specRelationshipDtoList)));
 //        List<SpecRelationshipDto> specRelationshipDtoList = getSpecificationRelationshipList(review, finalEntityTagDtos, featureMap);
 
