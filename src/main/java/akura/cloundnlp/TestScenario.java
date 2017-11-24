@@ -1,36 +1,20 @@
 package akura.cloundnlp;
 
-import akura.cloundnlp.dtos.OntologyMapDto;
-import akura.utility.APIConnection;
-import com.google.cloud.language.v1beta2.Entity;
 import com.google.cloud.language.v1beta2.LanguageServiceClient;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-import java.io.FileReader;
-import java.io.FileWriter;
 import java.io.IOException;
-import java.io.Writer;
 import java.nio.file.FileSystems;
 import java.nio.file.Path;
 import java.security.GeneralSecurityException;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.regex.Pattern;
 
 /**
  * Test scenario class for test methods
  */
 public class TestScenario {
     private static LanguageServiceClient languageServiceClient;
-    static EntityExtractor entityExtractor = new EntityExtractor();
-    static SpecificationExtractor specificationExtractor = new SpecificationExtractor();
+    static EntityExtractorInterface entityExtractor = new EntityExtractor();
+    static SpecificationExtractorInterface specificationExtractor = new SpecificationExtractor();
 
     public static void main(String[] args) throws IOException, GeneralSecurityException, ParseException {
 //        System.out.println(Pattern.compile("\\b"+"iphone 6s"+"\\b").matcher("I have an iPhone 6S and a Samsung Galaxy 6S").find());

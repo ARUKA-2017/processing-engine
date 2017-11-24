@@ -1,10 +1,7 @@
 package akura.cloundnlp;
 
 import akura.utility.APIConnection;
-import akura.utility.Logger;
-import com.google.gson.GsonBuilder;
 
-import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -12,7 +9,7 @@ import java.util.Map;
 /**
  * Class representing an entity extractor from nouns.
  */
-public class NounCombinationEntityExtractor {
+public class NounCombinationEntityExtractor implements NounCombinationEntityExtractirInterface{
 
     /**
      * Method used to merge nouns and add tag.
@@ -20,7 +17,7 @@ public class NounCombinationEntityExtractor {
      * @param data
      * @return
      */
-    public static Map<String, String> mergeNouns(Map<Integer, List<String>> data) {
+    public Map<String, String> mergeNouns(Map<Integer, List<String>> data) {
         Map<String, String> entityTags = new LinkedHashMap<>();
         String requestString = "";
         int adjacentNounCount = 0;

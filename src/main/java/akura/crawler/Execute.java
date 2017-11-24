@@ -1,6 +1,7 @@
 package akura.crawler;
 
 import akura.cloundnlp.EntityExtractor;
+import akura.cloundnlp.EntityExtractorInterface;
 import akura.cloundnlp.dtos.OntologyMapDto;
 
 import java.io.IOException;
@@ -27,7 +28,7 @@ public class Execute {
 
         Crawler crawler = new Crawler();
         crawler.fetchReview(il.getItem().getAsinCode(), 1);//(Item Id, Number of pages to crawl)
-        EntityExtractor ex = new EntityExtractor();
+        EntityExtractorInterface ex = new EntityExtractor();
         ex.extractEntityData("IPhone 6S");
     }
 
@@ -45,7 +46,7 @@ public class Execute {
 
         Crawler crawler = new Crawler();
         crawler.fetchReview(il.getItem().getAsinCode(), 1);//(Item Id, Number of pages to crawl)
-        EntityExtractor ex = new EntityExtractor();
+        EntityExtractorInterface ex = new EntityExtractor();
         return ex.extractEntityData(searchKeyWord);
     }
 }

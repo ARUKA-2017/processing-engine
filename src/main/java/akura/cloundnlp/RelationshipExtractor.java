@@ -3,10 +3,8 @@ package akura.cloundnlp;
 import akura.cloundnlp.dtos.SentenceDto;
 import akura.cloundnlp.dtos.SentenceWordDto;
 import akura.utility.APIConnection;
-import akura.utility.Logger;
 import com.google.cloud.language.v1beta2.Document;
 import com.google.cloud.language.v1beta2.LanguageServiceClient;
-import com.google.gson.GsonBuilder;
 
 import java.io.IOException;
 import java.util.*;
@@ -17,9 +15,9 @@ import java.util.regex.Pattern;
  * Relationship extractor class
  *
  */
-public class RelationshipExtractor {
+public class RelationshipExtractor implements RelationshipExtractorInterface{
     private final static String REGEX = "[^.!?\\s][^.!?]*(?:[.!?](?!['\"]?\\s|$)[^.!?]*)*[.!?]?['\"]?(?=\\s|$)";
-    private EntityExtractor entityExtractor = new EntityExtractor();
+    private EntityExtractorInterface entityExtractor = new EntityExtractor();
     private LanguageServiceClient languageServiceClient;
 
     /**
@@ -44,7 +42,7 @@ public class RelationshipExtractor {
      * @param paragraph
      * @return
      */
-    public static List<String> sentenceTokenize(String paragraph) {
+    public List<String> sentenceTokenize(String paragraph) {
         List<String> sentenceList = new ArrayList<>();
         Matcher reMatcher = Pattern.compile(REGEX, Pattern.MULTILINE | Pattern.COMMENTS).matcher(paragraph);
         while (reMatcher.find()) {

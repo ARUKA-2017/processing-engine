@@ -12,10 +12,8 @@ import java.util.Collections;
 import java.util.Date;
 import java.util.Locale;
 
-import akura.cloundnlp.EntityExtractor;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import org.json.JSONException;
 import org.json.JSONObject;
 import org.jsoup.HttpStatusException;
 import org.jsoup.Jsoup;

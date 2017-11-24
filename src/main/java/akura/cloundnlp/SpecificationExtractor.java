@@ -6,7 +6,6 @@ import akura.cloundnlp.dtos.SpecRelationshipDto;
 import akura.cloundnlp.dtos.SpecificationDto;
 import akura.utility.Logger;
 import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -23,7 +22,7 @@ import java.util.regex.Pattern;
  * Class to extract several specification details of devices from a given text
  *
  */
-public class SpecificationExtractor {
+public class SpecificationExtractor implements SpecificationExtractorInterface{
     private Map<String, List<String>> specMap = new HashMap<>();
     private SpecificationDto specificationDto = new SpecificationDto();
     Map<String, String> featureMap = new LinkedHashMap<>();
@@ -49,6 +48,13 @@ public class SpecificationExtractor {
         relationshipTypeList.add("comes with a");
     }
 
+    /**
+     * Extraction of domain according to the sentence
+     *
+     * @param finalEntityTagDtoList
+     * @param review
+     * @return
+     */
     public SpecificationDto extractDomainsFromSentenceSyntax(List<FinalEntityTagDto> finalEntityTagDtoList, String review){
         for (FinalEntityTagDto finalEntityTagDto: finalEntityTagDtoList){
             specMap.forEach((s, strings) -> {
@@ -120,9 +126,17 @@ public class SpecificationExtractor {
         return specificationDto;
     }
 
+    /**
+     * Retrieve spec result list
+     *
+     * @param reviewText
+     * @param finalEntityTagDtoList
+     * @param featureMap
+     * @return
+     */
     public List<SpecRelationshipDto> getSpecificationRelationshipList(String reviewText, List<FinalEntityTagDto> finalEntityTagDtoList, Map<String, String> featureMap){
         List<SpecRelationshipDto> specRelationshipDtoList = new LinkedList<>();
-        List<String> tokenizedSentenceList = RelationshipExtractor.sentenceTokenize(reviewText);
+        List<String> tokenizedSentenceList = new RelationshipExtractor().sentenceTokenize(reviewText);
 
         for(String sentence: tokenizedSentenceList){
             for (Map.Entry<String, String> featureMapEntry: featureMap.entrySet()){
@@ -152,6 +166,15 @@ public class SpecificationExtractor {
         return specRelationshipDtoList;
     }
 
+    /**
+     * Identifying spec relationships
+     *
+     * @param relationship
+     * @param finalEntityTagDtoList
+     * @param featureSplit
+     * @param specRelationshipDtoList
+     * @param featureMapEntry
+     */
     private void processSpecRelationship(String relationship, List<FinalEntityTagDto> finalEntityTagDtoList, String[] featureSplit, List<SpecRelationshipDto> specRelationshipDtoList, Map.Entry<String, String> featureMapEntry){
         String[] relationshipSplit = featureSplit[0].split(relationship);
         finalEntityTagDtoList.forEach(finalEntityTagDto -> {
@@ -172,7 +195,12 @@ public class SpecificationExtractor {
         });
     }
 
-    //get entities and match with the phone dataset inside the resources folder and get its mapped feature set in addition to the original feature set extracted from the nlp processes
+    /**
+     * identify main entity and the relative entities
+     *
+     * @param finalEntityTagDtoList
+     * @return
+     */
     public List<FinalEntityTagDto> findMainEntityAndRelativeEntities(List<FinalEntityTagDto> finalEntityTagDtoList){
         List<FinalEntityTagDto> tmpFinalEntityTagDtoList = new LinkedList<>();
         List<MobileDataSet> mobileDataSetList = this.getPhoneDataList();
@@ -196,7 +224,12 @@ public class SpecificationExtractor {
         return tmpFinalEntityTagDtoList;
     }
 
-    public static List<MobileDataSet> getPhoneDataList(){
+    /**
+     * Mobile Device Name Corpus Provider
+     *
+     * @return
+     */
+    public List<MobileDataSet> getPhoneDataList(){
         JSONParser jsonParser = new JSONParser();
         List<MobileDataSet> mobileDataSetList = new LinkedList<>();
         try {

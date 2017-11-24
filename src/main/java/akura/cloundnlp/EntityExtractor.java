@@ -19,14 +19,11 @@ import java.io.IOException;
 
 import java.security.GeneralSecurityException;
 import java.util.*;
-import java.util.stream.Collectors;
-
-import static java.awt.SystemColor.text;
 
 /**
  * A snippet for Google Cloud Speech API showing how to analyze text message sentiment.
  */
-public class EntityExtractor {
+public class EntityExtractor implements EntityExtractorInterface{
     private static OntologyMapDto ontologyMapDto;
     private static LanguageServiceClient languageServiceClient;
 
@@ -105,7 +102,7 @@ public class EntityExtractor {
             tokenTags.add(token.getLemma());
             syntaxTagMap.put(++counter, tokenTags);
         }
-        Map<String, String> mergedNouns = NounCombinationEntityExtractor.mergeNouns(syntaxTagMap);
+        Map<String, String> mergedNouns = new NounCombinationEntityExtractor().mergeNouns(syntaxTagMap);
 
         Logger.Log("#TITLE-STEP 3: Identify noun combination categories through ProBase");
         Logger.Log("#JSON-".concat(new Gson().toJson(mergedNouns)));
@@ -196,7 +193,7 @@ public class EntityExtractor {
         ontologyMapDto.setSyntaxTagList(syntaxDtos);
         ontologyMapDto.setFinalEntityTaggedList(constructAvgScores(prioritizeEntities(finalEntityTagDtos)));
 
-        SpecificationExtractor specificationExtractor = new SpecificationExtractor();
+        SpecificationExtractorInterface specificationExtractor = new SpecificationExtractor();
         SpecificationDto specificationDto = specificationExtractor.extractDomainsFromSentenceSyntax(ontologyMapDto.getFinalEntityTaggedList(), ontologyMapDto.getReview());
         ontologyMapDto.setSpecificationDto(specificationDto);
 
@@ -270,6 +267,12 @@ public class EntityExtractor {
         }
     }
 
+    /**
+     * Get the main entity through the paragraph/sentence
+     *
+     * @param text
+     * @return
+     */
     public static String getMainSalienceEntity(String text){
         try {
             languageServiceClient = APIConnection.provideLanguageServiceClient();
@@ -280,7 +283,7 @@ public class EntityExtractor {
         AnalyzeEntitySentimentRequest request = AnalyzeEntitySentimentRequest.newBuilder().setDocument(doc).setEncodingType(EncodingType.UTF16).build();
         AnalyzeEntitySentimentResponse response = languageServiceClient.analyzeEntitySentiment(request);
 
-        List<MobileDataSet> mobileDataSetList = SpecificationExtractor.getPhoneDataList();
+        List<MobileDataSet> mobileDataSetList = new SpecificationExtractor().getPhoneDataList();
         String mainEntity = "";
         for (Entity entity: response.getEntitiesList()){
             System.out.println(entity.getName());
