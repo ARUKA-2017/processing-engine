@@ -1,12 +1,19 @@
 package akura.cloundnlp;
 
+import akura.cloundnlp.dtos.OntologyMapDto;
 import com.google.cloud.language.v1beta2.LanguageServiceClient;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+import org.json.simple.JSONObject;
 import org.json.simple.parser.ParseException;
 
 import java.io.IOException;
 import java.nio.file.FileSystems;
 import java.nio.file.Path;
 import java.security.GeneralSecurityException;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Test scenario class for test methods
@@ -91,7 +98,13 @@ public class TestScenario {
 //            System.out.println();
 //
 //        }
-        Path path = FileSystems.getDefault().getPath("src/main/java/akura/cloundnlp/sample_resources/phone_dataset.json");
-        System.out.println(path.toAbsolutePath());
+//        Path path = FileSystems.getDefault().getPath("src/main/java/akura/cloundnlp/sample_resources/phone_dataset.json");
+//        System.out.println(path.toAbsolutePath());
+
+        List<OntologyMapDto> ooo = new LinkedList<>();
+        JSONObject jsonObject = new JSONObject();
+        jsonObject.put("dsds", ooo);
+
+        System.out.println(new GsonBuilder().create().toJson(jsonObject));
     }
 }

@@ -10,6 +10,7 @@ import akura.utility.EntityServiceResponse;
 import akura.utility.SentenceServiceResponse;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import org.json.simple.JSONObject;
 import spark.Spark;
 
 import java.util.List;
@@ -40,20 +41,20 @@ public class App {
             EntityServiceResponse entityServiceResponse = gson.fromJson(req.body(), EntityServiceResponse.class);
             String mainEntity = EntityExtractor.getMainSalienceEntity(entityServiceResponse.text);
             List<OntologyMapDto> response = entityExtractorService.extractEntity(entityServiceResponse.text, mainEntity);
-            return new GsonBuilder().setPrettyPrinting().create().toJson(response);
+            return new GsonBuilder().setPrettyPrinting().create().toJson(new JSONObject().put("data", response));
         });
 
         post("/modify-sentence", (req, res) -> {
             SentenceServiceResponse sentenceServiceResponse = gson.fromJson(req.body(), SentenceServiceResponse.class);
             String mainEntity = EntityExtractor.getMainSalienceEntity(sentenceServiceResponse.text);
             List<String> response = entityExtractorService.modifiedSentenceList(sentenceServiceResponse.text, mainEntity);
-            return new GsonBuilder().setPrettyPrinting().create().toJson(response);
+            return new GsonBuilder().setPrettyPrinting().create().toJson(new JSONObject().put("data", response));
         });
 
         post("/extract-review", (req, res) -> {
             CrawlerServiceResponse crawlerServiceResponse = gson.fromJson(req.body(), CrawlerServiceResponse.class);
             List<OntologyMapDto> ontologyMapDtos = execute.extractReviewOntologyMap(crawlerServiceResponse.url, crawlerServiceResponse.searchKeyWord);
-            return new GsonBuilder().setPrettyPrinting().create().toJson(ontologyMapDtos);
+            return new GsonBuilder().setPrettyPrinting().create().toJson(new JSONObject().put("data", ontologyMapDtos));
         });
     }
 }

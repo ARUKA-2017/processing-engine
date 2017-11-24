@@ -94,9 +94,6 @@ public class SpecificationExtractor implements SpecificationExtractorInterface{
             specificationDto.setRelativeEntityList(tmpRelativeEntityList);
         }
 
-
-
-
         specMap.forEach((key, value) -> {
             if (key.equals("feature") || key.equals("factor") || key.equals("spec") || key.equals("item") || key.equals("sensor") || key.equals("component") || key.equals("function") || key.equals("output device")){
                 value.forEach(s -> {
