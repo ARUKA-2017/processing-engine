@@ -200,9 +200,6 @@ public class EntityExtractor {
         SpecificationDto specificationDto = specificationExtractor.extractDomainsFromSentenceSyntax(ontologyMapDto.getFinalEntityTaggedList(), ontologyMapDto.getReview());
         ontologyMapDto.setSpecificationDto(specificationDto);
 
-        Logger.Log("#TITLE-STEP 10: Construct Entity Detail Map");
-        Logger.Log("#JSON-".concat(new Gson().toJson(ontologyMapDto)));
-
         return ontologyMapDto;
     }
 
@@ -343,7 +340,7 @@ public class EntityExtractor {
             e.printStackTrace();
         }
 
-        Logger.Log("#TITLE-STEP 11: Construct Final JSON output structure");
+        Logger.Log("#TITLE-STEP 10: Construct Final JSON output structure");
         Logger.Log("#JSON-".concat(new Gson().toJson(ontologyMapDtos)));
 
         return ontologyMapDtos;
