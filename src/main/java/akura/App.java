@@ -41,8 +41,10 @@ public class App {
             EntityServiceResponse entityServiceResponse = gson.fromJson(req.body(), EntityServiceResponse.class);
             String mainEntity = EntityExtractor.getMainSalienceEntity(entityServiceResponse.text);
             List<OntologyMapDto> response = entityExtractorService.extractEntity(entityServiceResponse.text, mainEntity);
+
             JSONObject jsonObject = new JSONObject();
             jsonObject.put("data", response);
+
             return new GsonBuilder().setPrettyPrinting().create().toJson(jsonObject);
         });
 
@@ -50,16 +52,31 @@ public class App {
             SentenceServiceResponse sentenceServiceResponse = gson.fromJson(req.body(), SentenceServiceResponse.class);
             String mainEntity = EntityExtractor.getMainSalienceEntity(sentenceServiceResponse.text);
             List<String> response = entityExtractorService.modifiedSentenceList(sentenceServiceResponse.text, mainEntity);
+
             JSONObject jsonObject = new JSONObject();
             jsonObject.put("data", response);
+
             return new GsonBuilder().setPrettyPrinting().create().toJson(jsonObject);
         });
 
-        post("/extract-review", (req, res) -> {
-            CrawlerServiceResponse crawlerServiceResponse = gson.fromJson(req.body(), CrawlerServiceResponse.class);
+        get("/extract-review", (req, res) -> {
+            CrawlerServiceResponse crawlerServiceResponse = new CrawlerServiceResponse();
+
+            crawlerServiceResponse.searchKeyWord = req.queryParams("search");
+            crawlerServiceResponse.url = req.queryParams("url");
+
+            System.out.println("---------- Extract Review request recieved ----------------");
+            System.out.println("searchKeyWord ---> "+ crawlerServiceResponse.searchKeyWord);
+            System.out.println("url ---> "+ crawlerServiceResponse.url);
+            System.out.println("------------------------------------------------------------");
+
+//          gson.fromJson(req.body(), CrawlerServiceResponse.class);
+
             List<OntologyMapDto> ontologyMapDtos = execute.extractReviewOntologyMap(crawlerServiceResponse.url, crawlerServiceResponse.searchKeyWord);
+
             JSONObject jsonObject = new JSONObject();
             jsonObject.put("data", ontologyMapDtos);
+
             return new GsonBuilder().setPrettyPrinting().create().toJson(jsonObject);
         });
     }
