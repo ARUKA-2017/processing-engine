@@ -51,8 +51,13 @@ public class App {
             return new GsonBuilder().setPrettyPrinting().create().toJson(new JSONObject().put("data", response));
         });
 
-        post("/extract-review", (req, res) -> {
-            CrawlerServiceResponse crawlerServiceResponse = gson.fromJson(req.body(), CrawlerServiceResponse.class);
+        get("/extract-review", (req, res) -> {
+            CrawlerServiceResponse crawlerServiceResponse = new CrawlerServiceResponse();
+            crawlerServiceResponse.searchKeyWord = req.queryParams("search");
+            crawlerServiceResponse.url = req.queryParams("url");
+
+//          gson.fromJson(req.body(), CrawlerServiceResponse.class);
+
             List<OntologyMapDto> ontologyMapDtos = execute.extractReviewOntologyMap(crawlerServiceResponse.url, crawlerServiceResponse.searchKeyWord);
             return new GsonBuilder().setPrettyPrinting().create().toJson(new JSONObject().put("data", ontologyMapDtos));
         });
