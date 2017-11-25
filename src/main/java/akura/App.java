@@ -41,14 +41,22 @@ public class App {
             EntityServiceResponse entityServiceResponse = gson.fromJson(req.body(), EntityServiceResponse.class);
             String mainEntity = EntityExtractor.getMainSalienceEntity(entityServiceResponse.text);
             List<OntologyMapDto> response = entityExtractorService.extractEntity(entityServiceResponse.text, mainEntity);
-            return new GsonBuilder().setPrettyPrinting().create().toJson(new JSONObject().put("data", response));
+
+            JSONObject jsonObject = new JSONObject();
+            jsonObject.put("data", response);
+
+            return new GsonBuilder().setPrettyPrinting().create().toJson(jsonObject);
         });
 
         post("/modify-sentence", (req, res) -> {
             SentenceServiceResponse sentenceServiceResponse = gson.fromJson(req.body(), SentenceServiceResponse.class);
             String mainEntity = EntityExtractor.getMainSalienceEntity(sentenceServiceResponse.text);
             List<String> response = entityExtractorService.modifiedSentenceList(sentenceServiceResponse.text, mainEntity);
-            return new GsonBuilder().setPrettyPrinting().create().toJson(new JSONObject().put("data", response));
+
+            JSONObject jsonObject = new JSONObject();
+            jsonObject.put("data", response);
+
+            return new GsonBuilder().setPrettyPrinting().create().toJson(jsonObject);
         });
 
         get("/extract-review", (req, res) -> {
@@ -65,7 +73,11 @@ public class App {
 //          gson.fromJson(req.body(), CrawlerServiceResponse.class);
 
             List<OntologyMapDto> ontologyMapDtos = execute.extractReviewOntologyMap(crawlerServiceResponse.url, crawlerServiceResponse.searchKeyWord);
-            return new GsonBuilder().setPrettyPrinting().create().toJson(new JSONObject().put("data", ontologyMapDtos));
+
+            JSONObject jsonObject = new JSONObject();
+            jsonObject.put("data", ontologyMapDtos);
+
+            return new GsonBuilder().setPrettyPrinting().create().toJson(jsonObject);
         });
     }
 }
