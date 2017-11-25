@@ -53,8 +53,14 @@ public class App {
 
         get("/extract-review", (req, res) -> {
             CrawlerServiceResponse crawlerServiceResponse = new CrawlerServiceResponse();
+
             crawlerServiceResponse.searchKeyWord = req.queryParams("search");
             crawlerServiceResponse.url = req.queryParams("url");
+
+            System.out.println("---------- Extract Review request recieved ----------------");
+            System.out.println("searchKeyWord ---> "+ crawlerServiceResponse.searchKeyWord);
+            System.out.println("url ---> "+ crawlerServiceResponse.url);
+            System.out.println("------------------------------------------------------------");
 
 //          gson.fromJson(req.body(), CrawlerServiceResponse.class);
 
