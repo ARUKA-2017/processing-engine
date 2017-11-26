@@ -23,7 +23,7 @@ import java.util.*;
 /**
  * A snippet for Google Cloud Speech API showing how to analyze text message sentiment.
  */
-public class EntityExtractor implements EntityExtractorInterface{
+public class EntityExtractor implements EntityExtractorInterface {
     private static OntologyMapDto ontologyMapDto;
     private static LanguageServiceClient languageServiceClient;
 
@@ -152,7 +152,7 @@ public class EntityExtractor implements EntityExtractorInterface{
         ontologyMapDto = new OntologyMapDto();
         ontologyMapDto.setReviewId(review.get("review_id").toString());
         ontologyMapDto.setReview(review.get("reviewContent").toString());
-        ontologyMapDto.setReviewRating((review.get("rating").equals("N/A"))?0:Float.parseFloat(review.get("rating").toString()));
+        ontologyMapDto.setReviewRating((review.get("rating").equals("N/A")) ? 0 : Float.parseFloat(review.get("rating").toString()));
         ontologyMapDto.setCategoryMap(categoryMap);
 
         Logger.Log("#TITLE-STEP 6: Identify Sentence/Paragraph domain");
@@ -206,7 +206,7 @@ public class EntityExtractor implements EntityExtractorInterface{
      * @param finalEntityTagDtos
      */
     public List<FinalEntityTagDto> prioritizeEntities(List<FinalEntityTagDto> finalEntityTagDtos) {
-        Collections.sort(finalEntityTagDtos, (object1, object2) -> (int)(object1.getSalience()*10000-object2.getSalience()*10000));
+        Collections.sort(finalEntityTagDtos, (object1, object2) -> (int) (object1.getSalience() * 10000 - object2.getSalience() * 10000));
         return finalEntityTagDtos;
     }
 
@@ -273,7 +273,7 @@ public class EntityExtractor implements EntityExtractorInterface{
      * @param text
      * @return
      */
-    public static String getMainSalienceEntity(String text){
+    public static String getMainSalienceEntity(String text) {
         try {
             languageServiceClient = APIConnection.provideLanguageServiceClient();
         } catch (IOException e) {
@@ -285,11 +285,11 @@ public class EntityExtractor implements EntityExtractorInterface{
 
         List<MobileDataSet> mobileDataSetList = new SpecificationExtractor().getPhoneDataList();
         String mainEntity = "";
-        for (Entity entity: response.getEntitiesList()){
+        for (Entity entity : response.getEntitiesList()) {
             System.out.println(entity.getName());
-            for (MobileDataSet mobileDataSet: mobileDataSetList){
+            for (MobileDataSet mobileDataSet : mobileDataSetList) {
                 if (mobileDataSet.getName().toLowerCase().equals(entity.getName().toLowerCase())
-                        && mobileDataSet.getName().toLowerCase().contains(entity.getName().toLowerCase())){
+                        && mobileDataSet.getName().toLowerCase().contains(entity.getName().toLowerCase())) {
                     Logger.Log("#TITLE-STEP 1: Main Entity Extraction");
                     Logger.Log("#CONT-".concat(entity.getName()));
                     return entity.getName();
@@ -322,8 +322,8 @@ public class EntityExtractor implements EntityExtractorInterface{
             Logger.Log("#JSON-".concat(new Gson().toJson(replacedText)));
 
             text = "";
-            for (String newStr : replacedText){
-                text += " "+newStr;
+            for (String newStr : replacedText) {
+                text += " " + newStr;
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -371,28 +371,34 @@ public class EntityExtractor implements EntityExtractorInterface{
         }
         List<OntologyMapDto> ontologyMapDtos = new LinkedList<>();
         for (Object object : array) {
-            JSONObject jsonObject = (JSONObject) object;
-            String text = jsonObject.get("reviewContent").toString();
-            if (text.split(" ").length<=20) continue;
+
             try {
-                List<String> replacedText = new RelationshipExtractor().executeModifier(text, searchKeyWord);//change
-                text = "";
-                for (String newStr : replacedText){
-                    text += " "+newStr;
+                JSONObject jsonObject = (JSONObject) object;
+                String text = jsonObject.get("reviewContent").toString();
+                if (text.split(" ").length <= 20) continue;
+                try {
+                    List<String> replacedText = new RelationshipExtractor().executeModifier(text, searchKeyWord);//change
+                    text = "";
+                    for (String newStr : replacedText) {
+                        text += " " + newStr;
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
                 }
-            } catch (IOException e) {
+                jsonObject.put("reviewContent", text);
+                jsonObject.put("mainEntity", searchKeyWord);//change
+                String sampleText = jsonObject.get("reviewContent").toString();
+                try {
+                    ontologyMapDtos.add(constructJson(jsonObject, identifyReviewCategory(sampleText, languageServiceClient), analyseSyntax(sampleText, languageServiceClient)));
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } catch (GeneralSecurityException e) {
+                    e.printStackTrace();
+                }
+            } catch (Exception e) {
                 e.printStackTrace();
             }
-            jsonObject.put("reviewContent", text);
-            jsonObject.put("mainEntity", searchKeyWord);//change
-            String sampleText = jsonObject.get("reviewContent").toString();
-            try {
-                ontologyMapDtos.add(constructJson(jsonObject, identifyReviewCategory(sampleText, languageServiceClient), analyseSyntax(sampleText, languageServiceClient)));
-            } catch (IOException e) {
-                e.printStackTrace();
-            } catch (GeneralSecurityException e) {
-                e.printStackTrace();
-            }
+
         }
         System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(ontologyMapDtos));
         return ontologyMapDtos;
