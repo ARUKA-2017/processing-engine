@@ -31,4 +31,8 @@ public class EntityExtractorService {
         }
         return resultList;
     }
+
+    public String getEntity(String text) {
+        return entityExtractor.getEntity(text);
+    }
 }

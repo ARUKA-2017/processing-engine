@@ -97,4 +97,11 @@ public interface EntityExtractorInterface {
      * @return
      */
     List<OntologyMapDto> extractEntityData(String searchKeyWord);
+
+    /**
+     * Endpoint - get single entity
+     *
+     * @return
+     */
+    String getEntity(String text);
 }
