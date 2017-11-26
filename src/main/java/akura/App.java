@@ -79,6 +79,16 @@ public class App {
 
             return new GsonBuilder().setPrettyPrinting().create().toJson(jsonObject);
         });
+
+        get("/get-entity", (req, res) -> {
+
+            String entity = req.queryParams("entity");
+
+            JSONObject jsonObject = new JSONObject();
+            jsonObject.put("data", entityExtractorService.getEntity(entity));
+
+            return new GsonBuilder().setPrettyPrinting().create().toJson(jsonObject);
+        });
     }
 }
 

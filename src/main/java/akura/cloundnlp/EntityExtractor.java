@@ -403,4 +403,27 @@ public class EntityExtractor implements EntityExtractorInterface {
         System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(ontologyMapDtos));
         return ontologyMapDtos;
     }
+
+    /**
+     * Endpoint - Single entity data
+     *
+     * @return
+     */
+    public String getEntity(String text) {
+
+        try {
+            languageServiceClient = APIConnection.provideLanguageServiceClient();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Document doc = Document.newBuilder().setContent(text).setType(Document.Type.PLAIN_TEXT).build();
+
+        AnalyzeEntitySentimentRequest request = AnalyzeEntitySentimentRequest.newBuilder().setDocument(doc).setEncodingType(EncodingType.UTF16).build();
+        AnalyzeEntitySentimentResponse response = languageServiceClient.analyzeEntitySentiment(request);
+
+        for (Entity entity : response.getEntitiesList()) {
+            return entity.getName();
+        }
+        return null;
+    }
 }
