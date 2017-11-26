@@ -101,10 +101,7 @@ public class TestScenario {
 //        Path path = FileSystems.getDefault().getPath("src/main/java/akura/cloundnlp/sample_resources/phone_dataset.json");
 //        System.out.println(path.toAbsolutePath());
 
-        List<OntologyMapDto> ooo = new LinkedList<>();
-        JSONObject jsonObject = new JSONObject();
-        jsonObject.put("dsds", ooo);
+        String test = "dkhfslakhfaslkhfsa;fsohfas%ffoiashfas";
 
-        System.out.println(new GsonBuilder().create().toJson(jsonObject));
     }
 }

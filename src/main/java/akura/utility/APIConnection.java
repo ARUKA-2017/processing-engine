@@ -15,9 +15,11 @@ import org.json.simple.parser.ParseException;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 import java.net.ProtocolException;
 import java.net.URL;
+import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 import java.security.GeneralSecurityException;
 import java.util.NoSuchElementException;
@@ -63,15 +65,21 @@ public class APIConnection {
      * @return
      */
     public static String understandShortWordConcept(String text, String defaultValue) {
-        String url = DATA_GRAPH_URL.concat(text.trim()).concat("&topK=1").replaceAll(" ", "%20");
-        HttpClient client = HttpClientBuilder.create().build();
-        HttpGet getRequest = new HttpGet(url);
+        String encodedUrl = "";
+        String url = "";
         try {
+            encodedUrl = URLEncoder.encode(text, "UTF-8");
+            url = DATA_GRAPH_URL.concat(encodedUrl).concat("&topK=1");
+            HttpClient client = HttpClientBuilder.create().build();
+            HttpGet getRequest = new HttpGet(url);
             HttpResponse httpResponse = client.execute(getRequest);
             HttpEntity httpEntity = httpResponse.getEntity();
             JSONParser jsonParser = new JSONParser();
             JSONObject jsonObject = (JSONObject) jsonParser.parse(EntityUtils.toString(httpEntity, "UTF-8"));
             return jsonObject.keySet().iterator().next().toString();
+        } catch (UnsupportedEncodingException e) {
+            System.out.println(e);
+            return defaultValue;
         } catch (IOException e) {
             System.out.println(e);
             return defaultValue;
