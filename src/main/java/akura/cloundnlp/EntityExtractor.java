@@ -438,6 +438,7 @@ public class EntityExtractor implements EntityExtractorInterface {
                OntologyMapDto onto = (OntologyMapDto) future.get();
                if(onto != null){
                    ontologyMapDtos.add(onto);
+                   System.out.println(ontologyMapDtos);
                }
                 System.out.println("Future completion for one entity extraction review ------------------");
 //                System.out.println(); // do anything you need, e.g. isDone(), ...
