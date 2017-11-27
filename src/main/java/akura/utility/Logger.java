@@ -11,12 +11,12 @@ public class Logger {
     public static void Log(String s){
         PropertyConfigurator.configure("log4j.properties");
         logger.info(s);
-        Logger.LogOverall(s);
+        Logger.LogOverall(s, "NLU Engine");
         System.out.println(s);
     }
 
-    public static void LogOverall(String s){
+    public static void LogOverall(String s, String type){
         PropertyConfigurator.configure("log4j-overall.properties");
-        logger.info(s+"##$$$"+ "NLU Engine");
+        logger.info(s+"##$$$"+ type);
     }
 }

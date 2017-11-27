@@ -402,6 +402,8 @@ public class EntityExtractor implements EntityExtractorInterface {
                     Future<?> future = executor.submit(() -> {
                         System.out.println("parallel processing new thread starting for entity extraction");
                         System.out.println("review -------");
+                        Logger.LogOverall("#SUB-Review Data","Data Extarction");
+                        Logger.LogOverall("#CONT-"+sampleText,"Data Extarction");
                         System.out.println(sampleText);
                         System.out.println("---------------");
                         try {
