@@ -375,7 +375,7 @@ public class EntityExtractor implements EntityExtractorInterface {
         }
         List<OntologyMapDto> ontologyMapDtos = new LinkedList<>();
         int threads = Runtime.getRuntime().availableProcessors();
-        System.out.println("Available threads for parallel processing -->"+ threads);
+        System.out.println("Available threads for parallel processing --> "+ threads);
         final ExecutorService executor = Executors.newFixedThreadPool(threads); // it's just an arbitrary number
         final List<Future<?>> futures = new ArrayList<>();
 
@@ -405,11 +405,16 @@ public class EntityExtractor implements EntityExtractorInterface {
                         System.out.println(sampleText);
                         System.out.println("---------------");
                         try {
-                            ontologyMapDtos.add(constructJson(jsonObject, identifyReviewCategory(sampleText, languageServiceClient), analyseSyntax(sampleText, languageServiceClient)));
+                            OntologyMapDto onto =  constructJson(jsonObject, identifyReviewCategory(sampleText, languageServiceClient), analyseSyntax(sampleText, languageServiceClient));
+                            return onto;
                         } catch (IOException e) {
+
                             e.printStackTrace();
+                            return null;
                         } catch (GeneralSecurityException e) {
+
                             e.printStackTrace();
+                            return null;
                         }
 
                     });
@@ -430,7 +435,10 @@ public class EntityExtractor implements EntityExtractorInterface {
         }
         try {
             for (Future<?> future : futures) {
-                future.get();
+               OntologyMapDto onto = (OntologyMapDto) future.get();
+               if(onto != null){
+                   ontologyMapDtos.add(onto);
+               }
                 System.out.println("Future completion for one entity extraction review ------------------");
 //                System.out.println(); // do anything you need, e.g. isDone(), ...
             }
