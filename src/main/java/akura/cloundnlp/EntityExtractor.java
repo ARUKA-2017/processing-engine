@@ -19,6 +19,10 @@ import java.io.IOException;
 
 import java.security.GeneralSecurityException;
 import java.util.*;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 
 /**
  * A snippet for Google Cloud Speech API showing how to analyze text message sentiment.
@@ -370,7 +374,13 @@ public class EntityExtractor implements EntityExtractorInterface {
             e.printStackTrace();
         }
         List<OntologyMapDto> ontologyMapDtos = new LinkedList<>();
+        int threads = Runtime.getRuntime().availableProcessors();
+        System.out.println("Available threads for parallel processing -->"+ threads);
+        final ExecutorService executor = Executors.newFixedThreadPool(threads); // it's just an arbitrary number
+        final List<Future<?>> futures = new ArrayList<>();
+
         for (Object object : array) {
+
 
             try {
                 JSONObject jsonObject = (JSONObject) object;
@@ -389,16 +399,43 @@ public class EntityExtractor implements EntityExtractorInterface {
                 jsonObject.put("mainEntity", searchKeyWord);//change
                 String sampleText = jsonObject.get("reviewContent").toString();
                 try {
-                    ontologyMapDtos.add(constructJson(jsonObject, identifyReviewCategory(sampleText, languageServiceClient), analyseSyntax(sampleText, languageServiceClient)));
-                } catch (IOException e) {
-                    e.printStackTrace();
-                } catch (GeneralSecurityException e) {
+                    Future<?> future = executor.submit(() -> {
+                        System.out.println("parallel processing new thread starting for entity extraction");
+                        System.out.println("review -------");
+                        System.out.println(sampleText);
+                        System.out.println("---------------");
+                        try {
+                            ontologyMapDtos.add(constructJson(jsonObject, identifyReviewCategory(sampleText, languageServiceClient), analyseSyntax(sampleText, languageServiceClient)));
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        } catch (GeneralSecurityException e) {
+                            e.printStackTrace();
+                        }
+
+                    });
+                    futures.add(future);
+
+//                } catch (IOException e) {
+//                    e.printStackTrace();
+//                } catch (GeneralSecurityException e) {
+//                    e.printStackTrace();
+//                }
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
             } catch (Exception e) {
                 e.printStackTrace();
             }
 
+        }
+        try {
+            for (Future<?> future : futures) {
+                future.get();
+                System.out.println("Future completion for one entity extraction review ------------------");
+//                System.out.println(); // do anything you need, e.g. isDone(), ...
+            }
+        } catch (InterruptedException | ExecutionException e) {
+            e.printStackTrace();
         }
         System.out.println(new GsonBuilder().setPrettyPrinting().create().toJson(ontologyMapDtos));
         return ontologyMapDtos;
